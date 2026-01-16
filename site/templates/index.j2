@@ -18,29 +18,29 @@
         <div class="nav-section">Reino Contado</div>
         
         <!-- CICLO BROTOS -->
-        <a href="placeholders/brotos.html" class="nav-link ">
-            <span>🌰</span> Ciclo Brotos <small>(Em breve)</small>
+        <a href="{{ navegacao.brotos.link }}" class="nav-link {{ 'active' if navegacao.brotos.ativo else '' }}">
+            <span>🌰</span> Ciclo Brotos {{ '<small>(Em breve)</small>' if not navegacao.brotos.ativo }}
         </a>
         
         <!-- CICLO SEMENTES -->
-        <a href="#sementes" class="nav-link active">
+        <a href="#sementes" class="nav-link {{ 'active' if navegacao.sementes.ativo else '' }}">
             <span>🌱</span> Ciclo Sementes
         </a>
         
         <!-- CICLO RAÍZES -->
-        <a href="placeholders/raizes.html" class="nav-link ">
-            <span>🌳</span> Ciclo Raízes <small>(Em breve)</small>
+        <a href="{{ navegacao.raizes.link }}" class="nav-link {{ 'active' if navegacao.raizes.ativo else '' }}">
+            <span>🌳</span> Ciclo Raízes {{ '<small>(Em breve)</small>' if not navegacao.raizes.ativo }}
         </a>
 
         <!-- LÓGICA -->
-        <a href="placeholders/logica.html" class="nav-link ">
-            <span>🦉</span> Lógica & Retórica <small>(Em breve)</small>
+        <a href="{{ navegacao.logica.link }}" class="nav-link {{ 'active' if navegacao.logica.ativo else '' }}">
+            <span>🦉</span> Lógica & Retórica {{ '<small>(Em breve)</small>' if not navegacao.logica.ativo }}
         </a>
         
         <div class="nav-section">Acervo Público</div>
         <a href="#livros" class="nav-link"><span>🏆</span> Livros Dourados</a>
         <a href="#blog" class="nav-link"><span>📝</span> Biblioteca & Ensaios</a>
-        <a href="placeholders/legado.html" class="nav-link"><span>🏺</span> O Legado</a>
+        <a href="{{ navegacao.legado.link }}" class="nav-link"><span>🏺</span> O Legado</a>
         
         <div class="nav-section">Sistema</div>
         <a href="#" class="nav-link"><span>⚙️</span> Configurações</a>
@@ -48,7 +48,7 @@
 
     <main class="main-content">
         <header>
-            <div class="role-badge">Ambiente: Production (Forge V3)</div>
+            <div class="role-badge">Ambiente: {{ env_name }}</div>
             <h1>Visão Geral do Reino</h1>
             <p class="subtitle">"A Qualidade Não é Negociável." — Painel de Controle Dinâmico.</p>
         </header>
@@ -56,7 +56,7 @@
         <!-- ESTATÍSTICAS -->
         <section class="stats">
             <div class="stat-card">
-                <div class="stat-val">3</div>
+                <div class="stat-val">{{ stats.total_licoes }}</div>
                 <div class="stat-label">Lições Produzidas</div>
             </div>
             <div class="stat-card">
@@ -64,7 +64,7 @@
                 <div class="stat-label">Conformidade North Star</div>
             </div>
             <div class="stat-card">
-                <div class="stat-val">16/01/2026 15:37</div>
+                <div class="stat-val">{{ build_date }}</div>
                 <div class="stat-label">Último Build</div>
             </div>
         </section>
@@ -77,60 +77,28 @@
             </div>
             
             <div class="grid-cards">
-                
-                    
-                    <article class="card melquior">
+                {% if sementes_licoes %}
+                    {% for licao in sementes_licoes %}
+                    <article class="card {{ licao.guardiao | lower }}">
                         <div class="card-body">
                             <div class="card-meta">
-                                <span class="card-id">LIÇÃO 000</span>
-                                <img src="assets/sementes/melquior-leao.png" 
+                                <span class="card-id">{{ licao.id }}</span>
+                                <img src="assets/sementes/{{ licao.guardiao | lower }}-{{ licao.guardiao_animal }}.png" 
                                      class="guardian-icon-img" 
-                                     alt="melquior"
+                                     alt="{{ licao.guardiao }}"
                                      onerror="this.src='assets/cards/guardioes/melquior-leao.png'">
                             </div>
-                            <h3 class="card-title">O Início de Tudo</h3>
-                            <p class="card-desc">“Uma aventura no Reino Contado.”</p>
+                            <h3 class="card-title">{{ licao.titulo }}</h3>
+                            <p class="card-desc">“{{ licao.desc }}”</p>
                         </div>
                         <div class="card-footer">
-                            <a href="sementes/MV-S-000_O_PORTAL_DO_REINO.html" class="btn-arr">Abrir Lição <span>→</span></a>
+                            <a href="sementes/{{ licao.filename }}" class="btn-arr">Abrir Lição <span>→</span></a>
                         </div>
                     </article>
-                    
-                    <article class="card celeste">
-                        <div class="card-body">
-                            <div class="card-meta">
-                                <span class="card-id">LIÇÃO 001</span>
-                                <img src="assets/sementes/celeste-raposa.png" 
-                                     class="guardian-icon-img" 
-                                     alt="celeste"
-                                     onerror="this.src='assets/cards/guardioes/melquior-leao.png'">
-                            </div>
-                            <h3 class="card-title">A Trindade na Palma</h3>
-                            <p class="card-desc">“Uma aventura no Reino Contado.”</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="sementes/MV-S-001_A_TRINDADE_NA_PALMA.html" class="btn-arr">Abrir Lição <span>→</span></a>
-                        </div>
-                    </article>
-                    
-                    <article class="card bernardo">
-                        <div class="card-body">
-                            <div class="card-meta">
-                                <span class="card-id">LIÇÃO 002</span>
-                                <img src="assets/sementes/bernardo-urso.png" 
-                                     class="guardian-icon-img" 
-                                     alt="bernardo"
-                                     onerror="this.src='assets/cards/guardioes/melquior-leao.png'">
-                            </div>
-                            <h3 class="card-title">As Pedras da Fortaleza</h3>
-                            <p class="card-desc">“Uma aventura no Reino Contado.”</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="sementes/MV-S-002_AS_PEDRAS_DA_FORTALEZA.html" class="btn-arr">Abrir Lição <span>→</span></a>
-                        </div>
-                    </article>
-                    
-                
+                    {% endfor %}
+                {% else %}
+                    <p class="text-gray-500">Nenhuma lição encontrada neste ciclo.</p>
+                {% endif %}
             </div>
         </section>
 
@@ -142,23 +110,27 @@
             </div>
             
             <div class="grid-cards">
-                
-                    
+                {% if livros %}
+                    {% for livro in livros %}
                     <article class="card melquior"> <!-- Usando Melquior (Dourado/Leão) por padrão -->
                         <div class="card-body">
                             <div class="card-meta">
                                 <span class="card-id">LIVRO VIVO</span>
                                 <img src="assets/cards/guardioes/melquior-leao.png" class="guardian-icon-img">
                             </div>
-                            <h3 class="card-title">901_Santos_Dumont</h3>
-                            <p class="card-desc">Narrativa Visual Vivente.</p>
+                            <h3 class="card-title">{{ livro.titulo }}</h3>
+                            <p class="card-desc">{{ livro.desc }}</p>
                         </div>
                         <div class="card-footer">
-                            <a href="livros/901_santos_dumont.html" class="btn-arr">Ler Livro <span>→</span></a>
+                            <a href="livros/{{ livro.filename }}" class="btn-arr">Ler Livro <span>→</span></a>
                         </div>
                     </article>
-                    
-                
+                    {% endfor %}
+                {% else %}
+                    <div style="grid-column: 1/-1; background: #FEF3C7; padding: 2rem; border-radius: 8px; text-align: center;">
+                        <p>A Biblioteca Dourada está sendo preparada.</p>
+                    </div>
+                {% endif %}
             </div>
         </section>
 

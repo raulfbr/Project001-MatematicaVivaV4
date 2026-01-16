@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ titulo }} | Livros Dourados</title>
+    <!-- Ajuste de Path CSS: Livros ficam 1 nível abaixo do site/ -->
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo Livro Vivo ("Medium" / "Substack" Style) */
+        body {
+            background-color: #FAF9F6; /* Off-white papel */
+            color: #111;
+            font-family: 'Merriweather', serif; /* Fonte de livro */
+            line-height: 1.8;
+        }
+        .book-container {
+            max-width: 720px; /* Largura de leitura confortável */
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+        .book-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            border-bottom: 2px solid #E5E7EB;
+            padding-bottom: 2rem;
+        }
+        .book-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: #1F2937;
+        }
+        .book-meta {
+            color: #6B7280;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        .book-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .book-content h2 {
+            font-family: 'Playfair Display', serif;
+            margin-top: 3rem;
+            font-size: 1.8rem;
+        }
+        .book-content blockquote {
+            border-left: 4px solid #D97706; /* Ambar */
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #4B5563;
+            background: #FFFBEB;
+            padding: 1rem;
+        }
+        .nav-home {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            text-decoration: none;
+            color: #4B5563;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.875rem;
+            padding: 0.5rem 1rem;
+            background: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 9999px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: all 0.2s;
+        }
+        .nav-home:hover {
+            border-color: #D97706;
+            color: #D97706;
+        }
+        
+        /* Classes Especiais */
+        .img-aquarela {
+            filter: contrast(1.1) saturate(1.2);
+        }
+        .img-blueprint {
+            border: 4px solid #1E3A8A; /* Azul engenharia */
+            filter: grayscale(100%) sepia(100%) hue-rotate(190deg) saturate(300%);
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="nav-home">← Voltar ao Reino</a>
+
+    <article class="book-container">
+        <header class="book-header">
+            <h1 class="book-title">{{ titulo }}</h1>
+            <div class="book-meta">Um Livro Dourado • Leitura Imersiva</div>
+        </header>
+
+        <div class="book-content">
+            {{ conteudo | safe }}
+        </div>
+        
+        <footer style="margin-top: 5rem; text-align: center; color: #9CA3AF; font-family: sans-serif; font-size: 0.8rem;">
+            &copy; 2026 Matemática Viva • Livros Dourados
+        </footer>
+    </article>
+</body>
+</html>

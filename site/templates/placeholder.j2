@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ ciclo }} | Matemática Viva</title>
+    <!-- Ajuste de Path CSS: Placeholders ficam 1 nível abaixo do site/ -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <style>
+        .placeholder-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #FDFBF7; /* Creme suave */
+            text-align: center;
+            padding: 2rem;
+        }
+        .cycle-icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            animation: pulse 3s infinite ease-in-out;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #1F2937;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-family: 'Inter', sans-serif;
+            color: #4B5563;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        .btn-back {
+            margin-top: 2rem;
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #1F2937;
+            color: #F9FAFB;
+            text-decoration: none;
+            border-radius: 9999px;
+            font-weight: 500;
+            transition: transform 0.2s;
+        }
+        .btn-back:hover {
+            transform: translateY(-2px);
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="placeholder-container">
+        <div class="cycle-icon">{{ icon }}</div>
+        <h1>O {{ ciclo }} está sendo Forjado...</h1>
+        <p>
+            Nossos guardiões estão trabalhando nos alicerces desta etapa do conhecimento.
+            <br>
+            <em>"A paciência é a primeira virtude do aprendiz."</em>
+        </p>
+        <a href="../index.html" class="btn-back">← Voltar para o Salão Principal</a>
+    </div>
+</body>
+</html>

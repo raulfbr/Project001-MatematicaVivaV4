@@ -1,15 +1,9 @@
 {% extends "base.j2" %}
 {% from "macros.j2" import scene_card, instruction_box, script_persona, nav_button %}
 
-{# MAPEAMENTO GUARDIÃO -> ARQUIVO DE AVATAR #}
-{% set guardian_avatars = {
-    'celeste': 'celeste-raposa.png',
-    'melquior': 'melquior-leao.png',
-    'bernardo': 'bernardo-urso.png',
-    'iris': 'iris-passarinho.png',
-    'noe': 'noe-coruja.png'
-} %}
-{% set avatar_file = guardian_avatars.get(licao.metadados.guardiao_lider, 'placeholder.png') %}
+{# SSOT: Configuração centralizada de guardiões #}
+{% from '_config.j2' import get_avatar %}
+{% set avatar_file = get_avatar(licao.metadados.guardiao_lider) %}
 
 {% block content %}
 

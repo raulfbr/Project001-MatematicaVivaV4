@@ -1,0 +1,27 @@
+{# ============================================
+   CONFIGURAÇÃO SSOT - Matemática Viva
+   ============================================
+   Este arquivo é a fonte única (SSOT) para:
+   - Mapeamento Guardião -> Arquivo de Avatar
+   
+   Referência: engenharia.yaml (Eric Evans - SSOT)
+   
+   USO: {% from '_config.j2' import guardian_avatars, placeholder %}
+   ============================================ #}
+
+{# GUARDIÕES -> AVATARES (como macro para import) #}
+{% set guardian_avatars = {
+    'celeste': 'celeste-raposa.png',
+    'melquior': 'melquior-leao.png',
+    'bernardo': 'bernardo-urso.png',
+    'iris': 'iris-passarinho.png',
+    'noe': 'noe-coruja.png'
+} %}
+
+{# PLACEHOLDER #}
+{% set placeholder = 'placeholder.png' %}
+
+{# MACRO para obter avatar dado um guardião #}
+{% macro get_avatar(guardian_name) -%}
+{{ guardian_avatars.get(guardian_name, placeholder) }}
+{%- endmacro %}

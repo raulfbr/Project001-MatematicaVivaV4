@@ -257,9 +257,7 @@ licao:
       - O que funcionou bem (fileiras, pedras, ritmo)?
       - O que posso ajustar na próxima lição?
 
-  navegacao_inferior:
-    anterior: {id: MV-S-001, titulo: A Trindade na Palma}
-    proxima: {id: MV-S-003, titulo: A Estrela do Reino}
+  # navegacao_inferior: REMOVIDO (usa navegacao)
 
   auditoria_qa:
     cm: [true, true, true, true, true]

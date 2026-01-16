@@ -1,0 +1,385 @@
+# LIÇÃO 000 — O PORTAL DO REINO
+# Template: V6.3 | 16/01/2026 | Status: TESTE
+# Tipo: Litúrgica/Narrativa (sem conteúdo matemático)
+
+_meta:
+  id: licao-000-portal-reino
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+  nota: Esta lição é litúrgica. Apresenta o Reino, os Guardiões e estabelece a atmosfera sagrada.
+
+licao:
+  metadados:
+    id: MV-S-000
+    titulo: O Portal do Reino
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 0
+    tipo: Introdução
+    guardiao_lider: melquior
+    guardiao_secundario: null
+    guardioes_apresentados: [melquior, noe, celeste, bernardo, iris]
+    tgtb_ref: Intro
+    tgtb_titulo_en: Introduction to the Kingdom
+    tgtb_titulo_pt: Introdução ao Reino
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: canonico
+
+  navegacao:
+    anterior: null
+    proxima: {id: MV-S-001, titulo: A Trindade na Palma}
+
+  para_portador:
+    ideia_viva:
+      frase: "O Convite do Mentor Melquior — as portas do Reino Contado se abrem para você."
+      conceito: Atmosfera sagrada e apresentação dos Guardiões
+      intencao_cm: "Estabelecer a 'atmosfera' (Charlotte Mason) antes de qualquer conteúdo. A criança precisa PERTENCER antes de aprender."
+    dica_coracao: |
+      Hoje não há matemática. Só magia.
+      Seu único trabalho é criar o ambiente sagrado.
+      Acenda uma vela (real ou imaginária), estenda o tapete, diminua as luzes.
+      Melquior fará o resto.
+    filho_descobre: |
+      Que existe um Reino especial chamado Reino Contado.
+      Que cinco Guardiões vão caminhar com ele nesta jornada.
+      Que ele é um Herdeiro — alguém especial, esperado.
+    protocolo_impecabilidade: |
+      NÃO EXPLIQUE NADA. Apenas VIVA a narrativa.
+      Se a criança perguntar, responda com mistério: "Você vai descobrir..."
+      O encantamento é mais importante que a compreensão.
+    nota_graca: |
+      Se a criança não "entrar" na história hoje, tudo bem.
+      A semente foi plantada. Amanhã ela pode brotar.
+      Alguns precisam de mais tempo para cruzar o portal.
+    conforto_emocional: |
+      Você não precisa "atuar" perfeitamente.
+      Leia com carinho. Olhe nos olhos. Isso é suficiente.
+    audio_script: |
+      Portador, hoje é especial. Não há conta, não há número.
+      Hoje vocês vão cruzar o Portal do Reino juntos.
+      Respire. Prepare o tapete. Melquior os espera.
+    preparacao:
+      materiais:
+        - {item: Tapete ou cobertor (Tapete do Reino), qtd: 1, essencial: true}
+        - {item: Vela (real ou LED), qtd: 1, essencial: true}
+        - {item: Cards dos 5 Guardiões impressos, qtd: 5, alt: desenhos ou descrições verbais, essencial: false}
+        - {item: Música ambiente suave (opcional), qtd: 1, essencial: false}
+
+  linkage:
+    elo_anterior: null
+    proximo:
+      licao_id: MV-S-001
+      gancho: Amanhã, Celeste vai nos mostrar algo especial — três sementes do carvalho mais velho do Reino!
+
+  ritual_abertura:
+    instrucao_ambiente: |
+      Estendam o Tapete do Reino no chão.
+      Diminuam as luzes. Acendam a vela.
+      Sentem-se juntos. Respirem fundo três vezes.
+    local: jardim_central
+    clima: ensolarado
+    virtude: maravilhamento
+    artefato: A Pequena Vela
+    transicao_reino: |
+      Feche os olhos. Respire fundo.
+      Quando abrir os olhos, estaremos em um lugar muito especial...
+      O Jardim Central do Reino Contado.
+    fala_portador:
+      tom: misterioso
+      script: |
+        Hoje vamos visitar um lugar muito especial.
+        Um lugar onde animais sábios nos esperam.
+        Shhh... você está pronto para conhecê-los?
+    card_guardiao: 'CARD: MELQUIOR'
+    abertura_sensorial: |
+      O ar cheira a terra molhada e musgo fresco.
+      O sol dourado aquece o rosto. Pássaros cantam ao longe.
+      Em um banco de pedra antiga, sentado com as patas cruzadas,
+      está um grande Leão de juba dourada. Ele sorri ao ver você chegar.
+
+  jornada:
+    narrativa_principal:
+      - titulo: O Convite de Melquior
+        local: jardim_central
+        card_guardiao: melquior-leao.png
+        fala_guardiao:
+          tom: acolhedor
+          script: |
+            "Aproxime-se, pequeno Herdeiro.
+            Sente-se aqui, no tapete de musgo, sob o brilho da Pequena Vela."
+        instrucao_portador: |
+          Leia com calma. Olhe nos olhos da criança.
+          Dê tempo para ela se acomodar.
+      
+      - titulo: A História da Criação
+        local: jardim_central
+        card_guardiao: melquior-leao.png
+        fala_guardiao:
+          tom: reverente
+          script: |
+            "Antes de você nascer, o Grande Rei olhou para o mundo
+            e viu que faltava algo muito importante.
+            
+            Ele disse com sua voz de trovão suave:
+            'Criarei um Reino onde os números não sejam frios,
+            onde contar seja uma aventura,
+            e onde cada criança saiba que foi feita para descobrir.'
+            
+            E assim nasceu o Reino Contado.
+            
+            Esse jardim onde estamos? O Rei o plantou pensando em você.
+            Cada árvore, cada flor, cada caminho...
+            Tudo foi preparado para seus olhos, Herdeiro."
+        instrucao_portador: |
+          Fale com reverência, como quem conta um segredo antigo.
+          Faça pausas nas vírgulas. Deixe as palavras criarem imagens.
+      
+      - titulo: Quem é Melquior
+        local: jardim_central
+        card_guardiao: melquior-leao.png
+        fala_guardiao:
+          tom: nobre
+          script: |
+            "Eu sou Melquior, o Leão Dourado.
+            O Rei me escolheu para ser o Anfitrião deste Jardim.
+            
+            Minha juba brilha com a luz da sabedoria,
+            e meu rugido... bem, meu rugido é gentil.
+            Eu não assusto — eu acolho.
+            
+            Sou o primeiro que você encontra,
+            mas não sou o único.
+            
+            Hoje, as portas do Reino Contado se abrem para você,
+            pois tudo o que vê aqui foi feito para seus olhos.
+            
+            Venha. Deixe-me apresentar meus amigos."
+        instrucao_portador: |
+          Este é o momento de estabelecer Melquior como figura paterna/mentora.
+          Se tiver o card do Melquior, mostre-o bem perto da criança.
+      
+      - titulo: A Coruja Noé
+        local: jardim_central
+        card_guardiao: noe-coruja.png
+        fala_guardiao:
+          tom: respeitoso
+          script: |
+            "Veja! Ali, no galho mais alto, está a Coruja Noé.
+            Ele guarda o Tempo.
+            Ele nos ensina a ouvir o silêncio e a esperar com paciência.
+            [Aponte para cima]
+            Consegue vê-lo? Seus olhos são como duas luas amarelas.
+            
+            Noé é sábio. Ele observa tudo, ouve tudo.
+            Quando você precisar de calma, Noé estará lá."
+        instrucao_portador: |
+          Aponte para cima como se visse Noé.
+          Mostre o card do Noé agora.
+      
+      - titulo: A Raposa Celeste
+        local: jardim_central
+        card_guardiao: celeste-raposa.png
+        fala_guardiao:
+          tom: animado
+          script: |
+            "Sente este vento rápido?
+            É a Raposa Celeste!
+            Ela adora segredos e padrões.
+            Ela vai ajudá-lo a encontrar as pistas que o Rei deixou escondidas.
+            [Fareja o ar]
+            Está sentindo? Cheira a aventura!
+            
+            Celeste é curiosa como você. Ela fareja mistérios!"
+        instrucao_portador: |
+          Faça o gesto de farejar o ar.
+          Mostre o card da Celeste.
+      
+      - titulo: O Urso Bernardo
+        local: jardim_central
+        card_guardiao: bernardo-urso.png
+        fala_guardiao:
+          tom: firme
+          script: |
+            "Ouça o passo firme na terra...
+            É o Urso Bernardo!
+            Ele é forte e gentil.
+            Usa suas mãos grandes para construir coisas belas.
+            Ele nos ensina que o esforço é uma canção.
+            [Som de passos pesados]
+            
+            Vê a pata manca dele? Bernardo se machucou salvando seus amigos
+            na Grande Nevasca. Mas isso nunca o parou.
+            Quando você errar, Bernardo vai dizer: 'Mais uma vez. Comigo.'"
+        instrucao_portador: |
+          Bata os pés no chão imitando passos pesados.
+          Mostre o card do Bernardo.
+      
+      - titulo: A Pardal Íris
+        local: jardim_central
+        card_guardiao: iris-passarinho.png
+        fala_guardiao:
+          tom: delicado
+          script: |
+            "E olhe bem de perto para aquela flor...
+            Lá está Íris, a pequena Pardal!
+            Ela vê o que ninguém mais vê:
+            a beleza num grão de areia,
+            a cor no menor detalhe.
+            [Aponte para baixo, para algo pequeno]
+            
+            Você consegue ver o brilho do colar dela?
+            Íris tem olhos de artista. Ela encontra beleza em tudo."
+        instrucao_portador: |
+          Aponte para algo pequeno perto de vocês.
+          Mostre o card da Íris.
+      
+      - titulo: O Convite Final
+        local: jardim_central
+        fala_guardiao:
+          tom: solene
+          script: |
+            "Noé, Celeste, Bernardo, Íris... e eu, Melquior.
+            
+            Todos nós estamos aqui para caminhar com você.
+            Você é o Herdeiro — alguém que o Rei esperava.
+            
+            Amanhã, Celeste vai nos levar à Clareira das Perguntas.
+            Ela encontrou algo especial debaixo do carvalho mais velho...
+            Três sementes. Três promessas.
+            
+            Mas isso é para amanhã.
+            
+            Hoje... bem-vindo ao Reino."
+        instrucao_portador: |
+          Abrace a criança ou aperte sua mão.
+          Este é o momento de selamento.
+
+    concreto:
+      desc: Esta lição não tem atividade concreta matemática. O "concreto" é a experiência sensorial.
+      card_objeto: 'CARD: VELA'
+      metodo: vivencia
+      instrucoes_portador:
+        - passo: 1
+          acao: Mantenham-se sentados no tapete por um momento em silêncio
+          fala_sugerida: "Vamos guardar esse momento no coração?"
+        - passo: 2
+          acao: Pergunte à criança qual guardião ela mais gostou
+          fala_sugerida: "Qual deles você quer conhecer melhor?"
+      norte_absoluto: O objetivo é SENTIR, não aprender. Se a criança estiver encantada, a lição foi perfeita.
+      adaptacao_bernardo: |
+        💡 Para crianças com dificuldade de atenção, mantenha a narrativa mais curta.
+        Apresente apenas 2-3 guardiões hoje e os outros amanhã.
+
+    pictorico: {status: VETADO, motivo: 'Lição litúrgica — sem conteúdo matemático.'}
+    abstrato: {desc: Não aplicável, nota: 'Esta lição é puramente narrativa/atmosférica.'}
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Só se a criança quiser MAIS
+      sugestoes:
+        - titulo: Desenhar um Guardião
+          acao: Pedir que desenhe o guardião favorito
+        - titulo: Recontar a História
+          acao: Pedir que reconte quem são os guardiões
+      adaptacao_bernardo: |
+        💡 Para crianças que precisam de movimento, deixe-as imitar cada guardião:
+        - Noé: ficar bem quieto olhando
+        - Celeste: farejar e correr
+        - Bernardo: pisar firme e forte
+        - Íris: observar algo pequeno
+
+  narracao:
+    instrucao_portador: |
+      Não force perguntas hoje.
+      Se a criança quiser falar, ouça.
+      Se preferir silêncio, respeite. O coração guardou.
+    pergunta_principal: O que você achou do Reino Contado?
+    perguntas_coracao:
+      - Qual guardião você quer conhecer melhor?
+      - Como é o jardim que você imaginou?
+      - O que você acha que Celeste encontrou?
+    nota_cm: |
+      Esta é uma lição de ATMOSFERA (Charlotte Mason).
+      Não avalie. Não corrija. Apenas esteja presente.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: esperançoso
+      script: |
+        "Herdeiro... obrigado por ter vindo hoje.
+        
+        Amanhã Celeste estará esperando na Clareira.
+        As três sementes do carvalho estão guardadas para você.
+        
+        Descanse bem. O Reino espera seu retorno."
+    fio_ouro: Amanhã, Celeste nos mostrará as três sementes do carvalho mais velho.
+    transicao_volta:
+      instrucao: Apaguem a vela juntos (ou façam de conta)
+      fala: |
+        A vela se apaga, mas a luz fica no coração.
+        O Reino descansa. Até amanhã, Herdeiro.
+
+  para_familia:
+    titulo: Entendendo a Jornada de Hoje
+    porque_importa: |
+      Esta lição não contém matemática — e isso é intencional.
+      
+      Charlotte Mason ensinava que a "atmosfera" é um terço da educação.
+      Antes de ensinar QUALQUER coisa, precisamos criar um ambiente de
+      maravilhamento, segurança e pertencimento.
+      
+      Melquior apresentou os cinco Guardiões que acompanharão seu filho
+      por toda a jornada das Sementes. Cada um representa uma virtude:
+      - Noé (Coruja): Paciência, observação, tempo
+      - Celeste (Raposa): Curiosidade, padrões, exploração
+      - Bernardo (Urso): Persistência, construção, esforço
+      - Íris (Pardal): Atenção aos detalhes, beleza, visão
+      - Melquior (Leão): Liderança, sabedoria, acolhimento
+    metodo_cpa:
+      concreto: Experiência sensorial (vela, tapete, ambiente)
+      pictorico: Não aplicável (lição litúrgica)
+      abstrato: Não aplicável
+      nota: 'Esta lição é pré-matemática: estabelece atmosfera.'
+    principio_cm:
+      numero: 6
+      citacao: "Education is an atmosphere, a discipline, a life."
+      citacao_pt: "Educação é atmosfera, disciplina, vida."
+      aplicacao: Antes de contar, dar. Antes de ensinar, encantar. A atmosfera vem primeiro.
+    tgtb_conexao: |
+      Esta lição corresponde à "Lesson 0 / Introduction" do TGTB — o momento
+      de estabelecer expectativas e criar conexão antes do conteúdo.
+    espiral:
+      conceito: Atmosfera sagrada
+      volta_atual: 'Sementes — Primeiro contato com o Reino e os Guardiões'
+      proxima_volta: 'Raízes — Revisitamos os Guardiões com novas responsabilidades'
+      nota: Os Guardiões evoluem junto com a criança. Hoje são amigos; amanhã, mentores.
+    reflexao_espiritual: |
+      "Tudo o que vê aqui foi feito para seus olhos."
+      
+      Melquior lembra à criança que ela é esperada, desejada, preparada.
+      Em um mundo que muitas vezes diz "você não é suficiente",
+      o Reino Contado sussurra: "Você é o Herdeiro."
+    nota_graca: |
+      Se hoje não "funcionou" como você esperava, respire.
+      Algumas crianças precisam de mais tempo para cruzar o portal.
+      O convite de Melquior permanece aberto. Volte amanhã com a mesma ternura.
+
+  diario_portador:
+    nota: Suas anotações serão usadas nas revisões trimestrais.
+    perguntas:
+      - Como meu filho reagiu ao ambiente (vela, tapete)?
+      - Qual guardião chamou mais atenção?
+      - Houve encantamento? Ou preciso ajustar o ritual?
+
+  # navegacao_inferior: REMOVIDO (usa navegacao)
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

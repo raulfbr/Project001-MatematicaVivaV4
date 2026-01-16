@@ -1,0 +1,81 @@
+{% macro scene_card(title, icon='', id='') %}
+<div class="scene-card" {% if id %}id="{{ id }}"{% endif %}>
+    {% if title %}
+    <div class="scene-header">
+        {% if icon %}<span class="scene-icon">{{ icon }}</span>{% endif %}
+        {{ title }}
+    </div>
+    {% endif %}
+    {{ caller() }}
+</div>
+{% endmacro %}
+
+{% macro instruction_box(icon='💡', content='') %}
+<div class="instruction-box">
+    <span class="instruction-icon">{{ icon }}</span>
+    <div>
+        {{ content | safe }}
+        {{ caller() if caller else '' }}
+    </div>
+</div>
+{% endmacro %}
+
+{% macro script_persona(name, avatar, text, tone='', is_portador=False) %}
+<div class="script-persona-block {{ 'portador-block' if is_portador else '' }}">
+    <img src="../assets/cards/guardioes/{{ avatar }}" class="script-avatar" alt="{{ name }}">
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">{{ name }}</span>
+            {% if tone %}<span class="script-tone">({{ tone }})</span>{% endif %}
+        </div>
+        <div class="script-text">
+            {{ text | replace('\n', '<br>') | safe }}
+        </div>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro nav_button(url, direction, label, title) %}
+<a href="{{ url }}" class="nav-btn {{ direction }}">
+    <span class="nav-label">{{ '←' if direction == 'prev' else '' }} {{ label }} {{ '→' if direction == 'next' else '' }}</span>
+    <span class="nav-title">{{ title }}</span>
+</a>
+{% endmacro %}
+
+{# ═══════════════════════════════════════════════════════════════════
+   NOVOS MACROS - Migração 16/01/2026
+   ═══════════════════════════════════════════════════════════════════ #}
+
+{# MACRO: Portador da Tocha (usa emoji, não imagem) #}
+{% macro portador_block(tom, texto) %}
+<div class="script-persona-block portador-block">
+    <span class="portador-icon">🔥</span>
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">Portador da Tocha</span>
+            {% if tom %}<span class="script-tone">(tom: {{ tom }})</span>{% endif %}
+        </div>
+        <div class="script-text">
+            {{ texto | replace('\n', '<br>') | safe }}
+        </div>
+    </div>
+</div>
+{% endmacro %}
+
+{# MACRO: Local Card (visualização do local) #}
+{% macro local_card(nome, imagem) %}
+<div class="local-card">
+    <p><strong>📍 Local:</strong> {{ nome }}</p>
+    <p class="local-label">Visualizar</p>
+    <img src="../assets/cards/locais/{{ imagem }}" alt="{{ nome }}">
+</div>
+{% endmacro %}
+
+{# MACRO: Box por Autor (Para a Família) #}
+{% macro author_box(tipo, titulo, conteudo) %}
+<div class="{{ tipo }}-box">
+    <strong>{{ titulo }}</strong><br>
+    {{ conteudo | safe }}
+</div>
+{% endmacro %}
+

@@ -241,9 +241,7 @@ licao:
       - O que funcionou bem (narrativa, materiais, ritmo)?
       - O que posso ajustar na próxima lição?
 
-  navegacao_inferior:
-    anterior: {id: MV-S-000, titulo: O Portal do Reino}
-    proxima: {id: MV-S-002, titulo: As Pedras da Fortaleza}
+  # navegacao_inferior: REMOVIDO (usa navegacao)
 
   auditoria_qa:
     cm: [true, true, true, true, true]

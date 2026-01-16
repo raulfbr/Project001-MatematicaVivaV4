@@ -114,9 +114,7 @@ licao:
     nota: 'Anotações usadas nas revisões trimestrais.'
     perguntas: ['Como meu filho reagiu?', 'O que funcionou?', 'O que ajustar?']
 
-  navegacao_inferior:
-    anterior: {id: '[MV-S-XXX]', titulo: '[Título lição anterior]'}
-    proxima: {id: '[MV-S-XXX]', titulo: '[Título próxima lição]'}
+  # navegacao_inferior: REMOVIDO (duplicava navegacao - viola DRY)
 
   auditoria_qa:
     cm: [Criança pessoa?, Ideia Viva?, Narração?, Lição ≤20min?, Hábito Atenção?]

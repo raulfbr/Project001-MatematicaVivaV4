@@ -7,7 +7,7 @@
 [![Método](https://img.shields.io/badge/Método-CM%20%2B%20CPA-blue?style=for-the-badge)](.bmad/expansion-packs/matematica-viva/triade.yaml)
 [![Plataforma](https://img.shields.io/badge/Plataforma-Play_and_Go-green?style=for-the-badge)](docs/README_LEGACY_TECNICO.md)
 
-[**Ler Manifesto**](site/blog/2026-01-14_por-que-seu-filho-nao-ama-matematica.html) | [**Ver Lição**](site/sementes/001_TRINDADE_PALMA.html) | [**Entrar na Tribo**](#-oferta-pioneira-2026)
+[**Ler Manifesto**](site/blog/2026-01-14_por-que-seu-filho-nao-ama-matematica.html) | [**Ver Lição**](site/sementes/MV-S-001_A_TRINDADE_NA_PALMA.html) | [**Entrar na Tribo**](#-oferta-pioneira-2026)
 
 </div>
 

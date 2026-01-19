@@ -1,0 +1,224 @@
+# LIÇÃO 004 — A ORDEM DO DIA
+# Template: V6.3 | 15/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-004-ordem-dia
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-004
+    titulo: A Ordem do Dia
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 1
+    tipo: Senso Numérico e Tempo
+    guardiao_lider: noe
+    guardiao_secundario: celeste
+    guardioes_apresentados: [noe]
+    tgtb_ref: 000-L4
+    tgtb_titulo_en: Ordering 1 to 5
+    tgtb_titulo_pt: Ordenando 1 a 5
+    objetivo_pedagogico: '[Foco: Ordenação 1 a 5 e Sequência Temporal]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-003, titulo: A Estrela do Reino}
+    proxima: {id: MV-S-005, titulo: O Vazio que Guarda}
+
+  para_portador:
+    ideia_viva:
+      frase: "Há um tempo para tudo debaixo do céu: um tempo de plantar e um tempo de colher."
+      conceito: A ordem traz paz. Os números guardam o lugar de cada coisa.
+      intencao_cm: A criança percebe que a matemática organiza a vida, não é apenas abstração.
+    dica_coracao: |
+      Hoje encontramos Noé, o sábio Guardião do Tempo.
+      Ele se move devagar, mas com propósito.
+      Ajude seu filho a sentir a calma de colocar as coisas no lugar certo.
+    filho_descobre: Que existe uma ordem natural (1 vem antes do 2) e que seguir a ordem ajuda o dia a fluir.
+    protocolo_impecabilidade: |
+      Não corra. A lição É sobre ordem e calma.
+      Ao ordenar os números/objetos, faça movimentos deliberados.
+    nota_graca: "Se a ordem for quebrada, lembre-se: o caos precede a criação. Noé tem paciência infinita."
+    conforto_emocional: |
+      A rotina traz segurança. Saber o que vem "depois" acalma o coração da criança.
+    audio_script: |
+      Olá, Portador. Respire o ar antigo da biblioteca de Noé.
+      Hoje vamos colocar o mundo em ordem, uma peça de cada vez.
+    preparacao:
+      materiais:
+        - {item: 5 Cartões Numerados (1-5), qtd: 5, alt: papel com números desenhados, essencial: true}
+        - {item: 5 Objetos pequenos (pedras ou sementes), qtd: 5, alt: botões, essencial: true}
+        - {item: Card Noé, qtd: 1, alt: imagem da coruja, essencial: true}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-003
+      gancho: Íris nos mostrou a beleza da Estrela de 5 pontas. Hoje, Noé vai nos ensinar a colocar esses 5 pontos em fila.
+    proximo:
+      licao_id: MV-S-005
+      gancho: Agora que tudo está em ordem, vamos descobrir o que existe quando não há... nada. O segredo do Zero.
+
+  ritual_abertura:
+    instrucao_ambiente: Pouca luz, silêncio profundo, como numa biblioteca antiga.
+    local: arvore_silencio
+    clima: crepusculo
+    virtude: sabedoria
+    artefato: Um relógio de areia (ou os 5 cartões)
+    transicao_reino: |
+      Respire fundo e solte o ar devagar, como o vento nas folhas velhas.
+      Estamos entrando na Árvore do Silêncio.
+    fala_portador:
+      tom: solene
+      script: |
+        Shhh... Você ouve o bater de asas pesadas?
+        Alguém nos observa lá de cima, com olhos de lua. É Noé.
+    card_guardiao: 'CARD: NOE'
+    abertura_sensorial: |
+      O cheiro aqui é de papel antigo e madeira nobre.
+      Uma coruja grande pousa suavemente num galho grosso.
+      Noé ajusta seus óculos e diz: "Hoo... Tudo tem seu lugar."
+
+  jornada:
+    narrativa_principal:
+      - titulo: A Chegada de Noé
+        local: arvore_silencio
+        fala_guardiao:
+          tom: sabio
+          script: |
+            "Saudações, pequenos viajantes. O tempo não para, mas podemos organizá-lo."
+            [Noé mostra 5 pergaminhos enrolados]
+            "Para fazer uma história, precisamos de começo, meio e fim. Ordem."
+        instrucao_portador: |
+          Espalhe os 5 cartões numerados no chão, FORA de ordem.
+          "Olha, Noé deixou os números misturados. Vamos ajudar?"
+      - titulo: O Primeiro Passo
+        local: arvore_silencio
+        fala_guardiao:
+          tom: paciente
+          script: |
+            "Quem vem primeiro? Quem abre a porta do dia?"
+            [Noé aponta para o horizonte]
+            "O número Um é o líder da fila."
+        instrucao_portador: |
+          Peça para a criança encontrar o cartão '1' e colocá-lo na esquerda.
+          Coloque uma pedra/semente sobre ele. "Um."
+      - titulo: A Fila Anda
+        local: arvore_silencio
+        fala_guardiao:
+          tom: encorajador
+          script: |
+            "Muito bem. E quem vem logo atrás, segurando a mão do Um?"
+            "E depois? A fila precisa ser perfeita para atravessar a ponte do tempo."
+        instrucao_portador: |
+          Encontre o 2, depois o 3, 4 e 5.
+          A cada número, coloque a quantidade correspondente de pedras em cima.
+
+    concreto:
+      desc: Ordenação linear de cartões 1 a 5 e correspondência de quantidade
+      card_objeto: 'CARD: CARTÕES NUMERADOS'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Misture os cartões. Diga "O Caos!".
+          fala_sugerida: "Oh não! Os dias de Noé estão bagunçados!"
+        - passo: 2
+          acao: 'Pergunte: "Qual é o primeiro?" (Ajude se precisar)'
+          fala_sugerida: "Isso. O Um começa tudo."
+        - passo: 3
+          acao: Continue até o 5. Alinhe-os perfeitamente.
+          fala_sugerida: "Um, Dois, Três, Quatro, Cinco. Que paz ver tudo em ordem."
+        - passo: 4
+          acao: (Desafio) Tire um número da fila e feche o espaço. "Quem sumiu?"
+          fala_sugerida: "Olha! A fila quebrou! Quem está faltando?"
+      norte_absoluto: A criança deve perceber que a ordem é fixa. O 3 sempre vem depois do 2.
+      adaptacao_bernardo: |
+        💡 Se a criança não reconhece os grafismos, use apenas quantidades (1 pedra, 2 pedras...) e ordene as pilhas da menor para a maior.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Ordene objetos reais.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Reconhecimento da sequência numérica visual 1-5
+      nota: O foco é a posição relativa (quem vem antes, quem vem depois).
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Ordenando a Vida
+      sugestoes:
+        - titulo: O Dia da Criança
+          acao: Desenhe 3 momentos do dia (Acordar, Comer, Dormir) e peça para ela colocar em ordem.
+        - titulo: A Fila dos Brinquedos
+          acao: Faça uma fila com 5 bonecos. Quem é o primeiro? Quem é o último?
+      adaptacao_bernardo: |
+        💡 Use fotos reais da rotina da criança (ex: foto do banho, foto da comida) para ordenar.
+
+  narracao:
+    instrucao_portador: |
+      Recolha os cartões devagar.
+      "A ordem volta para o envelope, mas fica na cabeça."
+    pergunta_principal: O que nós ajudamos Noé a fazer hoje?
+    perguntas_coracao:
+      - Qual número vem depois do 2?
+      - Você gosta mais de quando as coisas estão bagunçadas ou arrumadas?
+    nota_cm: A narração fixa a lógica sequencial.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: satisfeito
+      script: |
+        "Hoo... Agora o Reino pode girar em paz. Tudo está em seu lugar."
+        "Você tem o dom da Ordem, Viajante."
+    fio_ouro: "O 5 foi o último hoje. Mas... e se tirarmos tudo? O que sobra?"
+    transicao_volta:
+      instrucao: Apague a luz. Silêncio absoluto por 5 segundos.
+      fala: Um, dois, três, quatro, cinco... Voltamos.
+
+  para_familia:
+    titulo: A Beleza da Ordem
+    porque_importa: |
+      A habilidade de ordenar (ordinalidade) é diferente de contar quantidade (cardinalidade).
+      Saber que "3 vem depois de 2" é a base da linha numérica mental.
+      Além disso, a ordem traz previsibilidade e segurança emocional para a criança.
+    metodo_cpa:
+      concreto: Ordenar cartões e pedras fisicamente.
+      pictorico: Vetado (apenas na extensão com desenhos da rotina).
+      abstrato: A sequência numérica visual.
+      nota: 'CM: Habits of Order.'
+    principio_cm:
+      numero: 7
+      citacao: "Education is a discipline."
+      aplicacao: O hábito da ordem (física e mental) é formado através de práticas consistentes e gentis.
+    tgtb_conexao: |
+      Corresponde à lição de Ordenação 1-5.
+      Noé traz a dimensão do Tempo e da Sabedoria para um conceito puramente lógico.
+    espiral:
+      conceito: Sequência Numérica
+      volta_atual: 'Sementes — 1 a 5'
+      proxima_volta: 'Raízes — Linha numérica até 100, antecessor/sucessor'
+    reflexao_espiritual: |
+      Deus é um Deus de ordem, não de confusão.
+      A criação seguiu uma sequência (Dia 1, Dia 2...).
+      Ordenar é imitar o Criador.
+    nota_graca: |
+      Se a criança trocar a ordem, não corrija com "Não!".
+      Pergunte: "O 4 vem antes do 3? Vamos perguntar para o Noé?" (E consulte a fila correta).
+
+  diario_portador:
+    nota: Observe se a criança percebe o erro visualmente quando a ordem é alterada.
+    perguntas:
+      - Ela consegue continuar a contagem se eu parar no 3?
+      - Ela entendeu o conceito de "primeiro" e "último"?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

@@ -1,0 +1,221 @@
+# PREPARAÇÃO: Reunião CMC Onboarding com Janice e Mariana
+# Data: 19/01/2026 às 15h30 | Duração: 1 hora | Online
+# Participantes: Raul e Marina
+# Criado: 18/01/2026
+
+meta:
+  tipo: "reuniao_estrategica"
+  objetivo: "Construir CONFIANÇA e RELACIONAMENTO (não vender)"
+  proxima_fase: "Agendar 1:1 para apresentar MatViva formalmente"
+  nao_fazer_nesta_reuniao: "Forçar a vender matemática"
+
+# CONTEXTO
+contexto:
+  quem_sao_elas:
+    janice: "Co-fundadora CMC"
+    mariana: "Co-fundadora CMC"
+    primeiro_contato: "Sim, pessoalmente"
+    
+  nossa_credibilidade:
+    marina:
+      - "Pedagoga de formação"
+      - "Trabalha com CMC desde novembro de 2023"
+      - "Mãe educadora de Raulzito (5) e Melina (2)"
+    raul:
+      - "Professor de matemática há mais de 5 anos (reforço)"
+      - "Ensino estruturado para homeschoolers desde 2025"
+      - "Criador do Matemática Viva"
+
+# ESTRATÉGIA EM 2 FASES
+estrategia:
+  fase_1_esta_reuniao:
+    foco: "Ser parte da tribo, não vendedor"
+    tom: "Conversa, escuta, aprender junto"
+    proporcao: "70% escuta, 30% fala"
+    resultado_esperado: "Elas confiarem em vocês como família séria e alinhada"
+  
+  fase_2_futura:
+    quando: "2-3 semanas após esta reunião"
+    foco: "Apresentar MatViva formalmente"
+    tom: "Proposta de parceria, não venda"
+    objetivo: "Indicação para famílias CMC + credibilidade"
+
+# ELEVATOR PITCH (SE PERGUNTAREM)
+# Ranking do Conselho de Especialistas
+elevator_pitch:
+  nota: "Só usar se ELAS perguntarem. Não oferecer."
+  
+  frase_principal:
+    texto: "É matemática para famílias Charlotte Mason — lições curtas, narrativa viva, sem medo de ensinar errado."
+    fonte: "Seth Godin"
+    
+  frase_alternativa:
+    texto: "É matemática como Charlotte Mason faria — através de ideias vivas e histórias, não de planilhas."
+    fonte: "Charlotte Mason"
+    
+  frase_marina:
+    texto: "Meu marido criou um reino onde matemática acontece naturalmente — a criança aprende sem perceber que está fazendo conta."
+    fonte: "C.S. Lewis"
+    
+  se_perguntarem_preco:
+    resposta: "Ainda estamos na fase pioneira, estruturando tudo. Posso te contar mais quando estiver pronto!"
+    
+  se_perguntarem_site:
+    resposta: "Temos um protótipo em matematicavivav4.vercel.app, mas ainda está em construção."
+
+# O QUE FAZER NA REUNIÃO
+fazer:
+  escuta_ativa:
+    - "Deixar ELAS falarem mais (70% delas, 30% vocês)"
+    - "Fazer perguntas abertas sobre a jornada delas"
+    - "Demonstrar interesse genuíno no CMC"
+    - "Anotar insights importantes"
+    
+  mostrar_alinhamento:
+    - "Mencionar fundamento teológico (Cristo como centro)"
+    - "Falar da formação pedagógica de Marina"
+    - "Mostrar que estão APRENDENDO, não apenas consumindo"
+    - "Citar que Raulzito é a 'cobaia de luxo' do currículo"
+    
+  semear_interesse:
+    - "Citar brevemente que Raul é professor de matemática"
+    - "Mencionar que estão estruturando algo (sem entrar em detalhes)"
+    - "Deixar ELAS perguntarem mais, não oferecer"
+    - "Se perguntarem, usar elevator pitch acima"
+
+# O QUE NÃO FAZER
+nao_fazer:
+  - "❌ Apresentar slides ou materiais do MatViva"
+  - "❌ Falar mais de 2 minutos sobre o curso"
+  - "❌ Pedir parceria ou indicação nesta reunião"
+  - "❌ Parecer que veio 'vender algo'"
+  - "❌ Dominar a conversa"
+  - "❌ Forçar a vender matemática"
+
+# PERGUNTAS PARA FAZER A ELAS
+perguntas_para_janice_mariana:
+  abertura:
+    - "Como vocês começaram com Charlotte Mason?"
+    - "Qual foi o maior desafio no início da jornada de vocês?"
+    
+  aprofundamento:
+    - "O que vocês gostariam de ter sabido antes de começar o CMC?"
+    - "Qual é a maior necessidade que vocês percebem nas famílias?"
+    
+  estrategicas:
+    - "O que vocês acham que ainda falta no ecossistema CMC?"
+    - "Como vocês veem o CMC daqui a 5 anos?"
+    
+  sobre_parcerias:
+    - "Vocês já trabalharam com outros criadores de conteúdo?"
+    - "O que vocês valorizam em parcerias?"
+
+# PONTOS PARA MARINA COMPARTILHAR
+pontos_marina:
+  historia_pessoal:
+    - "Sou pedagoga de formação"
+    - "Trabalho com CMC desde novembro de 2023"
+    - "Meu marido é professor de matemática há mais de 5 anos"
+    - "Temos dois filhos: Raulzito (5) e Melina (2)"
+    
+  motivacao:
+    - "Queremos educar nossos filhos com excelência"
+    - "Acreditamos que Charlotte Mason + fé cristã = combinação perfeita"
+    - "Estamos construindo algo para ajudar outras famílias"
+    
+  alinhamento_teologico:
+    - "Cristo como fundamento de tudo"
+    - "Educação como discipulado"
+    - "Filhos como herança do Senhor"
+
+# PONTOS PARA RAUL (se participar ativamente)
+pontos_raul:
+  historia:
+    - "Professor de matemática há mais de 5 anos"
+    - "Sempre amei ensinar, especialmente de forma diferente"
+    - "Em 2025 comecei a estruturar um currículo próprio"
+    
+  visao:
+    - "Matemática não precisa ser traumática"
+    - "Crianças aprendem melhor através de histórias"
+    - "Quero que meu filho ame matemática"
+
+# FRASES PARA SEMEAR INTERESSE (se der brecha)
+frases_semente:
+  suaves:
+    - "Meu marido está desenvolvendo algo bem interessante para matemática..."
+    - "A gente está estruturando um material que complementa o CMC..."
+    
+  com_gancho:
+    - "Quando estiver pronto, adoraria mostrar para vocês..."
+    - "Seria incrível ter o feedback de vocês num futuro próximo..."
+    
+  se_interessarem:
+    - "Posso te mandar o link depois para dar uma olhada?"
+    - "Podemos marcar uma conversa só sobre isso quando vocês tiverem tempo"
+
+# FLUXO DA REUNIÃO (sugestão)
+fluxo_reuniao:
+  00_05_min:
+    fase: "Aquecimento"
+    acao: "Cumprimentos, agradecer pelo tempo"
+    
+  05_20_min:
+    fase: "Conhecer elas"
+    acao: "Perguntas sobre a jornada delas, escutar muito"
+    
+  20_35_min:
+    fase: "Nossa história"
+    acao: "Marina conta nossa jornada (pedagoga, CMC, filhos)"
+    
+  35_50_min:
+    fase: "Visão futura"
+    acao: "Perguntas estratégicas sobre CMC, parcerias"
+    
+  50_60_min:
+    fase: "Fechamento"
+    acao: "Agradecer, expressar desejo de continuar conectados"
+
+# PRÓXIMOS PASSOS APÓS REUNIÃO
+proximos_passos:
+  imediatamente:
+    - "Agradecer pela conversa (mensagem simples no WhatsApp)"
+    - "Mencionar que foi inspirador ouvir a história delas"
+    - "NÃO pedir nada"
+    
+  em_1_semana:
+    - "Enviar algo de valor (artigo, insight, versículo)"
+    - "Continuar interagindo naturalmente no grupo CMC"
+    - "NÃO pedir nada ainda"
+    
+  em_2_3_semanas:
+    - "Pedir reunião 1:1 para apresentar MatViva"
+    - "Frase: 'Gostaria de mostrar o que estamos construindo e ouvir o feedback de vocês'"
+    - "Preparar apresentação visual até lá"
+
+# MENTALIDADE PARA A REUNIÃO
+mentalidade:
+  marina: "Sou uma colega aprendendo junto, não uma vendedora"
+  raul: "Sou o suporte técnico, Marina lidera o relacionamento"
+  juntos: "Somos uma família que quer servir outras famílias"
+  mantra: "Primeiro pertencer à tribo, depois oferecer contribuição"
+
+# CHECKLIST PRÉ-REUNIÃO (19/01 antes das 15h30)
+checklist:
+  vespera:
+    - "☐ Revisar este documento juntos"
+    - "☐ Orar pela reunião"
+    - "☐ Decidir dinâmica: Marina lidera, Raul apoia"
+    
+  dia_da_reuniao:
+    - "☐ Preparar ambiente tranquilo"
+    - "☐ Crianças ocupadas (Lourdes? Tela?)"
+    - "☐ Testar câmera/áudio"
+    - "☐ Ter água e café por perto"
+    - "☐ Celulares no silencioso"
+
+# RECURSOS
+recursos:
+  site_matviva: "https://matematicavivav4.vercel.app/"
+  github: "https://github.com/raulfbr/Project001-MatematicaVivaV4"
+  nota: "Só mostrar se ELAS pedirem"

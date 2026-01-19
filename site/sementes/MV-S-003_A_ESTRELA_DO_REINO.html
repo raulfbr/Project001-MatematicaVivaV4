@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Estrela do Reino | Matemática Viva</title>
+    <!-- CSS ISOLADO DE SEMENTES -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <style>
+        /* INLINE STYLES FOR CRITICAL RENDERING PRIORITY */
+        body { background-color: #F8F9FA; color: #374151; }
+        .lesson-container { max-width: 768px; margin: 0 auto; padding-bottom: 4rem; }
+        
+        /* CARD COMPONENT */
+        .scene-card {
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            position: relative;
+            overflow: hidden;
+        }
+        .scene-card::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+            background: linear-gradient(90deg, #FCD34D 0%, #F59E0B 100%);
+            opacity: 0.8;
+        }
+
+        /* HEADER & TYPOGRAPHY */
+        .scene-header {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.35rem;
+            color: #111827;
+            margin-bottom: 2rem;
+            display: flex; align-items: center; gap: 0.75rem; font-weight: 600;
+        }
+        .scene-icon { font-size: 1.5rem; }
+        h2 { font-family:'Outfit'; color:#6B7280; font-size:1rem; text-transform:uppercase; letter-spacing:2px; margin: 3rem 0 1rem 0; text-align:center; }
+        strong { font-weight: 600; color: #1F2937; }
+
+        /* COMPONENTS */
+        .script-persona-block {
+            background: #F9FAFB;
+            border: 1px solid #F3F4F6;
+            border-left: 4px solid #10B981;
+            border-radius: 8px;
+            margin-top: 1.5rem; padding: 1.5rem;
+        }
+        .script-avatar { border: 2px solid #FFFFFF; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        
+        .instruction-box {
+            background: #FEFCE8; border: 1px solid #FEF9C3; color: #854D0E;
+            border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;
+            display: flex; gap: 1rem; align-items: flex-start;
+        }
+        .instruction-icon { font-size: 1.5rem; }
+        
+        .portador-block { border-left: 4px solid #10B981 !important; background: #FFFFFF !important; }
+        .script-name { text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
+
+        /* MOBILE OPTIMIZATION */
+        @media (max-width: 768px) {
+            .lesson-container { padding: 0; }
+            .scene-card { border-radius: 0; margin: 0 0 0.5rem 0; box-shadow: none; border-bottom: 1px solid #E5E7EB; }
+            .scene-card::before { height: 3px; }
+            h2 { font-size: 1.4rem; padding: 0 1.5rem; margin-top: 2rem; }
+        }
+    </style>
+</head>
+<body class="clima-1">
+    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard">🏡</a>
+
+    <div class="lesson-container">
+        <!-- HERO SECTION -->
+        <header class="lesson-hero">
+            <div class="lesson-meta-tag">Lição 003 • A Estrela do Reino • ⏱️ 15-20 min</div>
+            <h1 class="hero-title">A Estrela do Reino</h1>
+            <p class="hero-quote">"A Pequena Pardal ensina a organizar as pedras do Bernardo em uma nova forma: a estrela de cinco pontas."</p>
+            <!-- ASSETS ISOLADOS DE SEMENTES -->
+            <img src="../assets/sementes/guardioes/iris-passarinho.png" 
+                 onError="this.src='../assets/sementes/guardioes/placeholder.png'"
+                 alt="iris" class="hero-guardian">
+        </header>
+
+        <article class="lesson-body">
+            
+
+
+
+
+
+
+<div class="lesson-header-nav" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #E5E7EB;">
+    <div style="width: 33%;">
+        
+        <a href="MV-S-002_AS_PEDRAS_DA_FORTALEZA.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span>←</span> <span>As Pedras da Fortaleza</span>
+        </a>
+        
+    </div>
+    
+    <div style="width: 33%; text-align: center;">
+        <img src="../assets/icon-sementes.png" alt="Sementes" style="height: 32px; opacity: 0.8;" onerror="this.style.display='none'">
+    </div>
+    
+    <div style="width: 33%; text-align: right;">
+        
+        <a href="MV-S-004_A_ORDEM_DO_DIA.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem;">
+            <span>A Ordem do Dia</span> <span>→</span>
+        </a>
+        
+    </div>
+</div>
+
+
+
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">👨‍👩‍👧</span>
+        Preparação do Portador
+    </div>
+    
+    
+    
+    
+    <div style="text-align: center; margin-bottom: 1.5rem; color: #6B7280; font-size: 0.9rem; font-style: italic;">
+        [Foco: Números 4 a 5 e a Geometria da Flor]
+    </div>
+    
+
+    
+<div class="instruction-box">
+    <span class="instruction-icon">💡</span>
+    <div>
+        
+        
+        <strong>Dica do Coração:</strong> Hoje usaremos as mesmas pedras da lição anterior, mas agora criaremos beleza com elas.<br>Íris transforma o "amontoado" em "flor/estrela". É o início da Geometria.<br>
+    
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    <div class="materials-box" style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:8px; padding:1.25rem; margin:1.5rem 0;">
+        
+        <p><strong>🎯 Essencial:</strong></p>
+        <ul style="margin-top:0.5rem; margin-left:1rem;">
+            
+            <li>5 pedrinhas ou botões (as mesmas da Lição 002) (5)</li>
+            
+            <li>Card Íris (Pardal) (1)</li>
+            
+        </ul>
+        
+        
+        
+        <p style="margin-top:1rem;"><strong>📦 Se tiver:</strong></p>
+        <ul style="margin-top:0.5rem; margin-left:1rem; color:#6B7280;">
+            
+            <li>Uma flor real (opcional (1)</li>
+            
+        </ul>
+        
+        
+        
+        
+    </div>
+    
+
+    
+    
+    <p><strong>🌟 Seu filho vai descobrir:</strong> Que ele pode criar desenhos com objetos soltos.<br>Que o número 5 tem a forma de uma estrela (geometria).<br></p>
+    
+
+    <p><strong>🛡️ Protocolo de Impecabilidade:</strong> Ao mover as pedras, faça-o com reverência, como se fossem joias.<br>O arranjo deve ser simétrico e agradável aos olhos.<br></p>
+    <p><strong>🕊️ Nota de Graça:</strong> Não exija precisão milimétrica. O que vale é a intenção da forma.<br>Se ficar torto, é uma "flor dançando ao vento".<br></p>
+
+</div>
+
+
+
+
+
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">🎬</span>
+        Ritual de Abertura
+    </div>
+    
+    
+    
+<div class="instruction-box">
+    <span class="instruction-icon">🕯️</span>
+    <div>
+        
+        
+        Traga a natureza para dentro. Uma flor, uma folha, luz do sol.
+    
+    </div>
+</div>
+
+
+    <p><strong>🌫️ Transição:</strong> Feche os olhos e sinta o vento morno no rosto.<br>Ouça... um bater de asas rapidinho: Prrr-prrr!<br></p>
+
+    
+    
+    <div class="sensory-box" style="background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); border-radius:8px; padding:1.25rem; margin:1.5rem 0; font-style:italic; color:#92400E; border-left:4px solid #F59E0B;">
+        O ar tem cheiro de mel e orvalho. O capim faz cócegas suaves nos pés.<br>Íris dá pulinhos alegres na terra fofa. Ela inclina a cabeça e pisca para você.<br>"Viu o que eu vi? Tem uma estrela dormindo na grama!"<br>
+    </div>
+    
+
+    
+<div class="script-persona-block portador-block">
+    <span class="portador-icon">🔥</span>
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">Portador da Tocha</span>
+            
+                
+                
+                    <span class="script-tone tone-tooltip" data-tooltip="Suave e leve, como se tocasse uma asa de borboleta.">
+                        <span style="font-style: normal;">🦋</span> (delicado)
+                    </span>
+                
+            
+        </div>
+        <div class="script-text">
+            Shhh... Alguém muito leve pousou no seu ombro.<br>É Íris, a Pardal. Ela diz que o jardim acordou para nos receber.<br>
+        </div>
+    </div>
+</div>
+
+
+    <div style="text-align:center; margin-top:2rem;">
+        <p style="font-size:0.9rem; color:#9CA3AF; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:1px;">Visualizar</p>
+        <img src="../assets/cards/guardioes/iris-passarinho.png" 
+             style="width:120px; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.1); transform: rotate(-2deg); border: 4px solid white;"
+             onError="this.src='../assets/cards/guardioes/placeholder.png'"
+             alt="Card iris">
+    </div>
+
+</div>
+
+
+
+
+<h2>🗺️ A Jornada</h2>
+
+
+    
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">✨</span>
+        O Pouso na Fortaleza
+    </div>
+    
+    
+        
+        
+<div class="local-card">
+    <p><strong>📍 Local:</strong> Jardim Secreto</p>
+    <p class="local-label">Visualizar</p>
+    <img src="../assets/cards/locais/local-jardim-secreto.png" alt="Jardim Secreto">
+</div>
+
+        
+
+        
+        
+
+        
+            
+<div class="instruction-box">
+    <span class="instruction-icon">👉</span>
+    <div>
+        
+        
+                Espalhe as 5 pedras no chão, desmanchando a fileira reta.<br>
+            
+    </div>
+</div>
+
+        
+
+        
+<div class="script-persona-block ">
+    <img src="../assets/cards/guardioes/iris-passarinho.png" class="script-avatar" alt="iris">
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">iris</span>
+            
+                
+                
+                    <span class="script-tone tone-tooltip" data-tooltip="Com entusiasmo, sorrindo, e brilho nos olhos! Contagie a criança.">
+                        <span style="font-style: normal;">✨</span> (animado)
+                    </span>
+                
+            
+        </div>
+        <div class="script-text">
+            "Bernardo fez um muro forte com as pedras. Muito sério!"<br>[Íris pousa em uma pedra e inclina a cabeça]<br>"Mas e se a gente fizesse o chão sorrir? Vamos brincar com as pedras?"<br>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
+
+    
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">✨</span>
+        As Folhas de Pedra
+    </div>
+    
+    
+        
+
+        
+        
+
+        
+            
+<div class="instruction-box">
+    <span class="instruction-icon">👉</span>
+    <div>
+        
+        
+                Ajude a criança a arranjar 4 pedras em círculo (ou quadrado), deixando o centro vazio.<br>
+            
+    </div>
+</div>
+
+        
+
+        
+<div class="script-persona-block ">
+    <img src="../assets/cards/guardioes/iris-passarinho.png" class="script-avatar" alt="iris">
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">iris</span>
+            
+                
+                
+                    <span class="script-tone tone-tooltip" data-tooltip="Incline a cabeça, olhe com atenção. Como um detetive descobrindo uma pista.">
+                        <span style="font-style: normal;">🧐</span> (curioso)
+                    </span>
+                
+            
+        </div>
+        <div class="script-text">
+            "Vamos fazer uma flor que nunca murcha!"<br>"Coloque uma pedra aqui... outra ali... como folhas abraçando o centro."<br>"Uma, duas, três, quatro folhas de pedra!"<br>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
+
+    
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">✨</span>
+        O Coração da Estrela
+    </div>
+    
+    
+        
+
+        
+        
+
+        
+            
+<div class="instruction-box">
+    <span class="instruction-icon">👉</span>
+    <div>
+        
+        
+                Coloque a 5ª pedra no centro. Trace com o dedo o formato de flor/estrela criado.<br>
+            
+    </div>
+</div>
+
+        
+
+        
+<div class="script-persona-block ">
+    <img src="../assets/cards/guardioes/iris-passarinho.png" class="script-avatar" alt="iris">
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">iris</span>
+            
+                
+                
+                    <span class="script-tone tone-tooltip" data-tooltip="Abra bem os olhos, suspire 'Oooh!'. O mundo é mágico.">
+                        <span style="font-style: normal;">🤩</span> (maravilhado)
+                    </span>
+                
+            
+        </div>
+        <div class="script-text">
+            "Falta o coração! A pedra mais bonita vai no meio."<br>[Íris bica o ar sobre o centro]<br>"Olha! Não é mais um monte de pedras. É uma Estrela de Chão!"<br>"Uma, duas, três, quatro, CINCO pedras juntas!"<br>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
+
+
+
+
+<h2>🧱 O Concreto</h2>
+
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">🧱</span>
+        Atividade Concreta
+    </div>
+    
+    
+    
+
+    
+<div class="instruction-box">
+    <span class="instruction-icon">📋</span>
+    <div>
+        
+        
+        <strong>Passo a Passo:</strong>
+        <ol style="margin-top:0.5rem; margin-left:1rem;">
+            
+            <li>
+                Pegue 4 pedras e faça um círculo/quadrado no chão.
+                
+                <br><em>Fala sugerida: "Estas são as pétalas de pedra. 1, 2, 3, 4."</em>
+                
+            </li>
+            
+            <li>
+                Mostre o espaço vazio no meio.
+                
+                <br><em>Fala sugerida: "O coração da flor está vazio. Quem mora aqui?"</em>
+                
+            </li>
+            
+            <li>
+                Coloque a 5ª pedra no centro com solenidade.
+                
+                <br><em>Fala sugerida: "A quinta pedra! Agora a flor acordou. Cinco pedras criaram uma forma."</em>
+                
+            </li>
+            
+            <li>
+                Conte as pedras tocando em cada uma.
+                
+                <br><em>Fala sugerida: "1, 2, 3, 4 em volta... e 5 no meio. É uma estrela de pedra!"</em>
+                
+            </li>
+            
+        </ol>
+    
+    </div>
+</div>
+
+
+    
+
+</div>
+
+
+
+
+
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">🗣️</span>
+        Narramos Juntos
+    </div>
+    
+    
+    
+<div class="instruction-box">
+    <span class="instruction-icon">🤫</span>
+    <div>
+        
+        
+        Guarde os materiais. Olhe nos olhos brilhantes do seu filho.<br>Dê tempo. O silêncio é onde a mente tece o conhecimento.<br>
+    
+    </div>
+</div>
+
+
+    
+<div class="script-persona-block ">
+    <img src="../assets/cards/guardioes/iris-passarinho.png" class="script-avatar" alt="iris">
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">iris</span>
+            
+        </div>
+        <div class="script-text">
+            "O que você descobriu hoje na Clareira? O que contaria para o Melquior?"
+        </div>
+    </div>
+</div>
+
+
+    <p><strong>Perguntas do Coração:</strong></p>
+    <ul style="margin-left:1.5rem; margin-top:0.5rem;">
+        <li>O que a Íris descobriu escondido nas pedras?</li>
+        
+        <li>Quantas pétalas a flor roxa tinha para nos mostrar?</li>
+        
+        <li>O que mais no seu corpo tem o número 5, igual à flor?</li>
+        
+    </ul>
+
+</div>
+
+
+
+
+
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">🏁</span>
+        Ritual de Fechamento
+    </div>
+    
+    
+    
+<div class="script-persona-block ">
+    <img src="../assets/cards/guardioes/iris-passarinho.png" class="script-avatar" alt="iris">
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">iris</span>
+            
+                
+                
+                    <span class="script-tone tone-tooltip" data-tooltip="Fale devagar, saboreando a beleza das palavras. Como quem recita um verso.">
+                        <span style="font-style: normal;">📜</span> (poetico)
+                    </span>
+                
+            
+        </div>
+        <div class="script-text">
+            "O jardim está mais colorido porque você esteve aqui, Viajante."<br>"Você agora carrega uma Estrela do Cinco na sua mão."<br>"Vou voar para o galho mais alto cantar nossa descoberta. Até breve!"<br>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+<div class="script-persona-block portador-block">
+    <span class="portador-icon">🔥</span>
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">Portador da Tocha</span>
+            
+        </div>
+        <div class="script-text">
+            A beleza permanece em nós. O cinco mora em cada mão que acena um "até logo".
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">🔗</span>
+        Conexão da Jornada
+    </div>
+    
+    
+    
+    <p><strong>⬅️ Última Aventura:</strong> Bernardo organizou as pedras da fortaleza. Hoje, Íris vai trazer cor e vida para o jardim em volta dela.</p>
+    
+    
+        <div onclick="window.location.href='MV-S-004_A_ORDEM_DO_DIA.html'" style="cursor: pointer;">
+            <p><strong>➡️ Próxima Aventura:</strong> Noé observou tudo lá de cima. Amanhã ele desce para nos ensinar a nobreza da Ordem do Dia.</p>
+            
+            <div style="margin-top:0.5rem; text-align:right;">
+                <span style="font-size:0.85rem; color:#4B5563; background:#F3F4F6; padding:0.25rem 0.75rem; border-radius:1rem;">
+                    Ir para A Ordem do Dia →
+                </span>
+            </div>
+            
+        </div>
+    
+
+</div>
+
+
+
+
+
+
+
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">👨‍👩‍👧‍👦</span>
+        Para a Família
+    </div>
+    
+    
+    <p><strong>📚 Por que isso importa:</strong></p>
+    <div style="padding:0.5rem 0;">
+        Hoje expandimos o olhar da criança: saímos da contagem linear (1, 2, 3) para a contemplação da Forma (4 e 5).<br>Charlotte Mason nos convida a apresentar a Geometria não como tarefas secas, mas como a linguagem da beleza na criação.<br>Ao associar o 5 a uma flor ou estrela, criamos uma "Ideia Viva" — uma âncora emocional que torna o número inesquecível.<br>
+    </div>
+    
+    
+    
+    <div class="bruner-box">
+        <strong>🧠 Método CPA (Jerome Bruner):</strong><br>
+        <ul style="margin:0.5rem 0 0 1.5rem;">
+            <li><strong>Concreto:</strong> Pedras, folhas reais, os próprios dedos.</li>
+            <li><strong>Pictórico:</strong> Vetado (a observação da flor real é a ponte para o real).</li>
+            <li><strong>Abstrato:</strong> Traçar o 4 e 5 na terra (Enativo).</li>
+        </ul>
+        
+        <span style="color:#6B7280; font-size:0.9rem;">CM: Coisas antes de Signos.</span>
+        
+    </div>
+    
+    
+    
+    
+    <div class="cm-box">
+        <strong>🏛️ Princípio Charlotte Mason:</strong><br>
+        <em>"We do not accept the grade system."</em><br>
+        <span style="color:#6B7280;">Se seu filho já sabe contar até 5, hoje ele aprendeu a *admirar* o 5. A profundidade vale mais que a velocidade.</span>
+    </div>
+    
+    
+    
+    
+    <div class="tgtb-box">
+        <strong>📘 Conexão TGTB:</strong><br>
+        <span style="color:#92400E;">Esta lição harmoniza com 000-L3 (Numbers 4 and 5) do TGTB Kindergarten.
+Enquanto o original foca na prática de traçado, nós elevamos a experiência para a Geometria da Natureza.
+</span>
+    </div>
+    
+    
+    
+    
+    <div class="bruner-box">
+        <strong>🌀 Currículo em Espiral (Bruner):</strong><br>
+        <ul style="margin:0.5rem 0 0 1.5rem;">
+            <li><strong>Agora:</strong> Formas e Contagem — Sementes — Reconhecimento Intuitivo do 4 e 5</li>
+            <li><strong>Depois:</strong> Raízes — Estudo formal de Pentágonos, Quadrados e Ângulos</li>
+        </ul>
+        
+        <span style="color:#6B7280; font-size:0.9rem;">Uma semente plantada hoje será uma árvore de conhecimento amanhã.</span>
+        
+    </div>
+    
+    
+    
+    
+    <div class="espiritual-box">
+        <strong>✨ Reflexão Espiritual:</strong><br>
+        <span style="color:#166534;">O número 5 está impresso em nossa anatomia (dedos) e na botânica (flores dicotiledôneas).
+É uma assinatura divina, lembrando-nos que fomos desenhados pelo mesmo Artista que pintou as estrelas.
+</span>
+    </div>
+    
+    
+    
+    
+    <div class="graca-box">
+        <strong>🕊️ Nota de Graça:</strong><br>
+        Se ele não desenhar a estrela perfeita, lembre-se: Íris voa livre.
+O desenho é apenas um rastro do voo. O importante é o brilho nos olhos ao descobrir.
+
+    </div>
+    
+
+</div>
+
+
+
+
+        </article>
+
+        <!-- NAVIGATION FOOTER -->
+        <nav class="lesson-nav">
+            
+            
+
+            
+            <a href="MV-S-002_AS_PEDRAS_DA_FORTALEZA.html" class="nav-btn prev">
+                <span class="nav-label">← Anterior</span>
+                <span class="nav-title">As Pedras da Fortaleza</span>
+            </a>
+            
+            
+            
+            <a href="MV-S-004_A_ORDEM_DO_DIA.html" class="nav-btn next">
+                <span class="nav-label">Próxima →</span>
+                <span class="nav-title">A Ordem do Dia</span>
+            </a>
+            
+        </nav>
+
+        <footer style="text-align: center; margin-top: 4rem; color: #A8A29E; font-size: 0.8rem;">
+            Matemática Viva • Forjado com Estilo e Propósito
+        </footer>
+    </div>
+</body>
+</html>

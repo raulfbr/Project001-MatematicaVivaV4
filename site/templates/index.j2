@@ -57,22 +57,8 @@
             <p class="subtitle">"A Qualidade Não é Negociável." — Painel de Controle Dinâmico.</p>
         </header>
 
-        <!-- ESTATÍSTICAS -->
-        <section class="stats">
-            <div class="stat-card">
-                <div class="stat-val">{{ stats.total_licoes }}</div>
-                <div class="stat-label">Lições Produzidas</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-val">100%</div>
-                <div class="stat-label">Conformidade North Star</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-val">{{ build_date }}</div>
-                <div class="stat-label">Último Build</div>
-            </div>
-        </section>
-
+        <!-- ESTATÍSTICAS REMOVIDAS POR DESIGN REVIEW (Foco na Narrativa) -->
+        
         <!-- SEÇÃO SEMENTES -->
         <section id="sementes" class="mb-16">
             <div class="section-header">
@@ -86,7 +72,7 @@
                     <article class="card {{ licao.guardiao | lower }}">
                         <div class="card-body">
                             <div class="card-meta">
-                                <span class="card-id">{{ licao.id }}</span>
+                                <span class="card-id">{{ licao.display_id }}</span>
                                 <img src="assets/sementes/guardioes/{{ licao.guardiao | lower }}-{{ licao.guardiao_animal }}.png" 
                                      class="guardian-icon-img" 
                                      alt="{{ licao.guardiao }}"
@@ -94,12 +80,10 @@
                             </div>
                             <h3 class="card-title">{{ licao.titulo }}</h3>
                             <p class="card-desc">“{{ licao.desc }}”</p>
-                            <!-- NOVO: Objetivo Pedagógico Discreto -->
-                            {% if licao.metadados.objetivo_pedagogico %}
+                            
                             <div class="card-objective" style="margin-top: 0.5rem; font-size: 0.8rem; color: #6B7280; border-top: 1px solid #F3F4F6; padding-top: 0.5rem; display: flex; align-items: center; gap: 0.25rem;">
-                                <span>🏷️</span> <em>{{ licao.metadados.objetivo_pedagogico }}</em>
+                                <span>🏷️</span> <em>{{ licao.objetivo_pedagogico | default(licao.metadados.objetivo_pedagogico, true) }}</em>
                             </div>
-                            {% endif %}
                         </div>
                         <div class="card-footer">
                             <a href="sementes/{{ licao.filename }}" class="btn-arr">Abrir Lição <span>→</span></a>

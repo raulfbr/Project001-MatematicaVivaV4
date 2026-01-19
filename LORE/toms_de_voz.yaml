@@ -57,10 +57,22 @@ tons:
     desc: "Infle o peito, sorria com satisfação. Mostre que é uma honra."
     icone: "🦁"
 
+  poetico:
+    desc: "Fale devagar, saboreando a beleza das palavras. Como quem recita um verso."
+    icone: "📜"
+
+  observador:
+    desc: "Aponte para o detalhe com delicadeza. Convide a olhar perto."
+    icone: "🔍"
+
 # Emoções Específicas
   gentil:
     desc: "Com doçura, validando o sentimento da criança."
     icone: "🌸"
+
+  delicado:
+    desc: "Suave e leve, como se tocasse uma asa de borboleta."
+    icone: "🦋"
     
   encorajador:
     desc: "Voz firme que diz 'Eu acredito em você'."

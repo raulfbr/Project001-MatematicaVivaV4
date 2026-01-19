@@ -27,7 +27,7 @@ Charlotte Mason sabia disso há mais de 100 anos.
 
 ### A Ciência das Relações
 
-Na Forja Viva, acreditamos que a educação é a **Ciência das Relações**.
+Na Matemática Viva, acreditamos que a educação é a **Ciência das Relações**.
 
 Não existe "matemática" isolada em uma caixa.
 A matemática está na música (ritmo e proporção).
@@ -52,6 +52,6 @@ Lewis Carroll escreveu "Alice" e tratados de lógica.
 Não diga *"ele puxou a mim, é ruim de conta"*.
 Diga: *"Ainda estamos descobrindo como os números contam a história de Deus."*
 
-Na Forja Viva, não formamos "crianças de exatas". Formamos **pessoas completas**, capazes de ver a beleza onde quer que ela esteja — seja num soneto, seja numa equação.
+Na Matemática Viva, não formamos "crianças de exatas". Formamos **pessoas completas**, capazes de ver a beleza onde quer que ela esteja — seja num soneto, seja numa equação.
 
 Venha derrubar esses muros conosco.

@@ -1,0 +1,176 @@
+_meta:
+  id: licao-l001-esquerda-direita
+  versao: '6.3'
+  fase: Raizes
+  status: piloto
+  refs:
+    lore: LORE/index.yaml
+    curriculo: curriculo/_SISTEMA/CURRICULOS_MESTRE/001_1ANO_RAIZES-1_CURRICULO_MESTRE.md
+  regras_ia:
+    guardioes: {fonte: LORE/guardioes.yaml, opcoes: [celeste]}
+
+licao:
+  metadados:
+    id: L001
+    titulo: Identificando Esquerda e Direita
+    fase: Raizes
+    ciclo: 1
+    trimestre: 1
+    estacao: 1
+    tipo: Geometria / Espaço
+    guardiao_lider: celeste
+    guardiao_secundario: n/a
+    guardioes_apresentados: [celeste]
+    tgtb_ref: 001-L1
+    tgtb_titulo_en: Identifying Right and Left
+    tgtb_titulo_pt: Identificando Esquerda e Direita
+    objetivo_pedagogico: Discriminar esquerda e direita no próprio corpo
+    tempo_licao: 15-20 min
+    tempo_preparo: ≤ 5 min
+    versao: '6.3'
+    status: piloto
+
+  navegacao: {}
+
+  para_portador:
+    ideia_viva:
+      frase: "O corpo é a primeira bússola do viajante."
+      conceito: Lateralidade e referencial corporal
+      intencao_cm: "A criança deve sentir a direção em seus próprios membros antes de abstrair no papel."
+    dica_coracao: |
+      Esquerda e Direita são conceitos difíceis. Tenha paciência.
+      A fita vermelha é um âncora visual e tátil.
+      Não se preocupe se houver confusão inicial. O corpo aprende no tempo dele.
+    filho_descobre: "Que ele carrega um mapa invisível consigo o tempo todo."
+    protocolo_impecabilidade: |
+      Evite dizer "a mão que você escreve" se não tiver certeza da dominância.
+      Use a fita como referência absoluta: "O lado da fita é a Direita".
+    nota_graca: "Se ele trocar as mãos, sorria. Celeste também navega por estrelas, não só por mapas."
+    conforto_emocional: |
+      Navegar exige confiança. Mostre que você também usa referências (aliança, relógio).
+    audio_script: |
+      Olá, Navegador. Hoje Celeste vai nos ensinar a usar nossa própria bússola.
+      Prepare a fita vermelha. Respire fundo. O Norte começa em você.
+    preparacao:
+      materiais:
+        - {item: Fita vermelha ou lã, qtd: 1, alt: Pulseira ou elástico, essencial: true}
+        - {item: Pedra ou objeto pequeno, qtd: 1, alt: Brinquedo favorito, essencial: false}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-120
+      gancho: "Nos ciclos anteriores, aprendemos a contar. Agora vamos aprender a nos localizar."
+    proximo:
+      licao_id: L002
+      gancho: "Agora que sabemos onde é a direita, Bernardo vai nos ensinar a medir distâncias."
+
+  ritual_abertura:
+    instrucao_ambiente: "Luz natural, espaço para girar o corpo."
+    local: "convés_estrela_polar"
+    clima: "ventoso"
+    virtude: "orientação"
+    artefato: "Bússola (ou a fita)"
+    transicao_reino: "Feche os olhos e sinta o balanço do navio."
+    fala_portador:
+      tom: "aventureiro"
+      script: "Prepare-se, marujo! Celeste precisa de ajuda para achar o Norte."
+    card_guardiao: "CARD: CELESTE"
+    abertura_sensorial: "O cheiro de maresia enche o ar. O navio range suavemente."
+
+  jornada:
+    narrativa_principal:
+      - titulo: "O Norte da Navegadora"
+        local: "convés_estrela_polar"
+        fala_guardiao:
+          tom: "clara"
+          script: |
+              "Pequeno Herdeiro," Celeste chamou, sua voz soando clara como um sino. "Para navegar, não basta olhar para o mapa. O mapa está primeiro dentro de nós."
+              [Celeste levanta a pata direita]
+              "Sinta o calor. Esta é a mão que saúda o nascer do dia."
+        instrucao_portador: "Levante a mão direita da criança (a que terá a fita)."
+      - titulo: "A Marca do Navegador"
+        local: "convés_estrela_polar"
+        fala_guardiao:
+          tom: "firme"
+          script: "No Reino, a Direita é a direção da Força. A Esquerda é a direção do Coração."
+        instrucao_portador: "Amarre a fita vermelha no pulso direito."
+
+    concreto:
+      desc: "Amarrar fita vermelha no pulso direito."
+      card_objeto: "CARD: FITA"
+      metodo: "mao-na-mao"
+      instrucoes_portador:
+        - passo: 1
+          acao: "Amarre a fita no pulso direito."
+          fala_sugerida: "Esta é sua marca de capitão."
+        - passo: 2
+          acao: "Peça para tocar a orelha esquerda com a mão da fita."
+          fala_sugerida: "Cruze o oceano! Mão direita na orelha esquerda!"
+      norte_absoluto: "O corpo é o mapa. A fita é a âncora."
+      adaptacao_bernardo: "Se não puder usar os braços, use um adesivo na bochecha direita."
+
+    pictorico:
+      status: "ATIVO"
+      desc: "Desenhar o contorno das duas mãos."
+      excecao: "N/A"
+
+    abstrato:
+      desc: "Mencionar que 'L' (Left) faz o formato de L com a mão esquerda."
+      nota: "Somente se a criança já conhecer letras."
+
+    extensao:
+      titulo: "O Giro da Bússola"
+      desc: "Brincadeira de girar e parar apontando para a direita."
+      sugestoes: []
+      adaptacao_bernardo: "Se não puder girar, use os olhos para olhar para a direita."
+
+  narracao:
+    instrucao_portador: "Pergunte sobre a aventura."
+    pergunta_principal: "Qual mão tem a marca do sol?"
+    perguntas_coracao: ["Você sentiu o norte?", "A fita apertou?"]
+    nota_cm: "Deixe narrar do jeito dele."
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: "confiante"
+      script: "Um bom navegador conhece sua própria mão. Bom trabalho."
+    fio_ouro: "A direção certa começa em você."
+    transicao_volta:
+      instrucao: "Desamarre a fita (ou mantenha se quiser) e pise em terra firme."
+      fala: "O Reino segue seu curso."
+
+  para_familia:
+    titulo: "Lateralidade e Vivência"
+    porque_importa: "Saber esquerda/direita é fundamental para leitura e escrita futuras."
+    metodo_cpa:
+      concreto: "Fita no pulso."
+      pictorico: "Desenho das mãos."
+      abstrato: "Conceito mental de Direita/Esquerda."
+      nota: "Foco no corpo."
+    principio_cm:
+      numero: 1
+      citacao: "Children are born persons."
+      citacao_pt: "Crianças nascem pessoas."
+      aplicacao: "Respeite o corpo da criança."
+    tgtb_conexao: "Baseado em TGTB K L1."
+    espiral:
+      conceito: "Geometria/Posição"
+      volta_atual: "Corpo"
+      proxima_volta: "Espaço"
+      nota: "Revisitado sempre."
+    reflexao_espiritual: "Deus nos orienta."
+    nota_graca: "Se errar, tudo bem."
+
+  diario_portador:
+    nota: "Registre as dificuldades de lateralidade."
+    perguntas:
+      - "Ele confundiu os lados muitas vezes?"
+      - "A fita ajudou?"
+
+  auditoria_qa:
+    cm: [true]
+    cpa: [true]
+    narrativa: [true]
+    template: [true]
+    triade: [true]
+    inclusao: [true]

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificando Esquerda e Direita | Matemática Viva</title>
+    <!-- CSS ISOLADO DE SEMENTES -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <style>
+        /* INLINE STYLES FOR CRITICAL RENDERING PRIORITY */
+        body { background-color: #F8F9FA; color: #374151; }
+        .lesson-container { max-width: 768px; margin: 0 auto; padding-bottom: 4rem; }
+        
+        /* CARD COMPONENT */
+        .scene-card {
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            position: relative;
+            overflow: hidden;
+        }
+        .scene-card::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+            background: linear-gradient(90deg, #FCD34D 0%, #F59E0B 100%);
+            opacity: 0.8;
+        }
+
+        /* HEADER & TYPOGRAPHY */
+        .scene-header {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.35rem;
+            color: #111827;
+            margin-bottom: 2rem;
+            display: flex; align-items: center; gap: 0.75rem; font-weight: 600;
+        }
+        .scene-icon { font-size: 1.5rem; }
+        h2 { font-family:'Outfit'; color:#6B7280; font-size:1rem; text-transform:uppercase; letter-spacing:2px; margin: 3rem 0 1rem 0; text-align:center; }
+        strong { font-weight: 600; color: #1F2937; }
+
+        /* COMPONENTS */
+        .script-persona-block {
+            background: #F9FAFB;
+            border: 1px solid #F3F4F6;
+            border-left: 4px solid #10B981;
+            border-radius: 8px;
+            margin-top: 1.5rem; padding: 1.5rem;
+        }
+        .script-avatar { border: 2px solid #FFFFFF; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        
+        .instruction-box {
+            background: #FEFCE8; border: 1px solid #FEF9C3; color: #854D0E;
+            border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;
+            display: flex; gap: 1rem; align-items: flex-start;
+        }
+        .instruction-icon { font-size: 1.5rem; }
+        
+        .portador-block { border-left: 4px solid #10B981 !important; background: #FFFFFF !important; }
+        .script-name { text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
+
+        /* MOBILE OPTIMIZATION */
+        @media (max-width: 768px) {
+            .lesson-container { padding: 0; }
+            .scene-card { border-radius: 0; margin: 0 0 0.5rem 0; box-shadow: none; border-bottom: 1px solid #E5E7EB; }
+            .scene-card::before { height: 3px; }
+            h2 { font-size: 1.4rem; padding: 0 1.5rem; margin-top: 2rem; }
+        }
+    </style>
+</head>
+<body class="clima-1">
+    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard">🏡</a>
+
+    <div class="lesson-container">
+        <!-- HERO SECTION -->
+        <header class="lesson-hero">
+            <div class="lesson-meta-tag">Lição L001 • Identificando Esquerda e Direita • ⏱️ 15-20 min</div>
+            <h1 class="hero-title">Identificando Esquerda e Direita</h1>
+            <p class="hero-quote">"O corpo é a primeira bússola do viajante."</p>
+            <!-- ASSETS ISOLADOS DE SEMENTES -->
+            <img src="../assets/sementes/guardioes/celeste-raposa.png" 
+                 onError="this.src='../assets/sementes/guardioes/placeholder.png'"
+                 alt="celeste" class="hero-guardian">
+        </header>
+
+        <article class="lesson-body">
+            
+
+
+
+
+
+
+<div class="lesson-header-nav" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #E5E7EB;">
+    <div style="width: 33%;">
+        
+    </div>
+    
+    <div style="width: 33%; text-align: center;">
+        <img src="../assets/icon-sementes.png" alt="Sementes" style="height: 32px; opacity: 0.8;" onerror="this.style.display='none'">
+    </div>
+    
+    <div style="width: 33%; text-align: right;">
+        
+    </div>
+</div>
+
+
+
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">👨‍👩‍👧</span>
+        Preparação do Portador
+    </div>
+    
+    
+    
+    
+    <div style="text-align: center; margin-bottom: 1.5rem; color: #6B7280; font-size: 0.9rem; font-style: italic;">
+        Discriminar esquerda e direita no próprio corpo
+    </div>
+    
+
+    
+<div class="instruction-box">
+    <span class="instruction-icon">💡</span>
+    <div>
+        
+        
+        <strong>Dica do Coração:</strong> Esquerda e Direita são conceitos difíceis. Tenha paciência.<br>A fita vermelha é um âncora visual e tátil.<br>Não se preocupe se houver confusão inicial. O corpo aprende no tempo dele.<br>
+    
+    </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    <div class="materials-box" style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:8px; padding:1.25rem; margin:1.5rem 0;">
+        
+        <p><strong>🎯 Essencial:</strong></p>
+        <ul style="margin-top:0.5rem; margin-left:1rem;">
+            
+            <li>Fita vermelha ou lã (1)</li>
+            
+        </ul>
+        
+        
+        
+        <p style="margin-top:1rem;"><strong>📦 Se tiver:</strong></p>
+        <ul style="margin-top:0.5rem; margin-left:1rem; color:#6B7280;">
+            
+            <li>Pedra ou objeto pequeno (1)</li>
+            
+        </ul>
+        
+        
+        
+        
+    </div>
+    
+
+    
+    
+    <p><strong>🌟 Seu filho vai descobrir:</strong> Que ele carrega um mapa invisível consigo o tempo todo.</p>
+    
+
+    <p><strong>🛡️ Protocolo de Impecabilidade:</strong> Evite dizer "a mão que você escreve" se não tiver certeza da dominância.<br>Use a fita como referência absoluta: "O lado da fita é a Direita".<br></p>
+    <p><strong>🕊️ Nota de Graça:</strong> Se ele trocar as mãos, sorria. Celeste também navega por estrelas, não só por mapas.</p>
+
+</div>
+
+
+
+
+
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">🎬</span>
+        Ritual de Abertura
+    </div>
+    
+    
+    
+<div class="instruction-box">
+    <span class="instruction-icon">🕯️</span>
+    <div>
+        
+        
+        Luz natural, espaço para girar o corpo.
+    
+    </div>
+</div>
+
+
+    <p><strong>🌫️ Transição:</strong> Feche os olhos e sinta o balanço do navio.</p>
+
+    
+    
+    <div class="sensory-box" style="background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); border-radius:8px; padding:1.25rem; margin:1.5rem 0; font-style:italic; color:#92400E; border-left:4px solid #F59E0B;">
+        O cheiro de maresia enche o ar. O navio range suavemente.
+    </div>
+    
+
+    
+<div class="script-persona-block portador-block">
+    <span class="portador-icon">🔥</span>
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">Portador da Tocha</span>
+            
+                
+                
+                    
+                    <span class="script-tone">(aventureiro)</span>
+                
+            
+        </div>
+        <div class="script-text">
+            Prepare-se, marujo! Celeste precisa de ajuda para achar o Norte.
+        </div>
+    </div>
+</div>
+
+
+    <div style="text-align:center; margin-top:2rem;">
+        <p style="font-size:0.9rem; color:#9CA3AF; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:1px;">Visualizar</p>
+        <img src="../assets/cards/guardioes/celeste-raposa.png" 
+             style="width:120px; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.1); transform: rotate(-2deg); border: 4px solid white;"
+             onError="this.src='../assets/cards/guardioes/placeholder.png'"
+             alt="Card celeste">
+    </div>
+
+</div>
+
+
+
+
+<h2>🗺️ A Jornada</h2>
+
+
+    
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">✨</span>
+        O Norte da Navegadora
+    </div>
+    
+    
+        
+        
+<div class="local-card">
+    <p><strong>📍 Local:</strong> Convés Estrela Polar</p>
+    <p class="local-label">Visualizar</p>
+    <img src="../assets/cards/locais/local-convés-estrela-polar.png" alt="Convés Estrela Polar">
+</div>
+
+        
+
+        
+        
+
+        
+            
+<div class="instruction-box">
+    <span class="instruction-icon">👉</span>
+    <div>
+        
+        
+                Levante a mão direita da criança (a que terá a fita).
+            
+    </div>
+</div>
+
+        
+
+        
+<div class="script-persona-block ">
+    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">celeste</span>
+            
+                
+                
+                    
+                    <span class="script-tone">(clara)</span>
+                
+            
+        </div>
+        <div class="script-text">
+            "Pequeno Herdeiro," Celeste chamou, sua voz soando clara como um sino. "Para navegar, não basta olhar para o mapa. O mapa está primeiro dentro de nós."<br>[Celeste levanta a pata direita]<br>"Sinta o calor. Esta é a mão que saúda o nascer do dia."<br>
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
+
+    
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">✨</span>
+        A Marca do Navegador
+    </div>
+    
+    
+        
+
+        
+        
+
+        
+            
+<div class="instruction-box">
+    <span class="instruction-icon">👉</span>
+    <div>
+        
+        
+                Amarre a fita vermelha no pulso direito.
+            
+    </div>
+</div>
+
+        
+
+        
+<div class="script-persona-block ">
+    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">celeste</span>
+            
+                
+                
+                    
+                    <span class="script-tone">(firme)</span>
+                
+            
+        </div>
+        <div class="script-text">
+            No Reino, a Direita é a direção da Força. A Esquerda é a direção do Coração.
+        </div>
+    </div>
+</div>
+
+    
+</div>
+
+
+
+
+
+<h2>🧱 O Concreto</h2>
+
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">🧱</span>
+        Atividade Concreta
+    </div>
+    
+    
+    
+
+    
+<div class="instruction-box">
+    <span class="instruction-icon">📋</span>
+    <div>
+        
+        
+        <strong>Passo a Passo:</strong>
+        <ol style="margin-top:0.5rem; margin-left:1rem;">
+            
+            <li>
+                Amarre a fita no pulso direito.
+                
+                <br><em>Fala sugerida: "Esta é sua marca de capitão."</em>
+                
+            </li>
+            
+            <li>
+                Peça para tocar a orelha esquerda com a mão da fita.
+                
+                <br><em>Fala sugerida: "Cruze o oceano! Mão direita na orelha esquerda!"</em>
+                
+            </li>
+            
+        </ol>
+    
+    </div>
+</div>
+
+
+    
+
+</div>
+
+
+
+
+
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">🗣️</span>
+        Narramos Juntos
+    </div>
+    
+    
+    
+<div class="instruction-box">
+    <span class="instruction-icon">🤫</span>
+    <div>
+        
+        
+        Pergunte sobre a aventura.
+    
+    </div>
+</div>
+
+
+    
+<div class="script-persona-block ">
+    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">celeste</span>
+            
+        </div>
+        <div class="script-text">
+            "O que você descobriu hoje na Clareira? O que contaria para o Melquior?"
+        </div>
+    </div>
+</div>
+
+
+    <p><strong>Perguntas do Coração:</strong></p>
+    <ul style="margin-left:1.5rem; margin-top:0.5rem;">
+        <li>Qual mão tem a marca do sol?</li>
+        
+        <li>Você sentiu o norte?</li>
+        
+        <li>A fita apertou?</li>
+        
+    </ul>
+
+</div>
+
+
+
+
+
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">🏁</span>
+        Ritual de Fechamento
+    </div>
+    
+    
+    
+<div class="script-persona-block ">
+    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">celeste</span>
+            
+                
+                
+                    
+                    <span class="script-tone">(confiante)</span>
+                
+            
+        </div>
+        <div class="script-text">
+            Um bom navegador conhece sua própria mão. Bom trabalho.
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+<div class="script-persona-block portador-block">
+    <span class="portador-icon">🔥</span>
+    <div class="script-content">
+        <div class="script-header">
+            <span class="script-name">Portador da Tocha</span>
+            
+        </div>
+        <div class="script-text">
+            O Reino segue seu curso.
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">🔗</span>
+        Conexão da Jornada
+    </div>
+    
+    
+    
+    <p><strong>⬅️ Última Aventura:</strong> Nos ciclos anteriores, aprendemos a contar. Agora vamos aprender a nos localizar.</p>
+    
+    
+        <div onclick="window.location.href='#'" style="cursor: pointer;">
+            <p><strong>➡️ Próxima Aventura:</strong> Agora que sabemos onde é a direita, Bernardo vai nos ensinar a medir distâncias.</p>
+            
+        </div>
+    
+
+</div>
+
+
+
+
+
+
+
+<div class="scene-card" >
+    
+    <div class="scene-header">
+        <span class="scene-icon">👨‍👩‍👧‍👦</span>
+        Para a Família
+    </div>
+    
+    
+    <p><strong>📚 Por que isso importa:</strong></p>
+    <div style="padding:0.5rem 0;">
+        Saber esquerda/direita é fundamental para leitura e escrita futuras.
+    </div>
+    
+    
+    
+    <div class="bruner-box">
+        <strong>🧠 Método CPA (Jerome Bruner):</strong><br>
+        <ul style="margin:0.5rem 0 0 1.5rem;">
+            <li><strong>Concreto:</strong> Fita no pulso.</li>
+            <li><strong>Pictórico:</strong> Desenho das mãos.</li>
+            <li><strong>Abstrato:</strong> Conceito mental de Direita/Esquerda.</li>
+        </ul>
+        
+        <span style="color:#6B7280; font-size:0.9rem;">Foco no corpo.</span>
+        
+    </div>
+    
+    
+    
+    
+    <div class="cm-box">
+        <strong>🏛️ Princípio Charlotte Mason:</strong><br>
+        <em>"Children are born persons."</em><br>
+        <span style="color:#6B7280;">Respeite o corpo da criança.</span>
+    </div>
+    
+    
+    
+    
+    <div class="tgtb-box">
+        <strong>📘 Conexão TGTB:</strong><br>
+        <span style="color:#92400E;">Baseado em TGTB K L1.</span>
+    </div>
+    
+    
+    
+    
+    <div class="bruner-box">
+        <strong>🌀 Currículo em Espiral (Bruner):</strong><br>
+        <ul style="margin:0.5rem 0 0 1.5rem;">
+            <li><strong>Agora:</strong> Geometria/Posição — Corpo</li>
+            <li><strong>Depois:</strong> Espaço</li>
+        </ul>
+        
+        <span style="color:#6B7280; font-size:0.9rem;">Revisitado sempre.</span>
+        
+    </div>
+    
+    
+    
+    
+    <div class="espiritual-box">
+        <strong>✨ Reflexão Espiritual:</strong><br>
+        <span style="color:#166534;">Deus nos orienta.</span>
+    </div>
+    
+    
+    
+    
+    <div class="graca-box">
+        <strong>🕊️ Nota de Graça:</strong><br>
+        Se errar, tudo bem.
+    </div>
+    
+
+</div>
+
+
+
+
+        </article>
+
+        <!-- NAVIGATION FOOTER -->
+        <nav class="lesson-nav">
+            
+            
+
+            
+            
+            
+        </nav>
+
+        <footer style="text-align: center; margin-top: 4rem; color: #A8A29E; font-size: 0.8rem;">
+            Matemática Viva • Forjado com Estilo e Propósito
+        </footer>
+    </div>
+</body>
+</html>

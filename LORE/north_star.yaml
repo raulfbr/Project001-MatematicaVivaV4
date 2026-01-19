@@ -1,15 +1,11 @@
 # NORTH STAR — Matemática Viva
-# YAML Lean v1.0 | Atualização: 13/01/2026
+# YAML Lean v1.3 | Atualização: 19/01/2026 | Refinado: Expansão Princípios
+# CONSOLIDADO: Deliberação Magna 19/01/2026 + Expansão Princípios (9 Fundamentais)
 #
 # ⚠️ IMPORTANTE: Este arquivo usa FORMATO YAML LEAN v1.0
-# Todos os EXPERTS (.bmad/experts/) devem seguir este padrão:
-# - Inline objects: {key: val, key2: val2}
-# - Inline arrays: [item1, item2, item3]
-# - Sem separadores decorativos (═══)
-# - Texto condensado (sem multi-line desnecessário)
-# - Preservar TODA semântica essencial
-#
-# Use este north_star.yaml como REFERÊNCIA de formatação.
+# - Inline objects/arrays onde possível
+# - Sem separadores decorativos
+# - Foco na SEMÂNTICA, não na formatação visual excessiva
 
 # Dicionário de abreviações (keys descritivas)
 _dict:
@@ -22,121 +18,133 @@ _dict:
   req: requerido
   opt: opcional
 
-purpose:
-  motto: Matemática Viva existe para ajudar famílias a amarem matemática juntas
-  essence: MOVIMENTO de famílias que descobriram que matemática pode ser viva
+# IDENTIDADE FUNDAMENTAL (Deliberação 19/01/2026)
+
+identidade:
+  slogan: "Histórias que ensinam. Narração que fixa."
+  slogan_secundario: "Da Família Rodrigues para outras famílias"
+  familia:
+    - {nome: Raul, papel: Pai Professor Matemática, titulo: Maestro Fundador}
+    - {nome: Marina, papel: Mãe Pedagoga, titulo: Auxiliadora co-fundadora}
+    - {nome: Raulzito, papel: Filho 5 anos, titulo: Filho aventureiro}
+    - {nome: Mel, papel: Filha curiosa, titulo: Filha aventureira}
+  frase_central: |
+    Isso não é uma empresa vendendo produto. Somos uma família que queria isso para nossos filhos. Não encontramos. Então criamos — e agora compartilhamos.
+  tribo: "Famílias Pioneiras"
+  diferencial_cpa: "Charlotte Mason + Bruner autêntico (espiral), não Singapura (repetição)"
+
+# ESTRUTURA DE COMUNICAÇÃO (3 Níveis)
+comunicacao_estruturada:
+  nivel_1:
+    tempo: "5 segundos"
+    foco: "Slogan"
+    conteudo: "Histórias que ensinam. Narração que fixa."
+  
+  nivel_2:
+    tempo: "30 segundos"
+    foco: "Desenvolvimento"
+    para_voce_pai: "✅ ABRA E FAÇA → 5 minutos de preparo. Pronto para usar."
+    para_seu_filho: 
+      - "📖 OUVE → Ele ouve aventuras onde a matemática emerge"
+      - "🗣️ CONTA → Ele conta o que descobriu (sem provas)"
+      - "🔄 REENCONTRA → Os conceitos retornam, mais profundos"
+    logica: "Pai primeiro (praticidade), filho depois (experiência)."
+
+  nivel_3:
+    tempo: "1 minuto"
+    foco: "Completo (Janice/CMC)"
+    blocos:
+      - "Matemática Viva é um currículo de matemática Charlotte Mason."
+      - "Cada lição é uma narrativa imersiva — o Reino Contado, com 5 Guardiões."
+      - "Usamos CPA de Bruner (mãos primeiro) e currículo espiral. (Não é Singapura de repetir lições — é espiral de ensino verdadeiro.)"
+      - "E a narração: seu filho conta o que aprendeu."
+      - "Criado pela Família Rodrigues — família CM para famílias CM."
+
+# TOM DE COMUNICAÇÃO (Deliberação 19/01/2026)
+tom_comunicacao:
+  principio: "O medo acaba em você. O encantamento começa neles."
+  
+  publico_alvo: "Famílias 0-18 anos (Berço ao Legado). Onde a 'fase do medo' ainda não venceu a 'fase da curiosidade' (Broto, Sementes, Raízes) ou onde precisamos resgatar o encanto (Lógica, Legado)."
+  
+  palavras_evitar: [odeia, trauma, difícil, chato, obrigação]
+  palavras_preferir: [brilho, mistério, segredo, aventura, conquista]
+  
+  tom: "Redentor para o pai. Encantador para o filho."
+  
+  contraste_geracional:
+    pai_sente: "Alívio. 'Não é culpa minha, e não é tarde demais.'"
+    filho_sente: "Fascínio. 'A matemática é um reino, não uma lista de tarefas.'"
+  
+  exemplo_ruim: "Seu filho não vai odiar matemática como você."
+  exemplo_bom: "Você tem a chance de reescrever a história da matemática na sua casa. Onde houve medo, haverá memória."
+  
+  abordagem_trauma: "O adulto cura sua ferida ao ver o filho brilhar. Um processo de via dupla."
+
+# 5 PRINCÍPIOS INEGOCIÁVEIS (Deliberação 19/01/2026)
+
+principios_5:
+  slogan: "Seu filho OUVE, CONTA, e REENCONTRA."
+  lista:
+    - {id: 1, nome: DIGNIDADE, frase_mae: "Crianças são pessoas capazes", origem: "CM Princípio 1", desc: "Criança não é recipiente vazio. Merece respeito e desafio intelectual."}
+    - {id: 2, nome: DESCOBERTA, frase_mae: "Mãos primeiro, mente depois", origem: "Jerome Bruner CPA", desc: "Mente precisa TOCAR antes de VER antes de SIMBOLIZAR."}
+    - {id: 3, nome: ESPIRAL, frase_mae: "O que planta hoje, floresce amanhã", origem: "Bruner Spiral", desc: "Conceitos RETORNAM mais profundos. Crescimento, não repetição.", apply: [LORE 0-18, Base prepara próximo]}
+    - {id: 4, nome: NARRAÇÃO, frase_mae: "Conta o que aprendeu — sem provas", origem: "CM Princípio 11", desc: "Criança RECONTA em palavras próprias. Substitui testes."}
+    - {id: 5, nome: RITMO, frase_mae: "Lição no tempo certo para cada idade", origem: "CM Princípio 15", desc: "Tempo RELATIVO.", tempo: [{c: Sementes, i: "4-6", t: "10-15m"}, {c: Raízes, i: "7-10", t: "20-30m"}, {c: Lógica, i: "11-14", t: "30-45m"}, {c: Legado, i: "15-18", t: "45-60m"}]}
+
+purpose: {motto: "Matemática Viva existe para ajudar famílias a amarem matemática juntas", essence: "MOVIMENTO de famílias que descobriram que matemática pode ser viva"}
 
 mission:
-  one_liner: Infraestrutura Educacional K-12 — Aberta no Saber, Premium na Experiência
-  
+  one_liner: "Infraestrutura Educacional K-12 — Aberta no Saber, Premium na Experiência"
   components:
-    infra:
-      desc: Sistema completo (não só currículo)
-      includes: [Lições estruturadas, Guardiões narrativos, Cards físicos, Pipeline]
-    k12:
-      desc: Cobertura 0-18 anos, jornada conectada
-      cycles:
-        - {name: Berço, range: 0-4, viajante: Broto}
-        - {name: Sementes, range: K/4-6, viajante: Herdeiro}
-        - {name: Raízes, range: 1-5ano/6-10, viajante: Construtor}
-        - {name: Lógica, range: 6-8ano/11-14, viajante: Explorador}
-        - {name: Legado, range: 9-12ano/14-18, viajante: Portador da Tocha}
-    open:
-      desc: Conteúdo CC BY 4.0
-      license: CC BY 4.0
-      what: [Lições, Narrativas, Metodologia]
-    premium:
-      desc: Valor na curadoria, não exclusividade
-      value: [Qualidade impecável, Comunidade, Conveniência 5min, Cards físicos]
+    infra: {desc: "Sistema completo", includes: [Lições estruturadas, Guardiões narrativos, Cards físicos]}
+    k12: {desc: "Cobertura 0-18 anos", cycles: [{n: Berço, r: 0-4}, {n: Sementes, r: 4-6}, {n: Raízes, r: 6-10}, {n: Lógica, r: 11-14}, {n: Legado, r: 15-18}]}
+    open: {desc: "Conteúdo CC BY-NC 4.0", what: [Lições, Narrativas, Metodologia]}
+    premium: {desc: "Valor na curadoria", value: [Qualidade impecável, Comunidade, Abra e Faça 5min, Cards físicos]}
 
 principios_fundamentais:
-  - id: 1
-    name: Qualidade Não é Negociável
-    desc: O difícil é distinguir BOM do ÓTIMO. Buscamos IMPECÁVEL sempre.
-    apply: [3 lições impecáveis > 10 boas, Experts deliberam, Qualidade percebida no 1º contato]
-    q: Isso é BOM ou ÓTIMO?
+  # 9 Princípios Fundamentais v1.3 (Deliberação 19/01/2026)
+  - {id: 1, name: "Qualidade Não é Negociável", desc: "Buscamos IMPECÁVEL sempre. 3 lições impecáveis > 10 boas.", frase: "Se não é excelente, não é nosso.", expert: [Tolkien, Engenharia], apply: [QA Quíntupla obrigatória], q: "Isso é BOM ou ÓTIMO?"}
+  - {id: 2, name: "A Família é o Centro", desc: "Currículo serve à família, não o contrário.", frase: "Se complica a mãe, não serve.", expert: [Mães Personas, Hormozi], apply: [Flexibilidade SEM perder norte], q: "Isso ajuda a família ou complica?"}
+  - {id: 3, name: "Foco no Positivo (Tom Redentor)", desc: "Nunca vender pelo medo. Convites gentis.", frase: "O medo acaba em você. O encantamento começa neles.", expert: [Embaixador, CS Lewis], apply: [Palavras preferir (brilho aventura)], q: "Isso encoraja ou desanima?"}
+  - {id: 4, name: "Identidade Tribal", desc: "Não suporte. PERTENCER. People like us.", frase: "Esta não é uma audiência. É uma tribo.", expert: [Seth Godin, Peter Thiel], apply: [Preço por LAR não por cabeça], q: "Fortalece tribo ou dilui?"}
+  - {id: 5, name: "Unidade Familiar (Cultura do Reino)", desc: "Um Reino só para TODOS (0-18 + Pais). Facilitador de comunicação.", frase: "Não é só aula, é cultura de lar.", expert: [Tolkien, Vygotsky], apply: [Guardiões universais, Pais Regentes], q: "A família inteira fala a mesma língua?"}
+  - {id: 6, name: "Norte Seguro + Flexibilidade", desc: "CORE inegociável + alternativas para adaptar.", frase: "O Mapa é fixo. O caminho, você escolhe.", expert: [Charlotte Mason, BMAD], apply: [Template + adaptação], q: "Pai sabe adaptar sem perder norte?"}
+  - {id: 7, name: "Soberania Intelectual", desc: "Não vendemos medo (BNCC). Vendemos poder e oportunidade global.", frase: "Soberania Intelectual > Segurança Jurídica.", expert: [Thiel, Godin], apply: [Mirar global, BNCC é consequência], q: "Empodera a família ou a torna dependente?"}
+  - {id: 8, name: "Beleza Redentora", desc: "A estética cura. Arte é generosidade, não decoração.", frase: "Beleza não é luxo. É caminho de volta.", expert: [Fujimura, Potter], apply: [Ilustrações que acalmam PAI e encantam FILHO], q: "Traz paz ao pai e maravilha ao filho?"}
+  - {id: 9, name: "Transcendência (Imago Dei)", desc: "Toda criança imagem de Deus. Matemática revela Ordem do Criador.", frase: "Números não são frios. São poesia do Criador.", expert: [Raquel, Charlotte Mason], apply: [Verdade/Beleza/Bondade integradas], q: "Honra a Deus e forma mente de Cristo?"}
 
-  - id: 2
-    name: A Família é o Centro
-    desc: Currículo serve à família. Cada família tem história, contexto, ritmo únicos.
-    apply: [Flexibilidade SEM perder norte da Tríade, Linguagem de CONVITE, Alternativas sem julgamento]
-    q: Isso ajuda a família ou complica?
-
-  - id: 3
-    name: Foco no Positivo
-    desc: Para IA regras claras. Para famílias convites e embasamento.
-    tone: {ai: Veto se violar X, family: Experimente e veja o que funciona}
-    apply: [Alertar COM GENTILEZA, Mostrar PORQUÊ (Tríade), Incentivar persistência]
-    q: Isso encoraja ou desanima?
-
-  - id: 4
-    name: Cada Criança é Pessoa
-    desc: CM - Children are born persons. Toda criança tem dignidade. Inclusão é HONRA.
-    cm: Princípio 1
-    apply: [Linguagem neutra, Notas adaptação, Bernardo valoroso, OBJETIVO importa não o COMO]
-    q: Criança com realidade diferente consegue participar?
-
-  - id: 5
-    name: Jornada Completa 0-18
-    desc: Aos 14 reconhece - mesma ideia mais profundo. Conexão, evolução, alegria de padrões.
-    spiral: Bruner - tema volta mais complexo. CM - Education is Science of Relations.
-    apply: [LORE único toda jornada, Guardiões crescem com criança, Base prepara próximo ciclo]
-    q: Cria conexão com antes e depois?
-
-  - id: 6
-    name: Identidade Tribal
-    desc: Não é suporte técnico. É PERTENCER. Famílias trocam experiências e crescem.
-    godin: This is for people like us
-    apply: [Identidade tribal (pai intencional), Troca experiências, Comunidade encoraja]
-    q: Fortalece ou fragmenta tribo?
-
-  - id: 7
-    name: Narração Imersiva
-    desc: Diferencial único. Criança VIVE ideia dentro da história.
-    diff: Tríade (CM+Singapore+TGTB) poderosa. Mas NARRAÇÃO IMERSIVA ninguém faz.
-    apply: [Ideia Viva via narrativa, Guardiões conduzem, Matemática emerge da história]
-    q: Criança está VIVENDO ou só recebendo info?
-
-  - id: 8
-    name: Norte Seguro + Flexibilidade
-    desc: Atividade CORE (mínimo impecável) + alternativas. Alerta gentil se sair do mínimo.
-    structure: {core: Inegociável aprendizado, alt: Outras formas mesmo objetivo, alert: Gentil com fundamento}
-    apply: [Template padrão lição única, LORE todas idades, Realidade ano respeitada]
-    q: Pai sabe mínimo e como adaptar?
 
 metricas:
-  escopo: {meta: 1200+ ativos modulares, indicador: Lições produzidas}
-  qualidade: {meta: Compliance CM + CPA, indicador: Aprovação QA 100%}
-  experiencia: {meta: 5 min preparo, indicador: Teste Café aprovado}
-  acesso: {meta: CC BY 4.0, indicador: Licença aplicada}
+  escopo: {meta: "1200+ ativos", ind: "Lições produzidas"}
+  qualidade: {meta: "Compliance CM+CPA", ind: "Aprovação QA 100%"}
+  experiencia: {meta: "5 min preparo", ind: "Teste Café aprovado"}
+  acesso: {meta: "CC BY-NC 4.0", ind: "Licença aplicada"}
 
-validacao:
-  q: Isso nos aproxima ou afasta do North Star?
-  when: ["Nova feature?", "Mudança arquitetura?", "Novo workflow?", "Decisão negócio?"]
+validacao: {q: "Isso nos aproxima ou afasta do North Star?", when: [Nova feature?, Mudança arquitetura?, Novo workflow?, Decisão negócio?]}
 
 # VOCABULÁRIO REINANÊS E TÉCNICO — SSOT
 # Consolidado de glossario.yaml e ontologia.yaml
 
 vocabulario:
   reino_nobres:
-    - {termo: Viajante, sistema: Aluno, razao: "Dignidade: descobre, não recebe."}
-    - {termo: Portador da Tocha, sistema: Professor, razao: "Apresenta o banquete."}
-    - {termo: Jornada, sistema: Aula, razao: "Processo vivo."}
-    - {termo: Pergaminho, sistema: Lição/Deliverable, razao: "Artefato de valor."}
-    - {termo: Cicatriz de Glória, sistema: Erro, razao: "Prova de esforço."}
-  
+    - {t: Viajante, s: Aluno, r: "Descobre, não recebe"}
+    - {t: Portador Tocha, s: Professor, r: "Apresenta banquete"}
+    - {t: Jornada, s: Aula, r: "Processo vivo"}
+    - {t: Pergaminho, s: Lição, r: "Artefato valor"}
+    - {t: Cicatriz Glória, s: Erro, r: "Prova esforço"}
+
   tecnico_sistema:
-    - {bmad: Orchestrator, forja: Orchestrator, desc: "Coordenador IA"}
-    - {bmad: PRD, forja: PRD, desc: "Requisitos de Produto"}
-    - {bmad: Story, forja: Story, desc: "Especificação Lição"}
-    - {bmad: ENACTIVE, forja: Concreto, desc: "CPA Fase 1"}
-    - {bmad: ICONIC, forja: Pictórico, desc: "CPA Fase 2"}
-    - {bmad: SYMBOLIC, forja: Abstrato, desc: "CPA Fase 3"}
+    - {bmad: Orchestrator, forja: Same, desc: "Coordenador IA"}
+    - {bmad: PRD, forja: PRD, desc: "Specs Produto"}
+    - {bmad: Story, forja: Story, desc: "Specs Lição"}
+    - {b: ENACTIVE, f: Concreto, d: "CPA 1"}
+    - {b: ICONIC, f: Pictórico, d: "CPA 2"}
+    - {b: SYMBOLIC, f: Abstrato, d: "CPA 3"}
 
 atores_sistema:
-  maestro: {nome: Raul, papel: Diretor Executivo, autoridade: DECISÃO_FINAL}
-  matriarca: {nome: Marina, papel: Curadora, autoridade: VETO_SENSIBILIDADE}
-  familia_rodrigues: {papel: Selo Gold+, funcao: Validação Final}
+  maestro: {nome: Raul, papel: Pai Engenheiro — Maestro Fundador, autoridade: DECISÃO_FINAL}
+  matriarca: {nome: Marina, papel: Mãe Pedagoga — Matriarca Co-fundadora, autoridade: VETO_SENSIBILIDADE}
+  familia_rodrigues: {membros: [Raul, Marina, Raulzito, Mel], papel: Selo Gold+, funcao: Validação Final}
   orchestrator: {tipo: IA, papel: Coordenador, regra: "Conselheiro, nunca Rei"}
 
 # ARTEFATOS SIMBÓLICOS — VER SSOT
@@ -153,18 +161,48 @@ artefatos_simbolicos:
     - {id: tocha_melquior, guardiao: Melquior, ciclo: Encerramento}
 
 diretrizes_operacionais:
-  - {id: 1, name: Zero Tela até 10 anos, desc: Material físico criança, digital pai}
-  - {id: 2, name: Não criticar concorrentes, desc: Foco no positivo que oferecemos}
-  - {id: 3, name: Preço por Família, desc: Valoriza famílias múltiplos filhos}
-  - {id: 4, name: Orientação não Imposição, desc: Norte seguro com espaço adaptar}
-  - {id: 5, name: Imago Dei, desc: Toda criança imagem de Deus merece respeito}
+  nota: "Diretrizes são regras PRÁTICAS. Princípios FILOSÓFICOS estão em principios_fundamentais."
+  lista:
+    - {id: 1, name: Zero Tela até 10 anos, desc: "Material físico para criança, digital para pai.", expert: "Toca Boca (UX Kids)"}
+    - {id: 2, name: Não criticar concorrentes, desc: "Foco no positivo que oferecemos. Nunca atacar.", expert: "Godin (Permission Marketing)"}
+    - {id: 3, name: Economia do Reino (Preço Único), desc: "Honramos a fertilidade. Uma assinatura = Todos os filhos (0-18).", apply: "Família com 1 ou 10 filhos paga o mesmo.", expert: "Thiel (Monopoly Secret)"}
+    - {id: 4, name: Orientação não Imposição, desc: "Norte seguro com espaço para adaptar. Convite, não ordem.", expert: "Charlotte Mason (Princípio 6)"}
+    - {id: 5, name: "Imago Dei (Ver Princípio #9)", desc: "PROMOVIDO para principios_fundamentais.id_9 (Transcendência)", ref: "principios_fundamentais.9"}
+
+
+garantia_oportunidade:
+  conceito: "O Mínimo é Consequência do Máximo"
+  promessa: "Ao mirar em oportunidades globais, a BNCC torna-se degrau natural, não teto."
+  
+  cobertura_nacional:
+    - {foco: "Brasil (BNCC)", status: "ALICERCE", desc: "Cobrimos a BNCC organicamente como base."}
+    - {foco: "Compromisso", msg: "Se algo faltar na espiral, nós criamos o módulo. Você nunca ficará descoberto."}
+  
+  passaporte_global:
+    - {foco: "Padrão Mundial", status: "SINGAPURA", desc: "Top 1 TIMSS/PISA. Respeitado em Harvard, Oxford, Ásia."}
+    - {foco: "Portas Abertas", msg: "Prepara para SATs, vestibulares de elite e carreiras STEM."}
+    - {foco: "Linguagem Universal", msg: "Quem domina a lógica profunda, domina-a em qualquer idioma."}
+
+  sintese: "Não vendemos segurança jurídica; vendemos soberania intelectual. Estar 'em dia' com o MEC é apenas o efeito colateral de estar à frente no mundo."
 
 negocio:
+  estrategia_pioneiros:
+    publico: "K-5 (4-11 anos) | Ciclos Broto, Sementes e Raízes | Foco: Comunidade CMC"
+    modelo: "Scholarship for Feedback (Bolsa de Co-criação)"
+    pitch: "Agora: Acesso Grátis (Feedback). Em 2026: Venda com Selo Fundador (50% off na aquisição)."
+    promessa_futura: "Do Gratuito (Validação) para Fundador (50% de desconto) ao final."
+
+  roadmap_fases:
+    fase_1: {nome: "Fase 1: O Encantamento (Validar K-5)", foco: "Broto (0-4) + Sementes (4-6) + Raízes (6-10)", user: "Famílias CMC", meta: "Encantar pais, validar Abra e Faça, acender brilho, aprofundamento do método a cada lição aplicada, trazendo confiança aos pais"}
+    fase_2: {nome: "Fase 2: A Razão (Validar 6-8)", foco: "Lógica I (11-13)", ref: "TGTB Index + Lógica Formal", meta: "Transição concreto -> abstrato sem perder brilho, aprofundamento do método a cada lição aplicada, trazendo confiança aos pais"}
+    fase_3: {nome: "Fase 3: A Maestria (9º Ano)", foco: "Lógica II (14)", meta: "Fechar Fundamental 2 com chave ouro, aprofundamento do método a cada lição aplicada, trazendo confiança aos pais"}
+    fase_4: {nome: "Fase 4: O Legado (High School)", foco: "Ensino Médio (15-18)", meta: "Aplicação Mundo Real + Vocação + Universidade, aprofundamento do método a cada lição aplicada, trazendo confiança aos pais"}
+
   precos_2026:
-    pioneiros: {val: 1197, moeda: BRL, acesso: anual, benef: [Currículo completo, Comunidade WhatsApp, Acesso Maestro, Co-criação]}
+    pioneiros: {val: 2397, moeda: "Feedback (Beta) -> BRL (Launch)", acesso: "Grátis no Beta -> 50% off no Launch", benef: [Exclusivo CMC, Selo Fundador]}
     mentoria: {val: 4397, moeda: BRL, vagas: 10, benef: [Tudo Pioneiro, 4 encontros vivo, Maestro+Marina, Acompanhamento]}
-    preco_cheio: {val: 2397, moeda: BRL, acesso: anual, disponivel: após pioneiro}
-  licenciamento: {tipo: CC BY 4.0, pode: Copiar/adaptar/comercializar com atribuição, premium: Curadoria+Comunidade+Conveniência}
+    preco_cheio: {val: 2397, moeda: BRL, acesso: anual, disponivel: "Após Validação Pioneiros (2026)"}
+  licenciamento: {tipo: CC BY-NC 4.0, pode: Copiar/adaptar (SEM vender), premium: Uso Comercial Exclusivo + Curadoria + Comunidade}
 
 sistema_agentes:
   conceito: Especialistas simulados (pensadores REAIS) para decisão/criação/QA. CM coordena.
@@ -186,134 +224,42 @@ sistema_agentes:
   extensivel: true
 
 propositos_por_ano:
-  K_sementes:
-    ciclo: Sementes
-    viajante: Herdeiro
-    idade: 4-6 anos
-    phrase: Os números são promessas do Rei
-    elab: Cada quantidade guarda segredo sagrado. Mundo encantado, tesouros escondidos. Herdeira de algo maior. Maravilhamento puro.
-
-  1_raizes:
-    ciclo: Raízes
-    viajante: Construtor
-    idade: 6-7 anos
-    phrase: Sou o Construtor da Vila
-    elab: Usa promessas para CONSTRUIR. Número serve propósito - medir, contar, organizar. Sai jardim, entra oficina Bernardo. AVENTURA CONSTRUTIVA.
-
-  2_raizes:
-    ciclo: Raízes
-    viajante: Construtor
-    idade: 7-8 anos
-    phrase: O Mercado me ensina justiça
-    elab: Troca, compara, equilibra. Matemática = moeda de relação. Zelo e honestidade. TROCAS JUSTAS.
-
-  3_raizes:
-    ciclo: Raízes
-    viajante: Construtor
-    idade: 8-9 anos
-    phrase: Exploro a Vastidão do Reino
-    elab: Expande horizontes. Números maiores, operações combinadas, geometria espaço. Mundo cresce, ela cresce. EXPLORAÇÃO CORAJOSA.
-
-  4_raizes:
-    ciclo: Raízes
-    viajante: Construtor
-    idade: 9-10 anos
-    phrase: Ordeno o que descobri
-    elab: Sistematiza. Frações, decimais, proporções. Intuição vira estrutura. Vê PADRÕES e organiza. DOMÍNIO E ORGANIZAÇÃO.
-
-  5_raizes:
-    ciclo: Raízes
-    viajante: Construtor
-    idade: 10-11 anos
-    phrase: A linguagem dos padrões se revela
-    elab: Tudo se conecta. Multiplicação e divisão = danças inversas. Frações/decimais/porcentagens = faces mesma moeda. PRONTA abstração.
-
-  6_logica:
-    ciclo: Lógica
-    viajante: Explorador
-    idade: 11-12 anos
-    phrase: A matemática é a linguagem do universo
-    elab: (Galileu) Números não inventados - DESCOBERTOS. Álgebra = poesia codificada. Vê mão Criador na ordem. REVERÊNCIA INTELECTUAL.
-
-  7_logica:
-    ciclo: Lógica
-    viajante: Explorador
-    idade: 12-13 anos
-    phrase: O raciocínio é uma forja
-    elab: Aprende PROVAR. Não basta sentir verdade - demonstrar. Lógica formal entra. Bernardo - Aqui cada argumento testado.
-
-  8_logica:
-    ciclo: Lógica
-    viajante: Explorador
-    idade: 13-14 anos
-    phrase: O abstrato ilumina o concreto
-    elab: Usa álgebra resolver problemas reais. Abstrato não fuga - FERRAMENTA poder. Equações modelam realidade. PODER APLICADO.
-
-  9_legado:
-    ciclo: Legado
-    viajante: Portador da Tocha
-    idade: 14-15 anos
-    phrase: O que descobri é usado pelo mundo
-    elab: Vê matemática em engenharia, economia, ciência. Não estuda - APLICA. Conhecimento serve propósitos reais. VOCAÇÃO NASCENTE.
-
-  10_legado:
-    ciclo: Legado
-    viajante: Portador da Tocha
-    idade: 15-16 anos
-    phrase: Sou aprendiz dos mestres antigos
-    elab: Estuda história matemática. Pitágoras, Euclides, Arquimedes não nomes - MENTORES. Herda tradição milênios. HUMILDADE ERUDITA.
-
-  11_legado:
-    ciclo: Legado
-    viajante: Portador da Tocha
-    idade: 16-17 anos
-    phrase: A matemática me prepara para servir
-    elab: Cálculo, estatística, geometria resolvem problemas REAIS. Conhecimento para BEM do próximo. SERVIÇO VOCACIONAL.
-
-  12_legado:
-    ciclo: Legado
-    viajante: Portador da Tocha
-    idade: 17-18 anos
-    phrase: Sou mordomo do saber
-    elab: Pronta universidade/vida. Aprendeu não é SEU - herança PASSAR ADIANTE. Ciclo completa. Portador Tocha. MORDOMIA E LEGADO.
-    ritual: Melquior - Entrou Herdeiro. Cresceu Construtor. Brilhou Explorador. Sai Portador Tocha. Vá - acenda outras vidas.
+  K_sementes: {ciclo: Sementes, viajante: Herdeiro, idade: "4-6 anos", phrase: "Os números são promessas do Rei", elab: "Cada quantidade guarda segredo sagrado. Mundo encantado, tesouros escondidos. Herdeira de algo maior. Maravilhamento puro."}
+  1_raizes: {ciclo: Raízes, viajante: Construtor, idade: "6-7 anos", phrase: "Sou o Construtor da Vila", elab: "Usa promessas para CONSTRUIR. Número serve propósito - medir, contar, organizar. Sai jardim, entra oficina Bernardo. AVENTURA CONSTRUTIVA."}
+  2_raizes: {ciclo: Raízes, viajante: Construtor, idade: "7-8 anos", phrase: "O Mercado me ensina justiça", elab: "Troca, compara, equilibra. Matemática = moeda de relação. Zelo e honestidade. TROCAS JUSTAS."}
+  3_raizes: {ciclo: Raízes, viajante: Construtor, idade: "8-9 anos", phrase: "Exploro a Vastidão do Reino", elab: "Expande horizontes. Números maiores, operações combinadas, geometria espaço. Mundo cresce, ela cresce. EXPLORAÇÃO CORAJOSA."}
+  4_raizes: {ciclo: Raízes, viajante: Construtor, idade: "9-10 anos", phrase: "Ordeno o que descobri", elab: "Sistematiza. Frações, decimais, proporções. Intuição vira estrutura. Vê PADRÕES e organiza. DOMÍNIO E ORGANIZAÇÃO."}
+  5_raizes: {ciclo: Raízes, viajante: Construtor, idade: "10-11 anos", phrase: "A linguagem dos padrões se revela", elab: "Tudo se conecta. Multiplicação e divisão = danças inversas. Frações/decimais/porcentagens = faces mesma moeda. PRONTA abstração."}
+  6_logica: {ciclo: Lógica, viajante: Explorador, idade: "11-12 anos", phrase: "A matemática é a linguagem do universo", elab: "(Galileu) Números DESCOBERTOS. Álgebra = poesia codificada. Vê mão Criador na ordem. REVERÊNCIA INTELECTUAL."}
+  7_logica: {ciclo: Lógica, viajante: Explorador, idade: "12-13 anos", phrase: "O raciocínio é uma forja", elab: "Aprende PROVAR. Não basta sentir verdade - demonstrar. Lógica formal entra. Bernardo - Aqui cada argumento testado."}
+  8_logica: {ciclo: Lógica, viajante: Explorador, idade: "13-14 anos", phrase: "O abstrato ilumina o concreto", elab: "Usa álgebra resolver problemas reais. Abstrato não fuga - FERRAMENTA poder. Equações modelam realidade. PODER APLICADO."}
+  9_legado: {ciclo: Legado, viajante: Portador da Tocha, idade: "14-15 anos", phrase: "O que descobri é usado pelo mundo", elab: "Vê matemática em engenharia, economia, ciência. Não estuda - APLICA. Conhecimento serve propósitos reais. VOCAÇÃO NASCENTE."}
+  10_legado: {ciclo: Legado, viajante: Portador da Tocha, idade: "15-16 anos", phrase: "Sou aprendiz dos mestres antigos", elab: "Estuda história matemática. Pitágoras, Euclides, Arquimedes não nomes - MENTORES. Herda tradição milênios. HUMILDADE ERUDITA."}
+  11_legado: {ciclo: Legado, viajante: Portador da Tocha, idade: "16-17 anos", phrase: "A matemática me prepara para servir", elab: "Cálculo, estatística, geometria resolvem problemas REAIS. Conhecimento para BEM do próximo. SERVIÇO VOCACIONAL."}
+  12_legado: {ciclo: Legado, viajante: Portador da Tocha, idade: "17-18 anos", phrase: "Sou mordomo do saber", elab: "Pronta universidade/vida. Aprendeu não é SEU - herança PASSAR ADIANTE. Portador Tocha. MORDOMIA E LEGADO. Ritual: Vá e acenda outras vidas."}
 
 fase_berco:
-  nome: Fase Berço
-  idade: 0-4 anos
+  nome: Fase Berço (0-4 anos)
   viajante: Broto
-  cm: CM - antes 6 anos ênfase NATUREZA/HÁBITOS/IDEIAS VIVAS. Não lições. Children brought up country, live outdoors.
+  cm: "CM antes 6 anos: NATUREZA, HÁBITOS, IDEIAS VIVAS. 'Children brought up in country, live outdoors.'"
   nao_fazer:
-    - {d: NÃO matemática formal, cm: Direct teaching little need}
-    - {d: NÃO exercícios estruturados, cm: Knowledge not sole aim}
-    - {d: NÃO apressar, cm: Development natural process}
+    - {d: NÃO matemática formal, cm: "Direct teaching little need"}
+    - {d: NÃO exercícios estruturados, cm: "Knowledge not sole aim"}
+    - {d: NÃO apressar, cm: "Development natural process"}
   fazer:
-    natureza:
-      title: Natureza é Sala Aula
-      ativ: [Passeios 2h diárias, Observar insetos/plantas/nuvens, Brincar terra/água/areia, Plantas cuidar]
-      prop: Natureza ensina padrões/sequências/contagem sem perceber. 3 formigas, 4 pétalas, sol volta.
-    habitos:
-      title: Hábitos Antes Lições
-      ativ: [{aten: Olhar REAL 60s}, {obed: Responder 1ª vez alegria}, {rot: Sono/alimentação/higiene}, {ord: Cada brinquedo lugar}]
-      prop: Hábitos cedo = 2ª natureza. CM - Habit is ten natures.
-    ideias:
-      title: Ideias Via Histórias
-      ativ: [Histórias narradas pais, Canções/rimas, Conversas ricas, Perguntas mundo]
-      prop: Mente alimenta ideias vivas, não info seca. Histórias veículo.
-    contagem:
-      title: Matemática Surge Natural
-      ex: [Quantos dedos?, 3 maçãs você 3 papai, 2 meias pé quantas?, Degraus 1-5]
-      warn: NUNCA lição. Não quer OK. Objetivo EXPOSIÇÃO não instrução.
-  guardioes: {papel: Personagens histórias dormir opcional, abord: Podem aparecer SEM estrutura lição, nao: NÃO ensinar - conhecerá formal Sementes K}
-  frases: [Não atrasado protegendo infância, Menos estrutura agora mais fundação depois, Tempo natureza melhor preparação, Filho precisa você não exercícios]
+    natureza: {title: "Natureza é Sala Aula", ativ: [Passeios 2h diárias, Observar insetos/plantas/nuvens, Brincar terra/água/areia, Plantas cuidar], prop: "Natureza ensina padrões/sequências/contagem sem perceber."}
+    habitos: {title: "Hábitos Antes Lições", ativ: [{aten: Olhar REAL 60s}, {obed: Responder 1ª vez alegria}, {rot: Sono/alimentação/higiene}, {ord: Cada brinquedo lugar}], prop: "Hábitos cedo = 2ª natureza."}
+    ideias: {title: "Ideias Via Histórias", ativ: [Histórias narradas pais, Canções/rimas, Conversas ricas], prop: "Mente alimenta ideias vivas, não info seca."}
+    contagem: {title: "Matemática Surge Natural", ex: [Quantos dedos?, 3 maçãs você 3 papai, 2 meias pé quantas?, Degraus 1-5], warn: "NUNCA lição. Objetivo EXPOSIÇÃO não instrução."}
+  guardioes: {papel: "Personagens histórias", abord: "Podem aparecer SEM estrutura lição"}
+  frases: ["Tempo natureza melhor preparação", "Filho precisa você não exercícios"]
 
 onboarding:
-  principio: Não perdeu nada - chegou hora certa. Reino sempre existiu, só descobriu.
+  principio: "Não perdeu nada - chegou hora certa. Reino sempre existiu."
   cenarios:
-    entrada_raizes: {ciclo: Raízes, idade: 6-10, steps: [L000 adaptada, Apresentar 5 Guardiões, Viajante Construtor, Ponto curricular], tom: Já sabe! Dar NOME ao que faz. Bem-vindo Reino.}
-    entrada_logica: {ciclo: Lógica, idade: 10-14, steps: [Reino versão madura, Explicar jornada rápido, Explorador busca verdade, Conteúdo ano adequado], tom: Muita gente descobre tarde. Pronto explorar profundo.}
-    entrada_legado: {ciclo: Legado, idade: 14-18, steps: [Apresentação breve não infantil, Foco aplicação serviço, Guardiões mentores, Conteúdo direto], tom: Portador Tocha - usar para servir outros.}
-    irmao_novo: {cen: Irmão novo começa velho avançado, abord: Novo faz jornada completa. Velho ajuda novo FORTALECE aprendizagem. CM - best way learn is teach.}
-  guia_rapido: {title: Guia Início Rápido Famílias, content: [O que é MatViva 5min, 5 Guardiões, Lição típica, FAQs], onde: Site/app Novos Portadores}
-  licao_vindas: {desc: Cada ciclo Lição Boas-Vindas quem entra tarde, struct: [Apresentação Reino, Conhecer Guardião ciclo, Primeiro artefato, Convite jornada], note: Desenvolver ao criar lições}
-
+    entrada_raizes: {ciclo: Raízes (6-10), steps: [L000 adaptada, Apresentar Guardiões], tom: "Já sabe! Dar NOME ao que faz."}
+    entrada_logica: {ciclo: Lógica (10-14), steps: [Reino maduro, Explorador busca verdade], tom: "Pronto explorar profundo."}
+    entrada_legado: {ciclo: Legado (14-18), steps: [Foco aplicação, Guardiões mentores], tom: "Portador Tocha - servir outros."}
+    irmao_novo: {cen: "Irmão novo começa com velho avançado", abord: "Velho ajuda novo. Best way learn is teach."}
+  guia_rapido: {title: "Guia Início Rápido", content: [MatViva 5min, Lição típica], onde: "Site/app"}
+  licao_vindas: {desc: "Lição Boas-Vindas", struct: [Apresentação Reino, Guardião, Artefato]}

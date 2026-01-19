@@ -1,5 +1,5 @@
 # PETER THIEL — Pensador Contrarian (Zero to One)
-# YAML Lean v1.0 | Atualização: 13/01/2026
+# YAML Lean v1.2 | Atualização: 19/01/2026 | Alinhado North Star v1.2
 
 id: peter_thiel
 tipo: expert
@@ -67,7 +67,8 @@ alinhamento_north_star:
     - {id: 1, name: Qualidade Não Negociável, como: 10x better exige impecabilidade. Monopoly qualidade não quantity}
     - {id: 4, name: Cada Criança Pessoa, como: Contrarian truth Charlotte Mason Princípio 1 ignorado mainstream mas profundamente correto}
     - {id: 6, name: Identidade Tribal, como: Monopoly nicho specific. This for people like us homeschool CM families}
-  q_thiel: Isso Zero One criando novo? Ou One N copiando? Monopoly ou competition?
+    - {id: 5, name: Cultura do Reino, como: "Family-First Pricing is a Secret. O mercado pune filhos; nós premiamos. Isso cria lealdade irracional (Monopólio)."}
+  q_thiel: Isso é Zero One (Reino Próprio) ou One N (Mais um curso)?
 
 referencias:
   primarias: [Thiel Peter. Zero to One. Crown Business 2014]

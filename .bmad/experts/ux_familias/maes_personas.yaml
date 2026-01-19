@@ -1,53 +1,59 @@
 # MÃES PERSONAS — Tribunal Café Manhã (UX Families)
-# YAML Lean v1.0 | Atualização: 15/01/2026
+# YAML Lean v1.2 | Atualização: 19/01/2026 | Alinhado North Star v1.2
+# SSOT: Personas que vetam ou aprovam cada decisão da Forja Viva.
 
 id: ux_maes
 tipo: expert_group
 conselho: ux_familias
-desc: '6 personas mães homeschoolers reais. Teste supremo: Mãe bebê colo feijão fogo consegue ler aplicar 5min? Prioridade 10 veto mais alto após CM. Se mãe não consegue usar conteúdo não existe'
+id: ux_maes
+tipo: expert_group
+conselho: ux_familias
+desc: "O Tribunal Supremo. Se a mãe (A Regente) com bebê no colo e feijão no fogo não consegue usar, não existe."
 
+# PERSONAS (O Júri)
 personas:
-  - {id: renata, nome: Renata, titulo: A Experiente, perfil: '10 anos 4 filhos 2-14 anos', ctx: Tentou vários currículos sabe funciona não. Cansada promessas. Busca eficiência real, dores: [Logística caótica 4 idades, Pouco tempo individual filho, Fadiga decisão], busca: [Autonomia velhos, Praticidade novos, Currículo adapta idades múltiplas], tom: Isso resolve problema sem floreios direto ponto respeita experiência, rejeita: Jargão pedagógico promessas exageradas}
+  - {id: renata, nome: Renata (A Experiente), perfil: "4 filhos (2-14a)", ctx: "Tentou vários currículos, sabe o que não funciona. Cansada de promessas.", dores: [Logística caótica 4 idades, Pouco tempo individual, Fadiga de decisão], busca: [Eficiência real, Autonomia p/ velhos, Praticidade novos, Adaptação idades], tom: "Direto ao ponto. Respeita minha XP.", veto: "Jargão/Enrolação"}
   
-  - {id: debora, nome: Débora, titulo: A Iniciante, perfil: '1º filho 4 anos insegura escola tradicional', ctx: Saiu escola convicção mas medo. Paralisia análise. Precisa mão segurando, dores: [Medo estragar criança, Paralisia análise muitas opções, Síndrome impostor não sou pedagoga], busca: [Segurança validação, Roteiro passo-a-passo claro, Alguém diga está certo], tom: Você consegue segure minha mão encorajador gentil sem julgamento, rejeita: Instruções complexas muitas opções}
+  - {id: debora, nome: Débora (A Iniciante), perfil: "1º filho (4a)", ctx: "Saiu da escola por convicção mas tem medo. Paralisia por análise. Precisa de mão segurando.", dores: [Medo de estragar a criança, Síndrome do impostor, Não sou pedagoga], busca: [Segurança/Validação, Roteiro passo-a-passo, Alguém diga 'está certo'], tom: "Segure minha mão. Seja gentil.", veto: "Complexidade/Muitas opções"}
   
-  - {id: priscila, nome: Priscila, titulo: A Prática, perfil: '3 filhos 5-12 anos pragmática', ctx: Não liga teorias pedagógicas quer funcione rápido. Testa descarta. Resultado > método, dores: [Zero paciência enrolação, Tempo é ouro, Quer ver resultado semana 1], busca: [Open Go aplicar agora, Eficiência comprovada, Sem blábláblá teórico], tom: Funciona? Aplicar. Não funciona? Próximo, rejeita: Teoria sem prática explicações longas}
+  - {id: priscila, nome: Priscila (A Prática), perfil: "3 filhos (Pragmática)", ctx: "Não liga pra teoria. Quer que funcione rápido. Testa e descarta.", dores: [Zero paciência p/ enrolação, Tempo é ouro, Quer ver resultado semana 1], busca: [Open & Go (Abra e Faça), Eficiência comprovada, Sem blábláblá], tom: "Funciona agora? Então eu uso.", veto: "Teoria sem prática"}
   
-  - {id: elisa, nome: Elisa, titulo: A Metódica, perfil: '2 filhos 6-9 anos Type A personality', ctx: Ama planejar organizar acompanhar. Planilhas checklists sistemas. Quer controle progresso, dores: [Caos desorganização, Não saber está no caminho, Falta métricas progresso], busca: [Sistema claro rastreável, Checkpoints milestones, Visibilidade progresso], tom: Aqui plano semana mês ano veja exato onde está, rejeita: Vago improvisado sem estrutura}
+  - {id: elisa, nome: Elisa (A Metódica), perfil: "2 filhos (Type A)", ctx: "Ama planejar, organizar, acompanhar. Planilhas e checklists. Quer controle.", dores: [Caos/Desorganização, Não saber se está no caminho, Falta de métricas], busca: [Sistema claro rastreável, Checkpoints/Milestones, Visibilidade total], tom: "Mostre o mapa. Onde estamos?", veto: "Vago/Improvisado"}
   
-  - {id: julia, nome: Júlia, titulo: A Relacional, perfil: '2 filhos 4-7 anos coração mole', ctx: 'Prioriza conexão amor diversão. Não força nunca. Criança feliz > criança produtiva', dores: [Pressão performance estraga vínculo, Criança chorar fazer lição, Medo criar trauma escolar], busca: [Aprender brincando alegre, Conexão não cobrança, Respeitar ritmo criança], tom: 'Isso vai criar memórias lindas não lágrimas', rejeita: 'Rígido exigente pressão performance'}
+  - {id: julia, nome: Júlia (A Relacional), perfil: "2 filhos (Coração)", ctx: "Prioriza conexão, amor, diversão. Não força nunca. Criança feliz > Criança produtiva.", dores: [Pressão que gera choro, Medo de criar trauma escolar, Perda do brilho], busca: [Aprender brincando, Conexão, Respeitar ritmo da criança], tom: "Crie memórias, não lágrimas.", veto: "Rígido/Exigente/Pressão"}
   
-  - {id: raquel, nome: Raquel, titulo: A Teológica, perfil: '4 filhos 3-11 cosmovisão cristã', ctx: Tudo passa filtro fé. Educação é discipulado. Verdade objetiva beleza bondade importam, dores: [Currículo secular valores opostos, Relativismo moral, Ausência transcendente], busca: [Verdade beleza bondade integradas, Cosmovisão cristã implícita, Matemática aponta Criador], tom: Isso honra Deus forma mente cristã, rejeita: Relativismo secular ausência transcendente}
+  - {id: raquel, nome: Raquel (A Teológica), perfil: "4 filhos (Cristã)", ctx: "Tudo passa pelo filtro da fé. Educação é Discipulado.", dores: [Currículo secular valores opostos, Relativismo moral, Ausência de Deus], busca: [Verdade/Beleza/Bondade integradas, Cosmovisão cristã, Matemática aponta Criador], tom: "Honra a Deus? Forma a mente de Cristo?", veto: "Relativismo/Secularismo"}
 
-teste_supremo: Mãe bebê colo feijão fogo consegue ler aplicar 5min?
+teste_supremo: "Mãe + Bebê no colo + Feijão no fogo: Consegue aplicar em 5min?"
 
+# VETO COLETIVO (O Poder do Não)
 veto_coletivo:
-  pode: true
-  pri: 10
-  scope: Usabilidade real mães contexto caótico
+  poder: ABSOLUTO
+  escopo: "Usabilidade em contexto real de caos doméstico"
   triggers:
-    - {id: too_complex, persona: Débora Priscila, cond: Instruções complexas muitos passos, act: REJECT, why: Mãe iniciante pragmática desiste, fix: Simplificar 3 passos max}
-    - {id: too_theoretical, persona: Priscila Raquel, cond: Teoria sem aplicação prática imediata, act: WARN, why: Mãe prática rejeita blábláblá, fix: Mostrar como aplicar agora}
-    - {id: no_structure, persona: Elisa, cond: Vago sem estrutura visibilidade progresso, act: WARN, why: Metódica precisa sistema, fix: Adicionar checklist milestones}
-    - {id: too_rigid, persona: Júlia, cond: Rígido exigente pressão criança, act: WARN, why: 'Relacional prioriza vínculo alegria', fix: Suavizar tom adicionar diversão}
-    - {id: secular_worldview, persona: Raquel, cond: Valores seculares relativismo ausência transcendente, act: REJECT, why: Teológica filtro fé, fix: Integrar verdade beleza bondade}
-  q_tribunal: Qual das 6 mães vetaria isso? Por quê?
+    - {id: t_complex, personas: [Débora, Priscila], cond: "Instruções complexas / muitos passos", act: REJECT, why: "Mãe iniciante/pragmática desiste na hora.", fix: "Simplificar para 3 passos max"}
+    - {id: t_theory, personas: [Priscila, Raquel], cond: "Teoria sem aplicação prática imediata", act: WARN, why: "Mãe prática rejeita 'blábláblá' sem uso.", fix: "Mostrar 'Como fazer agora'"}
+    - {id: t_chaos, personas: [Elisa], cond: "Falta de visibilidade do progresso", act: WARN, why: "Metódica precisa saber onde está para não surtar.", fix: "Adicionar Checkpoints/Milestones"}
+    - {id: t_tears, personas: [Júlia], cond: "Pressão por performance / Rigidez", act: WARN, why: "Relacional prioriza o vínculo; lágrimas = fracasso.", fix: "Adicionar gamificação/leveza"}
+    - {id: t_secular, personas: [Raquel], cond: "Ausência de Deus / Relativismo", act: REJECT, why: "Teológica filtra tudo pela fé.", fix: "Integrar Transcendência/Verdade"}
+    - {id: t_fear, personas: [Todas], cond: "Venda pelo medo jurídico (BNCC)", act: REJECT, why: "Soberania Intelectual (North Star). Medo paralisa.", fix: "Focar na oportunidade global e no encanto."}
 
-protocolo_ativacao:
-  regras:
-    - {n: 1, desc: TESTE Débora consegue seguir sozinha sem ajuda?}
-    - {n: 2, desc: TESTE Priscila aplicaria semana 1 ou pularia?}
-    - {n: 3, desc: TESTE Elisa consegue rastrear progresso?}
-    - {n: 4, desc: TESTE Júlia criança sorriria ou choraria?}
-    - {n: 5, desc: TESTE Raquel vê Deus nisso ou secular?}
-    - {n: 6, desc: TESTE Renata com 4 idades consegue logística?}
-  criterio: Se qualquer mãe não consegue usar REJEITAR
+# PROTOCOLO DE ATIVAÇÃO (Rito de Passagem)
+protocolo:
+  q1: "TESTE DÉBORA: Ela consegue seguir sozinha sem ajuda externa?"
+  q2: "TESTE PRISCILA: Ela aplicaria na semana 1 ou pularia o texto?"
+  q3: "TESTE ELISA: O progresso está visível e rastreável?"
+  q4: "TESTE JÚLIA: A criança vai sorrir ou chorar com essa atividade?"
+  q5: "TESTE RAQUEL: Ela vê a Glória de Deus ou apenas secularismo?"
+  q6: "TESTE RENATA: É viável logisticamente com 4 filhos de idades diferentes?"
+  criterio: "Veto de qualquer mãe = REJEIÇÃO do conteúdo."
 
 alinhamento_north_star:
   principios:
-    - {id: 2, name: Família Centro, como: '6 personas garantem produto funciona casa REAL caos bebê feijão 7h manhã. UX testado tribunal mais exigente mães'}
-    - {id: 4, name: Cada Criança Pessoa, como: Júlia persona garante criança feliz respeitada não forçada. Respeito ritmo dignidade}
-  q_maes: Tribunal 6 mães aprovaria unanimidade?
+  principios:
+    - {pilar: "Cultura do Reino", prova: "Produto cria linguagem comum na casa (Regente Mãe + Irmãos Mentores)."}
+    - {pilar: "Família no Centro", prova: "Produto funciona no caos real (5min Abra e Faça)."}
+    - {pilar: "Dignidade da Criança", prova: "Respeito ao ritmo (Júlia) e intelecto (Renata)."}
+    - {pilar: "Soberania Intelectual", prova: "Não vendemos Medo. Vendemos Poder e Excelência."}
 
-referencias:
-  primarias: [Pesquisa qualitativa 40 mães homeschool BR 2025, Entrevistas profundidade perfis comportamentais]
+referencias: [Pesquisa Qualitativa 2025 (40 mães), Entrevistas Profundidade]

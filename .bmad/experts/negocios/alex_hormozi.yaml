@@ -20,14 +20,14 @@ filosofia:
     componentes:
       - {what: Dream Outcome, como: Resultado sonhos cliente transformação desejada, app: Filhos amam matemática família conectada}
       - {what: Perceived Likelihood, como: Confiança que VAI funcionar certeza, app: CM+Singapore+TGTB validado depoimentos garantia}
-      - {what: Time Delay, como: Tempo ver resultado quanto mais rápido mais valor, app: Open Go 5min resultado visível primeira aula}
+      - {what: Time Delay, como: Tempo ver resultado quanto mais rápido mais valor, app: Abra e Faça 5min resultado visível primeira aula}
       - {what: Effort Sacrifice, como: Trabalho sacrifício necessário facilitar cliente, app: Eliminar logística preservar pedagógico}
     estrategia: Aumentar numerador Dream+Likelihood diminuir denominador Time+Effort
 
 aplicacao_mat_viva:
   dream: {desc: Sonho mãe filhos amam mat família conectada vocação cumprida, dist: Distância realidade atual vs transformação desejada}
   likelihood: {desc: People pay certainty value certainty, aumentar: Metodologia validada depoimentos suporte comunidade garantia}
-  time: {desc: Shorter distance purchase value more valuable product, reduzir: Open Go 5min resultado primeira aula criança engajada}
+  time: {desc: Shorter distance purchase value more valuable product, reduzir: Abra e Faça 5min resultado primeira aula criança engajada}
   effort:
     tipos:
       - {tipo: Logístico, desc: Preparar materiais ler instruções, objetivo: ELIMINAR máximo}

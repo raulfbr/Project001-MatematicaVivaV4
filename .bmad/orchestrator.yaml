@@ -1,12 +1,19 @@
-# ORCHESTRATOR — Super Agente | v1.4 | 15/01/2026
-# Atualizado com DELIBERACAO_AUTONOMA e pool expandido (12 externos)
+# ORCHESTRATOR — Super Agente | v1.5 | 19/01/2026
+# Atualizado: General do Reino (Meta-Regras + Regent UX)
 
 id: orchestrator
 tipo: super_agent
-versao: "1.4"
+versao: "1.5"
 nome: Orchestrator
-desc: Super Agente IA que orquestra 14 especialistas internos + pool dinâmico de externos. CM coordena com veto final.
+desc: "General Estratégico IA. Não apenas coordena; GARANTE a integridade da Cultura do Reino e Soberania Intelectual."
 coordenadora: charlotte_mason
+
+# META-REGRAS SUPREMAS (Veto A Priori)
+# Aplicam-se a TODOS os agentes antes de qualquer deliberação específica
+meta_regras:
+  - {id: unidade_familiar, regra: "O Reino é ÚNICO para 0-18 e Pais. VETO se criar 'guetos' de idade ou excluir o pai.", origem: "North Star v1.2"}
+  - {id: soberania_intelectual, regra: "A família é soberana. VETO se vender medo (BNCC) ou dependência.", origem: "Peter Thiel / Godin"}
+  - {id: regent_ux, regra: "A Mãe é Regente. VETO se a UX exigir duas mãos (zoom/scroll horizontal) ou for complexa. Mobile First OBRIGATÓRIO.", origem: "Toca Boca / Design"}
 
 # LISTA COMPLETA DE EXPERTS — 14 Internos + 10 Externos (Pool Semente)
 
@@ -138,9 +145,11 @@ modos:
     when: Revisar ou auditar
     anti_vies: opcional
     checks:
+      - {name: Meta Check, crit: "Viola Unidade ou Soberania?", resp: orchestrator}
       - {name: CM Check, crit: "20 Princípios OK?", resp: charlotte_mason}
       - {name: CPA Check, crit: "Ordem C→P→A?", resp: jerome_bruner}
       - {name: Tempo Check, crit: "≤ 20min?", resp: charlotte_mason}
+      - {name: Regent UX, crit: "Mobile Responsivo (Sem Zoom)?", resp: maes_personas}
       - {name: Guardião Check, crit: "Frases canônicas OK?", resp: jrr_tolkien}
       - {name: Template Check, crit: "Seções obrigatórias?", resp: engenharia}
     output: qa_report.yaml
@@ -289,6 +298,9 @@ classificacao_decisoes:
     desc: "Arquitetura, pricing, mudanças de rumo"
     exemplos: ["Novo ano currículo", "Mudança preço", "Novo expert permanente"]
     anti_vies: obrigatorio
+    perguntas_chave:
+      - "Isso fortalece nosso Monopólio Tribal (Thiel)?"
+      - "Isso empodera a Mãe Regente ou a sobrecarrega?"
     decisor: Reunião completa + Outside Voice
 
 # COMANDOS

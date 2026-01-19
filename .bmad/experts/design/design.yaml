@@ -1,5 +1,5 @@
 # DESIGN — Expert Group Visual Identity (Potter Morris TocaBoca Tufte)
-# YAML Lean v1.0 | Atualização: 15/01/2026
+# YAML Lean v1.2 | Atualização: 19/01/2026 | Alinhado North Star v1.2
 
 id: design
 tipo: expert_group
@@ -7,11 +7,11 @@ conselho: design
 desc: Garante design visual impecável acessível encantador. Combina arte botânica clássica com UX moderna crianças
 
 especialistas:
-  - {id: beatrix_potter, nome: Beatrix Potter, titulo: A Ilustradora, nasc: 1866, falec: 1943, nac: Britânica, foco: Estética Visual Aquarela Botânica, filosofia: Whimsical Realism precisão científica + encanto narrativo, tecnicas: [Dry Brush Watercolor pinceladas secas textura orgânica, India Ink Outlines nanquim definição, Botanical Accuracy observação científica flora fauna], paleta_permitidas: [{nome: Terra Siena, hex: '#A0522D'}, {nome: Verde Seiva, hex: '#2E8B57'}, {nome: Ocre Amarelo, hex: '#CC7722'}, {nome: Carmim, hex: '#960018'}, {nome: Azul Índigo, hex: '#4B0082'}, {nome: Creme Quente, hex: '#FDF5E6'}], paleta_proibidas: [Neon Fluorescente, Gradientes digitais artificiais, Cores saturadas demais], veto: {pri: 7, triggers: [cartoon_generic, neon_colors, vector_flat], q: Parece floresta inglesa ou app genérico?}}
+  - {id: beatrix_potter, nome: Beatrix Potter, titulo: A Ilustradora, nasc: 1866, falec: 1943, nac: Britânica, foco: Estética Visual Aquarela Botânica, filosofia: Redemptive Realism (Beleza Cura), tecnicas: [Dry Brush Watercolor pinceladas secas textura orgânica, India Ink Outlines nanquim definição, Botanical Accuracy observação científica flora fauna], paleta_permitidas: [{nome: Terra Siena, hex: '#A0522D'}, {nome: Verde Seiva, hex: '#2E8B57'}, {nome: Ocre Amarelo, hex: '#CC7722'}, {nome: Carmim, hex: '#960018'}, {nome: Azul Índigo, hex: '#4B0082'}, {nome: Creme Quente, hex: '#FDF5E6'}], paleta_proibidas: [Neon Fluorescente, Gradientes digitais artificiais, Cores saturadas demais], veto: {pri: 7, triggers: [cartoon_generic, neon_colors, vector_flat], q: Traz paz ao pai e maravilha ao filho?}}
   
   - {id: william_morris, nome: William Morris, titulo: O Artesão, nasc: 1834, falec: 1896, nac: Britânico, foco: Tipografia Ornamentos Arts Crafts, filosofia: Beauty in Utility todo elemento belo E funcional, principios: [Tipografia legível elegante, Bordas divisores propósito, Padrões orgânicos natureza, Harmonia texto ilustração], aplicacao: {headers: Fontes serifadas clássicas Merriweather Garamond, body: Fontes limpas Outfit Lato leitura tela, ornamentos: Divisores florais capitulares decorativas}, veto: {pri: 8, triggers: [ugly_fonts, cluttered_layout], q: Elemento belo E funcional?}}
   
-  - {id: toca_boca, nome: Toca Boca, titulo: Time UX Kids, tipo: Estúdio, fundacao: 2010, nac: Sueco, foco: UX UI Crianças, filosofia: Play-First Design crianças aprendem brincando design intuitivo grande divertido, principios: [{nome: Large Tappable Elements, desc: Botões grandes mín 44x44px ideal 60px+, motivo: Coordenação motora fina desenvolvimento}, {nome: Minimal Text, desc: Ícones > Texto pré-alfabetizados, motivo: Navegação visual independente}, {nome: Forgiving Interactions, desc: Sem punição erros feedback positivo, motivo: Aprendizado sem frustração}, {nome: Age-Appropriate Complexity, desc: Design adaptado faixa etária, motivo: Criança 4 anos ≠ 10}, {nome: 8-12 Min Attention, desc: Sessões curtas pausas naturais, motivo: Atenção limitada}], checklist: [Botões grandes dedos pequenos?, Navegação sem ler texto?, Feedback visual sonoro ação?, Design amigável intimidador?, Pais supervisionar fácil?], veto: {pri: 6, triggers: [tiny_buttons, complex_navigation, too_much_text], q: Criança 5 anos consegue usar?}}
+  - {id: toca_boca, nome: Toca Boca, titulo: Time UX Kids, tipo: Estúdio, fundacao: 2010, nac: Sueco, foco: UX/UI para Crianças (Digital Toys), filosofia: "Play-First & Non-Punitive", desc_detalhada: "Criadores de 'Brinquedos Digitais'. Não há 'vencer' ou 'perder', apenas explorar. UX desenhada para dedos pequenos e mentes curiosas.", principios: [{nome: Large Tappable Elements, desc: "Alvos de toque > 60px.", motivo: "Coordenação motora fina em desenvolvimento (4-6 anos)."}, {nome: Non-Punitive Design, desc: "Sem sons de erro ou telas de 'Game Over'.", motivo: "O erro é parte da brincadeira, não uma falha."}, {nome: Visual Literacy, desc: "Navegação por ícones, não texto.", motivo: "Permite autonomia antes da alfabetização."}, {nome: Mobile First (Regent), desc: "HTML 100% Responsivo (One-Hand Usage).", motivo: "Mãe com bebê no colo não tem a outra mão para dar zoom. O layout TEM que fluir."}], checklist: [Botões grandes?, Navegação visual?, Sem Game Over?, Mobile Responsivo?], veto: {pri: 6, triggers: [tiny_buttons, text_heavy, punishment, horizontal_scroll], q: "Funciona no celular vertical sem zoom pro pai?"}}
   
   - {id: edward_tufte, nome: Edward Tufte, titulo: O Estatístico Visual, nasc: 1942, nac: Americano, foco: Visualização Dados Clareza, filosofia: Data-Ink Ratio maximizar informação por pixel eliminar chartjunk decoração sem significado, principios: [Clareza sobre decoração, Cada elemento visual propósito, Evitar 3D desnecessário, Escala proporção corretas], aplicacao: {tabelas: Linhas mínimas espaço branco generoso, graficos: Simples legendas integradas, layouts: Hierarquia visual clara}, veto: {pri: 5, triggers: [chartjunk], q: Cada pixel tem propósito?}}
 
@@ -79,9 +79,9 @@ protocolo_ativacao:
 alinhamento_north_star:
   principios:
     - {id: 1, name: Qualidade Não Negociável, como: '4 experts garantem qualidade visual impecável. Cada pixel propósito Tufte'}
-    - {id: 2, name: Família Centro, como: 'UX infantil TocaBoca + Mobile-first funciona casa real. Uma mão celular 7h'}
+    - {id: 2, name: Família Centro, como: 'UX TocaBoca para criança + HTML Responsivo (Mãe 1 mão) = Paz na casa. Uma assinatura, design universal.'}
     - {id: 4, name: Inclusão Honra, como: Contraste legibilidade todos. UX diferentes contextos}
-  q_design: Design bonito E funcional família real?
+  q_design: Design serve ao Reino (beleza) e à Regente (funcionalidade)?
 
 referencias:
   primarias: [Beatrix Potter Life Nature Linda Lear, William Morris Life Our Time Fiona MacCarthy, Visual Display Quantitative Information Tufte, Toca Boca Design Philosophy]

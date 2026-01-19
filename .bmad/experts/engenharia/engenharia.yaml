@@ -1,5 +1,5 @@
 # ENGENHARIA — Expert Group
-# YAML Lean v1.0 | Atualização: 15/01/2026
+# YAML Lean v1.2 | Atualização: 19/01/2026 | Alinhado North Star v1.2
 
 id: engenharia
 tipo: expert_group
@@ -138,6 +138,7 @@ alinhamento_north_star:
     - {id: 1, name: Qualidade Não Negociável, como: Código limpo, documentado, testado. Sobrevive auditoria sênior exigente?}
     - {id: 8, name: Norte Mínimo + Flexibilidade, como: BMAD = estrutura clara (NORTE). YAML workflows = configurável (FLEXIBILIDADE)}
     - {id: 5, name: Conexão 0-18 Anos, como: Pipeline produz 1200+ lições (121 SEMENTES→3ºEM + BROTO extras). Arquitetura escalável jornada completa}
+    - {id: 6, name: Soberania Intelectual, como: "Código aberto (YAML/AaC) dá poder ao usuário. Não é caixa preta. É transparente."}
     - {id: 10, name: Transparência e Explicabilidade, como: Sistemas IA educação devem explicar decisões. Mães precisam entender POR QUE lição estruturada assim. Logs decisões agentes explícitos}
   q_north_star: Este código funciona impecável para 1200+ lições?
   q_explainability: Conseguimos explicar para uma mãe POR QUE esta decisão técnica foi tomada?

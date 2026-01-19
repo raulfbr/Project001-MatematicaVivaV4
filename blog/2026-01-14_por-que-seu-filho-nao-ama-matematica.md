@@ -29,7 +29,7 @@ A matemática real não vive em planilhas chatas. Ela vive no ritmo das músicas
 
 E você pode devolver essa linguagem para ele.
 
-Na **Forja Viva**, nós acreditamos em três verdades que mudam tudo:
+Na **Matemática Viva**, nós acreditamos em três verdades que mudam tudo:
 
 ### 1. Crianças são Pessoas (Charlotte Mason)
 Seu filho não é um "copo vazio" para ser enchido de tabuadas. Ele é uma pessoa completa, com dignidade, imaginação e vontade. Ele merece aprender matemática com histórias vivas, não com exercícios mecânicos.
@@ -52,4 +52,4 @@ Você só precisa ser o guia que segura a mão dele e diz: *"Vamos descobrir iss
 
 A fogueira está acesa. O Reino está aberto.
 
-Bem-vindo à Forja Viva. Onde a matemática deixa de ser medo e volta a ser aventura.
+Bem-vindo à Matemática Viva. Onde a matemática deixa de ser medo e volta a ser aventura.

@@ -8,6 +8,7 @@ sys.path.append(str(Path(__file__).parent))
 from fases.sementes import SementesDriver
 from fases.landing import LandingDriver
 from fases.livros import LivrosDriver
+from fases.raizes import RaizesDriver
 from core.logger import ForgeLogger
 
 class ForgeConfig:
@@ -17,7 +18,7 @@ class ForgeConfig:
 
 def main():
     parser = argparse.ArgumentParser(description="Forja Gutenberg V3: The Master Builder")
-    parser.add_argument("--fase", type=str, choices=['sementes', 'livros', 'all'], default='all',
+    parser.add_argument("--fase", type=str, choices=['sementes', 'raizes', 'livros', 'all'], default='all',
                         help="Qual fase renderizar (default: all)")
     parser.add_argument("--dry-run", action="store_true", help="Executa verificação sem gravacao")
     
@@ -30,6 +31,9 @@ def main():
     # 1. Builders de Conteúdo (Geram arquivos que o Index vai ler)
     if args.fase in ['sementes', 'all']:
         drivers.append(SementesDriver(dry_run=args.dry_run))
+
+    if args.fase in ['raizes', 'all']:
+        drivers.append(RaizesDriver(dry_run=args.dry_run))
         
     if args.fase in ['livros', 'all']:
         drivers.append(LivrosDriver(ForgeConfig))

@@ -89,7 +89,7 @@ class GutenbergEngine:
         """Phase 1: YAML Integrity Scan."""
         ForgeLogger.log("Escaneando Lições YAML...")
         
-        yaml_files = list(self.config.INPUT_DIR.glob("*.yaml"))
+        yaml_files = list(self.config.INPUT_DIR.rglob("*.yaml"))
         
         if not yaml_files:
             self.warnings.append("Nenhum arquivo YAML encontrado.")

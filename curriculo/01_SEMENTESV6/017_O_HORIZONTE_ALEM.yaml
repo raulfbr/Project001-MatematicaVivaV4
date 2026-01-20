@@ -1,0 +1,221 @@
+# LIÇÃO 017 — O HORIZONTE ALÉM
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-017-horizonte-alem
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-017
+    titulo: O Horizonte Além
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 2
+    tipo: Contagem
+    guardiao_lider: celeste
+    guardiao_secundario: melquior
+    guardioes_apresentados: [celeste]
+    tgtb_ref: 000-L17
+    tgtb_titulo_en: Counting to 40 Practice
+    tgtb_titulo_pt: Prática de Contagem até 40
+    objetivo_pedagogico: '[Foco: Contagem fluente até 40]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-016, titulo: O Bando que Cresce}
+    proxima: {id: MV-S-018, titulo: O Vazio e a Plenitude}
+
+  para_portador:
+    ideia_viva:
+      frase: "Quarenta tesouros coletados na mochila da Raposa exploradora."
+      conceito: Podemos contar até 40 — são quatro grupos de dez!
+      intencao_cm: A criança percebe que a contagem continua além do que já conhece.
+    dica_coracao: |
+      Celeste está explorando além do horizonte!
+      Hoje contamos até 40 — dez a mais que semana passada.
+      Cada dezena é uma conquista.
+    filho_descobre: Que contar até 40 segue o padrão das dezenas.
+    protocolo_impecabilidade: |
+      Conte em GRUPOS DE 10. Pause a cada dezena.
+      31, 32... 40! Celebre cada marco.
+    nota_graca: "Celeste diz: 'Sente esse cheiro? É aventura!' — mesmo no 37."
+    conforto_emocional: |
+      40 parece muito, mas são só 10 a mais do que 30!
+    audio_script: |
+      Olá, Portador! Celeste voltou de uma expedição!
+      Ela coletou 40 tesouros! Vamos contar!
+    preparacao:
+      materiais:
+        - {item: Card Celeste, qtd: 1, alt: imagem da raposa, essencial: true}
+        - {item: 40 objetos pequenos (opcional), qtd: 40, alt: contar no ar, essencial: false}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-016
+      gancho: Você aprendeu a somar! Agora, Celeste nos leva além do 30!
+    proximo:
+      licao_id: MV-S-018
+      gancho: Você conta até 40! Amanhã, Melquior mostra o mistério do Zero!
+
+  ritual_abertura:
+    instrucao_ambiente: Ambiente de aventura, luz natural.
+    local: clareira_perguntas
+    clima: ensolarado
+    virtude: curiosidade
+    artefato: Uma mochila imaginária de tesouros
+    transicao_reino: |
+      Feche os olhos. Celeste está voltando de uma jornada.
+      Sua mochila está cheia de tesouros!
+    fala_portador:
+      tom: animado
+      script: |
+        Olha! Celeste voltou da expedição!
+        Ela tem uma mochila cheia! Quantos tesouros será?
+    card_guardiao: 'CARD: CELESTE'
+    abertura_sensorial: |
+      O ar cheira a aventura e terras distantes.
+      Celeste abre sua mochila com um sorriso.
+      "Sente esse cheiro? É aventura!"
+
+  jornada:
+    narrativa_principal:
+      - titulo: Os Primeiros Trinta
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: animado
+          script: |
+            "Você lembra? Subimos 30 degraus com Melquior!"
+            [Celeste conta nos dedos]
+            "Um, dois, três... trinta! Mas eu fui ALÉM!"
+        instrucao_portador: |
+          Conte rapidamente de 1 a 30 (ou relembre).
+          "Você já sabe contar até 30! Vamos além!"
+      - titulo: Além do Horizonte
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: curioso
+          script: |
+            "Depois do trinta vem... trinta e UM!"
+            [Celeste pula de alegria]
+            "Trinta e dois, trinta e três... até QUARENTA!"
+        instrucao_portador: |
+          Conte de 31 a 40 pausadamente.
+          "Trinta e um... trinta e dois... até QUARENTA!"
+      - titulo: Quatro Dezenas
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: satisfeito
+          script: |
+            "Quarenta tesouros! São QUATRO grupos de dez!"
+            "Dez, vinte, trinta, QUARENTA!"
+        instrucao_portador: |
+          Conte de 10 em 10 até 40.
+          "Dez, vinte, trinta, quarenta! Quatro dezenas!"
+
+    concreto:
+      desc: Contar de 1 a 40 em grupos de 10
+      card_objeto: 'CARD: MOCHILA DE TESOUROS'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Revise 1-30 rapidamente.
+          fala_sugerida: "Vamos lembrar: 1, 2, 3... 30!"
+        - passo: 2
+          acao: Conte 31-40 pausadamente.
+          fala_sugerida: "Agora além: 31, 32, 33... 40!"
+        - passo: 3
+          acao: Conte de 10 em 10.
+          fala_sugerida: "Dez, vinte, trinta, QUARENTA!"
+        - passo: 4
+          acao: Celebre o 40!
+          fala_sugerida: "Você chegou aos quarenta tesouros!"
+      norte_absoluto: Pausas a cada dezena reforçam o padrão.
+      adaptacao_bernardo: |
+        💡 Se 40 é muito, foque em 31-35 hoje.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Contagem oral.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Fluência na sequência numérica até 40
+      nota: A criança OUVE e FALA os números.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando até 40
+      sugestoes:
+        - titulo: Contar para Trás
+          acao: De 40 até 30. Descendo a montanha!
+        - titulo: Saltos de 10
+          acao: 10, 20, 30, 40. Quantas dezenas?
+      adaptacao_bernardo: |
+        💡 Use ritmo lento se concentração for difícil.
+
+  narracao:
+    instrucao_portador: |
+      Feche a mochila imaginária.
+      "Celeste está orgulhosa da sua contagem!"
+    pergunta_principal: Quantos tesouros Celeste coletou?
+    perguntas_coracao:
+      - O que vem depois do 39?
+      - Quantas dezenas são 40?
+    nota_cm: A narração celebra a expansão do horizonte numérico.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: satisfeito
+      script: |
+        "Você foi além do horizonte comigo!"
+        "Quarenta tesouros! Até a próxima aventura!"
+    fio_ouro: "Você conta até 40! Amanhã, Melquior mostra o mistério do Zero!"
+    transicao_volta:
+      instrucao: Conte de 10 em 10 até 40.
+      fala: Dez, vinte, trinta, quarenta. Voltamos.
+
+  para_familia:
+    titulo: Além do Horizonte
+    porque_importa: |
+      Expandir a contagem para 40 solidifica o padrão decimal.
+      A criança percebe que os números continuam infinitamente.
+    metodo_cpa:
+      concreto: Contagem oral com pausas.
+      pictorico: Vetado.
+      abstrato: Fluência na sequência.
+      nota: "CM: Lições curtas, expansão gradual."
+    principio_cm:
+      numero: 13
+      citacao: "Education is an atmosphere."
+      aplicacao: Atmosfera de aventura torna contagem prazerosa.
+    tgtb_conexao: |
+      Corresponde à lição de Prática de Contagem até 40.
+      Celeste traz aventura e exploração.
+    espiral:
+      conceito: Contagem Fluente
+      volta_atual: 'Sementes — contar até 40'
+      proxima_volta: 'Raízes — contar até 100'
+    reflexao_espiritual: |
+      Sempre há mais além do horizonte.
+      O número de bênçãos é incontável.
+    nota_graca: |
+      Se tropeçar em algum número, Celeste diz:
+      "Vamos de novo — juntos!"
+
+  diario_portador:
+    nota: Observe a transição 30-31 e 39-40.
+    perguntas:
+      - Ela conta de 10 em 10 com fluência?
+      - O padrão das dezenas está claro?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

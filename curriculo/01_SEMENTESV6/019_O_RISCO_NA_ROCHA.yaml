@@ -1,0 +1,224 @@
+# LIÇÃO 019 — O RISCO NA ROCHA
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-019-risco-rocha
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-019
+    titulo: O Risco na Rocha
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 2
+    tipo: Representação
+    guardiao_lider: iris
+    guardiao_secundario: bernardo
+    guardioes_apresentados: [iris]
+    tgtb_ref: 000-L19
+    tgtb_titulo_en: Tally Marks up to 5
+    tgtb_titulo_pt: Marcas de Contagem até 5
+    objetivo_pedagogico: '[Foco: Tally marks — marcas de contagem de 1 a 5]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-018, titulo: O Vazio e a Plenitude}
+    proxima: {id: MV-S-020, titulo: O Selo Real}
+
+  para_portador:
+    ideia_viva:
+      frase: "Marcar cada maravilha com o giz da Sentinela, de cinco em cinco."
+      conceito: Podemos representar números com riscos simples.
+      intencao_cm: A criança percebe que um risco representa uma coisa contada.
+    dica_coracao: |
+      Íris está marcando o que vê no mundo!
+      Um risco para cada maravilha.
+      De cinco em cinco, com o quinto atravessando.
+    filho_descobre: Que podemos registrar quantidades com riscos simples.
+    protocolo_impecabilidade: |
+      CONTE objetos, MARQUE riscos.
+      1 = |, 2 = ||, 3 = |||, 4 = ||||, 5 = |||| cortado.
+    nota_graca: "Íris diz: 'Olhe bem. A beleza está no detalhe.' — cada risco é um tesouro!"
+    conforto_emocional: |
+      Tally marks são os primeiros "registros" da humanidade!
+    audio_script: |
+      Olá, Portador! Íris está contando maravilhas!
+      Ela marca cada uma com um risco na rocha.
+    preparacao:
+      materiais:
+        - {item: Papel e lápis, qtd: 1, alt: giz e quadro, essencial: true}
+        - {item: 5 objetos para contar, qtd: 5, alt: pedras, essencial: true}
+        - {item: Card Íris, qtd: 1, alt: imagem do pardal, essencial: true}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-018
+      gancho: Você conhece Zero e Dúzia. Agora, Íris ensina a marcar o que contamos!
+    proximo:
+      licao_id: MV-S-020
+      gancho: Você sabe fazer marcas de contagem. Amanhã, praticamos mais a escrita dos números!
+
+  ritual_abertura:
+    instrucao_ambiente: Ambiente natural, como se estivesse numa rocha.
+    local: ninho_mirante
+    clima: ensolarado
+    virtude: atencao
+    artefato: Um pedaço de giz ou lápis
+    transicao_reino: |
+      Feche os olhos. Estamos numa rocha alta.
+      Íris está desenhando algo na pedra.
+    fala_portador:
+      tom: curioso
+      script: |
+        Olha! Íris está fazendo marcas na rocha!
+        O que será que ela está contando?
+    card_guardiao: 'CARD: IRIS'
+    abertura_sensorial: |
+      O ar está fresco no alto da rocha.
+      Íris inclina a cabeça olhando ao redor.
+      "Olhe bem. A beleza está no detalhe."
+
+  jornada:
+    narrativa_principal:
+      - titulo: A Primeira Marca
+        local: ninho_mirante
+        fala_guardiao:
+          tom: atento
+          script: |
+            "Veja aquele pássaro! Vou marcar que vi um."
+            [Íris faz um risco |]
+            "Um risco = uma coisa contada!"
+        instrucao_portador: |
+          Mostre 1 objeto. Faça 1 risco no papel.
+          "Um objeto, um risco!"
+      - titulo: Mais Riscos
+        local: ninho_mirante
+        fala_guardiao:
+          tom: animado
+          script: |
+            "Agora vi mais! Dois, três, quatro..."
+            [Íris faz || ||| ||||]
+            "Quatro riscos em fila!"
+        instrucao_portador: |
+          Adicione objetos e riscos correspondentes.
+          "Dois riscos, três riscos, quatro riscos!"
+      - titulo: O Grupo de Cinco
+        local: ninho_mirante
+        fala_guardiao:
+          tom: satisfeito
+          script: |
+            "E quando chegamos a cinco... o quinto atravessa!"
+            [Íris faz |||| com risco diagonal]
+            "Assim sabemos que é um grupo de CINCO!"
+        instrucao_portador: |
+          Mostre 5 objetos. Faça 4 riscos e o 5º atravessando.
+          "Cinco! O último atravessa os outros!"
+
+    concreto:
+      desc: Contar objetos e registrar com tally marks
+      card_objeto: 'CARD: ROCHA DE REGISTROS'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Mostre 1 objeto. Faça 1 risco.
+          fala_sugerida: "Um objeto, um risco!"
+        - passo: 2
+          acao: Mostre 2, faça 2 riscos. Continue até 4.
+          fala_sugerida: "Dois riscos... três... quatro!"
+        - passo: 3
+          acao: No 5º, faça o risco atravessando.
+          fala_sugerida: "Cinco! O quinto atravessa!"
+        - passo: 4
+          acao: Conte os riscos para confirmar.
+          fala_sugerida: "Quantos riscos? 1, 2, 3, 4, 5!"
+      norte_absoluto: 1 risco = 1 objeto. Grupo de 5 = atravessa.
+      adaptacao_bernardo: |
+        💡 Se a criança não segura lápis, faça você os riscos.
+        Ela conta, você marca.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Tally é ENATIVO.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Correspondência risco = quantidade
+      nota: Tally é representação, mas ainda concreta.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando tally marks
+      sugestoes:
+        - titulo: Contar Coisas na Casa
+          acao: Quantas cadeiras? Faça os riscos.
+        - titulo: Dois Grupos de Cinco
+          acao: Faça 10 riscos em 2 grupos de 5.
+      adaptacao_bernardo: |
+        💡 Use gestos no ar se papel for difícil.
+
+  narracao:
+    instrucao_portador: |
+      Guarde o papel com os riscos.
+      "Íris adorou seu registro!"
+    pergunta_principal: Como Íris registra o que ela conta?
+    perguntas_coracao:
+      - Quantos riscos fazem um grupo de 5?
+      - Por que o quinto atravessa?
+    nota_cm: A narração conecta representação à contagem.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: poetico
+      script: |
+        "Você aprendeu a linguagem das marcas!"
+        "Cada risco é um tesouro registrado."
+    fio_ouro: "Você sabe fazer marcas de contagem. Amanhã, praticamos a escrita dos números!"
+    transicao_volta:
+      instrucao: Faça 5 riscos de despedida.
+      fala: Um, dois, três, quatro, cinco. Voltamos.
+
+  para_familia:
+    titulo: Os Primeiros Registros
+    porque_importa: |
+      Tally marks são a forma mais antiga de registro numérico.
+      Conectam contagem a representação visual.
+    metodo_cpa:
+      concreto: Fazer riscos com mão (ENATIVO).
+      pictorico: Vetado como objetivo principal.
+      abstrato: Correspondência risco = quantidade.
+      nota: "Bruner: Representação emerge da ação."
+    principio_cm:
+      numero: 16
+      citacao: "Handicrafts teach accuracy."
+      aplicacao: Fazer riscos desenvolve precisão motora.
+    tgtb_conexao: |
+      Corresponde à lição de Tally Marks até 5.
+      Íris traz atenção ao detalhe.
+    espiral:
+      conceito: Representação Numérica
+      volta_atual: 'Sementes — tally marks até 5'
+      proxima_volta: 'Raízes — tally até 20, tabelas'
+    reflexao_espiritual: |
+      Registro é memória.
+      Como os pergaminhos antigos, cada marca conta uma história.
+    nota_graca: |
+      Se os riscos ficarem tortos, Íris diz:
+      "Toda curva conta uma história!"
+
+  diario_portador:
+    nota: Observe a correspondência 1 risco = 1 objeto.
+    perguntas:
+      - Ela entende o grupo de 5 com o atravessado?
+      - A coordenação motora permite fazer riscos?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

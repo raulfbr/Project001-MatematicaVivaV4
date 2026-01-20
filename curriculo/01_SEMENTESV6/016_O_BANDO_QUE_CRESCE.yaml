@@ -1,0 +1,222 @@
+# LIÇÃO 016 — O BANDO QUE CRESCE
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-016-bando-cresce
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-016
+    titulo: O Bando que Cresce
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 2
+    tipo: Operações
+    guardiao_lider: bernardo
+    guardiao_secundario: iris
+    guardioes_apresentados: [bernardo]
+    tgtb_ref: 000-L16
+    tgtb_titulo_en: Addition
+    tgtb_titulo_pt: Adição
+    objetivo_pedagogico: '[Foco: Adição concreta — juntar grupos e contar o total]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-015, titulo: A Escada de Luz}
+    proxima: {id: MV-S-017, titulo: O Horizonte Além}
+
+  para_portador:
+    ideia_viva:
+      frase: "Um pássaro chama outro. O Urso ensina a aritmética da alegria!"
+      conceito: Quando juntamos grupos, eles crescem — isso é adição.
+      intencao_cm: A criança percebe a adição como movimento natural de crescimento.
+    dica_coracao: |
+      Hoje Bernardo vai nos mostrar como os bandos crescem!
+      Um pássaro chega, depois outro, e o grupo fica maior.
+      É a alegria de ver o número crescer.
+    filho_descobre: Que juntar grupos faz o total crescer.
+    protocolo_impecabilidade: |
+      JUNTE objetos PRIMEIRO. Depois conte.
+      Adição é AÇÃO antes de ser símbolo.
+    nota_graca: "Bernardo diz: 'Mais uma vez. Comigo.' — quanto mais juntamos, mais alegria!"
+    conforto_emocional: |
+      Adição é brincadeira de juntar. Seu filho já sabe fazer isso!
+    audio_script: |
+      Olá, Portador! Bernardo está chamando os pássaros!
+      Vamos ver o bando crescer!
+    preparacao:
+      materiais:
+        - {item: 10 objetos pequenos (pedras ou botões), qtd: 10, alt: qualquer objeto, essencial: true}
+        - {item: Card Bernardo, qtd: 1, alt: imagem do urso, essencial: true}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-015
+      gancho: Você contou até 30! Agora, Bernardo ensina como os números crescem quando juntamos!
+    proximo:
+      licao_id: MV-S-017
+      gancho: Você sabe somar. Amanhã, Celeste nos leva até o 40!
+
+  ritual_abertura:
+    instrucao_ambiente: Ambiente natural, como se estivesse ao ar livre.
+    local: caverna_recomeco
+    clima: primaveril
+    virtude: persistencia
+    artefato: Um punhado de pedras (representando pássaros)
+    transicao_reino: |
+      Feche os olhos. O ar está fresco.
+      Bernardo está sentado na clareira, olhando para o céu.
+    fala_portador:
+      tom: animado
+      script: |
+        Olha! Bernardo está olhando para o céu!
+        Ele está contando os pássaros que chegam!
+    card_guardiao: 'CARD: BERNARDO'
+    abertura_sensorial: |
+      O ar cheira a terra molhada e flores.
+      Bernardo levanta uma pata para o céu.
+      "Mais uma vez. Comigo."
+
+  jornada:
+    narrativa_principal:
+      - titulo: Os Primeiros Pássaros
+        local: caverna_recomeco
+        fala_guardiao:
+          tom: animado
+          script: |
+            "Olha! Dois pássaros pousaram naquela árvore!"
+            [Bernardo aponta]
+            "Vamos contar: um, dois. Dois pássaros!"
+        instrucao_portador: |
+          Coloque 2 objetos num lado.
+          "Dois pássaros chegaram! Vamos contar!"
+      - titulo: Mais Amigos Chegam
+        local: caverna_recomeco
+        fala_guardiao:
+          tom: curioso
+          script: |
+            "Olha! Mais três pássaros chegaram!"
+            [Bernardo bate palmas suavemente]
+            "Agora temos... quantos no total?"
+        instrucao_portador: |
+          Adicione 3 objetos ao grupo.
+          "Mais 3 chegaram! Quantos agora?"
+      - titulo: O Bando Cresceu
+        local: caverna_recomeco
+        fala_guardiao:
+          tom: satisfeito
+          script: |
+            "Dois e mais três... CINCO pássaros!"
+            "O bando cresceu! Isso é SOMAR!"
+        instrucao_portador: |
+          Conte o total junto.
+          "Dois mais três é igual a CINCO!"
+
+    concreto:
+      desc: Juntar grupos de objetos e contar o total
+      card_objeto: 'CARD: BANDO DE PÁSSAROS'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Coloque 2 objetos (pássaros) de um lado.
+          fala_sugerida: "Dois pássaros chegaram primeiro!"
+        - passo: 2
+          acao: Coloque 3 objetos do outro lado.
+          fala_sugerida: "Mais três vieram encontrar os amigos!"
+        - passo: 3
+          acao: Junte os dois grupos.
+          fala_sugerida: "Agora estão todos juntos!"
+        - passo: 4
+          acao: Conte o total.
+          fala_sugerida: "Um, dois, três, quatro, CINCO! O bando cresceu!"
+      norte_absoluto: JUNTAR primeiro, CONTAR depois. A ação precede o símbolo.
+      adaptacao_bernardo: |
+        💡 Se a criança não consegue juntar, mova você os objetos.
+        O importante é ver o grupo crescer.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Adição é juntar fisicamente.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Conceito de adição como "juntar para crescer"
+      nota: A criança vive a adição, não escreve.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando mais adições
+      sugestoes:
+        - titulo: Outras Combinações
+          acao: "1 + 4 = ? / 3 + 2 = ? Sempre juntar objetos primeiro."
+        - titulo: História de Chegada
+          acao: Conte uma história onde amigos chegam um a um.
+      adaptacao_bernardo: |
+        💡 Comece com números pequenos (1+1, 1+2).
+
+  narracao:
+    instrucao_portador: |
+      Guarde os objetos juntos como um bando.
+      "Bernardo adorou ver o bando crescer!"
+    pergunta_principal: O que aconteceu quando mais pássaros chegaram?
+    perguntas_coracao:
+      - Quanto é 2 mais 3?
+      - O que significa "somar"?
+    nota_cm: A narração conecta a operação à alegria do crescimento.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: orgulhoso
+      script: |
+        "Você viu o bando crescer!"
+        "Juntar é somar. E somar é alegria!"
+    fio_ouro: "Você sabe somar. Amanhã, Celeste nos leva até o 40!"
+    transicao_volta:
+      instrucao: Conte os pássaros uma última vez.
+      fala: Dois mais três, cinco. Voltamos.
+
+  para_familia:
+    titulo: A Alegria de Crescer
+    porque_importa: |
+      Adição é a operação mais fundamental.
+      Ver grupos físicos crescerem prepara para a abstração.
+    metodo_cpa:
+      concreto: Objetos juntos fisicamente.
+      pictorico: Vetado.
+      abstrato: Conceito de "juntar".
+      nota: "Bruner: Ação antes de símbolo."
+    principio_cm:
+      numero: 6
+      citacao: "Education is the science of relations."
+      aplicacao: Adição é relação entre partes e todo.
+    tgtb_conexao: |
+      Corresponde à lição de Adição.
+      Bernardo traz alegria e persistência para a operação.
+    espiral:
+      conceito: Adição
+      volta_atual: 'Sementes — juntar grupos concretamente'
+      proxima_volta: 'Raízes — sentenças de adição, fatos memorizados'
+    reflexao_espiritual: |
+      Quando nos unimos, crescemos.
+      A comunidade é mais forte que o indivíduo.
+    nota_graca: |
+      Se errar a contagem, Bernardo diz:
+      "Mais uma vez. Comigo."
+
+  diario_portador:
+    nota: Observe se a criança entende "juntar = crescer".
+    perguntas:
+      - Ela junta os grupos antes de contar?
+      - O conceito de "mais" ficou claro?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

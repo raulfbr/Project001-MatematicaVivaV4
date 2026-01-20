@@ -1,0 +1,224 @@
+# LIÇÃO 020 — O SELO REAL
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-020-selo-real
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-020
+    titulo: O Selo Real
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 2
+    tipo: Senso Numérico
+    guardiao_lider: iris
+    guardiao_secundario: melquior
+    guardioes_apresentados: [iris]
+    tgtb_ref: 000-L20
+    tgtb_titulo_en: Number Practice
+    tgtb_titulo_pt: Prática de Números
+    objetivo_pedagogico: '[Foco: Prática de formação de números — traçar 1-10]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-019, titulo: O Risco na Rocha}
+    proxima: {id: MV-S-021, titulo: A Jornada Longa}
+
+  para_portador:
+    ideia_viva:
+      frase: "Dando forma e vida à escrita dos nossos amigos numerados sob o olhar do Pardal."
+      conceito: Cada número tem uma forma única que podemos traçar.
+      intencao_cm: A criança pratica a formação dos números com atenção e cuidado.
+    dica_coracao: |
+      Hoje Íris nos ajuda a dar forma aos números!
+      Cada um tem sua curva, sua linha, sua beleza.
+      Traçar é como desenhar — devagar e com amor.
+    filho_descobre: Que pode traçar números de 1 a 10.
+    protocolo_impecabilidade: |
+      TRACE NO AR primeiro. Depois no papel.
+      Grande e lento antes de pequeno e rápido.
+    nota_graca: "Íris diz: 'Olhe bem. A beleza está no detalhe.' — cada traço conta!"
+    conforto_emocional: |
+      Números tortos ainda são números! O importante é tentar.
+    audio_script: |
+      Olá, Portador! Íris está na oficina de selos!
+      Vamos dar forma bonita aos nossos números!
+    preparacao:
+      materiais:
+        - {item: Papel e lápis grosso, qtd: 1, alt: giz, essencial: true}
+        - {item: Card Íris, qtd: 1, alt: imagem do pardal, essencial: true}
+        - {item: Cartões com números 1-10, qtd: 10, alt: modelos impressos, essencial: false}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-019
+      gancho: Você sabe fazer marcas de contagem. Agora, Íris ensina a traçar os números!
+    proximo:
+      licao_id: MV-S-021
+      gancho: Você praticou a escrita dos números. Amanhã, Celeste nos leva até o 60!
+
+  ritual_abertura:
+    instrucao_ambiente: Ambiente calmo, boa iluminação para escrita.
+    local: ninho_mirante
+    clima: primaveril
+    virtude: atencao
+    artefato: Um lápis especial (ou giz)
+    transicao_reino: |
+      Feche os olhos. Estamos na oficina de Íris.
+      Ela prepara tinta e pincéis imaginários.
+    fala_portador:
+      tom: gentil
+      script: |
+        Íris está preparando sua oficina!
+        Hoje vamos dar forma bonita aos números.
+    card_guardiao: 'CARD: IRIS'
+    abertura_sensorial: |
+      O ar cheira a papel novo e lápis apontado.
+      Íris pousa delicadamente e mostra um número.
+      "Olhe bem. A beleza está no detalhe."
+
+  jornada:
+    narrativa_principal:
+      - titulo: Os Números Conhecidos
+        local: ninho_mirante
+        fala_guardiao:
+          tom: gentil
+          script: |
+            "Vamos revisitar nossos amigos numerados!"
+            [Íris mostra os números 1-5]
+            "Cada um tem sua forma única."
+        instrucao_portador: |
+          Mostre cartões ou desenhe os números 1-5.
+          "Lembra desses? Vamos traçá-los!"
+      - titulo: Traçando no Ar
+        local: ninho_mirante
+        fala_guardiao:
+          tom: paciente
+          script: |
+            "Primeiro, trace no ar. Grande e devagar!"
+            [Íris faz movimento com a asa]
+            "Sinta a forma antes de escrever."
+        instrucao_portador: |
+          Trace cada número no ar junto com a criança.
+          "1 — de cima para baixo. 2 — curva e desliza."
+      - titulo: Marcando o Papel
+        local: ninho_mirante
+        fala_guardiao:
+          tom: satisfeito
+          script: |
+            "Agora, deixe sua marca no papel!"
+            [Íris observa com atenção]
+            "Cada traço é um selo real!"
+        instrucao_portador: |
+          Deixe a criança traçar os números no papel.
+          Foque em 1-5 primeiro, depois 6-10.
+
+    concreto:
+      desc: Traçar números no ar e depois no papel
+      card_objeto: 'CARD: SELOS NUMERADOS'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Trace 1-5 no ar, devagar.
+          fala_sugerida: "1 de cima pra baixo. 2 curva e desce..."
+        - passo: 2
+          acao: Trace 1-5 no papel.
+          fala_sugerida: "Agora no papel! Devagar!"
+        - passo: 3
+          acao: Trace 6-10 no ar.
+          fala_sugerida: "6 tem barriga. 7 é uma reta com chapéu..."
+        - passo: 4
+          acao: Trace 6-10 no papel.
+          fala_sugerida: "Seus selos estão lindos!"
+      norte_absoluto: Ar primeiro, papel depois. ENATIVO lidera.
+      adaptacao_bernardo: |
+        💡 Se a criança não segura lápis, trace você ou use areia/farinha.
+        Traçar no ar também vale!
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Traçar é ENATIVO.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Formação correta dos numerais 1-10
+      nota: Foco em experiência, não perfeição.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando formação
+      sugestoes:
+        - titulo: Número Favorito
+          acao: Qual número você acha mais bonito? Trace várias vezes.
+        - titulo: Números Gigantes
+          acao: Trace no chão com giz ou no quadro.
+      adaptacao_bernardo: |
+        💡 Comece com números simples (1, 4, 7).
+
+  narracao:
+    instrucao_portador: |
+      Mostre os números que a criança traçou.
+      "Íris está orgulhosa dos seus selos!"
+    pergunta_principal: Qual número você gostou mais de traçar?
+    perguntas_coracao:
+      - Qual foi mais fácil?
+      - Qual foi mais difícil?
+    nota_cm: A narração celebra o esforço, não a perfeição.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: poetico
+      script: |
+        "Você deu forma aos números!"
+        "Cada selo é único. Cada traço é seu."
+    fio_ouro: "Você praticou a escrita dos números. Amanhã, Celeste nos leva até o 60!"
+    transicao_volta:
+      instrucao: Trace o número 10 no ar como despedida.
+      fala: Um... zero. Dez. Voltamos.
+
+  para_familia:
+    titulo: A Arte de Traçar
+    porque_importa: |
+      Formação de números prepara para escrita matemática.
+      Traçar no ar (ENATIVO) antes do papel desenvolve memória muscular.
+    metodo_cpa:
+      concreto: Traçar no ar e papel (ENATIVO).
+      pictorico: Vetado.
+      abstrato: Símbolos numéricos.
+      nota: "Bruner: Corpo aprende antes da mente."
+    principio_cm:
+      numero: 16
+      citacao: "Handicrafts teach accuracy."
+      aplicacao: Traçar desenvolve precisão e atenção.
+    tgtb_conexao: |
+      Corresponde à lição de Prática de Números.
+      Íris traz atenção aos detalhes.
+    espiral:
+      conceito: Formação de Números
+      volta_atual: 'Sementes — traçar 1-10 no ar e papel'
+      proxima_volta: 'Raízes — escrita formal, números maiores'
+    reflexao_espiritual: |
+      Cada marca que fazemos deixa um registro.
+      Como as Escrituras, números contam verdades.
+    nota_graca: |
+      Se o número sair torto, Íris diz:
+      "Toda curva conta uma história!"
+
+  diario_portador:
+    nota: Observe quais números são mais difíceis.
+    perguntas:
+      - A criança traça primeiro no ar?
+      - O 8 e o 9 são os mais difíceis?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

@@ -99,8 +99,14 @@ class GutenbergEngine:
 
         processed_count = 0
         for fpath in yaml_files:
+            # Ignora arquivos com _ no nome, TEMPLATE no nome, ou em pastas que começam com _
             if fpath.name.startswith("_") or "TEMPLATE" in fpath.name.upper():
                 ForgeLogger.log(f"Ignorando {fpath.name} (Meta-arquivo)", status="⏭️ ")
+                continue
+            
+            # Ignora arquivos em subpastas que começam com _ (ex: _Manuais/)
+            if any(part.startswith("_") for part in fpath.relative_to(self.config.INPUT_DIR).parts[:-1]):
+                ForgeLogger.log(f"Ignorando {fpath.name} (Subpasta Meta)", status="⏭️ ")
                 continue
                 
             loop_start = time.time()

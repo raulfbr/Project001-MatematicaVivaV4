@@ -1,22 +1,29 @@
 # TRÍADE PEDAGÓGICA — SSOT (Única Fonte)
-# YAML Lean v2.2 | 14/01/2026
+# YAML Lean v2.3 | 20/01/2026
 # Este arquivo é a ÚNICA fonte para hierarquia CM/CPA/TGTB
-# ALINHADO COM: logs/2026.01.14/2026-01-14_1416_PLANEJAMENTO_EXECUCAO_DETALHADO.md
+# ALINHADO COM: LORE/north_star.yaml | README.md
 
 id: triade-pedagogica
-versao: "2.2"
+versao: "2.3"
 tipo: expansion_pack
-ref_log_planejamento: logs/2026.01.14/2026-01-14_1416_PLANEJAMENTO_EXECUCAO_DETALHADO.md
+ref_north_star: LORE/north_star.yaml
 
 # HIERARQUIA (ordem de autoridade - NÃO NEGOCIÁVEL)
 hierarquia:
   coordenador: Charlotte Mason
   niveis:
     - {n: 1, nome: Charlotte Mason, sigla: CM, auth: VETO_FINAL, scope: "Filosofia, tom, dignidade criança", ref: .bmad/experts/pedagogia/charlotte_mason.yaml}
-    - {n: 2, nome: "Singapura (CPA)", sigla: CPA, auth: PROPOSITIVO, scope: "Sequência didática, manipulativos", ref: .bmad/experts/matematica/jerome_bruner.yaml}
+    - {n: 2, nome: "Jerome Bruner (CPA)", sigla: CPA, auth: PROPOSITIVO, scope: "Mãos primeiro, crescimento em espiral", ref: .bmad/experts/matematica/jerome_bruner.yaml}
     - {n: 3, nome: "The Good and The Beautiful", sigla: TGTB, auth: REFERENCIA, scope: "Scope & Sequence", ref: curriculo/_SISTEMA/CURRICULOS_MESTRE/}
   comunicacao:
-    - {nome: "O Embaixador", sigla: EMB, auth: VOZ_PUBLICA, scope: "Blog, Redes, Tradução para 'coração de mãe'", ref: .bmad/experts/comunicacao/embaixador.yaml}
+    - {nome: "O Embaixador", sigla: EMB, auth: VOZ_PUBLICA, scope: "Voz da Tribo", ref: .bmad/experts/comunicacao/embaixador.yaml}
+  
+  # ESPIRAL explicado para criação de lições
+  espiral:
+    definicao: "Conceitos são REENCONTRADOS ao longo dos anos, cada vez MAIS PROFUNDOS. Não é repetição — é crescimento."
+    para_maes: "O que planta hoje, floresce amanhã."
+    para_criadores: "Ver exemplos detalhados em .bmad/experts/matematica/jerome_bruner.yaml#curriculo_espiral"
+    regra: "Cada lição deve conectar com algo já aprendido E preparar para algo futuro."
 
 # REGRAS DE CONFLITO (Jurisprudência)
 conflitos:
@@ -26,14 +33,8 @@ conflitos:
 
 # ESTRUTURA E RITMO (Definições MVP)
 estrutura_mvp:
-  sementes_1ano: 
-    ritmo: TRIMESTRAL
-    meta: 40 lições/trimestre
-    justificativa: "Fundação sólida exige tempo. Menos pressa, mais profundidade."
-  anos_subsequentes:
-    ritmo: BIMESTRAL
-    meta: ~30 lições/bimestre
-    justificativa: "Ritmo natural aumenta com a idade e hábito de atenção."
+  sementes_1ano: {ritmo: TRIMESTRAL, meta: "40 lições/trimestre", just: "Fundação sólida exige tempo. Menos pressa, mais profundidade."}
+  anos_subsequentes: {ritmo: BIMESTRAL, meta: "~30 lições/bimestre", just: "Ritmo natural aumenta com idade e hábito."}
 
 # VETOS CANONIZADOS (Regras de Ouro)
 vetos:
@@ -67,9 +68,24 @@ ciclos:
     cpa: {concreto: "20%+", pictorico: PERMITIDO, abstrato: PLENO}
     tempo_max: 60
 
-# PRINCÍPIOS CM APLICADOS
+# PRINCÍPIOS — Alinhamento North Star
+posicionamento:
+  essencia: "Prático para você. Profundo para seu filho. Imersivo para os dois."
+  para_pai: "5 minutos de preparo. Abra e faça."
+  para_filho: "Histórias onde matemática emerge naturalmente."
+  para_dois: "A jornada é compartilhada. O pai cura enquanto o filho aprende."
+
+principios_5:
+  slogan: "Seu filho OUVE, CONTA, e REENCONTRA."
+  lista:
+    - {id: 1, nome: DIGNIDADE, frase: "Crianças são pessoas capazes", origem: CM}
+    - {id: 2, nome: DESCOBERTA, frase: "Mãos primeiro, mente depois", origem: Bruner}
+    - {id: 3, nome: ESPIRAL, frase: "O que planta hoje, floresce amanhã", origem: Bruner}
+    - {id: 4, nome: NARRAÇÃO, frase: "Conta o que aprendeu — sem provas", origem: CM}
+    - {id: 5, nome: RITMO, frase: "Lição no tempo certo para cada idade", origem: CM}
+
 principios_cm:
-  - {id: 1, texto: "Crianças são pessoas", app: "Dignidade em toda lição", ref: ".bmad/experts/pedagogia/charlotte_mason.yaml#principio_1"}
+  - {id: 1, texto: "Crianças são pessoas", app: "Dignidade em toda lição"}
   - {id: 8, texto: "Dieta ampla conhecimento", app: "Conexões interdisciplinares"}
   - {id: 13, texto: "Lições curtas", app: "Hábito Atenção preservado"}
   - {id: 14, texto: "Narração", app: "Método avaliação obrigatório"}

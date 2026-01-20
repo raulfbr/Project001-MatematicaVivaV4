@@ -1,10 +1,10 @@
 # LORE INDEX — Arquivo Central de Navegação e Arquitetura
-# YAML Lean v3.1 | 14/01/2026 | Ponto de Entrada Único
+# YAML Lean v3.2 | 20/01/2026 | Ponto de Entrada Único
 
 id: indice_lore
-versao: "3.1"
+versao: "3.2"
 tipo: indice
-nota: "Consolidado: navegação + diretrizes + mapa SSOT. Sem separadores visuais."
+nota: "Consolidado: navegação + diretrizes + mapa SSOT."
 
 # ESTRUTURA (3 Camadas)
 estrutura:
@@ -75,8 +75,4 @@ referencias_cruzadas:
 # CHECKLIST REVISÃO
 checklist: [Sintaxe YAML válida?, SSOT respeitado?, YAML Lean aplicado?, North Star alinhado?]
 
-# PENDENTES
-pendentes:
-  - {arquivo: north_star.yaml, acao: "Remover separadores visuais", prioridade: ALTA}
-  - {arquivo: artefatos.yaml, acao: "Remover separadores visuais", prioridade: ALTA}
-  - {arquivo: templates, acao: "Verificar se precisam update Lean", prioridade: MEDIA}
+# ÚLTIMA ATUALIZAÇÃO: 20/01/2026 - Arquivos LORE refinados e alinhados

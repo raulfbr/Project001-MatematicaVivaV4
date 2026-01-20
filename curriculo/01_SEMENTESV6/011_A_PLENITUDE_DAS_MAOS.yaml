@@ -1,0 +1,224 @@
+# LIÇÃO 011 — A PLENITUDE DAS MÃOS
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-011-plenitude-maos
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-011
+    titulo: A Plenitude das Mãos
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 1
+    tipo: Senso Numérico
+    guardiao_lider: celeste
+    guardiao_secundario: bernardo
+    guardioes_apresentados: [celeste]
+    tgtb_ref: 000-L11
+    tgtb_titulo_en: Numbers 10 to 11
+    tgtb_titulo_pt: Números 10 e 11
+    objetivo_pedagogico: '[Foco: Números 10 e 11 — base decimal, duas mãos completas]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-010, titulo: A Fila da Providência}
+    proxima: {id: MV-S-012, titulo: O Segredo do Feixe}
+
+  para_portador:
+    ideia_viva:
+      frase: "Dez dedos para abraçar o mundo e um a mais para apontar para o céu."
+      conceito: O número 10 é especial — são duas mãos completas, a base de tudo.
+      intencao_cm: A criança percebe a importância do 10 como fundação do sistema numérico.
+    dica_coracao: |
+      Hoje é um dia especial: chegamos ao DEZ!
+      Celeste vai nos mostrar como nossas mãos são perfeitas para contar.
+      É um marco — celebre com seu filho!
+    filho_descobre: Que 10 são duas mãos completas e 11 é "um a mais".
+    protocolo_impecabilidade: |
+      Use as MÃOS como material principal.
+      A base decimal vive nos dedos.
+    nota_graca: "Celeste diz: 'Dez é perfeito. Onze é a surpresa depois da perfeição!'"
+    conforto_emocional: |
+      Chegar ao 10 é um marco. Seu filho está crescendo matematicamente!
+    audio_script: |
+      Olá, Portador! Hoje é dia de celebração!
+      Celeste está contando nos dedos e descobriu algo incrível.
+    preparacao:
+      materiais:
+        - {item: Suas mãos e as da criança, qtd: 4, alt: nenhuma alternativa necessária, essencial: true}
+        - {item: Card Celeste, qtd: 1, alt: imagem da raposa, essencial: true}
+        - {item: 11 objetos pequenos, qtd: 11, alt: pedras ou botões, essencial: true}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-010
+      gancho: Você aprendeu primeiro, segundo, terceiro. Agora, vamos conhecer o número que completa as duas mãos!
+    proximo:
+      licao_id: MV-S-012
+      gancho: Você conhece o poder do 10. Amanhã, Bernardo vai nos mostrar como dez gravetos viram UM grupo forte!
+
+  ritual_abertura:
+    instrucao_ambiente: Luz natural, mãos limpas, ambiente alegre.
+    local: clareira_perguntas
+    clima: ensolarado
+    virtude: curiosidade
+    artefato: Dez pedras especiais (ou dedos)
+    transicao_reino: |
+      Feche os olhos. Sinta o sol na clareira.
+      Celeste está pulando de alegria — ela descobriu algo!
+    fala_portador:
+      tom: animado
+      script: |
+        Olha só! Celeste está contando nos dedos!
+        Ela parece muito animada. Vamos ver o que descobriu?
+    card_guardiao: 'CARD: CELESTE'
+    abertura_sensorial: |
+      O ar está leve, cheiro de manhã nova.
+      Celeste ergue as patinhas: "Sente esse cheiro? É aventura!"
+      Ela mostra suas patas: "Olha quantos dedos tenho!"
+
+  jornada:
+    narrativa_principal:
+      - titulo: As Duas Mãos
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: animado
+          script: |
+            "Olha! Uma mão tem CINCO dedos!"
+            [Celeste mostra uma pata]
+            "E a outra mão tem mais CINCO! Quanto é cinco e cinco?"
+        instrucao_portador: |
+          Mostre suas duas mãos abertas.
+          "Vamos contar: uma mão... 1, 2, 3, 4, 5. Outra mão... 6, 7, 8, 9... DEZ!"
+      - titulo: O Número Perfeito
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: satisfeito
+          script: |
+            "DEZ! É especial! É perfeito!"
+            [Celeste bate as patas]
+            "Todas as criaturas contam em grupos de dez por causa das mãos!"
+        instrucao_portador: |
+          Conte 10 objetos organizados em duas fileiras de 5.
+          "Olha: 5 aqui, 5 aqui. Juntos fazem DEZ!"
+      - titulo: Um a Mais
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: curioso
+          script: |
+            "Mas... e se tivermos UM A MAIS?"
+            [Celeste adiciona um objeto]
+            "É ONZE! Dez... e um para apontar para o céu!"
+        instrucao_portador: |
+          Adicione o 11º objeto.
+          "DEZ dedos... e mais um! ONZE!"
+
+    concreto:
+      desc: Contar até 10 nos dedos e adicionar 1 para chegar ao 11
+      card_objeto: 'CARD: DEZ DEDOS'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Mostre suas duas mãos abertas.
+          fala_sugerida: "Quantos dedos você tem? Vamos contar!"
+        - passo: 2
+          acao: Conte uma mão (1-5), depois a outra (6-10).
+          fala_sugerida: "Cinco e cinco fazem... DEZ!"
+        - passo: 3
+          acao: Pegue 10 objetos. Organize em duas fileiras de 5.
+          fala_sugerida: "Duas mãos de objetos! DEZ!"
+        - passo: 4
+          acao: Adicione 1 objeto. "Onze!"
+          fala_sugerida: "Dez... e mais um. ONZE!"
+      norte_absoluto: O 10 como marco deve ser celebrado. É a base do sistema decimal.
+      adaptacao_bernardo: |
+        💡 Se a criança não usa as mãos, use objetos grandes organizados em dois grupos de 5.
+        Ou conte os dedos do pé!
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Dedos e objetos reais.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Reconhecimento visual do numeral 10 e 11
+      nota: Mostrar cartão do 10 como "1" e "0" juntos.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando 10 e 11
+      sugestoes:
+        - titulo: Dez Coisas
+          acao: Encontre 10 coisas da mesma cor na casa.
+        - titulo: Bater Palmas
+          acao: Bata palmas 10 vezes. Depois 11.
+      adaptacao_bernardo: |
+        💡 Se movimento é difícil, conte objetos apenas visualmente.
+
+  narracao:
+    instrucao_portador: |
+      Mostre os 10 dedos mais uma vez.
+      "Celeste está orgulhosa de você!"
+    pergunta_principal: O que torna o número 10 tão especial?
+    perguntas_coracao:
+      - Quantos dedos você tem no total?
+      - O que vem depois do 10?
+    nota_cm: A narração fixa a importância do 10 como base.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: satisfeito
+      script: |
+        "Você descobriu o segredo do DEZ!"
+        "Dez dedos, dez tesouros, dez estrelas no céu!"
+    fio_ouro: "Você conhece o poder do 10. Amanhã, Bernardo transforma dez gravetos em algo novo!"
+    transicao_volta:
+      instrucao: Conte nos dedos de 10 até 1.
+      fala: Dez, nove, oito... um. Voltamos.
+
+  para_familia:
+    titulo: O Marco do Dez
+    porque_importa: |
+      O número 10 é a base do sistema decimal.
+      Entender que 10 dedos = 1 grupo de dez é fundação para valor posicional.
+    metodo_cpa:
+      concreto: Dedos, objetos em grupos de 5.
+      pictorico: Vetado.
+      abstrato: Símbolos 10 e 11.
+      nota: "Bruner: Mãos são o primeiro manipulativo."
+    principio_cm:
+      numero: 6
+      citacao: "Education is the science of relations."
+      aplicacao: Conectar 10 dedos à base decimal cria relação significativa.
+    tgtb_conexao: |
+      Corresponde à lição de Números 10 a 11.
+      Celeste traz celebração para este marco.
+    espiral:
+      conceito: Base Decimal
+      volta_atual: 'Sementes — 10 como duas mãos'
+      proxima_volta: 'Raízes — valor posicional, dezenas'
+    reflexao_espiritual: |
+      Os Dez Mandamentos — dez leis para viver bem.
+      O 10 carrega peso de completude na tradição.
+    nota_graca: |
+      Se a criança se confundir, conte junto.
+      Celeste diz: "Vamos de novo — juntos!"
+
+  diario_portador:
+    nota: Observe se a criança percebe o 10 como "duas mãos".
+    perguntas:
+      - Ela entende que 10 = 5 + 5?
+      - O 11 como "dez e um" ficou claro?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

@@ -1,0 +1,223 @@
+# LIÇÃO 012 — O SEGREDO DO FEIXE
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-012-segredo-feixe
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-012
+    titulo: O Segredo do Feixe
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 1
+    tipo: Valor Posicional
+    guardiao_lider: bernardo
+    guardiao_secundario: noe
+    guardioes_apresentados: [bernardo]
+    tgtb_ref: 000-L12
+    tgtb_titulo_en: Ten Sticks Part 1
+    tgtb_titulo_pt: Feixes de Dez Parte 1
+    objetivo_pedagogico: '[Foco: Agrupar 10 objetos como 1 grupo — base do valor posicional]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-011, titulo: A Plenitude das Mãos}
+    proxima: {id: MV-S-013, titulo: O Rio que se Une}
+
+  para_portador:
+    ideia_viva:
+      frase: "Ver dez gravetos virarem UM grupo forte nas mãos do Urso que abraça."
+      conceito: Dez coisas podem se juntar e virar UM grupo — isso é poder!
+      intencao_cm: A criança percebe que 10 unidades podem ser tratadas como 1 dezena.
+    dica_coracao: |
+      Hoje Bernardo vai nos mostrar algo mágico!
+      Dez gravetos separados viram UM feixe forte.
+      É o segredo que faz os números crescerem.
+    filho_descobre: Que podemos juntar 10 objetos e tratá-los como 1 grupo.
+    protocolo_impecabilidade: |
+      Use objetos que podem ser AMARRADOS ou AGRUPADOS.
+      Palitos, canudos, lápis — qualquer coisa que vire "feixe".
+    nota_graca: "Bernardo diz: 'Mais uma vez. Comigo.' Se o feixe desmontar, montamos de novo!"
+    conforto_emocional: |
+      Valor posicional é difícil para adultos. Para crianças, é pura mágica física.
+    audio_script: |
+      Olá, Portador! Bernardo está na oficina.
+      Ele quer mostrar como dez gravetos viram um só.
+    preparacao:
+      materiais:
+        - {item: 10 palitos ou gravetos, qtd: 10, alt: canudos ou lápis, essencial: true}
+        - {item: Elástico ou barbante, qtd: 1, alt: fita adesiva, essencial: true}
+        - {item: Card Bernardo, qtd: 1, alt: imagem do urso, essencial: true}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-011
+      gancho: Celeste nos mostrou o poder do 10. Agora, Bernardo vai nos mostrar como 10 viram UM!
+    proximo:
+      licao_id: MV-S-013
+      gancho: Você sabe fazer feixes. Amanhã, Melquior ensina como juntar grupos — a magia do + e do =!
+
+  ritual_abertura:
+    instrucao_ambiente: Ambiente de oficina, luz natural, mesa com materiais.
+    local: caverna_recomeco
+    clima: outonal
+    virtude: persistencia
+    artefato: Um feixe de palitos amarrados
+    transicao_reino: |
+      Feche os olhos. Sinta o cheiro de madeira.
+      Estamos entrando na oficina de Bernardo.
+    fala_portador:
+      tom: firme
+      script: |
+        Você ouve o barulho de madeira?
+        É Bernardo trabalhando na oficina!
+    card_guardiao: 'CARD: BERNARDO'
+    abertura_sensorial: |
+      O ar cheira a serragem e terra molhada.
+      Bernardo ergue suas mãos grandes e gentis.
+      "Mais uma vez. Comigo."
+
+  jornada:
+    narrativa_principal:
+      - titulo: Os Gravetos Soltos
+        local: caverna_recomeco
+        fala_guardiao:
+          tom: firme
+          script: |
+            "Olha esses gravetos — dez deles, todos separados."
+            [Bernardo mostra os palitos espalhados]
+            "Assim, são fracos. Qualquer vento leva."
+        instrucao_portador: |
+          Espalhe 10 palitos na mesa.
+          "Veja: dez gravetos soltos. Vamos contar?"
+      - titulo: A União Faz a Força
+        local: caverna_recomeco
+        fala_guardiao:
+          tom: encorajador
+          script: |
+            "Mas se juntarmos os dez... olha o que acontece!"
+            [Bernardo amarra os palitos]
+            "Viram UM FEIXE forte! Um só!"
+        instrucao_portador: |
+          Junte os 10 palitos e amarre com elástico.
+          "Dez gravetos viraram UM grupo! Um feixe!"
+      - titulo: O Segredo
+        local: caverna_recomeco
+        fala_guardiao:
+          tom: satisfeito
+          script: |
+            "Este é o segredo: dez viram um."
+            "Um feixe de dez. É assim que os números grandes funcionam!"
+        instrucao_portador: |
+          Mostre o feixe como "um" objeto.
+          "Agora você tem UM feixe. Quanto vale? DEZ!"
+
+    concreto:
+      desc: Agrupar 10 palitos em 1 feixe e entender como "1 grupo de 10"
+      card_objeto: 'CARD: FEIXE DE DEZ'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Espalhe 10 palitos. Conte junto.
+          fala_sugerida: "Dez gravetos! Vamos contar: 1, 2, 3... 10!"
+        - passo: 2
+          acao: Junte os 10 palitos.
+          fala_sugerida: "Agora vamos juntar todos!"
+        - passo: 3
+          acao: Amarre com elástico ou barbante.
+          fala_sugerida: "Pronto! Viraram UM feixe!"
+        - passo: 4
+          acao: "Pergunte: Quantos gravetos no feixe?"
+          fala_sugerida: "É UM feixe, mas vale DEZ!"
+      norte_absoluto: A criança deve FAZER o feixe com as mãos. O ato físico fixa o conceito.
+      adaptacao_bernardo: |
+        💡 Se a criança não consegue amarrar, faça você enquanto ela segura.
+        O importante é PARTICIPAR do agrupamento.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Mãos fazem o feixe.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Conceito de "1 grupo de 10"
+      nota: A criança vive o conceito, não o define.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando feixes
+      sugestoes:
+        - titulo: Dois Feixes
+          acao: Faça dois feixes de 10. Quantos gravetos no total? (20)
+        - titulo: Feixe e Sobras
+          acao: Faça 1 feixe e deixe 3 soltos. Quanto é 1 feixe e 3? (13)
+      adaptacao_bernardo: |
+        💡 Se fazer é difícil, mostre você e pergunte "Quantos?"
+
+  narracao:
+    instrucao_portador: |
+      Guarde o feixe num lugar especial.
+      "Bernardo ficou orgulhoso de você!"
+    pergunta_principal: O que Bernardo fez com os dez gravetos?
+    perguntas_coracao:
+      - Por que juntar os gravetos deixa eles mais fortes?
+      - Quantos gravetos tem no seu feixe?
+    nota_cm: A narração fixa o conceito de agrupamento.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: orgulhoso
+      script: |
+        "Você descobriu o segredo!"
+        "Dez viram um. Juntos somos fortes."
+    fio_ouro: "Você sabe fazer feixes. Amanhã, Melquior ensina como juntar grupos!"
+    transicao_volta:
+      instrucao: Segure o feixe com força.
+      fala: Dez... um. Juntos. Voltamos.
+
+  para_familia:
+    titulo: O Primeiro Passo do Valor Posicional
+    porque_importa: |
+      Agrupar 10 em 1 feixe é a base do valor posicional.
+      Quando a criança entende que "1 dezena = 10 unidades", toda a matemática fica mais fácil.
+    metodo_cpa:
+      concreto: Palitos agrupados fisicamente.
+      pictorico: Vetado.
+      abstrato: Conceito de "grupo de 10".
+      nota: "Bruner: Mãos fazem, mente entende."
+    principio_cm:
+      numero: 7
+      citacao: "Education is a discipline."
+      aplicacao: Fazer feixes desenvolve coordenação e conceito simultaneamente.
+    tgtb_conexao: |
+      Corresponde à lição de Feixes de Dez Parte 1.
+      Bernardo traz persistência e força para o conceito.
+    espiral:
+      conceito: Valor Posicional
+      volta_atual: 'Sementes — 10 unidades = 1 feixe'
+      proxima_volta: 'Raízes — dezenas e unidades, composição'
+    reflexao_espiritual: |
+      Unidos somos mais fortes.
+      Cada graveto é importante, mas juntos fazem diferença.
+    nota_graca: |
+      Se o feixe desmontar, Bernardo diz:
+      "Mais uma vez. Comigo."
+
+  diario_portador:
+    nota: Observe se a criança entende que o feixe "vale" 10.
+    perguntas:
+      - Ela fez o feixe ou só observou?
+      - O conceito de "10 viram 1" ficou claro?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

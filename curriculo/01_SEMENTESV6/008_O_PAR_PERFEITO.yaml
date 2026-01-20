@@ -1,0 +1,222 @@
+# LIÇÃO 008 — O PAR PERFEITO
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-008-par-perfeito
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-008
+    titulo: O Par Perfeito
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 1
+    tipo: Correspondência
+    guardiao_lider: iris
+    guardiao_secundario: celeste
+    guardioes_apresentados: [iris]
+    tgtb_ref: 000-L8
+    tgtb_titulo_en: Matching Part 1
+    tgtb_titulo_pt: Correspondência Parte 1
+    objetivo_pedagogico: '[Foco: Correspondência um-a-um entre objetos]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-007, titulo: A Coroa da Semana}
+    proxima: {id: MV-S-009, titulo: O Celeiro de Noé}
+
+  para_portador:
+    ideia_viva:
+      frase: "Cada tesouro tem seu lugar. Cada criatura, seu par."
+      conceito: Coisas podem ser combinadas uma-a-uma.
+      intencao_cm: A criança percebe ordem e harmonia nas correspondências.
+    dica_coracao: |
+      Íris adora encontrar pares perfeitos.
+      Ela vê beleza quando cada coisa encontra seu lugar.
+      Hoje, ajude seu filho a sentir a paz da correspondência.
+    filho_descobre: Que podemos combinar objetos um-a-um para ver se são iguais em quantidade.
+    protocolo_impecabilidade: |
+      Use objetos REAIS que combinam (meias, talheres, etc).
+      A criança MOVE os objetos para formar pares.
+    nota_graca: "Se sobrar um sem par, Íris diz: 'Este está esperando seu amigo.'"
+    conforto_emocional: |
+      Correspondência é como fazer amizades — cada um encontra seu par.
+    audio_script: |
+      Olá, Portador! Íris preparou um jogo de pares.
+      Vamos encontrar quem combina com quem!
+    preparacao:
+      materiais:
+        - {item: 5 pares de objetos (meias, colheres, etc), qtd: 10, alt: tampas iguais, essencial: true}
+        - {item: Card Íris, qtd: 1, alt: imagem do pardal, essencial: true}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-007
+      gancho: Celeste nos ensinou 6 e 7. Agora, Íris vai nos ensinar a encontrar pares!
+    proximo:
+      licao_id: MV-S-009
+      gancho: Você sabe fazer pares. Amanhã, Noé nos apresenta 8 e 9 no seu celeiro!
+
+  ritual_abertura:
+    instrucao_ambiente: Objetos espalhados, luz suave, como uma vitrine.
+    local: ninho_mirante
+    clima: primaveril
+    virtude: atencao
+    artefato: Uma caixa de tesouros pareados
+    transicao_reino: |
+      Feche os olhos. Subimos ao Ninho Mirante.
+      Íris tem uma missão especial para você hoje.
+    fala_portador:
+      tom: misterioso
+      script: |
+        Íris está organizando seus tesouros.
+        Mas alguns se perderam! Você pode ajudar?
+    card_guardiao: 'CARD: IRIS'
+    abertura_sensorial: |
+      O ninho está cheio de pequenos objetos brilhantes.
+      Íris inclina a cabeça: "Olhe bem. A beleza está no detalhe."
+      Ela aponta para um par de botões idênticos.
+
+  jornada:
+    narrativa_principal:
+      - titulo: O Tesouro Perdido
+        local: ninho_mirante
+        fala_guardiao:
+          tom: preocupado
+          script: |
+            "Oh não! Meus tesouros se misturaram!"
+            [Íris olha os objetos espalhados]
+            "Cada um tem um par. Você pode me ajudar a encontrar?"
+        instrucao_portador: |
+          Espalhe os objetos misturados.
+          "Vamos ajudar Íris a encontrar os pares!"
+      - titulo: Encontrando Pares
+        local: ninho_mirante
+        fala_guardiao:
+          tom: esperançoso
+          script: |
+            "Este aqui... procure o igual!"
+            [Íris bate as asas de alegria quando encontra]
+            "Perfeito! Eles se encontraram!"
+        instrucao_portador: |
+          Pegue um objeto. Peça para encontrar o igual.
+          "Este botão vermelho... onde está o irmão dele?"
+      - titulo: Todos em Casa
+        local: ninho_mirante
+        fala_guardiao:
+          tom: satisfeito
+          script: |
+            "Todos os pares estão juntos agora!"
+            "Você tem olhos de detetive, como eu!"
+        instrucao_portador: |
+          Alinhe os pares lado a lado.
+          "Olha que lindo! Cada um encontrou seu par!"
+
+    concreto:
+      desc: Emparelhar objetos idênticos fisicamente
+      card_objeto: 'CARD: PARES DE TESOUROS'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Misture os objetos no centro.
+          fala_sugerida: "Os tesouros de Íris se perderam!"
+        - passo: 2
+          acao: Pegue um objeto. Pergunte "Onde está o par?"
+          fala_sugerida: "Esta meia azul... cadê a irmã dela?"
+        - passo: 3
+          acao: Quando encontrar, coloque lado a lado.
+          fala_sugerida: "Perfeito! Elas se encontraram!"
+        - passo: 4
+          acao: Continue até todos os pares estarem formados.
+          fala_sugerida: "Todos em casa! Íris está feliz!"
+      norte_absoluto: A criança deve MOVER os objetos para formar pares físicos.
+      adaptacao_bernardo: |
+        💡 Se a criança não consegue pegar, aponte para cada par.
+        Ou use objetos maiores e mais fáceis de manipular.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Pareamento físico.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Compreensão do conceito de correspondência um-a-um
+      nota: A criança vive a correspondência, não a define.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando mais correspondências
+      sugestoes:
+        - titulo: Copos e Pratos
+          acao: Coloque um copo em cima de cada prato. Sobrou algum?
+        - titulo: Dedos e Botões
+          acao: Um botão para cada dedo. Quantos dedos, quantos botões?
+      adaptacao_bernardo: |
+        💡 Use objetos grandes se coordenação motora fina for difícil.
+
+  narracao:
+    instrucao_portador: |
+      Guarde os pares juntos.
+      "Íris está muito feliz com sua ajuda!"
+    pergunta_principal: Como você ajudou Íris hoje?
+    perguntas_coracao:
+      - Qual par foi mais difícil de encontrar?
+      - O que você sente quando tudo está no lugar certo?
+    nota_cm: A narração conecta a atividade à emoção de ordem.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: grato
+      script: |
+        "Você tem olhos de detetive!"
+        "Obrigada por ajudar. A beleza está nos detalhes."
+    fio_ouro: "Você sabe encontrar pares. Amanhã, Noé nos mostra 8 e 9 no seu celeiro!"
+    transicao_volta:
+      instrucao: Guarde os pares na caixa de tesouros.
+      fala: Par por par, voltamos para casa.
+
+  para_familia:
+    titulo: A Arte de Combinar
+    porque_importa: |
+      Correspondência um-a-um é fundação da contagem.
+      Antes de contar, a criança precisa entender que cada objeto corresponde a um número.
+    metodo_cpa:
+      concreto: Pareamento físico de objetos.
+      pictorico: Vetado.
+      abstrato: Conceito de correspondência.
+      nota: "CM: Coisas antes de símbolos."
+    principio_cm:
+      numero: 7
+      citacao: "Education is a discipline."
+      aplicacao: Organizar pares desenvolve hábito de ordem.
+    tgtb_conexao: |
+      Corresponde à lição de Correspondência Parte 1.
+      Íris traz atenção aos detalhes e beleza na ordem.
+    espiral:
+      conceito: Correspondência Um-a-Um
+      volta_atual: 'Sementes — pareamento de objetos iguais'
+      proxima_volta: 'Raízes — correspondência número-quantidade'
+    reflexao_espiritual: |
+      Deus criou Eva para ser par de Adão.
+      Cada criatura tem seu lugar no plano do Criador.
+    nota_graca: |
+      Se a criança não encontrar todos os pares, celebre os que encontrou!
+      "Íris diz: 'Amanhã encontramos os outros.'"
+
+  diario_portador:
+    nota: Observe se a criança entende o conceito de "igual".
+    perguntas:
+      - Ela compara visualmente antes de parear?
+      - O ato de organizar traz satisfação?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

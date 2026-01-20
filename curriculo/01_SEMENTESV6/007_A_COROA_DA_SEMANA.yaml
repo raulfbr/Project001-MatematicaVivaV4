@@ -1,0 +1,223 @@
+# LIÇÃO 007 — A COROA DA SEMANA
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-007-coroa-semana
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-007
+    titulo: A Coroa da Semana
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 1
+    tipo: Senso Numérico
+    guardiao_lider: celeste
+    guardiao_secundario: noe
+    guardioes_apresentados: [celeste]
+    tgtb_ref: 000-L7
+    tgtb_titulo_en: Numbers 6 to 7
+    tgtb_titulo_pt: Números 6 e 7
+    objetivo_pedagogico: '[Foco: Números 6 e 7 — quantidade e reconhecimento]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-006, titulo: O Desenho do Rei}
+    proxima: {id: MV-S-008, titulo: O Par Perfeito}
+
+  para_portador:
+    ideia_viva:
+      frase: "Sete cores no arco-íris, sete dias na semana — o Rei ama o número 7."
+      conceito: Os números 6 e 7 estão por toda parte na natureza.
+      intencao_cm: A criança conecta os números à beleza do mundo real.
+    dica_coracao: |
+      Hoje Celeste nos leva numa trilha especial.
+      Ela vai nos mostrar onde o 6 e o 7 se escondem no mundo.
+      Ajude seu filho a VER esses números ao redor.
+    filho_descobre: Que 6 e 7 são quantidades que podemos ver e contar.
+    protocolo_impecabilidade: |
+      Use OBJETOS REAIS para contar até 6 e 7.
+      Mãos não bastam — precisamos de mais!
+    nota_graca: "Se contar errado, Celeste diz: 'Vamos contar de novo — juntos!'"
+    conforto_emocional: |
+      6 e 7 são os primeiros números que passam as duas mãos. É um marco!
+    audio_script: |
+      Olá, Portador! Celeste encontrou um arco-íris hoje.
+      Vamos contar suas cores juntos.
+    preparacao:
+      materiais:
+        - {item: 7 objetos pequenos (pedras ou sementes), qtd: 7, alt: botões ou moedas, essencial: true}
+        - {item: Card Celeste, qtd: 1, alt: imagem da raposa, essencial: true}
+        - {item: Cartões 6 e 7, qtd: 2, alt: papel com números grandes, essencial: false}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-006
+      gancho: Íris nos mostrou a beleza de 1 a 5. Agora, Celeste apresenta dois novos amigos!
+    proximo:
+      licao_id: MV-S-008
+      gancho: Você conhece 1 a 7 agora. Amanhã, Íris vai nos ensinar a encontrar pares perfeitos.
+
+  ritual_abertura:
+    instrucao_ambiente: Luz natural, objetos coloridos espalhados.
+    local: clareira_perguntas
+    clima: ensolarado
+    virtude: curiosidade
+    artefato: Sete pedras coloridas (ou objetos)
+    transicao_reino: |
+      Feche os olhos. O sol brilha forte na clareira.
+      Celeste está esperando com uma surpresa.
+    fala_portador:
+      tom: animado
+      script: |
+        Olha! Celeste está olhando para o céu!
+        O que será que ela viu?
+    card_guardiao: 'CARD: CELESTE'
+    abertura_sensorial: |
+      O ar cheira a flores silvestres e terra molhada.
+      Celeste ergue o focinho: "Sente esse cheiro? É aventura!"
+      Ela aponta para um arco-íris imaginário no céu.
+
+  jornada:
+    narrativa_principal:
+      - titulo: O Arco-Íris de Celeste
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: curioso
+          script: |
+            "Você sabia que o arco-íris tem SETE cores?"
+            [Celeste conta nos dedos]
+            "Vermelho, laranja, amarelo, verde, azul, anil, violeta!"
+        instrucao_portador: |
+          Conte 7 objetos junto com a criança.
+          "Vamos fazer nosso próprio arco-íris com 7 tesouros!"
+      - titulo: Mais que as Mãos
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: animado
+          script: |
+            "Olha! Cinco dedos numa mão... mais um, é SEIS!"
+            [Celeste mostra a pata]
+            "Mais um ainda... SETE! Precisamos de mais que uma mão!"
+        instrucao_portador: |
+          Mostre 5 objetos. Adicione 1 (seis). Adicione mais 1 (sete).
+          "Passou da mão! Agora precisamos de ajuda!"
+      - titulo: A Semana do Reino
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: satisfeito
+          script: |
+            "Sete dias tem a semana. Sete cores o arco-íris."
+            "O Rei ama o número 7. É especial."
+        instrucao_portador: |
+          Conte os dias da semana nos dedos.
+          "Segunda, terça... até domingo! Sete dias!"
+
+    concreto:
+      desc: Contar objetos reais de 1 a 7, focando em 6 e 7
+      card_objeto: 'CARD: ARCO-ÍRIS DE PEDRAS'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Separe 7 objetos coloridos.
+          fala_sugerida: "Vamos fazer um arco-íris!"
+        - passo: 2
+          acao: Conte até 5 (uma mão).
+          fala_sugerida: "Um, dois, três, quatro, cinco — uma mão inteira!"
+        - passo: 3
+          acao: Adicione 1 objeto. "Seis!"
+          fala_sugerida: "Mais um! Passou da mão! É o SEIS!"
+        - passo: 4
+          acao: Adicione mais 1. "Sete!"
+          fala_sugerida: "Mais um! SETE! O número especial do Rei!"
+      norte_absoluto: A criança deve TOCAR e CONTAR cada objeto.
+      adaptacao_bernardo: |
+        💡 Se a criança não segura, aponte para cada objeto enquanto conta.
+        Use objetos grandes se precisar.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Contagem física.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Reconhecimento visual dos numerais 6 e 7
+      nota: Mostrar cartão depois da contagem concreta.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando 6 e 7
+      sugestoes:
+        - titulo: Caça ao 7
+          acao: Procure coisas que vêm em grupos de 7 (dias da semana, notas musicais).
+        - titulo: Contar para Trás
+          acao: Conte de 7 até 1 junto com a criança.
+      adaptacao_bernardo: |
+        💡 Se contagem é difícil, foque apenas no 6 hoje. 7 amanhã.
+
+  narracao:
+    instrucao_portador: |
+      Guarde os 7 tesouros numa linha.
+      "Celeste adorou seu arco-íris!"
+    pergunta_principal: Quantas cores tem o arco-íris?
+    perguntas_coracao:
+      - O que mais você conhece que tem 7?
+      - O 6 ou o 7 é maior?
+    nota_cm: A narração conecta o número à experiência vivida.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: satisfeito
+      script: |
+        "Você conheceu dois novos amigos hoje: 6 e 7!"
+        "O Rei está feliz. Até a próxima aventura!"
+    fio_ouro: "Você conhece 1 a 7. Amanhã, Íris vai nos ensinar a encontrar pares perfeitos."
+    transicao_volta:
+      instrucao: Conte os tesouros uma última vez antes de guardar.
+      fala: Um, dois, três... sete! Voltamos.
+
+  para_familia:
+    titulo: Os Números Além da Mão
+    porque_importa: |
+      6 e 7 são os primeiros números que ultrapassam uma mão.
+      Isso exige um novo nível de abstração — contar sem apoio visual imediato.
+    metodo_cpa:
+      concreto: Objetos físicos contados um a um.
+      pictorico: Vetado.
+      abstrato: Reconhecimento dos numerais 6 e 7.
+      nota: "Bruner: Concreto domina em Sementes."
+    principio_cm:
+      numero: 6
+      citacao: "Education is the science of relations."
+      aplicacao: Conectar 7 a arco-íris e semana cria relações significativas.
+    tgtb_conexao: |
+      Corresponde à lição de Números 6 a 7.
+      Celeste traz conexão com a natureza (arco-íris, semana).
+    espiral:
+      conceito: Contagem 6-7
+      volta_atual: 'Sementes — contar até 7 com objetos'
+      proxima_volta: 'Raízes — operações com 6 e 7'
+    reflexao_espiritual: |
+      Deus criou o mundo em 6 dias e descansou no 7º.
+      O padrão de 7 está tecido na criação.
+    nota_graca: |
+      Se confundir 6 e 7, tudo bem.
+      Celeste diz: "Vamos contar de novo — juntos!"
+
+  diario_portador:
+    nota: Observe se a criança consegue passar de 5 para 6 sem hesitar.
+    perguntas:
+      - Ela percebe que 6 é "um a mais" que 5?
+      - O conceito de 7 como especial ficou claro?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

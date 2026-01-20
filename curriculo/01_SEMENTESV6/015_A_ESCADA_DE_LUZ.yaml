@@ -1,0 +1,224 @@
+# LIÇÃO 015 — A ESCADA DE LUZ
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-015-escada-luz
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-015
+    titulo: A Escada de Luz
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 2
+    tipo: Contagem
+    guardiao_lider: melquior
+    guardiao_secundario: iris
+    guardioes_apresentados: [melquior]
+    tgtb_ref: 000-L15
+    tgtb_titulo_en: Counting to 30 Practice
+    tgtb_titulo_pt: Prática de Contagem até 30
+    objetivo_pedagogico: '[Foco: Contagem fluente até 30]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-014, titulo: O Celeiro que Cresce}
+    proxima: {id: MV-S-016, titulo: O Bando que Cresce}
+
+  para_portador:
+    ideia_viva:
+      frase: "Contemplar com o Maestro os trinta passos que já demos rumo ao Deslumbramento."
+      conceito: Podemos contar até 30 — são três grupos de dez!
+      intencao_cm: A criança percebe seu progresso e capacidade de contar alto.
+    dica_coracao: |
+      Hoje celebramos! Chegamos ao 30!
+      Melquior nos guia pela Escada de Luz.
+      Cada degrau é um número que seu filho já conhece.
+    filho_descobre: Que contar até 30 é possível e até divertido.
+    protocolo_impecabilidade: |
+      Conte com RITMO. Pausas a cada 10.
+      1 a 10... 11 a 20... 21 a 30.
+    nota_graca: "Melquior diz: 'O Rei sorriu ao ver você chegar.' A cada tropeço, subimos de novo!"
+    conforto_emocional: |
+      30 é MUITO! Celebre cada dez alcançado.
+    audio_script: |
+      Olá, Portador! Melquior preparou uma escadaria especial.
+      Trinta degraus de luz nos esperam.
+    preparacao:
+      materiais:
+        - {item: 30 objetos pequenos (opcional), qtd: 30, alt: contar nos dedos, essencial: false}
+        - {item: Card Melquior, qtd: 1, alt: imagem do leão, essencial: true}
+        - {item: Uma escada imaginária (ou desenhada), qtd: 1, alt: escada real, essencial: false}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-014
+      gancho: Bernardo nos ensinou feixes. Agora, Melquior nos leva até o 30 — três grupos de dez!
+    proximo:
+      licao_id: MV-S-016
+      gancho: Você conta até 30! Amanhã, começamos a Estação 2 — Bernardo ensina a adição!
+
+  ritual_abertura:
+    instrucao_ambiente: Ambiente iluminado, majestoso, como um templo.
+    local: jardim_central
+    clima: estrelado
+    virtude: sabedoria
+    artefato: Uma tocha de luz (vela ou lanterna)
+    transicao_reino: |
+      Feche os olhos. As estrelas brilham sobre o jardim.
+      Melquior espera no pé de uma grande escadaria.
+    fala_portador:
+      tom: solene
+      script: |
+        Você vê aquela escadaria que brilha?
+        Melquior vai nos guiar até o topo. Trinta degraus!
+    card_guardiao: 'CARD: MELQUIOR'
+    abertura_sensorial: |
+      O ar está fresco, cheiro de noite clara.
+      Melquior ergue a juba sob as estrelas.
+      "O Rei sorriu ao ver você chegar."
+
+  jornada:
+    narrativa_principal:
+      - titulo: Os Primeiros Dez
+        local: jardim_central
+        fala_guardiao:
+          tom: profundo
+          script: |
+            "Cada degrau é um número. Vamos subir juntos."
+            [Melquior sobe devagar]
+            "Um, dois, três... até dez. O primeiro descanso."
+        instrucao_portador: |
+          Conte de 1 a 10, pausadamente.
+          "Subimos dez degraus! Pausa!"
+      - titulo: A Segunda Dezena
+        local: jardim_central
+        fala_guardiao:
+          tom: encorajador
+          script: |
+            "Agora os próximos dez. Você consegue!"
+            [Melquior continua]
+            "Onze, doze, treze... até vinte!"
+        instrucao_portador: |
+          Conte de 11 a 20.
+          "Mais dez! Estamos no 20! Pausa!"
+      - titulo: O Topo
+        local: jardim_central
+        fala_guardiao:
+          tom: satisfeito
+          script: |
+            "Os últimos dez! Vamos lá!"
+            [Melquior sorrindo]
+            "Vinte e um, vinte e dois... TRINTA!"
+        instrucao_portador: |
+          Conte de 21 a 30.
+          "TRINTA! Você chegou ao topo!"
+
+    concreto:
+      desc: Contar de 1 a 30 em grupos de 10, com pausas
+      card_objeto: 'CARD: ESCADA DE LUZ'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Conte 1 a 10. Pause e celebre.
+          fala_sugerida: "Dez! Primeira parada!"
+        - passo: 2
+          acao: Conte 11 a 20. Pause e celebre.
+          fala_sugerida: "Vinte! Mais da metade!"
+        - passo: 3
+          acao: Conte 21 a 30. Celebre muito!
+          fala_sugerida: "TRINTA! Você conseguiu!"
+        - passo: 4
+          acao: (Opcional) Use 30 objetos para contar.
+          fala_sugerida: "Cada objeto, um degrau!"
+      norte_absoluto: Pausas a cada 10 ajudam a memorizar a sequência.
+      adaptacao_bernardo: |
+        💡 Se 30 é muito, foque em 1-20 hoje, 21-30 amanhã.
+        Cada dez é uma vitória.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Contagem oral/física.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Fluência na sequência numérica até 30
+      nota: A criança OUVE e FALA os números.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando contagem
+      sugestoes:
+        - titulo: Contar para Trás
+          acao: Do 30 ao 1. Descendo a escada!
+        - titulo: Contagem com Movimento
+          acao: Suba degraus reais ou pule a cada número.
+      adaptacao_bernardo: |
+        💡 Se concentração é difícil, faça pausas maiores.
+
+  narracao:
+    instrucao_portador: |
+      Imagine descer a escada devagar.
+      "Melquior está muito orgulhoso!"
+    pergunta_principal: Quantos degraus você subiu hoje?
+    perguntas_coracao:
+      - Qual número foi mais difícil de lembrar?
+      - O que vem depois do 29?
+    nota_cm: A narração celebra o progresso.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: majestoso
+      script: |
+        "Você subiu trinta degraus de luz!"
+        "O Rei está muito orgulhoso. Até a próxima jornada."
+    fio_ouro: "Você conta até 30! Estação 2 começa amanhã — operações com Bernardo!"
+    transicao_volta:
+      instrucao: Conte de 10 em 10 até 30.
+      fala: Dez, vinte, trinta. Voltamos.
+
+  para_familia:
+    titulo: O Marco dos Trinta
+    porque_importa: |
+      Contar até 30 é um marco importante na fluência numérica.
+      Pausas a cada 10 reforçam o padrão decimal.
+    metodo_cpa:
+      concreto: Movimento (degraus) + contagem oral.
+      pictorico: Vetado.
+      abstrato: Sequência numérica memorizada.
+      nota: "CM: Lições curtas, celebração constante."
+    principio_cm:
+      numero: 13
+      citacao: "Education is an atmosphere."
+      aplicacao: A atmosfera de celebração torna a contagem prazerosa.
+    tgtb_conexao: |
+      Corresponde à lição de Prática de Contagem até 30.
+      Melquior traz majestade e celebração.
+    espiral:
+      conceito: Contagem Fluente
+      volta_atual: 'Sementes — contar até 30 com pausas'
+      proxima_volta: 'Raízes — contar até 100, contagem de 2 em 2'
+    reflexao_espiritual: |
+      Cada passo é progresso.
+      30 degraus são 30 decisões de continuar.
+    nota_graca: |
+      Se esquecer um número, Melquior diz:
+      "O Rei tem paciência. Vamos de novo."
+
+  diario_portador:
+    nota: Observe onde a criança tropeça na contagem.
+    perguntas:
+      - Ela conta de 1 a 10 sem hesitar?
+      - A transição 19-20 e 29-30 é suave?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

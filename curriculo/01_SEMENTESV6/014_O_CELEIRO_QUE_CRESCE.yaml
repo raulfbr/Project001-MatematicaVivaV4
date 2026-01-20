@@ -1,0 +1,223 @@
+# LIÇÃO 014 — O CELEIRO QUE CRESCE
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-014-celeiro-cresce
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-014
+    titulo: O Celeiro que Cresce
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 2
+    tipo: Valor Posicional
+    guardiao_lider: bernardo
+    guardiao_secundario: noe
+    guardioes_apresentados: [bernardo]
+    tgtb_ref: 000-L14
+    tgtb_titulo_en: Ten Sticks Part 2
+    tgtb_titulo_pt: Feixes de Dez Parte 2
+    objetivo_pedagogico: '[Foco: Mais feixes de dez — composição de números até 20]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-013, titulo: O Rio que se Une}
+    proxima: {id: MV-S-015, titulo: A Escada de Luz}
+
+  para_portador:
+    ideia_viva:
+      frase: "Mais feixes de força para sustentar a construção da Vila sob o olhar de Bernardo."
+      conceito: Podemos ter mais de um feixe de dez — e contar o que sobra.
+      intencao_cm: A criança percebe que números grandes são feixes + unidades.
+    dica_coracao: |
+      Bernardo precisa de mais feixes para a construção!
+      Hoje vamos ajudá-lo a organizar gravetos em grupos de dez.
+      É a base para entender números como 12, 15, 18...
+    filho_descobre: Que um número maior é feixes de dez + unidades soltas.
+    protocolo_impecabilidade: |
+      FAÇA os feixes ANTES de falar sobre números.
+      1 feixe + 3 soltos = 13. Simples assim.
+    nota_graca: "Bernardo diz: 'Mais uma vez. Comigo.' Mesmo se soltar tudo!"
+    conforto_emocional: |
+      Valor posicional é difícil. Mas Bernardo tem paciência infinita.
+    audio_script: |
+      Olá, Portador! O celeiro de Bernardo está crescendo!
+      Ele precisa de mais feixes para a construção.
+    preparacao:
+      materiais:
+        - {item: 20 palitos ou gravetos, qtd: 20, alt: canudos, essencial: true}
+        - {item: Elásticos ou barbantes, qtd: 2, alt: fita adesiva, essencial: true}
+        - {item: Card Bernardo, qtd: 1, alt: imagem do urso, essencial: true}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-013
+      gancho: Melquior nos ensinou + e =. Agora, Bernardo faz mais feixes — e usamos o + para contar!
+    proximo:
+      licao_id: MV-S-015
+      gancho: Você sabe fazer feixes e sobras. Amanhã, Melquior nos leva até o 30!
+
+  ritual_abertura:
+    instrucao_ambiente: Ambiente de construção, pilhas organizadas.
+    local: caverna_recomeco
+    clima: outonal
+    virtude: persistencia
+    artefato: Dois feixes prontos
+    transicao_reino: |
+      Feche os olhos. Cheiro de madeira.
+      Bernardo está esperando na oficina.
+    fala_portador:
+      tom: firme
+      script: |
+        Bernardo está trabalhando duro!
+        Ele precisa de mais feixes. Vamos ajudar?
+    card_guardiao: 'CARD: BERNARDO'
+    abertura_sensorial: |
+      O ar cheira a serragem e resina.
+      Bernardo mostra suas mãos calejadas.
+      "Mais uma vez. Comigo."
+
+  jornada:
+    narrativa_principal:
+      - titulo: A Primeira Dezena
+        local: caverna_recomeco
+        fala_guardiao:
+          tom: firme
+          script: |
+            "Já temos um feixe de dez. Lembra?"
+            [Bernardo mostra o feixe]
+            "Mas a construção precisa de MAIS!"
+        instrucao_portador: |
+          Mostre 1 feixe já pronto (ou faça com a criança).
+          "Um feixe! Vale DEZ!"
+      - titulo: Mais Gravetos
+        local: caverna_recomeco
+        fala_guardiao:
+          tom: encorajador
+          script: |
+            "Agora temos mais gravetos. Vamos contar!"
+            [Bernardo mostra gravetos soltos]
+            "1, 2, 3... quantos temos?"
+        instrucao_portador: |
+          Coloque gravetos soltos (ex: 3).
+          "Um feixe e mais 3 soltos. Quanto temos?"
+      - titulo: Feixes e Sobras
+        local: caverna_recomeco
+        fala_guardiao:
+          tom: satisfeito
+          script: |
+            "1 feixe = dez. Mais 3 = treze!"
+            "Entendeu? Feixe mais sobras!"
+        instrucao_portador: |
+          Demonstre: 1 feixe + 3 = 13.
+          Depois: 1 feixe + 5 = 15. 2 feixes = 20.
+
+    concreto:
+      desc: Compor números de 11 a 20 usando feixes e unidades soltas
+      card_objeto: 'CARD: FEIXES E SOBRAS'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Faça 1 feixe de 10.
+          fala_sugerida: "Um feixe! Dez gravetos juntos!"
+        - passo: 2
+          acao: Adicione 3 gravetos soltos.
+          fala_sugerida: "Mais 3. Quantos no total?"
+        - passo: 3
+          acao: "Conte: 10 + 3 = 13."
+          fala_sugerida: "Dez mais três é TREZE!"
+        - passo: 4
+          acao: Faça outro feixe se tiver 10 gravetos.
+          fala_sugerida: "Mais 10! Dois feixes = VINTE!"
+      norte_absoluto: FEIXE + SOBRAS = número. Sempre começar pelo feixe (dezena).
+      adaptacao_bernardo: |
+        💡 Se 20 é muito, foque em 1 feixe + sobras (11 a 19).
+        "Quantas sobras temos?"
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Mãos fazem feixes.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Composição de números 11-20 como dezena + unidades
+      nota: A criança VÊ o padrão, não define.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando composição
+      sugestoes:
+        - titulo: Pergunta Reversa
+          acao: Tenho 14 gravetos. Quantos feixes e quantos soltos? (1 feixe, 4 soltos)
+        - titulo: Dois Feixes
+          acao: Faça 2 feixes. Quantos gravetos? (20)
+      adaptacao_bernardo: |
+        💡 Se composição é difícil, foque em contar feixes apenas.
+
+  narracao:
+    instrucao_portador: |
+      Guarde os feixes organizados.
+      "Bernardo está muito orgulhoso!"
+    pergunta_principal: Quantos gravetos Bernardo tem agora?
+    perguntas_coracao:
+      - Quantos feixes você fez hoje?
+      - O que é mais: 1 feixe ou 5 gravetos soltos?
+    nota_cm: A narração fixa a relação feixe = dezena.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: orgulhoso
+      script: |
+        "O celeiro está forte!"
+        "Feixes de força. Juntos construímos."
+    fio_ouro: "Você sabe fazer feixes e sobras. Amanhã, Melquior nos leva até o 30!"
+    transicao_volta:
+      instrucao: Empilhe os feixes antes de sair.
+      fala: Dez, vinte... Voltamos.
+
+  para_familia:
+    titulo: Valor Posicional na Prática
+    porque_importa: |
+      Entender que 13 = 1 feixe + 3 unidades é a base da matemática.
+      Sem esse conceito, operações com números grandes serão impossíveis.
+    metodo_cpa:
+      concreto: Feixes físicos + gravetos soltos.
+      pictorico: Vetado.
+      abstrato: Composição como dezena + unidades.
+      nota: "CM + Bruner: Mãos fazem, mente entende."
+    principio_cm:
+      numero: 7
+      citacao: "Education is a discipline."
+      aplicacao: Fazer feixes repetidamente desenvolve disciplina e conceito.
+    tgtb_conexao: |
+      Corresponde à lição de Feixes de Dez Parte 2.
+      Bernardo traz persistência para o trabalho repetido.
+    espiral:
+      conceito: Valor Posicional
+      volta_atual: 'Sementes — dezena + unidades concretamente'
+      proxima_volta: 'Raízes — notação formal, centenas'
+    reflexao_espiritual: |
+      Construção exige paciência e repetição.
+      Cada feixe é um passo para algo maior.
+    nota_graca: |
+      Se os feixes caírem, Bernardo diz:
+      "Mais uma vez. Comigo."
+
+  diario_portador:
+    nota: Observe se a criança entende feixe = 10.
+    perguntas:
+      - Ela compõe números corretamente?
+      - Sabe que 1 feixe + 5 = 15?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

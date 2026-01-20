@@ -30,7 +30,7 @@ Somos **Raul e Marina**, pais de Raulzito (5) e Mel (2).
 Queríamos um currículo de matemática que **respeitasse nossos filhos como pessoas**.
 Não encontramos. Então **criamos** — e agora **compartilhamos**.
 
-> *"Matemática Viva existe para famílias que acreditam que aprender pode ser uma aventura."*
+> *"Prático para você. Profundo para seu filho. Imersivo para os dois."*
 
 ---
 
@@ -43,16 +43,15 @@ Um currículo completo (0-18 anos) que une três metodologias comprovadas:
 | Pilar | O Que Faz | Por Que Importa |
 |-------|-----------|-----------------|
 | **Filosofia Clássica** | Criança como pessoa, lições curtas (15-20min), narração | Respeita a inteligência do seu filho |
-| **Jerome Bruner (CPA)** | Concreto → Pictórico → Abstrato | O método que tornou Singapura #1 no mundo |
-| **Currículo Espiral** | Conceitos retornam cada vez mais profundos | Crescimento real, não repetição mecânica |
+| **Jerome Bruner (CPA)** | Concreto → Pictórico → Abstrato | Mãos primeiro, mente depois |
+| **Currículo Espiral** | Conceitos retornam cada vez mais profundos | Crescimento real em camadas, não repetição mecânica |
 
-### 🔍 O Diferencial: CPA Autêntico (Não é Singapura)
+### ✨ O Diferencial: CPA Autêntico de Jerome Bruner
 
-> *"Usamos CPA de Bruner — mãos primeiro, mente depois."*
-> *"Não é Singapura de repetir lições — é espiral de ensino verdadeiro."*
+> *"Mãos primeiro, mente depois. O que planta hoje, floresce amanhã."*
 
-Enquanto Singapura usa o CPA para **drill repetitivo**, nós usamos para **aprendizagem profunda**.
 Cada conceito é plantado, nutrido, e **reencontrado** em camadas mais ricas.
+Aprendizagem profunda. Crescimento em espiral.
 
 ---
 
@@ -80,13 +79,14 @@ Matemática Viva é para você se:
 - Você **quer** que seu filho AME aprender, não apenas passe de ano
 - Você **valoriza** conexão familiar e momentos juntos
 - Você **busca** uma educação que prepare para o Brasil **e** para o mundo
+- Você quer **sentar ao lado** e ver o brilho nos olhos acontecer
 
 Matemática Viva **NÃO** é para quem:
 - Prefere que a criança aprenda sozinha no tablet
 - Acha que matemática é só decorar fórmulas
 - Não tem 15-20 minutos por dia para investir
 
-**Se você se reconheceu, você já é um de nós.** Apenas não sabia que havia outros como você.
+**Se você se reconheceu, as portas do Reino já estão abertas.** De família para família.
 
 ---
 

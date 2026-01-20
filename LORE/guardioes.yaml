@@ -1,9 +1,9 @@
 # GUARDIÕES DO REINO CONTADO — SSOT
-# YAML Lean v1.0 | 14/01/2026
+# YAML Lean v1.1 | 20/01/2026
 # Alinhamento: North Star Princípios 4 e 5
 
 id: guardioes_lore
-versao: '1.0'
+versao: '1.1'
 tipo: lore_entity
 ref_north_star: LORE/north_star.yaml
 ref_locais: LORE/locais.yaml
@@ -67,13 +67,13 @@ guardioes:
     frase: "Mais uma vez. Comigo."
     tom: "Firme, encorajador, caloroso"
     papel: |
-      Bernardo é manco (ver história). Ele trabalha na forja e representa
-      que erro não é fracasso. Íris fica em seu ombro para ajudar.
+      Bernardo trabalha na forja e representa que erro não é fracasso.
+      Sua perna ferida é Cicatriz de Glória. Íris fica em seu ombro por gratidão.
     origem: |
-      Na Grande Nevasca, a caverna onde os Guardiões se abrigaram ameaçou
-      desabar. Bernardo segurou a pedra mestra por 3 dias para salvar seus
-      amigos (Melquior, Noé, Celeste, Íris). O peso feriu sua perna para sempre.
-    inclusao: "Deficiência = força (Herói ferido). Íris ajuda por gratidão e lealdade."
+      Na Grande Nevasca, Bernardo segurou a pedra mestra por 3 dias
+      para salvar seus amigos. O peso feriu sua perna para sempre.
+      Ele recusa qualquer cura — a mancadura é sua honra.
+    inclusao: "Princípio Bernardo: deficiência = honra, não peso. Faz parte como IGUAL."
     quando: [L002]
     local: Caverna do Recomeço
     img: "assets/img/bernardo-urso.webp"
@@ -99,3 +99,41 @@ regras:
   distribuicao: {L000: melquior, L001: celeste, L002: bernardo, L003: iris, L004: noe, L005+: varia}
   interacao: {conversa: true, novos: false, secundarios: true, arcos: true}
   evolucao: {visual: true, ref: GOVERNANCA/03_MATRIZ_DE_EVOLUCAO_K12.md}
+
+# CONEXÕES GUARDIÃO-MATEMÁTICA (Pre-K-5)
+# NOTA: Essas são TENDÊNCIAS, não regras rígidas. Qualquer Guardião pode ensinar qualquer conceito.
+# A vida é flexível — às vezes Celeste aprende paciência, Bernardo descobre padrões.
+conceitos_por_guardiao:
+  melquior:
+    desc: "Abre e fecha jornadas. Introduz conceitos novos com dignidade."
+    conceitos: [Introdução de números, Valor posicional, Conceitos novos]
+    quando_usar: "Início de lição, transições, rituais"
+    tom_principal: nobre
+  
+  noe:
+    desc: "Tempo, sequência, paciência. Ritmo e ordem."
+    conceitos: [Contagem sequencial, Ordem (primeiro/último), Tempo, Calendário, Padrões repetitivos]
+    quando_usar: "Lições de sequência, tempo, quando criança precisa desacelerar"
+    tom_principal: calmo
+  
+  celeste:
+    desc: "Exploração, padrões, curiosidade. Descobertas."
+    conceitos: [Padrões, Formas, Posição espacial, Geometria, Simetria]
+    quando_usar: "Descoberta de padrões, exploração, 'E se...?'"
+    tom_principal: curioso
+  
+  bernardo:
+    desc: "Persistência, prática, erro como aprendizado. Sua mancadura é HONRA."
+    conceitos: [Operações, Resolução de problemas, Tabuada, Prática repetida]
+    quando_usar: "Após erro, quando precisa persistir, prática"
+    tom_principal: encorajador
+    principio_bernardo: "Deficiência = honra, não peso. Bernardo faz parte do grupo como IGUAL."
+  
+  iris:
+    desc: "Detalhes, atenção, beleza nos números."
+    conceitos: [Contagem cuidadosa, Verificação, Detalhes, Padrões sutis]
+    quando_usar: "Verificação, atenção aos detalhes, celebrar descoberta"
+    tom_principal: poetico
+
+ref_toms: LORE/toms_de_voz.yaml
+

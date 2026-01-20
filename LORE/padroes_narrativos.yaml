@@ -68,7 +68,7 @@ tom_por_ciclo:
   regra: "Tom EVOLUI, Dignidade CONSTANTE."
   citacao: "Lewis: Never be within the child's mental range."
   evolucao:
-    - {ciclo: sementes, tom: "Encantamento mágico", key: Maravilha}
+    - {ciclo: sementes, tom: "Encantamento puro", key: Maravilha}
     - {ciclo: raizes_1, tom: "Aventura exploratória", key: Descoberta}
     - {ciclo: raizes_2, tom: "Investigação corajosa", key: Desafio}
     - {ciclo: logica, tom: "Exploração intelectual", key: Profundidade}

@@ -1,0 +1,224 @@
+# LIÇÃO 013 — O RIO QUE SE UNE
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-013-rio-que-se-une
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-013
+    titulo: O Rio que se Une
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 1
+    tipo: Operações
+    guardiao_lider: melquior
+    guardiao_secundario: bernardo
+    guardioes_apresentados: [melquior]
+    tgtb_ref: 000-L13
+    tgtb_titulo_en: Plus and Equal Signs
+    tgtb_titulo_pt: Sinais de Mais e Igual
+    objetivo_pedagogico: '[Foco: Símbolos + e = — unir e resultar]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-012, titulo: O Segredo do Feixe}
+    proxima: {id: MV-S-014, titulo: O Celeiro que Cresce}
+
+  para_portador:
+    ideia_viva:
+      frase: "Dois riachos que viram um só. Melquior ensina a força da união no Reino."
+      conceito: O sinal + junta coisas. O sinal = mostra o resultado.
+      intencao_cm: A criança percebe que símbolos representam ações do mundo real.
+    dica_coracao: |
+      Hoje Melquior nos mostra dois rios que se encontram.
+      É a primeira vez que vemos + e =.
+      Não são símbolos — são histórias!
+    filho_descobre: Que + significa "juntar" e = significa "virar" ou "é igual a".
+    protocolo_impecabilidade: |
+      Use OBJETOS FÍSICOS primeiro.
+      + e = vêm DEPOIS da experiência concreta.
+    nota_graca: "Melquior diz: 'O Rei sorriu ao ver você chegar.' Mesmo quando confundimos os sinais!"
+    conforto_emocional: |
+      Estes são os símbolos mais importantes da matemática. E você está apresentando!
+    audio_script: |
+      Olá, Portador! Melquior está no Jardim Central.
+      Ele quer mostrar como dois rios viram um.
+    preparacao:
+      materiais:
+        - {item: 6 objetos pequenos (pedras ou sementes), qtd: 6, alt: botões, essencial: true}
+        - {item: Card Melquior, qtd: 1, alt: imagem do leão, essencial: true}
+        - {item: Cartões + e = (ou desenhados), qtd: 2, alt: papel com símbolos, essencial: false}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-012
+      gancho: Bernardo nos ensinou a fazer feixes. Agora, Melquior ensina como JUNTAR grupos!
+    proximo:
+      licao_id: MV-S-014
+      gancho: Você conhece + e =. Amanhã, Bernardo faz mais feixes e nós usamos o + para contar!
+
+  ritual_abertura:
+    instrucao_ambiente: Ambiente majestoso, luz dourada, calmo.
+    local: jardim_central
+    clima: crepusculo
+    virtude: sabedoria
+    artefato: Dois rios de pedras
+    transicao_reino: |
+      Feche os olhos. O jardim está dourado pelo pôr do sol.
+      Melquior espera perto da fonte central.
+    fala_portador:
+      tom: solene
+      script: |
+        Você vê aquele leão majestoso?
+        É Melquior, o sábio. Ele tem algo importante para mostrar.
+    card_guardiao: 'CARD: MELQUIOR'
+    abertura_sensorial: |
+      O ar cheira a flores antigas e água corrente.
+      Melquior inclina sua juba dourada.
+      "O Rei sorriu ao ver você chegar."
+
+  jornada:
+    narrativa_principal:
+      - titulo: Os Dois Rios
+        local: jardim_central
+        fala_guardiao:
+          tom: sabio
+          script: |
+            "Veja estes dois riachos de pedras."
+            [Melquior aponta para dois grupos]
+            "Um tem três pedras. O outro tem duas. Separados."
+        instrucao_portador: |
+          Faça dois grupos de pedras: 3 de um lado, 2 do outro.
+          "Olha: um rio tem 3, o outro tem 2."
+      - titulo: A União
+        local: jardim_central
+        fala_guardiao:
+          tom: profundo
+          script: |
+            "Mas no Reino Contado, rios se encontram."
+            [Melquior junta os grupos]
+            "Quando juntamos, usamos este símbolo: +"
+        instrucao_portador: |
+          Junte os dois grupos. Mostre ou desenhe o símbolo +.
+          "Este símbolo significa JUNTAR. Três MAIS dois."
+      - titulo: O Resultado
+        local: jardim_central
+        fala_guardiao:
+          tom: satisfeito
+          script: |
+            "E o que acontece? Viram CINCO!"
+            [Melquior mostra o símbolo =]
+            "Este símbolo diz: 'é igual a'. 3 + 2 = 5."
+        instrucao_portador: |
+          Conte o total. Mostre o símbolo =.
+          "Três mais dois É IGUAL A cinco!"
+
+    concreto:
+      desc: Juntar grupos de objetos e ver o resultado
+      card_objeto: 'CARD: RIOS DE PEDRAS'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Faça 2 grupos (3 + 2).
+          fala_sugerida: "Um rio de três, outro de dois!"
+        - passo: 2
+          acao: Junte fisicamente os grupos.
+          fala_sugerida: "Os rios se encontram!"
+        - passo: 3
+          acao: Conte o total.
+          fala_sugerida: "Quantos agora? Um, dois, três, quatro, CINCO!"
+        - passo: 4
+          acao: Mostre os símbolos (opcional).
+          fala_sugerida: "Isso é: 3 + 2 = 5!"
+      norte_absoluto: JUNTAR PRIMEIRO, símbolo DEPOIS. Concreto lidera sempre.
+      adaptacao_bernardo: |
+        💡 Se símbolos confundem, foque apenas em juntar e contar.
+        Os símbolos virão naturalmente com repetição.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Juntar objetos reais.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Reconhecimento visual dos símbolos + e =
+      nota: Símbolos apenas DEPOIS da experiência concreta.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando + e =
+      sugestoes:
+        - titulo: Outras Combinações
+          acao: 2 + 3 = ? / 1 + 4 = ? Sempre juntar pedras primeiro.
+        - titulo: Traçar no Ar
+          acao: Trace o + no ar (uma linha vertical, uma horizontal).
+      adaptacao_bernardo: |
+        💡 Se símbolos são difíceis, foque apenas em juntar.
+
+  narracao:
+    instrucao_portador: |
+      Guarde as pedras juntas.
+      "Melquior ficou feliz com o seu trabalho!"
+    pergunta_principal: O que acontece quando dois rios se encontram?
+    perguntas_coracao:
+      - O que o símbolo + faz?
+      - Quanto é 3 + 2?
+    nota_cm: A narração conecta símbolo à história vivida.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: grato
+      script: |
+        "Você aprendeu a linguagem dos números!"
+        "+ junta. = mostra. O Rei está orgulhoso."
+    fio_ouro: "Você conhece + e =. Amanhã, Bernardo faz mais feixes!"
+    transicao_volta:
+      instrucao: Junte todas as pedras como despedida.
+      fala: Juntos... somos mais. Voltamos.
+
+  para_familia:
+    titulo: Os Primeiros Símbolos
+    porque_importa: |
+      + e = são os símbolos mais fundamentais da matemática.
+      Apresentá-los como "histórias" (rios que se unem) cria significado antes de abstração.
+    metodo_cpa:
+      concreto: Objetos juntos fisicamente.
+      pictorico: Vetado.
+      abstrato: Símbolos + e = (reconhecimento visual).
+      nota: "Bruner: Símbolo vem DEPOIS da experiência."
+    principio_cm:
+      numero: 13
+      citacao: "Education is the science of relations."
+      aplicacao: Conectar símbolos a ações cria relação significativa.
+    tgtb_conexao: |
+      Corresponde à lição de Sinais de Mais e Igual.
+      Melquior traz sabedoria e peso para símbolos importantes.
+    espiral:
+      conceito: Adição e Igualdade
+      volta_atual: 'Sementes — + como juntar, = como resultado'
+      proxima_volta: 'Raízes — operações formais, sentenças numéricas'
+    reflexao_espiritual: |
+      Quando nos unimos, somos mais fortes.
+      Dois rios juntos formam um rio maior.
+    nota_graca: |
+      Se confundir + com =, tudo bem!
+      Melquior diz: "O Rei tem paciência. Vamos de novo."
+
+  diario_portador:
+    nota: Observe se a criança entende "juntar" antes do símbolo.
+    perguntas:
+      - Ela juntou os objetos fisicamente?
+      - O símbolo + fez sentido após a ação?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

@@ -1,0 +1,224 @@
+# LIÇÃO 005 — O ESCONDERIJO DA GLÓRIA
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-005-esconderijo-gloria
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-005
+    titulo: O Esconderijo da Glória
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 1
+    tipo: Posição e Espaço
+    guardiao_lider: celeste
+    guardiao_secundario: iris
+    guardioes_apresentados: [celeste]
+    tgtb_ref: 000-L5
+    tgtb_titulo_en: Position Words
+    tgtb_titulo_pt: Palavras de Posição
+    objetivo_pedagogico: '[Foco: Posição espacial — em cima, embaixo, atrás, na frente]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-004, titulo: A Ordem do Dia}
+    proxima: {id: MV-S-006, titulo: O Desenho do Rei}
+
+  para_portador:
+    ideia_viva:
+      frase: "Saber quem se esconde atrás da rocha e quem brilha acima das nuvens."
+      conceito: A posição no espaço define onde as coisas estão em relação umas às outras.
+      intencao_cm: A criança percebe que a matemática organiza o espaço, não apenas os números.
+    dica_coracao: |
+      Hoje é dia de brincar de esconde-esconde com Celeste!
+      A raposa adora encontrar tesouros escondidos.
+      Ajude seu filho a perceber o mundo ao redor — o que está em cima? Embaixo? Atrás?
+    filho_descobre: Que as coisas ocupam lugares diferentes no espaço e que podemos descrever onde elas estão.
+    protocolo_impecabilidade: |
+      Mova-se pelo espaço. Use o CORPO para demonstrar.
+      Em cima da cadeira. Embaixo da mesa. Atrás do sofá.
+    nota_graca: "Se confundir direita com esquerda, tudo bem! Até adultos confundem. Celeste também se perde às vezes."
+    conforto_emocional: |
+      Esta lição é pura brincadeira. Não há certo ou errado — só descoberta.
+    audio_script: |
+      Olá, Portador! Celeste está animada hoje!
+      Prepare-se para uma aventura pelo espaço da sua casa.
+    preparacao:
+      materiais:
+        - {item: 1 objeto pequeno (brinquedo ou bolinha), qtd: 1, alt: qualquer objeto, essencial: true}
+        - {item: Card Celeste, qtd: 1, alt: imagem da raposa, essencial: true}
+        - {item: 3 lugares diferentes (cadeira, mesa, almofada), qtd: 3, alt: móveis da casa, essencial: true}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-004
+      gancho: Noé nos ensinou a ordem. Agora, Celeste vai nos mostrar onde as coisas se escondem!
+    proximo:
+      licao_id: MV-S-006
+      gancho: Depois de encontrar os esconderijos, vamos aprender a desenhar os números que encontramos.
+
+  ritual_abertura:
+    instrucao_ambiente: Luz natural, espaço para movimentar-se, objetos espalhados.
+    local: clareira_perguntas
+    clima: ensolarado
+    virtude: curiosidade
+    artefato: Um pequeno tesouro (objeto especial)
+    transicao_reino: |
+      Feche os olhos e imagine uma clareira ensolarada.
+      O ar está morno e cheira a flores silvestres.
+    fala_portador:
+      tom: animado
+      script: |
+        Shhh... Você ouve passos rápidos na grama?
+        Alguém está farejando algo... É Celeste!
+    card_guardiao: 'CARD: CELESTE'
+    abertura_sensorial: |
+      O sol brilha entre as folhas, criando manchas de luz no chão.
+      Uma raposa laranja aparece, com o focinho erguido, farejando o ar.
+      Celeste pisca: "Sente esse cheiro? É aventura! Venha, tenho segredos para mostrar!"
+
+  jornada:
+    narrativa_principal:
+      - titulo: O Tesouro Escondido
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: curioso
+          script: |
+            "Eu escondi um tesouro nesta clareira!"
+            [Celeste fareja o ar]
+            "Mas onde será que ele está? EM CIMA de algo? EMBAIXO?"
+        instrucao_portador: |
+          Esconda o objeto em algum lugar visível.
+          "Celeste escondeu um tesouro! Vamos procurar?"
+      - titulo: A Busca
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: animado
+          script: |
+            "Está EMBAIXO da pedra? ATRÁS da árvore?"
+            [Celeste corre de um lado para outro]
+            "NA FRENTE do arbusto? EM CIMA do tronco?"
+        instrucao_portador: |
+          Guie a criança usando apenas palavras de posição.
+          "Está EMBAIXO da cadeira? Não! Tente ATRÁS do sofá..."
+      - titulo: Encontrado!
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: satisfeito
+          script: |
+            "Você encontrou! O tesouro estava [posição]!"
+            "Agora é sua vez de esconder para mim encontrar!"
+        instrucao_portador: |
+          Deixe a criança esconder o objeto.
+          Faça perguntas usando posições até "encontrar".
+
+    concreto:
+      desc: Criança move-se pelo espaço real, posicionando e encontrando objetos
+      card_objeto: 'CARD: TESOURO ESCONDIDO'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Esconda o objeto EM CIMA de algo.
+          fala_sugerida: "O tesouro está EM CIMA de alguma coisa!"
+        - passo: 2
+          acao: Depois que encontrar, esconda EMBAIXO.
+          fala_sugerida: "Agora ele se escondeu EMBAIXO!"
+        - passo: 3
+          acao: Continue com ATRÁS e NA FRENTE.
+          fala_sugerida: "ATRÁS da almofada? NA FRENTE do livro?"
+        - passo: 4
+          acao: Troque — criança esconde, você procura.
+          fala_sugerida: "Agora sou eu que procuro! Está EM CIMA? EMBAIXO?"
+      norte_absoluto: A criança deve EXPERIMENTAR a posição no corpo — subir, descer, virar.
+      adaptacao_bernardo: |
+        💡 Se a criança tem dificuldade de locomoção, mova VOCÊ os objetos.
+        Pergunte: "Onde está a bolinha?" e deixe ela apontar ou falar.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Posição é vivida no corpo.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Reconhecimento das palavras de posição (vocabulário espacial)
+      nota: O foco é VIVENCIAR a posição, não desenhar ou escrever.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando mais posições
+      sugestoes:
+        - titulo: Corpo no Espaço
+          acao: "Coloque a mão EM CIMA da cabeça. O pé EMBAIXO da mesa. O nariz ATRÁS da mão."
+        - titulo: Descrição de Imagem
+          acao: Mostre uma foto e pergunte "O que está EM CIMA? O que está EMBAIXO?"
+      adaptacao_bernardo: |
+        💡 Use fotos ou imagens se movimento físico for difícil.
+        "Aponte onde está o pássaro na foto — EM CIMA ou EMBAIXO?"
+
+  narracao:
+    instrucao_portador: |
+      Guarde o tesouro com carinho.
+      "Celeste adorou brincar com você!"
+    pergunta_principal: Onde Celeste escondeu o tesouro hoje?
+    perguntas_coracao:
+      - Qual esconderijo foi o mais difícil de encontrar?
+      - Você prefere esconder ou procurar?
+    nota_cm: A narração fixa o vocabulário espacial de forma natural.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: satisfeito
+      script: |
+        "Você tem olhos de explorador! Sabe onde cada coisa mora!"
+        "Até a próxima aventura, pequeno farejador!"
+    fio_ouro: "Você aprendeu ONDE as coisas estão. Amanhã, vamos aprender COMO desenhá-las."
+    transicao_volta:
+      instrucao: Guarde o tesouro num lugar especial.
+      fala: Em cima, embaixo, atrás, na frente... Voltamos.
+
+  para_familia:
+    titulo: O Vocabulário do Espaço
+    porque_importa: |
+      Entender posição espacial é base para geometria, leitura de mapas e orientação.
+      Este vocabulário (em cima, embaixo, atrás, na frente) é ponte para conceitos mais complexos.
+    metodo_cpa:
+      concreto: Corpo no espaço, objetos escondidos fisicamente.
+      pictorico: Vetado (apenas na extensão com fotos).
+      abstrato: Vocabulário de posição.
+      nota: "CM: The child's body is the first classroom."
+    principio_cm:
+      numero: 6
+      citacao: "Education is the science of relations."
+      aplicacao: A criança forma relações espaciais entre objetos e seu próprio corpo.
+    tgtb_conexao: |
+      Corresponde à lição de Palavras de Posição.
+      Celeste traz a dimensão de Aventura e Descoberta para um conceito espacial.
+    espiral:
+      conceito: Posição Espacial
+      volta_atual: 'Sementes — em cima, embaixo, atrás, na frente'
+      proxima_volta: 'Raízes — direita, esquerda, entre, ao lado, coordenadas simples'
+    reflexao_espiritual: |
+      Deus conhece onde estamos em cada momento.
+      "Onde posso ir para me esconder do Teu Espírito?" — Salmo 139.
+    nota_graca: |
+      Se a criança inverter as posições, faça dela um jogo.
+      "Opa! Você disse embaixo, mas está em cima! Celeste ficou confusa também!"
+
+  diario_portador:
+    nota: Observe quais posições são mais fáceis e quais confundem a criança.
+    perguntas:
+      - Ela diferencia bem em cima/embaixo?
+      - Atrás/na frente é mais difícil?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

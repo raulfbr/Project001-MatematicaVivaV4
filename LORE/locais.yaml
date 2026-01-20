@@ -1,12 +1,13 @@
 # LOCAIS DO REINO CONTADO — SSOT
-# YAML Lean v1.0 | 14/01/2026
-# Alinhamento: Imersão Sensorial
+# YAML Lean v1.1 | 20/01/2026
+# Alinhamento: Imersão Sensorial (Pre-K-5)
 
 id: locais_lore
-versao: '1.0'
+versao: '1.1'
 tipo: lore_entity
 ref_guardioes: LORE/guardioes.yaml
 ref_climas: LORE/climas.yaml
+ref_triade: .bmad/expansion-packs/matematica-viva/triade.yaml
 
 locais:
   jardim_central:

@@ -1,0 +1,224 @@
+# LIÇÃO 006 — O DESENHO DO REI
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-006-desenho-rei
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-006
+    titulo: O Desenho do Rei
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 1
+    tipo: Senso Numérico
+    guardiao_lider: iris
+    guardiao_secundario: bernardo
+    guardioes_apresentados: [iris]
+    tgtb_ref: 000-L6
+    tgtb_titulo_en: Number Practice
+    tgtb_titulo_pt: Prática de Números
+    objetivo_pedagogico: '[Foco: Traçar números 1-5 no ar e reconhecer formas]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-005, titulo: O Esconderijo da Glória}
+    proxima: {id: MV-S-007, titulo: A Coroa da Semana}
+
+  para_portador:
+    ideia_viva:
+      frase: "Cada número tem seu próprio desenho — como a assinatura do Rei."
+      conceito: Os números têm formas únicas que podemos traçar e reconhecer.
+      intencao_cm: A criança percebe a beleza na forma dos números, não apenas seu valor.
+    dica_coracao: |
+      Hoje Íris vai nos mostrar a beleza escondida nos números.
+      Ela vê o que ninguém mais vê — a curva perfeita do 2, a barriga do 3.
+      Ajude seu filho a SENTIR o número antes de escrevê-lo.
+    filho_descobre: Que cada número tem uma forma única e bonita.
+    protocolo_impecabilidade: |
+      TRACE NO AR primeiro. Grande e lento.
+      O corpo aprende antes do lápis.
+    nota_graca: "Se o traço sair torto, celebre! Íris diz que toda curva conta uma história."
+    conforto_emocional: |
+      Esta lição é sobre ver beleza, não perfeição.
+    audio_script: |
+      Olá, Portador! Íris preparou uma galeria especial.
+      Hoje vamos admirar a arte dos números.
+    preparacao:
+      materiais:
+        - {item: Card Íris, qtd: 1, alt: imagem do pardal, essencial: true}
+        - {item: Cartões numerados 1-5, qtd: 5, alt: papel com números grandes, essencial: true}
+        - {item: Areia ou farinha numa bandeja, qtd: 1, alt: traçar no ar apenas, essencial: false}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-005
+      gancho: Celeste nos mostrou ONDE as coisas estão. Agora, Íris vai nos mostrar COMO os números se parecem!
+    proximo:
+      licao_id: MV-S-007
+      gancho: Você conheceu 1, 2, 3, 4 e 5. Amanhã, Celeste apresentará o 6 e o 7!
+
+  ritual_abertura:
+    instrucao_ambiente: Luz suave, cartões numerados expostos como numa galeria.
+    local: ninho_mirante
+    clima: primaveril
+    virtude: atencao
+    artefato: Uma lupa imaginária
+    transicao_reino: |
+      Feche os olhos. Imagine que estamos subindo ao Ninho Mirante.
+      Lá de cima, Íris vê detalhes que ninguém mais percebe.
+    fala_portador:
+      tom: misterioso
+      script: |
+        Shhh... Você vê aquele pássaro pequeno com um colar de contas?
+        É Íris. Ela tem olhos especiais — vê beleza em tudo.
+    card_guardiao: 'CARD: IRIS'
+    abertura_sensorial: |
+      O ar está fresco aqui em cima, cheiro de folhas novas.
+      Íris pousa delicadamente e inclina a cabeça.
+      "Olhe bem. A beleza está no detalhe."
+
+  jornada:
+    narrativa_principal:
+      - titulo: A Galeria dos Números
+        local: ninho_mirante
+        fala_guardiao:
+          tom: poetico
+          script: |
+            "Cada número é uma obra de arte do Rei."
+            [Íris aponta para os cartões]
+            "Veja o 1 — alto e orgulhoso como uma torre."
+        instrucao_portador: |
+          Mostre o cartão do número 1.
+          "Olha que lindo! Reto como uma árvore alta."
+      - titulo: Traçando no Ar
+        local: ninho_mirante
+        fala_guardiao:
+          tom: gentil
+          script: |
+            "Agora trace com seu dedo no ar. De cima para baixo."
+            [Íris faz o movimento com a asa]
+            "Sinta a linha. Esse é o 1."
+        instrucao_portador: |
+          Trace o 1 no ar junto com a criança.
+          Depois mostre o 2 e repita. Continue até o 5.
+      - titulo: A Beleza de Cada Número
+        local: ninho_mirante
+        fala_guardiao:
+          tom: admirado
+          script: |
+            "O 2 tem uma curva elegante. O 3 tem duas barrigas. O 4 parece uma cadeira."
+            "O 5 tem um chapéu e uma barriga."
+        instrucao_portador: |
+          Para cada número, deixe a criança observar e traçar no ar.
+          "Qual você acha mais bonito?"
+
+    concreto:
+      desc: Traçar números 1-5 no ar com o dedo (ENATIVO = Concreto)
+      card_objeto: 'CARD: GALERIA NÚMEROS'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Mostre o 1. Trace no ar juntos.
+          fala_sugerida: "De cima para baixo. Assim!"
+        - passo: 2
+          acao: Mostre o 2. Trace a curva no ar.
+          fala_sugerida: "Curva bonita, descendo. É o 2!"
+        - passo: 3
+          acao: Continue com 3, 4 e 5.
+          fala_sugerida: "Cada um tem sua própria dança no ar."
+        - passo: 4
+          acao: (Opcional) Se tiver areia/farinha, trace lá.
+          fala_sugerida: "Agora deixe sua marca, como Íris faz na neve."
+      norte_absoluto: Traçar no ar = ENATIVO = Concreto. O corpo aprende a forma antes do lápis.
+      adaptacao_bernardo: |
+        💡 Se a criança não consegue traçar, segure a mão dela e trace junto.
+        Ou peça que ela OLHE enquanto você traça. O olhar também ensina.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Traçar ar = ENATIVO.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Reconhecimento visual das formas dos números 1-5
+      nota: A criança RECONHECE a forma, não escreve.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando mais traços
+      sugestoes:
+        - titulo: Traçar nas Costas
+          acao: Trace um número nas costas da criança. Ela adivinha qual é.
+        - titulo: Caça aos Números
+          acao: Procure números pela casa (relógio, microondas, etc).
+      adaptacao_bernardo: |
+        💡 Se movimento é difícil, use apenas reconhecimento visual.
+        "Qual é este número? Aponte."
+
+  narracao:
+    instrucao_portador: |
+      Guarde os cartões com cuidado.
+      "Íris ficou orgulhosa de você."
+    pergunta_principal: Qual número você achou mais bonito hoje?
+    perguntas_coracao:
+      - Qual foi mais fácil de traçar no ar?
+      - Você viu algum número pela casa?
+    nota_cm: A narração fixa a forma visual através da lembrança.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: poetico
+      script: |
+        "Você tem olhos de artista agora."
+        "A beleza está nos detalhes — nunca esqueça."
+    fio_ouro: "Você conheceu 1 a 5. Amanhã, Celeste trará dois novos amigos: 6 e 7!"
+    transicao_volta:
+      instrucao: Desça do Ninho com cuidado.
+      fala: Um, dois, três, quatro, cinco... Voltamos.
+
+  para_familia:
+    titulo: A Arte dos Números
+    porque_importa: |
+      Reconhecer a forma dos números é pré-requisito para a escrita.
+      Traçar no ar (ENATIVO) prepara o corpo para o lápis sem frustração.
+    metodo_cpa:
+      concreto: Traçar no ar (movimento corporal = ENATIVO).
+      pictorico: Vetado.
+      abstrato: Reconhecimento visual das formas.
+      nota: "CM + Bruner: Traçar no ar = Concreto."
+    principio_cm:
+      numero: 16
+      citacao: "Handicrafts teach accuracy."
+      aplicacao: O movimento preciso do traço desenvolve atenção e coordenação.
+    tgtb_conexao: |
+      Corresponde à lição de Prática de Números.
+      Íris traz contemplação e beleza para um exercício motor.
+    espiral:
+      conceito: Formação de Números
+      volta_atual: 'Sementes — traçar 1-5 no ar'
+      proxima_volta: 'Raízes — escrita formal com lápis'
+    reflexao_espiritual: |
+      Deus assinou Sua criação com padrões matemáticos.
+      Aprender a forma dos números é ler a assinatura do Criador.
+    nota_graca: |
+      Se o traço sair "errado", celebre a tentativa.
+      Íris diz: "Toda curva conta uma história."
+
+  diario_portador:
+    nota: Observe qual número é mais difícil de traçar.
+    perguntas:
+      - Ela reconhece os números visualmente?
+      - O movimento no ar é fluido ou hesitante?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

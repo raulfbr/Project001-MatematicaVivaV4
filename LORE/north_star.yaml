@@ -60,11 +60,16 @@ comunicacao_estruturada:
       - "E a narração: seu filho conta o que aprendeu."
       - "Criado pela Família Rodrigues — família CM para famílias CM."
 
-# TOM DE COMUNICAÇÃO (Deliberação 19/01/2026)
+# TOM DE COMUNICAÇÃO (Deliberação 20/01/2026)
 tom_comunicacao:
   principio: "O medo acaba em você. O encantamento começa neles."
   
-  publico_alvo: "Famílias 0-18 anos (Berço ao Legado). Onde a 'fase do medo' ainda não venceu a 'fase da curiosidade' (Broto, Sementes, Raízes) ou onde precisamos resgatar o encanto (Lógica, Legado)."
+  publico_alvo: "Famílias que querem sentar ao lado e ver o brilho nos olhos acontecer."
+  
+  posicionamento:
+    essencia: "Prático para você. Profundo para seu filho. Imersivo para os dois."
+    mensagem: "5 minutos de preparo. Histórias que encantam. Conceitos que crescem junto com ele."
+    convite: "De família para família — as portas do Reino já estão abertas."
   
   palavras_evitar: [odeia, trauma, difícil, chato, obrigação]
   palavras_preferir: [brilho, mistério, segredo, aventura, conquista]
@@ -187,7 +192,7 @@ garantia_oportunidade:
 
 negocio:
   estrategia_pioneiros:
-    publico: "K-5 (4-11 anos) | Ciclos Broto, Sementes e Raízes | Foco: Comunidade CMC"
+    publico: "Famílias que querem participar da educação dos filhos | Foco inicial: 4-11 anos"
     modelo: "Scholarship for Feedback (Bolsa de Co-criação)"
     pitch: "Agora: Acesso Grátis (Feedback). Em 2026: Venda com Selo Fundador (50% off na aquisição)."
     promessa_futura: "Do Gratuito (Validação) para Fundador (50% de desconto) ao final."

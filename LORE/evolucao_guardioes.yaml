@@ -125,7 +125,7 @@ celeste:
       papel: "Desperta curiosidade pelos padrões"
       exemplo_fala: |
         "Olha! Olha! Você viu aquilo? Três maçãs aqui... três pedras ali...
-        É o MESMO número fazendo mágica!"
+        É o MESMO número dançando em lugares diferentes!"
       frequencia: "Descoberta de padrões, conexões"
       
     raizes:
@@ -236,8 +236,12 @@ uso:
     2. Identifique o Guardião principal
     3. Use o tom/exemplo deste arquivo para guiar diálogos
     4. Dados fixos (nome, cor) sempre vêm de guardioes.yaml
+    5. Conceitos matemáticos por Guardião em guardioes.yaml#conceitos_por_guardiao
     
   principio: |
     Charlotte Mason: "A child is not a container to be filled,
     but a fire to be kindled." Os Guardiões evoluem PARA
     acompanhar essa chama crescendo.
+
+ref_conceitos: LORE/guardioes.yaml#conceitos_por_guardiao
+ref_toms: LORE/toms_de_voz.yaml

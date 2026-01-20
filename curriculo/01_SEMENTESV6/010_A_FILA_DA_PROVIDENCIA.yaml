@@ -1,0 +1,222 @@
+# LIÇÃO 010 — A FILA DA PROVIDÊNCIA
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-010-fila-providencia
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-010
+    titulo: A Fila da Providência
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 1
+    tipo: Números Ordinais
+    guardiao_lider: celeste
+    guardiao_secundario: melquior
+    guardioes_apresentados: [celeste]
+    tgtb_ref: 000-L10
+    tgtb_titulo_en: Ordinal Numbers Part 1
+    tgtb_titulo_pt: Números Ordinais Parte 1
+    objetivo_pedagogico: '[Foco: Primeiro, segundo, terceiro — ordinais até 5º]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-009, titulo: O Celeiro de Noé}
+    proxima: {id: MV-S-011, titulo: A Plenitude das Mãos}
+
+  para_portador:
+    ideia_viva:
+      frase: "O primeiro a colher e o terceiro a agradecer. Quem a Raposa vê primeiro?"
+      conceito: Podemos descrever a posição das coisas numa fila.
+      intencao_cm: A criança percebe que ordem importa — quem vem primeiro, quem vem depois.
+    dica_coracao: |
+      Hoje Celeste organiza uma fila no Reino!
+      Ela vai nos ensinar sobre primeiro, segundo, terceiro...
+      A ordem conta uma história.
+    filho_descobre: Que podemos numerar as posições — primeiro, segundo, terceiro, quarto, quinto.
+    protocolo_impecabilidade: |
+      Use OBJETOS EM FILA (bonecos, carrininhos).
+      A criança deve apontar ou mover o "primeiro", "segundo", etc.
+    nota_graca: "Celeste diz: 'Sente esse cheiro? É aventura!' mesmo quando erramos a ordem."
+    conforto_emocional: |
+      Ordinais são como uma história — cada personagem tem seu momento.
+    audio_script: |
+      Olá, Portador! Celeste organizou uma corrida!
+      Vamos ver quem chega primeiro!
+    preparacao:
+      materiais:
+        - {item: 5 objetos diferentes (bonecos ou carrinhos), qtd: 5, alt: qualquer objeto, essencial: true}
+        - {item: Card Celeste, qtd: 1, alt: imagem da raposa, essencial: true}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-009
+      gancho: Noé nos ensinou 8 e 9. Agora, Celeste vai nos ensinar quem é o primeiro da fila!
+    proximo:
+      licao_id: MV-S-011
+      gancho: Você sabe quem é primeiro e quem é último. Amanhã, conheceremos o 10 — as duas mãos completas!
+
+  ritual_abertura:
+    instrucao_ambiente: Espaço amplo para organizar fila, luz natural.
+    local: clareira_perguntas
+    clima: ensolarado
+    virtude: curiosidade
+    artefato: Uma linha de largada imaginária
+    transicao_reino: |
+      Feche os olhos. Imagine uma clareira ensolarada.
+      Celeste está organizando uma corrida muito especial.
+    fala_portador:
+      tom: animado
+      script: |
+        Olha! Celeste está posicionando os corredores!
+        Quem será o primeiro a cruzar a linha?
+    card_guardiao: 'CARD: CELESTE'
+    abertura_sensorial: |
+      O sol aquece a clareira. Cheiro de grama fresca.
+      Celeste fareja o ar: "Sente esse cheiro? É aventura!"
+      Ela posiciona cinco objetos numa linha de largada.
+
+  jornada:
+    narrativa_principal:
+      - titulo: A Grande Corrida
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: animado
+          script: |
+            "Atenção! Os corredores estão prontos!"
+            [Celeste aponta para os objetos em fila]
+            "Quem vai ser o PRIMEIRO? Quem vai ser o ÚLTIMO?"
+        instrucao_portador: |
+          Coloque 5 objetos em fila.
+          "Vamos ver quem chega primeiro na corrida!"
+      - titulo: Primeiro, Segundo, Terceiro
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: curioso
+          script: |
+            "Este é o PRIMEIRO! E depois dele vem o...?"
+            [Celeste pula de alegria]
+            "SEGUNDO! E depois, o TERCEIRO!"
+        instrucao_portador: |
+          Mova cada objeto "correndo" e diga:
+          "PRIMEIRO! SEGUNDO! TERCEIRO! QUARTO! QUINTO!"
+      - titulo: Quem é Quem
+        local: clareira_perguntas
+        fala_guardiao:
+          tom: satisfeito
+          script: |
+            "Aponte para o TERCEIRO! Qual é o ÚLTIMO?"
+            "Você sabe onde cada um está na fila!"
+        instrucao_portador: |
+          Pergunte "Qual é o segundo?" e deixe apontar.
+          Misture as perguntas.
+
+    concreto:
+      desc: Organizar objetos em fila e identificar posições ordinais
+      card_objeto: 'CARD: FILA DA CORRIDA'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Coloque 5 objetos em fila horizontal.
+          fala_sugerida: "Os corredores estão prontos!"
+        - passo: 2
+          acao: Aponte para o primeiro. "Este é o PRIMEIRO!"
+          fala_sugerida: "Ele chegou primeiro na corrida!"
+        - passo: 3
+          acao: Continue até o quinto.
+          fala_sugerida: "SEGUNDO... TERCEIRO... QUARTO... QUINTO!"
+        - passo: 4
+          acao: Pergunte "Qual é o terceiro?" e deixe apontar.
+          fala_sugerida: "Aponte para o TERCEIRO!"
+      norte_absoluto: A criança deve APONTAR ou MOVER para identificar posições.
+      adaptacao_bernardo: |
+        💡 Se a criança não consegue apontar, mova você e pergunte "Este é qual?"
+        Comece com apenas 3 objetos se 5 for muito.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Fila física.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Vocabulário ordinal (primeiro a quinto)
+      nota: A criança OUVE e USA os termos ordinais.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando ordinais
+      sugestoes:
+        - titulo: Fila da Família
+          acao: Quem é o primeiro da sua família a acordar? E o último?
+        - titulo: História de Chegada
+          acao: Conte uma história onde 5 animais chegam um de cada vez.
+      adaptacao_bernardo: |
+        💡 Se 5 posições são muitas, foque em "primeiro" e "último" apenas.
+
+  narracao:
+    instrucao_portador: |
+      Guarde os objetos na ordem (primeiro ao último).
+      "Celeste adorou a corrida!"
+    pergunta_principal: Quem foi o primeiro na corrida de hoje?
+    perguntas_coracao:
+      - Você gosta mais de ser primeiro ou último?
+      - O que significa "segundo"?
+    nota_cm: A narração fixa o vocabulário ordinal naturalmente.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: satisfeito
+      script: |
+        "Você sabe quem é primeiro, segundo, terceiro!"
+        "A ordem conta uma história. Até a próxima aventura!"
+    fio_ouro: "Você sabe ordenar 1 a 5. Amanhã, conheceremos o 10 — as duas mãos completas!"
+    transicao_volta:
+      instrucao: Guarde os objetos dizendo "primeiro... último".
+      fala: Primeiro, segundo, terceiro... voltamos.
+
+  para_familia:
+    titulo: A Ordem Importa
+    porque_importa: |
+      Ordinais (primeiro, segundo, etc.) são diferentes de cardinais (um, dois).
+      São fundamentais para sequenciamento, instruções e compreensão de histórias.
+    metodo_cpa:
+      concreto: Objetos físicos em fila.
+      pictorico: Vetado.
+      abstrato: Vocabulário ordinal.
+      nota: "CM: A criança vive antes de definir."
+    principio_cm:
+      numero: 6
+      citacao: "Education is the science of relations."
+      aplicacao: Ordinais expressam relações de posição.
+    tgtb_conexao: |
+      Corresponde à lição de Números Ordinais Parte 1.
+      Celeste traz aventura e curiosidade para a sequência.
+    espiral:
+      conceito: Números Ordinais
+      volta_atual: 'Sementes — primeiro ao quinto'
+      proxima_volta: 'Raízes — ordinais até décimo, datas'
+    reflexao_espiritual: |
+      "Os últimos serão os primeiros."
+      A posição na fila não define o valor da pessoa.
+    nota_graca: |
+      Se confundir ordinais com cardinais, tudo bem!
+      Celeste diz: "Um, dois, três conta. Primeiro, segundo, terceiro ordena!"
+
+  diario_portador:
+    nota: Observe se a criança diferencia "três" de "terceiro".
+    perguntas:
+      - Ela usa "primeiro" e "último" corretamente?
+      - A noção de ordem está clara?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

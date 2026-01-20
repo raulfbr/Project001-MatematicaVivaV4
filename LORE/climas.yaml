@@ -1,9 +1,9 @@
 # CLIMAS NARRATIVOS — SSOT
-# YAML Lean v1.0 | 14/01/2026
+# YAML Lean v1.1 | 20/01/2026
 # Alinhamento: Ideias Vivas (Imersão Sensorial)
 
 id: climas_lore
-versao: '1.0'
+versao: '1.1'
 tipo: lore_entity
 ref_locais: LORE/locais.yaml
 

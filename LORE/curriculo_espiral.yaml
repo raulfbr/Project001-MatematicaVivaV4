@@ -30,7 +30,7 @@ distincao:
 
 # OS 4 CICLOS K-12
 ciclos:
-  - {id: sementes, range: "0-6 anos", titulo: Herdeiro, tom: "Maravilhamento mágico", cpa_foco: "80%+ Concreto"}
+  - {id: sementes, range: "0-6 anos", titulo: Herdeiro, tom: "Maravilhamento puro", cpa_foco: "80%+ Concreto"}
   - {id: raizes, range: "7-10 anos", titulo: Construtor, tom: "Aventura exploratória", cpa_foco: "C+P equilibrado"}
   - {id: logica, range: "11-14 anos", titulo: Explorador, tom: "Investigação intelectual", cpa_foco: "P+A crescente"}
   - {id: legado, range: "15-18 anos", titulo: "Portador da Tocha", tom: "Maestria vocacional", cpa_foco: "Abstrato dominante"}

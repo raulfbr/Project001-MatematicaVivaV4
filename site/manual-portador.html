@@ -138,6 +138,61 @@
         .back-link:hover {
             color: #B8860B;
         }
+
+        /* Box de Início Rápido (Bússola) */
+        .quick-start-box {
+            background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 100%);
+            /* Verde Menta Suave */
+            border: 1px solid #10B981;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 0 auto 3rem auto;
+            /* Margem inferior maior */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .quick-start-box h3 {
+            color: #047857;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .quick-start-box p {
+            margin: 0.75rem 0;
+            color: #064E3B;
+        }
+
+        .quick-start-box a {
+            color: #059669;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        .quick-start-box a:hover {
+            color: #047857;
+        }
+
+        .quick-btn {
+            display: inline-block;
+            background: #059669;
+            color: white !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none !important;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .quick-btn:hover {
+            background: #047857;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+        }
     </style>
 </head>
 
@@ -200,6 +255,45 @@
 
             <a href="index.html" class="back-link">← Voltar para o Dashboard</a>
 
+            <!-- BÚSSOLA RÁPIDA (Novo Alerta) -->
+            <div class="quick-start-box">
+                <h3>🧭 Bússola Rápida: Comece em 5 Minutos</h3>
+
+                <p>Você não precisa ler este manual inteiro agora. Sabemos que sua vida é corrida.</p>
+                <p><strong>Quer ver a mágica acontecer hoje?</strong></p>
+
+                <ol style="margin: 0.5rem 0; padding-left: 1.5rem; color: #064E3B;">
+                    <li>Vá para a <strong>Lição 000</strong> (link abaixo).</li>
+                    <li>Leia o texto em itálico para você (2 min).</li>
+                    <li>Chame seu filho e leia a história (3 min).</li>
+                </ol>
+                <p><em>Pronto. Portal aberto.</em></p>
+
+                <hr style="border-top: 1px dashed #10B981; margin: 1.5rem 0;">
+
+                <p><strong>🖨️ O Segredo da Imersão (Sobre Imprimir)</strong></p>
+                <p>Disponibilizamos materiais lindos. <em>É obrigatório? Não. Ajuda? Muito.</em></p>
+                <p>Quando seu filho <strong>segura</strong> o card do Leão, o toque ancora a atenção. O concreto vence a
+                    distração.</p>
+
+                <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                    <li>📄 <a href="impressao/ImpressaoGuardioeseNumeros.pdf" target="_blank">Guardiões e Números
+                            (A4)</a> <small>(Corte em 4)</small></li>
+                    <li>🗺️ <a href="impressao/ImpressaoGuardioesLocais.pdf" target="_blank">Cenários e Locais (A4)</a>
+                        <small>(Folha inteira)</small>
+                    </li>
+                </ul>
+
+                <p style="font-size: 0.9rem; font-style: italic; margin-top: 1rem;">
+                    "Não tem impressora agora? Use o celular. O importante não é a perfeição do papel, é a presença do
+                    pai."
+                </p>
+
+                <div style="text-align: center;">
+                    <a href="sementes/MV-S-000_O_PORTAL_DO_REINO.html" class="quick-btn">→ Abrir Lição 000 Agora</a>
+                </div>
+            </div>
+
             <!-- PARTE 1 -->
             <h2>Parte 1: Bem-vindo, Portador da Tocha</h2>
 
@@ -211,9 +305,9 @@
                 Representa a luz do conhecimento que você vai passar adiante.</p>
 
             <div class="tip-box">
-                <strong>Uma dica:</strong> Conforme seu filho cresce, ter um "lugar de estudo" vai ajudar na transição
-                para anos mais avançados. Criar essa rotina desde Sementes é um presente para o futuro. Cada família
-                encontra seu jeito — algumas fazem dentro de casa, outras ao ar livre. A decisão é sua.
+                <strong>Uma dica sobre o Ambiente:</strong> Conforme seu filho cresce, ter um "lugar do Reino" ajuda na
+                transição. Criar essa rotina desde Sementes é um presente para o futuro. Mas lembre-se: a atmosfera quem
+                cria é você, não o móvel.
             </div>
 
             <p>No Reino Contado, chamamos quem ensina de <strong>Portador da Tocha</strong>. Não "professor" — porque
@@ -226,9 +320,9 @@
 
             <p>Respire fundo.</p>
 
-            <p>Se você está inseguro porque "nunca foi bom em matemática", saiba: você não precisa ser. O material vai
-                te guiar passo a passo. Cada lição tem uma seção chamada <strong>"Para Você, Portador"</strong> —
-                escrita especialmente para você.</p>
+            <p>Se você sente insegurança porque "nunca foi bom em matemática", saiba: o conhecimento renasce em você. O
+                material foi desenhado para te empoderar passo a passo. Cada lição tem uma seção chamada <strong>"Para
+                    Você, Portador"</strong> — sua bússola pessoal.</p>
 
             <p>Nela, você vai encontrar:</p>
             <ul>
@@ -246,7 +340,7 @@
             <p>Talvez você tenha memórias ruins de matemática. Talvez alguém tenha dito que você "não era de exatas".
                 Talvez você se lembre de testes que incomodavam.</p>
 
-            <p>Tudo isso acaba em você.</p>
+            <p>Tudo isso acaba hoje. O ciclo se rompe em você.</p>
 
             <p>O seu filho vai conhecer matemática de um jeito diferente. Com histórias. Com personagens. Com as mãos na
                 massa — literalmente. Ele não vai herdar seu medo. Vai herdar seu encantamento.</p>
@@ -541,8 +635,8 @@
             <p>Seu filho não é um copo vazio para você encher. Ele é uma pessoa completa, com curiosidade, vontade e
                 capacidade de descobrir. Nosso trabalho não é depositar informação — é apresentar um banquete e deixar
                 ele se servir.</p>
-            <div class="tip-box"><strong>Na prática:</strong> Nunca diga "é fácil" ou "você deveria saber isso". Diga
-                "vamos descobrir juntos".</div>
+            <div class="tip-box"><strong>Na prática:</strong> Nunca diga "é fácil" (diminui o esforço) ou "você deveria
+                saber" (gera vergonha). Diga "vamos descobrir juntos" (gera parceria).</div>
 
             <h3>2. DESCOBERTA</h3>
             <p><em>"Mãos primeiro, mente depois."</em></p>
@@ -555,8 +649,8 @@
             <p><em>"O que planta hoje, floresce amanhã."</em></p>
             <p>Os conceitos não são ensinados uma vez e cobrados para sempre. Eles RETORNAM em ciclos cada vez mais
                 profundos. Se hoje ele não dominou contagem até 10, tudo bem — vai voltar.</p>
-            <div class="tip-box"><strong>Na prática:</strong> Não entre em pânico se algo não "pegar" na primeira vez. O
-                currículo é espiral.</div>
+            <div class="tip-box"><strong>Na prática:</strong> Confie na Espiral. Não entre em pânico se algo não "pegar"
+                na primeira vez. O conceito voltará, e seu filho estará mais maduro para recebê-lo.</div>
 
             <h3>4. NARRAÇÃO</h3>
             <p><em>"Conta o que aprendeu — sem provas."</em></p>
@@ -594,7 +688,8 @@
             <p>Bernardo, o Urso, manca de uma pata. Ele se machucou salvando amigos na Grande Nevasca — mas isso nunca o
                 parou.</p>
             <p>Quando seu filho tiver dificuldade (motora, sensorial, de atenção ou qualquer outra), lembre-se:
-                <strong>caminhos diferentes também chegam lá</strong>.</p>
+                <strong>caminhos diferentes também chegam lá</strong>.
+            </p>
             <p>Cada lição tem uma seção <strong>"Adaptação Bernardo"</strong> com sugestões para realidades diferentes:
             </p>
             <ul>
@@ -650,8 +745,8 @@
                 As Sementes são para 4-6 anos. Se ele já tem 7+, comece pela Lição 000 e observe como ele responde.</p>
 
             <p><strong>E a BNCC?</strong><br>
-                Não miramos na BNCC — miramos acima. Nosso currículo segue o padrão que tornou Singapura o número 1 do
-                mundo em matemática.</p>
+                Nosso alvo é a Soberania Intelectual. A BNCC é um subconjunto natural desse alvo. Ao mirar na excelência
+                global (padrão Singapura/PISA), cobrimos a base nacional organicamente, como degrau, não como teto.</p>
 
             <p><strong>Quanto tempo por dia?</strong><br>
                 15-20 minutos, 4-5 vezes por semana. Não mais. Consistência > intensidade.</p>

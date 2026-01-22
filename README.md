@@ -16,7 +16,7 @@
 >
 > *O que planta hoje, floresce amanhã.*
 
-[**Ver Lição Exemplo**](https://matematicavivav4.vercel.app/sementes/MV-S-001_A_TRINDADE_NA_PALMA) | [**Entrar na Tribo**](https://matematicavivav4.vercel.app/landingpage)
+[**Ver Lição Exemplo**](https://matematicavivav4.vercel.app/sementes/MV-S-001_A_TRINDADE_NA_PALMA) | [**📖 Ler Manual do Portador**](https://matematicavivav4.vercel.app/manual-portador.html) | [**Entrar na Tribo**](https://matematicavivav4.vercel.app/landingpage)
 
 </div>
 

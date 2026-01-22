@@ -6,522 +6,403 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matemática Viva — Histórias que Ensinam</title>
     <meta name="description"
-        content="Currículo de matemática com narrativa. Prático para você. Profundo para seu filho.">
+        content="Currículo de matemática com narrativa. Prático para você. Profundo para seu filho. O método que transforma ansiedade em memória afetiva.">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Lora (Morris), Outfit (Toca Boca), Gloria Hallelujah (Potter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
     <style>
-        /* ==================== RESET & VARIABLES ==================== */
+        /* ==================== 1. DESIGN SYSTEM (VARIABLES) ==================== */
+        :root {
+            /* Paleta Potter & Morris (Earthy, Organic, Warm) */
+            --forest-green: #2A5A3F;
+            /* Beatrix Green */
+            --old-gold: #BFA265;
+            /* Morris Gold */
+            --warm-cream: #FDF5E6;
+            /* Base Paper Tone */
+            --terra-siena: #A0522D;
+            /* Accent Warmth */
+            --deep-ink: #2C241B;
+            /* Primary Text (Soft Black) */
+
+            /* UI colors */
+            --primary: var(--deep-ink);
+            --accent: var(--forest-green);
+            --gold: var(--old-gold);
+            --light: var(--warm-cream);
+
+            /* Surfaces (Glass/Paper) */
+            --glass-bg: rgba(253, 245, 230, 0.65);
+            /* More opaque, like tracing paper */
+            --glass-border: rgba(191, 162, 101, 0.2);
+            /* Gold trace */
+            --glass-blur: 16px;
+
+            /* Toca Boca UX */
+            --radius-lg: 32px;
+            /* Friendly soft corners */
+            --radius-md: 20px;
+            --touch-target: 60px;
+            /* Minimum clickable area */
+
+            /* Typography */
+            --font-head: 'Lora', serif;
+            --font-body: 'Outfit', sans-serif;
+            --font-hand: 'Gloria Hallelujah', cursive;
+        }
+
+        /* ==================== 2. RESET & BASE ==================== */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
         }
 
-        :root {
-            --primary: #3D2E1E;
-            /* Marrom texto */
-            --accent: #2D5A41;
-            /* Verde floresta */
-            --gold: #D4A574;
-            /* Dourado */
-            --green: #2D5A41;
-            /* Verde */
-            --light: #FAF6F0;
-            /* Creme */
-            --glass: rgba(61, 46, 30, 0.06);
-            --glass-border: rgba(61, 46, 30, 0.12);
-        }
-
-        /* ==================== BASE ==================== */
         html {
             scroll-behavior: smooth;
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(180deg, #FAF6F0 0%, #F5EDE4 50%, #EDE5DA 100%);
+            font-family: var(--font-body);
             color: var(--primary);
-            line-height: 1.7;
+            background-color: var(--warm-cream);
+            /* Organic Gradient Background (Watercolors) */
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(191, 162, 101, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(42, 90, 63, 0.08) 0%, transparent 40%);
+            line-height: 1.6;
             min-height: 100vh;
+            overflow-x: hidden;
         }
 
-        /* Animated background */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background:
-                radial-gradient(circle at 20% 80%, rgba(212, 165, 116, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(45, 90, 65, 0.12) 0%, transparent 50%),
-                radial-gradient(circle at 50% 50%, rgba(212, 165, 116, 0.08) 0%, transparent 50%);
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        /* ==================== TYPOGRAPHY ==================== */
+        /* ==================== 3. TYPOGRAPHY ==================== */
         h1,
         h2,
-        h3 {
-            font-family: 'Playfair Display', Georgia, serif;
+        h3,
+        h4 {
+            font-family: var(--font-head);
             font-weight: 700;
+            color: var(--forest-green);
         }
 
         h1 {
-            font-size: clamp(2.5rem, 8vw, 4rem);
-            background: linear-gradient(135deg, var(--primary) 0%, var(--gold) 50%, var(--green) 100%);
+            font-size: clamp(2.8rem, 8vw, 4.5rem);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, var(--deep-ink) 30%, var(--forest-green) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         h2 {
-            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            font-size: clamp(1.8rem, 5vw, 2.8rem);
             margin-bottom: 1.5rem;
-        }
-
-        /* ==================== SECTIONS ==================== */
-        section {
-            padding: 5rem 1.5rem;
-            max-width: 800px;
-            margin: 0 auto;
             position: relative;
+            display: inline-block;
         }
 
-        /* ==================== GLASS CARDS ==================== */
-        .glass {
-            background: var(--glass);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+        /* Ornamental Divider (Morris) */
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+            opacity: 0.6;
+        }
+
+        p {
+            font-size: 1.125rem;
+            /* 18px for better readability */
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        /* Notes & Slogans (Handwritten) */
+        .handwritten {
+            font-family: var(--font-hand);
+            color: var(--terra-siena);
+            transform: rotate(-1deg);
+        }
+
+        /* ==================== 4. COMPONENTS (ATOMIC) ==================== */
+
+        /* Glass/Paper Card */
+        .card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
             border: 1px solid var(--glass-border);
-            border-radius: 24px;
-            padding: 2rem;
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            box-shadow: 0 8px 32px rgba(42, 90, 63, 0.05);
+            /* Forest shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* ==================== BUTTONS ==================== */
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 48px rgba(191, 162, 101, 0.15);
+            /* Gold glow */
+            border-color: var(--gold);
+        }
+
+        /* CTA Button (Toca Boca Friendly) */
         .btn-cta {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
-            background: linear-gradient(135deg, var(--green) 0%, #3D7A5A 100%);
-            color: white;
-            padding: 1.25rem 2.5rem;
-            border-radius: 100px;
-            font-size: 1.1rem;
+            gap: 0.75rem;
+            min-height: var(--touch-target);
+            /* >60px */
+            padding: 0 3rem;
+            background: linear-gradient(135deg, var(--forest-green) 0%, #3A7A55 100%);
+            color: var(--warm-cream);
+            font-family: var(--font-body);
             font-weight: 700;
+            font-size: 1.25rem;
+            border-radius: 100px;
             text-decoration: none;
+            box-shadow: 0 10px 20px rgba(42, 90, 63, 0.25);
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 10px 40px rgba(45, 90, 65, 0.3);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .btn-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
         }
 
         .btn-cta:hover {
             transform: translateY(-4px) scale(1.02);
-            box-shadow: 0 20px 60px rgba(212, 165, 116, 0.4);
+            box-shadow: 0 15px 30px rgba(42, 90, 63, 0.35);
         }
 
-        /* ==================== HERO ==================== */
+        .btn-cta:hover::before {
+            opacity: 1;
+        }
+
+        /* Section Layout */
+        section {
+            padding: 6rem 1.5rem;
+            max-width: 900px;
+            /* More Tufte breathing room */
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+        }
+
+        /* ==================== 5. SECTIONS SPECIFIC ==================== */
+
+        /* --- HERO --- */
         #hero {
-            min-height: 100vh;
+            min-height: 90vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            padding-top: 2rem;
         }
 
-        #hero .emoji {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-        }
-
-        #hero .slogan {
-            font-size: 1.25rem;
-            opacity: 0.8;
-            margin: 0.5rem 0;
-            font-style: italic;
-        }
-
-        #hero .familia {
+        .hero-badge {
+            font-family: var(--font-body);
             font-size: 0.9rem;
-            opacity: 0.6;
-            margin-bottom: 3rem;
-        }
-
-        #hero .pergunta {
-            font-size: clamp(1.25rem, 4vw, 1.75rem);
-            color: var(--gold);
-            margin: 2rem 0;
             font-weight: 600;
-        }
-
-        .scroll-hint {
-            position: absolute;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: bounce 2s infinite;
-            opacity: 0.5;
-        }
-
-        @keyframes bounce {
-
-            0%,
-            100% {
-                transform: translateX(-50%) translateY(0);
-            }
-
-            50% {
-                transform: translateX(-50%) translateY(10px);
-            }
-        }
-
-        /* ==================== DOR ==================== */
-        #dor {
-            text-align: center;
-        }
-
-        #dor .glass {
-            margin: 2rem 0;
-        }
-
-        #dor ul {
-            list-style: none;
-            text-align: left;
-        }
-
-        #dor li {
-            padding: 1.25rem;
-            margin: 1rem 0;
-            background: rgba(212, 165, 116, 0.12);
-            border-left: 4px solid var(--gold);
-            border-radius: 0 16px 16px 0;
-            font-style: italic;
-            font-size: 1.1rem;
-            transition: transform 0.3s;
-        }
-
-        #dor li:hover {
-            transform: translateX(8px);
-        }
-
-        #dor .conclusao {
-            margin-top: 2rem;
-            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
             color: var(--gold);
-            font-weight: 600;
-        }
-
-        /* ==================== SOLUÇÃO ==================== */
-        #solucao .pilares {
-            display: grid;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .pilar {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-            padding: 1.5rem;
-            background: var(--glass);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            transition: all 0.3s;
-        }
-
-        .pilar:hover {
-            transform: translateY(-4px);
-            border-color: var(--gold);
-        }
-
-        .pilar-icon {
-            font-size: 2.5rem;
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, var(--accent), var(--gold));
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .pilar-titulo {
-            font-weight: 800;
-            font-size: 1.1rem;
-            letter-spacing: 0.5px;
-        }
-
-        .pilar-desc {
-            font-size: 0.95rem;
-            opacity: 0.7;
-            margin-top: 0.25rem;
-        }
-
-        /* ==================== PRICING ==================== */
-        #pricing {
-            text-align: center;
-        }
-
-        .preco-card {
-            background: var(--glass);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--glass-border);
-            border-radius: 32px;
-            padding: 2.5rem;
-            margin: 2rem 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .preco-card::before {
-            content: 'PIONEIRO';
-            position: absolute;
-            top: 20px;
-            right: -35px;
-            background: linear-gradient(135deg, var(--accent), var(--gold));
-            color: white;
-            padding: 0.5rem 3rem;
-            font-size: 0.75rem;
-            font-weight: 800;
-            transform: rotate(45deg);
-        }
-
-        .preco-grande {
-            font-size: 4rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #fff, var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .preco-grande span {
-            font-size: 1.5rem;
-            opacity: 0.7;
-        }
-
-        .preco-original {
-            text-decoration: line-through;
-            opacity: 0.5;
-            font-size: 1.25rem;
-            margin-top: 0.5rem;
-        }
-
-        .preco-economia {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--green), #3dc5a8);
-            color: white;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--gold);
             padding: 0.5rem 1.5rem;
             border-radius: 100px;
-            font-weight: 700;
-            font-size: 0.9rem;
-            margin: 1rem 0;
+            background: rgba(191, 162, 101, 0.05);
         }
 
-        .preco-familia {
-            margin-top: 2rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--glass-border);
+        .hero-slogan {
+            font-size: 1.5rem;
+            font-family: var(--font-head);
+            font-style: italic;
+            color: var(--terra-siena);
+            margin: 1rem 0 2.5rem;
         }
 
-        .preco-familia p {
-            opacity: 0.8;
-            margin: 0.5rem 0;
+        /* --- DOR (Pain) --- */
+        .pain-list {
+            list-style: none;
+            text-align: left;
+            display: grid;
+            gap: 1rem;
         }
 
-        /* ==================== GUARDIÕES ==================== */
-        #guardioes {
-            text-align: center;
-        }
-
-        .guardioes-scroll {
-            display: flex;
-            gap: 1.25rem;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            padding: 2rem 0;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        .guardioes-scroll::-webkit-scrollbar {
-            height: 6px;
-        }
-
-        .guardioes-scroll::-webkit-scrollbar-track {
-            background: var(--glass);
-            border-radius: 10px;
-        }
-
-        .guardioes-scroll::-webkit-scrollbar-thumb {
-            background: var(--gold);
-            border-radius: 10px;
-        }
-
-        .guardiao-card {
-            flex: 0 0 180px;
-            background: var(--glass);
-            backdrop-filter: blur(20px);
-            border: 1px solid var(--glass-border);
-            border-radius: 24px;
+        .pain-item {
             padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.4);
+            border-left: 4px solid var(--terra-siena);
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            font-style: italic;
+            font-family: var(--font-head);
+            color: var(--deep-ink);
+        }
+
+        /* --- SOLUÇÃO (Method) --- */
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pillar-card {
+            background: var(--active-card-bg, rgba(255, 255, 255, 0.6));
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(191, 162, 101, 0.1);
             text-align: center;
-            scroll-snap-align: center;
             transition: all 0.3s;
         }
 
-        .guardiao-card:hover {
+        .pillar-card:hover {
+            background: #fff;
             transform: translateY(-8px);
             border-color: var(--gold);
         }
 
-        .guardiao-card img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid var(--gold);
-            margin-bottom: 1rem;
-        }
-
-        .guardiao-nome {
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
-
-        .guardiao-virtude {
-            font-size: 0.85rem;
-            color: var(--gold);
-            font-weight: 600;
-            margin: 0.25rem 0 0.5rem;
-        }
-
-        .guardiao-frase {
-            font-size: 0.8rem;
-            font-style: italic;
-            opacity: 0.7;
-        }
-
-        /* ==================== DEPOIMENTOS ==================== */
-        #depoimentos {
-            text-align: center;
-        }
-
-        #depoimentos .glass {
-            margin: 1.5rem 0;
-            text-align: left;
-            position: relative;
-        }
-
-        #depoimentos .glass::before {
-            content: '"';
-            position: absolute;
-            top: -10px;
-            left: 20px;
-            font-size: 5rem;
-            color: var(--accent);
-            opacity: 0.3;
-            font-family: Georgia, serif;
-        }
-
-        #depoimentos .texto {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            margin-bottom: 1rem;
-        }
-
-        #depoimentos .autor {
-            font-weight: 700;
-            color: var(--gold);
-        }
-
-        /* ==================== CTA FINAL ==================== */
-        #cta {
-            text-align: center;
-            padding: 6rem 1.5rem;
-        }
-
-        #cta h2 {
-            margin-bottom: 0.5rem;
-        }
-
-        #cta .emoji {
+        .pillar-icon {
             font-size: 3rem;
             margin-bottom: 1rem;
+            display: inline-block;
+            filter: drop-shadow(0 4px 0 rgba(0, 0, 0, 0.1));
         }
 
-        #cta .garantia {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-top: 2rem;
-            padding: 1rem 1.5rem;
-            background: var(--glass);
-            border: 1px solid var(--glass-border);
+        /* --- PRICING --- */
+        .pricing-box {
+            background: #fff;
+            border: 2px solid var(--old-gold);
+            padding: 3rem;
+            border-radius: 40px;
+            /* Extra friendly */
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 20px 60px rgba(191, 162, 101, 0.15);
+        }
+
+        .badge-pioneiro {
+            position: absolute;
+            top: -15px;
+            right: 18%;
+            /* Adjusted to not clip */
+            left: 18%;
+            background: var(--forest-green);
+            color: white;
+            padding: 0.5rem 1rem;
             border-radius: 100px;
+            font-weight: 700;
+            text-transform: uppercase;
             font-size: 0.9rem;
+            box-shadow: 0 4px 10px rgba(42, 90, 63, 0.3);
         }
 
-        /* ==================== FOOTER ==================== */
-        footer {
+        .price-value {
+            font-size: 4.5rem;
+            font-family: var(--font-head);
+            font-weight: 700;
+            color: var(--forest-green);
+            line-height: 1;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        .price-sub {
+            color: var(--terra-siena);
+            text-decoration: line-through;
+            font-size: 1.25rem;
+            font-family: var(--font-head);
+        }
+
+        .price-details {
+            font-size: 1.1rem;
+            color: var(--deep-ink);
+            margin-bottom: 1.5rem;
+        }
+
+        .manual-process-note {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: rgba(191, 162, 101, 0.1);
+            /* Morris Gold tint */
+            border-radius: 16px;
+            font-size: 0.95rem;
+            color: var(--deep-ink);
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        /* --- GUARDIANS --- */
+        .guardians-track {
+            display: flex;
+            gap: 1.5rem;
+            overflow-x: auto;
+            padding: 2rem 1rem;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .guardian-profile {
+            flex: 0 0 200px;
+            scroll-snap-align: center;
+            background: #fff;
+            border: 1px solid var(--glass-border);
+            border-radius: 100px 100px 32px 32px;
+            /* Arch shape */
+            padding: 0.5rem 0.5rem 2rem;
             text-align: center;
-            padding: 3rem 1.5rem;
-            border-top: 1px solid var(--glass-border);
+            transition: transform 0.3s;
         }
 
-        footer a {
-            color: var(--gold);
-            text-decoration: none;
-            margin: 0 0.75rem;
-            transition: opacity 0.3s;
+        .guardian-profile:hover {
+            transform: translateY(-10px);
+            border-color: var(--forest-green);
         }
 
-        footer a:hover {
-            opacity: 0.7;
+        .guardian-img {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--warm-cream);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
         }
 
-        footer p {
-            margin: 0.5rem 0;
-            opacity: 0.6;
-            font-size: 0.9rem;
-        }
-
-        /* ==================== ANIMATIONS ==================== */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
             }
 
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        section>* {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-
-        /* ==================== RESPONSIVE ==================== */
-        @media (min-width: 768px) {
             section {
-                padding: 6rem 2rem;
+                padding: 4rem 1rem;
             }
 
-            .preco-card {
-                padding: 3rem 4rem;
+            .pricing-box {
+                padding: 2rem;
             }
         }
     </style>
@@ -531,155 +412,158 @@
 
     <!-- HERO -->
     <section id="hero">
-        <div class="emoji">🦁</div>
+        <div class="hero-badge">Turma Pioneiros 2026</div>
+
         <h1>Matemática Viva</h1>
-        <p class="slogan">"Histórias que ensinam. Narração que fixa."</p>
-        <p class="familia">Da Família Rodrigues para outras famílias</p>
+        <p class="hero-slogan">"Histórias que ensinam. Memórias que ficam."</p>
 
-        <p class="pergunta">E se matemática fosse a melhor parte do dia?</p>
+        <p style="font-size: 1.25rem; max-width: 600px; color: var(--deep-ink);">
+            E se a matemática fosse a <strong>melhor parte</strong> do dia do seu filho?
+        </p>
 
-        <a href="mailto:rfbr21@gmail.com?subject=Quero ser Pioneiro" class="btn-cta">
-            QUERO SER PIONEIRO <span>→</span>
+        <div style="height: 30px;"></div>
+
+        <!-- 1. Fluxo: Botão leva ao preço, não ao email direto -->
+        <a href="#pricing" class="btn-cta">
+            QUERO SER PIONEIRO
         </a>
 
-        <div class="scroll-hint">↓</div>
-    </section>
-
-    <!-- DOR -->
-    <section id="dor">
-        <h2>💭 Você já pensou isso?</h2>
-        <div class="glass">
-            <ul>
-                <li>"Não sou pedagoga..."</li>
-                <li>"Não tenho tempo pra preparar aula"</li>
-                <li>"Será que ele vai perder o brilho nos olhos?"</li>
-            </ul>
+        <div style="margin-top: 1rem; font-family: var(--font-hand); color: var(--forest-green); font-size: 0.9rem;">
+            * Vagas limitadas para a primeira turma
         </div>
-        <p class="conclusao">Se você pensou assim, criamos isso para você.</p>
     </section>
 
-    <!-- SOLUÇÃO -->
+    <!-- DOR (The Problem) -->
+    <section id="dor">
+        <div class="card">
+            <h2>💭 Mãe, você já sentiu isso?</h2>
+            <div class="pain-list">
+                <div class="pain-item">"Não sou pedagoga, tenho medo de ensinar errado..."</div>
+                <div class="pain-item">"Não tenho tempo para preparar aulas complexas."</div>
+                <div class="pain-item">"Tenho medo que ele perca o brilho nos olhos."</div>
+            </div>
+
+            <p class="handwritten" style="font-size: 1.5rem; margin-top: 2rem; color: var(--forest-green);">
+                Nós criamos o Matemática Viva para você.
+            </p>
+        </div>
+    </section>
+
+    <!-- SOLUÇÃO (The Method) -->
     <section id="solucao">
-        <h2>✨ O Método</h2>
-        <div class="pilares">
-            <div class="pilar">
-                <div class="pilar-icon">⏱️</div>
-                <div>
-                    <div class="pilar-titulo">ABRA E FAÇA</div>
-                    <div class="pilar-desc">5 minutos de preparo. Pronto para ensinar.</div>
-                </div>
+        <h2>✨ O Método da Calma</h2>
+        <div class="pillars-grid">
+            <div class="pillar-card">
+                <div class="pillar-icon">⏱️</div>
+                <h3>Abra e Faça</h3>
+                <p>5 minutos de preparo. Roteiro pronto. Sem improviso. Sua paz é prioridade.</p>
             </div>
-            <div class="pilar">
-                <div class="pilar-icon">📖</div>
-                <div>
-                    <div class="pilar-titulo">NARRATIVA</div>
-                    <div class="pilar-desc">Histórias onde matemática emerge naturalmente.</div>
-                </div>
+            <div class="pillar-card">
+                <div class="pillar-icon">📖</div>
+                <h3>Narrativa</h3>
+                <p>Histórias vivas onde a matemática é a aventura, não a tarefa difícil.</p>
             </div>
-            <div class="pilar">
-                <div class="pilar-icon">🔄</div>
-                <div>
-                    <div class="pilar-titulo">ESPIRAL</div>
-                    <div class="pilar-desc">Conceitos que crescem com seu filho.</div>
-                </div>
+            <div class="pillar-card">
+                <div class="pillar-icon">🔄</div>
+                <h3>Espiral</h3>
+                <p>Conceitos que crescem com seu filho, sem pressa e repetidos com amor.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUARDIÕES (Characters) -->
+    <section id="guardioes">
+        <h2>🦁 Os 5 Guardiões</h2>
+        <p>Guias que acompanham a jornada do seu filho.</p>
+
+        <div class="guardians-track">
+            <!-- Melquior -->
+            <div class="guardian-profile">
+                <img src="assets/cards/guardioes/melquior-leao.png" alt="Melquior" class="guardian-img">
+                <h4>Melquior</h4>
+                <div style="color: var(--gold); font-size: 0.85rem; font-weight: 700;">SABEDORIA</div>
+                <p style="font-size: 0.8rem; margin-top: 0.5rem; font-style: italic;">"O Rei sorriu ao ver você."</p>
+            </div>
+            <!-- Bernardo -->
+            <div class="guardian-profile">
+                <img src="assets/cards/guardioes/bernardo-urso.png" alt="Bernardo" class="guardian-img">
+                <h4>Bernardo</h4>
+                <div style="color: var(--gold); font-size: 0.85rem; font-weight: 700;">PERSISTÊNCIA</div>
+                <p style="font-size: 0.8rem; margin-top: 0.5rem; font-style: italic;">"Mais uma vez. Comigo."</p>
+            </div>
+            <!-- Celeste -->
+            <div class="guardian-profile">
+                <img src="assets/cards/guardioes/celeste-raposa.png" alt="Celeste" class="guardian-img">
+                <h4>Celeste</h4>
+                <div style="color: var(--gold); font-size: 0.85rem; font-weight: 700;">CURIOSIDADE</div>
+                <p style="font-size: 0.8rem; margin-top: 0.5rem; font-style: italic;">"Sente esse cheiro?"</p>
+            </div>
+            <!-- Noé -->
+            <div class="guardian-profile">
+                <img src="assets/cards/guardioes/noe-coruja.png" alt="Noé" class="guardian-img">
+                <h4>Noé</h4>
+                <div style="color: var(--gold); font-size: 0.85rem; font-weight: 700;">PACIÊNCIA</div>
+                <p style="font-size: 0.8rem; margin-top: 0.5rem; font-style: italic;">"Respire. O número espera."</p>
+            </div>
+            <!-- Íris -->
+            <div class="guardian-profile">
+                <img src="assets/cards/guardioes/iris-passarinho.png" alt="Íris" class="guardian-img">
+                <h4>Íris</h4>
+                <div style="color: var(--gold); font-size: 0.85rem; font-weight: 700;">ATENÇÃO</div>
+                <p style="font-size: 0.8rem; margin-top: 0.5rem; font-style: italic;">"A beleza está no detalhe."</p>
             </div>
         </div>
     </section>
 
     <!-- PRICING -->
     <section id="pricing">
-        <h2>💎 Uma assinatura. Todos os seus filhos.</h2>
-        <div class="preco-card">
-            <div class="preco-original">R$ 2.397/ano</div>
-            <div class="preco-grande">R$ 1.197<span>/ano</span></div>
-            <div class="preco-economia">Economia de R$ 1.200</div>
+        <div class="pricing-box">
+            <div class="badge-pioneiro">Oferta Pioneiros</div>
 
-            <div class="preco-familia">
-                <p>👨‍👩‍👧‍👦 2 filhos, 4 filhos, 6 filhos... <strong>mesmo preço</strong></p>
-                <p>Quanto mais filhos, mais vale a pena!</p>
+            <h2>Uma assinatura.<br>Todos os seus filhos.</h2>
+
+            <div class="price-sub">R$ 2.397/ano</div>
+            <div class="price-value">R$ 1.197</div>
+
+            <!-- 2. Detalhes de Preço Inteligentes -->
+            <div class="price-details">
+                <strong>à vista</strong><br>
+                <span style="font-size: 0.95rem; opacity: 0.8">ou em até 12x com juros no cartão</span>
             </div>
-        </div>
 
-        <a href="mailto:rfbr21@gmail.com?subject=Quero ser Pioneiro" class="btn-cta">
-            GARANTIR MINHA VAGA →
-        </a>
-    </section>
+            <p style="margin: 1.5rem 0 1rem; font-size: 0.95rem;">
+                👨‍👩‍👧‍👦 <strong>Valor Único Familiar</strong>: Acesso para todos os seus filhos.
+            </p>
 
-    <!-- GUARDIÕES -->
-    <section id="guardioes">
-        <h2>🦁 Os Cinco Guardiões</h2>
-        <div class="guardioes-scroll">
-            <div class="guardiao-card">
-                <img src="assets/cards/guardioes/melquior-leao.png" alt="Melquior" loading="lazy">
-                <div class="guardiao-nome">Melquior</div>
-                <div class="guardiao-virtude">Sabedoria</div>
-                <div class="guardiao-frase">"O Rei sorriu ao ver você chegar."</div>
+            <!-- 3. Botão com explicação de Email -->
+            <a href="mailto:rfbr21@gmail.com?subject=Quero entrar na Turma Pioneiros&body=Olá! Quero garantir minha vaga na turma de 2026."
+                class="btn-cta">
+                QUERO ENTRAR NA TURMA ✉️
+            </a>
+
+            <!-- Explicação do Processo Manual -->
+            <div class="manual-process-note">
+                <strong>📝 Nota da Família:</strong><br>
+                Ainda não somos uma plataforma automática. Ao clicar, você enviará um e-mail direto para nós.
+                Responderemos pessoalmente com o link seguro (Pagar.me) para você concluir a inscrição no seu tempo.
             </div>
-            <div class="guardiao-card">
-                <img src="assets/cards/guardioes/bernardo-urso.png" alt="Bernardo" loading="lazy">
-                <div class="guardiao-nome">Bernardo</div>
-                <div class="guardiao-virtude">Persistência</div>
-                <div class="guardiao-frase">"Mais uma vez. Comigo."</div>
-            </div>
-            <div class="guardiao-card">
-                <img src="assets/cards/guardioes/celeste-raposa.png" alt="Celeste" loading="lazy">
-                <div class="guardiao-nome">Celeste</div>
-                <div class="guardiao-virtude">Curiosidade</div>
-                <div class="guardiao-frase">"Sente esse cheiro? É aventura."</div>
-            </div>
-            <div class="guardiao-card">
-                <img src="assets/cards/guardioes/noe-coruja.png" alt="Noé" loading="lazy">
-                <div class="guardiao-nome">Noé</div>
-                <div class="guardiao-virtude">Paciência</div>
-                <div class="guardiao-frase">"Respire. O número espera por você."</div>
-            </div>
-            <div class="guardiao-card">
-                <img src="assets/cards/guardioes/iris-passarinho.png" alt="Íris" loading="lazy">
-                <div class="guardiao-nome">Íris</div>
-                <div class="guardiao-virtude">Atenção</div>
-                <div class="guardiao-frase">"Olhe bem. A beleza está no detalhe."</div>
-            </div>
-        </div>
-    </section>
 
-    <!-- DEPOIMENTOS -->
-    <section id="depoimentos">
-        <h2>💬 Famílias Pioneiras</h2>
-        <div class="glass">
-            <p class="texto">"Meu filho sempre menciona os Guardiões com bons olhos. A imersão é fantástica — até eu
-                fiquei impressionado quando a lição é bem feita."</p>
-            <p class="autor">— Raul, Família Rodrigues</p>
-        </div>
-        <div class="glass">
-            <p class="texto">"Eu tinha medo de ensinar matemática. Quando vi a narrativa, ele começou a interagir
-                naturalmente! Saber o 'porquê' de cada lição me dá confiança."</p>
-            <p class="autor">— Amanda, Família Pioneira</p>
-        </div>
-    </section>
-
-    <!-- CTA FINAL -->
-    <section id="cta">
-        <div class="emoji">🚀</div>
-        <h2>Pronto para começar?</h2>
-        <p style="opacity: 0.7; margin-bottom: 2rem;">Vagas limitadas para Pioneiros 2026</p>
-
-        <a href="mailto:rfbr21@gmail.com?subject=Quero ser Pioneiro" class="btn-cta">
-            QUERO SER PIONEIRO →
-        </a>
-
-        <div class="garantia">
-            🛡️ Garantia de 30 dias — não gostou, devolvemos
+            <div style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.7;">
+                🛡️ Garantia de 30 dias: Sua paz ou seu dinheiro de volta.
+            </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>
-        <p>
-            <a href="index.html">Dashboard</a>
-            <a href="blog/">Blog</a>
-            <a href="mailto:rfbr21@gmail.com">Contato</a>
-        </p>
-        <p>© 2026 Família Rodrigues · CC BY-NC 4.0</p>
+    <footer
+        style="text-align: center; padding: 4rem 1rem; border-top: 1px solid var(--glass-border); color: var(--terra-siena);">
+        <nav style="margin-bottom: 2rem; font-weight: 600;">
+            <a href="index.html" style="text-decoration: none; color: inherit; margin: 0 1rem;">Dashboard</a>
+            <a href="blog/" style="text-decoration: none; color: inherit; margin: 0 1rem;">Blog</a>
+            <a href="#" style="text-decoration: none; color: inherit; margin: 0 1rem;">Login</a>
+        </nav>
+        <p style="font-size: 0.85rem;">© 2026 Família Rodrigues · Matemática Viva</p>
+        <p style="font-size: 0.8rem; font-family: var(--font-head); font-style: italic;">Soli Deo Gloria</p>
     </footer>
 
 </body>

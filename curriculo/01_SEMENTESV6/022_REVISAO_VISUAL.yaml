@@ -1,0 +1,224 @@
+# LIÇÃO 022 — REVISÃO VISUAL
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-022-revisao-visual
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-022
+    titulo: Revisão Visual
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 2
+    tipo: Senso Numérico
+    guardiao_lider: iris
+    guardiao_secundario: bernardo
+    guardioes_apresentados: [iris]
+    tgtb_ref: 000-L22
+    tgtb_titulo_en: Number Practice
+    tgtb_titulo_pt: Prática de Números
+    objetivo_pedagogico: '[Foco: Reconhecimento rápido e escrita de 1 a 10]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-021, titulo: A Jornada Longa}
+    proxima: {id: MV-S-023, titulo: Atenção aos Detalhes}
+
+  para_portador:
+    ideia_viva:
+      frase: "A Pardal revisita os rostos queridos dos números que já nos são íntimos."
+      conceito: Reconhecer números deve ser tão natural quanto reconhecer amigos.
+      intencao_cm: A criança desenvolve fluência no reconhecimento visual sem contar um a um.
+    dica_coracao: |
+      Hoje Íris nos convida a observar.
+      Não precisamos contar tudo.
+      Olhar para o 3 e saber que é o 3. Olhar para 5 pedras e ver o 5.
+      É o "golpe de vista" (subitizing) gentil.
+    filho_descobre: Que pode reconhecer quantidades e símbolos num piscar de olhos.
+    protocolo_impecabilidade: |
+      MOSTRA RÁPIDA. Mostre o cartão, esconda. "O que você viu?"
+      Brincadeira de esconde-esconde visual.
+    nota_graca: "Íris diz: 'Olhe bem. A beleza está no detalhe.' — um olhar rápido basta!"
+    conforto_emocional: |
+      Se errar, mostre devagar. Sem pressão. É um jogo.
+    audio_script: |
+      Olá, Portador! Íris está brincando de esconde-esconde!
+      Os números aparecem e somem. Vamos pegá-los com o olhar?
+    preparacao:
+      materiais:
+        - {item: Cartões com números 1-10, qtd: 10, alt: papel escrito, essencial: true}
+        - {item: Cartões com bolinhas 1-5, qtd: 5, alt: dados, essencial: true}
+        - {item: Card Íris, qtd: 1, alt: imagem do pardal, essencial: true}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-021
+      gancho: Você caminhou até o 60! Agora, Íris quer ver se seus olhos são rápidos!
+    proximo:
+      licao_id: MV-S-023
+      gancho: Seus olhos são rápidos. Amanhã, vamos olhar os detalhes do 7 e do 8!
+
+  ritual_abertura:
+    instrucao_ambiente: Ambiente claro, jogo rápido.
+    local: ninho_mirante
+    clima: ventoso
+    virtude: atencao
+    artefato: Um cartão misterioso
+    transicao_reino: |
+      Feche os olhos. O vento agita as folhas.
+      Íris está escondida entre os galhos.
+    fala_portador:
+      tom: brincando
+      script: |
+        Íris quer brincar!
+        Ela vai mostrar algo rápido. Fique atento!
+    card_guardiao: 'CARD: IRIS'
+    abertura_sensorial: |
+      O ar é fresco e rápido.
+      Íris pisca um olho e mostra uma pena.
+      "Olhe bem. A beleza está no detalhe."
+
+  jornada:
+    narrativa_principal:
+      - titulo: O Jogo do Relâmpago
+        local: ninho_mirante
+        fala_guardiao:
+          tom: rapido
+          script: |
+            "Vou mostrar um número. Tente dizer o nome antes de eu esconder!"
+            [Íris mostra e esconde]
+            "Um! Dois! Três!"
+        instrucao_portador: |
+          Mostre cartões (1-5) por 2 segundos cada.
+          "Preparado? Tchan! Qual era?"
+      - titulo: Quantos Pontos?
+        local: ninho_mirante
+        fala_guardiao:
+          tom: curioso
+          script: |
+            "Agora pontos! Sem contar, só olhar!"
+            [Íris mostra padrão de dados]
+            "Viu? Eram quatro!"
+        instrucao_portador: |
+          Mostre cartões de bolinhas (1-5).
+          "Olhe rápido! Quantos?"
+      - titulo: O Traço Rápido
+        local: ninho_mirante
+        fala_guardiao:
+          tom: encorajador
+          script: |
+            "Você é rápido! Agora trace no ar o último que viu!"
+            [Íris faz pirueta]
+            "Cinco!"
+        instrucao_portador: |
+          Mostre o 5. Peça para a criança traçar no ar.
+
+    concreto:
+      desc: Reconhecimento rápido (subitizing) de 1-5
+      card_objeto: 'CARD: OLHOS DE ÁGUIA'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: "Mostre cartão numérico (ex: 3). Esconda."
+          fala_sugerida: "Já! O que você viu?"
+        - passo: 2
+          acao: Repita com 1-5 misturados.
+          fala_sugerida: "Esse foi fácil! E esse?"
+        - passo: 3
+          acao: Use cartões de bolinhas (subitizing).
+          fala_sugerida: "Bolinhas! Quantas? Rápido!"
+        - passo: 4
+          acao: Se errar, mostre e conte junto.
+          fala_sugerida: "Vamos ver... um, dois, três. Isso!"
+      norte_absoluto: Desenvolver "olhar gestáltico" (ver o todo), não contagem unitária.
+      adaptacao_bernardo: |
+        💡 Se rápido for estressante, faça devagar.
+        "Olhe com calma. Quem é este?"
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Cartões físicos, não tela.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Associação instantânea símbolo-som
+      nota: O cérebro aprende a decodificar símbolos automaticamente.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando rapidez
+      sugestoes:
+        - titulo: Corrida dos Números
+          acao: Espalhe cartões. "Toque no 4!"
+        - titulo: Dominó
+          acao: Use peças de dominó para ver bolinhas.
+      adaptacao_bernardo: |
+        💡 Use apenas 1, 2 e 3 para começar.
+
+  narracao:
+    instrucao_portador: |
+      Guarde os cartões.
+      "Íris ficou impressionada com seus olhos de águia!"
+    pergunta_principal: Qual número foi mais fácil de ver rápido?
+    perguntas_coracao:
+      - Você precisou contar as bolinhas do 2?
+      - O 5 parece uma mão cheia?
+    nota_cm: A narração fixa a confiança visual.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: gracioso
+      script: |
+        "Seus olhos são rápidos como o vento!"
+        "Reconhecer amigos é um dom."
+    fio_ouro: "Você tem olhos rápidos. Amanhã, olhamos os detalhes do 7 e do 8!"
+    transicao_volta:
+      instrucao: Pisque os olhos 5 vezes.
+      fala: Um, dois, três, quatro, cinco. Voltamos.
+
+  para_familia:
+    titulo: O Golpe de Vista
+    porque_importa: |
+      "Subitizing" (reconhecer quantidades sem contar) é habilidade chave.
+      Prepara para operações mentais rápidas.
+    metodo_cpa:
+      concreto: Cartões físicos de "flash".
+      pictorico: Vetado (mas o cartão de bolinhas é "ponte").
+      abstrato: Reconhecimento do símbolo.
+      nota: "CM: Atenção visual e memória."
+    principio_cm:
+      numero: 16
+      citacao: "Handicrafts teach accuracy."
+      aplicacao: O olhar preciso é base para mãos precisas.
+    tgtb_conexao: |
+      Corresponde à lição de Prática de Números.
+      Íris traz o foco em "ver de verdade".
+    espiral:
+      conceito: Subitizing e Reconhecimento
+      volta_atual: 'Sementes — até 5 instantâneo'
+      proxima_volta: 'Raízes — fatos de adição instantâneos'
+    reflexao_espiritual: |
+      "Os olhos são a lâmpada do corpo."
+      Ver a verdade rapidamente é sabedoria.
+    nota_graca: |
+      Se não reconhecer, tudo bem.
+      Íris diz: "Vamos olhar mais devagar. Ele vai se revelar."
+
+  diario_portador:
+    nota: Observe até que número o reconhecimento é instantâneo.
+    perguntas:
+      - O 1, 2, 3 são automáticos?
+      - O 4 e 5 exigem contagem?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

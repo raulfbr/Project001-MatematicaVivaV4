@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática Viva — V3 Jornada</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            /* Palette V3 - Softer, Dreamier */
+            --forest: #2A5A3F;
+            --mint: #E8F5E9;
+            /* Background tint */
+            --sand: #FAF0E6;
+            /* Background tint */
+            --gold: #D4AF37;
+            --white: #FFFFFF;
+
+            --blob-1: #D4AF37;
+            --blob-2: #2A5A3F;
+        }
+
+        /* WAVE DIVIDERS */
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            transform: rotate(180deg);
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 60px;
+        }
+
+        .wave .shape-fill {
+            fill: #FFFFFF;
+        }
+
+        /* RESET & BASE */
+        body {
+            margin: 0;
+            font-family: 'Outfit', sans-serif;
+            background: var(--white);
+            color: #333;
+            line-height: 1.7;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Lora', serif;
+        }
+
+        /* HERO - FULL SCREEN & CENTERED */
+        #hero {
+            height: 100vh;
+            background: radial-gradient(circle at 50% 50%, var(--sand), #fff);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Floating Blobs (Decoration) */
+        .blob {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.2;
+            z-index: 0;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .b1 {
+            top: -50px;
+            left: -50px;
+            background: var(--blob-1);
+        }
+
+        .b2 {
+            bottom: -50px;
+            right: -50px;
+            background: var(--blob-2);
+            animation-delay: 3s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .hero-container {
+            z-index: 10;
+            max-width: 800px;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: var(--forest);
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-family: 'Gloria Hallelujah', cursive;
+            color: var(--gold);
+            font-size: 1.5rem;
+            transform: rotate(-2deg);
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        /* IMMERSIVE CARDS (Scroll Snap feel) */
+        .section-journey {
+            padding: 8rem 2rem;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bg-mint {
+            background-color: var(--mint);
+        }
+
+        .bg-sand {
+            background-color: var(--sand);
+        }
+
+        .journey-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 4rem;
+            border-radius: 60px;
+            /* Super rounded (Toca Boca) */
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.05);
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            position: relative;
+        }
+
+        .icon-floating {
+            font-size: 4rem;
+            background: #fff;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: -80px auto 2rem;
+            /* Half out */
+        }
+
+        /* BUTTONS - PILL SHAPE */
+        .btn-pill {
+            background: linear-gradient(135deg, var(--forest), #3A7A55);
+            color: white;
+            padding: 1.5rem 4rem;
+            border-radius: 100px;
+            font-weight: 800;
+            font-size: 1.2rem;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(42, 90, 63, 0.3);
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+
+        .btn-pill:hover {
+            transform: scale(1.05);
+        }
+
+        /* GUARDIANS - CIRCLE ROW */
+        .guardian-row {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+
+        .guardian-bubble {
+            width: 120px;
+            text-align: center;
+        }
+
+        .guardian-bubble img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .guardian-bubble:hover img {
+            transform: translateY(-10px) rotate(5deg);
+        }
+
+        /* PRICE - PLAYFUL */
+        .price-tag {
+            font-size: 5rem;
+            font-weight: 800;
+            color: var(--forest);
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .sticky-cta {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 100;
+            display: none;
+            /* Show only on scroll usually, but static here for concept */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+
+        <div class="hero-container">
+            <span style="text-transform: uppercase; letter-spacing: 3px; font-weight: 700; color: #999;">Família
+                Rodrigues Apresenta</span>
+            <h1>Matemática Viva</h1>
+            <span class="tagline">"Onde os números contam histórias."</span>
+            <br>
+            <a href="#payment" class="btn-pill">Começar a Jornada 🚀</a>
+        </div>
+
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- STEP 1: DOR -->
+    <section class="section-journey bg-sand">
+        <div class="journey-card">
+            <div class="icon-floating">💭</div>
+            <h2>Você já pensou isso?</h2>
+            <p style="font-size: 1.2rem; color: #666;">
+                "Não sou professora."<br>
+                "Não tenho tempo."<br>
+                "Tenho medo de falhar com ele."
+            </p>
+            <hr style="border: 0; border-top: 2px dashed #ddd; margin: 2rem 0;">
+            <p style="font-weight: 700; color: var(--forest);">Nós transformamos esse medo em um plano.</p>
+        </div>
+    </section>
+
+    <!-- STEP 2: GUARDIÕES -->
+    <section class="section-journey bg-mint">
+        <div style="text-align: center;">
+            <h2>Vocês não estarão sozinhos.</h2>
+            <p style="max-width: 600px; margin: 0 auto;">Cinco guardiões guiarão seu filho (e você) por cada desafio.
+            </p>
+
+            <div class="guardian-row">
+                <div class="guardian-bubble"><img src="assets/cards/guardioes/melquior-leao.png">
+                    <h5>Melquior</h5>
+                </div>
+                <div class="guardian-bubble"><img src="assets/cards/guardioes/bernardo-urso.png">
+                    <h5>Bernardo</h5>
+                </div>
+                <div class="guardian-bubble"><img src="assets/cards/guardioes/celeste-raposa.png">
+                    <h5>Celeste</h5>
+                </div>
+                <div class="guardian-bubble"><img src="assets/cards/guardioes/noe-coruja.png">
+                    <h5>Noé</h5>
+                </div>
+                <div class="guardian-bubble"><img src="assets/cards/guardioes/iris-passarinho.png">
+                    <h5>Íris</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STEP 3: PAYMENT -->
+    <section id="payment" class="section-journey">
+        <div class="journey-card" style="border: 4px solid var(--forest);">
+            <div class="icon-floating">🦁</div>
+            <h2 style="margin-bottom: 0;">Pioneiros 2026</h2>
+            <p>Seja da primeira turma.</p>
+
+            <div class="price-tag">R$ 1.197</div>
+            <p style="opacity: 0.6;">(Valor único para toda a família)</p>
+            <p>12x com juros no cartão</p>
+
+            <a href="mailto:rfbr21@gmail.com" class="btn-pill" style="margin-top: 2rem;">
+                Enviar E-mail de Inscrição
+            </a>
+
+            <p
+                style="margin-top: 2rem; font-size: 0.8rem; background: #eee; display: inline-block; padding: 0.5rem 1rem; border-radius: 20px;">
+                💌 Resposta humana em até 24h
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>

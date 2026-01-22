@@ -1,0 +1,222 @@
+# LIÇÃO 024 — CONSOLIDAÇÃO
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-024-consolidacao
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-024
+    titulo: Consolidação
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 2
+    tipo: Revisão
+    guardiao_lider: iris
+    guardiao_secundario: celeste
+    guardioes_apresentados: [iris]
+    tgtb_ref: 000-L24
+    tgtb_titulo_en: Number Practice
+    tgtb_titulo_pt: Prática de Números
+    objetivo_pedagogico: '[Foco: Revisão geral de números 0-10 e contagem]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-023, titulo: Atenção aos Detalhes}
+    proxima: {id: MV-S-025, titulo: A Comitiva do Dez}
+
+  para_portador:
+    ideia_viva:
+      frase: "A paz de saber ler o que a Pardal enviou no chão do jardim."
+      conceito: Quando conhecemos os números, o mundo fala conosco.
+      intencao_cm: A criança sente confiança e competência ao usar o que aprendeu.
+    dica_coracao: |
+      Hoje é dia de celebrar!
+      Não há conteúdo novo. Apenas a alegria de saber.
+      Íris espalhou números pelo chão do jardim.
+      Vamos encontrá-los como quem encontra velhos amigos.
+    filho_descobre: Que já sabe reconhecer, contar e traçar números até 10.
+    protocolo_impecabilidade: |
+      CELEBRE o acerto. Se errar, diga "Ainda não, tente de novo".
+      O tom é de festa, não de teste.
+    nota_graca: "Íris diz: 'Olhe bem. A beleza está no detalhe.' — você já vê a beleza!"
+    conforto_emocional: |
+      Revisão dá segurança. A criança ama fazer o que já sabe bem.
+    audio_script: |
+      Olá, Portador! Íris preparou uma caça ao tesouro!
+      O jardim está cheio de números esperando por você!
+    preparacao:
+      materiais:
+        - {item: Cartões 0-10 espalhados pelo ambiente, qtd: 11, alt: post-its, essencial: true}
+        - {item: Cesta para recolher, qtd: 1, alt: sacola, essencial: true}
+        - {item: Card Íris, qtd: 1, alt: imagem do pardal, essencial: true}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-023
+      gancho: Você sentiu a forma dos números. Agora vamos encontrá-los no mundo!
+    proximo:
+      licao_id: MV-S-025
+      gancho: Você conhece todos até 10! Amanhã, Noé abre o celeiro para os números grandes!
+
+  ritual_abertura:
+    instrucao_ambiente: Ambiente festivo, "caça ao tesouro".
+    local: jardim_central
+    clima: ensolarado
+    virtude: alegria
+    artefato: Uma cesta de colheita
+    transicao_reino: |
+      Feche os olhos. O sol brilha no jardim.
+      Íris está cantando uma melodia feliz.
+    fala_portador:
+      tom: festivo
+      script: |
+        O chão do jardim está brilhando!
+        Íris deixou presentes para nós. Vamos colher?
+    card_guardiao: 'CARD: IRIS'
+    abertura_sensorial: |
+      O ar cheira a flores e festa.
+      Íris faz uma pirueta no ar.
+      "Olhe bem. A beleza está no detalhe."
+
+  jornada:
+    narrativa_principal:
+      - titulo: A Colheita dos Números
+        local: jardim_central
+        fala_guardiao:
+          tom: animado
+          script: |
+            "Procure! Eles estão escondidos sob as folhas!"
+            [Íris aponta para um canto]
+            "Traga para a cesta apenas o que você conhece!"
+        instrucao_portador: |
+          A criança procura os cartões 0-10.
+          Ao achar, ela deve gritar o nome do número.
+      - titulo: Organizando a Fila
+        local: jardim_central
+        fala_guardiao:
+          tom: organizado
+          script: |
+            "Que bagunça na cesta! Vamos fazer uma fila?"
+            [Íris pousa ao lado]
+            "Quem vem primeiro? O Zero ou o Um?"
+        instrucao_portador: |
+          Ajude a criança a ordenar os cartões de 0 a 10 no chão.
+          "Zero, Um, Dois..."
+      - titulo: A Chamada Real
+        local: jardim_central
+        fala_guardiao:
+          tom: cerimonial
+          script: |
+            "Agora a chamada! Eu digo, você toca!"
+            "Onde está o Oito infinito? Onde está o Três barrigudo?"
+        instrucao_portador: |
+          Peça números aleatórios. "Toque no 7! Toque no 2!"
+
+    concreto:
+      desc: Caça ao tesouro e ordenação física de 0-10
+      card_objeto: 'CARD: CESTA DE COLHEITA'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Espalhe cartões antes da lição.
+          fala_sugerida: "Vamos caçar números!"
+        - passo: 2
+          acao: A criança acha, fala o nome e põe na cesta.
+          fala_sugerida: "Achou o 5! Para a cesta!"
+        - passo: 3
+          acao: Despeje a cesta. Ordene 0-10.
+          fala_sugerida: "Vamos colocar em ordem. Quem é o líder?"
+        - passo: 4
+          acao: Faça perguntas rápidas.
+          fala_sugerida: "Cadê o 10? Cadê o 0?"
+      norte_absoluto: Movimento amplo + ordenação espacial.
+      adaptacao_bernardo: |
+        💡 Se a ordem for difícil, coloque você 0-5 e peça para ela continuar.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Movimento no espaço.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Fluência na sequência e reconhecimento 0-10
+      nota: O foco é a confiança e rapidez.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando além
+      sugestoes:
+        - titulo: Contar de Trás
+          acao: Ordene de 10 a 0. (Lançamento de foguete!)
+        - titulo: Pares
+          acao: Junte sapatos aos pares. 2, 4, 6...
+      adaptacao_bernardo: |
+        💡 Fique apenas na ordem crescente 1-5 se precisar.
+
+  narracao:
+    instrucao_portador: |
+      Olhe para a fila de números ordenada.
+      "Íris está batendo asas de alegria!"
+    pergunta_principal: Qual número foi mais difícil de achar?
+    perguntas_coracao:
+      - Quantos números temos ao todo (0-10 são 11 cartões)?
+      - Você gosta de ver eles em fila?
+    nota_cm: A narração celebra a ordem e o conhecimento.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: amoroso
+      script: |
+        "Você conhece todos eles!"
+        "O jardim está em ordem. Você trouxe a paz."
+    fio_ouro: "Você conhece todos até 10! Amanhã, Noé abre o celeiro para os números grandes!"
+    transicao_volta:
+      instrucao: Recolha os cartões contando de 10 a 0.
+      fala: Dez, nove... zero. Voltamos.
+
+  para_familia:
+    titulo: A Colheita do Saber
+    porque_importa: |
+      Consolidação e revisão espaçada são essenciais.
+      Transformar "prova" em "caça ao tesouro" remove ansiedade.
+    metodo_cpa:
+      concreto: Caça física e ordenação espacial.
+      pictorico: Vetado.
+      abstrato: Sequência numérica.
+      nota: "CM: O conhecimento deve ser celebrado."
+    principio_cm:
+      numero: 9
+      citacao: "The mind feeds on ideas."
+      aplicacao: A ideia de "colheita" torna a revisão nutritiva.
+    tgtb_conexao: |
+      Corresponde à lição de Prática/Revisão.
+      Íris traz a celebração da descoberta.
+    espiral:
+      conceito: Ordenação e Sequência
+      volta_atual: 'Sementes — ordenar 0-10 fisicamente'
+      proxima_volta: 'Raízes — ordenar na reta numérica até 100'
+    reflexao_espiritual: |
+      "Ponde em ordem a vossa casa."
+      A ordem traz paz e clareza.
+    nota_graca: |
+      Se faltar algum número na caça, Íris ri:
+      "Ele se escondeu bem! Vamos procurar juntos!"
+
+  diario_portador:
+    nota: A criança consegue ordenar do 0 ao 10 sozinha?
+    perguntas:
+      - O zero foi colocado no início corretamente?
+      - Houve hesitação com algum número?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

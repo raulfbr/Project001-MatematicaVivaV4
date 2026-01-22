@@ -1,0 +1,225 @@
+# LIÇÃO 025 — A COMITIVA DO DEZ
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-025-comitiva-dez
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-025
+    titulo: A Comitiva do Dez
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 2
+    tipo: Operações
+    guardiao_lider: noe
+    guardiao_secundario: bernardo
+    guardioes_apresentados: [noe]
+    tgtb_ref: 000-L25
+    tgtb_titulo_en: The Teens - Part 1
+    tgtb_titulo_pt: Os "Teens" - Parte 1
+    objetivo_pedagogico: '[Foco: Números 11-19 como "10 e mais alguns"]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-024, titulo: Consolidação}
+    proxima: {id: MV-S-026, titulo: O Salto do Quinze}
+
+  para_portador:
+    ideia_viva:
+      frase: "Onde o grupo de dez se abre para receber novos amigos no celeiro de Noé."
+      conceito: Os números 11-19 são formados por UM grupo de dez (fixo) + unidades soltas.
+      intencao_cm: A criança visualiza a estrutura posicional (1 dezena + unidades) concretamente.
+    dica_coracao: |
+      Hoje Noé nos ensina a organizar a "Comitiva"!
+      O segredo dos números teens (11-19) é que eles sempre têm um chefe: o DEZ.
+      O Dez nunca muda. Quem muda são os amigos que chegam (1, 2, 3...).
+      É a base do nosso sistema decimal: agrupar em 10.
+    filho_descobre: Que 11 é "10 e 1", 12 é "10 e 2", e assim por diante.
+    protocolo_impecabilidade: |
+      MANTENHA O 10 AMARRADO/JUNTO.
+      As unidades ficam soltas ao lado.
+      Nunca misture tudo. É "Dez... e um".
+    nota_graca: "Noé diz: 'O que está feito, está feito.' — o grupo de dez não se desfaz!"
+    conforto_emocional: |
+      Pode parecer difícil, mas é só um jogo de adivinhar: "Dez e quem mais?"
+    audio_script: |
+      Olá, Portador! Noé está organizando o celeiro!
+      Ele tem um grupo especial que nunca se separa: a Comitiva do Dez!
+    preparacao:
+      materiais:
+        - {item: 20 palitos ou gravetos, qtd: 20, alt: lápis de cor, essencial: true}
+        - {item: 1 elástico ou barbante, qtd: 1, alt: fita, essencial: true}
+        - {item: Card Noé, qtd: 1, alt: imagem da coruja, essencial: true}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-024
+      gancho: Você encontrou números até 10. Agora, Noé nos mostra como formar números maiores!
+    proximo:
+      licao_id: MV-S-026
+      gancho: Você conheceu a Comitiva do Dez. Amanhã, ela cresce até o 15!
+
+  ritual_abertura:
+    instrucao_ambiente: Ambiente organizado, superfície plana.
+    local: celeiro_noe
+    clima: noturno
+    virtude: ordem
+    artefato: O Feixe de Dez (amarrado)
+    transicao_reino: |
+      Feche os olhos. O celeiro está quentinho.
+      Noé está amarrando um feixe de trigo.
+    fala_portador:
+      tom: misterioso
+      script: |
+        Noé tem um segredo. Ele gosta de grupos de dez.
+        Uma vez juntos, eles não se separam!
+    card_guardiao: 'CARD: NOE'
+    abertura_sensorial: |
+      O ar cheira a palha e madeira.
+      Noé ajusta seus óculos e aponta para o feixe.
+      "O que está feito, está feito."
+
+  jornada:
+    narrativa_principal:
+      - titulo: O Feixe Inquebrável
+        local: celeiro_noe
+        fala_guardiao:
+          tom: firme
+          script: |
+            "Conte dez gravetos. Amarre bem forte."
+            [Noé observa o nó]
+            "Este é o DEZ. Ele é um só corpo agora."
+        instrucao_portador: |
+          Ajude a criança a contar 10 palitos.
+          Amarre com o elástico. "Este é o sr. Dez!"
+      - titulo: O Primeiro Visitante
+        local: celeiro_noe
+        fala_guardiao:
+          tom: acolhedor
+          script: |
+            "Um amigo chegou! Ele fica ao lado."
+            [Noé coloca um graveto solto]
+            "Dez... e um. Isso é o ONZE!"
+        instrucao_portador: |
+          Coloque o feixe (10) e 1 solto.
+          "Dez mais um... ONZE!"
+      - titulo: A Comitiva Cresce
+        local: celeiro_noe
+        fala_guardiao:
+          tom: ritmado
+          script: |
+            "Mais um! Dez e dois... DOZE!"
+            "Mais um! Dez e três... TREZE!"
+        instrucao_portador: |
+          Adicione palitos soltos um a um até 4 (14).
+          Sempre diga: "Dez e [número]... [Nome]!"
+
+    concreto:
+      desc: Formar números 11-14 usando 1 dezena amarrada + unidades
+      card_objeto: 'CARD: FEIXE DE TRIGO'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Conte 10 e amarre. Feixe = 10.
+          fala_sugerida: "Este feixe vale 10. Ele manda na comitiva!"
+        - passo: 2
+          acao: Coloque 1 ao lado.
+          fala_sugerida: "10 e 1. Juntos chamamos de ONZE."
+        - passo: 3
+          acao: Coloque 2.
+          fala_sugerida: "10 e 2. DOZE."
+        - passo: 4
+          acao: Continue até 4 (14).
+          fala_sugerida: "10 e 4. CATORZE!"
+      norte_absoluto: O conceito "10 + x" deve ser VISUAL. Feixe vs Soltos.
+      adaptacao_bernardo: |
+        💡 Se amarrar for difícil, coloque num copo "do 10".
+        O importante é separar o grupo de 10.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Manipulação física.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Conceito de valor posicional inicial (1 dezena, x unidades)
+      nota: Não focamos na escrita (11, 12), mas na estrutura.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando a Comitiva
+      sugestoes:
+        - titulo: Desfazendo
+          acao: Tire um solto. 14 vira 13. O 10 fica igual.
+        - titulo: Escrita no Feixe
+          acao: Escreva "10" numa etiqueta no feixe.
+      adaptacao_bernardo: |
+        💡 Foque apenas no 11 e 12 hoje se 14 for muito.
+
+  narracao:
+    instrucao_portador: |
+      Deixe o 14 montado (10 amarrado + 4 soltos).
+      "Noé está satisfeito com a ordem."
+    pergunta_principal: Quem é o chefe da comitiva? (O feixe de 10)
+    perguntas_coracao:
+      - O feixe de 10 se desmanchou?
+      - Quantos soltos precisamos para fazer o 13?
+    nota_cm: A narração fixa a estrutura "10 e mais".
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: solene
+      script: |
+        "A comitiva está pronta."
+        "Dez sempre protege os pequenos."
+    fio_ouro: "Você conheceu a Comitiva do Dez. Amanhã, ela cresce até o 15!"
+    transicao_volta:
+      instrucao: Desmanche os soltos, mas guarde o feixe.
+      fala: Guardando os amigos. O Dez fica e nos leva de volta.
+
+  para_familia:
+    titulo: A Base do Sistema Decimal
+    porque_importa: |
+      Entender que 11-19 são "10 + algo" é a chave da matemática.
+      Evita ver o 11 como "um e um", mas sim como "uma dezena e uma unidade".
+    metodo_cpa:
+      concreto: Feixe amarrado (dezena) vs soltos (unidades).
+      pictorico: Vetado.
+      abstrato: Nomes (onze, doze...).
+      nota: "Bruner: Estrutura visível facilita compreensão."
+    principio_cm:
+      numero: 8
+      citacao: "Give the child a single valuable idea."
+      aplicacao: A ideia valiosa é o AGRUPAMENTO DE 10.
+    tgtb_conexao: |
+      Corresponde à lição "The Teens".
+      Noé traz a ordem e a estrutura.
+    espiral:
+      conceito: Valor Posicional (Place Value)
+      volta_atual: 'Sementes — 10 físico + unidades'
+      proxima_volta: 'Raízes — casa da dezena e unidade, blocos base 10'
+    reflexao_espiritual: |
+      Jesus tinha os 12, mas também os 3 mais próximos.
+      Há ordem e hierarquia na criação.
+    nota_graca: |
+      Se a criança quiser desamarrar o dez, Noé diz:
+      "O feixe é forte porque está unido. Mantenha!"
+
+  diario_portador:
+    nota: Observe se a criança entende que o feixe vale 10 sem contar de novo.
+    perguntas:
+      - Ela confia que no feixe tem 10?
+      - Ela soma 10+1 ou conta tudo do 1 ao 11?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

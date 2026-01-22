@@ -1,0 +1,224 @@
+# LIÇÃO 021 — A JORNADA LONGA
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-021-jornada-longa
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-021
+    titulo: A Jornada Longa
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 2
+    tipo: Contagem
+    guardiao_lider: celeste
+    guardiao_secundario: melquior
+    guardioes_apresentados: [celeste]
+    tgtb_ref: 000-L21
+    tgtb_titulo_en: Counting to 60 Practice
+    tgtb_titulo_pt: Prática de Contagem até 60
+    objetivo_pedagogico: '[Foco: Contagem fluente até 60 — padrão das dezenas]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-020, titulo: O Selo Real}
+    proxima: {id: MV-S-022, titulo: Revisão Visual}
+
+  para_portador:
+    ideia_viva:
+      frase: "Passos firmes de sessenta batidas de coração nas trilhas de Celeste."
+      conceito: Contar até 60 é como caminhar longe — exige ritmo e constância.
+      intencao_cm: A criança percebe o padrão repetitivo das dezenas até 60.
+    dica_coracao: |
+      Sessenta é o número do tempo! 60 segundos, 60 minutos.
+      Celeste nos guia numa caminhada longa.
+      O segredo não é pressa, é ritmo misturado com o bater do coração.
+    filho_descobre: Que o padrão dos números se repete a cada dezena.
+    protocolo_impecabilidade: |
+      CONTE COM MOVIMENTO. Pule, bata palmas ou caminhe.
+      O corpo sente o ritmo de 10 em 10.
+    nota_graca: "Celeste diz: 'Sente esse cheiro? É aventura!' — mesmo quando as pernas cansam."
+    conforto_emocional: |
+      60 é um número grande! Celebre a resistência do seu pequeno explorador.
+    audio_script: |
+      Olá, Portador! Celeste está com as botas de caminhada!
+      Hoje vamos longe... até onde o sol toca o horizonte!
+    preparacao:
+      materiais:
+        - {item: Espaço para caminhar, qtd: 1, alt: sala ou quintal, essencial: true}
+        - {item: Card Celeste, qtd: 1, alt: imagem da raposa, essencial: true}
+        - {item: Um "mapa" simples (opcional), qtd: 1, alt: desenho de trilha, essencial: false}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-020
+      gancho: Você aprendeu a traçar os números. Agora, vamos caminhar com eles até o 60!
+    proximo:
+      licao_id: MV-S-022
+      gancho: Que jornada longa! Amanhã, Íris nos convida para descansar e observar os números.
+
+  ritual_abertura:
+    instrucao_ambiente: Ambiente espaçoso, janelas abertas.
+    local: trilha_bosque
+    clima: ventoso
+    virtude: fortaleza
+    artefato: Botas de caminhada (imaginárias)
+    transicao_reino: |
+      Feche os olhos. Sinta o vento no rosto.
+      Celeste está amarrando suas botas na entrada da trilha.
+    fala_portador:
+      tom: vigoroso
+      script: |
+        Celeste está pronta para uma longa jornada!
+        Vamos caminhar com ela? Respire fundo!
+    card_guardiao: 'CARD: CELESTE'
+    abertura_sensorial: |
+      O ar traz cheiro de pinheiros e terra batida.
+      Celeste aponta para o caminho sem fim.
+      "Sente esse cheiro? É aventura!"
+
+  jornada:
+    narrativa_principal:
+      - titulo: O Aquecimento
+        local: trilha_bosque
+        fala_guardiao:
+          tom: animado
+          script: |
+            "Até o 30 é fácil, já conhecemos o caminho!"
+            [Celeste começa a marchar]
+            "Um, dois... trinta! Passos firmes!"
+        instrucao_portador: |
+          Marche no lugar contando até 30 num ritmo constante.
+          "Esquerda, direita! Até o 30!"
+      - titulo: A Subida
+        local: trilha_bosque
+        fala_guardiao:
+          tom: encorajador
+          script: |
+            "Agora a subida começa! Do 30 ao 40... ao 50!"
+            [Celeste sobe pedras]
+            "Mantenha o ritmo! O coração bate forte!"
+        instrucao_portador: |
+          Continue marchando. Conte 31-40, pausa.
+          Depois 41-50. "Estamos subindo!"
+      - titulo: O Topo da Colina
+        local: trilha_bosque
+        fala_guardiao:
+          tom: triunfante
+          script: |
+            "Falta pouco! Do 50 ao 60!"
+            [Celeste corre para o topo]
+            "Cinquenta e nove... SESSENTA! Que vista!"
+        instrucao_portador: |
+          Acelere o passo de 51 a 60.
+          "Chegamos! Respire fundo! Sessenta!"
+
+    concreto:
+      desc: Caminhar e contar até 60 com ritmo corporal
+      card_objeto: 'CARD: TRILHA LONGA'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Comece a marchar. Conte 1-30.
+          fala_sugerida: "Ritmo de aventura! 1, 2, 3... 30!"
+        - passo: 2
+          acao: Mude o movimento (pulos ou palmas). Conte 31-50.
+          fala_sugerida: "Agora pulando pedras! 31... 50!"
+        - passo: 3
+          acao: Corra no lugar (slow motion). Conte 51-60.
+          fala_sugerida: "Quase lá! 51... 60! Chegamos!"
+        - passo: 4
+          acao: Coloque a mão no coração.
+          fala_sugerida: "Sinta seu coração. 60 batidas!"
+      norte_absoluto: O ritmo físico ajuda a memória da sequência. Pausas nas dezenas.
+      adaptacao_bernardo: |
+        💡 Se 60 cansa, sente e conte batendo os pés.
+        O ritmo é o mais importante.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Movimento corporal total.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Fluência na sequência numérica até 60
+      nota: O padrão "cinquenta e..." deve ficar claro pelo som.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando o 60
+      sugestoes:
+        - titulo: 60 Segundos
+          acao: Fique em silêncio por 1 minuto (60s). É muito ou pouco?
+        - titulo: Contar Dezenas
+          acao: 10, 20, 30, 40, 50, 60. Seis dezenas!
+      adaptacao_bernardo: |
+        💡 Use um relógio de ponteiro para mostrar os 60 segundos.
+
+  narracao:
+    instrucao_portador: |
+      Sente-se para descansar da "caminhada".
+      "Celeste adorou sua companhia!"
+    pergunta_principal: Como foi caminhar até o 60?
+    perguntas_coracao:
+      - Qual parte foi mais cansativa?
+      - O que vem depois do 59?
+    nota_cm: A narração fixa a experiência física da contagem.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: sereno
+      script: |
+        "Que jornada linda!"
+        "Sessenta passos, sessenta batidas. O tempo é amigo."
+    fio_ouro: "Você caminhou longe! Amanhã, descansamos com Íris e os números."
+    transicao_volta:
+      instrucao: Conte de 10 em 10 até 60 enquanto relaxa.
+      fala: Dez, vinte... sessenta. Voltamos.
+
+  para_familia:
+    titulo: O Ritmo do Tempo
+    porque_importa: |
+      O número 60 é base do nosso tempo (segundos, minutos).
+      Contar até 60 com ritmo prepara para leitura de relógio no futuro.
+    metodo_cpa:
+      concreto: Movimento corporal rítmico.
+      pictorico: Vetado.
+      abstrato: Sequência numérica oral.
+      nota: "Dalcroze/CM: Ritmo educa a atenção."
+    principio_cm:
+      numero: 13
+      citacao: "Education is an atmosphere."
+      aplicacao: O ambiente de "caminhada" torna a repetição significativa.
+    tgtb_conexao: |
+      Corresponde à lição de Prática de Contagem até 60.
+      Celeste traz o tema de jornada e tempo.
+    espiral:
+      conceito: Contagem e Tempo
+      volta_atual: 'Sementes — contar até 60 ritmicamente'
+      proxima_volta: 'Raízes — ler horas, sistema sexagesimal'
+    reflexao_espiritual: |
+      O tempo é um presente.
+      Cada segundo conta. "Ensina-nos a contar os nossos dias."
+    nota_graca: |
+      Se perder o fôlego ou a conta, Celeste diz:
+      "Pare. Respire. A vista é linda aqui também."
+
+  diario_portador:
+    nota: Observe se o padrão "cinquenta e..." é assimilado.
+    perguntas:
+      - A criança percebe a repetição 1-9 em cada dezena?
+      - O 60 é reconhecido como o final?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

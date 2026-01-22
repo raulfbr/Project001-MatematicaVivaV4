@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual do Portador da Tocha | Matemática Viva</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Estilos específicos do Manual */
+        .manual-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            color: #374151;
+        }
+
+        .manual-content h2 {
+            color: #B8860B;
+            border-bottom: 2px solid #FFBF00;
+            padding-bottom: 0.5rem;
+            margin-top: 3rem;
+            font-size: 1.75rem;
+        }
+
+        .manual-content h3 {
+            color: #1F2937;
+            margin-top: 2rem;
+            font-size: 1.25rem;
+        }
+
+        .manual-content h4 {
+            color: #374151;
+            margin-top: 1.5rem;
+        }
+
+        .manual-content p {
+            margin: 1rem 0;
+        }
+
+        .manual-content ul,
+        .manual-content ol {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .manual-content li {
+            margin: 0.5rem 0;
+        }
+
+        .manual-content strong {
+            color: #1F2937;
+        }
+
+        .manual-content em {
+            color: #6B7280;
+        }
+
+        .manual-content blockquote {
+            background: #FDF8F3;
+            border-left: 4px solid #FFBF00;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .manual-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        .manual-content th {
+            background: #F9FAFB;
+            border: 1px solid #E5E7EB;
+            padding: 0.75rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .manual-content td {
+            border: 1px solid #E5E7EB;
+            padding: 0.75rem;
+        }
+
+        .manual-content hr {
+            border: none;
+            border-top: 1px solid #E5E7EB;
+            margin: 3rem 0;
+        }
+
+        .manual-subtitle {
+            color: #6B7280;
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .tip-box strong {
+            color: #92400E;
+        }
+
+        .checklist {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .checklist li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .checklist li::before {
+            content: "☐";
+            color: #9CA3AF;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #6B7280;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: #B8860B;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- SIDEBAR (mesmo do index.html) -->
+    <nav class="sidebar">
+        <div class="brand">
+            <img src="assets/cards/guardioes/melquior-leao.png" alt="Logo" style="width: 32px; height: 32px;">
+            Matemática Viva
+        </div>
+
+        <div class="nav-section">Família Pioneira</div>
+
+        <!-- MANUAL DO PORTADOR (ATIVO) -->
+        <a href="manual-portador.html" class="nav-link active">
+            <span>🔥</span> Manual do Portador
+        </a>
+
+        <!-- CICLO BROTOS -->
+        <a href="placeholders/brotos.html" class="nav-link ">
+            <span>🌰</span> Ciclo Brotos <small>(Em breve)</small>
+        </a>
+
+        <!-- CICLO SEMENTES -->
+        <a href="index.html#sementes" class="nav-link">
+            <span>🌱</span> Ciclo Sementes
+        </a>
+
+        <!-- CICLO RAÍZES -->
+        <a href="placeholders/raizes.html" class="nav-link ">
+            <span>🌳</span> Ciclo Raízes <small>(Em breve)</small>
+        </a>
+
+        <!-- LÓGICA -->
+        <a href="placeholders/logica.html" class="nav-link ">
+            <span>🦉</span> Lógica &amp; Retórica <small>(Em breve)</small>
+        </a>
+
+        <!-- LIVROS DOURADOS -->
+        <a href="index.html#livros" class="nav-link"><span>🏆</span> Livros Dourados</a>
+
+        <!-- LEGADO -->
+        <a href="placeholders/legado.html" class="nav-link"><span>🏺</span> O Legado</a>
+
+        <div class="nav-section">Acervo Aberto</div>
+        <a href="index.html#blog" class="nav-link"><span>📝</span> Blog &amp; Ensaios</a>
+
+        <div class="nav-section">Sistema</div>
+        <a href="#" class="nav-link"><span>⚙️</span> Configurações</a>
+    </nav>
+
+    <main class="main-content">
+        <header>
+            <div class="role-badge">Primeira Leitura Recomendada</div>
+            <h1>🔥 Manual do Portador da Tocha</h1>
+            <p class="subtitle">Um guia para você que vai conduzir a jornada do seu filho pelo Reino Contado</p>
+        </header>
+
+        <article class="manual-content">
+
+            <a href="index.html" class="back-link">← Voltar para o Dashboard</a>
+
+            <!-- PARTE 1 -->
+            <h2>Parte 1: Bem-vindo, Portador da Tocha</h2>
+
+            <p>Você está segurando uma tocha.</p>
+
+            <p>Não precisa ser uma tocha literal — embora um toque de luz especial ajude a marcar o momento. Pode ser um
+                abajur com luz amarela, uma luminária suave, uma vela LED, ou simplesmente reduzir as luzes do ambiente.
+                O importante é criar um sinal: <em>"agora é diferente, agora é especial"</em>. A tocha é uma metáfora.
+                Representa a luz do conhecimento que você vai passar adiante.</p>
+
+            <div class="tip-box">
+                <strong>Uma dica:</strong> Conforme seu filho cresce, ter um "lugar de estudo" vai ajudar na transição
+                para anos mais avançados. Criar essa rotina desde Sementes é um presente para o futuro. Cada família
+                encontra seu jeito — algumas fazem dentro de casa, outras ao ar livre. A decisão é sua.
+            </div>
+
+            <p>No Reino Contado, chamamos quem ensina de <strong>Portador da Tocha</strong>. Não "professor" — porque
+                você não está em uma sala de aula. Não "instrutor" — porque você não está apenas transmitindo
+                informação.</p>
+
+            <p>Você é um <strong>Portador</strong>. Alguém que carrega algo valioso e o entrega com cuidado.</p>
+
+            <h3>Você Não Precisa Saber Tudo</h3>
+
+            <p>Respire fundo.</p>
+
+            <p>Se você está inseguro porque "nunca foi bom em matemática", saiba: você não precisa ser. O material vai
+                te guiar passo a passo. Cada lição tem uma seção chamada <strong>"Para Você, Portador"</strong> —
+                escrita especialmente para você.</p>
+
+            <p>Nela, você vai encontrar:</p>
+            <ul>
+                <li><strong>O que seu filho vai descobrir</strong> (para você saber aonde estamos indo)</li>
+                <li><strong>Dica do Coração</strong> (para acalmar sua ansiedade)</li>
+                <li><strong>Materiais necessários</strong> (com alternativas se não tiver)</li>
+                <li><strong>Falas sugeridas</strong> (para você não precisar inventar)</li>
+            </ul>
+
+            <p>Seu único trabalho é <strong>estar presente</strong>. Ler com carinho. Olhar nos olhos. A beleza acontece
+                no encontro, não na performance.</p>
+
+            <h3>O Medo Acaba em Você</h3>
+
+            <p>Talvez você tenha memórias ruins de matemática. Talvez alguém tenha dito que você "não era de exatas".
+                Talvez você se lembre de testes que incomodavam.</p>
+
+            <p>Tudo isso acaba em você.</p>
+
+            <p>O seu filho vai conhecer matemática de um jeito diferente. Com histórias. Com personagens. Com as mãos na
+                massa — literalmente. Ele não vai herdar seu medo. Vai herdar seu encantamento.</p>
+
+            <p>Quando você acende a tocha, o passado fica para trás.</p>
+
+            <p>E sabe o que é ainda mais especial? Quando você acende a luz e abre o pergaminho, <strong>você também
+                    entra no Reino</strong>. Não é só seu filho que vai conhecer Celeste e Bernardo — você vai
+                relembrá-los toda vez que abrir uma lição. Essa jornada cria memórias para vocês DOIS. A cura do pai
+                acontece enquanto o filho aprende.</p>
+
+            <hr>
+
+            <!-- PARTE 2 -->
+            <h2>Parte 2: Entendendo o Reino Contado</h2>
+
+            <h3>O Que É o Reino Contado?</h3>
+
+            <p>O Reino Contado é o universo narrativo da Matemática Viva. É um mundo imaginário onde os números têm
+                contexto, os problemas têm história, e a matemática é uma aventura.</p>
+
+            <p>Não é decoração. Não é "para deixar mais legal". É pedagogia.</p>
+
+            <p>Charlotte Mason, a educadora que inspira nosso método, ensinava que crianças aprendem através de
+                <strong>ideias vivas</strong> — não informação morta. Uma ideia viva é algo que você pode imaginar,
+                sentir, contar para outra pessoa.
+            </p>
+
+            <blockquote>"Três sementes de carvalho que Celeste encontrou debaixo da árvore" é uma ideia viva.
+            </blockquote>
+
+            <blockquote>"O numeral 3 representa três unidades" é informação morta.</blockquote>
+
+            <h3>Os 5 Guardiões</h3>
+
+            <p>No Reino Contado, cinco animais sábios acompanham seu filho em toda a jornada. Cada um representa uma
+                virtude:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Guardião</th>
+                        <th>Animal</th>
+                        <th>Virtude</th>
+                        <th>Quando Aparece</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Melquior</strong></td>
+                        <td>Leão</td>
+                        <td>Sabedoria, Acolhimento</td>
+                        <td>Abertura, fechamento, momentos solenes</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Noé</strong></td>
+                        <td>Coruja</td>
+                        <td>Paciência, Tempo</td>
+                        <td>Lições de tempo, ordem, ritmo</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Celeste</strong></td>
+                        <td>Raposa</td>
+                        <td>Curiosidade, Exploração</td>
+                        <td>Padrões, descobertas, investigação</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bernardo</strong></td>
+                        <td>Urso</td>
+                        <td>Perseverança, Construção</td>
+                        <td>Trabalho manual, erros, esforço</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Íris</strong></td>
+                        <td>Pardal</td>
+                        <td>Beleza, Atenção</td>
+                        <td>Detalhes, formas, estética</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Melquior é o "anfitrião" — ele abre as portas do Reino e recebe cada Viajante (como chamamos os alunos).
+                Bernardo ensina que errar faz parte do caminho — ele mesmo manca de uma pata que machucou salvando
+                amigos.</p>
+
+            <p>Esses personagens não são mascotes. São <strong>mentores narrativos</strong>. Seu filho vai se apegar a
+                eles. E quando frustrado, pode ouvir: <em>"Bernardo também demorou para aprender. Ele tentou de novo,
+                    com você ao lado."</em></p>
+
+            <p>E aqui está o segredo: os Guardiões não são só para o seu filho. Quando você lê as falas de Melquior em
+                voz alta, você empresta sua voz a ele. Quando você diz "Shhh, Celeste está vindo", você está brincando
+                junto. Isso não é atuação — é conexão. Anos depois, vocês vão lembrar juntos: <em>"Lembra quando
+                    Bernardo nos ensinou a empilhar as pedras?"</em></p>
+
+            <h3>Por Que Histórias Funcionam</h3>
+
+            <p>O cérebro humano lembra histórias melhor que listas.</p>
+
+            <p>Quando Jerome Bruner estudou como crianças aprendem, descobriu que elas precisam <strong>tocar antes de
+                    ver, ver antes de simbolizar</strong>. É o método CPA:</p>
+
+            <ul>
+                <li><strong>Concreto</strong>: mãos na massa (sementes, pedras, feijões)</li>
+                <li><strong>Pictórico</strong>: desenhos e representações visuais</li>
+                <li><strong>Abstrato</strong>: números e símbolos</li>
+            </ul>
+
+            <p>Na Matemática Viva, unimos CPA com narrativa. A criança não apenas toca três sementes — ela toca as
+                <strong>três promessas do Rei que Celeste encontrou</strong>.
+            </p>
+
+            <p>Quando o contexto faz sentido e as mãos tocam, o coração guarda.</p>
+
+            <h3>Por Que Temos Rituais de Entrada e Saída?</h3>
+
+            <p>A imaginação é um dom precioso. Crianças que brincam de "faz de conta" estão desenvolvendo empatia,
+                criatividade e capacidade de resolver problemas.</p>
+
+            <p>Mas a imaginação saudável precisa de <strong>ritmo</strong>. Por isso, cada lição começa com um
+                <strong>Ritual de Abertura</strong> (acender uma luz especial, respirar fundo) e termina com um
+                <strong>Ritual de Fechamento</strong> (apagar a luz juntos).
+            </p>
+
+            <p>Esses rituais não são decoração. São <strong>sinais claros</strong> para o cérebro da criança: "agora
+                estamos no Reino" e "agora voltamos". Isso ensina algo valioso: <strong>a imaginação é boa, e tem seu
+                    momento certo</strong>.</p>
+
+            <h3>Traga os Guardiões Para o Dia a Dia</h3>
+
+            <p><strong>Incentivamos você a trazer os Guardiões para além das lições!</strong></p>
+
+            <p>Quando seu filho tiver dificuldade com algo, você pode dizer: <em>"Lembra do Bernardo? Ele também achava
+                    difícil, mas tentava de novo."</em> Quando ele descobrir algo novo, celebre: <em>"Celeste ficaria
+                    orgulhosa dessa descoberta!"</em> Quando precisar de paciência, lembre: <em>"Noé sempre espera o
+                    tempo certo."</em></p>
+
+            <p>Os Guardiões não são só personagens de lição — são <strong>companheiros de jornada</strong>. Quanto mais
+                vocês os encontrarem fora das lições, mais natural será reencontrá-los dentro delas. E os princípios que
+                eles representam (perseverança, curiosidade, paciência, beleza) passam a fazer parte da linguagem da
+                família.</p>
+
+            <p>O tempo da lição ainda é especial — demarcado, sagrado, completo. Mas os Guardiões podem viver com vocês
+                todos os dias.</p>
+
+            <!-- PARTE 3 -->
+            <h2>Parte 3: A Anatomia de Uma Lição</h2>
+
+            <p>Cada lição da Matemática Viva segue uma estrutura. Pode parecer muito no começo, mas você vai se
+                acostumar. E não precisa ler tudo — só o essencial.</p>
+
+            <h3>As Seções Que Importam Para Você</h3>
+
+            <h4>📖 Para Você, Portador</h4>
+            <p><strong>Leia isso primeiro. Sempre.</strong></p>
+
+            <p>Aqui você encontra:</p>
+            <ul>
+                <li><strong>Ideia Viva</strong>: a frase poética que resume a lição</li>
+                <li><strong>Dica do Coração</strong>: 2-3 frases para te acalmar</li>
+                <li><strong>O Que Seu Filho Descobre</strong>: o que ele vai aprender</li>
+                <li><strong>Materiais</strong>: o que você precisa</li>
+            </ul>
+            <p><em>Tempo: 2-3 minutos de leitura antes da lição.</em></p>
+
+            <h4>🎭 Ritual de Abertura</h4>
+            <p>O "portal de entrada" para o Reino. Envolve:</p>
+            <ul>
+                <li>Acender uma luz ou diminuir as luzes</li>
+                <li>Respirar fundo juntos</li>
+                <li>Ler uma fala curta que transporta para o mundo do Reino</li>
+            </ul>
+            <p><em>Tempo: 2 minutos.</em></p>
+
+            <h4>🗺️ A Jornada (Parte Prática)</h4>
+            <p><strong>A parte principal.</strong> Onde a matemática acontece.</p>
+            <p>Aqui você vai encontrar:</p>
+            <ul>
+                <li>Instruções passo a passo</li>
+                <li>Falas sugeridas para cada ação</li>
+                <li>Adaptações para diferentes realidades</li>
+            </ul>
+            <p><em>Tempo: 10-12 minutos (a maior parte da lição).</em></p>
+
+            <h4>💬 Narração</h4>
+            <p>Depois da atividade, você guarda os materiais, olha nos olhos do seu filho, e pergunta:</p>
+            <blockquote><em>"O que aconteceu hoje no Reino?"</em></blockquote>
+            <p>Ele conta. Você ouve. Sem interromper. Sem corrigir.</p>
+            <p>Se não quiser falar: "Tudo bem, seu coração guardou."</p>
+            <p><em>Tempo: 2-3 minutos.</em></p>
+
+            <h4>🔚 Ritual de Fechamento</h4>
+            <p>Encerramento do "portal". Uma fala do guardião criando expectativa para a próxima jornada. Apagar a luz
+                juntos.</p>
+            <p><em>Tempo: 1 minuto.</em></p>
+
+            <h3>O Que Você Pode Pular (Por Agora)</h3>
+
+            <h4>📖 Para a Família (seção opcional)</h4>
+            <p>Esta seção explica o "porquê" pedagógico da lição. É para VOCÊ, Portador — leia antes ou depois, no seu
+                tempo. <strong>Não é para ler em voz alta com seu filho.</strong> É seu guia de bastidores, para quando
+                quiser entender mais profundamente o que está acontecendo.</p>
+            <p>As demais seções trazem contexto pedagógico mais profundo. Explore no seu ritmo — quando tiver
+                curiosidade ou tempo, elas estarão lá para você.</p>
+
+            <hr>
+
+            <!-- PARTE 4 -->
+            <h2>Parte 4: Seu Primeiro Dia</h2>
+
+            <h3>Checklist "Abra e Faça" ✅</h3>
+
+            <p><strong>Antes da lição (5 min máximo):</strong></p>
+            <ul class="checklist">
+                <li>Leia a seção <strong>"Para Você, Portador"</strong> da Lição 000</li>
+                <li>Pegue: tapete/cobertor, luz (abajur ou LED), cards dos guardiões</li>
+                <li>Escolha um momento calmo do dia</li>
+                <li>Desligue telas e distrações</li>
+            </ul>
+
+            <p><strong>Durante a lição (15-20 min):</strong></p>
+            <ul class="checklist">
+                <li>Estendam o "Tapete do Reino" no chão</li>
+                <li>Acendam a luz juntos</li>
+                <li>Siga o roteiro — as falas estão prontas para você</li>
+                <li>Não tenha pressa</li>
+            </ul>
+
+            <p><strong>Depois:</strong></p>
+            <ul class="checklist">
+                <li>Pergunte qual guardião ele mais gostou</li>
+                <li>Se quiser anotar algo, use o <strong>Diário do Portador</strong></li>
+                <li>Celebre internamente: a primeira semente foi plantada</li>
+            </ul>
+
+            <h3>Lista de Materiais Básicos</h3>
+            <p>Para as primeiras 10 lições de Sementes, você vai precisar de:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Alternativa</th>
+                        <th>Onde Usar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tapete ou cobertor</td>
+                        <td>Lençol, toalha grande</td>
+                        <td>Todas as lições</td>
+                    </tr>
+                    <tr>
+                        <td>Luz (LED serve)</td>
+                        <td>Lanterna, abajur</td>
+                        <td>Rituais</td>
+                    </tr>
+                    <tr>
+                        <td>Feijões ou sementes</td>
+                        <td>Pedrinhas, botões</td>
+                        <td>Contagem (lições 001-010)</td>
+                    </tr>
+                    <tr>
+                        <td>Cards dos Guardiões</td>
+                        <td>Desenhos, fotos impressas</td>
+                        <td>Lição 000</td>
+                    </tr>
+                    <tr>
+                        <td>Cestinho pequeno</td>
+                        <td>Pote, tigela</td>
+                        <td>Guardar objetos</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Nada caro. Nada complicado. Coisas de casa.</strong></p>
+
+            <h3>A Lição 000: O Portal do Reino</h3>
+            <p>Sua primeira lição não tem matemática. Só maravilhamento.</p>
+            <p>O objetivo é <strong>estabelecer a atmosfera</strong> antes de ensinar qualquer coisa. Charlotte Mason
+                chamava isso de "atmosfera como educação" — o ambiente ensina tanto quanto as palavras.</p>
+            <p>Na Lição 000, Melquior (o Leão Dourado) recebe seu filho no Jardim Central e apresenta os cinco
+                Guardiões. É um convite. Uma história. Um momento de maravilhamento.</p>
+            <p>Se seu filho não "entrar" na história no primeiro dia, tudo bem. O portal permanece aberto.</p>
+
+            <hr>
+
+            <!-- PARTE 5 -->
+            <h2>Parte 5: Os 5 Princípios</h2>
+
+            <h3>1. DIGNIDADE</h3>
+            <p><em>"Crianças são pessoas capazes."</em></p>
+            <p>Seu filho não é um copo vazio para você encher. Ele é uma pessoa completa, com curiosidade, vontade e
+                capacidade de descobrir. Nosso trabalho não é depositar informação — é apresentar um banquete e deixar
+                ele se servir.</p>
+            <div class="tip-box"><strong>Na prática:</strong> Nunca diga "é fácil" ou "você deveria saber isso". Diga
+                "vamos descobrir juntos".</div>
+
+            <h3>2. DESCOBERTA</h3>
+            <p><em>"Mãos primeiro, mente depois."</em></p>
+            <p>A criança precisa TOCAR antes de VER, VER antes de SIMBOLIZAR. Por isso, a maior parte da lição em
+                Sementes é manipulação física — contar feijões, empilhar pedras, traçar números no ar.</p>
+            <div class="tip-box"><strong>Na prática:</strong> Se seu filho não entendeu, não explique mais — dê mais
+                material para tocar.</div>
+
+            <h3>3. ESPIRAL</h3>
+            <p><em>"O que planta hoje, floresce amanhã."</em></p>
+            <p>Os conceitos não são ensinados uma vez e cobrados para sempre. Eles RETORNAM em ciclos cada vez mais
+                profundos. Se hoje ele não dominou contagem até 10, tudo bem — vai voltar.</p>
+            <div class="tip-box"><strong>Na prática:</strong> Não entre em pânico se algo não "pegar" na primeira vez. O
+                currículo é espiral.</div>
+
+            <h3>4. NARRAÇÃO</h3>
+            <p><em>"Conta o que aprendeu — sem provas."</em></p>
+            <p>Em vez de testes, usamos narração. Seu filho conta o que viveu com as palavras dele. Isso substitui
+                avaliações tradicionais e revela o que realmente ficou.</p>
+            <div class="tip-box"><strong>Na prática:</strong> Pergunte "O que aconteceu hoje?" e ESPERE. O silêncio é
+                trabalho mental.</div>
+
+            <h3>5. RITMO</h3>
+            <p><em>"Lição no tempo certo para cada idade."</em></p>
+            <p>Lições de Sementes (4-6 anos) duram 15-20 minutos. Não mais. Charlotte Mason descobriu que atenção
+                genuína tem tempo limite — e ultrapassar cansa sem ensinar.</p>
+            <div class="tip-box"><strong>Na prática:</strong> Pare ANTES do cansaço. Melhor encerrar com vontade de
+                mais.</div>
+
+            <h3>Uma Palavra Sobre Consistência</h3>
+            <p>Esses cinco princípios funcionam quando aplicados com regularidade. Sabemos que a vida é imprevisível —
+                dias difíceis acontecem. Mas incentivamos fortemente que você siga o ritmo proposto: <strong>4-5 vezes
+                    por semana, 15-20 minutos</strong>.</p>
+            <p>Esse ritmo foi desenhado com cuidado. Confie no processo. E se precisar adaptar, tudo bem — mas volte ao
+                caminho assim que puder.</p>
+
+            <!-- PARTE 6 -->
+            <h2>Parte 6: E Quando Não Funcionar?</h2>
+
+            <h3>A Nota de Graça</h3>
+            <p>Em toda lição existe uma seção chamada <strong>"Nota de Graça"</strong>. Ela diz algo como:</p>
+            <blockquote><em>"Se as sementes não foram contadas 'direito', respire. O Rei não tem pressa. A semente foi
+                    plantada."</em></blockquote>
+            <p>Isso não é clichê. É princípio.</p>
+            <p>O objetivo não é execução perfeita. É exposição consistente. Seu filho não precisa dominar cada conceito
+                — precisa encontrá-lo, tocar, brincar. O domínio vem com a repetição espiral.</p>
+
+            <h3>Adaptação Bernardo</h3>
+            <p>Bernardo, o Urso, manca de uma pata. Ele se machucou salvando amigos na Grande Nevasca — mas isso nunca o
+                parou.</p>
+            <p>Quando seu filho tiver dificuldade (motora, sensorial, de atenção ou qualquer outra), lembre-se:
+                <strong>caminhos diferentes também chegam lá</strong>.</p>
+            <p>Cada lição tem uma seção <strong>"Adaptação Bernardo"</strong> com sugestões para realidades diferentes:
+            </p>
+            <ul>
+                <li>Sementes maiores para quem tem dificuldade motora fina</li>
+                <li>Texturas diferentes para quem aprende pelo tato</li>
+                <li>Narrativa mais curta para atenção limitada</li>
+            </ul>
+
+            <h3>Cenários Comuns</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Se isso acontecer...</th>
+                        <th>Faça isso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ele não quer fazer hoje</td>
+                        <td>"Tudo bem. O Reino espera. Vamos amanhã."</td>
+                    </tr>
+                    <tr>
+                        <td>Ele está distraído</td>
+                        <td>Encurte a narrativa. Vá direto ao concreto.</td>
+                    </tr>
+                    <tr>
+                        <td>Ele errou a contagem</td>
+                        <td>"Celeste também perde a trilha às vezes!" Conte de novo.</td>
+                    </tr>
+                    <tr>
+                        <td>Ele chorou de frustração</td>
+                        <td>Pare. Abrace. "Bernardo também acha difícil às vezes."</td>
+                    </tr>
+                    <tr>
+                        <td>Ele quer mais</td>
+                        <td>Veja a seção <strong>"Se Quiser Voar"</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <!-- PARTE 7 -->
+            <h2>Parte 7: Perguntas Frequentes</h2>
+
+            <p><strong>Preciso seguir as lições em ordem?</strong><br>
+                Sim, especialmente no começo. As lições estão conectadas — cada uma prepara a próxima.</p>
+
+            <p><strong>Posso pular uma lição?</strong><br>
+                Se for de "prática" ou "revisão", pode. Se for conceito novo, não pule. Na dúvida, faça.</p>
+
+            <p><strong>Meu filho tem 7 anos. Devo começar pelas Sementes?</strong><br>
+                As Sementes são para 4-6 anos. Se ele já tem 7+, comece pela Lição 000 e observe como ele responde.</p>
+
+            <p><strong>E a BNCC?</strong><br>
+                Não miramos na BNCC — miramos acima. Nosso currículo segue o padrão que tornou Singapura o número 1 do
+                mundo em matemática.</p>
+
+            <p><strong>Quanto tempo por dia?</strong><br>
+                15-20 minutos, 4-5 vezes por semana. Não mais. Consistência > intensidade.</p>
+
+            <p><strong>Preciso imprimir algo?</strong><br>
+                Os cards dos guardiões ajudam, mas não são obrigatórios. Você pode descrever verbalmente.</p>
+
+            <hr>
+
+            <!-- PARTE 8 -->
+            <h2>Parte 8: Glossário do Reino</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Termo do Reino</th>
+                        <th>Significado</th>
+                        <th>Exemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Viajante</strong></td>
+                        <td>O aluno, seu filho</td>
+                        <td>"O Viajante descobriu três sementes"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Portador da Tocha</strong></td>
+                        <td>Você, quem ensina</td>
+                        <td>"O Portador apresenta o banquete"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Jornada</strong></td>
+                        <td>Uma aula/lição</td>
+                        <td>"Hoje nossa jornada foi até a Clareira"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pergaminho</strong></td>
+                        <td>O material da lição</td>
+                        <td>"Pegue o pergaminho da lição 003"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Herdeiro</strong></td>
+                        <td>O viajante das Sementes</td>
+                        <td>"Você é o Herdeiro do Reino"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reino Contado</strong></td>
+                        <td>O universo narrativo</td>
+                        <td>"Bem-vindo ao Reino Contado"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tapete do Reino</strong></td>
+                        <td>O espaço físico da lição</td>
+                        <td>"Sentem-se no Tapete do Reino"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cicatriz de Glória</strong></td>
+                        <td>Um erro que ensinou</td>
+                        <td>"Cada erro é uma cicatriz de glória"</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <!-- COMUNIDADE -->
+            <h2>Você Não Está Sozinho</h2>
+
+            <p>Cada família tem sua realidade. O método foi pensado com cuidado — mas sabemos que a vida acontece.</p>
+            <p>Vai ter dia que não vai funcionar. Vai ter semana que tudo vai sair do planejado. E está tudo bem.</p>
+            <p>O que importa é a <strong>consistência no longo prazo</strong>, não a perfeição em cada dia. Se perdeu um
+                dia, volte no seguinte. Se perdeu uma semana, recomece. O Reino está sempre esperando.</p>
+            <p>E lembre-se: <strong>centenas de outras famílias estão vivendo isso junto com você</strong>. Algumas
+                estão na mesma lição. Outras já passaram pelo que você está passando.</p>
+            <p>Por isso criamos uma <strong>comunidade de Portadores</strong>: famílias que estão usando o material,
+                trocando experiências, e se ajudando.</p>
+            <p>Quando tiver uma dúvida, jogue no grupo! Quando tiver uma vitória, compartilhe!</p>
+
+            <div class="tip-box">
+                <strong>Princípio da comunidade:</strong>
+                <ul style="margin: 0.5rem 0 0 0;">
+                    <li>Sempre sugerir, nunca impor</li>
+                    <li>Sempre incentivar, nunca criticar</li>
+                    <li>Respeitar o ritmo de cada família</li>
+                </ul>
+            </div>
+
+            <p>📱 <strong>Grupo da Comunidade:</strong> [Link a ser disponibilizado]</p>
+
+            <hr>
+
+            <!-- FAMÍLIA PIONEIRA -->
+            <h2>Você é uma Família Pioneira</h2>
+
+            <p>Você está segurando algo especial: uma versão de validação do Matemática Viva.</p>
+            <p>Isso significa que você faz parte de um grupo seleto de famílias que estão ajudando a construir este
+                currículo junto conosco. Vocês são os <strong>Pioneiros</strong>.</p>
+
+            <h3>O Que Isso Significa</h3>
+            <p>Este material ainda está sendo refinado. Pode haver partes que não fluem bem, instruções que poderiam ser
+                mais claras, ou pequenos ajustes necessários. E está tudo bem — porque <strong>você pode nos ajudar a
+                    melhorar</strong>.</p>
+            <p>Quando você encontrar algo que não funcionou, uma instrução confusa, ou tiver uma ideia brilhante,
+                queremos muito ouvir.</p>
+            <p><strong>E sabe o que também queremos ouvir?</strong> O que funcionou! Quando seu filho sorrir, quando uma
+                lição fluir perfeitamente, quando você perceber que algo "clicou" — nos conte.</p>
+
+            <h3>Como Dar Feedback</h3>
+            <p><strong>1. Envie um e-mail para:</strong></p>
+            <p style="font-size: 1.25rem;">📧 <strong>rfbr21@gmail.com</strong></p>
+            <p>No e-mail, conte um pouco sobre sua família:</p>
+            <ul>
+                <li>Seu nome e o nome dos seus filhos</li>
+                <li>Idades das crianças</li>
+                <li>Um resumo da sua experiência com educação domiciliar</li>
+                <li><strong>Seu número de WhatsApp</strong> para contato</li>
+            </ul>
+            <p><strong>2. Entraremos em contato:</strong></p>
+            <p>Depois de receber seu e-mail, o Raul (Maestro Fundador) vai te adicionar no WhatsApp para podermos
+                conversar de forma mais ágil.</p>
+            <p>Cada feedback é um presente. Ajuda a tornar o Reino Contado mais bonito para todas as famílias que virão
+                depois.</p>
+
+            <h3>Por Que Isso Importa</h3>
+            <p>Queremos que este currículo seja <strong>impecável</strong>. E impecável não se faz sozinho — se faz
+                junto.</p>
+            <p>Vocês são os fundadores. Os que estavam lá no começo.</p>
+            <p><strong>Obrigado por acreditar antes de ver o produto final.</strong></p>
+
+            <hr>
+
+            <!-- FECHAMENTO -->
+            <h2 style="text-align: center;">🔥 Sua Tocha Está Acesa</h2>
+
+            <p style="text-align: center; font-size: 1.1rem;">Você leu este manual. Isso já é um passo enorme.</p>
+
+            <p style="text-align: center;">Agora, pegue a <a href="sementes/MV-S-000_O_PORTAL_DO_REINO.html"
+                    style="color: #B8860B; font-weight: bold;">Lição 000</a>. Estenda o tapete. Acenda a luz. Respire
+                fundo.</p>
+
+            <p style="text-align: center;">Melquior está esperando no Jardim Central. Seu filho está pronto para ser
+                recebido.</p>
+
+            <p style="text-align: center;">E você — <strong>Portador da Tocha</strong> — vai guiá-lo até lá.</p>
+
+            <p style="text-align: center; margin-top: 2rem;">O Reino sempre existiu. Vocês só precisavam encontrar a
+                porta.</p>
+
+            <p style="text-align: center; font-size: 1.25rem; font-weight: bold; color: #B8860B;">Ela está aberta agora.
+            </p>
+
+            <hr>
+
+            <p style="text-align: center; color: #6B7280; font-style: italic;">
+                Matemática Viva — Histórias que ensinam. Narração que fixa.<br>
+                Da Família Rodrigues para a sua família.
+            </p>
+
+        </article>
+
+        <footer
+            style="margin-top: 6rem; border-top: 1px solid #E5E7EB; padding-top: 2rem; color: #9CA3AF; font-size: 0.875rem; display: flex; justify-content: space-between;">
+            <div>&copy; 2026 Matemática Viva. Built by Forge V3.</div>
+            <div>Versão 2.1 (Vercel)</div>
+        </footer>
+    </main>
+</body>
+
+</html>

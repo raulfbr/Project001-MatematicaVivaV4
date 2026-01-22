@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática Viva — V2 Atelier</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --forest: #2A5A3F;
+            --gold: #C5A065;
+            --cream: #FAF6F0;
+            /* Lighter cream for Editorial */
+            --ink: #1A1A1A;
+            /* Darker, sharper ink */
+            --siena: #A0522D;
+
+            --font-serif: 'Lora', serif;
+            --font-sans: 'Outfit', sans-serif;
+            --font-hand: 'Gloria Hallelujah', cursive;
+        }
+
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--cream);
+            color: var(--ink);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* LAYOUT - GRID MAGAZINE */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* Split screen aesthetic */
+            min-height: 100vh;
+        }
+
+        /* HERO SECTION - ASSYMETRIC */
+        #hero {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1rem;
+            padding: 4rem 2rem;
+            align-items: center;
+            position: relative;
+            background: linear-gradient(to bottom, #FAF6F0, #F0EAE0);
+        }
+
+        .hero-content {
+            grid-column: 2 / 8;
+            z-index: 10;
+        }
+
+        .hero-visual {
+            grid-column: 8 / 12;
+            height: 400px;
+            background: var(--forest);
+            border-radius: 200px 200px 0 0;
+            /* Arch window */
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-visual::after {
+            content: '2026';
+            font-family: var(--font-serif);
+            font-size: 8rem;
+            color: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-family: var(--font-serif);
+            font-size: 5rem;
+            line-height: 0.95;
+            color: var(--forest);
+            margin-bottom: 2rem;
+            letter-spacing: -2px;
+        }
+
+        .badge-editorial {
+            display: inline-block;
+            border-bottom: 2px solid var(--gold);
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.2rem;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        .lead {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: var(--ink);
+            margin-bottom: 2rem;
+            font-style: italic;
+            border-left: 3px solid var(--siena);
+            padding-left: 1.5rem;
+        }
+
+        /* BUTTONS - SHARP & ELEGANT */
+        .btn-atelier {
+            background: var(--ink);
+            color: #fff;
+            padding: 1.2rem 3rem;
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 500;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.4s ease;
+            border: 1px solid var(--ink);
+        }
+
+        .btn-atelier:hover {
+            background: transparent;
+            color: var(--ink);
+            transform: translateX(10px);
+        }
+
+        /* SECTIONS - EDITORIAL BLOCKS */
+        section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .editorial-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 6rem;
+        }
+
+        .text-col h2 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: var(--forest);
+        }
+
+        .stat-number {
+            font-size: 4rem;
+            font-family: var(--font-serif);
+            color: var(--gold);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-family: var(--font-sans);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        /* GUARDIANS - GALLERY STYLE */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2px;
+            /* Tight grid */
+            background: var(--gold);
+            /* Border color */
+            border: 2px solid var(--gold);
+        }
+
+        .gallery-item {
+            background: var(--cream);
+            padding: 2rem;
+            text-align: center;
+            transition: background 0.3s;
+        }
+
+        .gallery-item:hover {
+            background: #fff;
+        }
+
+        .gallery-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            filter: grayscale(80%);
+            /* Artistic touch */
+            transition: filter 0.3s;
+        }
+
+        .gallery-item:hover img {
+            filter: grayscale(0%);
+        }
+
+        /* PRICING - MINIMALIST */
+        .pricing-minimal {
+            text-align: center;
+            border: 1px solid var(--forest);
+            padding: 4rem;
+            background: #fff;
+            position: relative;
+        }
+
+        .big-price {
+            font-size: 6rem;
+            font-family: var(--font-serif);
+            color: var(--forest);
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            #hero {
+                grid-template-columns: 1fr;
+                padding: 2rem 1rem;
+            }
+
+            .hero-content {
+                grid-column: 1 / -1;
+            }
+
+            .hero-visual {
+                display: none;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            .editorial-block {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <header id="hero">
+        <div class="hero-content">
+            <span class="badge-editorial">Edição Pioneiros 2026</span>
+            <h1>Matemática<br>Viva.</h1>
+            <p class="lead">"Histórias que ensinam. Memórias que ficam."</p>
+            <p style="margin-bottom: 2rem; max-width: 400px;">
+                Um currículo artesanal. Para mães que desejam ensinar com segurança e filhos que anseiam por aventura.
+            </p>
+            <a href="#pricing" class="btn-atelier">Quero ser Pioneiro →</a>
+        </div>
+        <div class="hero-visual">
+            <!-- Abstract decorative element -->
+            <div style="font-size: 5rem;">🦁</div>
+        </div>
+    </header>
+
+    <!-- PAIN / SOLUTION -->
+    <section>
+        <div class="editorial-block">
+            <div class="text-col">
+                <span class="badge-editorial">O Contexto</span>
+                <h2>O medo de<br>não saber ensinar.</h2>
+                <p>Muitas mães sentem que precisam ser pedagogas. Nós acreditamos que você só precisa ser mãe — com as
+                    ferramentas certas na mão.</p>
+            </div>
+            <div class="visual-col">
+                <div style="background: var(--siena); color: white; padding: 2rem; border-radius: 4px;">
+                    <p style="font-family: var(--font-hand); font-size: 1.2rem;">"Eu tinha medo de tirar o brilho dos
+                        olhos dele."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="editorial-block" style="direction: rtl;"> <!-- Zig-zag layout -->
+            <div class="text-col" style="direction: ltr;">
+                <span class="badge-editorial">A Solução</span>
+                <h2>O Método<br>da Calma.</h2>
+                <div style="display: flex; gap: 2rem; margin-top: 2rem;">
+                    <div>
+                        <div class="stat-number">05</div>
+                        <div class="stat-label">Minutos de Preparo</div>
+                    </div>
+                    <div>
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Narrativo</div>
+                    </div>
+                </div>
+            </div>
+            <div class="visual-col"
+                style="direction: ltr; display: flex; justify-content: center; align-items: center;">
+                <div style="font-size: 8rem;">⏱️</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUARDIANS -->
+    <section
+        style="background: var(--ink); color: var(--cream); width: 100vw; max-width: 100%; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; padding: 6rem 2rem;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2
+                style="color: var(--cream); border-bottom: 1px solid var(--gold); padding-bottom: 1rem; margin-bottom: 3rem;">
+                Dramatis Personae</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/cards/guardioes/melquior-leao.png" alt="Melquior">
+                    <h4>Melquior</h4>
+                    <small>SABEDORIA</small>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/cards/guardioes/bernardo-urso.png" alt="Bernardo">
+                    <h4>Bernardo</h4>
+                    <small>PERSISTÊNCIA</small>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/cards/guardioes/celeste-raposa.png" alt="Celeste">
+                    <h4>Celeste</h4>
+                    <small>CURIOSIDADE</small>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/cards/guardioes/noe-coruja.png" alt="Noé">
+                    <h4>Noé</h4>
+                    <small>PACIÊNCIA</small>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/cards/guardioes/iris-passarinho.png" alt="Íris">
+                    <h4>Íris</h4>
+                    <small>ATENÇÃO</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+        <div class="pricing-minimal">
+            <p class="badge-editorial" style="margin-bottom: 2rem;">Investimento Único</p>
+            <h3>Acesso Familiar Vitalício (2026)</h3>
+            <div class="big-price">1.197</div>
+            <p style="font-family: var(--font-hand); color: var(--siena); margin-top: -1rem; margin-bottom: 2rem;">Reais
+                à vista</p>
+
+            <p>ou 12x com juros no cartão</p>
+
+            <br>
+            <a href="mailto:rfbr21@gmail.com" class="btn-atelier"
+                style="background: var(--forest); border-color: var(--forest);">
+                Solicitar Convite ✉️
+            </a>
+
+            <p style="margin-top: 2rem; font-size: 0.9rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+                <strong>Nota:</strong> Processo 100% humanizado. Você nos envia um e-mail, nós retornamos com o link
+                seguro. Sem robôs.
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>

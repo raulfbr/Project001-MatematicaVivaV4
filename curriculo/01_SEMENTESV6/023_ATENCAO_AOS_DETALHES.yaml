@@ -1,0 +1,225 @@
+# LIÇÃO 023 — ATENÇÃO AOS DETALHES
+# Template: V6.3 | 20/01/2026 | Status: TESTE
+
+_meta:
+  id: licao-023-atencao-detalhes
+  versao: '6.3'
+  fase: Sementes
+  status: teste
+
+licao:
+  metadados:
+    id: MV-S-023
+    titulo: Atenção aos Detalhes
+    fase: Sementes
+    ciclo: K
+    trimestre: 1
+    estacao: 2
+    tipo: Senso Numérico
+    guardiao_lider: iris
+    guardiao_secundario: melquior
+    guardioes_apresentados: [iris]
+    tgtb_ref: 000-L23
+    tgtb_titulo_en: Number Practice
+    tgtb_titulo_pt: Prática de Números
+    objetivo_pedagogico: '[Foco: Geometria dos números 7 e 8, distinção visual]'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '≤ 5 min'
+    versao: '6.3'
+    status: rascunho
+
+  navegacao:
+    anterior: {id: MV-S-022, titulo: Revisão Visual}
+    proxima: {id: MV-S-024, titulo: Consolidação}
+
+  para_portador:
+    ideia_viva:
+      frase: "A geometria secreta do 7 e do 8 no plano de beleza da criação."
+      conceito: 7 é reto e angular. 8 é curvo e contínuo.
+      intencao_cm: A criança percebe as qualidades estéticas e geométricas dos números.
+    dica_coracao: |
+      Hoje olhamos de perto o 7 e o 8.
+      O 7 é como um penhasco, reto e firme.
+      O 8 é como uma pista de dança infinita, curvo e suave.
+      Íris nos ensina a amar a forma deles.
+    filho_descobre: Que números têm "personalidades" visuais diferentes.
+    protocolo_impecabilidade: |
+      TRACE NA AREIA ou TINTA. Sinta a reta do 7.
+      Sinta a curva infinita do 8.
+    nota_graca: "Íris diz: 'Olhe bem. A beleza está no detalhe.' — a curva do 8 não tem fim!"
+    conforto_emocional: |
+      O 8 é difícil de traçar! É como um abraço apertado.
+      O 7 é fácil, como um escorregador.
+    audio_script: |
+      Olá, Portador! Íris trouxe sua lupa.
+      Vamos ver os segredos do 7 e do 8!
+    preparacao:
+      materiais:
+        - {item: Cartões grandes com 7 e 8, qtd: 2, alt: desenhados no papel, essencial: true}
+        - {item: Areia, farinha ou lixa (tátil), qtd: 1, alt: tinta de dedo, essencial: true}
+        - {item: Card Íris, qtd: 1, alt: imagem do pardal, essencial: true}
+
+  linkage:
+    elo_anterior:
+      licao_id: MV-S-022
+      gancho: Seus olhos são rápidos! Agora, vamos sentir a forma do 7 e do 8.
+    proximo:
+      licao_id: MV-S-024
+      gancho: Você conheceu o 7 e o 8. Amanhã, consolidamos tudo o que aprendemos!
+
+  ritual_abertura:
+    instrucao_ambiente: Ambiente tranquilo, foco sensorial.
+    local: ninho_mirante
+    clima: nublado
+    virtude: contemplacao
+    artefato: Uma lupa imaginária
+    transicao_reino: |
+      Feche os olhos. O vento parou.
+      Íris pousa com suavidade, segurando uma lupa.
+    fala_portador:
+      tom: suave
+      script: |
+        Íris quer nos mostrar um segredo.
+        Chegue bem perto. Vamos olhar os detalhes.
+    card_guardiao: 'CARD: IRIS'
+    abertura_sensorial: |
+      O ar está quieto. O tempo parece parar.
+      Íris aponta a asa para uma forma no chão.
+      "Olhe bem. A beleza está no detalhe."
+
+  jornada:
+    narrativa_principal:
+      - titulo: O Penhasco do Sete
+        local: ninho_mirante
+        fala_guardiao:
+          tom: preciso
+          script: |
+            "Veja o Sete. Ele tem um teto e um escorregador."
+            [Íris traça linhas retas no ar]
+            "Reto. Firme. Ângulo!"
+        instrucao_portador: |
+          Mostre o 7 grande. Passe o dedo nas linhas retas.
+          "Sinta como é reto! Zuuup (teto), Zuuuum (descida)!"
+      - titulo: A Dança do Oito
+        local: ninho_mirante
+        fala_guardiao:
+          tom: fluido
+          script: |
+            "Agora veja o Oito. Ele nunca para!"
+            [Íris faz o movimento do infinito]
+            "Curva pra cá, curva pra lá. O abraço sem fim."
+        instrucao_portador: |
+          Mostre o 8 grande. Siga a curva infinita.
+          "É uma pista de corrida! Não tem pontas!"
+      - titulo: Sentindo a Forma
+        local: ninho_mirante
+        fala_guardiao:
+          tom: convidativo
+          script: |
+            "Feche os olhos. Seus dedos sabem o caminho?"
+            "O Sete espeta. O Oito abraça."
+        instrucao_portador: |
+          Peça para a criança traçar na areia/tinta.
+          "Faça um 7 reto. Agora um 8 curvo."
+
+    concreto:
+      desc: Exploração tátil do 7 (retas) e 8 (curvas)
+      card_objeto: 'CARD: AREIA DO TEMPO'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: Mostre o 7. Trace o dedo. "Reto, desce."
+          fala_sugerida: "O 7 é feito de linhas retas!"
+        - passo: 2
+          acao: Mostre o 8. Trace o dedo acompanhando a curva.
+          fala_sugerida: "O 8 é feito de curvas. Ele gira e gira!"
+        - passo: 3
+          acao: Use areia/farinha. Trace o 7.
+          fala_sugerida: "Faça o 7 na areia. Sente como é direto?"
+        - passo: 4
+          acao: Use areia/farinha. Trace o 8 (boneco de neve ou infinito).
+          fala_sugerida: "Agora o 8. Curva, volta, fecha!"
+      norte_absoluto: "Contraste tátil: RETA vs CURVA."
+      adaptacao_bernardo: |
+        💡 O 8 é motoramente difícil.
+        Pode fazer "duas bolinhas" (boneco de neve) para simplificar.
+
+    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Experiência tátil.', excecao: 'Se Quiser Voar'}
+
+    abstrato:
+      desc: Distinção geométrica dos glifos 7 e 8
+      nota: A forma comunica a natureza do número.
+
+    extensao:
+      titulo: Se Quiser Voar
+      desc: Explorando retas e curvas
+      sugestoes:
+        - titulo: Caça às Formas
+          acao: Ache coisas retas (livro) e curvas (bola).
+        - titulo: Oito Deitado
+          acao: O 8 deitado vira infinito. O 7 deitado vira L.
+      adaptacao_bernardo: |
+        💡 Foque apenas na sensação tátil.
+
+  narracao:
+    instrucao_portador: |
+      Limpe os dedos da areia/tinta.
+      "Íris gostou de ver você sentindo os números."
+    pergunta_principal: Qual é reto? Qual é curvo?
+    perguntas_coracao:
+      - O 7 parece o quê? (Bandeira, machado?)
+      - O 8 parece o quê? (Pista, boneco?)
+    nota_cm: A narração conecta a geometria à imaginação.
+
+  ritual_fechamento:
+    fala_guardiao:
+      tom: sabio
+      script: |
+        "O mundo é feito de retas e curvas."
+        "O Sete aponta. O Oito envolve."
+    fio_ouro: "Você conheceu o 7 e o 8. Amanhã, Íris faz uma grande festa de números!"
+    transicao_volta:
+      instrucao: Trace um 8 no ar bem grande.
+      fala: Curva, volta, fecha. Oito. Voltamos.
+
+  para_familia:
+    titulo: A Geometria dos Números
+    porque_importa: |
+      Perceber os atributos geométricos (reto vs curvo) ajuda na escrita.
+      Distingue números que crianças confundem.
+    metodo_cpa:
+      concreto: Tátil (areia, textura).
+      pictorico: Vetado.
+      abstrato: Forma do glifo.
+      nota: "Montessori: Letras/Números de lixa."
+    principio_cm:
+      numero: 1
+      citacao: "Children are born persons."
+      aplicacao: A criança aprecia a beleza da forma, não só a utilidade.
+    tgtb_conexao: |
+      Corresponde à lição de Prática de Números.
+      Íris traz a estética e o detalhe.
+    espiral:
+      conceito: Geometria e Escrita
+      volta_atual: 'Sementes — formas básicas (reta/curva)'
+      proxima_volta: 'Raízes — geometria plana, polígonos'
+    reflexao_espiritual: |
+      Deus criou linhas e curvas.
+      A justiça é reta. A graça nos envolve.
+    nota_graca: |
+      Se o 8 sair torto, Íris diz:
+      "É um 8 dançarino! Ele está feliz!"
+
+  diario_portador:
+    nota: Observe a coordenação motora fina no 8.
+    perguntas:
+      - O traçado do 8 flui ou trava?
+      - A distinção reto/curvo foi compreendida?
+
+  auditoria_qa:
+    cm: [true, true, true, true, true]
+    cpa: [true, true, true]
+    narrativa: [true, true, true, true]
+    template: [true, true, true]
+    triade: [true, true, true]
+    inclusao: [true, true]

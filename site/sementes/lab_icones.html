@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório de Ícones (Design System)</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        :root {
+            /* Paleta Beatrix Potter (Referência: .bmad/experts/design/design.yaml) */
+            --potter-forest: #2A5A3F;
+            /* Bernardo, Natureza, Vida */
+            --potter-gold: #BFA265;
+            /* Melquior, Nobreza, Luz */
+            --potter-terra: #A0522D;
+            /* Caminho, Estrutura, CPA */
+            --potter-carmim: #960018;
+            /* Afeto, Aviso (Suave) */
+            --potter-indigo: #4B0082;
+            /* Celeste, Mistério, Magia */
+            --potter-cream: #FDF5E6;
+            /* Fundo Quente */
+            --potter-sepia: #5D4037;
+            /* Texto Principal */
+
+            --font-heading: 'Lora', serif;
+            --font-body: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--potter-cream);
+            color: var(--potter-sepia);
+            font-family: var(--font-body);
+            padding: 2rem;
+            margin: 0;
+        }
+
+        .lab-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid var(--potter-gold);
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            font-family: var(--font-heading);
+            color: var(--potter-forest);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p.subtitle {
+            font-family: var(--font-heading);
+            font-style: italic;
+            color: var(--potter-terra);
+            font-size: 1.2rem;
+        }
+
+        .category-block {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(42, 90, 63, 0.08);
+            /* Sombra Verde Suave */
+            border: 1px solid rgba(191, 162, 101, 0.3);
+            /* Borda Gold Sutil */
+        }
+
+        .category-title {
+            font-family: var(--font-heading);
+            color: var(--potter-forest);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .icon-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem;
+            border: 2px dashed #E5E7EB;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: #FAFAFA;
+        }
+
+        .icon-card:hover {
+            border-color: var(--potter-gold);
+            background: #FFFCF5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .icon-display {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .icon-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 700;
+            color: #888;
+            text-align: center;
+        }
+
+        .icon-id {
+            font-size: 0.7rem;
+            font-family: monospace;
+            color: #AAA;
+            margin-top: 0.5rem;
+        }
+
+        .icon-card:hover .icon-label {
+            color: var(--potter-sepia);
+        }
+
+        /* ESTILOS DUOTONE PREMIUM */
+        /* Definindo as variáveis CSS para o Phosphor Duotone */
+
+        /* Melquior / Ouro */
+        .duotone-gold {
+            color: var(--potter-gold);
+            /* Primary Layer */
+            --ph-duotone-accent-color: var(--potter-terra);
+            /* Secondary Layer */
+        }
+
+        /* Bernardo / Floresta */
+        .duotone-forest {
+            color: var(--potter-forest);
+            --ph-duotone-accent-color: #8FBC8F;
+            /* Dark Sea Green */
+        }
+
+        /* Magia / Índigo */
+        .duotone-magic {
+            color: var(--potter-indigo);
+            --ph-duotone-accent-color: #9370DB;
+            /* Medium Purple */
+        }
+
+        /* Ação / Terra - Neutro Quente */
+        .duotone-terra {
+            color: var(--potter-terra);
+            --ph-duotone-accent-color: var(--potter-gold);
+        }
+
+        /* Afeto / Carmim */
+        .duotone-heart {
+            color: var(--potter-carmim);
+            --ph-duotone-accent-color: #FFB6C1;
+        }
+
+        /* Instrução / Neutro */
+        .duotone-neutral {
+            color: #6B7280;
+            --ph-duotone-accent-color: #D1D5DB;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="lab-header">
+        <h1>🎨 Laboratório Visual (Fase 8)</h1>
+        <p class="subtitle">"Beleza que cura, Clareza que guia"</p>
+        <p>Estilo Aplicado: <strong>Phosphor Duotone</strong> + <strong>Paleta Beatrix Potter</strong></p>
+    </div>
+
+    <!-- 1. GUARDIÕES E IDENTIDADE -->
+    <div class="category-block">
+        <h2 class="category-title"><i class="ph-duotone ph-crown duotone-gold"></i> 1. Guardiões (Identidade)</h2>
+        <div class="options-grid">
+
+            <!-- Melquior -->
+            <div class="icon-card">
+                <i class="ph-duotone ph-crown icon-display duotone-gold"></i>
+                <span class="icon-label">Melquior A (Coroa)</span>
+                <span class="icon-id">ph-crown</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-lion icon-display duotone-gold"></i>
+                <span class="icon-label">Melquior B (Leão)</span>
+                <span class="icon-id">ph-lion</span>
+            </div>
+
+            <!-- Bernardo -->
+            <div class="icon-card">
+                <i class="ph-duotone ph-paw-print icon-display duotone-forest"></i>
+                <span class="icon-label">Bernardo A (Pata)</span>
+                <span class="icon-id">ph-paw-print</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-tree icon-display duotone-forest"></i>
+                <span class="icon-label">Bernardo B (Árvore)</span>
+                <span class="icon-id">ph-tree</span>
+            </div>
+
+            <!-- Celeste -->
+            <div class="icon-card">
+                <i class="ph-duotone ph-star-four icon-display duotone-magic"></i>
+                <span class="icon-label">Celeste A (Estrela)</span>
+                <span class="icon-id">ph-star-four</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-magnifying-glass icon-display duotone-magic"></i>
+                <span class="icon-label">Celeste B (Lupa)</span>
+                <span class="icon-id">ph-magnifying-glass</span>
+            </div>
+
+            <!-- Noé -->
+            <div class="icon-card">
+                <i class="ph-duotone ph-eyeglasses icon-display duotone-terra"></i>
+                <span class="icon-label">Noé A (Óculos)</span>
+                <span class="icon-id">ph-eyeglasses</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-scroll icon-display duotone-terra"></i>
+                <span class="icon-label">Noé B (Pergaminho)</span>
+                <span class="icon-id">ph-scroll</span>
+            </div>
+
+            <!-- Íris -->
+            <div class="icon-card">
+                <i class="ph-duotone ph-feather icon-display duotone-heart"></i>
+                <span class="icon-label">Íris A (Pena)</span>
+                <span class="icon-id">ph-feather</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-drop icon-display duotone-heart"></i>
+                <span class="icon-label">Íris B (Detalhe/Gota)</span>
+                <span class="icon-id">ph-drop</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. RITUAIS & MAGIA (Atmosfera) -->
+    <div class="category-block">
+        <h2 class="category-title"><i class="ph-duotone ph-sparkle duotone-magic"></i> 2. Rituais (Atmosfera)</h2>
+        <div class="options-grid">
+            <div class="icon-card">
+                <i class="ph-duotone ph-film-strip icon-display duotone-magic"></i>
+                <span class="icon-label">Abertura (Cena)</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-flame icon-display duotone-gold"></i>
+                <span class="icon-label">Fogo/Luz</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-flag icon-display duotone-forest"></i>
+                <span class="icon-label">Fechamento (Bandeira)</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-door-open icon-display duotone-terra"></i>
+                <span class="icon-label">Portal</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. TONS DE VOZ (Scripts) - Substituindo Emojis -->
+    <div class="category-block">
+        <h2 class="category-title"><i class="ph-duotone ph-chat-circle-dots duotone-terra"></i> 3. Tons de Voz (Script)
+        </h2>
+        <div class="options-grid">
+            <!-- Portador (Pai) -->
+            <div class="icon-card">
+                <i class="ph-duotone ph-torch icon-display duotone-gold"></i>
+                <span class="icon-label">Portador (Tocha)</span>
+                <span class="icon-id">Substitui 🔥</span>
+            </div>
+
+            <!-- Tons Específicos -->
+            <div class="icon-card">
+                <i class="ph-duotone ph-detective icon-display duotone-magic"></i>
+                <span class="icon-label">Mistério (Detetive)</span>
+                <span class="icon-id">Substitui 🕵️</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-confetti icon-display duotone-gold"></i>
+                <span class="icon-label">Animado (Confete)</span>
+                <span class="icon-id">Substitui ✨</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-butterfly icon-display duotone-heart"></i>
+                <span class="icon-label">Delicado (Borboleta)</span>
+                <span class="icon-id">Substitui 🦋</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-hands-praying icon-display duotone-terra"></i>
+                <span class="icon-label">Reverente (Mãos)</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-shield-check icon-display duotone-forest"></i>
+                <span class="icon-label">Firme (Escudo)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. AÇÕES PRÁTICAS (Instruções) -->
+    <div class="category-block">
+        <h2 class="category-title"><i class="ph-duotone ph-hand-pointing duotone-neutral"></i> 4. Ações (Instruções)
+        </h2>
+        <div class="options-grid">
+            <div class="icon-card">
+                <i class="ph-duotone ph-hand-pointing icon-display duotone-neutral"></i>
+                <span class="icon-label">Apontar / Fazer</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-eye icon-display duotone-neutral"></i>
+                <span class="icon-label">Observar (Olho)</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-ear icon-display duotone-neutral"></i>
+                <span class="icon-label">Ouvir (Orelha)</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-chat-teardrop-text icon-display duotone-neutral"></i>
+                <span class="icon-label">Falar / Narrar</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-clipboard-text icon-display duotone-neutral"></i>
+                <span class="icon-label">Passo a Passo</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. NAVEGAÇÃO & UI -->
+    <div class="category-block">
+        <h2 class="category-title"><i class="ph-duotone ph-compass duotone-forest"></i> 5. Navegação</h2>
+        <div class="options-grid">
+            <div class="icon-card">
+                <i class="ph-duotone ph-house icon-display duotone-forest"></i>
+                <span class="icon-label">Home / Dashboard</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-arrow-right icon-display duotone-gold"></i>
+                <span class="icon-label">Próxima (Seta)</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-map-trifold icon-display duotone-terra"></i>
+                <span class="icon-label">Mapa do Reino</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-link icon-display duotone-indigo"></i>
+                <span class="icon-label">Conexão (Link)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. PEDAGOGIA (CM & CPA) -->
+    <div class="category-block">
+        <h2 class="category-title"><i class="ph-duotone ph-plant duotone-forest"></i> 6. Conceitos (CM & CPA)</h2>
+        <div class="options-grid">
+            <!-- CPA -->
+            <div class="icon-card">
+                <i class="ph-duotone ph-cube icon-display duotone-terra"></i>
+                <span class="icon-label">Concreto (Cubo)</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-image icon-display duotone-terra"></i>
+                <span class="icon-label">Pictórico (Imagem)</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-math-operations icon-display duotone-terra"></i>
+                <span class="icon-label">Abstrato (Símbolo)</span>
+            </div>
+
+            <!-- CM -->
+            <div class="icon-card">
+                <i class="ph-duotone ph-plant icon-display duotone-forest"></i>
+                <span class="icon-label">Ideia Viva (Planta)</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-brain icon-display duotone-magic"></i>
+                <span class="icon-label">Mente (Brain)</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-users-three icon-display duotone-gold"></i>
+                <span class="icon-label">Família (Para os Pais)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. MATERIAIS & AMBIENTE (Física) -->
+    <div class="category-block">
+        <h2 class="category-title"><i class="ph-duotone ph-treasure-chest duotone-terra"></i> 7. Materiais & Ambiente
+        </h2>
+        <div class="options-grid">
+            <div class="icon-card">
+                <i class="ph-duotone ph-lamp icon-display duotone-gold"></i>
+                <span class="icon-label">Luz / Abajur</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-lightbulb icon-display duotone-gold"></i>
+                <span class="icon-label">Dica (Lâmpada)</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-treasure-chest icon-display duotone-terra"></i>
+                <span class="icon-label">Baú / Tesouro</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-rug icon-display duotone-forest"></i>
+                <span class="icon-label">Tapete / Chão</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-music-notes icon-display duotone-magic"></i>
+                <span class="icon-label">Música / Som</span>
+            </div>
+            <div class="icon-card">
+                <i class="ph-duotone ph-sun icon-display duotone-gold"></i>
+                <span class="icon-label">Clima (Sol)</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

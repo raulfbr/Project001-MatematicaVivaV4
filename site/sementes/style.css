@@ -1105,6 +1105,10 @@ li {
     transform: rotate(-1deg);
 }
 
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
 /* Interatividade */
 .hover-float:hover {
     transform: translateY(-4px) scale(1.05) rotate(0deg);
@@ -1143,4 +1147,56 @@ li {
     }
 
     /* Hide center logo on tight mobile, or adjust if prefer */
+}
+
+/* === PHASE 8: ICON SYSTEM (Phosphor Duotone + Beatrix Potter) === */
+:root {
+    --potter-forest: #2A5A3F;
+    --potter-gold: #BFA265;
+    --potter-terra: #A0522D;
+    --potter-carmim: #960018;
+    --potter-indigo: #4B0082;
+    --potter-stone: #78716C;
+}
+
+/* Base Icon Style */
+i.ph-duotone {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Duotone Classes */
+.duotone-gold {
+    color: var(--potter-gold);
+    --ph-duotone-accent-color: var(--potter-terra);
+}
+
+.duotone-forest {
+    color: var(--potter-forest);
+    --ph-duotone-accent-color: #8FBC8F;
+}
+
+.duotone-magic {
+    color: var(--potter-indigo);
+    --ph-duotone-accent-color: #9370DB;
+}
+
+.duotone-terra {
+    color: var(--potter-terra);
+    --ph-duotone-accent-color: var(--potter-gold);
+}
+
+.duotone-heart {
+    color: var(--potter-carmim);
+    --ph-duotone-accent-color: #FFB6C1;
+}
+
+.duotone-neutral {
+    color: var(--potter-stone);
+    --ph-duotone-accent-color: #E7E5E4;
+}
+
+.duotone-indigo {
+    color: var(--potter-indigo);
+    --ph-duotone-accent-color: #E0E7FF;
 }

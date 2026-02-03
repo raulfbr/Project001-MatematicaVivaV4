@@ -76,16 +76,41 @@ Os Guardiões não podem "cair" para a esquerda. A simetria é fundamental.
 
 ---
 
-## 4. O Ritual de Entrada (Estrutura Sagrada)
-Não misture o "Técnico" com o "Mágico".
+## 4. O Ritual de Entrada (Estrutura Unificada)
+Abertura com **Voz Única**. O Portador não "entra e sai" de cena.
 
-1.  🟡 **Bastidores (Instruction Box):** Instruções de preparo (Luz, Som, Postura). O pai lê para si mesmo.
-2.  🔥 **Palco (Portador Block):** A "Entrada em Cena". As 3 frases rituais.
-3.  🌿 **Narrativa (Texto Corrido):** A condução da imaginação ("Feche os olhos..."). Sem quebras bruscas.
+1.  🟡 **Preparo (Bastidores):** Use a **Instruction Box** amarela.
+    *   **Contém:** Ações físicas prévias (ex: "Prepare a Luz Amarela", "Respire fundo").
+    *   **Quem lê:** O pai, em silêncio, *antes* de iniciar a cena.
+
+2.  🔥 **O Palco (Monobloco do Portador):** Use UM único `.portador-block`.
+    *   **Contém TUDO:** As falas iniciais ("Luz de fora...") E a condução da imaginação ("Feche os olhos...").
+    *   **Voz:** O pai assume o manto e narra tudo como Personagem.
+    *   **Imersão:** Se precisar descrever o cenário, o Portador descreve. Não use bloco de texto solto fora do avatar.
+
+> **Regra de Ouro:** "Uma vez acesa a luz, o Portador não sai de cena até o fim do Ritual."
 
 ---
 
+## 4.1 Regra de Separação: Ritual = Local / Jornada = Guardião
+
+O **Ritual de Entrada** transporta a criança para o LOCAL da lição (ex: Jardim Central).
+Nenhum Guardião deve ser *mencionado* ou *mostrado* até a seção "A Jornada".
+
+*   **Ritual de Entrada:**
+    *   Foco: Imersão sensorial pura no LUGAR.
+    *   Fluxo: "Feche os olhos..." -> [CARD DO LOCAL] -> Descrição sensorial.
+    *   Encerramento: "Alguém especial espera por você. Pronto?"
+
+*   **A Jornada:**
+    *   Foco: Encontro com o GUARDIÃO do dia.
+    *   Fluxo: [CARD DO GUARDIÃO] -> "— Bem-vindo, Viajante."
+    *   Impacto: O reveal visual do Guardião acontece AQUI.
+
+> **Por quê?** Mencionar o Leão antes de mostrar seu card quebra a surpresa. O "reveal" precisa ser visual e imediato.
+
 ---
+
 
 ## 5. Roteiro & Direção de Palco 🎭
 Regras para formatar falas e instruções de atuação (Acting Cues). A diferença entre "O que falar" e "Como agir".
@@ -155,3 +180,92 @@ Este padrão de design respeita a "Distinção de Papéis" definida em `.bmad/or
 2.  **Papel Narrativo (Reino Contado):** Representado pelo **Portador Block (Carmim)** e **Texto Narrativo**.
     *   *Regra Orchestrator:* "Texto fluido e Portador."
 3.  **Quarta Parede:** O uso de colchetes `[ ]` dentro do roteiro protege a imersão da criança, separando a "voz do personagem" da "voz do diretor".
+
+---
+
+## 10. Estilo de Texto (Writing Style) ✍️
+Regras para garantir clareza, fluidez e imersão no texto das lições.
+
+### 10.1 Evitar "Quote Clutter" (Excesso de Aspas)
+*   **Problema:** Cada frase entre aspas (`"..."`) cria poluição visual.
+*   **Regra:** Use aspas APENAS em diálogos diretos do Guardião (personagem).
+*   **Narrativa do Portador:** Sem aspas (é instrução/condução, não fala literal de personagem).
+
+**Exemplo Errado:**
+```html
+<p>"Luz de fora acalma."</p>
+<p>"Sol de dentro acende."</p>
+```
+
+**Exemplo Correto:**
+```html
+<p>Luz de fora acalma.</p>
+<p>Sol de dentro acende.</p>
+```
+
+### 10.2 Capitalização de Nomes Próprios
+*   **Guardiões:** Sempre iniciados com maiúscula em TODOS os contextos.
+    *   ❌ `melquior` → ✅ `Melquior`
+    *   ❌ `noé` → ✅ `Noé`
+    *   ❌ `celeste` → ✅ `Celeste`
+*   **Headers:** `<span class="script-name">Melquior</span>` (Capitalizado).
+*   **Auditoria:** Buscar por `script-name` e verificar capitalização.
+
+### 10.3 Evitar Repetição de Frases-Chave
+*   **Regra:** Cada frase marcante deve aparecer **UMA ÚNICA VEZ** na lição.
+*   **Exemplos de repetição comum:**
+    *   "lugar muito especial" (aparece 2x)
+    *   "alguém especial espera" (aparece 2x)
+*   **Fix:** Reescrever ocorrências duplicadas com variações criativas.
+
+### 10.4 Tom do Primeiro Ritual (Lição 000)
+A Lição 000 é a **PORTA DE ENTRADA**. O tom deve ser:
+*   **Acolhedor:** Como um convite gentil, não uma sequência de comandos.
+*   **Fluido:** Menos frases curtas e staccato, mais narrativa contínua.
+*   **Misterioso:** Criar suspense sobre os Guardiões (sem revelar antes da hora).
+*   **Sem Infantilização:** Proibido "Shhh...", "Psiu..." — usar tom de mistério/nobreza.
+
+> "O medo acaba em você. O encantamento começa neles." — North Star
+
+---
+
+## 11. Labels Obrigatórios (Visual Cues) 🏷️
+Regras para uso consistente de labels nas lições.
+
+### 11.1 Label "Mostrar Card"
+*   **Uso:** SEMPRE antes de exibir um card visual (Guardião ou Local).
+*   **Classe:** `<p class="local-label">Mostrar Card</p>`
+*   **Posição:** Imediatamente antes da tag `<img>`.
+
+**Exemplo:**
+```html
+<div class="card-container">
+    <p class="local-label">Mostrar Card</p>
+    <img src="../assets/cards/locais/local-jardim-central.png" ...>
+</div>
+```
+
+### 11.2 Centralização de Títulos de Local
+*   Títulos como "✨ O Jardim Central ✨" devem estar:
+    *   Centralizados (`text-align: center`)
+    *   Com tamanho destacado (`font-size: 1.1rem`)
+    *   Cor primária (`color: var(--primary)`)
+    *   Peso bold (`font-weight: 700`)
+
+---
+
+## 12. Checklist de Auditoria para IA 🤖
+Use este checklist ao revisar QUALQUER lição do ciclo Sementes.
+
+| # | Regra | Verificação |
+|---|-------|-------------|
+| 1 | **Portador Icon** | Usa `ph-fire duotone-carmim`? |
+| 2 | **Navigation Icon** | Usa `ph-plant duotone-forest`? |
+| 3 | **Quote Clutter** | Narrativa sem excesso de aspas? |
+| 4 | **Capitalização** | Nomes dos Guardiões capitalizados? |
+| 5 | **Repetição** | Nenhuma frase-chave repetida? |
+| 6 | **Local Label** | "Mostrar Card" antes de todos os cards? |
+| 7 | **Ritual Structure** | Ritual = Local only, Guardião na Jornada? |
+| 8 | **Instruction Box** | Auto-suficiente para pais novatos? |
+| 9 | **Acting Cues** | Instruções de ação em `[ ]`? |
+| 10 | **Card Centerização** | `.card-container` centralizado? |

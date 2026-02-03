@@ -215,3 +215,129 @@ Esta estratégia minimiza regressões: primeiro limpamos, depois preparamos o es
 3.  **Guardião Tom (CS Lewis/Tolkien):**
     *   Remoção de "Shhh" (infantilização) -> Adoção de tom misterioso/respeitoso. **(CONFORME)**
 
+
+---
+
+## 13. 👁️ Sincronia Áudio-Visual (O Momento do Reveal)
+*Refinamento Sutil (03/02):* Para máxima imersão, o "Texto Sensorial" deve ser lido *enquanto* a criança olha para o Card do Local.
+
+**A Coreografia:**
+1.  **Ritual (Olhos Fechados):** Portador conduz a entrada ("Luz de fora... Sol de dentro...").
+2.  **O Reveal (Ação):** "Quando você abrir os olhos..." -> **Exibir Card do Local**.
+3.  **A Pintura (Voz sobre Imagem):** Enquanto a criança vê o desenho, o Portador (no mesmo bloco) descreve: *"O ar cheira a terra... Veja o leão..."*
+
+**Mudança Tática:**
+*   Mover o elemento visual (Card) para aparecer *antes* ou *junto* com a descrição da imersão, e não depois.
+*   O bloco do Portador deve abraçar essa experiência: Fala -> (Cue: Mostre o Card) -> Descrição.
+
+
+---
+
+## 14. 🧠 Discussão de Fluxo: A Lógica Cinematográfica (Decision Framework)
+*Debate (03/02 - 15:08):* Onde encaixar o diálogo *"Hoje vamos visitar..."*? Antes ou depois do Reveal?
+
+**Análise de Cenários:**
+
+*   **Cenário A (Teaser):** Diálogo antes do Visual.
+    *   *Fluxo:* "Luz..." -> "Hoje vamos visitar um lugar..." -> "Abra os olhos" -> [CARD].
+    *   *Risco:* A criança ouve sobre um "lugar especial" mas fica no escuro (abstrato) por mais tempo.
+
+*   **Cenário B (Cinema Logic - RECOMENDADO):** Visual Imediato (Reveal).
+    *   *Passo 1 (Mistério):* Olhos fechados. "Imagine..."
+    *   *Passo 2 (Impacto):* "Abra os olhos!" -> **BUM! [CARD DO JARDIM]**.
+    *   *Passo 3 (Sincronia):* Enquanto a criança arregala os olhos para o desenho, o pai narra: *"Veja, o ar cheira a terra... O leão está sorrindo..."* (Legenda Viva).
+    *   *Passo 4 (Convite/Ponte):* Tendo estabelecido o cenário e o deslumbre, o Portador convida: *"Hoje vamos visitar este lugar. Você está pronto?"* -> Leva ao encontro com Melquior.
+
+**Veredito:** O **Cenário B** é mais robusto.
+*   "Abrir os olhos" exige uma recompensa visual imediata.
+*   A descrição sensorial ("cheiro", "sol") ganha força se ancorada na imagem.
+*   O diálogo final serve de "gancho" perfeito para introduzir o Guardião (próximo card).
+
+**Plano de Ação Refinado:**
+1.  **Subir o Card:** Inserir logo após "Quando você abrir os olhos...".
+2.  **Imersão:** O texto descritivo fica logo abaixo do card (ou sobre ele).
+3.  **Diálogo Ponte:** A fala "Hoje vamos visitar..." fecha o Monobloco do Ritual.
+
+
+---
+
+## 15. 🏛️ Separação Definitiva: Ritual (Local) vs. Jornada (Guardião)
+*Refinamento Major (03/02 - 15:20):* O usuário identificou que mencionar o Leão (Guardião) no Ritual quebra a surpresa. O Guardião só deve aparecer em "A Jornada".
+
+### O Problema Atual
+No Ritual, o Portador diz: *"...está um grande Leão de juba dourada."*
+Mas o **Card do Melquior** só aparece lá embaixo, na seção "A Jornada".
+*Resultado:* A criança ouve sobre o Leão sem vê-lo. O "reveal" perde força.
+
+### A Nova Filosofia (Regra de Ouro)
+> **Ritual de Entrada = Transporte para o LOCAL.**
+> **A Jornada = Encontro com o GUARDIÃO do dia.**
+
+O Ritual é a "porta do guarda-roupa" — você atravessa para o Jardim Central. A Jornada é o "encontro com Aslan" — o Leão aparece e fala.
+
+### Estrutura Antes (Problemática)
+
+| Seção | Conteúdo | Problema |
+|-------|----------|----------|
+| Ritual | Feche os olhos... [CARD JARDIM]... "O Leão sorri." | ❌ Guardião mencionado sem visual |
+| Jornada | [CARD MELQUIOR]... "Bem-vindo, Viajante." | ⚠️ Repetição do Leão |
+
+### Estrutura Depois (Corrigida)
+
+| Seção | Conteúdo | Benefício |
+|-------|----------|-----------|
+| **Ritual** | Feche os olhos... [CARD JARDIM]... "O ar cheira a terra..." ... "Alguém especial espera por você. Pronto?" | ✅ Imersão pura no LOCAL. Suspense sobre quem espera. |
+| **Jornada** | [CARD MELQUIOR]... "— Bem-vindo, Viajante." | ✅ O Guardião é REVELADO aqui. Impacto visual. |
+
+### Mockup HTML (Ritual - SEM LEÃO)
+
+```html
+<!-- RITUAL DE ENTRADA -->
+<div class="portador-block">
+    "Luz de fora acalma... Sol de dentro acende..."
+    [Feche os olhos...]
+    "Quando você abrir os olhos, estaremos em um lugar especial..."
+    
+    <!-- REVEAL DO LOCAL -->
+    <img src="local-jardim-central.png"> ✨ O Jardim Central ✨
+    
+    <!-- IMERSÃO SENSORIAL (SEM MENCIONAR O LEÃO) -->
+    "O ar cheira a terra molhada... O sol dourado aquece o rosto."
+    "Pássaros cantam ao longe... Flores balançam com a brisa."
+    
+    [Olhe nos olhos da criança]
+    "Alguém muito especial espera por você aqui. Pronto para conhecê-lo?"
+</div>
+
+<!-- A JORNADA -->
+<h2>A Jornada</h2>
+<div class="scene-card">
+    O Convite de Melquior
+    <img src="melquior-leao.png"> <!-- GUARDIÃO REVELADO AQUI -->
+    
+    "— Bem-vindo, pequeno Viajante."
+    "— Eu sabia que você viria."
+</div>
+```
+
+### Refinamento da Instruction Box (para Pais Novatos)
+A Instruction Box deve ser **auto-suficiente** (o pai pode não ter lido o Manual):
+
+```html
+<div class="instruction-box">
+    <strong>Preparação:</strong>
+    <ul>
+        <li>Tenha a <strong>Luz Amarela</strong> (ou abajur/vela LED) à mão.</li>
+        <li>Sentem-se confortavelmente no chão ou no "Tapete do Reino".</li>
+        <li>Ao acender a luz, inicie o Ritual lendo as falas abaixo.</li>
+    </ul>
+</div>
+```
+
+### Checklist de Execução
+1.  [ ] Atualizar Instruction Box com checklist claro.
+2.  [ ] Remover menção ao Leão do Ritual (substituir por "alguém especial").
+3.  [ ] Garantir que o Card do Melquior apareça APENAS em "A Jornada".
+4.  [ ] Atualizar `padrao_visual_sementes.md` com a regra "Ritual = Local / Jornada = Guardião".
+
+

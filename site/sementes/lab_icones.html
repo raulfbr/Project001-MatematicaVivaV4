@@ -692,38 +692,60 @@
 
         // 1. PROTOCOLO AI (Fonte da Verdade)
         const AI_PROTOCOL = {
-            "version": "2.3",
-            "version": "2.5",
+            "version": "3.0 (Impeccable)",
             "replacements": [
-                { "category": "Headers", "search": ["🗺️", "A Jornada"], "replace": "<i class='ph-duotone ph-map-trifold duotone-gold'></i>", "class": "ph-map-trifold" },
-                { "category": "Headers", "search": ["🧱", "O Concreto"], "replace": "<i class='ph-duotone ph-wall duotone-terra'></i>", "class": "ph-wall" },
-                { "category": "Instructions", "search": ["💡", "Dica"], "replace": "<i class='ph-duotone ph-lightbulb duotone-gold'></i>", "class": "ph-lightbulb" },
-                { "category": "Instructions", "search": ["👉", "Instrução"], "replace": "<i class='ph-duotone ph-hand-pointing duotone-neutral rotate-90'></i>", "class": "ph-hand-pointing" },
-                { "category": "Instructions", "search": ["🙏", "🕊️", "Nota de Graça"], "replace": "<i class='ph-duotone ph-heart duotone-heart'></i>", "class": "ph-heart" },
+                // 1. HEADER & NAV
+                { "category": "Headers", "search": ["🗺️", "A Jornada", "Map Trifold"], "replace": "<i class='ph-duotone ph-map-trifold duotone-gold'></i>", "class": "ph-map-trifold" },
+                { "category": "Headers", "search": ["🧱", "O Concreto", "Wall"], "replace": "<i class='ph-duotone ph-wall duotone-terra'></i>", "class": "ph-wall" },
+                { "category": "Nav", "search": ["🏡", "Home", "House"], "replace": "<i class='ph-duotone ph-house duotone-forest'></i>", "class": "ph-house" },
+                { "category": "Nav", "search": ["📍", "Local:", "Map Pin"], "replace": "<i class='ph-duotone ph-map-pin duotone-terra'></i>", "class": "ph-map-pin" },
+                { "category": "Nav", "search": ["⏱️", "Tempo", "Timer"], "replace": "<i class='ph-duotone ph-timer duotone-carmim'></i>", "class": "ph-timer" },
+
+                // 2. PERSONAS (AVATARES)
                 {
                     "category": "Personas",
-                    "search": ["🔥", "Portador", "ph-lantern", "ph-torch"],
-                    "replace": "<i class='ph-duotone ph-fire duotone-carmim'></i>",
-                    "class": "ph-fire"
+                    "search": ["🔥", "Portador da Chama", "Pai", "Mãe", "ph-flashlight", "ph-torch", "ph-lantern"],
+                    "replace": "<div class='script-avatar-icon'><i class='ph-duotone ph-fire duotone-carmim'></i></div>",
+                    "class": "ph-fire",
+                    "note": "Use SEMPRE dentro de .script-avatar-icon para Avatares."
                 },
-                { "category": "Rituais", "search": ["Ritual de Abertura", "ph-flame"], "replace": "<i class='ph-duotone ph-lamp duotone-gold'></i>", "class": "ph-lamp", "text_replace": "Ritual de Entrada" },
-                { "category": "Pedagogia", "search": ["ph-columns", "Charlotte Mason", "🏛️"], "replace": "<i class='ph-duotone ph-feather duotone-forest'></i>", "class": "ph-feather" },
-                { "category": "Pedagogia", "search": ["📚", "Por que isso importa"], "replace": "<i class='ph-duotone ph-books duotone-forest'></i>", "class": "ph-books" },
-                { "category": "Pedagogia", "search": ["🧠", "Método CPA"], "replace": "<i class='ph-duotone ph-brain duotone-terra'></i>", "class": "ph-brain" },
-                { "category": "Pedagogia", "search": ["📘", "Conexão TGTB"], "replace": "<i class='ph-duotone ph-link duotone-indigo'></i>", "class": "ph-link" },
-                { "category": "Pedagogia", "search": ["🌀", "Espiral"], "replace": "<i class='ph-duotone ph-spiral duotone-forest'></i>", "class": "ph-spiral" },
-                { "category": "Narrativa", "search": ["✨", "Reflexão Espiritual"], "replace": "<i class='ph-duotone ph-sparkle duotone-gold'></i>", "class": "ph-sparkle" },
-                { "category": "Narrativa", "search": ["📍", "Local:"], "replace": "<i class='ph-duotone ph-map-pin duotone-terra'></i>", "class": "ph-map-pin" },
-                { "category": "Narrativa", "search": ["➡️", "Próxima Aventura"], "replace": "<i class='ph-duotone ph-arrow-right duotone-gold'></i>", "class": "ph-arrow-right" },
-                { "category": "Narrativa", "search": ["⬅️", "Anterior", "Última Aventura"], "replace": "<i class='ph-duotone ph-arrow-left duotone-gold'></i>", "class": "ph-arrow-left" },
-                { "category": "Admin", "search": ["⏱️", "Tempo"], "replace": "<i class='ph-duotone ph-timer duotone-carmim'></i>", "class": "ph-timer" },
-                { "category": "Admin", "search": ["🏡", "Home"], "replace": "<i class='ph-duotone ph-house duotone-forest'></i>", "class": "ph-house" },
                 {
-                    "category": "Preparacao",
-                    "search": ["Preparação", "ph-list-checks", "ph-users-three", "ph-armchair"],
+                    "category": "Personas",
+                    "search": ["🦁", "Melquior", "Rei", "Crown"],
+                    "replace": "<i class='ph-duotone ph-crown duotone-gold'></i>",
+                    "class": "ph-crown"
+                },
+
+                // 3. RITUAIS & AMBIENTE (BASTIDORES)
+                {
+                    "category": "Rituais",
+                    "search": ["Ritual de Abertura", "Ambiente", "Luz de Fora", "ph-flame"],
+                    "replace": "<i class='ph-duotone ph-lamp duotone-gold'></i>",
+                    "class": "ph-lamp",
+                    "note": "Para Instruction Box ou Ambiente (Não Avatar)."
+                },
+                {
+                    "category": "Preparo",
+                    "search": ["Preparação", "Checklist", "ph-list-checks", "ph-armchair"],
                     "replace": "<i class='ph-duotone ph-clipboard-text duotone-terra'></i>",
                     "class": "ph-clipboard-text"
-                }
+                },
+
+                // 4. INSTRUÇÕES & PEDAGOGIA
+                { "category": "Instructions", "search": ["👉", "Instrução", "Hand Pointing"], "replace": "<i class='ph-duotone ph-hand-pointing duotone-neutral rotate-90'></i>", "class": "ph-hand-pointing" },
+                { "category": "Instructions", "search": ["💡", "Dica", "Lightbulb"], "replace": "<i class='ph-duotone ph-lightbulb duotone-gold'></i>", "class": "ph-lightbulb" },
+                { "category": "Instructions", "search": ["🙏", "🕊️", "Nota de Graça", "Heart"], "replace": "<i class='ph-duotone ph-heart duotone-heart'></i>", "class": "ph-heart" },
+
+                { "category": "Pedagogia", "search": ["📚", "Contexto", "Books"], "replace": "<i class='ph-duotone ph-books duotone-forest'></i>", "class": "ph-books" },
+                { "category": "Pedagogia", "search": ["🏛️", "Charlotte Mason", "Columns"], "replace": "<i class='ph-duotone ph-feather duotone-forest'></i>", "class": "ph-feather" },
+                { "category": "Pedagogia", "search": ["🧠", "CPA", "Brain"], "replace": "<i class='ph-duotone ph-brain duotone-terra'></i>", "class": "ph-brain" },
+                { "category": "Pedagogia", "search": ["📘", "Conexão TGTB", "Link"], "replace": "<i class='ph-duotone ph-link duotone-indigo'></i>", "class": "ph-link" },
+                { "category": "Pedagogia", "search": ["🌀", "Espiral", "Spiral"], "replace": "<i class='ph-duotone ph-spiral duotone-forest'></i>", "class": "ph-spiral" },
+
+                // 5. NARRATIVA E REINO
+                { "category": "Narrativa", "search": ["✨", "Reflexão", "Sparkle"], "replace": "<i class='ph-duotone ph-sparkle duotone-gold'></i>", "class": "ph-sparkle" },
+                { "category": "Narrativa", "search": ["➡️", "Próxima", "Arrow Right"], "replace": "<i class='ph-duotone ph-arrow-right duotone-gold'></i>", "class": "ph-arrow-right" },
+                { "category": "Narrativa", "search": ["⬅️", "Anterior", "Arrow Left"], "replace": "<i class='ph-duotone ph-arrow-left duotone-gold'></i>", "class": "ph-arrow-left" }
             ]
         };
 

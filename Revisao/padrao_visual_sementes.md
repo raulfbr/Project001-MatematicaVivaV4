@@ -269,3 +269,185 @@ Use este checklist ao revisar QUALQUER lição do ciclo Sementes.
 | 8 | **Instruction Box** | Auto-suficiente para pais novatos? |
 | 9 | **Acting Cues** | Instruções de ação em `[ ]`? |
 | 10 | **Card Centerização** | `.card-container` centralizado? |
+| 11 | **Sinal de Início** | "Dica do Coração" menciona Sinal (não "luzes baixas")? |
+| 12 | **Segredo do Maravilhamento** | Usa "maravilhamento" (não "encantamento pressão")? |
+| 13 | **Sementes para o Dia** | Seção com 5 atividades opcionais presente? |
+| 14 | **CPA Foco Concreto** | Bloco CPA enfatiza CONCRETO para Sementes? |
+| 15 | **Sementes Continuam** | Explicação do "porquê" das atividades presente? |
+
+---
+
+## 13. Sinal de Início (Ritual Entry) 🔔
+O início de cada lição deve ser marcado por um **Sinal de Início** — escolhido pela família.
+
+### 13.1 Conceito
+*   **O que é:** Um sinal físico que marca a entrada no "tempo sagrado" da lição.
+*   **Não é:** Apagar luzes ou criar escuridão (❌ "luzes baixas").
+
+### 13.2 Exemplos de Sinal
+*   Luminária amarela
+*   Baú especial com os cards
+*   Tapete específico
+*   Abrir o "livro" (tablet/celular)
+*   Sino ou campainha
+
+### 13.3 Regra de Ouro
+> "O ritual começa quando vocês decidem que começa. **Você é a voz de Melquior.**"
+
+**Exemplo de Dica do Coração:**
+```html
+<strong>Dica do Coração:</strong> Hoje não há matemática. Só <strong>maravilhamento</strong>.
+Seu único trabalho é criar o <strong>Sinal de Início</strong> — acenda a luminária amarela,
+abra o baú dos cards, estenda o tapete, ou simplesmente abra este "livro" junto com seu filho.
+```
+
+---
+
+## 14. Segredo do Maravilhamento 🌟
+O termo-chave é **maravilhamento**, não "encantamento" ou "protocolo".
+
+### 14.1 Princípio
+*   **Não force compreensão.** O maravilhamento vem primeiro.
+*   **Responda com mistério:** "Você vai descobrir..."
+*   **Tom gentil:** Não usar caixa alta ou imperativo (❌ "NÃO EXPLIQUE NADA").
+
+### 14.2 Padrão HTML
+```html
+<p><strong><i class="ph-duotone ph-sparkle duotone-magic"></i> Segredo do Maravilhamento:</strong>
+    Não precisa explicar nada. Apenas <strong>viva a narrativa</strong>. Se a criança perguntar,
+    sorria e diga: "Você vai descobrir...". O <strong>maravilhamento</strong> é mais importante
+    que a compreensão — por enquanto.
+</p>
+```
+
+---
+
+## 15. Sementes para o Dia (Framework Padronizado) 🌱
+
+### 15.1 Princípios
+| Princípio | Descrição |
+|-----------|-----------|
+| **Opcional** | A lição já está completa. Isto é extensão. |
+| **Independência** | Criança pode fazer sozinha ou com pais. |
+| **Lúdico** | Brincadeira, não dever de casa. |
+| **Conexão** | Reforça vínculo com o Reino ao longo do dia. |
+| **Dignidade** | Sem infantilização. Trata a criança como Herdeiro. |
+
+### 15.2 Tipos de Atividades (5 categorias)
+| Tipo | Descrição | Sozinha? | Com Pais? |
+|------|-----------|----------|-----------|
+| 🎭 **Dramatização** | Brincar de "ser" alguém do Reino | ✅ | ✅ |
+| 🔎 **Exploração** | Encontrar/organizar elementos físicos | ✅ | ✅ |
+| ✏️ **Criação** | Desenhar, colorir, construir | ✅ | ⚠️ Ajuda menor |
+| 💬 **Narração** | Recontar a história (CM) | ⚠️ Precisa ouvinte | ✅ |
+| 🌙 **Reflexão** | Perguntas para hora de dormir | ❌ | ✅ Ritual noturno |
+
+### 15.3 Template por Lição
+Cada lição deve ter **5 atividades** seguindo o framework:
+1. 🔎 Exploração (baseada no tema)
+2. 🎭 Dramatização (personagens do dia)
+3. ✏️ Criação (desenho/construção)
+4. 💬 Narração (recontar para alguém)
+5. 🌙 Reflexão (pergunta noturna)
+
+### 15.4 Padrão HTML
+```html
+<div class="scene-card">
+    <div class="scene-header">
+        <i class="ph-duotone ph-shooting-star duotone-forest" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+        ✨ Sementes para o Dia
+    </div>
+
+    <div class="instruction-box" style="background-color: #F0FDF4; border-left-color: #166534;">
+        <!-- 5 atividades aqui -->
+    </div>
+</div>
+```
+
+---
+
+## 16. CPA — Foco no Concreto (Sementes) 🧱
+
+### 16.1 Regra
+No ciclo **Sementes**, quase tudo é **CONCRETO**:
+*   Tocar, sentir, manipular, vivenciar.
+*   Os cards físicos são essenciais.
+*   A voz do Portador é experiência sensorial.
+
+### 16.2 Progressão CPA
+| Fase | Concreto | Pictórico | Abstrato |
+|------|----------|-----------|----------|
+| **Sementes** | ✅ Foco principal | ⚠️ Cards ilustrados | ❌ Ainda não |
+| **Raízes** | ✅ Manipuláveis | ✅ Desenhos | ⚠️ Início |
+| **Lógica** | ⚠️ Revisão | ✅ Diagramas | ✅ Símbolos |
+
+### 16.3 Padrão HTML (Box CPA)
+```html
+<div class="bruner-box">
+    <strong><i class="ph-duotone ph-brain duotone-terra"></i> Método CPA (Jerome Bruner):</strong><br>
+    <ul>
+        <li><strong>Concreto:</strong> ✅ O foco de Sementes. Experiência sensorial completa.</li>
+        <li><strong>Pictórico:</strong> Será introduzido no momento oportuno.</li>
+        <li><strong>Abstrato:</strong> Virá nas próximas fases.</li>
+    </ul>
+    <span style="color:#6B7280; font-size:0.9rem;">
+        No Ciclo Sementes, quase tudo é <strong>concreto</strong>.
+    </span>
+</div>
+```
+
+---
+
+## 17. Sementes Continuam (Para a Família) 🌻
+Explicação do "porquê" as atividades de continuação funcionam.
+
+### 17.1 Propósito
+*   Reforço natural (sem "estudar")
+*   Desejo próprio (criança QUER mais)
+*   Conexão familiar (memórias)
+*   **Restauração do Pai** (ao brincar junto, o pai também é transformado)
+
+### 17.2 Citações Chave
+> "O medo acaba em você. O encantamento começa neles." — North Star
+
+> "A cada lição, o filho aprende e o pai é restaurado." — Matemática Viva
+
+### 17.3 Padrão HTML
+```html
+<div class="instruction-box" style="background-color: #FEF3C7; border-left-color: #F59E0B;">
+    <i class="ph-duotone ph-sun duotone-gold"></i>
+    <div>
+        <strong>🌱 As Sementes Continuam:</strong><br>
+        Acima, você encontrou sugestões de "Sementes para o Dia"...
+        <ul>
+            <li><strong>Reforço Natural:</strong> ...</li>
+            <li><strong>Desejo Próprio:</strong> ...</li>
+            <li><strong>Conexão Familiar:</strong> ...</li>
+            <li><strong>Restauração do Pai:</strong> ...</li>
+        </ul>
+    </div>
+</div>
+```
+
+---
+
+## 18. Estrutura Narrativa — Ordem das Seções 📐
+Ordem correta das seções na Jornada (após Ritual de Entrada):
+
+### 18.1 Regra de Ordenação
+1. **O Convite de [Guardião]** — Card + acolhimento inicial
+2. **Quem é [Guardião]** — Apresentação detalhada (juba, olhos, rugido etc.)
+3. **A História da Criação** — Cosmogonia do Reino (se aplicável)
+4. **Outros Guardiões** — Apresentação dos demais
+5. **O Concreto** — Atividade principal
+6. **Sementes para o Dia** — Atividades de continuação
+7. **Narramos Juntos** — Reflexão
+8. **Ritual de Fechamento** — Despedida
+
+### 18.2 Erro Comum
+❌ "A História da Criação" vindo ANTES de "Quem é [Guardião]"
+✅ Primeiro conhecemos o Guardião, DEPOIS ele conta a história.
+
+---
+
+*Atualizado em: 03/02/2026 — Fase 11 (Lesson 000 Final)*

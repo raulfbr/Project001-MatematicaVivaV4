@@ -1,11 +1,11 @@
 # 📋 Polimento Final — Lição 000
 **Data:** 03/02/2026 — 21:06
 **Tema:** Refinamentos Finais (Atividade, Ícones, Para a Família)
-**Status:** ✅ EXECUTADO (21:20)
+**Status:** 🔄 Em andamento — Fase Visual P4-P6
 
 ---
 
-## Resumo da Execução
+## Resumo P1-P3 (Concluído ✅)
 
 | # | Ponto | Decisão | Status |
 |---|-------|---------|--------|
@@ -14,6 +14,148 @@
 | P3 | Para a Família | Renomeado para "Formação do Portador", reformatado | ✅ |
 
 ---
+
+## 📌 P4: Ícone de Formação do Portador
+
+### Problema:
+O ícone atual é `ph-fire duotone-carmim` (símbolo do fogo/tocha). Maestro sugere **livro** ou **chapéu de graduação**.
+
+### Opções de Ícone:
+
+| Ícone | Classe | Significado |
+|-------|--------|-------------|
+| 📕 Livro aberto | `ph-book-open duotone-terra` | Conhecimento, aprendizado contínuo |
+| 🎓 Graduação | `ph-graduation-cap duotone-terra` | Formação, evolução, didática |
+| 📖 Livro | `ph-book duotone-terra` | Estudo, conteúdo |
+| 🔥 Tocha (atual) | `ph-fire duotone-carmim` | Missão do Portador, passar o fogo |
+
+### 🎯 Recomendação: `ph-graduation-cap duotone-terra`
+**Por quê?**
+- "Formação" = processo educacional → chapéu de graduação comunica isso
+- Diferencia do `ph-book` usado em "Por que isso importa"
+- Tom de formação contínua, não apenas leitura
+
+### ❓ Pergunta: Aprova `ph-graduation-cap`?
+
+---
+
+## 📌 P5: Espaçamento das Sub-Seções
+
+### Análise das Classes CSS (style.css linhas 1051-1089):
+
+| Classe | Background | Border | Uso |
+|--------|------------|--------|-----|
+| `bruner-box` | `#DBEAFE` (azul) | `#3B82F6` | CPA, Espiral |
+| `cm-box` | `#EDE9FE` (roxo) | `#8B5CF6` | Charlotte Mason, Por que importa |
+| `tgtb-box` | `#FEF3C7` (amarelo) | `#F59E0B` | TGTB |
+| `espiritual-box` | `#DCFCE7` (verde) | `#22C55E` | Reflexão Espiritual |
+| `graca-box` | `#F9FAFB` (cinza) | `#9CA3AF` | Nota de Graça |
+
+### Problemas Identificados:
+
+1. **Por que isso importa** usa `cm-box` (roxo) = mesma cor que **Princípio Charlotte Mason**
+   - Solução: Manter `cm-box` para "Por que importa" (está dentro do contexto CM)
+   - **OU** criar nova classe ou usar inline styles
+
+2. **Espaçamento interno:** Todas as boxes têm `padding: 1rem` e `margin-top: 1rem`
+   - O espaçamento está consistente no CSS, mas preciso verificar se há estilos inline quebrando
+
+3. **Sementes Continuam** usa `instruction-box` (diferente das outras)
+
+### 🎯 Proposta de Correção:
+- Manter classes CSS atuais (já estão consistentes)
+- Ajustar apenas o conteúdo interno (remover `<br>` desnecessários)
+- Criar nova classe `sementes-box` para "Sementes Continuam"
+
+---
+
+## 📌 P6: As Sementes Continuam
+
+### Problemas:
+1. Usa `instruction-box` enquanto as outras usam `*-box`
+2. Tem ícone duplicado: `<i>` na div principal + `<i>` no título
+3. Estilo visual diferente (parece caixa de instrução, não informação)
+
+### Estado Atual:
+```html
+<div class="instruction-box" style="background-color: #FEF3C7; border-left-color: #F59E0B;">
+    <i class="ph-duotone ph-plant duotone-forest"></i>  <!-- ❌ Ícone 1 -->
+    <div>
+        <strong><i class="ph-duotone ph-plant"></i> As Sementes Continuam:</strong>  <!-- ❌ Ícone 2 -->
+```
+
+### Proposta de Correção:
+
+**Opção A:** Criar nova classe `sementes-box`
+```css
+.sementes-box {
+    background: #FEF9E8;
+    border-left: 4px solid #65A30D;  /* Verde lima */
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+    margin-top: 1rem;
+}
+```
+
+**Opção B:** Usar inline styles para manter consistência
+
+### 🎯 Recomendação: Usar padrão simples como as outras boxes
+```html
+<div class="sementes-box">
+    <strong><i class="ph-duotone ph-plant duotone-forest"></i> As Sementes Continuam:</strong>
+    ...
+</div>
+```
+
+---
+
+## 📋 Checklist P4-P6
+
+### P4: Ícone Formação ✅ APROVADO
+- [x] Trocar `ph-fire` por `ph-graduation-cap duotone-terra`
+
+### P5: Espaçamento ✅ APROVADO
+- [ ] Verificar se há `<br>` desnecessários quebrando fluxo
+- [ ] Confirmar padding consistente em todas as boxes
+- [ ] Deixar impecável
+
+### P6: Sementes Continuam ✅ APROVADO
+- [ ] Remover ícone duplicado
+- [ ] Adicionar classe `.sementes-box` ao CSS
+- [ ] Converter de `instruction-box` para `sementes-box`
+
+---
+
+## 💡 Resposta: CSS em Múltiplos Arquivos
+
+**Sim, é possível!** Existem duas abordagens:
+
+### Opção 1: @import (Simples)
+```css
+/* style.css */
+@import url('components.css');
+@import url('boxes.css');
+```
+➕ Fácil de implementar
+➖ Múltiplas requisições HTTP (mais lento)
+
+### Opção 2: Build Tool (Profissional)
+Usar ferramentas como:
+- **Vite/Webpack** → compila múltiplos CSS em um só
+- **PostCSS** → processa e junta arquivos
+
+### 🎯 Recomendação para Matemática Viva:
+**Manter um só `style.css` por enquanto** porque:
+1. O arquivo atual (~1350 linhas) é gerenciável
+2. Você pode usar comentários para separar seções
+3. Para a IA, posso navegar por grep/search sem problema
+
+**Quando quebrar?** Se passar de ~3000 linhas ou se houver componentes muito distintos.
+
+---
+
+## Próximos Passos
+Executando P4 → P5 → P6 em sequência.
 
 ## 📌 Ponto 1: Atividade Concreta — Conexão vs. Atividade
 

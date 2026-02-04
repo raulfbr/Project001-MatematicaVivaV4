@@ -432,22 +432,55 @@ Explicação do "porquê" as atividades de continuação funcionam.
 ---
 
 ## 18. Estrutura Narrativa — Ordem das Seções 📐
-Ordem correta das seções na Jornada (após Ritual de Entrada):
+Ordem correta das seções na Jornada:
 
 ### 18.1 Regra de Ordenação
-1. **O Convite de [Guardião]** — Card + acolhimento inicial
-2. **Quem é [Guardião]** — Apresentação detalhada (juba, olhos, rugido etc.)
-3. **A História da Criação** — Cosmogonia do Reino (se aplicável)
-4. **Outros Guardiões** — Apresentação dos demais
-5. **O Concreto** — Atividade principal
-6. **Sementes para o Dia** — Atividades de continuação
-7. **Narramos Juntos** — Reflexão
-8. **Ritual de Fechamento** — Despedida
+1. **Ritual de Entrada** — Sinal de Início, respiração
+2. **O Convite de [Guardião]** — Card + acolhimento inicial
+3. **Quem é [Guardião]** — Apresentação detalhada (juba, olhos, rugido etc.)
+4. **A História da Criação** — Cosmogonia do Reino (se aplicável)
+5. **Outros Guardiões** — Apresentação dos demais
+6. **O Concreto** — Atividade principal da lição
+7. **Narramos Juntos** — Reflexão e perguntas
+8. **Ritual de Fechamento** — Despedida do Reino
+9. **Conexão da Jornada** — Link para próxima lição
+10. **🌱 Sementes para o Dia** — Extensões opcionais (APÓS fechamento!)
+11. **Para a Família** — Explicações pedagógicas
 
 ### 18.2 Erro Comum
+❌ "Sementes para o Dia" vindo ANTES do Ritual de Fechamento
+✅ As Sementes são para DEPOIS da lição terminar — são extensões opcionais.
+
 ❌ "A História da Criação" vindo ANTES de "Quem é [Guardião]"
 ✅ Primeiro conhecemos o Guardião, DEPOIS ele conta a história.
 
 ---
 
-*Atualizado em: 03/02/2026 — Fase 11 (Lesson 000 Final)*
+## 19. Atividade Concreta — Regras de Design 🧱
+A seção "O Concreto" deve conter uma atividade que **reforce o aprendizado** da lição.
+
+### 19.1 Princípio Fundamental
+> A Atividade Concreta **não pode ser repetitiva** com o que foi feito na narração.
+> Se o Guardião já fez a atividade durante a história, a criança precisa de algo DIFERENTE.
+
+### 19.2 Exemplo de Erro (Lição 001)
+❌ Na narração, Celeste conta 3 sementes. Na Atividade Concreta, a criança também conta 3 objetos.
+✅ Na narração, Celeste conta 3 sementes. Na Atividade Concreta, a criança **organiza grupos** de 3, ou **encontra** coisas em trios na casa.
+
+### 19.3 Checklist para Atividade Concreta
+- [ ] A atividade é **diferente** do que foi feito na narração?
+- [ ] A atividade **reforça o tema** da lição sem repetir?
+- [ ] Há elemento **físico/manipulativo** (mãos, cards, objetos)?
+- [ ] Há **alternativa** para quem não tem os materiais físicos?
+- [ ] A criança pode fazer **sozinha** ou precisa de ajuda mínima?
+
+### 19.4 Nota para Revisão
+> ⚠️ Durante revisão de cada lição, verificar se a Atividade Concreta é:
+> 1. Diferente da narração
+> 2. Alinhada com o tema
+> 3. Acrescenta valor ao aprendizado
+> Esta verificação será feita lição por lição pelo Maestro.
+
+---
+
+*Atualizado em: 03/02/2026 — Fase 12 (Refinamentos Pós-Implementação)*

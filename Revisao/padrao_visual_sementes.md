@@ -1,6 +1,6 @@
 # 🦁 Padrão Visual e Estrutural: Ciclo Sementes
 > **Fonte da Verdade:** Lição 000 (O Portal do Reino)
-> **Última Atualização:** Fev/2026 (Impeccable Release)
+> **Última Atualização:** Fev/2026 (Impeccável Release)
 
 Este documento é a **Bíblia de Auditoria**. Qualquer desvio deste padrão nas lições 000-025 deve ser corrigido imediatamente.
 
@@ -191,18 +191,6 @@ Regras para garantir clareza, fluidez e imersão no texto das lições.
 *   **Regra:** Use aspas APENAS em diálogos diretos do Guardião (personagem).
 *   **Narrativa do Portador:** Sem aspas (é instrução/condução, não fala literal de personagem).
 
-**Exemplo Errado:**
-```html
-<p>"Luz de fora acalma."</p>
-<p>"Sol de dentro acende."</p>
-```
-
-**Exemplo Correto:**
-```html
-<p>Luz de fora acalma.</p>
-<p>Sol de dentro acende.</p>
-```
-
 ### 10.2 Capitalização de Nomes Próprios
 *   **Guardiões:** Sempre iniciados com maiúscula em TODOS os contextos.
     *   ❌ `melquior` → ✅ `Melquior`
@@ -213,9 +201,6 @@ Regras para garantir clareza, fluidez e imersão no texto das lições.
 
 ### 10.3 Evitar Repetição de Frases-Chave
 *   **Regra:** Cada frase marcante deve aparecer **UMA ÚNICA VEZ** na lição.
-*   **Exemplos de repetição comum:**
-    *   "lugar muito especial" (aparece 2x)
-    *   "alguém especial espera" (aparece 2x)
 *   **Fix:** Reescrever ocorrências duplicadas com variações criativas.
 
 ### 10.4 Tom do Primeiro Ritual (Lição 000)
@@ -237,14 +222,6 @@ Regras para uso consistente de labels nas lições.
 *   **Classe:** `<p class="local-label">Mostrar Card</p>`
 *   **Posição:** Imediatamente antes da tag `<img>`.
 
-**Exemplo:**
-```html
-<div class="card-container">
-    <p class="local-label">Mostrar Card</p>
-    <img src="../assets/cards/locais/local-jardim-central.png" ...>
-</div>
-```
-
 ### 11.2 Centralização de Títulos de Local
 *   Títulos como "✨ O Jardim Central ✨" devem estar:
     *   Centralizados (`text-align: center`)
@@ -264,16 +241,12 @@ Use este checklist ao revisar QUALQUER lição do ciclo Sementes.
 | 3 | **Quote Clutter** | Narrativa sem excesso de aspas? |
 | 4 | **Capitalização** | Nomes dos Guardiões capitalizados? |
 | 5 | **Repetição** | Nenhuma frase-chave repetida? |
-| 6 | **Local Label** | "Mostrar Card" antes de todos os cards? |
-| 7 | **Ritual Structure** | Ritual = Local only, Guardião na Jornada? |
+| 6 | **Formação Portador** | Usa `ph-graduation-cap` e boxes padronizadas? |
+| 7 | **Sementes Box** | Usa `.sementes-box` (verde) e sem ícones duplicados? |
 | 8 | **Instruction Box** | Auto-suficiente para pais novatos? |
 | 9 | **Acting Cues** | Instruções de ação em `[ ]`? |
 | 10 | **Card Centerização** | `.card-container` centralizado? |
-| 11 | **Sinal de Início** | "Dica do Coração" menciona Sinal (não "luzes baixas")? |
-| 12 | **Segredo do Maravilhamento** | Usa "maravilhamento" (não "encantamento pressão")? |
-| 13 | **Sementes para o Dia** | Seção com 5 atividades opcionais presente? |
-| 14 | **CPA Foco Concreto** | Bloco CPA enfatiza CONCRETO para Sementes? |
-| 15 | **Sementes Continuam** | Explicação do "porquê" das atividades presente? |
+| 15 | **Sementes Continuam** | Explicação e boxes corretas? |
 
 ---
 
@@ -284,22 +257,8 @@ O início de cada lição deve ser marcado por um **Sinal de Início** — escol
 *   **O que é:** Um sinal físico que marca a entrada no "tempo sagrado" da lição.
 *   **Não é:** Apagar luzes ou criar escuridão (❌ "luzes baixas").
 
-### 13.2 Exemplos de Sinal
-*   Luminária amarela
-*   Baú especial com os cards
-*   Tapete específico
-*   Abrir o "livro" (tablet/celular)
-*   Sino ou campainha
-
-### 13.3 Regra de Ouro
+### 13.2 Regra de Ouro
 > "O ritual começa quando vocês decidem que começa. **Você é a voz de Melquior.**"
-
-**Exemplo de Dica do Coração:**
-```html
-<strong>Dica do Coração:</strong> Hoje não há matemática. Só <strong>maravilhamento</strong>.
-Seu único trabalho é criar o <strong>Sinal de Início</strong> — acenda a luminária amarela,
-abra o baú dos cards, estenda o tapete, ou simplesmente abra este "livro" junto com seu filho.
-```
 
 ---
 
@@ -311,38 +270,11 @@ O termo-chave é **maravilhamento**, não "encantamento" ou "protocolo".
 *   **Responda com mistério:** "Você vai descobrir..."
 *   **Tom gentil:** Não usar caixa alta ou imperativo (❌ "NÃO EXPLIQUE NADA").
 
-### 14.2 Padrão HTML
-```html
-<p><strong><i class="ph-duotone ph-sparkle duotone-magic"></i> Segredo do Maravilhamento:</strong>
-    Não precisa explicar nada. Apenas <strong>viva a narrativa</strong>. Se a criança perguntar,
-    sorria e diga: "Você vai descobrir...". O <strong>maravilhamento</strong> é mais importante
-    que a compreensão — por enquanto.
-</p>
-```
-
 ---
 
 ## 15. Sementes para o Dia (Framework Padronizado) 🌱
 
-### 15.1 Princípios
-| Princípio | Descrição |
-|-----------|-----------|
-| **Opcional** | A lição já está completa. Isto é extensão. |
-| **Independência** | Criança pode fazer sozinha ou com pais. |
-| **Lúdico** | Brincadeira, não dever de casa. |
-| **Conexão** | Reforça vínculo com o Reino ao longo do dia. |
-| **Dignidade** | Sem infantilização. Trata a criança como Herdeiro. |
-
-### 15.2 Tipos de Atividades (5 categorias)
-| Tipo | Descrição | Sozinha? | Com Pais? |
-|------|-----------|----------|-----------|
-| 🎭 **Dramatização** | Brincar de "ser" alguém do Reino | ✅ | ✅ |
-| 🔎 **Exploração** | Encontrar/organizar elementos físicos | ✅ | ✅ |
-| ✏️ **Criação** | Desenhar, colorir, construir | ✅ | ⚠️ Ajuda menor |
-| 💬 **Narração** | Recontar a história (CM) | ⚠️ Precisa ouvinte | ✅ |
-| 🌙 **Reflexão** | Perguntas para hora de dormir | ❌ | ✅ Ritual noturno |
-
-### 15.3 Template por Lição
+### 15.1 Template por Lição
 Cada lição deve ter **5 atividades** seguindo o framework:
 1. 🔎 Exploração (baseada no tema)
 2. 🎭 Dramatização (personagens do dia)
@@ -350,17 +282,18 @@ Cada lição deve ter **5 atividades** seguindo o framework:
 4. 💬 Narração (recontar para alguém)
 5. 🌙 Reflexão (pergunta noturna)
 
-### 15.4 Padrão HTML
-```html
-<div class="scene-card">
-    <div class="scene-header">
-        <i class="ph-duotone ph-shooting-star duotone-forest" style="font-size:1.5rem; margin-right:0.5rem;"></i>
-        ✨ Sementes para o Dia
-    </div>
+### 15.2 Padrão HTML
+*   **Header:** Sem ícone emoji duplicado. Apenas `ph-plant` (ou similar temático) + Texto.
+*   **Container:** `instruction-box` verde (`#F0FDF4`).
 
-    <div class="instruction-box" style="background-color: #F0FDF4; border-left-color: #166534;">
-        <!-- 5 atividades aqui -->
-    </div>
+```html
+<div class="scene-header">
+    <i class="ph-duotone ph-plant duotone-forest" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+    Sementes para o Dia
+</div>
+
+<div class="instruction-box" style="background-color: #F0FDF4; border-left-color: #166534;">
+    <!-- 5 atividades aqui -->
 </div>
 ```
 
@@ -377,110 +310,95 @@ No ciclo **Sementes**, quase tudo é **CONCRETO**:
 ### 16.2 Progressão CPA
 | Fase | Concreto | Pictórico | Abstrato |
 |------|----------|-----------|----------|
-| **Sementes** | ✅ Foco principal | ⚠️ Cards ilustrados | ❌ Ainda não |
-| **Raízes** | ✅ Manipuláveis | ✅ Desenhos | ⚠️ Início |
-| **Lógica** | ⚠️ Revisão | ✅ Diagramas | ✅ Símbolos |
-
-### 16.3 Padrão HTML (Box CPA)
-```html
-<div class="bruner-box">
-    <strong><i class="ph-duotone ph-brain duotone-terra"></i> Método CPA (Jerome Bruner):</strong><br>
-    <ul>
-        <li><strong>Concreto:</strong> ✅ O foco de Sementes. Experiência sensorial completa.</li>
-        <li><strong>Pictórico:</strong> Será introduzido no momento oportuno.</li>
-        <li><strong>Abstrato:</strong> Virá nas próximas fases.</li>
-    </ul>
-    <span style="color:#6B7280; font-size:0.9rem;">
-        No Ciclo Sementes, quase tudo é <strong>concreto</strong>.
-    </span>
-</div>
-```
+| **Sementes** | ✅ Foco principal (80-100%) | ⚠️ Cards ilustrados | ❌ Não |
 
 ---
 
-## 17. Sementes Continuam (Para a Família) 🌻
+## 17. Sementes Continuam (Extensão) 🌻
 Explicação do "porquê" as atividades de continuação funcionam.
 
-### 17.1 Propósito
-*   Reforço natural (sem "estudar")
-*   Desejo próprio (criança QUER mais)
-*   Conexão familiar (memórias)
-*   **Restauração do Pai** (ao brincar junto, o pai também é transformado)
+### 17.1 Nova Classe CSS
+*   **Classe:** `.sementes-box`
+*   **Cores:** Fundo `#ECFDF5` (verde claro), Borda `#10B981` (esmeralda).
+*   **Visual:** Limpo, sem ícones duplicados no header.
 
-### 17.2 Citações Chave
-> "O medo acaba em você. O encantamento começa neles." — North Star
-
-> "A cada lição, o filho aprende e o pai é restaurado." — Matemática Viva
-
-### 17.3 Padrão HTML
+### 17.2 Padrão HTML
 ```html
-<div class="instruction-box" style="background-color: #FEF3C7; border-left-color: #F59E0B;">
-    <i class="ph-duotone ph-sun duotone-gold"></i>
-    <div>
-        <strong>🌱 As Sementes Continuam:</strong><br>
-        Acima, você encontrou sugestões de "Sementes para o Dia"...
-        <ul>
-            <li><strong>Reforço Natural:</strong> ...</li>
-            <li><strong>Desejo Próprio:</strong> ...</li>
-            <li><strong>Conexão Familiar:</strong> ...</li>
-            <li><strong>Restauração do Pai:</strong> ...</li>
-        </ul>
-    </div>
+<div class="sementes-box">
+    <strong><i class="ph-duotone ph-plant duotone-forest"></i> As Sementes Continuam:</strong>
+    
+    <p style="margin-top: 0.5rem;">
+        Texto explicativo...
+    </p>
+
+    <p style="margin-top: 0.75rem;"><strong>Por que isso funciona?</strong></p>
+    <ul style="margin: 0.5rem 0 0 1.5rem; line-height: 1.6;">
+        <li><strong>Reforço Natural:</strong> ...</li>
+        <li><strong>Desejo Próprio:</strong> ...</li>
+    </ul>
 </div>
 ```
 
 ---
 
-## 18. Estrutura Narrativa — Ordem das Seções 📐
-Ordem correta das seções na Jornada:
-
-### 18.1 Regra de Ordenação
-1. **Ritual de Entrada** — Sinal de Início, respiração
-2. **O Convite de [Guardião]** — Card + acolhimento inicial
-3. **Quem é [Guardião]** — Apresentação detalhada (juba, olhos, rugido etc.)
-4. **A História da Criação** — Cosmogonia do Reino (se aplicável)
-5. **Outros Guardiões** — Apresentação dos demais
-6. **O Concreto** — Atividade principal da lição
-7. **Narramos Juntos** — Reflexão e perguntas
-8. **Ritual de Fechamento** — Despedida do Reino
-9. **Conexão da Jornada** — Link para próxima lição
-10. **🌱 Sementes para o Dia** — Extensões opcionais (APÓS fechamento!)
-11. **Para a Família** — Explicações pedagógicas
-
-### 18.2 Erro Comum
-❌ "Sementes para o Dia" vindo ANTES do Ritual de Fechamento
-✅ As Sementes são para DEPOIS da lição terminar — são extensões opcionais.
-
-❌ "A História da Criação" vindo ANTES de "Quem é [Guardião]"
-✅ Primeiro conhecemos o Guardião, DEPOIS ele conta a história.
+## 18.Estrutura Narrativa & Ordem 📐
+1. **Ritual de Entrada**
+2. **Jornada (Guardiões)**
+3. **Momento de Conexão** (Atividade Concreta fluida)
+4. **Narramos Juntos**
+5. **Ritual de Fechamento**
+6. **🌱 Sementes para o Dia** (Extensão Opcional)
+7. **🎓 Formação do Portador** (Antigo "Para a Família")
 
 ---
 
-## 19. Atividade Concreta — Regras de Design 🧱
-A seção "O Concreto" deve conter uma atividade que **reforce o aprendizado** da lição.
+## 19. Atividade Concreta: Momento de Conexão 🧱
+A "Atividade Concreta" foi renomeada para **Momento de Conexão** na Lição 000, para refletir seu objetivo.
 
-### 19.1 Princípio Fundamental
-> A Atividade Concreta **não pode ser repetitiva** com o que foi feito na narração.
-> Se o Guardião já fez a atividade durante a história, a criança precisa de algo DIFERENTE.
-
-### 19.2 Exemplo de Erro (Lição 001)
-❌ Na narração, Celeste conta 3 sementes. Na Atividade Concreta, a criança também conta 3 objetos.
-✅ Na narração, Celeste conta 3 sementes. Na Atividade Concreta, a criança **organiza grupos** de 3, ou **encontra** coisas em trios na casa.
-
-### 19.3 Checklist para Atividade Concreta
-- [ ] A atividade é **diferente** do que foi feito na narração?
-- [ ] A atividade **reforça o tema** da lição sem repetir?
-- [ ] Há elemento **físico/manipulativo** (mãos, cards, objetos)?
-- [ ] Há **alternativa** para quem não tem os materiais físicos?
-- [ ] A criança pode fazer **sozinha** ou precisa de ajuda mínima?
-
-### 19.4 Nota para Revisão
-> ⚠️ Durante revisão de cada lição, verificar se a Atividade Concreta é:
-> 1. Diferente da narração
-> 2. Alinhada com o tema
-> 3. Acrescenta valor ao aprendizado
-> Esta verificação será feita lição por lição pelo Maestro.
+### 19.1 Regras de Ouro
+1.  **Objetivo:** Criar conexão, não cumprir tarefa.
+2.  **Tom:** Sugestivo ("Se você tiver..."), nunca imperativo ("Faça agora").
+3.  **Fluidez:** Texto corrido, parágrafos curtos, transição suave para a próxima seção.
+4.  **Não Repetição:** Se foi feito na história, faça diferente aqui.
 
 ---
 
-*Atualizado em: 03/02/2026 — Fase 12 (Refinamentos Pós-Implementação)*
+## 20. Formação do Portador (Standard) 🎓
+Seção dedicada à educação dos pais. O símbolo é o **Chapéu de Graduação** (`ph-graduation-cap`).
+
+### 20.1 Boxes Padronizadas
+Todas as caixas devem seguir a estrutura `<p>` com `margin-top`, **sem usar `<br>`**.
+
+| Box | Classe | Ícone Usual | Cor |
+|-----|--------|-------------|-----|
+| CM | `.cm-box` | `ph-feather` | Roxo |
+| TGTB | `.tgtb-box` | `ph-link` | Amarelo |
+| Bruner | `.bruner-box` | `ph-spiral` / `ph-brain` | Azul |
+| Espiritual | `.espiritual-box` | `ph-sparkle` | Verde |
+| Graça | `.graca-box` | `ph-heart` | Cinza |
+
+### 20.2 Exemplo de Código (Box Universal)
+```html
+<div class="cm-box">
+    <strong><i class="ph-duotone ph-feather duotone-forest"></i> Princípio Charlotte Mason:</strong>
+    
+    <!-- Parágrafo 1: Citação Original (Inglês) -->
+    <p style="margin-top: 0.5rem; font-style: italic; color: #4B5563;">
+        "Education is an atmosphere, a discipline, a life."
+    </p>
+
+    <!-- Parágrafo 2: Tradução (Destaque) -->
+    <p style="margin-top: 0.25rem; font-weight: 600; color: #5B21B6; font-size: 0.95rem;">
+        "A educação é uma atmosfera, uma disciplina, uma vida."
+    </p>
+    
+    <!-- Parágrafo 3: Explicação -->
+    <p style="margin-top: 0.5rem; color: #6B7280;">
+        A atmosfera vem primeiro...
+    </p>
+</div>
+```
+
+---
+
+*Atualizado em: 03/02/2026 — Pós-Polimento L000*

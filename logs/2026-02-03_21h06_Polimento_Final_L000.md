@@ -109,20 +109,20 @@ O ícone atual é `ph-fire duotone-carmim` (símbolo do fogo/tocha). Maestro sug
 
 ---
 
-## 📋 Checklist P4-P6
+## 📋 Checklist P4-P6 ✅ EXECUTADO
 
-### P4: Ícone Formação ✅ APROVADO
+### P4: Ícone Formação ✅
 - [x] Trocar `ph-fire` por `ph-graduation-cap duotone-terra`
 
-### P5: Espaçamento ✅ APROVADO
-- [ ] Verificar se há `<br>` desnecessários quebrando fluxo
-- [ ] Confirmar padding consistente em todas as boxes
-- [ ] Deixar impecável
+### P5: Espaçamento ✅
+- [x] Verificar se há `<br>` desnecessários quebrando fluxo
+- [x] Confirmar padding consistente em todas as boxes
+- [x] Deixar impecável
 
-### P6: Sementes Continuam ✅ APROVADO
-- [ ] Remover ícone duplicado
-- [ ] Adicionar classe `.sementes-box` ao CSS
-- [ ] Converter de `instruction-box` para `sementes-box`
+### P6: Sementes Continuam ✅
+- [x] Remover ícone duplicado
+- [x] Adicionar classe `.sementes-box` ao CSS (`#ECFDF5` verde / `#10B981` border)
+- [x] Converter de `instruction-box` para `sementes-box`
 
 ---
 

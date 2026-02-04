@@ -355,7 +355,18 @@ Explicação do "porquê" as atividades de continuação funcionam.
 ## 19. Atividade Concreta: Momento de Conexão 🧱
 A "Atividade Concreta" foi renomeada para **Momento de Conexão** na Lição 000, para refletir seu objetivo.
 
-### 19.1 Regras de Ouro
+### 19.1 Ícones de Atividades (Sementes do Dia)
+Para a seção "Sementes do Dia", usamos ícones que representam o **tipo de interação**:
+
+| Tipo | Emoji Antigo | Ícone Phosphor | Cor |
+|------|--------------|----------------|-----|
+| **Investigação** (Caça, Busca) | 🔎 | `ph-magnifying-glass` | `duotone-forest` |
+| **Dramatização** (Teatro, Bonecos) | 🎭 | `ph-mask-happy` | `duotone-indigo` |
+| **Criação** (Desenho, Construção) | ✏️ | `ph-pencil-simple` | `duotone-terra` |
+| **Narração** (Conversa, Reconto) | 💬 | `ph-chat-circle` | `duotone-carmim` |
+| **Reflexão** (Noite, Pensamento) | 🌙 | `ph-moon-stars` | `duotone-sky` |
+
+### 19.2 Regras de Ouro
 1.  **Objetivo:** Criar conexão, não cumprir tarefa.
 2.  **Tom:** Sugestivo ("Se você tiver..."), nunca imperativo ("Faça agora").
 3.  **Fluidez:** Texto corrido, parágrafos curtos, transição suave para a próxima seção.

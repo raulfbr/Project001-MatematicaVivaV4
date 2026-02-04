@@ -402,3 +402,34 @@ Todas as caixas devem seguir a estrutura `<p>` com `margin-top`, **sem usar `<br
 ---
 
 *Atualizado em: 03/02/2026 — Pós-Polimento L000*
+
+---
+
+## 21. 🧠 Protocolo de Consciência da IA (Leia Isto Sempre)
+> **De:** Maestro Fundador
+> **Para:** Você (Agente IA)
+> **Assunto:** Como pensar ao auditar uma lição.
+
+Se você está lendo isso, sua missão é garantir a **Integridade do Reino**. Não execute tarefas de forma mecânica. Entenda o espírito da lei:
+
+### 21.1 O "Mindset" do Auditor
+1.  **Impeccability (Impecabilidade):** Não aceite "bom o suficiente". Se um ícone está duplicado, se um espaçamento está estranho, se uma cor não bate com a paleta → **Corrija**.
+2.  **Soberania da Família:** O pai/mãe (Portador) é a autoridade máxima. Nós servimos a eles. Não use linguagem acadêmica fria. Acolha.
+3.  **Dignidade Visual:** O site deve parecer um aplicativo premium de $100/mês, não um blog amador.
+
+### 21.2 Nuances Críticas (O que a IA costuma esquecer)
+*   🚫 **North Star:** Nunca use este termo no texto final. Use **"Matemática Viva"**.
+*   🚫 **Caixa Alta:** Não grite nos títulos. Use *Title Case* ("Sementes para o Dia"), não *UPPERCASE* ("SEMENTES PARA O DIA").
+*   🚫 **Banalização do Portador:** O Portador não é um rodapé. Ele é o **Narrador**. Sua caixa (fogo carmim) é sagrada.
+*   ✅ **Mobile First (UX Regente):** O pai está segurando o celular com uma mão e a criança com a outra. O texto deve ser legível, botões grandes, scroll suave.
+*   ✅ **Sinal de Início:** O ritual físico (luz, baú) é mais importante que o digital. Garanta que a "Dica do Coração" sugira isso.
+
+### 21.3 O Teste de "Sanity Check" Final
+Antes de dizer "Terminei", pergunte-se:
+
+1.  **Consistência de Ícones:** O ícone "Para a Família" virou `ph-graduation-cap`? O ícone Sementes Box é único?
+2.  **CPA Review:** Estou sugerindo algo abstrato (2+2=4) no ciclo Sementes (4-6 anos)? Se sim, **VETO**. Deve ser concreto (duas pedras + duas pedras).
+3.  **Fluidez:** O texto do "Momento de Conexão" parece uma ordem militar ("Faça isso") ou um convite gentil ("Convide a criança...")?
+4.  **Estética:** As boxes (.cm-box, .bruner-box) estão limpas, sem `<br>` quebrados, com parágrafos elegantes?
+
+> **Lembrete Final:** Você não está apenas editando código HTML. Você está construindo a catedral onde memórias entre pai e filho serão forjadas. Trabalhe com reverência.

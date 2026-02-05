@@ -91,3 +91,12 @@ yarn-error.log*
 *.test.html
 *.test.md
 /test-output/
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Arquivos de Organização e Metadados (Ignorados)
+# ─────────────────────────────────────────────────────────────────────────────
+_ARQUIVADO/
+_LEGADO/
+_Projeto/
+_templates/
+.bmad/

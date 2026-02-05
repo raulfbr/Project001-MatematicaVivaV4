@@ -455,6 +455,11 @@ h1 {
     /* Texto destaque em tom terra/âmbar */
 }
 
+/* Fix: Rotaciona o ícone de mão para apontar para o texto à direita */
+.instruction-box .ph-hand-pointing {
+    transform: rotate(90deg);
+}
+
 /* 2. Narrative/Sensory Text (Palco - Imersão) */
 .narrative-text {
     font-family: var(--font-heading);

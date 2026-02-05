@@ -102,8 +102,9 @@ licao:
           tom: animado
           script: |
             "Bernardo fez um muro forte com as pedras. Muito sério!"
-            [Íris pousa em uma pedra e inclina a cabeça]
+            [Acting Cue: Incline a cabeça e pisque como a Íris, curiosa]
             "Mas e se a gente fizesse o chão sorrir? Vamos brincar com as pedras?"
+            [Acting Cue: Sorria e olhe para as pedras com animação]
         instrucao_portador: |
           Espalhe as 5 pedras no chão, desmanchando a fileira reta.
       - titulo: As Folhas de Pedra
@@ -122,8 +123,9 @@ licao:
           tom: maravilhado
           script: |
             "Falta o coração! A pedra mais bonita vai no meio."
-            [Íris bica o ar sobre o centro]
+            [Acting Cue: Bique o ar sobre o centro como a Íris faria]
             "Olha! Não é mais um monte de pedras. É uma Estrela de Chão!"
+            [Acting Cue: Abra os olhos bem grandes, maravilhado]
             "Uma, duas, três, quatro, CINCO pedras juntas!"
         instrucao_portador: |
           Coloque a 5ª pedra no centro. Trace com o dedo o formato de flor/estrela criado.
@@ -160,11 +162,16 @@ licao:
     extensao:
       titulo: Se Quiser Voar
       desc: Para exploradores que desejam ir além
+      nota_irmaos: |
+        🏠 Se houver irmãos: O mais velho pode ser "Íris" e guiar o mais novo
+        na construção da estrela. Pergunte: "Quantas pétalas faltam?"
       sugestoes:
         - titulo: Caça às Formas
           acao: Procurar outras coisas no jardim que tenham 5 pontas ou 5 partes.
+          com_irmaos: true
         - titulo: O Desenho da Íris
           acao: Tentar desenhar no papel a "Flor de Pedra" que vocês construíram.
+          com_irmaos: false
 
   narracao:
     instrucao_portador: |
@@ -234,3 +241,38 @@ licao:
     template: [true, true, true]
     triade: [true, true, true]
     inclusao: [true, true]
+
+  sementes_do_dia:
+    titulo: Sementes para o Dia
+    instrucao: |
+      Ao longo do dia, a criança pode continuar vivendo no Reino.
+      Estas atividades são opcionais — a lição já está completa.
+    atividades:
+      - titulo: Caça às Estrelas de 5
+        icone: ph-star
+        acao: Procurar coisas em casa que tenham 5 partes (flores, mãos, dedos do pé)
+        tipo: Exploração
+        com_irmaos: true
+      - titulo: Flor de Objetos
+        icone: ph-flower
+        acao: Repetir a estrela de pedras com outros objetos (tampinhas, grãos, brinquedos)
+        tipo: Construção
+        com_irmaos: true
+      - titulo: O Desenho da Íris
+        icone: ph-pencil
+        acao: Desenhar a flor/estrela de pedras que vocês construíram
+        tipo: Criação
+        com_irmaos: false
+      - titulo: A História da Flor
+        icone: ph-chat-circle
+        acao: "Recontar para alguém: \"Hoje a Íris me ensinou a fazer uma flor de pedra!\""
+        tipo: Narração
+        com_irmaos: false
+      - titulo: 5 Dedos de Boa-Noite
+        icone: ph-moon-stars
+        acao: Na hora de dormir, contar 5 coisas bonitas que viram hoje
+        tipo: Ritual Noturno
+        com_irmaos: true
+    frase_final: |
+      "O Reino não acaba quando a lição termina. Ele vive no coração do Herdeiro."
+      — Matemática Viva

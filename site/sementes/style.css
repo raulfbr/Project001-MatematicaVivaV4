@@ -1359,3 +1359,14 @@ i.ph-duotone {
     align-items: center;
     justify-content: center;
 }
+
+/* === ACTING CUES (Refatoração L001 Review) === */
+.acting-cue {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--accent-gold);
+    /* Dourado como prometido no Standard */
+    font-style: italic;
+    margin-bottom: 0.75rem;
+    display: block;
+}

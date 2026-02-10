@@ -444,3 +444,38 @@ Antes de dizer "Terminei", pergunte-se:
 4.  **Estética:** As boxes (.cm-box, .bruner-box) estão limpas, sem `<br>` quebrados, com parágrafos elegantes?
 
 > **Lembrete Final:** Você não está apenas editando código HTML. Você está construindo a catedral onde memórias entre pai e filho serão forjadas. Trabalhe com reverência.
+
+---
+
+## 22. O Arsenal do Mestre (Obrigatório) 🧠
+> **Substitui:** Dicas soltas, sugestões pedagógicas genéricas.
+> **Local:** Dentro de `Formação do Portador`, antes das boxes teóricas.
+
+### 22.1 O Princípio da Variedade Tática
+Toda lição deve ter uma box `Estratégia do Mestre` que resolva um **Problema Crítico Específico** daquela lição.
+
+> **Fonte da Verdade:** Consulte o [Framework de Mestria](file:///c:/Users/Raul/OneDrive/!RF%202026/Gravity%20Google/Project001-MatematicaVivaV4/Revisao/framework_estrategia_mestria.md) para a lista atualizada de arquétipos (Espelho, Termostato, Eco do Reino, etc.).
+> **Não invente:** Use apenas os arquétipos definidos no Framework.
+
+### 22.2 Padrão HTML
+*   **Ícone:** `ph-strategy duotone-forest`
+*   **Cor de Fundo:** `#F0FDF4`
+*   **Borda:** `#15803D`
+
+```html
+<div class="instruction-box" style="background-color: #F0FDF4; border-left-color: #15803D;">
+    <i class="ph-duotone ph-strategy duotone-forest" style="font-size:1.5rem;"></i>
+    <div>
+        <strong>Estratégia do Mestre:</strong> [Nome do Arquétipo: O Espelho / A Ponte / A Tribo...]
+        <p style="margin-top:0.5rem; color:#374151;">
+            [O DIAGNÓSTICO: Qual problema estamos resolvendo ou qual cultura estamos criando?]
+        </p>
+        <p style="margin-top:0.5rem; color:#374151;">
+            [A INTERVENÇÃO CIRÚRGICA: O algoritmo de ação <strong>sem dar a resposta</strong>.]
+        </p>
+    </div>
+</div>
+```
+
+
+

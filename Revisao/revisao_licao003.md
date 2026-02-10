@@ -91,3 +91,27 @@ Ao revisar L004 (Noé) e seguintes, verificar:
 ---
 
 > **Status:** Referência congelada. Usar como "Gold Standard" para revisão.
+
+---
+
+### ROUND 4: Estratégias de Resgate & Semântica (08/02/2026) 🛟
+*Foco: Preparar a lição para teste real. Adicionar contingências (Learning Billionaire).*
+
+| # | Item | Problema Anterior | Solução Impecável |
+|---|------|-------------------|-------------------|
+| 1 | **"Dica do Coração"** | Mantido na Preparação (sugestão afetiva) | **"Estratégia de Mestria"** adicionada ao final (profundidade) |
+| 2 | **Protocolo de Impecabilidade** | Texto genérico ("joias") | Específico: "como se cada pedra fosse uma joia do jardim da Íris" |
+| 3 | **Contingência** | Nenhuma estratégia se criança travar | **"Estratégias de Resgate"** com 4 cenários |
+
+#### Estratégia de Mestria (Novo Elemento):
+Inserido na seção "Formação do Portador", focando no **Loss Function Loop**:
+> "Se ele montar a estrela torta, **não corrija com as mãos**. Ajuste o ambiente (coloque a flor real ao lado) e pergunte: 'O que a sua estrela tem de parecido com essa aqui?'"
+
+#### Estratégias de Resgate Adicionadas:
+1. **Se não quiser montar a flor:** Deixe explorar livremente
+2. **Se dispersar:** Use a voz da Íris para reconectar
+3. **Se cansar:** Encurte para 3 pétalas
+4. **Se quiser do jeito dele:** Celebre a criatividade
+
+
+> **Aprendizado Chave:** Learning Billionaire — "Estratégia > Dica" + Contingências preparadas = Confiança do Portador.

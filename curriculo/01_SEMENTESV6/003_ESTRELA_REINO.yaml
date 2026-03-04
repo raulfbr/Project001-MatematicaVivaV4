@@ -64,7 +64,7 @@ licao:
       materiais:
         - {item: 5 pedrinhas ou botões (as mesmas da Lição 002), qtd: 5, alt: sementes, essencial: true}
         - {item: Card Íris (Pardal), qtd: 1, alt: desenho, essencial: true}
-        - {item: Uma flor real (opcional, apenas para inspiração), qtd: 1, alt: imagem, essencial: false}
+        - {item: "Uma flor real (opcional, apenas para inspiração)", qtd: 1, alt: imagem, essencial: false}
 
   linkage:
     elo_anterior:

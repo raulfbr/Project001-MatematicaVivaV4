@@ -56,7 +56,7 @@ licao:
     preparacao:
       materiais:
         - {item: Cartões grandes com 7 e 8, qtd: 2, alt: desenhados no papel, essencial: true}
-        - {item: Areia, farinha ou lixa (tátil), qtd: 1, alt: tinta de dedo, essencial: true}
+        - {item: "Areia, farinha ou lixa (tátil)", qtd: 1, alt: "tinta de dedo", essencial: true}
         - {item: Card Íris, qtd: 1, alt: imagem do pardal, essencial: true}
 
   linkage:

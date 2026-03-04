@@ -43,8 +43,8 @@ licao:
       Ajude seu filho a perceber o mundo ao redor — o que está em cima? Embaixo? Atrás?
     filho_descobre: Que as coisas ocupam lugares diferentes no espaço e que podemos descrever onde elas estão.
     protocolo_impecabilidade: |
-      Mova-se pelo espaço. Use o CORPO para demonstrar.
-      Em cima da cadeira. Embaixo da mesa. Atrás do sofá.
+      Mova-se pelo espaço e use o corpo para demonstrar.
+      Em cima da cadeira, embaixo da mesa, atrás do sofá.
     nota_graca: "Se confundir direita com esquerda, tudo bem! Até adultos confundem. Celeste também se perde às vezes."
     conforto_emocional: |
       Esta lição é pura brincadeira. Não há certo ou errado — só descoberta.
@@ -55,7 +55,7 @@ licao:
       materiais:
         - {item: 1 objeto pequeno (brinquedo ou bolinha), qtd: 1, alt: qualquer objeto, essencial: true}
         - {item: Card Celeste, qtd: 1, alt: imagem da raposa, essencial: true}
-        - {item: 3 lugares diferentes (cadeira, mesa, almofada), qtd: 3, alt: móveis da casa, essencial: true}
+        - {item: "3 lugares diferentes (cadeira, mesa, almofada)", qtd: 3, alt: "móveis da casa", essencial: true}
 
   linkage:
     elo_anterior:

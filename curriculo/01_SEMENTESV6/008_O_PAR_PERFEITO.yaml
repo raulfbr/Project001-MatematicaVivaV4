@@ -53,7 +53,7 @@ licao:
       Vamos encontrar quem combina com quem!
     preparacao:
       materiais:
-        - {item: 5 pares de objetos (meias, colheres, etc), qtd: 10, alt: tampas iguais, essencial: true}
+        - {item: "5 pares de objetos (meias, colheres, etc)", qtd: 10, alt: "tampas iguais", essencial: true}
         - {item: Card Íris, qtd: 1, alt: imagem do pardal, essencial: true}
 
   linkage:

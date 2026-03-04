@@ -408,12 +408,17 @@ Preencher ao final:
 ```md
 | Licao | Narrativa | Matematica | Curricular | Tecnica | Status |
 |------|-----------|------------|------------|---------|--------|
-| 000  |           |            |            |         |        |
-| 001  |           |            |            |         |        |
-| 002  |           |            |            |         |        |
-| 003  |           |            |            |         |        |
-| 004  |           |            |            |         |        |
+| 000  | PASS      | PASS (N/A) | PASS       | PASS    | APROVADA |
+| 001  | PASS      | PASS       | PASS       | PASS    | APROVADA |
+| 002  | PASS      | PASS       | PASS       | PASS    | APROVADA |
+| 003  | PASS      | PASS       | PASS       | PASS    | APROVADA |
+| 004  | PASS      | PASS       | PASS       | PASS    | APROVADA |
 ```
+
+Fechamento executado:
+1. Gate Template: `PASS` (template atualizado para V6.4 com `sementes_do_dia`).
+2. Relatorio final: `logs/2026-03-04_2036_EXECUCAO_BACKFILL_000_004.md`.
+3. Commit e push: `73cc13d` em `origin_v4/main`.
 
 Definicao de conclusao da fase:
 1. Todas as 5 licoes em `APROVADA`.

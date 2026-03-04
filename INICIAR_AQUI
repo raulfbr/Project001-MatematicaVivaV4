@@ -1,0 +1,521 @@
+# INICIAR AQUI - GUIA MESTRE OPERACIONAL (HTML + SEMENTES)
+
+Data de referencia: 2026-03-04  
+Escopo oficial atual: HTML (ciclo Sementes), revisao licao por licao, padrao unico de licao, selo final Familia Rodrigues.
+
+---
+
+## 1) Decisao executiva desta fase
+
+1. Foco total em `site/sementes/*.html` (experiencia final da familia).
+2. Revisao em profundidade, licao por licao, com prioridade em:
+   - clareza do Portador da Tocha
+   - narrativa imersiva
+   - concreto antes de abstrato
+   - continuidade entre licoes
+3. PRDs novos V5/Next ficam arquivados e fora do fluxo principal desta fase:
+   - `_ARQUIVADO/PRD_NOVOS_V5_2026-03-04/PRD_UNICO_MATEMATICA_VIVA_V5.md`
+   - `_ARQUIVADO/PRD_NOVOS_V5_2026-03-04/PRD_PIVOT_MATEMATICA_VIVA_V5.md`
+   - `_ARQUIVADO/PRD_NOVOS_V5_2026-03-04/PRD_NEXT_HIBRIDO_AI_FIRST.md`
+
+---
+
+## 2) Mapa completo do projeto (o que cada pasta faz)
+
+### Nucleo ativo para esta fase (usar sempre)
+
+- `site/`
+  - Saida final estatica publicada.
+  - `site/sementes/` contem as licoes HTML do ciclo Sementes (000-025).
+  - `site/sementes/templates/` contem template Jinja base da licao.
+  - `site/sementes/style.css` e o enforcer visual.
+- `curriculo/`
+  - Fontes curriculares.
+  - `curriculo/01_SEMENTESV6/*.yaml` e a base de conteudo das licoes.
+  - `curriculo/01_SEMENTESV6/_Manuais/MANUAL_PORTADOR_TOCHA.md` orienta o pai/mae.
+- `build/`
+  - Pipeline Python/Jinja atual (`build/forge.py`).
+  - `build/fases/sementes.py` controla render e navegacao das licoes.
+- `LORE/`
+  - Fonte de verdade narrativa/pedagogica (guardioes, toms, north star).
+- `Revisao/`
+  - Padroes e checklists de revisao visual/estrutural.
+- `docs/`
+  - Mapa tecnico e contexto de execucao.
+
+### Trilhas paralelas (nao sao foco agora, mas existem)
+
+- `apps/web/` + `content/` + `dist/`
+  - Trilha Next/TypeScript (piloto contrato-first, 3 licoes atualmente).
+  - Tratar como experimental nesta fase.
+- `print/`
+  - Artefatos de impressao.
+- `tools/`
+  - Scripts legados de apoio.
+- `scripts/`
+  - Auditorias antigas/pontuais (revisar caminho hardcoded antes de usar).
+
+### Governanca/historico
+
+- `.bmad/` metodologia de agentes, templates e workflows.
+- `logs/` historico de execucao e decisoes.
+- `_ARQUIVADO/` material arquivado.
+- `_LEGADO/` material historico de versoes anteriores.
+- `_Projeto/`, `plans/`, `_templates/` apoio de processo.
+
+---
+
+## 3) Estado tecnico real hoje (importante para nao quebrar fluxo)
+
+1. Pipeline principal em uso:
+   - `python build/forge.py --fase sementes --dry-run`
+2. Dry-run atual:
+   - 25 licoes validas (MV-S-001 ate MV-S-025)
+   - `000_PORTAL_REINO.yaml` com erro de parse YAML (linhas 80/88)
+3. Observacao critica do driver Sementes:
+   - `build/fases/sementes.py` tem filtro manual que pula render de `MV-S-000` ate `MV-S-025`.
+   - Resultado pratico: a fase atual privilegia revisao/edicao do HTML final ja existente em `site/sementes/`.
+4. Testes:
+   - `python -m pytest build/tests/test_sementes.py` falha por falta de `pytest` no ambiente.
+5. Navegacao:
+   - Existe licao com link futuro (`MV-S-025` aponta para `MV-S-026`), revisar no ciclo de QA.
+6. Arquivos de PRD/TASK da raiz:
+   - Foram movidos para `_ARQUIVADO/RAIZ_PRD_TASK_2026-03-04/`.
+   - Nao usar PRD/TASK na raiz como referencia ativa.
+
+---
+
+## 4) Ordem de leitura obrigatoria para qualquer IA nova
+
+Ler nesta ordem antes de alterar qualquer licao:
+
+1. `INICIAR_AQUI` (este arquivo)
+2. `LORE/index.yaml`
+3. `LORE/north_star.yaml`
+4. `LORE/guardioes.yaml`
+5. `LORE/padroes_narrativos.yaml`
+6. `Revisao/padrao_visual_sementes.md`
+7. `Revisao/topicos_licao_revisao.md`
+8. `curriculo/01_SEMENTESV6/_Manuais/MANUAL_PORTADOR_TOCHA.md`
+9. `site/sementes/templates/licao.j2`
+10. `site/sementes/style.css`
+
+Se houver conflito entre fontes:
+1) LORE (index/north_star/guardioes/padroes_narrativos) > 2) Padrao de Revisao > 3) Template tecnico > 4) Ajuste pontual da licao.
+
+Regra de ouro:
+Toda revisao comeca em LORE. A licao nao define o canon; ela obedece o canon.
+
+---
+
+## 5) TASK ROBUSTA: entender e revisar o projeto de forma inteligente
+
+### Etapa 0 - Pre-flight
+
+1. Confirmar branch/estado local (`git status --short`).
+2. Confirmar foco da sessao: ciclo Sementes + HTML.
+3. Confirmar que novos PRDs de experimento estao em `_ARQUIVADO`.
+
+### Etapa 1 - Snapshot de arquitetura
+
+1. Mapear pastas chave (`site`, `curriculo`, `build`, `LORE`, `Revisao`, `docs`).
+2. Identificar pipeline ativo e pipeline experimental.
+3. Registrar riscos operacionais da sessao.
+
+### Etapa 2 - Fonte de verdade da licao alvo
+
+1. Abrir YAML da licao (`curriculo/01_SEMENTESV6/XXX_*.yaml`).
+2. Abrir HTML correspondente (`site/sementes/MV-S-XXX_*.html`).
+3. Validar consistencia entre YAML, HTML, LORE e padrao visual.
+
+### Etapa 3 - Auditoria de estrutura (macro)
+
+Confirmar ordem dos blocos da licao:
+
+1. Header de navegacao
+2. Hero
+3. Preparacao do Portador
+4. Ritual de Abertura
+5. Jornada
+6. Concreto
+7. Narramos Juntos
+8. Ritual de Fechamento
+9. Conexao da Jornada
+10. Para a Familia / Formacao do Portador
+11. Navegacao final prev/next
+
+### Etapa 4 - Auditoria narrativa (profundidade)
+
+1. Guardiao lider coerente com virtude e tom.
+2. Ritual abre local primeiro; guardiao entra na Jornada (sem spoiler precoce).
+3. Falas do Portador sao conducoes claras para pais iniciantes.
+4. Linguagem sem infantilizacao vazia; misterio + acolhimento.
+5. Narracao final coleta entendimento da crianca sem prova.
+
+### Etapa 5 - Auditoria pedagogica (metodo)
+
+1. Concreto dominante em Sementes.
+2. Pictorico vetado (exceto extensao opcional bem delimitada).
+3. Abstrato leve e sempre depois do concreto.
+4. Tempo real de aplicacao em 15-20 min.
+5. Nota de graca presente e pastoral.
+
+### Etapa 6 - Auditoria frontend HTML/CSS
+
+1. Classes e componentes seguem padrao do tema.
+2. Cards e blocos com hierarquia visual clara.
+3. Mobile-first sem quebrar leitura.
+4. Navegacao superior e inferior funcional.
+5. Sem imagens quebradas.
+
+### Etapa 7 - Revisao de continuidade de trilha
+
+1. Linkage com licao anterior e proxima.
+2. Gancho de progressao coerente com espiral.
+3. IDs e titulos consistentes.
+
+### Etapa 8 - Ajuste da licao
+
+1. Corrigir HTML da licao alvo.
+2. Se necessario, sincronizar YAML da mesma licao.
+3. Manter estilo, tom e padrao sem criar variantes aleatorias.
+
+### Etapa 9 - QA tecnico minimo
+
+1. Validar links internos da licao.
+2. Rodar dry-run do Forge para confirmar saude geral.
+3. Registrar pendencias encontradas.
+
+### Etapa 10 - QA pedagogico final
+
+1. Ler licao inteira como se fosse um pai aplicando pela primeira vez.
+2. Confirmar que o pai entende o metodo enquanto ensina.
+3. Confirmar que a crianca experimenta descoberta real, nao decoracao.
+
+### Etapa 11 - Selo Familia Rodrigues
+
+Aplicar somente quando TODOS os gates abaixo passarem:
+
+1. Estrutura completa
+2. Narrativa imersiva consistente
+3. Metodo (CM + concreto) respeitado
+4. UX de leitura clara para o Portador
+5. Continuidade com a trilha aprovada
+
+### Etapa 12 - Registro de memoria para proxima IA
+
+1. Anotar o que foi alterado.
+2. Anotar o que ficou pendente.
+3. Anotar a proxima licao da fila.
+4. Atualizar este arquivo se houver mudanca de regra.
+
+---
+
+## 6) Padrao unico de licao HTML (SEMENTES) - definicao oficial
+
+### 6.1 Estrutura obrigatoria da experiencia
+
+1. **Orientar**: header + hero deixam claro "onde estou" e "o que vou viver".
+2. **Preparar**: pai recebe seguranca para conduzir.
+3. **Transportar**: ritual abre o local da licao.
+4. **Encontrar**: guardiao entra no momento certo.
+5. **Manipular**: concreto ocupa o centro da licao.
+6. **Narrar**: crianca reconta o que viveu.
+7. **Conectar**: fechar hoje e abrir amanha.
+8. **Formar**: pai entende o metodo e ganha confianca.
+
+### 6.2 Padrao de layout frontend por bloco
+
+1. Hero com id/titulo/tempo/frase viva/guardiao.
+2. Cards de secao (`scene-card`) com hierarquia visual consistente.
+3. Instruction box separa bastidor tecnico da fala narrativa.
+4. Bloco do Portador sempre com identidade visual clara.
+5. Card do guardiao aparece uma vez no momento de apresentacao.
+6. Navegacao prev/next no topo e no rodape.
+
+### 6.3 Padrao de narracao (profundidade)
+
+1. Fala com direcao de cena quando necessario (`[olhe nos olhos]`).
+2. Menos explicacao abstrata, mais acao concreta guiada.
+3. Linguagem viva, digna e afetiva.
+4. Fechamento sempre com gratidao + expectativa da proxima jornada.
+5. "Para a Familia" precisa ensinar o metodo, nao repetir o obvio.
+
+### 6.4 Padrao observado nas 5 primeiras licoes (sem HTML)
+
+Escopo lido: `MV-S-000` ate `MV-S-004` em YAML.
+
+Progressao canonica observada:
+
+1. `MV-S-000`: licao liturgica (entrada no Reino, sem matematica formal).
+2. `MV-S-001`: contagem concreta 1-3 com Celeste.
+3. `MV-S-002`: organizacao em fileira (base de ten frame) com Bernardo.
+4. `MV-S-003`: forma/geometria viva com Iris (4-5).
+5. `MV-S-004`: ordem sequencial 1-5 com Noe.
+
+Padrao narrativo comum nas 5:
+
+1. `para_portador` com apoio emocional + didatico.
+2. `ritual_abertura` sensorial antes da acao matematica.
+3. `jornada` em cenas com fala de guardiao + instrucao do portador.
+4. `concreto` com passos operacionais e fala sugerida.
+5. `narracao` com pergunta principal + perguntas de coracao.
+6. `ritual_fechamento` com fio de ouro para a proxima licao.
+7. `para_familia` explicando CM + CPA + espiral + aplicacao.
+
+Desvios detectados nessas 5 (usar como alerta em revisao):
+
+1. `MV-S-000` com estrutura YAML quebrada em `ritual_abertura` (parse invalido).
+2. Campos/valores fora do canon podem aparecer (ex.: local/clima/tom fora SSOT).
+3. Titulo da proxima licao em YAML pode divergir do titulo real publicado.
+4. Campos semelhantes podem variar de nome (`fala` vs `fala_portador`), exigindo padronizacao.
+
+---
+
+## 7) Protocolo de revisao licao por licao (fila operacional)
+
+Fila atual sugerida:
+
+1. L000 (corrigir YAML quebrado + alinhar HTML portal)
+2. L001-L005 (fundacao de tom e metodo)
+3. L006-L015 (consolidacao de padrao narrativo/visual)
+4. L016-L025 (continuidade + links + fechamento de estacao)
+
+### 7.1 PADRAO DE REVISAO V2 (LORE-FIRST)
+
+Aplicar em toda licao, sem excecao:
+
+Gate A - Schema e integridade (bloqueante)
+1. YAML abre e parseia sem erro.
+2. Campos obrigatorios existem (metadados, para_portador, ritual_abertura, jornada, concreto, narracao, ritual_fechamento, para_familia).
+3. IDs/navegacao batem com trilha real.
+
+Gate B - Conformidade LORE (bloqueante)
+1. `guardiao_lider` dentro do SSOT (`melquior`, `noe`, `celeste`, `bernardo`, `iris`).
+2. `local` e `clima` validos no SSOT.
+3. Tom de fala alinhado a `LORE/toms_de_voz.yaml`.
+4. Virtude encarnada na acao do guardiao (nao apenas no texto descritivo).
+
+Gate C - Pedagogia viva (bloqueante em Sementes)
+1. Concreto domina a licao.
+2. Pictorico vetado (exceto extensao opcional explicitamente marcada).
+3. Abstrato leve, posterior ao concreto.
+4. Narracao sem prova e sem pressa.
+
+Gate D - Formacao do Portador (bloqueante)
+1. Linguagem clara para pai/mae iniciante.
+2. Dica do coracao e nota de graca presentes e uteis.
+3. Instrucoes acionaveis em ate 5 min de preparo.
+
+Gate E - Frontend e continuidade (nao bloqueante inicial, bloqueante para selo)
+1. Ordem das secoes no HTML respeitada.
+2. Navegacao topo/rodape funcional.
+3. Linkage anterior/proxima coerente com a trilha.
+
+### 7.2 Score oficial de revisao por licao
+
+Pontuacao total: 100
+
+1. Conformidade LORE: 30
+2. Pedagogia CM+CPA: 25
+3. Qualidade narrativa: 20
+4. Formacao do Portador: 15
+5. Estrutura HTML e navegacao: 10
+
+Regras:
+1. `>= 90` e sem bloqueante -> apta para selo.
+2. `80-89` -> boa, mas precisa refinamento antes do selo.
+3. `< 80` -> revisao completa obrigatoria.
+4. Qualquer erro em Gate A/B/C/D bloqueia selo, mesmo com score alto.
+
+### 7.3 Mapa de normalizacao (evitar falso positivo na revisao)
+
+Observacao:
+As primeiras licoes usam aliases historicos que nao batem 1:1 com `LORE/locais.yaml` e `LORE/toms_de_voz.yaml`.
+Revisor deve normalizar antes de reprovar.
+
+Locais (alias -> canonico LORE):
+1. `arvore_silencio` -> `arvore_do_silencio`
+2. `clareira_perguntas` -> `clareira_das_perguntas`
+3. `caverna_recomeco` -> `caverna_do_recomeco`
+4. `jardim_central` -> `jardim_central` (ja canonico)
+5. `ninho_mirante` -> `ninho_mirante` (ja canonico)
+
+Locais sem mapeamento canonico automatico:
+1. `jardim_secreto` -> revisar manual (nao existe no SSOT atual)
+
+Tons (alias historico -> sugestao SSOT):
+1. `solene` -> `ritual`
+2. `sabio` -> `calmo` (ou `serio`, conforme contexto)
+3. `paciente` -> `calmo`
+4. `satisfeito` -> `grato` (ou `orgulhoso`, conforme contexto)
+5. `esperancoso` -> `gentil` (ou `poetico`, conforme contexto)
+
+Regra:
+Alias aceito apenas com registro de normalizacao na revisao da licao.
+Sem registro, considerar pendencia.
+
+### 7.4 Contrato minimo de padronizacao YAML (para iniciar revisao em escala)
+
+Cada licao deve manter, no minimo, esta espinha:
+
+1. `licao.metadados`
+2. `licao.navegacao`
+3. `licao.para_portador`
+4. `licao.linkage`
+5. `licao.ritual_abertura`
+6. `licao.jornada`
+7. `licao.narracao`
+8. `licao.ritual_fechamento`
+9. `licao.para_familia`
+10. `licao.auditoria_qa`
+
+Padrao de nomenclatura preferencial:
+
+1. Usar `fala_portador` em vez de variacoes soltas.
+2. Usar `tom` com vocabulos do SSOT ou alias normalizado.
+3. Usar locais canonicos do LORE (ou alias com mapeamento explicito em revisao).
+4. Manter `pictorico.status: VETADO` em Sementes, salvo extensao opcional.
+
+Se quebrar o contrato minimo:
+1. Corrigir no YAML antes de discutir refinamento literario.
+2. Revalidar coerencia com template e HTML.
+
+### 7.5 Definition of Ready / Definition of Done por licao
+
+Definition of Ready (para entrar em revisao):
+
+1. YAML abre sem erro.
+2. ID da licao e navegacao basica existem.
+3. Guardiao lider definido.
+4. Blocos centrais existem (`para_portador`, `jornada`, `concreto`, `narracao`, `para_familia`).
+
+Definition of Done (para sair com selo):
+
+1. Gates A/B/C/D aprovados.
+2. Score >= 90.
+3. Navegacao HTML validada (topo e rodape).
+4. Pendencias zeradas no checklist da licao.
+5. Status do selo marcado como `APROVADA`.
+
+Para cada licao, preencher este bloco de controle:
+
+```md
+## Revisao MV-S-XXX - TITULO
+- Gate A (Schema): PASS / FAIL
+- Gate B (LORE): PASS / FAIL
+- Gate C (Pedagogia): PASS / FAIL
+- Gate D (Portador): PASS / FAIL
+- Gate E (Frontend/Continuidade): PASS / FAIL
+- Score final: 0-100
+- Estrutura HTML: OK / AJUSTAR
+- Narrativa imersiva: OK / AJUSTAR
+- Metodo concreto (Sementes): OK / AJUSTAR
+- Formacao do Portador: OK / AJUSTAR
+- Navegacao prev/next: OK / AJUSTAR
+- Linkage (anterior/proxima): OK / AJUSTAR
+- Selo Familia Rodrigues: APROVADO / PENDENTE
+- Pendencias:
+  1.
+  2.
+```
+
+---
+
+## 8) Regras do selo "FAMILIA RODRIGUES"
+
+Uma licao recebe selo somente quando:
+
+1. O pai consegue aplicar sem ansiedade extra.
+2. A crianca vive descoberta concreta real.
+3. A narrativa sustenta encanto sem confusao.
+4. O metodo fica explicito para a familia (sem didatismo seco).
+5. A licao fortalece unidade familiar e continuidade da jornada.
+
+Status do selo por licao:
+
+- `PENDENTE`: ainda faltam ajustes.
+- `EM_REVISAO`: ajustes em andamento.
+- `APROVADA`: selo concedido.
+
+---
+
+## 9) Runbook rapido de comandos
+
+### Pipeline HTML atual
+
+```bash
+# Dry-run Sementes (nao grava)
+python build/forge.py --fase sementes --dry-run
+
+# Dry-run Raizes
+python build/forge.py --fase raizes --dry-run
+
+# Build completo (quando for necessario)
+python build/forge.py --fase all
+```
+
+### Testes
+
+```bash
+# Requer pytest instalado
+python -m pytest build/tests/test_sementes.py
+```
+
+### Trilha experimental Next (nao foco desta fase)
+
+```bash
+cd apps/web
+npm run validate:contract
+npm run validate:lessons:preview
+npm run build:artifacts
+npm run qa:reports
+```
+
+---
+
+## 10) Decisao de operacao para futuras sessoes de IA
+
+1. Sempre iniciar por este arquivo.
+2. Sempre declarar foco da sessao (qual licao sera revisada).
+3. Sempre revisar em profundidade antes de editar.
+4. Se surgirem PRDs novos fora do foco HTML atual, arquivar em `_ARQUIVADO` e manter a execucao no plano Sementes.
+5. Ao final de cada sessao, registrar:
+   - licoes concluidas
+   - licoes pendentes
+   - proxima licao da fila
+
+---
+
+## 11) Riscos conhecidos e cuidados
+
+1. `000_PORTAL_REINO.yaml` esta com erro de parse.
+2. `build/fases/sementes.py` pula render de 000-025 por filtro manual.
+3. Possiveis arquivos residuais em `site/sementes/` (ex.: nomes anormais) devem ser tratados com cautela.
+4. Alguns textos mostram ruido de encoding no terminal; confirmar arquivo final no editor.
+5. Ha divergencias de nomenclatura entre licoes antigas e SSOT de LORE (locais/toms), exigindo normalizacao controlada.
+
+---
+
+## 12) Objetivo final desta fase
+
+Fechar o ciclo Sementes com revisao completa, licao por licao, em HTML de alta qualidade, com narrativa viva, metodo claro para o Portador da Tocha e selo `FAMILIA RODRIGUES` aplicado ao final de cada licao aprovada.
+
+---
+
+## 13) Plano de inicio imediato (primeiro bloco de revisao)
+
+Objetivo: iniciar sem travar no volume total.
+
+Ordem de execucao recomendada agora:
+
+1. `MV-S-000`: corrigir parse YAML e harmonizar estrutura de `ritual_abertura`.
+2. `MV-S-001`: validar baseline de contagem concreta (1-3).
+3. `MV-S-002`: validar baseline de organizacao/fileira.
+4. `MV-S-003`: normalizar local/clima fora do SSOT (`jardim_secreto`, `brisa_suave`) ou registrar excecao canonica.
+5. `MV-S-004`: normalizar tons (`sabio`, `paciente`) e validar titulo/link da proxima.
+
+Regra de progresso:
+
+1. Nao abrir nova licao sem fechar checklist da atual.
+2. Sempre registrar score e pendencias no bloco de controle da licao.

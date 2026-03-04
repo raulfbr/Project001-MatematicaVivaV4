@@ -1,0 +1,173 @@
+# TASK ROBUSTA — PADRONIZACAO HTML SEMENTES (L000-L003)
+Data: 2026-03-04
+Responsavel: Codex + Maestro
+Escopo inicial: `site/sementes/MV-S-000..003_*.html`
+Objetivo: padronizar estrutura, sem perder alma narrativa e pedagogica (CM + Bruner + North Star).
+
+## 1) Entendimento consolidado do projeto
+- O projeto e uma infraestrutura educacional narrativa ("Matematica Viva"), com North Star em `LORE/north_star.yaml`.
+- A qualidade pedagogica e governada por Charlotte Mason (veto pedagogico), Bruner (CPA), narrativa (Lewis/Tolkien) e UX familiar.
+- A pasta `Revisao` ja define um padrao visual forte, mas com conflitos internos entre documentos.
+- A entrega atual em `site/sementes` esta em HTML direto, com variacoes de estilo entre licoes.
+
+## 2) Fontes consultadas (source of truth lida)
+- `README.md`
+- `LORE/north_star.yaml` (arquivo correto; nao existe `north_star.yaml` na raiz)
+- `Revisao/padrao_visual_sementes.md`
+- `Revisao/topicos_licao_revisao.md`
+- `Revisao/framework_estrategia_mestria.md`
+- `Revisao/revisao_licao003.md`
+- `.bmad/orchestrator.yaml`
+- `.bmad/experts/pedagogia/charlotte_mason.yaml`
+- `.bmad/templates/00_K_sementes/regras.yaml`
+- `.bmad/templates/00_K_sementes/licao-template.yaml`
+- `site/sementes/MV-S-000..003*.html`
+- `site/sementes/style.css`
+
+## 3) Diagnostico real (L000 a L003)
+### 3.1 L000 — base forte, estilo legado
+- Forte em narrativa e estrutura macro.
+- Excecao aceitavel no header nav (modelo triplo anterior/proximo).
+- Ainda tem estilo legado com muitos `<br>` e blocos menos semanticos em Formacao.
+- Nao tem "Estrategia do Mestre" em Formacao.
+
+### 3.2 L001 — mais proxima do padrao novo
+- Estrutura geral bem alinhada com `Momento de Conexao`.
+- `Sementes para o Dia` ja corrigida com wrapper interno (evita quebrar `display:flex` da `.instruction-box`).
+- Tem "Estrategia do Mestre" em Formacao.
+- Ajuste pendente de consistencia visual: `ph-graduation-cap` usa `duotone-carmim` (padrao preferido em Revisao: `duotone-terra`).
+
+### 3.3 L002 — principal candidata a refatoracao imediata
+- Estrutura semantica de Formacao esta em padrao antigo (texto corrido, muitos `<br>`, menos boxes).
+- Nao tem "Estrategia do Mestre" em Formacao.
+- `Sementes para o Dia` sem wrapper interno na `instruction-box` (risco de layout quebrado por flex).
+- Usa "Atividade Concreta" (padrao novo prefere "Momento de Conexao", conforme parte dos docs de Revisao).
+- Icone de Formacao em `duotone-carmim` (inconsistente com padrao visual mais recente).
+
+### 3.4 L003 — boa qualidade narrativa, com inconsistencias tecnicas
+- Conteudo narrativo e pedagogico forte.
+- Duplicacao de script Phosphor (`<script src="https://unpkg.com/@phosphor-icons/web"></script>` aparece 2x).
+- Header nav ainda no formato antigo (sem `nav-back-link`).
+- Estrategia do Mestre aparece na Preparacao; padrao novo esta pedindo consolidacao em Formacao.
+- Ainda mistura blocos antigos com `<br>` em alguns pontos.
+
+## 4) Conflitos entre documentos da pasta Revisao (precisa decisao canonica)
+1. Nome da secao concreta:
+- Documento A: "Atividade Concreta"
+- Documento B: "Momento de Conexao"
+
+2. Local da "Estrategia do Mestre":
+- Em alguns exemplos: Preparacao
+- Em outros: Formacao do Portador
+
+3. Header nav:
+- Modelo antigo: 3 colunas com anterior/proximo
+- Modelo novo: `nav-back-link` + selo ciclo
+
+4. Formacao:
+- Parte das licoes usa formato box semantico (`cm-box`, `bruner-box` com `<p>`)
+- Parte ainda usa texto corrido com `<br>`
+
+## 5) Decisao proposta (canonica) para fechar o padrao
+### 5.1 Regra de padronizacao
+- L000: manter como "excecao de portal" no que for ritual de entrada da saga.
+- L001-L003+: seguir padrao unico moderno.
+
+### 5.2 Nome oficial da secao concreta
+- Adotar: `Momento de Conexao`.
+- Permitir alias antigo "Atividade Concreta" apenas em legado, com migracao gradual.
+
+### 5.3 Local oficial da Estrategia do Mestre
+- Adotar: dentro de `Formacao do Portador`, sempre no inicio da secao.
+- Justificativa: separa didatica para pai (formacao) da narrativa da licao.
+
+### 5.4 Header nav oficial (L001+)
+- Adotar: `nav-back-link` + selo `Sementes`.
+- Evitar duplicidade de modelos.
+
+### 5.5 Semantica HTML oficial
+- Evitar `<br>` para layout em blocos pedagogicos; usar `<p>` com margens.
+- `instruction-box` com conteudo textual multi-paragrafo deve ter wrapper `<div>` interno.
+- Um unico carregamento de Phosphor script por pagina.
+
+## 6) ESQUELETO PADRAO HTML (L001+)
+Ordem canonica proposta:
+1. Header Nav
+2. Hero
+3. Preparacao do Portador
+4. Ritual de Entrada
+5. H2 A Jornada
+6. Cenas da Jornada
+7. H2 Momento de Conexao
+8. Narramos Juntos
+9. Ritual de Fechamento
+10. Conexao da Jornada
+11. Sementes para o Dia
+12. Formacao do Portador
+13. Navigation Footer
+
+### 6.1 Blocos obrigatorios por secao
+- Preparacao: Dica do Coracao + Materiais + Filho vai descobrir + Segredo do Maravilhamento + Nota de Graca.
+- Ritual: instruction-box de bastidores + 1 monobloco Portador + card local.
+- Jornada: card guardiao apresentado 1 vez (reveal), depois avatar.
+- Sementes para o Dia: 5 atividades fixas (Exploracao, Dramatizacao, Criacao, Narracao, Reflexao).
+- Formacao: Estrategia do Mestre + `cm-box` + `bruner-box` + `tgtb-box` + `espiritual-box` + `graca-box`.
+
+### 6.2 Regras tecnicas obrigatorias
+- `ph-graduation-cap duotone-terra` em Formacao.
+- `ph-plant duotone-forest` em Sementes para o Dia.
+- `ph-fire duotone-carmim` no Portador.
+- `card-container` para cards visuais.
+- Sem script duplicado.
+- Sem `<br>` estrutural dentro de Formacao (exceto casos poeticos pontuais, justificados).
+
+## 7) Gate de Experts (para revisao ponto a ponto)
+### 7.1 Gate Charlotte Mason (obrigatorio)
+- Crianca tratada como pessoa capaz.
+- Licao curta (meta 15-20 min).
+- Narracao presente.
+- Ideia viva > informacao seca.
+- Concreto antes de simbolo.
+- Linguagem inclusiva (principio Bernardo).
+- Aplicavel por pai/mae com preparo leve.
+
+### 7.2 Gate Bruner (obrigatorio)
+- Sementes com foco concreto dominante.
+- Pictorico sem antecipacao forcada.
+- Abstrato apenas reconhecimento inicial.
+
+### 7.3 Gate Engenharia (obrigatorio)
+- Estrutura HTML valida e consistente.
+- Classes padrao presentes.
+- Sem duplicacao de script.
+- Sem blocos quebrando layout de flex.
+
+## 8) Backlog de execucao (ordem sugerida)
+### Fase A — Congelar padrao (1 sessao)
+1. Criar `Revisao/ESQUELETO_HTML_SEMENTES_CANONICO.md` (single source of truth).
+2. Declarar excecoes oficiais da L000 (o que nao sera forçado nela).
+3. Registrar decisoes de conflitos (Concreto x Momento; Estrategia em Formacao).
+
+### Fase B — Refatorar licoes 001-003 (2-3 sessoes)
+1. L001: ajustes finos visuais e consistencia de icones.
+2. L002: refatoracao estrutural completa para padrao moderno.
+3. L003: remover script duplicado, unificar header nav, consolidar estrategia no lugar canonico.
+
+### Fase C — Automatizar auditoria HTML (1-2 sessoes)
+1. Criar script lint de estrutura (checks de secoes, classes, anti-patterns).
+2. Gerar relatorio por licao (`logs/revisao_html_report_*.md`).
+3. Usar report em cada rodada de revisao.
+
+## 9) Checklist minimo de conclusao por licao
+- Estrutura canonica completa na ordem certa.
+- Gate CM aprovado.
+- Gate Bruner aprovado.
+- Gate Engenharia aprovado.
+- Navegacao anterior/proxima valida.
+- Mobile sem quebra visual.
+
+## 10) Proxima acao recomendada
+Executar imediatamente a Fase A:
+1. Criar `Revisao/ESQUELETO_HTML_SEMENTES_CANONICO.md`.
+2. Definir formalmente as excecoes da L000.
+3. Em seguida, atacar L002 como primeira licao de refatoracao completa.

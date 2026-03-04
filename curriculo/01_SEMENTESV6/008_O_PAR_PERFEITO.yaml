@@ -1,11 +1,11 @@
-# LIÇÃO 008 — O PAR PERFEITO
-# Template: V6.3 | 20/01/2026 | Status: TESTE
+# LIÇÃO 008 - O PAR PERFEITO
+# Template: V6.5 | 04/03/2026 | Status: REVISAO_YAML_FIRST
 
 _meta:
   id: licao-008-par-perfeito
-  versao: '6.3'
+  versao: "6.5"
   fase: Sementes
-  status: teste
+  status: revisado
 
 licao:
   metadados:
@@ -22,196 +22,248 @@ licao:
     tgtb_ref: 000-L8
     tgtb_titulo_en: Matching Part 1
     tgtb_titulo_pt: Correspondência Parte 1
-    objetivo_pedagogico: '[Foco: Correspondência um-a-um entre objetos]'
-    tempo_licao: '15-20 min'
-    tempo_preparo: '≤ 5 min'
-    versao: '6.3'
-    status: rascunho
+    objetivo_pedagogico: Correspondência um-a-um entre objetos concretos.
+    tempo_licao: "15-20 min"
+    tempo_preparo: "≤ 5 min"
+    versao: "6.5"
+    status: revisado
 
   navegacao:
-    anterior: {id: MV-S-007, titulo: A Coroa da Semana}
-    proxima: {id: MV-S-009, titulo: O Celeiro de Noé}
+    anterior:
+      id: MV-S-007
+      titulo: A Coroa da Semana
+    proxima:
+      id: MV-S-009
+      titulo: O Celeiro de Noé
 
   para_portador:
     ideia_viva:
-      frase: "Cada tesouro tem seu lugar. Cada criatura, seu par."
-      conceito: Coisas podem ser combinadas uma-a-uma.
-      intencao_cm: A criança percebe ordem e harmonia nas correspondências.
+      frase: "Cada tesouro encontra o seu par e o ninho volta à paz."
+      conceito: Podemos combinar objetos um-a-um para verificar correspondência.
+      intencao_cm: A criança percebe ordem, atenção e harmonia por meio das mãos.
     dica_coracao: |
-      Íris adora encontrar pares perfeitos.
-      Ela vê beleza quando cada coisa encontra seu lugar.
-      Hoje, ajude seu filho a sentir a paz da correspondência.
-    filho_descobre: Que podemos combinar objetos um-a-um para ver se são iguais em quantidade.
+      Hoje o foco é simples e profundo: encontrar pares.
+      Íris convida você a desacelerar, observar e celebrar pequenos acertos.
+      Menos pressa, mais olhar atento.
+    filho_descobre: Cada objeto pode encontrar exatamente um par quando observamos com cuidado.
     protocolo_impecabilidade: |
-      Use objetos REAIS que combinam (meias, talheres, etc).
-      A criança MOVE os objetos para formar pares.
-    nota_graca: "Se sobrar um sem par, Íris diz: 'Este está esperando seu amigo.'"
+      Use objetos reais do cotidiano e deixe a criança mover cada peça.
+      Evite explicar demais; convide a comparar, tocar e aproximar.
+    nota_graca: |
+      Se sobrar um objeto sem par, tudo bem.
+      Íris pode dizer: "Este ainda está esperando seu amigo."
     conforto_emocional: |
-      Correspondência é como fazer amizades — cada um encontra seu par.
+      A beleza desta lição está no processo, não na velocidade.
+      Seu ritmo calmo é parte da aprendizagem.
     audio_script: |
-      Olá, Portador! Íris preparou um jogo de pares.
-      Vamos encontrar quem combina com quem!
+      Portador, hoje o Ninho Mirante virou oficina de detalhes.
+      Vamos ajudar Íris a colocar cada tesouro com seu par.
     preparacao:
       materiais:
-        - {item: "5 pares de objetos (meias, colheres, etc)", qtd: 10, alt: "tampas iguais", essencial: true}
-        - {item: Card Íris, qtd: 1, alt: imagem do pardal, essencial: true}
+        - item: "5 pares de objetos (meias, colheres, tampas, blocos)"
+          qtd: 10
+          alt: "5 pares desenhados em papel"
+          essencial: true
+          nota: "Misture antes de iniciar."
+        - item: "Card Íris"
+          qtd: 1
+          alt: "Imagem da guardiã"
+          essencial: true
+          nota: "Opcional se a família não usar cards físicos."
 
   linkage:
     elo_anterior:
       licao_id: MV-S-007
-      gancho: Celeste nos ensinou 6 e 7. Agora, Íris vai nos ensinar a encontrar pares!
+      gancho: Depois de contar até 7, agora treinamos o olhar que organiza.
     proximo:
       licao_id: MV-S-009
-      gancho: Você sabe fazer pares. Amanhã, Noé nos apresenta 8 e 9 no seu celeiro!
+      gancho: Com o olhar treinado para pares, avançamos para contar 8 e 9 com Noé.
 
   ritual_abertura:
-    instrucao_ambiente: Objetos espalhados, luz suave, como uma vitrine.
+    instrucao_ambiente: Deixe os objetos misturados em uma bandeja, com espaço para organizar.
     local: ninho_mirante
     clima: primaveril
     virtude: atencao
-    artefato: Uma caixa de tesouros pareados
+    artefato: Cesto de tesouros misturados
     transicao_reino: |
-      Feche os olhos. Subimos ao Ninho Mirante.
-      Íris tem uma missão especial para você hoje.
+      Feche os olhos e suba ao Ninho Mirante.
+      O vento é leve e o chão de palha guarda pequenos brilhos espalhados.
     fala_portador:
       tom: misterioso
       script: |
-        Íris está organizando seus tesouros.
-        Mas alguns se perderam! Você pode ajudar?
-    card_guardiao: 'CARD: IRIS'
+        Hoje algo saiu do lugar neste ninho.
+        Vamos restaurar a ordem com calma e olhos atentos.
+    card_guardiao: "CARD: IRIS"
     abertura_sensorial: |
-      O ninho está cheio de pequenos objetos brilhantes.
-      Íris inclina a cabeça: "Olhe bem. A beleza está no detalhe."
-      Ela aponta para um par de botões idênticos.
+      O ar cheira a folhas novas.
+      O ninho está coberto de pequenos objetos brilhando ao sol da manhã.
+      Uma voz suave sussurra que a beleza está em perceber o detalhe certo.
 
   jornada:
     narrativa_principal:
-      - titulo: O Tesouro Perdido
+      - titulo: O Cesto Fora de Ordem
         local: ninho_mirante
         fala_guardiao:
-          tom: preocupado
+          tom: acolhedor
           script: |
-            "Oh não! Meus tesouros se misturaram!"
-            [Íris olha os objetos espalhados]
-            "Cada um tem um par. Você pode me ajudar a encontrar?"
+            "Cada tesouro deste cesto tem um par."
+            "[Íris inclina a cabeça e observa em silêncio por um instante.]"
+            "Vamos descobrir quem combina com quem?"
         instrucao_portador: |
-          Espalhe os objetos misturados.
-          "Vamos ajudar Íris a encontrar os pares!"
-      - titulo: Encontrando Pares
+          Espalhe os objetos no centro.
+          Convide sem pressa: "Vamos procurar o par deste primeiro objeto?"
+      - titulo: Um Para Um
         local: ninho_mirante
         fala_guardiao:
-          tom: esperançoso
+          tom: curioso
           script: |
-            "Este aqui... procure o igual!"
-            [Íris bate as asas de alegria quando encontra]
-            "Perfeito! Eles se encontraram!"
+            "Pegue um e procure o irmão dele."
+            "[Íris dá um pequeno salto quando o par aparece.]"
+            "Quando os dois se encontram, o ninho respira em paz."
         instrucao_portador: |
-          Pegue um objeto. Peça para encontrar o igual.
-          "Este botão vermelho... onde está o irmão dele?"
-      - titulo: Todos em Casa
+          Entregue um objeto por vez para a criança.
+          Quando ela encontrar o par, peça para colocar lado a lado.
+      - titulo: Ninho em Harmonia
         local: ninho_mirante
         fala_guardiao:
           tom: satisfeito
           script: |
-            "Todos os pares estão juntos agora!"
-            "Você tem olhos de detetive, como eu!"
+            "Agora cada um está no seu lugar."
+            "Seu olhar ficou mais forte hoje."
         instrucao_portador: |
-          Alinhe os pares lado a lado.
-          "Olha que lindo! Cada um encontrou seu par!"
+          Ao final, conte quantos pares foram formados.
+          Destaque a harmonia: "Cada um encontrou seu par."
 
     concreto:
-      desc: Emparelhar objetos idênticos fisicamente
-      card_objeto: 'CARD: PARES DE TESOUROS'
+      desc: Pareamento físico de objetos em correspondência um-a-um.
+      card_objeto: "CARD: PARES DE TESOUROS"
       metodo: mao-na-mao
       instrucoes_portador:
         - passo: 1
-          acao: Misture os objetos no centro.
-          fala_sugerida: "Os tesouros de Íris se perderam!"
+          acao: Misture todos os objetos no centro.
+          fala_sugerida: "Vamos ajudar o ninho a reencontrar seus pares."
         - passo: 2
-          acao: Pegue um objeto. Pergunte "Onde está o par?"
-          fala_sugerida: "Esta meia azul... cadê a irmã dela?"
+          acao: Entregue um objeto e pergunte onde está o igual.
+          fala_sugerida: "Quem combina com este aqui?"
         - passo: 3
-          acao: Quando encontrar, coloque lado a lado.
-          fala_sugerida: "Perfeito! Elas se encontraram!"
+          acao: Quando achar, peça para encostar um no outro.
+          fala_sugerida: "Par encontrado. Coloque os dois juntos."
         - passo: 4
-          acao: Continue até todos os pares estarem formados.
-          fala_sugerida: "Todos em casa! Íris está feliz!"
-      norte_absoluto: A criança deve MOVER os objetos para formar pares físicos.
+          acao: Repita até sobrar zero objetos sem par.
+          fala_sugerida: "Terminamos quando todos estiverem acompanhados."
+      norte_absoluto: A criança deve manipular e comparar concretamente, um objeto por vez.
       adaptacao_bernardo: |
-        💡 Se a criança não consegue pegar, aponte para cada par.
-        Ou use objetos maiores e mais fáceis de manipular.
+        Use objetos maiores e mais contrastantes.
+        Se necessário, ofereça duas opções de resposta em vez de várias.
 
-    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Pareamento físico.', excecao: 'Se Quiser Voar'}
+    pictorico:
+      status: VETADO
+      motivo: "Sementes prioriza concreto. Primeiro tocar, depois representar."
+      excecao: "Se Quiser Voar"
 
     abstrato:
-      desc: Compreensão do conceito de correspondência um-a-um
-      nota: A criança vive a correspondência, não a define.
+      desc: Nomear a ideia de "par" e "sem par" após a experiência concreta.
+      nota: O vocabulário vem no final, sem substituir a manipulação.
 
     extensao:
       titulo: Se Quiser Voar
-      desc: Explorando mais correspondências
+      desc: Levar a correspondência para outras cenas da casa.
       sugestoes:
-        - titulo: Copos e Pratos
-          acao: Coloque um copo em cima de cada prato. Sobrou algum?
-        - titulo: Dedos e Botões
-          acao: Um botão para cada dedo. Quantos dedos, quantos botões?
+        - titulo: Mesa em Par
+          acao: Coloque um copo para cada prato e veja se sobrou algo.
+        - titulo: Meias em Missão
+          acao: Separe meias limpas por par antes de guardar.
       adaptacao_bernardo: |
-        💡 Use objetos grandes se coordenação motora fina for difícil.
+        Se a coordenação fina cansar, trabalhe com apenas 3 pares.
+        Em outro dia, aumente para 4 ou 5.
 
   narracao:
     instrucao_portador: |
-      Guarde os pares juntos.
-      "Íris está muito feliz com sua ajuda!"
-    pergunta_principal: Como você ajudou Íris hoje?
+      Guarde os pares já formados e convide a criança a contar a história da busca.
+    pergunta_principal: Como você encontrou o par perfeito hoje?
     perguntas_coracao:
-      - Qual par foi mais difícil de encontrar?
-      - O que você sente quando tudo está no lugar certo?
-    nota_cm: A narração conecta a atividade à emoção de ordem.
+      - Qual par você encontrou mais rápido?
+      - Teve algum que precisou de mais atenção?
+    nota_cm: Narração curta consolida atenção e linguagem sem virar interrogatório.
 
   ritual_fechamento:
     fala_guardiao:
       tom: grato
       script: |
-        "Você tem olhos de detetive!"
-        "Obrigada por ajudar. A beleza está nos detalhes."
-    fio_ouro: "Você sabe encontrar pares. Amanhã, Noé nos mostra 8 e 9 no seu celeiro!"
+        "Seu olhar foi fiel aos detalhes."
+        "A ordem voltou ao ninho. Obrigada pela ajuda."
+    fio_ouro: Amanhã Noé abre o celeiro para contarmos 8 e 9 com a mesma atenção de hoje.
     transicao_volta:
-      instrucao: Guarde os pares na caixa de tesouros.
+      instrucao: Guarde os objetos em pares dentro de um cesto.
       fala: Par por par, voltamos para casa.
+
+  sementes_do_dia:
+    titulo: Sementes para o Dia
+    instrucao: |
+      Escolha uma ou duas atividades e repita com leveza em momentos comuns da casa.
+    atividades:
+      - titulo: Caça de Pares
+        icone: ph-magnifying-glass
+        acao: Encontre 3 pares iguais pela casa (talheres, sapatos, tampas).
+        tipo: Exploração
+        com_irmaos: true
+      - titulo: Teatro do Ninho
+        icone: ph-mask-happy
+        acao: Brinque de "objeto perdido" e "objeto encontrado" com voz de personagem.
+        tipo: Dramatização
+        com_irmaos: true
+      - titulo: Cartões Gêmeos
+        icone: ph-pencil-simple
+        acao: Desenhe dois símbolos iguais em cartões e monte mini-jogo de pares.
+        tipo: Criação
+        com_irmaos: true
+      - titulo: Conte para Alguém
+        icone: ph-chat-circle
+        acao: A criança narra para outra pessoa como encontrou um par difícil.
+        tipo: Narração
+        com_irmaos: false
+      - titulo: Pergunta da Noite
+        icone: ph-moon
+        acao: "Hoje você percebeu algo que parecia igual, mas não era?"
+        tipo: Ritual Noturno
+        com_irmaos: true
+    frase_final: |
+      Pequenas rotinas de pareamento treinam atenção, linguagem e base para contagem com sentido.
 
   para_familia:
     titulo: A Arte de Combinar
     porque_importa: |
-      Correspondência um-a-um é fundação da contagem.
-      Antes de contar, a criança precisa entender que cada objeto corresponde a um número.
+      Correspondência um-a-um é fundamento para contar com precisão.
+      Antes de avançar para operações, a criança precisa enxergar relação entre elementos.
+      Nesta fase, o objetivo não é "decorar", mas organizar o olhar e as mãos.
     metodo_cpa:
-      concreto: Pareamento físico de objetos.
-      pictorico: Vetado.
-      abstrato: Conceito de correspondência.
-      nota: "CM: Coisas antes de símbolos."
+      concreto: Pareamento físico de objetos reais.
+      pictorico: Vetado nesta etapa principal.
+      abstrato: Nomear par/sem par após vivência concreta.
+      nota: "CM: Things before signs."
     principio_cm:
-      numero: 7
-      citacao: "Education is a discipline."
-      aplicacao: Organizar pares desenvolve hábito de ordem.
+      numero: 16
+      citacao: "Handicrafts teach children precision and patience."
+      aplicacao: O ato de parear com as mãos treina precisão atencional.
     tgtb_conexao: |
-      Corresponde à lição de Correspondência Parte 1.
-      Íris traz atenção aos detalhes e beleza na ordem.
+      Alinhada a 000-L8 (Matching Part 1), com foco em correspondência concreta.
     espiral:
       conceito: Correspondência Um-a-Um
-      volta_atual: 'Sementes — pareamento de objetos iguais'
-      proxima_volta: 'Raízes — correspondência número-quantidade'
+      volta_atual: "Sementes - objetos reais em pares"
+      proxima_volta: "Raízes - correspondência número-quantidade e pares em jogos"
+      nota: A criança primeiro vive a equivalência antes de formalizar símbolos.
     reflexao_espiritual: |
-      Deus criou Eva para ser par de Adão.
-      Cada criatura tem seu lugar no plano do Criador.
+      A ordem pode ser um ato de cuidado.
+      Colocar cada coisa em seu lugar ensina atenção amorosa ao real.
     nota_graca: |
-      Se a criança não encontrar todos os pares, celebre os que encontrou!
-      "Íris diz: 'Amanhã encontramos os outros.'"
+      Se restar algo sem par, não há falha.
+      O importante foi treinar o olhar com calma e presença.
 
   diario_portador:
-    nota: Observe se a criança entende o conceito de "igual".
+    nota: Observe o processo, não apenas o resultado final.
     perguntas:
-      - Ela compara visualmente antes de parear?
-      - O ato de organizar traz satisfação?
+      - A criança compara forma/cor antes de decidir?
+      - Ela mantém atenção até finalizar os pares?
 
   auditoria_qa:
     cm: [true, true, true, true, true]

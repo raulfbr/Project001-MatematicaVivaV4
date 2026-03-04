@@ -1,11 +1,11 @@
-# LIÇÃO 009 — O CELEIRO DE NOÉ
-# Template: V6.3 | 20/01/2026 | Status: TESTE
+# LIÇÃO 009 - O CELEIRO DE NOÉ
+# Template: V6.5 | 04/03/2026 | Status: REVISAO_YAML_FIRST
 
 _meta:
   id: licao-009-celeiro-noe
-  versao: '6.3'
+  versao: "6.5"
   fase: Sementes
-  status: teste
+  status: revisado
 
 licao:
   metadados:
@@ -22,197 +22,254 @@ licao:
     tgtb_ref: 000-L9
     tgtb_titulo_en: Numbers 8 to 9
     tgtb_titulo_pt: Números 8 e 9
-    objetivo_pedagogico: '[Foco: Números 8 e 9 — quantidade e reconhecimento]'
-    tempo_licao: '15-20 min'
-    tempo_preparo: '≤ 5 min'
-    versao: '6.3'
-    status: rascunho
+    objetivo_pedagogico: Contar quantidades até 9 com foco em 8 e 9.
+    tempo_licao: "15-20 min"
+    tempo_preparo: "≤ 5 min"
+    versao: "6.5"
+    status: revisado
 
   navegacao:
-    anterior: {id: MV-S-008, titulo: O Par Perfeito}
-    proxima: {id: MV-S-010, titulo: A Fila da Providência}
+    anterior:
+      id: MV-S-008
+      titulo: O Par Perfeito
+    proxima:
+      id: MV-S-010
+      titulo: A Fila da Providência
 
   para_portador:
     ideia_viva:
-      frase: "Oito fardos de esperança guardados para a chuva. Nove tesouros para o amanhã."
-      conceito: Os números 8 e 9 são grandes, mas podemos contá-los.
-      intencao_cm: A criança percebe que números grandes ainda são contáveis.
+      frase: "Oito fardos de esperança guardados para a chuva, e mais um para amanhã."
+      conceito: Mesmo quantidades maiores continuam acessíveis quando contamos com ritmo.
+      intencao_cm: A criança treina atenção sustentada por meio de uma contagem calma e concreta.
     dica_coracao: |
-      Hoje entramos no celeiro de Noé.
-      Ele guardou provisões com paciência — e nós vamos contar.
-      Ajude seu filho a sentir a calma de contar devagar.
-    filho_descobre: Que 8 e 9 são quantidades maiores, mas ainda contáveis.
+      Hoje o ritmo vale mais do que a pressa.
+      Noé nos ensina a contar tocando cada objeto com presença.
+      Pausas curtas fazem parte da pedagogia.
+    filho_descobre: Oito e nove são quantidades grandes, mas possíveis de contar com método.
     protocolo_impecabilidade: |
-      Conte DEVAGAR. Noé nunca tem pressa.
-      Use objetos empilháveis se possível.
-    nota_graca: "Noé diz: 'Respire. O número espera por você.'"
+      Conte devagar e aponte um objeto por vez.
+      Se houver confusão, reinicie sem tensão e sem corrigir com pressa.
+    nota_graca: |
+      Se a contagem quebrar no meio, respire e recomece.
+      Noé diz: "O número continua aqui, esperando por nós."
     conforto_emocional: |
-      8 e 9 são quase dez! É um grande passo. Celebre isso.
+      Esta lição fortalece atenção e confiança.
+      O acerto nasce da calma repetida.
     audio_script: |
-      Olá, Portador! Noé nos convidou para seu celeiro.
-      Vamos contar os fardos de esperança.
+      Portador, o celeiro está aberto.
+      Hoje vamos contar provisões com Noé, no tempo certo.
     preparacao:
       materiais:
-        - {item: 9 objetos pequenos (blocos ou pedras), qtd: 9, alt: qualquer objeto empilhável, essencial: true}
-        - {item: Card Noé, qtd: 1, alt: imagem da coruja, essencial: true}
-        - {item: Cartões 8 e 9, qtd: 2, alt: papel com números grandes, essencial: false}
+        - item: "9 objetos pequenos (pedras, blocos ou sementes grandes)"
+          qtd: 9
+          alt: "9 tampas de garrafa"
+          essencial: true
+          nota: "Use objetos fáceis de tocar e mover."
+        - item: "Card Noé"
+          qtd: 1
+          alt: "Imagem da guardiã coruja"
+          essencial: true
+          nota: "Opcional para famílias sem card."
+        - item: "Cartões 8 e 9"
+          qtd: 2
+          alt: "Números escritos em papel"
+          essencial: false
+          nota: "Aparecem apenas depois da contagem concreta."
 
   linkage:
     elo_anterior:
       licao_id: MV-S-008
-      gancho: Íris nos ensinou a fazer pares. Agora, Noé nos apresenta 8 e 9!
+      gancho: O olhar treinado em pares agora sustenta uma contagem mais longa.
     proximo:
       licao_id: MV-S-010
-      gancho: Você conhece 1 a 9. Amanhã, Celeste vai nos ensinar quem é o primeiro da fila!
+      gancho: Depois de contar até 9, avançamos para posição na fila com Celeste.
 
   ritual_abertura:
-    instrucao_ambiente: Luz baixa, ambiente calmo, como um celeiro antigo.
+    instrucao_ambiente: Organize os 9 objetos em um cesto, com ambiente calmo e sem ruído excessivo.
     local: arvore_silencio
     clima: crepusculo
     virtude: paciencia
-    artefato: Nove fardos (objetos empilhados)
+    artefato: Cesto com nove fardos simbólicos
     transicao_reino: |
-      Feche os olhos. O ar está fresco e cheira a madeira.
-      Noé está esperando na Árvore do Silêncio.
+      Feche os olhos por um instante.
+      O ar está fresco e o caminho leva à Árvore do Silêncio.
     fala_portador:
       tom: solene
       script: |
-        Shhh... Ouve? O silêncio do celeiro de Noé.
-        Ele guarda coisas importantes ali.
-    card_guardiao: 'CARD: NOE'
+        Hoje vamos entrar no celeiro de Noé.
+        Aqui, cada número é contado com reverência e paciência.
+    card_guardiao: "CARD: NOE"
     abertura_sensorial: |
-      O ar cheira a casca de árvore e folhas secas.
-      Noé pisca seus olhos amarelos como duas luas.
-      "Respire. O número espera por você."
+      Cheiro de madeira e folhas secas.
+      A luz do fim da tarde toca os objetos alinhados no chão.
+      Uma voz serena convida: "Conte comigo, sem pressa."
 
   jornada:
     narrativa_principal:
-      - titulo: Os Fardos do Celeiro
+      - titulo: Provisões Guardadas
         local: arvore_silencio
         fala_guardiao:
-          tom: sabio
+          tom: acolhedor
           script: |
-            "Eu guardei provisões para o inverno."
-            [Noé aponta para pilhas de objetos]
-            "Vamos contar juntos. Devagar."
+            "Separei estes fardos para tempos de chuva."
+            "[Noé aproxima uma asa do primeiro objeto.]"
+            "Vamos contar juntos, um por vez."
         instrucao_portador: |
-          Mostre 9 objetos empilhados (ou enfileirados).
-          "Noé guardou muitas coisas! Vamos contar?"
-      - titulo: Oito Tesouros
+          Coloque os 9 objetos em linha ou semicírculo.
+          Convide a criança a tocar cada peça enquanto conta.
+      - titulo: Oito Fardos de Esperança
         local: arvore_silencio
         fala_guardiao:
           tom: paciente
           script: |
-            "Um, dois, três... devagar..."
-            [Noé conta pausadamente]
-            "...seis, sete, OITO. Oito fardos de esperança."
+            "Um... dois... três..."
+            "[Noé mantém pausas curtas entre cada número.]"
+            "...sete, oito. Oito fardos de esperança."
         instrucao_portador: |
-          Conte até 8 com a criança, tocando cada objeto.
-          "Oito! Quase encheu as duas mãos!"
-      - titulo: Nove — O Último Antes do Dez
+          Conte até 8 com ritmo lento.
+          Pare no 8 e valorize: "Chegamos ao oito."
+      - titulo: Nove, o Último Antes do Dez
         local: arvore_silencio
         fala_guardiao:
           tom: satisfeito
           script: |
-            "E mais um... NOVE!"
-            "O nove é o último antes do grande dez."
+            "Agora acrescentamos mais um."
+            "Nove. O último passo antes da dezena."
         instrucao_portador: |
-          Adicione o 9º objeto.
-          "Nove! O último antes de completar as duas mãos!"
+          Acrescente o 9º objeto de forma visível.
+          Diga: "Oito e mais um formam nove."
 
     concreto:
-      desc: Contar objetos reais de 1 a 9, focando em 8 e 9
-      card_objeto: 'CARD: FARDOS DO CELEIRO'
+      desc: Contagem concreta de objetos até 9, com ênfase em 8 e 9.
+      card_objeto: "CARD: FARDOS DO CELEIRO"
       metodo: mao-na-mao
       instrucoes_portador:
         - passo: 1
-          acao: Coloque 9 objetos em fila ou pilha.
-          fala_sugerida: "O celeiro de Noé está cheio!"
+          acao: Disponha 9 objetos em linha.
+          fala_sugerida: "Vamos tocar cada um para não pular nenhum."
         - passo: 2
-          acao: Conte devagar até 8, tocando cada objeto.
-          fala_sugerida: "Um... dois... três... devagar como Noé."
+          acao: Conte até 8 com apontamento sincronizado.
+          fala_sugerida: "Oito fardos já foram contados."
         - passo: 3
-          acao: Pause no 8. "Oito fardos!"
-          fala_sugerida: "OITO! Quase duas mãos inteiras!"
+          acao: Adicione o nono e reconte do 1 ao 9.
+          fala_sugerida: "Agora temos nove."
         - passo: 4
-          acao: Adicione o último. "Nove!"
-          fala_sugerida: "NOVE! O último antes do dez!"
-      norte_absoluto: Contar DEVAGAR. Noé ensina paciência.
+          acao: Misture e peça nova contagem para confirmar.
+          fala_sugerida: "Vamos verificar de novo, com calma."
+      norte_absoluto: Contar tocando cada elemento evita saltos e ancora o sentido de quantidade.
       adaptacao_bernardo: |
-        💡 Se a criança perde a atenção, faça pausas entre 5 e 8.
-        Conte em dois grupos: 5 + 3 = 8.
+        Trabalhe em dois blocos (5 e depois 3, depois mais 1) se necessário.
+        Se houver fadiga, mantenha só até 8 hoje e retome 9 amanhã.
 
-    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Contagem física.', excecao: 'Se Quiser Voar'}
+    pictorico:
+      status: VETADO
+      motivo: "Sementes prioriza manipulação real antes de representação gráfica."
+      excecao: "Se Quiser Voar"
 
     abstrato:
-      desc: Reconhecimento visual dos numerais 8 e 9
-      nota: Mostrar cartão depois da contagem concreta.
+      desc: Reconhecer os símbolos 8 e 9 após contar os objetos.
+      nota: O numeral é apresentado no final como nome visual do que já foi vivido.
 
     extensao:
       titulo: Se Quiser Voar
-      desc: Explorando 8 e 9
+      desc: Repetições breves de contagem no cotidiano.
       sugestoes:
-        - titulo: Duas Mãos Menos Um
-          acao: Mostre 10 dedos. Tire um. Quantos sobraram? (9)
-        - titulo: Contar Passos
-          acao: Dê 8 passos. Pare. Dê mais 1. Quantos no total?
+        - titulo: Passos do Corredor
+          acao: Caminhe 8 passos, pause, e adicione mais 1 para chegar a 9.
+        - titulo: Duas Mãos e Quase
+          acao: Mostre 10 dedos e dobre 1 para visualizar 9.
       adaptacao_bernardo: |
-        💡 Se contar é difícil, foque apenas no 8 hoje.
+        Use objetos de textura diferente para reforçar percepção tátil.
+        Reduza distrações visuais no ambiente.
 
   narracao:
     instrucao_portador: |
-      Guarde os objetos devagar, como Noé faria.
-      "Noé está orgulhoso de você."
-    pergunta_principal: O que Noé guardou no celeiro?
+      Convide a criança a recontar como chegou ao 8 e depois ao 9.
+      Escute sem interromper.
+    pergunta_principal: Como você descobriu o 9 hoje?
     perguntas_coracao:
-      - O 8 ou o 9 é maior?
-      - O que acontece depois do 9?
-    nota_cm: A narração conecta contagem à narrativa emocional.
+      - Em qual número você precisou de mais atenção?
+      - O que mudou quando contamos devagar?
+    nota_cm: Narração curta transforma contagem em compreensão, não só repetição.
 
   ritual_fechamento:
     fala_guardiao:
       tom: grato
       script: |
-        "Você contou com paciência. Como eu."
-        "Respire. O número espera. Até a próxima vez."
-    fio_ouro: "Você conhece 1 a 9. Amanhã, Celeste ensina quem é o primeiro da fila!"
+        "Você contou com paciência e firmeza."
+        "O celeiro está pronto, e seu olhar também."
+    fio_ouro: Amanhã Celeste mostrará que, além de contar, também podemos ordenar posições na fila.
     transicao_volta:
-      instrucao: Respire fundo três vezes antes de voltar.
-      fala: Um, dois, três... nove. Voltamos.
+      instrucao: Guarde os objetos no cesto enquanto repete 1 a 9 em voz serena.
+      fala: Contando com calma, voltamos para casa.
+
+  sementes_do_dia:
+    titulo: Sementes para o Dia
+    instrucao: |
+      Use micropráticas de 1 a 3 minutos para consolidar 8 e 9 sem cansar a criança.
+    atividades:
+      - titulo: Contagem na Cozinha
+        icone: ph-magnifying-glass
+        acao: Conte 8 itens da cozinha e depois adicione 1 para formar 9.
+        tipo: Exploração
+        com_irmaos: true
+      - titulo: Celeiro Encenado
+        icone: ph-mask-happy
+        acao: Monte um mini celeiro com brinquedos e dramatize a guarda dos fardos.
+        tipo: Dramatização
+        com_irmaos: true
+      - titulo: Trilha do 9
+        icone: ph-pencil-simple
+        acao: Faça uma trilha com 9 marcas no chão para a criança percorrer contando.
+        tipo: Criação
+        com_irmaos: true
+      - titulo: Relato do Contador
+        icone: ph-chat-circle
+        acao: A criança conta para alguém como chegou ao 8 e ao 9.
+        tipo: Narração
+        com_irmaos: false
+      - titulo: Pergunta da Noite
+        icone: ph-moon
+        acao: "O que ajuda você a não pular números quando conta?"
+        tipo: Ritual Noturno
+        com_irmaos: true
+    frase_final: |
+      Repetições curtas e concretas transformam 8 e 9 em conhecimento estável.
 
   para_familia:
     titulo: Quase Dez
     porque_importa: |
-      8 e 9 preparam para o conceito de dezena (10).
-      A paciência de Noé modela o ritmo certo para contagem precisa.
+      Os números 8 e 9 preparam o caminho para a dezena.
+      Contar com apontamento e ritmo previne "contagem decorada" sem quantidade real.
+      O objetivo é coordenação entre fala, olhar e toque.
     metodo_cpa:
-      concreto: Objetos físicos contados devagar.
-      pictorico: Vetado.
-      abstrato: Reconhecimento dos numerais 8 e 9.
-      nota: "CM: Lições curtas, atenção focada."
+      concreto: Objetos reais contados um a um.
+      pictorico: Vetado na fase principal.
+      abstrato: Identificar símbolos 8 e 9 após a vivência.
+      nota: "CM: Lições curtas e brilhantes, com atenção treinada."
     principio_cm:
       numero: 17
       citacao: "Habit of attention should be trained."
-      aplicacao: Contar devagar treina atenção sustentada.
+      aplicacao: Pausas e ritmo lento treinam atenção sustentada.
     tgtb_conexao: |
-      Corresponde à lição de Números 8 a 9.
-      Noé traz calma e paciência para grandes números.
+      Alinhada a 000-L9 (Numbers 8 to 9), preservando foco em contagem concreta.
     espiral:
-      conceito: Contagem 8-9
-      volta_atual: 'Sementes — contar até 9 com objetos'
-      proxima_volta: 'Raízes — operações com 8 e 9, valor posicional'
+      conceito: Contagem até 9
+      volta_atual: "Sementes - quantidade concreta com objetos"
+      proxima_volta: "Raízes - operações iniciais e base para valor posicional"
+      nota: O sentido de quantidade antecede qualquer algoritmo.
     reflexao_espiritual: |
-      Noé esperou com paciência na arca.
-      Provisão vem para quem espera com fé.
+      Esperar e contar no tempo certo também educa o coração.
+      Paciência não atrasa a aprendizagem; ela a aprofunda.
     nota_graca: |
-      Se a criança se perder na contagem, Noé diz:
-      "Respire. Vamos de novo. O número espera."
+      Se houver tropeço, repita menos itens e celebre a consistência.
+      A firmeza vale mais que a velocidade.
 
   diario_portador:
-    nota: Observe se a criança mantém atenção até 9.
+    nota: Observe se a criança coordena fala e apontamento sem pular objetos.
     perguntas:
-      - Ela conta cada objeto ou pula?
-      - O ritmo lento ajudou ou dificultou?
+      - Ela percebe a diferença entre 8 e 9 concretamente?
+      - O ritmo calmo aumentou a precisão?
 
   auditoria_qa:
     cm: [true, true, true, true, true]

@@ -1,11 +1,11 @@
-# LIÇÃO 010 — A FILA DA PROVIDÊNCIA
-# Template: V6.3 | 20/01/2026 | Status: TESTE
+# LIÇÃO 010 - A FILA DA PROVIDÊNCIA
+# Template: V6.5 | 04/03/2026 | Status: REVISAO_YAML_FIRST
 
 _meta:
   id: licao-010-fila-providencia
-  versao: '6.3'
+  versao: "6.5"
   fase: Sementes
-  status: teste
+  status: revisado
 
 licao:
   metadados:
@@ -22,196 +22,247 @@ licao:
     tgtb_ref: 000-L10
     tgtb_titulo_en: Ordinal Numbers Part 1
     tgtb_titulo_pt: Números Ordinais Parte 1
-    objetivo_pedagogico: '[Foco: Primeiro, segundo, terceiro — ordinais até 5º]'
-    tempo_licao: '15-20 min'
-    tempo_preparo: '≤ 5 min'
-    versao: '6.3'
-    status: rascunho
+    objetivo_pedagogico: Compreender posições ordinais do primeiro ao quinto em fila concreta.
+    tempo_licao: "15-20 min"
+    tempo_preparo: "≤ 5 min"
+    versao: "6.5"
+    status: revisado
 
   navegacao:
-    anterior: {id: MV-S-009, titulo: O Celeiro de Noé}
-    proxima: {id: MV-S-011, titulo: A Plenitude das Mãos}
+    anterior:
+      id: MV-S-009
+      titulo: O Celeiro de Noé
+    proxima:
+      id: MV-S-011
+      titulo: A Plenitude das Mãos
 
   para_portador:
     ideia_viva:
-      frase: "O primeiro a colher e o terceiro a agradecer. Quem a Raposa vê primeiro?"
-      conceito: Podemos descrever a posição das coisas numa fila.
-      intencao_cm: A criança percebe que ordem importa — quem vem primeiro, quem vem depois.
+      frase: "Na fila da providência, cada lugar conta uma história."
+      conceito: Ordinais descrevem posição (primeiro, segundo, terceiro...) e não quantidade total.
+      intencao_cm: A criança aprende relações por meio de movimento e linguagem viva.
     dica_coracao: |
-      Hoje Celeste organiza uma fila no Reino!
-      Ela vai nos ensinar sobre primeiro, segundo, terceiro...
-      A ordem conta uma história.
-    filho_descobre: Que podemos numerar as posições — primeiro, segundo, terceiro, quarto, quinto.
+      Hoje o foco é ordem e posição.
+      Celeste convida a criança a ver quem vem primeiro, quem vem depois e quem fecha a fila.
+      Faça perguntas curtas e deixe ela responder com corpo e voz.
+    filho_descobre: Podemos nomear lugares na fila do primeiro ao quinto.
     protocolo_impecabilidade: |
-      Use OBJETOS EM FILA (bonecos, carrininhos).
-      A criança deve apontar ou mover o "primeiro", "segundo", etc.
-    nota_graca: "Celeste diz: 'Sente esse cheiro? É aventura!' mesmo quando erramos a ordem."
+      Monte uma fila real com objetos e mantenha referência visual estável.
+      Troque posições e pergunte novamente para consolidar.
+    nota_graca: |
+      Confundir "três" com "terceiro" é esperado no começo.
+      Repita com tranquilidade, sem transformar em prova.
     conforto_emocional: |
-      Ordinais são como uma história — cada personagem tem seu momento.
+      Ordinais são linguagem de relação.
+      A compreensão amadurece em espiral, com pequenas repetições.
     audio_script: |
-      Olá, Portador! Celeste organizou uma corrida!
-      Vamos ver quem chega primeiro!
+      Portador, Celeste preparou uma trilha de chegada.
+      Hoje vamos descobrir quem ocupa cada lugar na fila.
     preparacao:
       materiais:
-        - {item: 5 objetos diferentes (bonecos ou carrinhos), qtd: 5, alt: qualquer objeto, essencial: true}
-        - {item: Card Celeste, qtd: 1, alt: imagem da raposa, essencial: true}
+        - item: "5 objetos diferentes (bonecos, carrinhos ou blocos)"
+          qtd: 5
+          alt: "5 cartões com desenhos distintos"
+          essencial: true
+          nota: "Diferenças visuais ajudam a identificar posição."
+        - item: "Card Celeste"
+          qtd: 1
+          alt: "Imagem da guardiã raposa"
+          essencial: true
+          nota: "Opcional para famílias sem card."
 
   linkage:
     elo_anterior:
       licao_id: MV-S-009
-      gancho: Noé nos ensinou 8 e 9. Agora, Celeste vai nos ensinar quem é o primeiro da fila!
+      gancho: Depois de contar até 9, agora organizamos posições na fila.
     proximo:
       licao_id: MV-S-011
-      gancho: Você sabe quem é primeiro e quem é último. Amanhã, conheceremos o 10 — as duas mãos completas!
+      gancho: A noção de ordem prepara a criança para a plenitude do 10 e 11.
 
   ritual_abertura:
-    instrucao_ambiente: Espaço amplo para organizar fila, luz natural.
+    instrucao_ambiente: Deixe espaço livre no chão para organizar uma fila de cinco objetos.
     local: clareira_perguntas
     clima: ensolarado
     virtude: curiosidade
-    artefato: Uma linha de largada imaginária
+    artefato: Linha de largada simbólica
     transicao_reino: |
-      Feche os olhos. Imagine uma clareira ensolarada.
-      Celeste está organizando uma corrida muito especial.
+      Feche os olhos por um instante.
+      A clareira está iluminada e um caminho foi marcado na grama.
     fala_portador:
       tom: animado
       script: |
-        Olha! Celeste está posicionando os corredores!
-        Quem será o primeiro a cruzar a linha?
-    card_guardiao: 'CARD: CELESTE'
+        Hoje a clareira recebe uma fila especial.
+        Vamos descobrir quem chega primeiro e quem fecha o caminho.
+    card_guardiao: "CARD: CELESTE"
     abertura_sensorial: |
-      O sol aquece a clareira. Cheiro de grama fresca.
-      Celeste fareja o ar: "Sente esse cheiro? É aventura!"
-      Ela posiciona cinco objetos numa linha de largada.
+      Cheiro de grama fresca e vento leve.
+      Cinco pequenos corredores aguardam em silêncio.
+      Uma voz alegre convida: "Observe a ordem, ela conta segredos."
 
   jornada:
     narrativa_principal:
-      - titulo: A Grande Corrida
+      - titulo: A Linha de Partida
         local: clareira_perguntas
         fala_guardiao:
           tom: animado
           script: |
-            "Atenção! Os corredores estão prontos!"
-            [Celeste aponta para os objetos em fila]
-            "Quem vai ser o PRIMEIRO? Quem vai ser o ÚLTIMO?"
+            "A fila está pronta."
+            "[Celeste caminha ao lado dos cinco corredores.]"
+            "Quem ocupa o primeiro lugar?"
         instrucao_portador: |
-          Coloque 5 objetos em fila.
-          "Vamos ver quem chega primeiro na corrida!"
-      - titulo: Primeiro, Segundo, Terceiro
+          Monte a fila com 5 objetos e nomeie apenas o primeiro e o último.
+          Evite pressa para não confundir termos.
+      - titulo: Nomeando Posições
         local: clareira_perguntas
         fala_guardiao:
           tom: curioso
           script: |
-            "Este é o PRIMEIRO! E depois dele vem o...?"
-            [Celeste pula de alegria]
-            "SEGUNDO! E depois, o TERCEIRO!"
+            "Depois do primeiro vem o segundo."
+            "Depois, terceiro, quarto e quinto."
         instrucao_portador: |
-          Mova cada objeto "correndo" e diga:
-          "PRIMEIRO! SEGUNDO! TERCEIRO! QUARTO! QUINTO!"
-      - titulo: Quem é Quem
+          Aponte cada objeto em sequência e nomeie as posições.
+          Convide a criança a repetir junto.
+      - titulo: Troca de Lugares
         local: clareira_perguntas
         fala_guardiao:
           tom: satisfeito
           script: |
-            "Aponte para o TERCEIRO! Qual é o ÚLTIMO?"
-            "Você sabe onde cada um está na fila!"
+            "Se mudamos a ordem, mudam os lugares."
+            "Vamos descobrir de novo quem é o terceiro?"
         instrucao_portador: |
-          Pergunte "Qual é o segundo?" e deixe apontar.
-          Misture as perguntas.
+          Troque dois objetos de posição.
+          Faça perguntas variadas: primeiro, terceiro, quinto.
 
     concreto:
-      desc: Organizar objetos em fila e identificar posições ordinais
-      card_objeto: 'CARD: FILA DA CORRIDA'
+      desc: Organização de fila concreta para identificar ordinais do 1º ao 5º.
+      card_objeto: "CARD: FILA DA CORRIDA"
       metodo: mao-na-mao
       instrucoes_portador:
         - passo: 1
-          acao: Coloque 5 objetos em fila horizontal.
-          fala_sugerida: "Os corredores estão prontos!"
+          acao: Posicione 5 objetos em linha horizontal.
+          fala_sugerida: "Vamos observar cada lugar desta fila."
         - passo: 2
-          acao: Aponte para o primeiro. "Este é o PRIMEIRO!"
-          fala_sugerida: "Ele chegou primeiro na corrida!"
+          acao: Nomeie do primeiro ao quinto apontando objeto por objeto.
+          fala_sugerida: "Primeiro, segundo, terceiro, quarto, quinto."
         - passo: 3
-          acao: Continue até o quinto.
-          fala_sugerida: "SEGUNDO... TERCEIRO... QUARTO... QUINTO!"
+          acao: Pergunte posições específicas e aguarde resposta.
+          fala_sugerida: "Quem está em terceiro?"
         - passo: 4
-          acao: Pergunte "Qual é o terceiro?" e deixe apontar.
-          fala_sugerida: "Aponte para o TERCEIRO!"
-      norte_absoluto: A criança deve APONTAR ou MOVER para identificar posições.
+          acao: Troque dois objetos e repita as perguntas.
+          fala_sugerida: "Mudou a posição. Vamos descobrir de novo."
+      norte_absoluto: Ordinal é posição na sequência; o objeto pode mudar, o lugar também muda.
       adaptacao_bernardo: |
-        💡 Se a criança não consegue apontar, mova você e pergunte "Este é qual?"
-        Comece com apenas 3 objetos se 5 for muito.
+        Comece com 3 posições (primeiro, segundo, terceiro) e avance para 5.
+        Se apontar for difícil, aceite resposta por olhar, toque assistido ou fala.
 
-    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Fila física.', excecao: 'Se Quiser Voar'}
+    pictorico:
+      status: VETADO
+      motivo: "Sementes prioriza ordem vivida com objetos reais."
+      excecao: "Se Quiser Voar"
 
     abstrato:
-      desc: Vocabulário ordinal (primeiro a quinto)
-      nota: A criança OUVE e USA os termos ordinais.
+      desc: Vocabulário ordinal (primeiro ao quinto) após manipulação concreta.
+      nota: A linguagem vem da experiência corporal de ordenar.
 
     extensao:
       titulo: Se Quiser Voar
-      desc: Explorando ordinais
+      desc: Aplicar ordinais em cenas cotidianas.
       sugestoes:
         - titulo: Fila da Família
-          acao: Quem é o primeiro da sua família a acordar? E o último?
-        - titulo: História de Chegada
-          acao: Conte uma história onde 5 animais chegam um de cada vez.
+          acao: Forme uma fila com pessoas da casa e nomeie posições.
+        - titulo: Trilha de Brinquedos
+          acao: Organize brinquedos em fila e peça "mostre o quarto".
       adaptacao_bernardo: |
-        💡 Se 5 posições são muitas, foque em "primeiro" e "último" apenas.
+        Se cinco for excessivo, mantenha primeiro e último por alguns dias.
+        Depois introduza segundo e terceiro.
 
   narracao:
     instrucao_portador: |
-      Guarde os objetos na ordem (primeiro ao último).
-      "Celeste adorou a corrida!"
-    pergunta_principal: Quem foi o primeiro na corrida de hoje?
+      Peça para a criança recontar quem estava em cada lugar na última rodada.
+    pergunta_principal: Quem ficou em primeiro e quem ficou em último hoje?
     perguntas_coracao:
-      - Você gosta mais de ser primeiro ou último?
-      - O que significa "segundo"?
-    nota_cm: A narração fixa o vocabulário ordinal naturalmente.
+      - O que muda quando trocamos dois objetos de lugar?
+      - Qual posição foi mais fácil de lembrar?
+    nota_cm: Narração ajuda a distinguir quantidade (cardinal) de posição (ordinal).
 
   ritual_fechamento:
     fala_guardiao:
       tom: satisfeito
       script: |
-        "Você sabe quem é primeiro, segundo, terceiro!"
-        "A ordem conta uma história. Até a próxima aventura!"
-    fio_ouro: "Você sabe ordenar 1 a 5. Amanhã, conheceremos o 10 — as duas mãos completas!"
+        "Você leu a fila com atenção."
+        "Agora cada lugar tem nome no seu coração."
+    fio_ouro: Amanhã a jornada avança para 10 e 11, unindo ordem e quantidade em nova etapa.
     transicao_volta:
-      instrucao: Guarde os objetos dizendo "primeiro... último".
-      fala: Primeiro, segundo, terceiro... voltamos.
+      instrucao: Guarde os objetos um por vez, repetindo a posição em que estavam.
+      fala: Com ordem e calma, voltamos para casa.
+
+  sementes_do_dia:
+    titulo: Sementes para o Dia
+    instrucao: |
+      Faça pequenas práticas de ordenação em contextos reais para consolidar ordinais.
+    atividades:
+      - titulo: Ordinais na Rotina
+        icone: ph-magnifying-glass
+        acao: Identifique primeiro e último em uma fila real do dia (sapatos, livros, cadeiras).
+        tipo: Exploração
+        com_irmaos: true
+      - titulo: Corrida de Personagens
+        icone: ph-mask-happy
+        acao: Dramatize uma corrida curta com brinquedos e anuncie as posições.
+        tipo: Dramatização
+        com_irmaos: true
+      - titulo: Pista Numerada
+        icone: ph-pencil-simple
+        acao: Desenhe 5 casas no papel e coloque um objeto em cada posição.
+        tipo: Criação
+        com_irmaos: true
+      - titulo: Relato da Fila
+        icone: ph-chat-circle
+        acao: A criança explica para alguém quem era o terceiro da fila e por quê.
+        tipo: Narração
+        com_irmaos: false
+      - titulo: Pergunta da Noite
+        icone: ph-moon
+        acao: "Hoje você percebeu algo em que a ordem muda tudo?"
+        tipo: Ritual Noturno
+        com_irmaos: true
+    frase_final: |
+      Ordinais viram linguagem viva quando aparecem em filas e sequências do cotidiano.
 
   para_familia:
     titulo: A Ordem Importa
     porque_importa: |
-      Ordinais (primeiro, segundo, etc.) são diferentes de cardinais (um, dois).
-      São fundamentais para sequenciamento, instruções e compreensão de histórias.
+      Números ordinais tratam de posição, não de quantidade.
+      Essa distinção sustenta compreensão de instruções, leitura de sequência e organização mental.
+      Em Sementes, o corpo organiza primeiro; a linguagem formal vem depois.
     metodo_cpa:
-      concreto: Objetos físicos em fila.
-      pictorico: Vetado.
-      abstrato: Vocabulário ordinal.
-      nota: "CM: A criança vive antes de definir."
+      concreto: Objetos em fila com troca real de posições.
+      pictorico: Vetado no núcleo da lição.
+      abstrato: Vocabulário ordinal consolidado pela narração.
+      nota: "CM: Science of relations - aprender relações de posição."
     principio_cm:
       numero: 6
       citacao: "Education is the science of relations."
-      aplicacao: Ordinais expressam relações de posição.
+      aplicacao: Ordinais treinam relação entre elementos em sequência.
     tgtb_conexao: |
-      Corresponde à lição de Números Ordinais Parte 1.
-      Celeste traz aventura e curiosidade para a sequência.
+      Alinhada a 000-L10 (Ordinal Numbers Part 1), com foco em primeiro ao quinto.
     espiral:
       conceito: Números Ordinais
-      volta_atual: 'Sementes — primeiro ao quinto'
-      proxima_volta: 'Raízes — ordinais até décimo, datas'
+      volta_atual: "Sementes - posições em fila concreta"
+      proxima_volta: "Raízes - ordinais em calendário, datas e sequências mais longas"
+      nota: A base relacional evita confusão persistente entre cardinal e ordinal.
     reflexao_espiritual: |
-      "Os últimos serão os primeiros."
-      A posição na fila não define o valor da pessoa.
+      O lugar em uma fila muda, mas o valor da pessoa permanece.
+      Ordem é serviço ao bem comum, não disputa de valor.
     nota_graca: |
-      Se confundir ordinais com cardinais, tudo bem!
-      Celeste diz: "Um, dois, três conta. Primeiro, segundo, terceiro ordena!"
+      Se houver confusão, reduza para três posições por alguns dias.
+      Clareza cresce com repetição curta e gentil.
 
   diario_portador:
-    nota: Observe se a criança diferencia "três" de "terceiro".
+    nota: Observe se a criança diferencia "três" de "terceiro" no uso espontâneo.
     perguntas:
-      - Ela usa "primeiro" e "último" corretamente?
-      - A noção de ordem está clara?
+      - Ela identifica posições sem depender de repetir toda a fila?
+      - Trocar dois objetos ajudou a entender que ordinal é posição?
 
   auditoria_qa:
     cm: [true, true, true, true, true]

@@ -1,11 +1,11 @@
-# TEMPLATE V6.3 SEMENTES — YAML Lean Otimizado para IA
-# Versão: 6.3 | 15/01/2026 | Refs: LORE/index.yaml, triade.yaml
+# TEMPLATE V6.4 SEMENTES — YAML Lean Otimizado para IA
+# Versão: 6.4 | 04/03/2026 | Refs: LORE/index.yaml, triade.yaml
 # Evolução: Sementes(K) → Raízes(1-5) → Lógica(6-8) → Legado(9-12)
 # Este template é base evolutiva: Sementes → gera Raízes → gera Lógica → gera Legado
 
 _meta:
-  id: template-v6.3-sementes
-  versao: '6.3'
+  id: template-v6.4-sementes
+  versao: '6.4'
   fase: Sementes
   status: canonico
   refs:
@@ -38,7 +38,7 @@ licao:
     objetivo_pedagogico: '[Discreto: O foco matemático da lição]'
     tempo_licao: '15-20 min'
     tempo_preparo: '≤ 5 min'
-    versao: '6.3'
+    versao: '6.4'
     status: rascunho
 
   navegacao:
@@ -101,6 +101,14 @@ licao:
     fio_ouro: '[Conexão explícita com próxima jornada]'
     transicao_volta: {instrucao: '[Apagar luz especial juntos]', fala: '[Frase de encerramento]'}
 
+  sementes_do_dia:
+    titulo: 'Sementes para o Dia'
+    instrucao: '[Práticas opcionais para o dia, sem obrigatoriedade.]'
+    atividades:
+      # IA: adicione quantas atividades necessárias (sugestão 3-5). Estrutura:
+      # - {titulo: nome, icone: ph-*, acao: texto, tipo: categoria, com_irmaos: true/false}
+    frase_final: '[Frase de envio para encerrar o dia no tom do Reino.]'
+
   para_familia:
     titulo: Entendendo a Jornada de Hoje
     porque_importa: '[2-3 parágrafos explicando por que lição foi desenhada assim]'
@@ -118,9 +126,9 @@ licao:
   # navegacao_inferior: REMOVIDO (duplicava navegacao - viola DRY)
 
   auditoria_qa:
-    cm: [Criança pessoa?, Ideia Viva?, Narração?, Lição ≤20min?, Hábito Atenção?]
-    cpa: [Concreto presente?, Pictórico vetado?, Abstrato mínimo?]
-    narrativa: [Frase canônica guardião?, Tom Lewis?, Consistência Tolkien?, Cores Potter?]
-    template: [Seções obrigatórias?, Linkage?, Atmosfera única?]
-    triade: [CM OK?, CPA OK?, TGTB ref válida?]
-    inclusao: [Adaptação Bernardo?, Instruções acessíveis?]
+    cm: ['Criança pessoa?', 'Ideia Viva?', 'Narração?', 'Lição ≤20min?', 'Hábito Atenção?']
+    cpa: ['Concreto presente?', 'Pictórico vetado?', 'Abstrato mínimo?']
+    narrativa: ['Frase canônica guardião?', 'Tom Lewis?', 'Consistência Tolkien?', 'Cores Potter?']
+    template: ['Seções obrigatórias?', 'Linkage?', 'Atmosfera única?']
+    triade: ['CM OK?', 'CPA OK?', 'TGTB ref válida?']
+    inclusao: ['Adaptação Bernardo?', 'Instruções acessíveis?']

@@ -39,9 +39,11 @@ licao:
       intencao_cm: Cada número é uma criatura viva, não um signo morto. A criança toca, conta e VIVE os números.
     dica_coracao: |
       Hoje você vai apresentar os números 1, 2 e 3.
-      Respire. O encantamento está no encontro, não na performance.
+      Respire. O maravilhamento está no encontro, não na performance.
       Seu filho não precisa "acertar" — precisa sentir.
-    filho_descobre: Que os números são REAIS — você pode tocá-los, guardá-los na palma, contá-los um por um.
+    filho_descobre: |
+      Que os números são REAIS — você pode tocá-los e contá-los um por um.
+      Que "três" é uma quantidade que cabe na palma da mão.
     protocolo_impecabilidade: |
       NÃO EXPLIQUE os números. MOSTRE-OS.
       Coloque 1 semente na mão. Diga "Um". Espere.
@@ -173,8 +175,9 @@ licao:
     instrucao_portador: |
       Guarde os materiais. Olhe nos olhos do seu filho.
       Dê tempo. O silêncio é trabalho mental sagrado.
-    pergunta_principal: O que Celeste encontrou debaixo do carvalho?
+    pergunta_principal: O que você descobriu hoje na Clareira? O que contaria para o Melquior?
     perguntas_coracao:
+      - O que Celeste encontrou debaixo do carvalho?
       - Quantas promessas o Rei deixou?
       - O que você sentiu na sua mão?
       - Qual foi a sua semente preferida?
@@ -208,8 +211,8 @@ licao:
       80% ou mais da lição em Sementes deve ser manipulação física.
     metodo_cpa:
       concreto: Sementes tocadas, contadas, guardadas, trazidas de volta
-      pictorico: Vetado em Sementes
-      abstrato: Apenas reconhecimento visual (traçar no ar é ENATIVO)
+      pictorico: Vetado em Sementes (foco 100% concreto)
+      abstrato: Apenas reconhecimento auditivo, não visual numérico
       nota: 'CM: Coisas antes de Signos.'
     principio_cm:
       numero: 10
@@ -234,6 +237,41 @@ licao:
       Celeste também perde a trilha às vezes — é por isso que fareja!
       O importante é que seu filho TOCOU os números hoje.
       A trindade ficou na palma. O coração guardou.
+
+  sementes_do_dia:
+    titulo: Sementes para o Dia
+    instrucao: |
+      Ao longo do dia, a criança pode continuar vivendo no Reino.
+      Estas atividades são opcionais — a lição já está completa.
+    atividades:
+      - titulo: Caça às Trindades
+        icone: ph-magnifying-glass
+        acao: Encontre 3 folhas, 3 pedrinhas ou 3 brinquedos iguais no jardim ou na casa.
+        tipo: Exploração
+        com_irmaos: true
+      - titulo: Farejo da Celeste
+        icone: ph-mask-happy
+        acao: Engatinhe pela sala farejando tesouros escondidos como a Raposa Celeste.
+        tipo: Dramatização
+        com_irmaos: true
+      - titulo: Desenho das Promessas
+        icone: ph-pencil-simple
+        acao: Desenhe as três sementes do Rei (na terra com graveto ou no papel com giz).
+        tipo: Criação
+        com_irmaos: false
+      - titulo: História da Raposa
+        icone: ph-chat-circle
+        acao: Conte para alguém "A Raposa achou três promessas!" mostrando com os dedinhos.
+        tipo: Narração
+        com_irmaos: false
+      - titulo: Gratidão em Três
+        icone: ph-moon-stars
+        acao: Antes de dormir, agradecer por 3 coisas boas que aconteceram no dia.
+        tipo: Ritual Noturno
+        com_irmaos: true
+    frase_final: |
+      Deixe um potinho com 3 feijões na mesa. Sempre que passarem por ele, contem juntos:
+      "Uma, duas, três." Sem pressão, como um segredo entre vocês.
 
   diario_portador:
     nota: Suas anotações serão usadas nas revisões trimestrais.

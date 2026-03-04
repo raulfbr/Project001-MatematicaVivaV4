@@ -251,6 +251,41 @@ licao:
       O importante é que seu filho CONSTRUIU junto com você hoje.
       A fortaleza não precisa ficar pronta agora. Ela cresce um dia de cada vez.
 
+  sementes_do_dia:
+    titulo: Sementes para o Dia
+    instrucao: |
+      Ao longo do dia, retomem a ideia de "fileira" em contextos simples e vivos.
+      Estas atividades são opcionais — a lição já está completa.
+    atividades:
+      - titulo: Caça às Fileiras
+        icone: ph-magnifying-glass
+        acao: Procurar fileiras pela casa (livros na estante, azulejos, grades, objetos alinhados).
+        tipo: Exploração
+        com_irmaos: true
+      - titulo: Urso Construtor
+        icone: ph-mask-happy
+        acao: Carregar "pedras" (almofadas) e montar uma pilha/parede como Bernardo.
+        tipo: Dramatização
+        com_irmaos: true
+      - titulo: Carimbo de Pedras
+        icone: ph-pencil-simple
+        acao: Fazer 5 marcas em linha reta com tinta, giz ou água em papelão.
+        tipo: Criação
+        com_irmaos: false
+      - titulo: Como Ajudei Bernardo
+        icone: ph-chat-circle
+        acao: Recontar para alguém como ajudou Bernardo a organizar e contar as pedras.
+        tipo: Narração
+        com_irmaos: false
+      - titulo: Fileira de Descanso
+        icone: ph-moon-stars
+        acao: Na hora de dormir, alinhar chinelos ou objetos em fileira e nomear a ordem.
+        tipo: Ritual Noturno
+        com_irmaos: true
+    frase_final: |
+      Use uma caixa de ovos com 5 (ou 10) espaços para criar um ten-frame caseiro.
+      Preencher cada espaço ajuda a criança a perceber que cada número tem seu lugar.
+
   diario_portador:
     nota: Suas anotações serão usadas nas revisões trimestrais.
     perguntas:

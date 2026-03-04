@@ -85,25 +85,22 @@ licao:
     clima: ensolarado
     virtude: maravilhamento
     artefato: A Luz Amarela
-    - item: ritual_abertura
-      tipo: instruction
-      icon: "🕯️"
-      text: |
-        **Ritual de Entrada:**
-        **Ritual de Entrada:**
-        O pai diz: "Luz de fora acalma." (Diminua o ritmo / distrações)
-        "Sol de dentro acende." (Acenda a Luz Amarela)
-        "Respirem... Estamos no Reino."
-
-    - item: transicao
-      text: "Feche os olhos. Respire fundo. Quando abrir os olhos, estaremos em um lugar muito especial... O Jardim Central do Reino Contado."
-
-    - item: sensorial
-      text: "O ar cheira a terra molhada e musgo fresco. O sol dourado aquece o rosto. Pássaros cantam ao longe. Em um banco de pedra antiga, sentado com as patas cruzadas, está um grande Leão de juba dourada. Ele sorri ao ver você chegar."
-
-    - item: fala_portador
-      text: "Hoje vamos visitar um lugar muito especial. Um lugar onde animais sábios nos esperam. Shhh... você está pronto para conhecê-los?"
-      tone: misterioso
+    transicao_reino: |
+      Feche os olhos. Respire fundo.
+      Quando abrir os olhos, estaremos em um lugar muito especial:
+      o Jardim Central do Reino Contado.
+    abertura_sensorial: |
+      O ar cheira a terra molhada e musgo fresco.
+      O sol dourado aquece o rosto.
+      Pássaros cantam ao longe.
+      Em um banco de pedra antiga, sentado com as patas cruzadas, está um grande Leão de juba dourada.
+      Ele sorri ao ver você chegar.
+    fala_portador:
+      tom: misterioso
+      script: |
+        Hoje vamos visitar um lugar muito especial.
+        Um lugar onde animais sábios nos esperam.
+        Shhh... você está pronto para conhecê-los?
 
   jornada:
     narrativa_principal:
@@ -289,7 +286,7 @@ licao:
     fio_ouro: Amanhã, Celeste nos mostrará as três sementes do carvalho mais velho.
     transicao_volta:
       instrucao: Apaguem a Luz Amarela juntos (ou o seu sinal)
-      fala_portador: |
+      fala: |
         A Luz se apaga, mas o brilho fica no coração.
         O Reino descansa. Até amanhã, Herdeiro.
 
@@ -320,8 +317,9 @@ licao:
       citacao_pt: "Educação é atmosfera, disciplina, vida."
       aplicacao: Antes de contar, dar. Antes de ensinar, encantar. A atmosfera vem primeiro.
     tgtb_conexao: |
-      Esta lição corresponde à "Lesson 0 / Introduction" do TGTB — o momento
-      de estabelecer expectativas e criar conexão antes do conteúdo.
+      Esta lição não possui correspondência direta no currículo TGTB,
+      mas é fundamental para estabelecer vínculo e preparar o coração
+      antes do conteúdo acadêmico.
     espiral:
       conceito: Atmosfera sagrada
       volta_atual: 'Sementes — Primeiro contato com o Reino e os Guardiões'
@@ -337,6 +335,41 @@ licao:
       Se hoje não "funcionou" como você esperava, respire.
       Algumas crianças precisam de mais tempo para cruzar o portal.
       O convite de Melquior permanece aberto. Volte amanhã com a mesma ternura.
+
+  sementes_do_dia:
+    titulo: Sementes para o Dia
+    instrucao: |
+      Ao longo do dia, a criança pode continuar vivendo no Reino.
+      Estas atividades são opcionais — a lição já está completa.
+    atividades:
+      - titulo: Caça aos Guardiões
+        icone: ph-magnifying-glass
+        acao: Espalhar os 5 cards pela casa e convidar a criança a encontrar cada guardião pelo nome.
+        tipo: Exploração
+        com_irmaos: true
+      - titulo: O Trono de Melquior
+        icone: ph-mask-happy
+        acao: Escolher uma cadeira especial e dramatizar a recepção dos guardiões como no Jardim Central.
+        tipo: Dramatização
+        com_irmaos: true
+      - titulo: Mapa do Reino
+        icone: ph-pencil-simple
+        acao: Desenhar o Jardim Central e marcar os 5 locais principais da jornada.
+        tipo: Criação
+        com_irmaos: false
+      - titulo: História do Herdeiro
+        icone: ph-chat-circle
+        acao: Recontar para alguém o que aconteceu no Reino e quem foi conhecido hoje.
+        tipo: Narração
+        com_irmaos: false
+      - titulo: Pergunta do Guardião
+        icone: ph-moon-stars
+        acao: Antes de dormir, perguntar "Se você pudesse fazer uma pergunta a Melquior, qual seria?"
+        tipo: Ritual Noturno
+        com_irmaos: true
+    frase_final: |
+      "O Reino não acaba quando a lição termina. Ele vive no coração do Herdeiro."
+      — Matemática Viva
 
   diario_portador:
     nota: Suas anotações serão usadas nas revisões trimestrais.

@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Portal do Reino | Matemática Viva</title>
+    <link rel="stylesheet" href="../curriculo/_SISTEMA/TEMPLATES/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <style>
+        /* Estilos específicos da lição */
+        .clima-0 {
+            --clima-bg: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 50%, #FBBF24 100%);
+        }
+        
+        .home-btn {
+            position: fixed;
+            top: 1.5rem;
+            left: 1.5rem;
+            width: 3rem;
+            height: 3rem;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+        
+        .home-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        
+        .home-btn i {
+            font-size: 1.5rem;
+        }
+        
+        .lesson-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .lesson-header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .nav-back-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-green);
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        
+        .nav-back-link:hover {
+            color: var(--color-gold);
+        }
+        
+        .lesson-hero {
+            background: linear-gradient(135deg, var(--color-green) 0%, #1a2f28 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .lesson-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--color-gold), var(--color-accent));
+        }
+        
+        .lesson-meta-tag {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            backdrop-filter: blur(8px);
+        }
+        
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .hero-quote {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: rgba(255,255,255,0.9);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        .hero-guardian {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid var(--color-gold);
+            object-fit: cover;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+        
+        .lesson-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .scene-header {
+            display: flex;
+            align-items: center;
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--color-green);
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--color-gold-light);
+        }
+        
+        .instruction-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+            padding: 1.25rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--color-gold);
+        }
+        
+        .instruction-box i {
+            flex-shrink: 0;
+        }
+        
+        .materials-box {
+            background: #F9FAFB;
+            border: 1px solid #E5E7EB;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .script-persona-block {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: #FAFAFA;
+            border-radius: 12px;
+        }
+        
+        .portador-block {
+            background: linear-gradient(135deg, #FEE2E2 0%, #FECACA 100%);
+            border-left: 4px solid #DC2626;
+        }
+        
+        .script-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--color-gold-light);
+            flex-shrink: 0;
+        }
+        
+        .script-avatar-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #DC2626 0%, #991B1B 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .script-avatar-icon i {
+            font-size: 1.75rem;
+            color: white;
+        }
+        
+        .script-content {
+            flex: 1;
+        }
+        
+        .script-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .script-name {
+            font-weight: 700;
+            color: var(--color-green);
+        }
+        
+        .script-text {
+            line-height: 1.7;
+        }
+        
+        .script-text p {
+            margin: 0.5rem 0;
+        }
+        
+        .card-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .local-label {
+            display: inline-block;
+            background: var(--color-green);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        
+        .card-visual-asset {
+            max-width: 300px;
+            border-radius: 12px;
+            border: 4px solid var(--color-gold);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .card-visual-asset:hover {
+            transform: scale(1.02);
+        }
+        
+        .rotate-left {
+            transform: rotate(-2deg);
+        }
+        
+        .hover-float:hover {
+            transform: rotate(0deg) translateY(-5px);
+        }
+        
+        .scene-card {
+            background: #FAFAFA;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .cm-box, .bruner-box, .espiritual-box, .graca-box, .tgtb-box {
+            padding: 1.25rem;
+            border-radius: 12px;
+            margin: 1rem 0;
+        }
+        
+        .lesson-nav-footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #E5E7EB;
+            gap: 1rem;
+        }
+        
+        .nav-btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .nav-btn.prev {
+            background: #F3F4F6;
+            color: #4B5563;
+        }
+        
+        .nav-btn.prev:hover {
+            background: #E5E7EB;
+            transform: translateX(-3px);
+        }
+        
+        .nav-btn.next {
+            background: var(--color-green);
+            color: white;
+            box-shadow: 0 4px 15px rgba(42, 59, 51, 0.3);
+        }
+        
+        .nav-btn.next:hover {
+            background: var(--color-gold);
+            color: var(--color-green);
+            transform: translateY(-2px);
+        }
+        
+        .site-footer {
+            background: var(--color-green);
+            color: rgba(255,255,255,0.8);
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-top: 3rem;
+            border-radius: 16px 16px 0 0;
+        }
+        
+        .site-footer strong {
+            color: white;
+        }
+        
+        /* Duotone colors for Phosphor icons */
+        .duotone-carmim { color: #DC2626; }
+        .duotone-gold { color: #D97706; }
+        .duotone-forest { color: #166534; }
+        .duotone-terra { color: #92400E; }
+        .duotone-indigo { color: #4F46E5; }
+        .duotone-magic { color: #7C3AED; }
+        .duotone-heart { color: #DC2626; }
+        .duotone-neutral { color: #6B7280; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title { font-size: 1.75rem; }
+            .lesson-content { padding: 1.5rem; }
+            .lesson-nav-footer { flex-direction: column; }
+            .nav-btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body class="clima-0">
+    <!-- Home Button -->
+    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard">
+        <i class="ph-duotone ph-house duotone-forest"></i>
+    </a>
+
+    <div class="lesson-container">
+        <!-- Header Navigation -->
+        <div class="lesson-header-nav">
+            <a href="../index.html" class="nav-back-link">
+                <i class="ph-duotone ph-arrow-left"></i> Voltar
+            </a>
+            <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <i class="ph-duotone ph-plant duotone-forest" style="font-size: 1.5rem;"></i>
+                <span style="font-family: var(--font-heading); font-weight: 700; color: var(--color-green); font-size: 0.9rem;">Sementes</span>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <header class="lesson-hero">
+            <div class="lesson-meta-tag">
+                Lição 000 · O Portal do Reino · <i class="ph-duotone ph-timer duotone-carmim"></i> 15-20 min
+            </div>
+            <h1 class="hero-title">O Portal do Reino</h1>
+            <p class="hero-quote">"Onde a matemática vira aventura, e cada número conta uma história."</p>
+            <img src="../curriculo/_SISTEMA/imagens/melquior-leao.png" 
+                 onError="this.src='../docs/cards/guardioes/melquior-leao.png'" 
+                 alt="Melquior, o Leão Dourado" class="hero-guardian">
+        </header>
+
+        <!-- Lesson Content -->
+        <div class="lesson-content">
+            
+            <!-- ==================== PREPARAÇÃO DO PORTADOR ==================== -->
+            <div class="scene-header">
+                <i class="ph-duotone ph-clipboard-text duotone-terra" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                Preparação do Portador
+            </div>
+
+            <!-- Dica do Coração -->
+            <div class="instruction-box">
+                <i class="ph-duotone ph-lightbulb duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                <div>
+                    <strong>Dica do Coração:</strong> Hoje não há matemática. Só maravilhamento.
+                    Seu único trabalho é criar o ambiente sagrado.
+                    Acenda a Luz Amarela (ou seu sinal escolhido), estenda o tapete.
+                    <strong>Melquior fará o resto.</strong>
+                </div>
+            </div>
+
+            <!-- Materiais -->
+            <aside class="materials-box">
+                <p><strong><i class="ph-duotone ph-target duotone-terra"></i> Essencial:</strong></p>
+                <ul>
+                    <li>Tapete ou cobertor (Tapete do Reino)</li>
+                    <li>Luz Amarela (Gatilho de Foco e Imersão)</li>
+                    <li>Cards dos 5 Guardiões</li>
+                    <li>Cards dos 5 Locais</li>
+                </ul>
+                <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-package duotone-gold"></i> Se tiver:</strong></p>
+                <ul style="color:#6B7280;">
+                    <li>Música ambiente suave</li>
+                </ul>
+            </aside>
+
+            <!-- Seu filho vai descobrir -->
+            <p><strong><i class="ph-duotone ph-sparkle duotone-magic"></i> Seu filho vai descobrir:</strong>
+                Que existe um Reino especial chamado Reino Contado.
+                Que cinco Guardiões vão caminhar com ele nesta jornada.
+                Que ele é um <strong>Herdeiro</strong> -- alguém especial, esperado.
+            </p>
+
+            <!-- Segredo do Maravilhamento -->
+            <p><strong><i class="ph-duotone ph-sparkle duotone-magic"></i> Segredo do Maravilhamento:</strong>
+                Não precisa explicar nada. Apenas <strong>viva a narrativa</strong>.
+                Se a criança perguntar, sorria e diga: "Você vai descobrir...".
+                O <strong>maravilhamento</strong> é mais importante que a compreensão.
+            </p>
+
+            <!-- Nota de Graça -->
+            <p><strong><i class="ph-duotone ph-heart duotone-heart"></i> Nota de Graça:</strong>
+                Se a criança não "entrar" na história hoje, <strong>tudo bem</strong>.
+                A semente foi plantada. Amanhã ela pode brotar.
+            </p>
+
+            <!-- ==================== RITUAL DE ENTRADA ==================== -->
+            <div class="scene-header">
+                <i class="ph-duotone ph-film-strip duotone-magic" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                Ritual de Entrada
+            </div>
+
+            <!-- Instruction Box -->
+            <div class="instruction-box">
+                <i class="ph-duotone ph-lamp duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                <div>
+                    <strong>Preparação:</strong>
+                    <ul style="margin: 0.5rem 0 0 0; padding-left: 1.2rem; font-size: 0.95rem;">
+                        <li>Tenha a <strong>Luz Amarela</strong> à mão.</li>
+                        <li>Sentem-se confortavelmente no tapete.</li>
+                        <li>Ao acender a luz, leia as falas abaixo.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PORTADOR BLOCK (MONOBLOCO - Voz Única) -->
+            <div class="script-persona-block portador-block">
+                <div class="script-avatar-icon">
+                    <i class="ph-duotone ph-fire duotone-carmim"></i>
+                </div>
+                <div class="script-content">
+                    <div class="script-header">
+                        <span class="script-name">Portador da Tocha</span>
+                    </div>
+                    <div class="script-text">
+                        <p>"Luz de fora acalma."</p>
+                        <p>"Sol de dentro acende."</p>
+                        <p>"Respirem... Estamos no Reino."</p>
+                        
+                        <!-- Acting Cue -->
+                        <p style="color: var(--color-gold); font-style: italic; margin-top: 1rem;">
+                            [Feche os olhos. Respire fundo...]
+                        </p>
+                        
+                        <p>"Quando abrir os olhos, estaremos em um lugar muito especial...
+                        O Jardim Central do Reino Contado."</p>
+                        
+                        <!-- Card do Local -->
+                        <div class="card-container" style="margin: 1.5rem 0;">
+                            <p class="local-label">Mostrar Card</p>
+                            <img src="../curriculo/_SISTEMA/imagens/local-jardim-central.png" 
+                                 onError="this.src='../docs/cards/locais/local-jardim-central.png'"
+                                 style="width: 100%; max-width: 400px; border-radius: 12px; 
+                                        box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 4px solid var(--color-gold);" 
+                                 alt="Jardim Central">
+                            <p style="margin-top: 0.5rem; font-weight: 700; font-size: 1.1rem; 
+                                      color: var(--color-green); text-align: center;">
+                                Jardim Central
+                            </p>
+                        </div>
+                        
+                        <!-- Imersão Sensorial -->
+                        <p>"O ar cheira a terra molhada e musgo fresco.
+                        O sol dourado aquece o rosto. Pássaros cantam ao longe.
+                        Em um banco de pedra antiga, sentado com as patas cruzadas,
+                        está um grande Leão de juba dourada. Ele sorri ao ver você chegar."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== A JORNADA ==================== -->
+            <h2><i class="ph-duotone ph-map-trifold duotone-gold" style="margin-right:0.5rem;"></i> A Jornada</h2>
+
+            <!-- CENA 1: O Encontro com Melquior -->
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-sun duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    O Encontro com Melquior
+                </div>
+                
+                <!-- Card de Melquior -->
+                <div class="card-container">
+                    <p class="local-label">Mostrar Card</p>
+                    <img src="../curriculo/_SISTEMA/imagens/melquior-leao.png" 
+                         class="card-visual-asset rotate-left hover-float"
+                         onError="this.src='../docs/cards/guardioes/melquior-leao.png'"
+                         alt="Melquior, o Leão Dourado">
+                </div>
+                
+                <!-- Script Block de Melquior - Acolhimento -->
+                <div class="script-persona-block">
+                    <img src="../curriculo/_SISTEMA/imagens/melquior-leao.png" 
+                         onError="this.src='../docs/cards/guardioes/melquior-leao.png'"
+                         class="script-avatar" alt="Melquior">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Melquior</span>
+                            <span style="font-style: normal;"><i class="ph-duotone ph-smiley duotone-gold"></i></span>
+                            (Tom: Acolhedor)
+                        </div>
+                        <div class="script-text">
+                            <p>"Aproxime-se, pequeno Herdeiro.</p>
+                            <p>Sente-se aqui, no tapete de musgo, sob o brilho da Luz Amarela."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Script Block de Melquior - Backstory do Reino -->
+                <div class="script-persona-block">
+                    <img src="../curriculo/_SISTEMA/imagens/melquior-leao.png" 
+                         onError="this.src='../docs/cards/guardioes/melquior-leao.png'"
+                         class="script-avatar" alt="Melquior">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Melquior</span>
+                            <span style="font-style: normal;"><i class="ph-duotone ph-hands-praying duotone-terra"></i></span>
+                            (Tom: Reverente)
+                        </div>
+                        <div class="script-text">
+                            <p>"Antes de você nascer, o Grande Rei olhou para o mundo
+                            e viu que faltava algo muito importante.</p>
+                            <p>Ele disse com sua voz de trovão suave:</p>
+                            <p><em>'Criarei um Reino onde os números não sejam frios,</em></p>
+                            <p><em>onde contar seja uma aventura,</em></p>
+                            <p><em>e onde cada criança saiba que foi feita para descobrir.'</em></p>
+                            <p>E assim nasceu o Reino Contado.</p>
+                            <p>Esse jardim onde estamos? O Rei o plantou pensando em você.</p>
+                            <p>Cada árvore, cada flor, cada caminho...</p>
+                            <p>Tudo foi preparado para seus olhos, Herdeiro."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Script Block de Melquior - Apresentação -->
+                <div class="script-persona-block">
+                    <img src="../curriculo/_SISTEMA/imagens/melquior-leao.png" 
+                         onError="this.src='../docs/cards/guardioes/melquior-leao.png'"
+                         class="script-avatar" alt="Melquior">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Melquior</span>
+                            <span style="font-style: normal;"><i class="ph-duotone ph-shield-check duotone-forest"></i></span>
+                            (Tom: Nobre)
+                        </div>
+                        <div class="script-text">
+                            <p>"Eu sou Melquior, o Leão Dourado.</p>
+                            <p><strong>Eu sabia que você viria.</strong></p>
+                            <p>O Portal estava esperando por você.</p>
+                            <p>Minha juba brilha com a luz da sabedoria,
+                            e meu rugido... bem, meu rugido é gentil.</p>
+                            <p>Eu não assusto -- eu acolho.</p>
+                            <p>Venha. Deixe-me apresentar meus amigos."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CENA 2: Os Quatro Companheiros -->
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-users duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Os Quatro Companheiros
+                </div>
+
+                <!-- Noé -->
+                <div class="script-persona-block">
+                    <img src="../curriculo/_SISTEMA/imagens/melquior-leao.png" 
+                         onError="this.src='../docs/cards/guardioes/melquior-leao.png'"
+                         class="script-avatar" alt="Melquior">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Melquior</span>
+                            <span style="font-style: normal;"><i class="ph-duotone ph-eye duotone-terra"></i></span>
+                            (Tom: Respeitoso)
+                        </div>
+                        <div class="script-text">
+                            <p>"Veja! Ali, no galho mais alto...</p>
+                            <p>Olhos grandes que veem o tempo passar devagar.</p>
+                            <p>É a Coruja Noé.</p>
+                            <p>Ele nos ensina a ouvir o silêncio e a esperar com paciência.</p>
+                            <p style="color: var(--color-gold); font-style: italic;">[Aponte para cima]</p>
+                            <p>Consegue vê-lo? Seus olhos são como duas luas amarelas.</p>
+                            <p>Quando você precisar de calma, Noé estará lá."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Noé -->
+                <div class="card-container">
+                    <p class="local-label">Mostrar Card</p>
+                    <img src="../curriculo/_SISTEMA/imagens/noe-coruja.png" 
+                         class="card-visual-asset rotate-left hover-float"
+                         onError="this.src='../docs/cards/guardioes/noe-coruja.png'"
+                         alt="Noé, a Coruja Paciente">
+                </div>
+
+                <!-- Celeste -->
+                <div class="script-persona-block">
+                    <img src="../curriculo/_SISTEMA/imagens/melquior-leao.png" 
+                         onError="this.src='../docs/cards/guardioes/melquior-leao.png'"
+                         class="script-avatar" alt="Melquior">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Melquior</span>
+                            <span style="font-style: normal;"><i class="ph-duotone ph-confetti duotone-gold"></i></span>
+                            (Tom: Animado)
+                        </div>
+                        <div class="script-text">
+                            <p>"Sente este vento rápido?</p>
+                            <p>Um vulto laranja que corre entre as árvores!</p>
+                            <p>Rápida como um pensamento.</p>
+                            <p>É a Raposa Celeste!</p>
+                            <p>Ela adora segredos e padrões.</p>
+                            <p style="color: var(--color-gold); font-style: italic;">[Fareja o ar]</p>
+                            <p>Está sentindo? Cheira a aventura!</p>
+                            <p>Celeste é curiosa como você. Ela fareja mistérios!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Celeste -->
+                <div class="card-container">
+                    <p class="local-label">Mostrar Card</p>
+                    <img src="../curriculo/_SISTEMA/imagens/celeste-raposa.png" 
+                         class="card-visual-asset rotate-left hover-float"
+                         onError="this.src='../docs/cards/guardioes/celeste-raposa.png'"
+                         alt="Celeste, a Raposa Curiosa">
+                </div>
+
+                <!-- Bernardo -->
+                <div class="script-persona-block">
+                    <img src="../curriculo/_SISTEMA/imagens/melquior-leao.png" 
+                         onError="this.src='../docs/cards/guardioes/melquior-leao.png'"
+                         class="script-avatar" alt="Melquior">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Melquior</span>
+                            <span style="font-style: normal;"><i class="ph-duotone ph-shield-check duotone-forest"></i></span>
+                            (Tom: Firme)
+                        </div>
+                        <div class="script-text">
+                            <p>"Uma montanha de pelo quente e bondade.</p>
+                            <p>Ouça o passo firme na terra...</p>
+                            <p><em>Tum-tum-arrasta.</em></p>
+                            <p>É o Urso Bernardo!</p>
+                            <p>Ele é forte e gentil.</p>
+                            <p>Vê a pata manca dele? Bernardo se machucou salvando seus amigos.</p>
+                            <p>Mas isso nunca o parou.</p>
+                            <p>Quando você errar, Bernardo vai dizer: <em>'Mais uma vez. Comigo.'</em>"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Bernardo -->
+                <div class="card-container">
+                    <p class="local-label">Mostrar Card</p>
+                    <img src="../curriculo/_SISTEMA/imagens/bernardo-urso.png" 
+                         class="card-visual-asset rotate-left hover-float"
+                         onError="this.src='../docs/cards/guardioes/bernardo-urso.png'"
+                         alt="Bernardo, o Urso Persistente">
+                </div>
+
+                <!-- Íris -->
+                <div class="script-persona-block">
+                    <img src="../curriculo/_SISTEMA/imagens/melquior-leao.png" 
+                         onError="this.src='../docs/cards/guardioes/melquior-leao.png'"
+                         class="script-avatar" alt="Melquior">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Melquior</span>
+                            <span style="font-style: normal;"><i class="ph-duotone ph-butterfly duotone-forest"></i></span>
+                            (Tom: Delicado)
+                        </div>
+                        <div class="script-text">
+                            <p>"E olhe bem de perto para aquela flor...</p>
+                            <p>Ela é pequena, mas vê coisas gigantes.</p>
+                            <p>Lá está Íris, a pequena Pardal!</p>
+                            <p>Ela vê o que ninguém mais vê:</p>
+                            <p>a beleza num grão de areia.</p>
+                            <p style="color: var(--color-gold); font-style: italic;">[Aponte para baixo, para algo pequeno]</p>
+                            <p>Você consegue ver o brilho do colar dela?</p>
+                            <p>Íris tem olhos de artista. Ela encontra beleza em tudo."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Íris -->
+                <div class="card-container">
+                    <p class="local-label">Mostrar Card</p>
+                    <img src="../curriculo/_SISTEMA/imagens/iris-passarinho-colar.png" 
+                         class="card-visual-asset rotate-left hover-float"
+                         onError="this.src='../docs/cards/guardioes/iris-passarinho.png'"
+                         alt="Íris, a Pardal Atenta">
+                </div>
+
+                <!-- Instrução do Portador -->
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-hand-pointing duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        Aponte para algo pequeno perto de vocês.
+                        Mostre o card da Íris.
+                    </div>
+                </div>
+            </div>
+
+            <!-- CENA 3: O Convite Final -->
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-hand-heart duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    O Convite Final
+                </div>
+                
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-hand-pointing duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>Abrace a criança ou aperte sua mão. Este é o momento de selamento.</div>
+                </div>
+                
+                <div class="script-persona-block">
+                    <img src="../curriculo/_SISTEMA/imagens/melquior-leao.png" 
+                         onError="this.src='../docs/cards/guardioes/melquior-leao.png'"
+                         class="script-avatar" alt="Melquior">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Melquior</span>
+                            <span style="font-style: normal;"><i class="ph-duotone ph-shield-check duotone-forest"></i></span>
+                            (Tom: Solene)
+                        </div>
+                        <div class="script-text">
+                            <p>"Noé, Celeste, Bernardo, Íris... e eu, Melquior.</p>
+                            <p>Todos nós estamos aqui para caminhar com você.</p>
+                            <p>Você é o Herdeiro -- alguém que o Rei esperava.</p>
+                            <p>Amanhã, Celeste vai nos levar à Clareira das Perguntas.</p>
+                            <p>Ela encontrou algo especial debaixo do carvalho mais velho...</p>
+                            <p>Três sementes. Três promessas.</p>
+                            <p>Mas isso é para amanhã.</p>
+                            <p>Hoje... <strong>bem-vindo ao Reino</strong>."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== O CONCRETO ==================== -->
+            <h2><i class="ph-duotone ph-wall duotone-terra" style="margin-right:0.5rem;"></i> O Concreto</h2>
+
+            <div class="scene-header">
+                <i class="ph-duotone ph-heart duotone-heart" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                Momento de Conexão
+            </div>
+
+            <div class="instruction-box">
+                <i class="ph-duotone ph-info duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                <div>
+                    <p style="margin-bottom: 0.75rem; color: #374151;">
+                        <strong>Nota:</strong> Esta lição não tem atividade concreta matemática.
+                        O "concreto" é a experiência sensorial.
+                    </p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Sugestões:</strong></p>
+                    <ul style="padding-left: 1.2rem; line-height: 1.8; margin-bottom: 0.75rem;">
+                        <li><strong>Passo 1:</strong> Mantenham-se sentados no tapete por um momento em silêncio.
+                            <br><em>"Vamos guardar esse momento no coração?"</em></li>
+                        <li><strong>Passo 2:</strong> Pergunte à criança qual guardião ela mais gostou.
+                            <br><em>"Qual deles você quer conhecer melhor?"</em></li>
+                    </ul>
+                    <p style="font-size: 0.9rem; color: #6B7280; font-style: italic;">
+                        <strong>Norte Absoluto:</strong> O objetivo é SENTIR, não aprender.
+                        Se a criança estiver encantada, a lição foi perfeita.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Adaptação Bernardo -->
+            <div class="instruction-box" style="background: linear-gradient(135deg, #F3E8FF 0%, #E9D5FF 100%); border-left-color: #7C3AED;">
+                <i class="ph-duotone ph-info duotone-indigo" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                <div>
+                    <strong>Adaptação (Bernardo):</strong> Para crianças com dificuldade de atenção, mantenha a narrativa mais curta.
+                    Apresente apenas 2-3 guardiões hoje e os outros amanhã.
+                </div>
+            </div>
+
+            <!-- ==================== NARRAMOS JUNTOS ==================== -->
+            <div class="scene-header">
+                <i class="ph-duotone ph-chat-circle-dots duotone-terra" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                Narramos Juntos
+            </div>
+
+            <div class="instruction-box">
+                <i class="ph-duotone ph-ear duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                <div>
+                    Não force perguntas hoje.<br>
+                    Se a criança quiser falar, ouça.<br>
+                    Se preferir silêncio, respeite. O coração guardou.
+                </div>
+            </div>
+
+            <p><strong>Perguntas do Coração:</strong></p>
+            <ul style="margin-left:1.5rem; margin-top:0.5rem;">
+                <li>O que você achou do Reino Contado?</li>
+                <li>Qual guardião você quer conhecer melhor?</li>
+                <li>Como é o jardim que você imaginou?</li>
+                <li>O que você acha que Celeste encontrou?</li>
+            </ul>
+
+            <p style="font-size: 0.9rem; color: #6B7280; font-style: italic; margin-top: 1rem;">
+                <strong>Nota CM:</strong> Esta é uma lição de ATMOSFERA (Charlotte Mason).
+                Não avalie. Não corrija. Apenas esteja presente.
+            </p>
+
+            <!-- ==================== RITUAL DE FECHAMENTO ==================== -->
+            <div class="scene-header">
+                <i class="ph-duotone ph-flag duotone-forest" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                Ritual de Fechamento
+            </div>
+
+            <!-- Fala de Melquior -->
+            <div class="script-persona-block">
+                <img src="../curriculo/_SISTEMA/imagens/melquior-leao.png" 
+                     onError="this.src='../docs/cards/guardioes/melquior-leao.png'"
+                     class="script-avatar" alt="Melquior">
+                <div class="script-content">
+                    <div class="script-header">
+                        <span class="script-name">Melquior</span>
+                        <span style="font-style: normal;"><i class="ph-duotone ph-sun duotone-gold"></i></span>
+                        (Tom: Esperançoso)
+                    </div>
+                    <div class="script-text">
+                        <p>"Herdeiro... obrigado por ter vindo hoje.</p>
+                        <p>Amanhã Celeste estará esperando na Clareira.</p>
+                        <p>As três sementes do carvalho estão guardadas para você.</p>
+                        <p>Descanse bem. O Reino espera seu retorno."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fala do Portador -->
+            <div class="script-persona-block portador-block">
+                <div class="script-avatar-icon">
+                    <i class="ph-duotone ph-fire duotone-carmim"></i>
+                </div>
+                <div class="script-content">
+                    <div class="script-header">
+                        <span class="script-name">Portador da Tocha</span>
+                    </div>
+                    <div class="script-text">
+                        <p>"A Luz se apaga, mas o brilho fica no coração."</p>
+                        <p>"O Reino descansa. Até amanhã, Herdeiro."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fio de Ouro -->
+            <div class="instruction-box" style="background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);">
+                <i class="ph-duotone ph-link duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                <div>
+                    <strong>Fio de Ouro:</strong> Amanhã, Celeste nos mostrará as três sementes do carvalho mais velho.
+                </div>
+            </div>
+
+            <!-- ==================== CONEXÃO DA JORNADA ==================== -->
+            <div class="scene-header">
+                <i class="ph-duotone ph-link duotone-indigo" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                Conexão da Jornada
+            </div>
+
+            <p>
+                <strong>Próxima Lição:</strong>
+                <a href="001_trindade_palma.html" style="font-weight: 600; color: var(--color-green);">
+                    MV-S-001: A Trindade na Palma
+                    <i class="ph-duotone ph-arrow-right duotone-gold"></i>
+                </a>
+            </p>
+            <p style="color: #6B7280; font-style: italic;">
+                Celeste encontrou três sementes especiais debaixo do carvalho mais velho...
+            </p>
+
+            <!-- ==================== SEMENTES PARA O DIA ==================== -->
+            <div class="scene-header">
+                <i class="ph-duotone ph-plant duotone-forest" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                Sementes para o Dia
+            </div>
+
+            <div style="background: #F0FDF4; border-radius: 12px; padding: 1.5rem; margin: 1rem 0; border: 1px solid #BBF7D0;">
+                <p><strong>Atividades para continuar o encantamento:</strong></p>
+                <ul>
+                    <li><i class="ph-duotone ph-moon duotone-indigo"></i> <strong>Antes de dormir:</strong> Pergunte qual guardião ele quer sonhar.</li>
+                    <li><i class="ph-duotone ph-sun duotone-gold"></i> <strong>Amanhã de manhã:</strong> "O que você acha que Celeste encontrou?"</li>
+                    <li><i class="ph-duotone ph-pencil duotone-terra"></i> <strong>Se quiser:</strong> Desenhar o guardião favorito.</li>
+                    <li><i class="ph-duotone ph-chat duotone-forest"></i> <strong>No jantar:</strong> Contar para a família quem são os Guardiões.</li>
+                    <li><i class="ph-duotone ph-walk duotone-neutral"></i> <strong>No parque:</strong> Procurar "pistas" dos Guardiões na natureza.</li>
+                </ul>
+                <p style="font-style: italic; color: #059669; margin-top: 1rem;">
+                    "O Reino não acaba quando a lição termina. Ele vive no coração do Herdeiro."
+                </p>
+            </div>
+
+            <!-- ==================== FORMAÇÃO DO PORTADOR ==================== -->
+            <div class="scene-header">
+                <i class="ph-duotone ph-graduation-cap duotone-terra" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                Formação do Portador
+            </div>
+
+            <!-- Por que Importa -->
+            <div class="cm-box" style="background: #F0F9FF; border-left: 4px solid #0369A1; padding: 1rem; margin: 1rem 0;">
+                <p><strong><i class="ph-duotone ph-books duotone-indigo"></i> Por que importa:</strong></p>
+                <p>Esta lição não contém matemática -- e isso é intencional.</p>
+                <p>Charlotte Mason ensinava que a "atmosfera" é um terço da educação.</p>
+                <p>Antes de ensinar QUALQUER coisa, precisamos criar um ambiente de</p>
+                <p>maravilhamento, segurança e pertencimento.</p>
+            </div>
+
+            <!-- Método CPA -->
+            <div class="bruner-box" style="background: #F5F3FF; border-left: 4px solid #7C3AED; padding: 1rem; margin: 1rem 0;">
+                <p><strong><i class="ph-duotone ph-brain duotone-indigo"></i> Método CPA:</strong></p>
+                <ul>
+                    <li><strong>Concreto:</strong> Experiência sensorial (luz, tapete, ambiente)</li>
+                    <li><strong>Pictórico:</strong> Não aplicável (lição litúrgica)</li>
+                    <li><strong>Abstrato:</strong> Não aplicável</li>
+                </ul>
+            </div>
+
+            <!-- Charlotte Mason -->
+            <div class="cm-box" style="background: #FFFBEB; border-left: 4px solid #D97706; padding: 1rem; margin: 1rem 0;">
+                <p><strong><i class="ph-duotone ph-feather duotone-gold"></i> Charlotte Mason (Princípio 6):</strong></p>
+                <p><em>"Education is an atmosphere, a discipline, a life."</em></p>
+                <p><em>"Educação é atmosfera, disciplina, vida."</em></p>
+                <p>Aplicação: Antes de contar, dar. Antes de ensinar, encantar.</p>
+            </div>
+
+            <!-- Currículo Espiral -->
+            <div class="bruner-box" style="background: #ECFDF5; border-left: 4px solid #059669; padding: 1rem; margin: 1rem 0;">
+                <p><strong><i class="ph-duotone ph-spiral duotone-forest"></i> Currículo Espiral:</strong></p>
+                <p><strong>Conceito:</strong> Atmosfera sagrada</p>
+                <p><strong>Volta Atual:</strong> Sementes -- Primeiro contato com o Reino e os Guardiões</p>
+                <p><strong>Próxima Volta:</strong> Raízes -- Revisitamos os Guardiões com novas responsabilidades</p>
+            </div>
+
+            <!-- Reflexão Espiritual -->
+            <div class="espiritual-box" style="background: #FDF4FF; border-left: 4px solid #A855F7; padding: 1rem; margin: 1rem 0;">
+                <p><strong><i class="ph-duotone ph-sparkle duotone-magic"></i> Reflexão Espiritual:</strong></p>
+                <p><em>"Tudo o que vê aqui foi feito para seus olhos."</em></p>
+                <p>Melquior lembra à criança que ela é esperada, desejada, preparada.</p>
+                <p>Em um mundo que muitas vezes diz "você não é suficiente",</p>
+                <p>o Reino Contado sussurra: "Você é o Herdeiro."</p>
+            </div>
+
+            <!-- Nota de Graça -->
+            <div class="graca-box" style="background: #FEF2F2; border-left: 4px solid #EF4444; padding: 1rem; margin: 1rem 0;">
+                <p><strong><i class="ph-duotone ph-heart duotone-heart"></i> Nota de Graça:</strong></p>
+                <p>Se hoje não "funcionou" como você esperava, respire.</p>
+                <p>Algumas crianças precisam de mais tempo para cruzar o portal.</p>
+                <p>O convite de Melquior permanece aberto. Volte amanhã com a mesma ternura.</p>
+            </div>
+
+            <!-- ==================== NAVIGATION FOOTER ==================== -->
+            <div class="lesson-nav-footer">
+                <a href="../index.html" class="nav-btn prev">
+                    <i class="ph-duotone ph-arrow-left"></i> Dashboard
+                </a>
+                <a href="001_trindade_palma.html" class="nav-btn next">
+                    Próxima: A Trindade na Palma <i class="ph-duotone ph-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p><strong>Matemática Viva</strong> · Histórias que ensinam. Narração que fixa.</p>
+        <p style="font-size: 0.85rem; margin-top: 0.5rem;">
+            Da Família Rodrigues para outras famílias
+        </p>
+    </footer>
+
+</body>
+</html>

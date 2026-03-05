@@ -94,11 +94,13 @@ Ler nesta ordem antes de alterar qualquer licao:
 3. `LORE/north_star.yaml`
 4. `LORE/guardioes.yaml`
 5. `LORE/padroes_narrativos.yaml`
-6. `Revisao/padrao_visual_sementes.md`
-7. `Revisao/topicos_licao_revisao.md`
-8. `curriculo/01_SEMENTESV6/_Manuais/MANUAL_PORTADOR_TOCHA.md`
-9. `site/sementes/templates/licao.j2`
-10. `site/sementes/style.css`
+6. `Revisao/README.md`
+7. `Revisao/padrao_visual_sementes.md`
+8. `Revisao/topicos_licao_revisao.md`
+9. `Revisao/framework_estrategia_mestria.md`
+10. `curriculo/01_SEMENTESV6/_Manuais/MANUAL_PORTADOR_TOCHA.md`
+11. `site/sementes/templates/licao.j2`
+12. `site/sementes/style.css`
 
 Se houver conflito entre fontes:
 1) LORE (index/north_star/guardioes/padroes_narrativos) > 2) Padrao de Revisao > 3) Template tecnico > 4) Ajuste pontual da licao.

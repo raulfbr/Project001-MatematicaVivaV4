@@ -1,14 +1,14 @@
-# LIÇÃO 003 — A ESTRELA DO REINO
-# Template: V6.3 | 16/01/2026 | Status: TESTE
+# LIÇÃO 003 - A ESTRELA DO REINO
+# Template: V6.5 | 04/03/2026 | Status: REVISAO_NARRATIVA_PREMIUM
 
 _meta:
   id: licao-003-estrela-reino
-  versao: '6.3'
+  versao: "6.5"
   fase: Sementes
-  status: teste
+  status: revisado
   refs:
     lore: LORE/index.yaml
-    triade: .bmad/expansion-packs/matematica-viva/triade.yaml
+    triade: bmad/expansion-packs/matematica-viva/triade.yaml
     curriculo: curriculo/_SISTEMA/CURRICULOS_MESTRE/000_K_SEMENTES_CURRICULO_MESTRE.md
 
 licao:
@@ -19,220 +19,271 @@ licao:
     ciclo: K
     trimestre: 1
     estacao: 1
-    tipo: Geometria Viva
+    tipo: Senso Numérico e Geometria Inicial
     guardiao_lider: iris
-    guardiao_secundario: celeste
-    guardioes_apresentados: [iris, celeste]
+    guardiao_secundario: bernardo
+    guardioes_apresentados: [iris]
     tgtb_ref: 000-L3
     tgtb_titulo_en: Numbers 4 and 5
     tgtb_titulo_pt: Números 4 e 5
-    objetivo_pedagogico: '[Foco: Números 4 a 5 e a Geometria da Flor]'
-    tempo_licao: '15-20 min'
-    tempo_preparo: '≤ 5 min'
-    versao: '6.3'
-    status: canonico
+    objetivo_pedagogico: Explorar 4 e 5 por composição visual (4 ao redor + 1 no centro).
+    tempo_licao: "15-20 min"
+    tempo_preparo: "≤ 5 min"
+    versao: "6.5"
+    status: revisado
 
   navegacao:
-    anterior: {id: MV-S-002, titulo: As Pedras da Fortaleza}
-    proxima: {id: MV-S-004, titulo: A Ordem do Dia}
+    anterior:
+      id: MV-S-002
+      titulo: As Pedras da Fortaleza
+    proxima:
+      id: MV-S-004
+      titulo: A Ordem do Dia
 
   para_portador:
-
     ideia_viva:
-      frase: "A Pequena Pardal ensina a organizar as pedras do Bernardo em uma nova forma: a estrela de cinco pontas."
-      conceito: Reconhecimento do 4 e 5 usando padrões geométricos (pedras).
-      intencao_cm: A beleza da forma desperta o interesse. As pedras deixam de ser uma pilha e ganham vida.
+      frase: "Quatro guardam as bordas, e o quinto acende o centro."
+      conceito: O cinco pode ser percebido como estrutura, não apenas como sequência.
+      intencao_cm: A criança contempla forma e quantidade juntas, por experiência viva.
     dica_coracao: |
-      Hoje usaremos as mesmas pedras da lição anterior, mas agora criaremos beleza com elas.
-      Íris transforma o "amontoado" em "flor/estrela". É o início da Geometria.
+      Hoje a matemática aparece como desenho no espaço.
+      Íris convida para um olhar de detalhe: posição também ensina número.
+      Menos explicação, mais observação guiada.
     filho_descobre: |
-      Que ele pode criar desenhos com objetos soltos.
-      Que o número 5 tem a forma de uma estrela (geometria).
+      Que quatro elementos podem cercar um centro.
+      Que ao adicionar um elemento central, surge uma nova unidade visual: cinco.
     protocolo_impecabilidade: |
-      Ao mover as pedras, faça-o com reverência, como se fossem joias.
-      O arranjo deve ser simétrico e agradável aos olhos.
+      Mantenha ritmo calmo e visual limpo.
+      Nomeie as posições com simplicidade: ao redor, centro, conjunto.
     nota_graca: |
-      Não exija precisão milimétrica. O que vale é a intenção da forma.
-      Se ficar torto, é uma "flor dançando ao vento".
+      Se a forma ficar irregular, não corrija com rigidez.
+      Reorganizar faz parte da descoberta geométrica.
     conforto_emocional: |
-      Se não conseguir fazer a estrela, ajude a posicionar as "pétalas".
-      Fazer juntos é melhor que fazer perfeito sozinho.
+      A estética da lição não exige perfeição.
+      A beleza nasce quando a criança participa do arranjo.
     audio_script: |
-      Portador, pegue as pedras do Bernardo. Hoje elas vão ganhar asas.
-      Respire. O chão é sua tela de pintura.
+      Portador, hoje o Ninho Mirante se torna ateliê.
+      Vamos ver o cinco nascer diante dos olhos.
     preparacao:
       materiais:
-        - {item: 5 pedrinhas ou botões (as mesmas da Lição 002), qtd: 5, alt: sementes, essencial: true}
-        - {item: Card Íris (Pardal), qtd: 1, alt: desenho, essencial: true}
-        - {item: "Uma flor real (opcional, apenas para inspiração)", qtd: 1, alt: imagem, essencial: false}
+        - item: "5 pedrinhas ou botões"
+          qtd: 5
+          alt: "5 sementes maiores"
+          essencial: true
+          nota: "Ideal se forem semelhantes em tamanho."
+        - item: "1 maçã"
+          qtd: 1
+          alt: "Imagem da seção de maçã"
+          essencial: false
+          nota: "Usar apenas se houver segurança no manuseio por adulto."
+        - item: "Card Íris"
+          qtd: 1
+          alt: "Imagem da guardiã"
+          essencial: true
+          nota: "Opcional para famílias sem card."
 
   linkage:
     elo_anterior:
       licao_id: MV-S-002
-      gancho: Bernardo organizou as pedras da fortaleza. Hoje, Íris vai trazer cor e vida para o jardim em volta dela.
+      gancho: A fileira de Bernardo treinou ordem; agora Íris mostra forma e composição.
     proximo:
       licao_id: MV-S-004
-      gancho: Noé observou tudo lá de cima. Amanhã ele desce para nos ensinar a nobreza da Ordem do Dia.
+      gancho: Depois de ver estrutura no espaço, Noé ensinará estrutura no tempo e sequência.
 
   ritual_abertura:
-    instrucao_ambiente: Traga a natureza para dentro. Uma flor, uma folha, luz do sol.
-    local: jardim_secreto
-    clima: brisa_suave
-    virtude: delicadeza
-    artefato: Uma flor de papel ou real
+    instrucao_ambiente: Separe os 5 objetos em uma bandeja clara e mantenha superfície livre.
+    local: ninho_mirante
+    clima: primaveril
+    virtude: atencao
+    artefato: Flor de cinco partes
     transicao_reino: |
-      Feche os olhos e sinta o vento morno no rosto.
-      Ouça... um bater de asas rapidinho: Prrr-prrr!
+      Feche os olhos e suba, devagar, ao galho mais alto.
+      O vento leve passa pelo rosto e o Reino inteiro se abre lá embaixo.
     fala_portador:
       tom: delicado
       script: |
-        Shhh... Alguém muito leve pousou no seu ombro.
-        É Íris, a Pardal. Ela diz que o jardim acordou para nos receber.
-    card_guardiao: 'CARD: IRIS'
+        Hoje não vamos correr atrás de quantidade.
+        Vamos permitir que a forma nos mostre a quantidade por dentro.
+    card_guardiao: "CARD: IRIS"
     abertura_sensorial: |
-      O ar tem cheiro de mel e orvalho. O capim faz cócegas suaves nos pés.
-      Íris dá pulinhos alegres na terra fofa. Ela inclina a cabeça e pisca para você.
-      "Viu o que eu vi? Tem uma estrela dormindo na grama!"
+      O ar está claro, com cheiro de folhas novas.
+      No ninho, tudo parece simples: cinco peças pequenas e um espaço no centro.
+      Uma voz leve convida a olhar de perto.
 
   jornada:
     narrativa_principal:
-      - titulo: O Pouso na Fortaleza
-        local: jardim_secreto
-        fala_guardiao:
-          tom: animado
-          script: |
-            "Bernardo fez um muro forte com as pedras. Muito sério!"
-            [Acting Cue: Incline a cabeça e pisque como a Íris, curiosa]
-            "Mas e se a gente fizesse o chão sorrir? Vamos brincar com as pedras?"
-            [Acting Cue: Sorria e olhe para as pedras com animação]
-        instrucao_portador: |
-          Espalhe as 5 pedras no chão, desmanchando a fileira reta.
-      - titulo: As Folhas de Pedra
-        local: jardim_secreto
+      - titulo: A Moldura de Quatro
+        local: ninho_mirante
         fala_guardiao:
           tom: curioso
           script: |
-            "Vamos fazer uma flor que nunca murcha!"
-            "Coloque uma pedra aqui... outra ali... como folhas abraçando o centro."
-            "Uma, duas, três, quatro folhas de pedra!"
+            "Vamos desenhar um contorno com quatro pedras."
+            "[Íris toca o ar em quatro pontos.]"
+            "Veja: uma, duas, três, quatro."
         instrucao_portador: |
-          Ajude a criança a arranjar 4 pedras em círculo (ou quadrado), deixando o centro vazio.
-      - titulo: O Coração da Estrela
-        local: jardim_secreto
+          Posicione 4 peças em volta de um espaço vazio.
+          Conte com a criança, uma a uma.
+      - titulo: O Centro que Completa
+        local: ninho_mirante
+        fala_guardiao:
+          tom: poetico
+          script: |
+            "Agora falta o coração da forma."
+            "[Íris aponta para o meio vazio.]"
+            "Quando o centro chega, o desenho respira."
+        instrucao_portador: |
+          Coloque a quinta peça no centro.
+          Reconte o conjunto completo.
+      - titulo: A Estrela Revelada
+        local: ninho_mirante
         fala_guardiao:
           tom: maravilhado
           script: |
-            "Falta o coração! A pedra mais bonita vai no meio."
-            [Acting Cue: Bique o ar sobre o centro como a Íris faria]
-            "Olha! Não é mais um monte de pedras. É uma Estrela de Chão!"
-            [Acting Cue: Abra os olhos bem grandes, maravilhado]
-            "Uma, duas, três, quatro, CINCO pedras juntas!"
+            "Quatro guardam as bordas; um ilumina o meio."
+            "Assim o cinco aparece aos olhos."
         instrucao_portador: |
-          Coloque a 5ª pedra no centro. Trace com o dedo o formato de flor/estrela criado.
+          Opcional adulto: mostrar seção transversal da maçã para observar forma estrelada.
+          Relacione com o arranjo feito no chão/mesa.
 
     concreto:
-      desc: Construindo a Geometria com Pedras (4 e 5)
-      card_objeto: 'CARD: FLORES'
+      desc: Compor o 5 por arranjo espacial (4 ao redor + 1 no centro).
+      card_objeto: "CARD: ESTRELA DE PEDRAS"
       metodo: mao-na-mao
       instrucoes_portador:
         - passo: 1
-          acao: Pegue 4 pedras e faça um círculo/quadrado no chão.
-          fala_sugerida: "Estas são as pétalas de pedra. 1, 2, 3, 4."
+          acao: Coloque 4 peças ao redor, deixando centro livre.
+          fala_sugerida: "Temos quatro ao redor."
         - passo: 2
-          acao: Mostre o espaço vazio no meio.
-          fala_sugerida: "O coração da flor está vazio. Quem mora aqui?"
+          acao: Conte as quatro posições externas.
+          fala_sugerida: "Uma, duas, três, quatro."
         - passo: 3
-          acao: Coloque a 5ª pedra no centro com solenidade.
-          fala_sugerida: "A quinta pedra! Agora a flor acordou. Cinco pedras criaram uma forma."
+          acao: Adicione a quinta peça no centro.
+          fala_sugerida: "Chegou o centro: agora temos cinco."
         - passo: 4
-          acao: Conte as pedras tocando em cada uma.
-          fala_sugerida: "1, 2, 3, 4 em volta... e 5 no meio. É uma estrela de pedra!"
-      norte_absoluto: Geometria é ordem. A criança percebe que pode *criar* ordem (forma) a partir do caos (pedras soltas).
+          acao: Reorganize e repita a composição.
+          fala_sugerida: "Vamos montar de novo para confirmar."
+        - passo: 5
+          acao: "Opcional adulto: corte transversal de maçã e mostre o desenho interno."
+          fala_sugerida: "A natureza também desenha o cinco."
+      norte_absoluto: O foco é perceber estrutura e quantidade simultaneamente no concreto.
       adaptacao_bernardo: |
-        💡 Se a criança tiver dificuldade motora fina, desenhe um círculo no chão (com giz ou fita) e peça para ela colocar as pedras *dentro* ou *sobre* a linha.
+        Use base com marcações leves para orientar posições.
+        Se necessário, trabalhe só com "quatro ao redor" no primeiro ciclo.
 
-    pictorico: {status: VETADO, motivo: 'Sementes = Concreto. Natureza Real.', excecao: 'Se Quiser Voar'}
-    
+    pictorico:
+      status: VETADO
+      motivo: "A forma nasce de objetos reais antes de virar desenho."
+      excecao: "Se Quiser Voar"
+
     abstrato:
-      desc: Reconhecimento visual dos algarismos 4 e 5
-      nota: |
-        Use o dedo para "desenhar" o 4 e o 5 no ar, ou na areia ao lado das pedras.
-        "O 5 parece a barriga do Bernardo depois do mel."
+      desc: Nomear 4 e 5 a partir da composição vivida.
+      nota: Traço no ar pode aparecer apenas após a montagem concreta.
 
     extensao:
       titulo: Se Quiser Voar
-      desc: Para exploradores que desejam ir além
+      desc: Expandir a percepção de forma no cotidiano.
       nota_irmaos: |
-        🏠 Se houver irmãos: O mais velho pode ser "Íris" e guiar o mais novo
-        na construção da estrela. Pergunte: "Quantas pétalas faltam?"
+        Irmãos podem alternar papéis: um monta, outro verifica e narra.
       sugestoes:
-        - titulo: Caça às Formas
-          acao: Procurar outras coisas no jardim que tenham 5 pontas ou 5 partes.
+        - titulo: Caça ao Centro
+          acao: Procurar objetos com "centro e borda" pela casa.
           com_irmaos: true
-        - titulo: O Desenho da Íris
-          acao: Tentar desenhar no papel a "Flor de Pedra" que vocês construíram.
-          com_irmaos: false
+        - titulo: Jardins de Cinco
+          acao: Montar novos arranjos de 5 peças com centro visível.
+          com_irmaos: true
+      adaptacao_bernardo: |
+        Reduza para sessões curtas e repita no mesmo dia em microblocos.
 
   narracao:
     instrucao_portador: |
-      Guarde os materiais. Olhe nos olhos brilhantes do seu filho.
-      Dê tempo. O silêncio é onde a mente tece o conhecimento.
-    pergunta_principal: O que a Íris descobriu escondido nas pedras?
+      Convide a criança a explicar como o cinco apareceu.
+      Valorize a descrição dela, mesmo que incompleta.
+    pergunta_principal: Como o cinco nasceu da forma hoje?
     perguntas_coracao:
-      - Quantas pétalas a flor roxa tinha para nos mostrar?
-      - O que mais no seu corpo tem o número 5, igual à flor?
-    nota_cm: |
-      A narração fixa a memória. Deixe a criança contar com suas próprias palavras.
-      "Era uma flor bonita" é uma grande narração para uma Semente.
+      - O que mudou quando colocamos a peça do centro?
+      - O quatro e o cinco pareceram diferentes no seu olhar?
+    nota_cm: "Narração aqui treina linguagem relacional: borda, centro, conjunto."
 
   ritual_fechamento:
     fala_guardiao:
-      tom: poetico
+      tom: grato
       script: |
-        "O jardim está mais colorido porque você esteve aqui, Viajante."
-        "Você agora carrega uma Estrela do Cinco na sua mão."
-        "Vou voar para o galho mais alto cantar nossa descoberta. Até breve!"
-    fio_ouro: Amanhã, a sábia Coruja Noé descerá para nos ensinar a beleza da Ordem dos Dias.
+        "Seu olhar viu mais do que peças."
+        "Você viu um desenho ganhar sentido."
+    fio_ouro: Amanhã Noé mostrará que ordem também organiza o tempo e os acontecimentos.
     transicao_volta:
-      instrucao: Apaguem juntos a luz especial. Deixem a flor descansar.
-      fala: A beleza permanece em nós. O cinco mora em cada mão que acena um "até logo".
+      instrucao: Guardem as cinco peças na ordem que preferirem e respirem juntos.
+      fala: O ninho silencia, e a forma permanece na memória.
+
+  sementes_do_dia:
+    titulo: Sementes para o Dia
+    instrucao: |
+      Reforce a ideia de centro e borda em situações simples do cotidiano.
+    atividades:
+      - titulo: Caça dos Cincos
+        icone: ph-magnifying-glass
+        acao: Procurar coisas que remetam ao cinco (dedos, pétalas, marcas).
+        tipo: Exploração
+        com_irmaos: true
+      - titulo: Teatro da Íris
+        icone: ph-mask-happy
+        acao: Dramatizar Íris revelando uma forma escondida no ambiente.
+        tipo: Dramatização
+        com_irmaos: true
+      - titulo: Mandala de Cinco
+        icone: ph-pencil-simple
+        acao: Criar um desenho simples com quatro pontos externos e um central.
+        tipo: Criação
+        com_irmaos: false
+      - titulo: Reconto da Estrela
+        icone: ph-chat-circle
+        acao: A criança conta para alguém como montou o cinco por composição.
+        tipo: Narração
+        com_irmaos: false
+      - titulo: Silêncio e Centro
+        icone: ph-moon-stars
+        acao: Antes de dormir, lembrar "o que foi centro no meu dia hoje?".
+        tipo: Ritual Noturno
+        com_irmaos: true
+    frase_final: |
+      Quando a criança percebe estrutura no concreto, aprende matemática com beleza e sentido.
 
   para_familia:
-    titulo: A Beleza da Geometria
+    titulo: Entendendo a Jornada de Hoje
     porque_importa: |
-      Hoje expandimos o olhar da criança: saímos da contagem linear (1, 2, 3) para a contemplação da Forma (4 e 5).
-      Charlotte Mason nos convida a apresentar a Geometria não como tarefas secas, mas como a linguagem da beleza na criação.
-      Ao associar o 5 a uma flor ou estrela, criamos uma "Ideia Viva" — uma âncora emocional que torna o número inesquecível.
+      Esta lição amplia a noção de número por composição visual.
+      A criança percebe que cinco não é só "depois do quatro", mas também uma estrutura organizada.
+      Isso prepara leitura de padrões e pensamento matemático mais flexível.
     metodo_cpa:
-      concreto: Pedras, folhas reais, os próprios dedos.
-      pictorico: Vetado (a observação da flor real é a ponte para o real).
-      abstrato: Traçar o 4 e 5 na terra (Enativo).
-      nota: 'CM: Coisas antes de Signos.'
+      concreto: Arranjo físico de 4 ao redor e 1 no centro.
+      pictorico: Vetado no núcleo.
+      abstrato: Nomeação posterior de 4 e 5 pela estrutura.
+      nota: "CM: Mind feeds on living ideas; forma e número caminham juntos."
     principio_cm:
-      numero: 14
-      citacao: "We do not accept the grade system."
-      citacao_pt: "Não aceitamos o sistema de séries seriadas rígidas."
-      aplicacao: Se seu filho já sabe contar até 5, hoje ele aprendeu a *admirar* o 5. A profundidade vale mais que a velocidade.
+      numero: 6
+      citacao: "Education is the science of relations."
+      citacao_pt: "Educação é a ciência das relações."
+      aplicacao: A criança aprende relação entre posição e quantidade.
     tgtb_conexao: |
-      Esta lição harmoniza com 000-L3 (Numbers 4 and 5) do TGTB Kindergarten.
-      Enquanto o original foca na prática de traçado, nós elevamos a experiência para a Geometria da Natureza.
+      Alinhada a 000-L3 (Numbers 4 and 5), com ênfase em percepção estrutural.
     espiral:
-      conceito: Formas e Contagem
-      volta_atual: 'Sementes — Reconhecimento Intuitivo do 4 e 5'
-      proxima_volta: 'Raízes — Estudo formal de Pentágonos, Quadrados e Ângulos'
-      nota: 'Uma semente plantada hoje será uma árvore de conhecimento amanhã.'
+      conceito: Composição do cinco
+      volta_atual: "Sementes - forma concreta com centro e borda"
+      proxima_volta: "Raízes - decomposição e composição numérica mais formal"
+      nota: Percepção estrutural precoce facilita adição e subtração futuras.
     reflexao_espiritual: |
-      O número 5 está impresso em nossa anatomia (dedos) e na botânica (flores dicotiledôneas).
-      É uma assinatura divina, lembrando-nos que fomos desenhados pelo mesmo Artista que pintou as estrelas.
+      Há beleza quando partes diferentes encontram unidade.
+      Esta percepção de ordem também educa sensibilidade e contemplação.
     nota_graca: |
-      Se ele não desenhar a estrela perfeita, lembre-se: Íris voa livre.
-      O desenho é apenas um rastro do voo. O importante é o brilho nos olhos ao descobrir.
+      Se o arranjo não sair como esperado, reduza complexidade e reconstrua.
+      Clareza cresce com repetição breve e alegre.
 
   diario_portador:
-    nota: Suas anotações serão usadas nas revisões trimestrais.
+    nota: Registrar como a criança descreve forma ajuda a acompanhar maturação matemática.
     perguntas:
-      - Ele percebeu que a mão tem 5 dedos sozinho?
-      - Conseguiu contar até 5 sem pular o 4?
+      - Ela percebeu diferença entre "ao redor" e "no centro"?
+      - Conseguiu recontar 4 + 1 como cinco?
+      - Precisou de apoio visual adicional?
 
   auditoria_qa:
     cm: [true, true, true, true, true]
@@ -241,38 +292,3 @@ licao:
     template: [true, true, true]
     triade: [true, true, true]
     inclusao: [true, true]
-
-  sementes_do_dia:
-    titulo: Sementes para o Dia
-    instrucao: |
-      Ao longo do dia, a criança pode continuar vivendo no Reino.
-      Estas atividades são opcionais — a lição já está completa.
-    atividades:
-      - titulo: Caça às Estrelas de 5
-        icone: ph-star
-        acao: Procurar coisas em casa que tenham 5 partes (flores, mãos, dedos do pé)
-        tipo: Exploração
-        com_irmaos: true
-      - titulo: Flor de Objetos
-        icone: ph-flower
-        acao: Repetir a estrela de pedras com outros objetos (tampinhas, grãos, brinquedos)
-        tipo: Construção
-        com_irmaos: true
-      - titulo: O Desenho da Íris
-        icone: ph-pencil
-        acao: Desenhar a flor/estrela de pedras que vocês construíram
-        tipo: Criação
-        com_irmaos: false
-      - titulo: A História da Flor
-        icone: ph-chat-circle
-        acao: "Recontar para alguém: \"Hoje a Íris me ensinou a fazer uma flor de pedra!\""
-        tipo: Narração
-        com_irmaos: false
-      - titulo: 5 Dedos de Boa-Noite
-        icone: ph-moon-stars
-        acao: Na hora de dormir, contar 5 coisas bonitas que viram hoje
-        tipo: Ritual Noturno
-        com_irmaos: true
-    frase_final: |
-      "O Reino não acaba quando a lição termina. Ele vive no coração do Herdeiro."
-      — Matemática Viva

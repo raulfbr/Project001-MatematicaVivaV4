@@ -1,0 +1,36 @@
+{
+  "name": "matematica-viva-v5-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "tsx scripts/build-web.ts",
+    "build:web": "tsx scripts/build-web.ts",
+    "build:artifacts": "tsx scripts/build-artifacts.ts",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "validate:contract": "tsx scripts/validate-contract.ts",
+    "validate:lessons": "tsx scripts/validate-lessons.ts",
+    "validate:lessons:preview": "tsx scripts/validate-lessons.ts --mode preview",
+    "validate:lessons:publish": "tsx scripts/validate-lessons.ts --mode publish",
+    "qa:reports": "tsx scripts/qa-reports.ts",
+    "pdf:single": "tsx scripts/pdf-single.ts",
+    "pdf:bundle": "tsx scripts/pdf-bundle.ts",
+    "pdf:full-sementes": "tsx scripts/pdf-full-sementes.ts",
+    "publish": "npm run validate:contract && npm run validate:lessons:publish && npm run build:artifacts && npm run qa:reports && npm run build:web"
+  },
+  "dependencies": {
+    "next": "15.0.4",
+    "playwright": "1.49.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.1",
+    "@types/react": "19.0.2",
+    "@types/react-dom": "19.0.2",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2"
+  }
+}

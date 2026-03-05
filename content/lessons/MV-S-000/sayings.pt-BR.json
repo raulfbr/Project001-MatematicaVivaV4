@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "frase_abertura": "O Reino sorriu ao ver voce chegar."
+  },
+  "preparacao_portador": {
+    "resumo": "Prepare o ambiente e convide a crianca para o rito de entrada."
+  },
+  "ritual_entrada": {
+    "script": "Respirem fundo. O portal esta aberto."
+  },
+  "jornada": {
+    "cena_1": "Melquior apresenta os guardioes do Reino."
+  },
+  "concreto": {
+    "atividade": "Mostrar os cards dos guardioes e nomear cada um."
+  },
+  "narramos_juntos": {
+    "pergunta": "Quem voce conheceu hoje no Reino?"
+  },
+  "fechamento": {
+    "fala_final": "A jornada apenas comecou."
+  },
+  "auditoria_qa": {
+    "check": "pendente"
+  }
+}

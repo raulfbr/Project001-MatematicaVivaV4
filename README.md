@@ -261,3 +261,62 @@ Se você chegou até aqui, **você já é um de nós**.
 💻 **Desenvolvedores:** [README_DEV.md](README_DEV.md)
 
 </div>
+
+---
+
+## Fase Atual (Revisão Sementes)
+
+Fluxo oficial para retomar sem perder contexto:
+
+1. Leia este `README.md` (visão geral do projeto).
+2. Em seguida, vá para [`Revisao/RadmeRevisao.md`](Revisao/RadmeRevisao.md) para entrar na fase de revisão.
+3. Execute a revisão usando a ordem e os checklists definidos na pasta `Revisao`.
+
+### Regra Crítica de Encoding (obrigatória)
+
+Para não quebrar texto de lições HTML (ex.: `Coração` virando `CoraÃ§Ã£o`):
+
+1. Editar arquivos `.html/.md/.yaml` sempre em **UTF-8**.
+2. Evitar conversões de encoding automáticas ao salvar.
+3. Após qualquer edição em lições, rodar sanity check textual:
+`rg -n "Ã|Â|â|\\b\\w+\\?\\w+\\b" site/sementes/MV-S-00[1-3]*.html`
+4. Se aparecer padrão quebrado, corrigir antes de seguir.
+
+## Onde Paramos (2026-02-28)
+
+Resumo rapido da decisao atual para retomar sem perda de contexto:
+
+1. Projeto pivoteado para ciclo tecnico Matematica Viva V5.
+2. PRD canonicamente unificado em um documento unico (`v1.1.0`).
+3. Stack oficial mantida: Next.js + React + TypeScript + Zod + Playwright.
+4. Estrategia central mantida: estrutura unica de licao + dizeres separados por licao.
+5. Variantes oficiais mantidas: `standard`, `portal`, `celebration`.
+6. Gate final mantido: QA narrativo + Selo Familia Rodrigues antes de publish.
+
+### Documentos principais
+
+- PRD unico canonico (V5): [PRD_UNICO_MATEMATICA_VIVA_V5.md](PRD_UNICO_MATEMATICA_VIVA_V5.md)
+- TASK operacional continua V5: [TASK_V5_EXECUCAO_CONTINUA.md](TASK_V5_EXECUCAO_CONTINUA.md)
+- PRD pivot V5 (historico): [PRD_PIVOT_MATEMATICA_VIVA_V5.md](PRD_PIVOT_MATEMATICA_VIVA_V5.md)
+- PRD de migracao Next (historico): [PRD_NEXT_HIBRIDO_AI_FIRST.md](PRD_NEXT_HIBRIDO_AI_FIRST.md)
+- PRD mestre V4 (historico): [PRD_MESTRE_AI_FIRST_SEMENTES.md](PRD_MESTRE_AI_FIRST_SEMENTES.md)
+- Task V4 (historico): [logs/TASK_IMPECABILIDADE_PRD_SEMENTES.md](logs/TASK_IMPECABILIDADE_PRD_SEMENTES.md)
+- PRD tecnico V4 (historico): [PRD_TECNICO.md](PRD_TECNICO.md)
+- PRD premium V4 (historico): [logs/2026.02.26.PRD_SEMENTES_PREMIUM.md](logs/2026.02.26.PRD_SEMENTES_PREMIUM.md)
+- Mapa de execucao do projeto (estado atual + prioridades): [docs/MAPA_EXECUCAO_PROJETO.md](docs/MAPA_EXECUCAO_PROJETO.md)
+
+### Proximo passo recomendado
+
+Executar Fase 1 do PRD unico V5 (piloto expandido):
+
+1. Fechar PDF `single`, `bundle` e `full-sementes` com execucao validada.
+2. Gerar `pdf_report.json` e `family_seal_report.json` no `dist/reports`.
+3. Fechar `publish` com gates automaticos + gate humano.
+4. Expandir lote de 3 para 25 licoes no novo formato.
+
+Status atual:
+
+1. Fase 0 concluida no piloto (3 licoes e validadores ativos).
+2. Fase 1 em andamento (pipeline PDF e gates finais em consolidacao).
+3. Proximo foco: lote piloto de 25 licoes com publish dry-run verde.
+4. Observacao operacional: `next build` exige path sem `!` no Windows.

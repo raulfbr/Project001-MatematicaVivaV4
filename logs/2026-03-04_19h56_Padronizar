@@ -171,3 +171,160 @@ Executar imediatamente a Fase A:
 1. Criar `Revisao/ESQUELETO_HTML_SEMENTES_CANONICO.md`.
 2. Definir formalmente as excecoes da L000.
 3. Em seguida, atacar L002 como primeira licao de refatoracao completa.
+
+## 11) Revisao v2 (Orchestrator + Curriculo Mestre) - Findings priorizados
+Base de criterios:
+- `bmad/orchestrator.yaml` (meta_regras + modo REVISAO + checks)
+- `curriculo/_SISTEMA/CURRICULOS_MESTRE/000_K_SEMENTES_CURRICULO_MESTRE.md`
+- HTML real de `site/sementes/MV-S-000..003`
+
+### Critico / Alto
+1. L002: risco real de quebra visual em `Sementes para o Dia` por estrutura flex.
+- Evidencia: `MV-S-002_AS_PEDRAS_DA_FORTALEZA.html:599` abre `instruction-box` e injeta varios `<p>` diretos sem wrapper interno (`<div>`).
+- Impacto: comportamento inconsistente de layout (mesma causa do bug ja corrigido na L001).
+- Acao: envolver todo o conteudo textual em wrapper interno antes do fechamento da caixa.
+
+2. L002: entrega matematica abaixo do "Ten Frames" prometido no proprio texto.
+- Evidencia curricular: curriculo mestre define L002 como `000-L2 - Ten Frames` (linha 46).
+- Evidencia na licao: passo a passo concreto trabalha apenas 5 pedras em uma fileira (`MV-S-002...:407-425`) e nao consolida quadro de 10 no nucleo da licao.
+- Impacto: risco de desalinhamento entre promessa curricular e experiencia concreta central.
+- Acao: incluir explicitamente transicao 5 -> 10 (duas fileiras de 5) no bloco concreto principal, nao so como extensao.
+
+### Medio
+3. L003: duplicacao de script Phosphor.
+- Evidencia: `MV-S-003_A_ESTRELA_DO_REINO.html:15` e `:16` carregam o mesmo script.
+- Impacto: ruido tecnico, custo extra desnecessario, risco de comportamento colateral.
+- Acao: manter apenas um include.
+
+4. L002: Formacao do Portador em formato legado (alto uso de `<br>` e baixa semantica).
+- Evidencia: `MV-S-002...:654-659`, `:666`, `:682-683`, `:693`, `:705`, `:722`, `:735` etc.
+- Impacto: pior manutencao, UX mobile menos robusta, leitura menos elegante para pais.
+- Acao: migrar para formato por paragrafos (`<p>`) e boxes semanticas (padrao L001/L003).
+
+5. L003: navegacao superior fora do padrao novo L001+.
+- Evidencia: usa bloco antigo de 3 colunas (`MV-S-003...:44-51`) e nao usa `nav-back-link`.
+- Impacto: inconsistencia de UX entre licoes contiguas.
+- Acao: unificar para o padrao oficial definido no esqueleto canonico.
+
+6. L003: "Estrategia do Mestre" esta em Preparacao, nao em Formacao.
+- Evidencia: `MV-S-003...:177-190`.
+- Impacto: quebra de consistencia editorial (onde o pai espera achar estrategia tatico-pedagogica).
+- Acao: mover para inicio da secao Formacao (regra canonica proposta).
+
+### Baixo
+7. L001: iconografia de Formacao divergente do padrao visual definido.
+- Evidencia: `MV-S-001...:444` usa `ph-graduation-cap duotone-carmim`.
+- Impacto: apenas consistencia visual.
+- Acao: padronizar para `duotone-terra`.
+
+## 12) Confirmacoes positivas (nao perder)
+1. L001 esta bem alinhada ao hook do curriculo mestre (linha 45 do curriculo): "Tres sementes...".
+2. L002 preserva o arco narrativo de Bernardo e persistencia (forte aderencia CM + virtude do guardiao).
+3. L003 preserva o hook central da Moldura(4)+Maca(5) em hero e formacao.
+4. L000 permanece forte como licao liturgica de portal (coerente com curriculo mestre linha 44).
+
+## 13) Matriz de alinhamento curricular (S000-S003)
+S000 (Portal):
+- Curriculo mestre: liturgica, sem conteudo matematico.
+- Estado: alinhado.
+- Nota: manter como excecao oficial de estrutura.
+
+S001 (000-L1 Numbers 1-3):
+- Curriculo mestre: contagem concreta 1-3 com hook da trindade.
+- Estado: alinhado.
+- Ajuste: apenas consistencia visual em Formacao.
+
+S002 (000-L2 Ten Frames):
+- Curriculo mestre: introducao de quadro de dez.
+- Estado: parcialmente alinhado.
+- Gap chave: falta consolidacao 5->10 no nucleo concreto.
+
+S003 (000-L3 Numbers 4-5):
+- Curriculo mestre: 4/5 via moldura + estrela (maca).
+- Estado: bom alinhamento narrativo e conceitual.
+- Ajustes: higiene tecnica + padrao de navegacao + reposicionamento de estrategia.
+
+## 14) Protocolo de revisao baseado no Orchestrator (execucao)
+Refs do Orchestrator:
+- `meta_regras` (linhas 13-16), incluindo `regent_ux`.
+- `distincao_papeis` (linhas 68-75).
+- Modo `REVISAO` e checks (linhas 143-154).
+
+### Gate A - Meta
+- Unidade familiar: licao aplicavel em contexto de casa real.
+- Regent UX: leitura mobile simples, sem friccao.
+- Distincao papeis: bastidor tecnico separado de narrativa.
+
+### Gate B - CM (pedagogia)
+- Crianca como pessoa (sem linguagem de adestramento).
+- Licao curta e respiravel.
+- Narracao obrigatoria no fechamento.
+- Atmosfera antes de simbolo.
+
+### Gate C - Bruner (matematica)
+- Concreto dominante no corpo da licao.
+- Pictorico nao antecipa indevidamente.
+- Abstrato como reconhecimento inicial, sem forcar simbolismo.
+
+### Gate D - Engenharia
+- Estrutura HTML consistente por secoes.
+- Sem duplicacao de scripts.
+- Sem anti-pattern estrutural (`<br>` como layout, falta de wrapper em flex-box textual).
+
+## 15) Backlog de implementacao por rodada (robusto e incremental)
+### Rodada 1 (higiene tecnica + layout)
+1. L003: remover script Phosphor duplicado.
+2. L002: corrigir wrapper interno em `Sementes para o Dia`.
+3. L002/L003: ajustes rapidos de semantica minima (quebras criticas de `<br>` em blocos mais sensiveis).
+
+### Rodada 2 (padrao estrutural)
+1. L002: migrar `Atividade Concreta` para `Momento de Conexao`.
+2. L003: unificar header nav para padrao `nav-back-link`.
+3. L003: mover `Estrategia do Mestre` para Formacao.
+
+### Rodada 3 (profundidade narrativa + matematica)
+1. L002: reforcar core de Ten Frame (5+5) no concreto principal.
+2. L002/L003: intensificar narracao sem perder clareza operacional para o Portador.
+3. Revisar "Perguntas do Coracao" para garantir reconto e transferencia real.
+
+### Rodada 4 (consolidacao e escala)
+1. Extrair checklist automatizavel de conformidade HTML.
+2. Gerar relatorio por licao em logs.
+3. Aplicar padrao no lote seguinte (S004+).
+
+## 16) Trilha continua de estudo e anotacao (aprender e registrar)
+Objetivo: manter aprendizagem viva do sistema, nao apenas "corrigir html".
+
+### Bloco 1 - Governanca
+Arquivos:
+- `bmad/orchestrator.yaml`
+- `bmad/workflows/revisar-licao-auto.yaml`
+- `bmad/workflows/revisar-pontos.yaml`
+Anotar:
+- quais checks bloqueiam release
+- onde cada expert atua (CM, Bruner, Tolkien, Engenharia)
+
+### Bloco 2 - Curriculo
+Arquivos:
+- `curriculo/_SISTEMA/CURRICULOS_MESTRE/000_K_SEMENTES_CURRICULO_MESTRE.md`
+- `curriculo/01_SEMENTESV6/000..003_*.yaml`
+Anotar:
+- promessa de aprendizado por licao
+- hooks narrativos canonicamente definidos
+- expected progression concreta de matematica
+
+### Bloco 3 - Implementacao
+Arquivos:
+- `site/sementes/MV-S-000..003*.html`
+- `site/sementes/style.css`
+Anotar:
+- o que esta alinhado
+- o que diverge
+- qual mudanca gera maior ganho com menor risco
+
+## 17) Regra operacional para as proximas interacoes
+Sempre responder cada licao com:
+1. Findings (prioridade alta->baixa, com linha).
+2. Decisao de design/pedagogia (por que).
+3. Patch proposto.
+4. Validacao pos-patch (estrutura + narrativa + matematica).

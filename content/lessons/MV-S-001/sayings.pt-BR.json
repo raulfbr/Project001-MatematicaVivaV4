@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "frase_abertura": "Tres sementes, tres promessas."
+  },
+  "preparacao_portador": {
+    "resumo": "Separar 3 sementes e um pequeno recipiente."
+  },
+  "ritual_entrada": {
+    "script": "Feche os olhos. Vamos para a clareira."
+  },
+  "jornada": {
+    "cena_1": "Celeste encontra a primeira semente.",
+    "cena_2": "Celeste encontra a segunda semente.",
+    "cena_3": "Celeste encontra a terceira semente."
+  },
+  "concreto": {
+    "atividade": "Contagem tatil de 1 a 3, com correspondencia um-a-um."
+  },
+  "narramos_juntos": {
+    "pergunta": "Quantas sementes Celeste encontrou?"
+  },
+  "fechamento": {
+    "fala_final": "Ate a proxima descoberta."
+  },
+  "auditoria_qa": {
+    "check": "pendente"
+  }
+}

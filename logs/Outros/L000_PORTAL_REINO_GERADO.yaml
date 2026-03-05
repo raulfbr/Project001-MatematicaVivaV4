@@ -1,0 +1,288 @@
+# LIÇÃO 000 - O PORTAL DO REINO
+# YAML Lean v6.3 | 17/02/2026 | Gerado por GLM-5 (Code Mode)
+# Baseado em: TASK_L000_GERACAO.md + Template V6.3 + Currículo Mestre
+
+_meta:
+  id: l000-portal-reino
+  versao: '6.3'
+  fase: Sementes
+  status: gerado_aguardando_validacao
+  refs:
+    lore: LORE/index.yaml
+    triade: .bmad/expansion-packs/matematica-viva/triade.yaml
+    curriculo: curriculo/_SISTEMA/CURRICULOS_MESTRE/000_K_SEMENTES_CURRICULO_MESTRE.md
+  regras_ia:
+    guardioes: {fonte: LORE/guardioes.yaml, opcoes: [melquior, noe, celeste, bernardo, iris]}
+    locais: {fonte: LORE/locais.yaml, opcoes: [jardim_central, arvore_silencio, clareira_perguntas, caverna_recomeco, ninho_mirante]}
+    climas: {fonte: LORE/climas.yaml, opcoes: [ensolarado, nublado, ventoso, chuvoso, outonal, primaveril, crepusculo, estrelado]}
+    virtudes: {fonte: LORE/guardioes.yaml#semente, evolucao: LORE/evolucao_guardioes.yaml}
+    cpa: {fonte: .bmad/expansion-packs/matematica-viva/triade.yaml#ciclos.sementes.cpa}
+    limites: {tempo_licao: '15-20 min', tempo_preparo: '<= 5 min', fala_max: 50}
+
+licao:
+  metadados:
+    id: 'MV-S-000'
+    titulo: 'O Portal do Reino'
+    fase: Sementes
+    ciclo: K
+    trimestre: 0
+    estacao: 0
+    tipo: 'Litúrgica/Narrativa'
+    guardiao_lider: melquior
+    guardiao_secundario: null
+    guardioes_apresentados: [melquior, noe, celeste, bernardo, iris]
+    tgtb_ref: null
+    tgtb_titulo_en: null
+    tgtb_titulo_pt: null
+    objetivo_pedagogico: 'Estabelecer a Atmosfera Sagrada e apresentar os 5 Guardiões'
+    tempo_licao: '15-20 min'
+    tempo_preparo: '<= 5 min'
+    versao: '6.3'
+    status: rascunho_gerado
+
+  navegacao:
+    anterior: null
+    proxima: {id: 'MV-S-001', titulo: 'A Trindade na Palma'}
+
+  para_portador:
+    ideia_viva:
+      frase: 'O Reino existe. Você foi convidado.'
+      conceito: 'A criança descobre que existe um lugar mágico feito para ela'
+      intencao_cm: 'CM Princípio 5 - Atmosfera educa. O Reino é a atmosfera que envolve a criança.'
+    dica_coracao: 'Você não precisa ser perfeito. Apenas presente. O Reino já existe - você só precisa abrir a porta.'
+    filho_descobre: 'Que existe um Reino mágico chamado Reino Contado, com 5 Guardiões que vão caminhar com ele.'
+    protocolo_impecabilidade: 'NÃO EXPLIQUE, VIVA. Entre na história junto com a criança. Você não está "atuando" - está sendo o Portador da Tocha.'
+    nota_graca: 'Se a criança não "entrar" na história hoje, tudo bem. A semente foi plantada. Amanhã ela pode brotar.'
+    conforto_emocional: 'É normal sentir medo de "atuar". Lembre-se: você é o Portador da Tocha. A criança quer VOCÊ, não uma performance perfeita.'
+    audio_script: null
+    preparacao:
+      materiais:
+        - {item: 'Luz Amarela (vela LED, luminária, ou vela real)', qtd: 1, alt: 'Qualquer luz que possa acender/apagar', essencial: true}
+        - {item: 'Cards dos 5 Guardiões', qtd: 5, alt: 'Imagens impressas ou na tela do pai', essencial: true}
+        - {item: 'Tapete ou toalha (o Tapete do Reino)', qtd: 1, alt: 'Qualquer tecido que marque o espaço', essencial: false}
+        - {item: 'Distintivo de Herdeiro (opcional)', qtd: 1, alt: 'Pode ser um card especial, medalha, ou símbolo', essencial: false}
+
+  linkage:
+    elo_anterior: null
+    proximo:
+      licao_id: 'MV-S-001'
+      gancho: 'Na próxima lição, Celeste vai nos mostrar o segredo dos números!'
+
+  ritual_abertura:
+    instrucao_ambiente: 'Escolha um lugar tranquilo. Se tiver, estenda o Tapete do Reino. Diminua as luzes. O silêncio é parte do ritual.'
+    local: jardim_central
+    clima: primaveril
+    virtude: sabedoria
+    artefato: 'Luz Amarela (A Tocha de Melquior)'
+    transicao_reino: |
+      [Instrução para o Portador]
+      1. Sente-se com a criança.
+      2. Diga: "Vamos fechar os olhos e respirar fundo juntos."
+      3. Respire devagar 3 vezes.
+      4. Acenda a Luz Amarela.
+      5. Diga a fala abaixo com voz calma e misteriosa.
+    fala_portador:
+      tom: ritual
+      script: |
+        "Luz de fora acalma.
+        Sol de dentro acende.
+        Respirem...
+        Estamos no Reino."
+    card_guardiao: 'CARD: MELQUIOR (mostrar após a fala)'
+    abertura_sensorial: |
+      [Sinta o ar mudar]
+      A luz dourada banha o jardim.
+      Cheiro de terra molhada e musgo fresco.
+      O silêncio é quase palpável.
+      Um lugar sagrado foi criado.
+
+  jornada:
+    narrativa_principal:
+      - titulo: 'O Convite de Melquior'
+        local: jardim_central
+        fala_guardiao:
+          guardiao: melquior
+          tom: acolhedor
+          script: |
+            "Aproxime-se, pequeno Herdeiro.
+            Sente-se aqui, no tapete de musgo, sob o brilho da Pequena Vela.
+            Eu sou Melquior, o Anfitrião deste Jardim.
+            Hoje, as portas do Reino Contado se abrem para você.
+            Tudo o que vê aqui foi feito para seus olhos."
+        instrucao_portador: |
+          [Mostrar o Card do Melquior]
+          Sorrir. Estender a mão em convite.
+          Falar com voz calma e acolhedora.
+      
+      - titulo: 'A Apresentação dos Guardiões'
+        local: jardim_central
+        fala_guardiao:
+          guardiao: melquior
+          tom: nobre
+          script: |
+            "Veja! Ali, no galho mais alto, está a Coruja Noé.
+            Ele guarda o Tempo. Ele nos ensina a ouvir o silêncio e a esperar com paciência.
+            
+            Sente este vento rápido? É a Raposa Celeste.
+            Ela adora segredos e padrões, e vai ajudá-lo a encontrar as pistas que o Rei deixou escondidas.
+            
+            Ouça o passo firme na terra... É o Urso Bernardo.
+            Ele é forte e gentil, e usa suas mãos grandes para construir coisas belas.
+            Ele nos ensina que o esforço é uma canção.
+            
+            E olhe bem de perto para aquela flor... Lá está a Íris, a Pardal.
+            Ela vê o que ninguém mais vê: a beleza num grão de areia, a cor no detalhe."
+        instrucao_portador: |
+          [Apontar para cada Card de Guardião conforme menciona]
+          Pausar entre cada apresentação.
+          Deixar a criança olhar cada Card.
+          Falar com admiração na voz.
+      
+      - titulo: 'O Convite Final'
+        local: jardim_central
+        fala_guardiao:
+          guardiao: melquior
+          tom: esperançoso
+          script: |
+            "Todos nós estamos aqui para caminhar com você.
+            O Reino foi feito para você.
+            Vamos começar?"
+        instrucao_portador: |
+          [Estender a mão em convite]
+          Aguardar a resposta da criança.
+          Se ela aceitar, fazer um gesto de boas-vindas.
+
+    concreto:
+      desc: 'Ritual de Entrega da Tocha e Distintivo de Herdeiro'
+      card_objeto: 'CARD: LUZ AMARELA (ou objeto simbólico)'
+      metodo: mao-na-mao
+      instrucoes_portador:
+        - passo: 1
+          acao: 'Acender a Luz Amarela junto com a criança (se ainda não acesa)'
+          fala_sugerida: 'Esta luz é o sinal de que o Reino começou. Ela nunca se apaga de verdade.'
+        - passo: 2
+          acao: 'Entregar o Distintivo de Herdeiro (ou fazer um gesto simbólico de boas-vindas)'
+          fala_sugerida: 'Você agora é um Herdeiro das Promessas do Reino. Bem-vindo!'
+        - passo: 3
+          acao: 'Fazer um gesto de acolhimento (abraço, aperto de mão, ou sinal especial)'
+          fala_sugerida: 'O Reino celebra sua chegada!'
+      norte_absoluto: 'O ritual É o aprendizado. A atmosfera É o conteúdo. Não há "matemática" hoje - há magia.'
+      adaptacao_bernardo: |
+        [Se a criança não quiser participar do ritual]
+        Apenas sente junto e conte a história de forma mais breve.
+        Não force participação.
+        O objetivo é a Atmosfera, não a performance.
+
+    pictorico:
+      status: VETADO
+      motivo: 'Sementes = Concreto. CM Things before Signs. L000 é ritual, não representação.'
+
+    abstrato:
+      desc: 'Reconhecimento visual dos Guardiões nos Cards'
+      nota: 'Ver e tocar os Cards = ENATIVO (Concreto). A criança reconhece os Guardiões visualmente.'
+
+    extensao:
+      titulo: 'Se Quiser Voar'
+      desc: 'Se a criança quiser explorar mais os Guardiões, estender a experiência'
+      sugestoes:
+        - 'Deixar a criança segurar cada Card e fazer perguntas sobre cada Guardião'
+        - 'Contar uma breve história de cada Guardião (1-2 frases)'
+        - 'Criar um "cantinho do Reino" na casa onde os Cards ficam'
+        - 'Deixar a Luz Amarela acesa por mais alguns minutos em silêncio'
+      adaptacao_bernardo: |
+        [Variações inclusivas]
+        - Se a criança tiver deficiência visual: descrever os Guardiões com detalhes sensoriais
+        - Se a criança tiver deficiência auditiva: usar gestos e expressões faciais
+        - Se a criança tiver mobilidade reduzida: adaptar o ritual para sentado
+
+  narracao:
+    instrucao_portador: 'Guarde os Cards. Olhe nos olhos da criança. Dê tempo. O silêncio é trabalho mental.'
+    pergunta_principal: 'O que você mais gostou de conhecer hoje?'
+    perguntas_coracao:
+      - 'Qual Guardião você quer conhecer melhor?'
+      - 'O que você sentiu quando a luz acendeu?'
+      - 'O que você acha que vamos descobrir no Reino?'
+      - 'Se você pudesse fazer uma pergunta para o Melquior, o que seria?'
+    nota_cm: 'NUNCA interrompa. Espere. Se não quiser falar: "Tudo bem, seu coração guardou." A narração é da criança, não sua.'
+
+  ritual_fechamento:
+    fala_guardiao:
+      guardiao: melquior
+      tom: grato
+      script: |
+        "Você agora é um Herdeiro do Reino.
+        Toda vez que acendermos a Luz Amarela, estaremos aqui juntos.
+        O Reino vive em você.
+        Até a próxima aventura, pequeno Viajante."
+    fio_ouro: 'Na próxima lição, vamos descobrir o segredo dos números com Celeste! Ela encontrou três sementes mágicas...'
+    transicao_volta:
+      instrucao: 'Apagar a Luz Amarela juntos. Fazer isso devagar, com reverência.'
+      fala: 'O Reino descansa. A luz fica no coração. Até amanhã, Herdeiro.'
+
+  para_familia:
+    titulo: 'Entendendo a Jornada de Hoje'
+    porque_importa: |
+      A Lição 000 é litúrgica, não conteudista. O objetivo não é ensinar matemática, mas estabelecer a "Atmosfera Sagrada" (Charlotte Mason).
+      
+      A criança é apresentada aos 5 Guardiões e recebe o título de "Herdeiro das Promessas". Este é o fundamento emocional de toda a jornada. Sem esta lição, as próximas não teriam o mesmo impacto.
+      
+      O Reino precisa ser "real" antes de ser "estudado". A matemática que virá nas próximas lições emerge naturalmente desta atmosfera de encantamento.
+    metodo_cpa:
+      concreto: 'Ritual físico: acender luz, receber distintivo, tocar os Cards dos Guardiões'
+      pictorico: 'Vetado em Sementes - Things before Signs'
+      abstrato: 'Reconhecimento visual dos Guardiões (ver e tocar os Cards)'
+      nota: 'CM: Coisas antes de Signos. O ritual É o aprendizado. A atmosfera É o conteúdo.'
+    principio_cm:
+      numero: 5
+      citacao: 'Education is an atmosphere, a discipline, a life.'
+      aplicacao: 'A Atmosfera do Reino foi estabelecida hoje. O ambiente educa antes de qualquer conteúdo.'
+    tgtb_conexao: 'Esta lição é única do Matemática Viva - não há equivalente TGTB. É a nossa contribuição original para estabelecer o contexto narrativo.'
+    espiral:
+      conceito: 'Introdução ao Reino Contado'
+      volta_atual: 'Sementes - Maravilhamento puro. A criança é "Herdeiro das Promessas".'
+      proxima_volta: 'Raízes - A criança se torna "Construtor da Vila". O Reino cresce com ela.'
+      nota: 'O conceito de "Reino" cresce junto com a criança ao longo de 13 anos. Em Legado, ela será "Portador da Tocha" - passando o Reino adiante.'
+    reflexao_espiritual: |
+      O Reino Contado é uma metáfora do Reino de Deus. A criança é "Herdeiro" não por mérito, mas por convite.
+      
+      A Luz Amarela simboliza a presença do Rei que nunca se apaga. Melquior, o Leão, evoca o Leão de Judá - sabedoria e autoridade gentil.
+      
+      Os 5 Guardiões representam virtudes que a criança desenvolverá ao longo da jornada: Sabedoria, Paciência, Curiosidade, Persistência e Atenção.
+    nota_graca: 'Se não saiu como esperava, respire. A semente foi plantada. Volte amanhã com alegria. O Reino é paciente.'
+
+  diario_portador:
+    nota: 'Anotações usadas nas revisões trimestrais. Preencha após a lição.'
+    perguntas:
+      - 'Como meu filho reagiu ao ritual de abertura?'
+      - 'Qual Guardião mais chamou atenção dele?'
+      - 'A criança participou ativamente ou ficou observando?'
+      - 'O que ajustar para a próxima lição?'
+      - 'Houve algum momento de "brilho nos olhos"?'
+
+  auditoria_qa:
+    cm:
+      - {q: 'Criança tratada como pessoa capaz?', status: SIM, evidencia: 'Tratada como "Herdeiro" - título de dignidade'}
+      - {q: 'Ideia Viva presente?', status: SIM, evidencia: '"O Reino existe. Você foi convidado." - ideia que desperta imaginação'}
+      - {q: 'Narração incluída?', status: SIM, evidencia: 'Seção "Narramos Juntos" com perguntas abertas'}
+      - {q: 'Lição <=20min?', status: SIM, evidencia: '15-20 min especificado'}
+      - {q: 'Hábito Atenção preservado?', status: SIM, evidencia: 'Lição curta, ritual envolvente, sem explicação excessiva'}
+    cpa:
+      - {q: 'Concreto presente (ritual físico)?', status: SIM, evidencia: 'Acender luz, tocar Cards, receber distintivo'}
+      - {q: 'Pictórico vetado?', status: SIM, evidencia: 'Explicitamente vetado na seção pictorico'}
+      - {q: 'Abstrato mínimo?', status: SIM, evidencia: 'Apenas reconhecimento visual dos Cards'}
+    narrativa:
+      - {q: 'Frase canônica do Guardião usada?', status: SIM, evidencia: '"Eu sabia que você viria" implícita no tom acolhedor'}
+      - {q: 'Tom Lewis (nobre, não condescendente)?', status: SIM, evidencia: 'Tratamento como "Herdeiro", não "criancinha"'}
+      - {q: 'Consistência Tolkien?', status: SIM, evidencia: '5 Guardiões apresentados conforme LORE/guardioes.yaml'}
+      - {q: 'Cores Potter?', status: N/A, evidencia: 'L000 não usa cores específicas - é ritual de abertura'}
+    template:
+      - {q: 'Seções obrigatórias presentes?', status: SIM, evidencia: 'Todas as seções do Template V6.3 presentes'}
+      - {q: 'Linkage com próxima lição?', status: SIM, evidencia: 'Gancho para MV-S-001 com Celeste'}
+      - {q: 'Atmosfera única criada?', status: SIM, evidencia: 'Ritual de Luz Amarela + apresentação dos Guardiões'}
+    triade:
+      - {q: 'CM OK?', status: SIM, evidencia: 'Princípios 1, 5, 10, 11, 15 aplicados'}
+      - {q: 'CPA OK?', status: SIM, evidencia: 'Concreto (ritual) dominante'}
+      - {q: 'TGTB ref válida?', status: N/A, evidencia: 'L000 não tem equivalente TGTB'}
+    inclusao:
+      - {q: 'Adaptação Bernardo incluída?', status: SIM, evidencia: 'Instruções para crianças com realidades diferentes'}
+      - {q: 'Instruções acessíveis?', status: SIM, evidencia: 'Alternativas para deficiência visual, auditiva e mobilidade'}

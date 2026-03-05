@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "frase_abertura": "Hoje celebramos tudo o que ja enxergamos."
+  },
+  "preparacao_portador": {
+    "resumo": "Separe cards e convide para revisar as descobertas."
+  },
+  "ritual_entrada": {
+    "script": "Iris convida para um banquete de observacao."
+  },
+  "jornada": {
+    "cena_1": "Relembrar simbolos e padroes vistos no ciclo."
+  },
+  "concreto": {
+    "atividade": "Comparar cards e agrupar por criterio visual."
+  },
+  "narramos_juntos": {
+    "pergunta": "O que voce percebeu de novo hoje?"
+  },
+  "fechamento": {
+    "fala_final": "Sua atencao ficou mais afiada."
+  },
+  "auditoria_qa": {
+    "check": "pendente"
+  }
+}

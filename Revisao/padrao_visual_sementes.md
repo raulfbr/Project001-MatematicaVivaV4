@@ -1,6 +1,6 @@
 # 🦁 Padrão Visual e Estrutural: Ciclo Sementes
 > **Fonte da Verdade:** Lição 000 (O Portal do Reino)
-> **Última Atualização:** Fev/2026 (Impeccável Release)
+> **Última Atualização:** Mar/2026 (Header Canônico + Ordem Completa)
 
 Este documento é a **Bíblia de Auditoria**. Qualquer desvio deste padrão nas lições 000-025 deve ser corrigido imediatamente.
 
@@ -34,27 +34,54 @@ O Portador não é um rodapé; ele é um Personagem com dignidade visual.
 
 ---
 
----
+## 2. Header de Navegação (Menu Superior) — Padrão Canônico
+Toda lição deve ter o "norte" claro para o usuário no topo da página.
 
-## 2. Header de Navegação (Menu Superior)
-Toda lição deve ter o "norte" claro para o usuário.
+### 2.1 Regra Oficial (Fonte: Lição 003)
+O header superior deve ter **3 zonas fixas**:
+1. **Esquerda:** link para a lição anterior.
+2. **Centro:** ícone `ph-plant` + label `Sementes`.
+3. **Direita:** link para a lição seguinte.
 
-*   **Posição:** Topo absoluto do `.lesson-container`.
-*   **Ícone Sementes:** Use **`ph-plant`** (`duotone-forest`). *Proibido* usar imagens PNG quebradas.
+Regras:
+* **Posição:** topo do `.lesson-body`.
+* **Centro visual:** o label `Sementes` deve ficar centralizado no bloco do meio, com `margin-left: 0.5rem`.
+* **Navegação lateral:** usar links para lições adjacentes (`MV-S-XXX`), não "Voltar" genérico para `index.html` nas lições 001+.
+* **Exceção:** Lição 000 pode manter comportamento de entrada/portal.
 
 ```html
 <div class="lesson-header-nav">
-    <!-- Link Voltar -->
-    <a href="../index.html" class="nav-back-link">
-        <i class="ph-duotone ph-arrow-left"></i> Voltar
-    </a>
-    <!-- Identificador de Ciclo -->
-    <div style="display: flex; align-items: center; gap: 0.5rem;">
+    <div style="width: 33%;">
+        <a href="MV-S-002_AS_PEDRAS_DA_FORTALEZA.html" class="nav-mini-link">
+            <span>←</span> <span>As Pedras da Fortaleza</span>
+        </a>
+    </div>
+
+    <div style="width: 33%; text-align: center;">
         <i class="ph-duotone ph-plant duotone-forest" style="font-size: 1.5rem;"></i>
-        <span style="font-family: var(--font-heading); font-weight: 700; color: var(--primary); font-size: 0.9rem;">Sementes</span>
+        <span style="font-family: var(--font-heading); font-weight: 700; color: var(--primary); font-size: 0.9rem; margin-left: 0.5rem;">
+            Sementes
+        </span>
+    </div>
+
+    <div style="width: 33%; text-align: right;">
+        <a href="MV-S-004_A_ORDEM_DO_DIA.html" class="nav-mini-link"
+           style="justify-content: flex-end;">
+            <span>A Ordem do Dia</span> <span>→</span>
+        </a>
     </div>
 </div>
 ```
+
+### 2.2 Diagnóstico Rápido (001–003)
+* **L003:** PASS (canônico para header superior).
+* **L001:** FAIL no topo (usa "Voltar", sem anterior/próxima no header superior).
+* **L002:** FAIL no topo (usa "Voltar", sem anterior/próxima no header superior).
+
+### 2.3 Mapa Obrigatório de Links no Topo
+* `MV-S-001`: esquerda `MV-S-000`, direita `MV-S-002`
+* `MV-S-002`: esquerda `MV-S-001`, direita `MV-S-003`
+* `MV-S-003`: esquerda `MV-S-002`, direita `MV-S-004`
 
 ---
 
@@ -173,7 +200,7 @@ A IA deve consultar estes arquivos nesta ordem de prioridade:
 ---
 
 ## 9. Conformidade com Orchestrator v1.5 (Compliance) 🛡️
-Este padrão de design respeita a "Distinção de Papéis" definida em `.bmad/orchestrator.yaml`:
+Este padrão de design respeita a "Distinção de Papéis" definida em `bmad/orchestrator.yaml`:
 
 1.  **Papel Técnico (Bastidores):** Representado pela **Instruction Box Amarela**.
     *   *Regra Orchestrator:* "Instruções puramente técnicas ou de preparação."
@@ -341,14 +368,61 @@ Explicação do "porquê" as atividades de continuação funcionam.
 
 ---
 
-## 18.Estrutura Narrativa & Ordem 📐
-1. **Ritual de Entrada**
-2. **Jornada (Guardiões)**
-3. **Momento de Conexão** (Atividade Concreta fluida)
-4. **Narramos Juntos**
-5. **Ritual de Fechamento**
-6. **🌱 Sementes para o Dia** (Extensão Opcional)
-7. **🎓 Formação do Portador** (Antigo "Para a Família")
+## 18. Estrutura Narrativa & Ordem (Tópicos Obrigatórios) 📐
+Toda lição Sementes (001–025) deve seguir esta ordem mínima:
+
+1. **Header Superior Canônico** (anterior | Sementes central | próxima)
+2. **Preparação do Portador**
+3. **Ritual de Entrada**
+4. **A Jornada (Guardiões)**
+5. **Momento de Conexão** (atividade concreta fluida)
+6. **Narramos Juntos**
+7. **Ritual de Fechamento**
+8. **🌱 Sementes para o Dia** (recomendado no padrão atual)
+9. **🎓 Formação do Portador** (antigo "Para a Família")
+10. **Navegação Inferior** (`.lesson-nav` com `nav-btn prev/next`)
+
+Regra de auditoria:
+* Se faltar item estrutural obrigatório, a lição recebe **FAIL estrutural**.
+
+### 18.1 Contrato Canônico de Tópicos e Subtópicos
+Use os IDs abaixo para revisão técnica e editorial. Cada lição deve mapear 1:1 com este contrato.
+
+| ID | Tópico | Subtópicos mínimos | Status |
+|---|---|---|---|
+| T0 | Header Superior Canônico | anterior (esq), selo Sementes (centro), próxima (dir) | Obrigatório |
+| T1 | Preparação do Portador | foco da lição, dica do coração, materiais, filho descobre, protocolo, nota de graça | Obrigatório |
+| T2 | Ritual de Entrada | bastidores, Portador em monobloco, card do local com label | Obrigatório |
+| T3 | A Jornada | H2 da jornada, cenas narrativas, card do guardião, instrução de ação, fala/persona | Obrigatório |
+| T4 | Momento de Conexão | objetivo concreto, instrução prática, adaptação de acesso | Obrigatório |
+| T5 | Narramos Juntos | instrução de escuta, pergunta principal, perguntas do coração | Obrigatório |
+| T6 | Ritual de Fechamento | fala final, fio de ouro, transição de volta | Obrigatório |
+| T7 | Sementes para o Dia | introdução, 5 atividades (Exploração/Dramatização/Criação/Narração/Reflexão), frase final | Recomendado |
+| T8 | Formação do Portador | porque importa, método CPA, princípio CM, conexão TGTB, espiral, nota de graça | Obrigatório |
+| T9 | Navegação Inferior | botão anterior, botão próxima | Obrigatório |
+
+### 18.2 Nomenclatura Fixa (Título de Seção)
+Para evitar variação desnecessária entre lições, usar estes títulos exatamente:
+
+1. `Preparação do Portador`
+2. `Ritual de Entrada`
+3. `A Jornada`
+4. `Momento de Conexão`
+5. `Narramos Juntos`
+6. `Ritual de Fechamento`
+7. `Sementes para o Dia`
+8. `Formação do Portador`
+
+Regra de migração:
+* Legado aceitável temporário: `O Concreto` como alias de `Momento de Conexão`.
+* Padrão alvo de todas as lições: `Momento de Conexão`.
+
+### 18.3 Regra de Completude por Lição
+Critério objetivo para aprovar estrutura:
+
+* **PASS Estrutural:** todos os itens `T0, T1, T2, T3, T4, T5, T6, T8, T9` presentes.
+* **PASS Premium:** PASS Estrutural + `T7` completo com 5 atividades.
+* **FAIL Estrutural:** ausência de qualquer tópico obrigatório.
 
 ---
 
@@ -412,7 +486,7 @@ Todas as caixas devem seguir a estrutura `<p>` com `margin-top`, **sem usar `<br
 
 ---
 
-*Atualizado em: 03/02/2026 — Pós-Polimento L000*
+*Atualizado em: 04/03/2026 — Canonização do Header Superior (L003) + Ordem Completa de Tópicos*
 
 ---
 

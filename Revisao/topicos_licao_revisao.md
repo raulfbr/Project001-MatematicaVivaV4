@@ -6,6 +6,11 @@
 
 Este documento define **TODAS** as seções e elementos obrigatórios de uma lição Sementes, na ordem exata de aparição.
 
+> [!IMPORTANT]
+> **Prioridade de Norma (SSOT):** em caso de conflito entre este arquivo e `Revisao/padrao_visual_sementes.md`, prevalece `padrao_visual_sementes.md` (seção **18**: Estrutura Narrativa & Ordem + Contrato de Tópicos/Subtópicos).
+>
+> **Nota de compatibilidade:** alguns exemplos deste documento estão em formato legado; use-os como referência histórica, não como regra final.
+
 ---
 
 ## 🔍 Checklist Rápido (Copie para cada lição)
@@ -14,6 +19,7 @@ Este documento define **TODAS** as seções e elementos obrigatórios de uma li�
 ## Revisão L[XXX] — [Título]
 
 ### Estrutura Base
+- [ ] Contrato canônico T0-T9 completo (ver `padrao_visual_sementes.md` seção 18.1)
 - [ ] `<head>`: title, style.css, Google Fonts, Phosphor CDN, favicon
 - [ ] `<body class="clima-X">`: clima-0 (L000) ou clima-1 (L001+)
 - [ ] Home Button: `ph-house duotone-forest`
@@ -120,12 +126,21 @@ Este documento define **TODAS** as seções e elementos obrigatórios de uma li�
 ```html
 <div class="lesson-container">
     <div class="lesson-header-nav">
-        <a href="../index.html" class="nav-back-link">
-            <i class="ph-duotone ph-arrow-left"></i> Voltar
-        </a>
-        <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <div style="width: 33%;">
+            <a href="MV-S-000_O_PORTAL_DO_REINO.html" class="nav-mini-link">
+                <span>←</span> <span>O Portal do Reino</span>
+            </a>
+        </div>
+
+        <div style="width: 33%; text-align: center;">
             <i class="ph-duotone ph-plant duotone-forest" style="font-size: 1.5rem;"></i>
-            <span style="font-family: var(--font-heading); font-weight: 700; color: var(--primary); font-size: 0.9rem;">Sementes</span>
+            <span style="font-family: var(--font-heading); font-weight: 700; color: var(--primary); font-size: 0.9rem; margin-left: 0.5rem;">Sementes</span>
+        </div>
+
+        <div style="width: 33%; text-align: right;">
+            <a href="MV-S-002_AS_PEDRAS_DA_FORTALEZA.html" class="nav-mini-link" style="justify-content: flex-end;">
+                <span>As Pedras da Fortaleza</span> <span>→</span>
+            </a>
         </div>
     </div>
 ```

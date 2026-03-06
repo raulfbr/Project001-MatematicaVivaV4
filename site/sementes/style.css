@@ -1148,6 +1148,122 @@ li {
     /* Enforce centering */
 }
 
+.ritual-bastidores-box {
+    background: #FFF7ED;
+    border-left-color: #D97706;
+}
+
+.ritual-bastidores-box div,
+.ritual-bastidores-box p {
+    color: #7C2D12;
+}
+
+.ritual-portador-block {
+    margin-top: 1.5rem;
+}
+
+.ritual-local-card {
+    margin-top: 1.75rem;
+}
+
+.ritual-local-card .local-label {
+    color: #B45309;
+}
+
+.journey-scene {
+    background:
+        radial-gradient(circle at top right, rgba(253, 230, 138, 0.22), transparent 34%),
+        linear-gradient(180deg, #FFFDF8 0%, #FFFFFF 100%);
+    border-color: rgba(180, 83, 9, 0.08);
+}
+
+.journey-scene::before {
+    background: linear-gradient(90deg, #F59E0B 0%, #FCD34D 48%, #FB923C 100%);
+    height: 5px;
+}
+
+.journey-scene::after {
+    content: '';
+    position: absolute;
+    right: -42px;
+    bottom: -56px;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.12) 0%, rgba(251, 191, 36, 0) 72%);
+    pointer-events: none;
+}
+
+.journey-scene--reveal {
+    background:
+        radial-gradient(circle at top left, rgba(253, 230, 138, 0.28), transparent 38%),
+        linear-gradient(180deg, #FFF9EE 0%, #FFFFFF 100%);
+}
+
+.journey-scene .scene-header {
+    color: #7C2D12;
+}
+
+.journey-reveal-card {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.journey-reveal-card .local-label {
+    color: #92400E;
+    letter-spacing: 0.12em;
+}
+
+.journey-reveal-card .card-visual-asset {
+    box-shadow: 0 14px 28px rgba(146, 64, 14, 0.16);
+}
+
+.journey-instruction-box {
+    background: #FFF7ED;
+    border-left-color: #C2410C;
+}
+
+.journey-instruction-box strong {
+    color: #9A3412;
+}
+
+.journey-instruction-box p + p {
+    margin-top: 0.5rem;
+}
+
+.journey-instruction-box--safety {
+    background: #FEF2F2;
+    border-left-color: #DC2626;
+}
+
+.journey-instruction-box--safety strong {
+    color: #991B1B;
+}
+
+.journey-script {
+    background: rgba(255, 255, 255, 0.94);
+    border-left-color: #D97706;
+    box-shadow: 0 10px 24px rgba(146, 64, 14, 0.08);
+}
+
+.journey-script .script-avatar {
+    border-color: #FDE68A;
+    background: #FFFFFF;
+}
+
+.journey-script .script-header {
+    display: block;
+}
+
+.journey-script .script-tone {
+    display: block;
+    margin-top: 0.35rem;
+    color: #92400E;
+}
+
+.journey-script .script-text p + p {
+    margin-top: 0.85rem;
+}
+
 /* === ADDED DURING MIGRATION CLEANUP === */
 .materials-box {
     background: #F0FDF4;
@@ -1155,6 +1271,79 @@ li {
     border-radius: 8px;
     padding: 1.25rem;
     margin: 1.5rem 0;
+}
+
+.prep-focus-tag {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    color: #6B7280;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.prep-bridge-box {
+    background: #FFFBEB;
+    border-left: 4px solid #D97706;
+    padding: 1rem 1.25rem;
+    border-radius: 0 8px 8px 0;
+    margin: 0 0 1.5rem 0;
+    color: #92400E;
+}
+
+.prep-heart-box {
+    background: #FFF7ED;
+    border-left-color: #F59E0B;
+}
+
+.prep-copy {
+    margin-top: 1.5rem;
+}
+
+.prep-section + .prep-section,
+.prep-copy > .strategy-box,
+.prep-copy > .graca-box {
+    margin-top: 1.5rem;
+}
+
+.prep-section-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.prep-section-title i {
+    flex-shrink: 0;
+    margin-top: 0.1rem;
+}
+
+.prep-copy p {
+    color: var(--text-secondary);
+}
+
+.prep-copy ul {
+    margin: 0.5rem 0 0 1.5rem;
+    color: var(--text-secondary);
+}
+
+.prep-copy li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.strategy-box {
+    background: #ECFDF5;
+    border-left: 4px solid #10B981;
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+    margin-top: 1rem;
+}
+
+.strategy-box p + p {
+    margin-top: 0.75rem;
 }
 
 .sensory-box {

@@ -320,3 +320,29 @@ Status atual:
 2. Fase 1 em andamento (pipeline PDF e gates finais em consolidacao).
 3. Proximo foco: lote piloto de 25 licoes com publish dry-run verde.
 4. Observacao operacional: `next build` exige path sem `!` no Windows.
+
+## Anotacao Para Amanha
+
+Para retomar sem perder contexto:
+
+1. Leia este `README.md` ate esta secao final.
+2. Entre em [`Revisao/000_COMECAR_AQUI.md`](Revisao/000_COMECAR_AQUI.md).
+3. Em seguida leia [`Revisao/00_SISTEMA_REVISAO_CANONICO/015_ESTADO_REAL_DO_PROJETO_E_DIRECAO_HTML_FIRST.md`](Revisao/00_SISTEMA_REVISAO_CANONICO/015_ESTADO_REAL_DO_PROJETO_E_DIRECAO_HTML_FIRST.md).
+4. Depois leia [`Revisao/001_CONTEXTO_DETALHADO_PROXIMA_SESSAO.md`](Revisao/001_CONTEXTO_DETALHADO_PROXIMA_SESSAO.md).
+5. Depois leia [`Revisao/RadmeRevisao.md`](Revisao/RadmeRevisao.md).
+6. Em seguida leia [`Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md`](Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md).
+
+Ponto exato onde paramos:
+
+1. Nenhuma licao foi editada nesta rodada.
+2. A pasta `Revisao` foi reorganizada para ficar clara e navegavel.
+3. O sistema oficial agora esta dividido em `00_SISTEMA_REVISAO_CANONICO`, `01_REFERENCIAS_DE_APOIO` e `99_HISTORICO_E_TRANSICAO`.
+4. Tambem foi criado um handoff detalhado da proxima sessao em `Revisao/001_CONTEXTO_DETALHADO_PROXIMA_SESSAO.md`.
+5. Tambem foi criado um documento canonico de estado real em `Revisao/00_SISTEMA_REVISAO_CANONICO/015_ESTADO_REAL_DO_PROJETO_E_DIRECAO_HTML_FIRST.md`.
+6. O proximo passo nao e editar HTML ainda; e usar essa estrutura para orientar a revisao com seguranca.
+
+Proximo passo recomendado para a sessao seguinte:
+
+1. Fazer primeiro a revisao estrutural e tecnica do sistema de topicos, para garantir que as licoes HTML tenham contrato premium e padronizado.
+2. Depois revisar cada topico por lentes de qualidade premium, empatia familiar, imersao narrativa e aderencia ao North Star.
+3. So depois disso decidir se o sistema esta pronto para entrar no piloto documental `001-003`, ainda sem patch de licao.

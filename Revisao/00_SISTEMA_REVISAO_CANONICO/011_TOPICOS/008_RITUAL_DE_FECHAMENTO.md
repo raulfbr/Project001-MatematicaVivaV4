@@ -28,6 +28,11 @@
 1. a crianca deve sair com conclusao, nao corte abrupto.
 2. o adulto deve sentir que a licao pousou.
 
+## Taste editorial
+1. o fechamento precisa exalar descanso depois do peso honrado da fortaleza;
+2. o gancho para a proxima licao deve vir como brisa de curiosidade, nao como spoiler didatico;
+3. o Portador precisa sentir que voltou para a casa com paz, e nao que foi empurrado para o proximo passo.
+
 ## Anti-patterns
 1. guardiao desaparecendo sem despedida.
 2. fechamento abrupto ou burocratico.

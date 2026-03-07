@@ -27,7 +27,7 @@ Ordem oficial:
 3. `003_PREPARACAO_DO_PORTADOR.md`
 4. `004_RITUAL_DE_ENTRADA.md`
 5. `005_A_JORNADA.md`
-6. `006_MOMENTO_DE_CONEXAO.md`
+6. `006_O_CONCRETO.md`
 7. `007_NARRAMOS_JUNTOS.md`
 8. `008_RITUAL_DE_FECHAMENTO.md`
 9. `009_CONEXAO_DA_JORNADA.md`
@@ -37,8 +37,12 @@ Ordem oficial:
 
 Auditoria inicial ja registrada:
 1. `013_AUDITORIA_LICOES_001_003.md`
+2. `014_DELIBERACAO_MODELO_001_003.md`
 
 Observacao:
 1. o naming oficial da pasta agora segue `001..012`;
 2. referencias antigas `00..09` devem ser tratadas como legado e ajustadas quando encontradas em tasks e templates;
 3. as licoes `001-003` ainda misturam contrato premium e estruturas legadas; consulte a auditoria antes de assumir que todo topico ja esta refletido no HTML.
+4. quando houver duvida de arquitetura entre secoes adjacentes, consulte a deliberacao `014` antes de editar HTML familiar.
+5. na subfase atual, a passada mais critica com foco em `TASTE` comeca em `006` e segue ate `012`;
+6. `MV-S-001` ainda nao deve ser lida como baseline total enquanto essa passada nao estiver consolidada.

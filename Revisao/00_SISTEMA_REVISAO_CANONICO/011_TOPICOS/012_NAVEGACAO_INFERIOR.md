@@ -25,6 +25,11 @@
 1. protege continuidade do ciclo.
 2. reduz friccao para familias que avancam licao por licao.
 
+## Taste editorial
+1. a navegacao inferior deve parecer quieta e confiavel;
+2. ela nao disputa protagonismo com a formacao nem com o fechamento narrativo;
+3. se chamar mais atencao que a ultima secao da licao, ha ruido desnecessario.
+
 ## Anti-patterns
 1. links errados.
 2. titulo trocado.

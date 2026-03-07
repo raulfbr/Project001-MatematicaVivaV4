@@ -1,5 +1,5 @@
 # PROTOCOLO DE REVISAO POR LICAO
-Data: 2026-03-06
+Data: 2026-03-07
 Status: canonico
 Escopo: revisao HTML-first de licoes Sementes
 
@@ -12,7 +12,8 @@ Objetivo:
 1. permitir revisao consistente por IA;
 2. reduzir retrabalho entre sessoes;
 3. separar diagnostico, patch e validacao;
-4. sustentar cadencia futura de `2 licoes por dia`.
+4. sustentar cadencia futura de `2 licoes por dia`;
+5. transformar `TASTE` em criterio operacional, e nao em intuicao vaga.
 
 ---
 
@@ -150,7 +151,7 @@ Vetos:
 
 ---
 
-## 9) Passo 5 - Acabamento premium
+## 9) Passo 5 - Acabamento premium e Taste
 Depois de corrigir o essencial, lapidar.
 
 Checar:
@@ -160,9 +161,14 @@ Checar:
 4. blocos longos demais;
 5. ritmo visual;
 6. clareza de escaneamento no celular.
+7. `metaforas soltas` ou iconografias misturadas;
+8. imagem dominante da licao protegida do hero ao fechamento;
+9. trechos tecnicamente corretos, mas sem vida, sem calor ou com cara de material escolar;
+10. pontos em que uma troca pequena de formulacao elevaria muito o `TASTE`.
 
 Objetivo:
 1. deixar a licao com aparencia e leitura de produto premium.
+2. elevar o `TASTE`, porque e ele que separa uma licao correta de uma licao memoravel e real.
 
 ---
 
@@ -174,7 +180,7 @@ PASS quando:
 1. a licao alivia o adulto;
 2. encanta a crianca;
 3. honra dignidade, concretude e beleza redentora;
-4. ainda soa como Matemática Viva.
+4. ainda soa como Matematica Viva.
 
 BLOCK quando:
 1. a licao pesa sobre a familia;
@@ -212,7 +218,25 @@ PASS quando:
 2. sem markup grosseiramente inconsistente;
 3. sem regressao evidente.
 
-BLOCK se qualquer gate falhar.
+### Gate T - Taste editorial
+PASS quando:
+1. a imagem dominante da licao se mantem inteira;
+2. nao ha `metaforas soltas`;
+3. o texto soa vivo, domestico e recognoscivel como `Matematica Viva`;
+4. as transicoes parecem organicas, nao coladas;
+5. entre duas versoes corretas, a escolhida e a mais clara e mais viva.
+
+EM REFINAMENTO quando:
+1. a licao funciona;
+2. mas ainda falta forca editorial para soar premium.
+
+BLOCK PREMIUM quando:
+1. a licao ate passa tecnicamente;
+2. mas o texto continua generico, escolar, sem calor ou com drift imagetico.
+
+BLOCK se qualquer gate duro falhar.
+`PASS PREMIUM` exige `Gate T` em `PASS`.
+`PASS ESTRUTURAL` pode coexistir com `Gate T` em `EM REFINAMENTO`.
 
 ---
 
@@ -254,6 +278,7 @@ Registrar sempre:
 - Pedagogia: PASS/BLOCK
 - Navegacao: PASS/BLOCK
 - Tecnica: PASS/BLOCK
+- Taste editorial: PASS / EM REFINAMENTO / BLOCK PREMIUM
 
 ### Risco residual
 - [...]
@@ -280,7 +305,8 @@ Uma licao so fecha quando:
 3. a pagina estiver coerente com o fluxo do ciclo;
 4. o log tiver sido atualizado;
 5. o encoding estiver preservado;
-6. a resposta para `isso nos aproxima ou afasta do North Star?` for claramente `aproxima`.
+6. a resposta para `isso nos aproxima ou afasta do North Star?` for claramente `aproxima`;
+7. para `PASS PREMIUM`, o `Gate T - Taste editorial` tambem estiver em `PASS`.
 
 ---
 

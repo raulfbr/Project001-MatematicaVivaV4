@@ -30,15 +30,22 @@
    g. nota de graca;
    h. sementes continuam.
 5. evitar `<br>` como mecanismo de layout.
+6. a abertura da secao precisa deixar claro que aqui a estrategia sera aprofundada, nao apenas anunciada.
 
 ## Contrato pedagogico
 1. explicar por que a licao funciona.
 2. conectar concretude, narracao, CM e espiral sem jargao excessivo.
 3. deixar o adulto melhor preparado para as proximas licoes.
+4. ajudar o Portador a reconhecer o que conta como fruto real hoje, para nao confundir formacao com performance.
 
 ## Contrato narrativo
 1. tom inteligente, quente e redentor.
 2. a secao nao pode soar como apendice tecnico sem alma.
+
+## Taste editorial
+1. a formacao precisa restaurar a confianca do Portador, nao impressiona-lo com teoria;
+2. conceitos como CPA, Charlotte Mason e espiral devem aparecer como sabedoria aplicada, nao como aula academica;
+3. a secao deve deixar o adulto mais leve e mais capaz de repetir a beleza da licao em casa.
 
 ## Anti-patterns
 1. boxes quebradas ou sem hierarquia.
@@ -59,6 +66,8 @@
 ## Ambiguidades resolvidas
 1. `Formacao do Portador` nao e apendice opcional; ela participa do gate estrutural.
 2. `Sementes Continuam` faz parte da secao formativa quando usado como explicacao do por que das extensoes.
+3. `Estrategia do Mestre` pode aparecer de forma breve em `003_PREPARACAO_DO_PORTADOR.md`, mas seu aprofundamento natural mora aqui.
+4. quando a estrategia atravessar mais de uma licao, esta secao e o lugar de nomear a continuidade com clareza.
 
 ## Prompt operacional para IA
-`Revise Formacao do Portador exigindo Estrategia do Mestre na abertura, boxes limpas e explicacao clara de CM, CPA e espiral; bloqueie secao mutilada ou dependente de layout improvisado.`
+`Revise Formacao do Portador exigindo Estrategia do Mestre na abertura, boxes limpas, explicacao clara de CM, CPA e espiral, e um aprofundamento real da estrategia para alem da licao de hoje; bloqueie secao mutilada ou dependente de layout improvisado.`

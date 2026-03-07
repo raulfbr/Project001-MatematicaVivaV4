@@ -269,7 +269,7 @@ Se você chegou até aqui, **você já é um de nós**.
 Fluxo oficial para retomar sem perder contexto:
 
 1. Leia este `README.md` (visão geral do projeto).
-2. Em seguida, vá para [`Revisao/RadmeRevisao.md`](Revisao/RadmeRevisao.md) para entrar na fase de revisão.
+2. Em seguida, vá para [`Revisao/README.md`](Revisao/README.md) para entrar na fase de revisão.
 3. Execute a revisão usando a ordem e os checklists definidos na pasta `Revisao`.
 
 ### Regra Crítica de Encoding (obrigatória)
@@ -307,19 +307,20 @@ Resumo rapido da decisao atual para retomar sem perda de contexto:
 
 ### Proximo passo recomendado
 
-Executar Fase 1 do PRD unico V5 (piloto expandido):
+Trilha ativa desta fase:
 
-1. Fechar PDF `single`, `bundle` e `full-sementes` com execucao validada.
-2. Gerar `pdf_report.json` e `family_seal_report.json` no `dist/reports`.
-3. Fechar `publish` com gates automaticos + gate humano.
-4. Expandir lote de 3 para 25 licoes no novo formato.
+1. manter foco em `Revisao/` e no fluxo `HTML-first`;
+2. tratar `MV-S-001` como referencia parcial do metodo, e nao como baseline total fechado;
+3. revisar `011_TOPICOS/` a partir de `006` e `012_TRANSVERSAIS/` com foco explicito em `TASTE`;
+4. preparar e usar a task robusta da `MV-S-002` para revisao dirigida em paralelo controlado;
+5. usar feedback real de familias como dado de refinamento, nao como ordem de mudanca.
 
 Status atual:
 
-1. Fase 0 concluida no piloto (3 licoes e validadores ativos).
-2. Fase 1 em andamento (pipeline PDF e gates finais em consolidacao).
-3. Proximo foco: lote piloto de 25 licoes com publish dry-run verde.
-4. Observacao operacional: `next build` exige path sem `!` no Windows.
+1. `MV-S-001` teve um recorte dirigido forte em `2026-03-07`, mas ainda nao esta consolidada como baseline total.
+2. o proximo foco seguro e fechar a leitura topica de `006` em diante e revisar a `MV-S-002` em paralelo controlado.
+3. o diferencial de curto prazo esta em `TASTE` editorial: unidade de imagem, fim de metaforas soltas, leveza para o Portador e tom realmente vivo.
+4. `apps/web` e a trilha V5 seguem como frente tecnica paralela, nao como condutora da sessao atual.
 
 ## Anotacao Para Amanha
 
@@ -329,20 +330,24 @@ Para retomar sem perder contexto:
 2. Entre em [`Revisao/000_COMECAR_AQUI.md`](Revisao/000_COMECAR_AQUI.md).
 3. Em seguida leia [`Revisao/00_SISTEMA_REVISAO_CANONICO/015_ESTADO_REAL_DO_PROJETO_E_DIRECAO_HTML_FIRST.md`](Revisao/00_SISTEMA_REVISAO_CANONICO/015_ESTADO_REAL_DO_PROJETO_E_DIRECAO_HTML_FIRST.md).
 4. Depois leia [`Revisao/001_CONTEXTO_DETALHADO_PROXIMA_SESSAO.md`](Revisao/001_CONTEXTO_DETALHADO_PROXIMA_SESSAO.md).
-5. Depois leia [`Revisao/RadmeRevisao.md`](Revisao/RadmeRevisao.md).
+5. Depois leia [`Revisao/README.md`](Revisao/README.md).
 6. Em seguida leia [`Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md`](Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md).
 
 Ponto exato onde paramos:
 
-1. Nenhuma licao foi editada nesta rodada.
-2. A pasta `Revisao` foi reorganizada para ficar clara e navegavel.
-3. O sistema oficial agora esta dividido em `00_SISTEMA_REVISAO_CANONICO`, `01_REFERENCIAS_DE_APOIO` e `99_HISTORICO_E_TRANSICAO`.
-4. Tambem foi criado um handoff detalhado da proxima sessao em `Revisao/001_CONTEXTO_DETALHADO_PROXIMA_SESSAO.md`.
-5. Tambem foi criado um documento canonico de estado real em `Revisao/00_SISTEMA_REVISAO_CANONICO/015_ESTADO_REAL_DO_PROJETO_E_DIRECAO_HTML_FIRST.md`.
-6. O proximo passo nao e editar HTML ainda; e usar essa estrutura para orientar a revisao com seguranca.
+1. `MV-S-001` ja recebeu patch dirigido relevante, mas ainda nao pode ser tratada como baseline total.
+2. a pasta `Revisao` continua sendo o centro operacional da fase.
+3. a camada `011_TOPICOS/` + `012_TRANSVERSAIS/` ainda precisa de passada fina, com prioridade pratica em `006-012` e foco explicito em `TASTE`.
+4. a conversa estrategica mais recente fixou que o gargalo agora e `TASTE`, nao orquestracao pesada de multi-agent.
+5. o repositorio ja possui trilhas de orquestracao experimental, mas a decisao atual e usar apenas papeis e lentes leves, nao um harness novo.
+6. a `MV-S-002` ja pode ser aberta em revisao dirigida para calibrar `TASTE`, desde que a task robusta continue governando a entrada.
+7. feedback real de familias deve entrar como dado qualificado para refinar a experiencia e tornar o produto mais real.
 
 Proximo passo recomendado para a sessao seguinte:
 
-1. Fazer primeiro a revisao estrutural e tecnica do sistema de topicos, para garantir que as licoes HTML tenham contrato premium e padronizado.
-2. Depois revisar cada topico por lentes de qualidade premium, empatia familiar, imersao narrativa e aderencia ao North Star.
-3. So depois disso decidir se o sistema esta pronto para entrar no piloto documental `001-003`, ainda sem patch de licao.
+1. abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`;
+2. revisar `011_TOPICOS/` a partir de `006` e `012_TRANSVERSAIS/` um por um com foco em `TASTE`;
+3. abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/018_TASK_ROBUSTA_REVISAO_DIRIGIDA_L002.md`;
+4. usar `logs/2026-03-07-09h46-revisao002.md` como insumo-base da entrada da `MV-S-002`;
+5. abrir o HTML da `MV-S-002` e revisar de forma controlada;
+6. devolver para o sistema o que a `L002` ensinar sobre `TASTE` e realidade de uso.

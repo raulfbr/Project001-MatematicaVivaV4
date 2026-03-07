@@ -1,5 +1,5 @@
 # ESTADO REAL DO PROJETO E DIRECAO DA REVISAO HTML-FIRST
-Data: 2026-03-06
+Data: 2026-03-07
 Escopo: projeto inteiro, com foco na fase ativa
 Status: canonico para orientacao e retomada
 
@@ -151,6 +151,28 @@ Conclusao:
 1. neste workspace, o build full web continua sensivel ao path atual;
 2. isso e detalhe tecnico real e nao deve ser esquecido em futuras sessoes.
 
+### 4.7 O repositorio ja explorou orquestracao multi-agente
+Verificado:
+1. `bmad/orchestrator.yaml` define `super_agent`, `REVISAO`, `DELIBERACAO_AUTONOMA` e comando `/revisar-licao-auto`.
+2. essa trilha existe como repertorio tecnico e historico dentro do repositorio.
+
+Conclusao:
+1. o projeto nao esta "atrasado" nesse tema; ele ja experimentou essa direcao;
+2. o gargalo atual nao e falta de harness;
+3. tentar subir multi-agent pesado agora tenderia a ser overengineering para a fase ativa.
+
+### 4.8 O diferencial de curto prazo esta em `TASTE` editorial + feedback real
+Verificado:
+1. `MV-S-001` recebeu um recorte dirigido forte depois de caca explicita a `metaforas soltas`, mas ainda nao fechou leitura topica completa;
+2. os proximos ganhos mais valiosos estao em unidade de imagem, leveza do Portador, tom vivo e realidade de uso;
+3. ha valor claro em tratar feedback real de familias como calibracao de produto, sem entregar o volante ao feedback bruto.
+
+Conclusao:
+1. `TASTE` e hoje um fator de produto, nao ornamento;
+2. feedback real de familias deve entrar como dado qualificado para calibrar a experiencia;
+3. se o ciclo consolidar feedback de `4 familias`, isso tende a tornar o produto mais estruturado e mais real;
+4. se algum apoio automatizado for usado, ele deve vir em forma de papeis e lentes leves, nao de orquestracao pesada.
+
 ---
 
 ## 5) Leitura correta do momento do projeto
@@ -162,8 +184,10 @@ Conclusao:
 Decisao operacional correta para agora:
 1. fortalecer `Revisao/`;
 2. usar `Revisao/` para auditar e padronizar o HTML real;
-3. somente depois entrar em patch de licao;
-4. deixar a trilha Next como apoio tecnico e referencia de contrato, nao como condutora da fase atual.
+3. elevar `TASTE` a criterio operacional explicito;
+4. usar feedback real de familias como calibracao qualificada;
+5. somente depois entrar em patch de licao;
+6. deixar a trilha Next como apoio tecnico e referencia de contrato, nao como condutora da fase atual.
 
 ---
 
@@ -183,7 +207,7 @@ Decisao operacional correta para agora:
 
 ## 7) Regras praticas para as proximas sessoes
 1. abrir primeiro este documento;
-2. depois abrir `Revisao/RadmeRevisao.md`;
+2. depois abrir `Revisao/README.md`;
 3. depois abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md`;
 4. depois abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`;
 5. so entao decidir a menor proxima acao segura.
@@ -208,15 +232,16 @@ Ao usar `apps/web`:
 Fatos de decisao:
 1. a frente ativa e a revisao HTML-first;
 2. a pasta `Revisao` foi reorganizada e esta virando a governanca central da fase;
-3. o piloto documental `001-003` ainda nao foi executado;
-4. nenhuma licao HTML foi patchada nesta rodada de entendimento profundo;
-5. o proximo foco correto e deixar `Revisao/` impecavel o suficiente para governar o piloto e os patches.
+3. `MV-S-001` ja recebeu patch dirigido relevante, mas ainda nao pode ser tratada como baseline total;
+4. o piloto documental `001-003` ainda nao foi executado;
+5. o proximo foco correto e revisar `011_TOPICOS/` a partir de `006` e `012_TRANSVERSAIS/` com foco explicito em `TASTE`;
+6. a `MV-S-002` ja pode abrir em revisao dirigida, mas sempre com task robusta propria e entrada controlada.
 
 ---
 
 ## 9) Definition of Ready para sair de sistema e entrar em licoes
 1. este documento estiver integrado na navegacao principal da pasta;
-2. `000_COMECAR_AQUI`, `RadmeRevisao`, `000_INDEX` e `005_STATUS` apontarem para a mesma leitura do estado atual;
+2. `000_COMECAR_AQUI`, `README`, `000_INDEX` e `005_STATUS` apontarem para a mesma leitura do estado atual;
 3. topicos e transversais estiverem legiveis sem drift de naming;
 4. o piloto `001-003` tiver criterio claro de entrada;
 5. qualquer IA nova conseguir responder em ate 2 minutos:
@@ -230,7 +255,8 @@ Fatos de decisao:
 1. o projeto esta tecnicamente bifurcado, mas operacionalmente inteligivel;
 2. o HTML final continua sendo o centro da fase atual;
 3. `Revisao` precisa ser tratada como sistema de governanca, nao apenas pasta de apoio;
-4. a decisao correta agora e fechar `Revisao` com rigor antes de tocar o lote real de licoes.
+4. o diferencial de curto prazo esta em `TASTE` editorial e realidade de uso familiar;
+5. a decisao correta agora e fechar `Revisao` com rigor antes de tocar o lote real de licoes.
 
 Frase final:
-1. primeiro clareza de sistema, depois piloto documental, depois patch de HTML, depois escala.
+1. primeiro clareza de sistema e `TASTE`, depois entrada controlada da `MV-S-002`, depois piloto documental, depois escala.

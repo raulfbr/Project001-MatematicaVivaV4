@@ -1,5 +1,5 @@
 # RUBRICA PREMIUM DE REVISAO
-Data: 2026-03-06
+Data: 2026-03-07
 Status: canonico
 Escopo: licoes HTML do ciclo Sementes
 
@@ -16,7 +16,7 @@ Ela serve para:
 ---
 
 ## 2) Regra geral de uso
-Cada licao deve ser avaliada em 4 eixos:
+Cada licao deve ser avaliada em 5 eixos:
 
 1. Estrutura
 2. Narrativa
@@ -34,6 +34,11 @@ Escala:
 
 Regra:
 1. nota alta em um eixo nao compensa falha critica em outro.
+
+## 2.1 Nota transversal sobre `TASTE`
+1. `TASTE` nao substitui os 5 eixos; ele funciona como gate editorial transversal.
+2. `TASTE` e o que separa uma licao correta de uma licao viva, memoravel e recognoscivel como premium.
+3. ele aparece em escolha de palavra, ritmo, imagem dominante, ausencia de `metaforas soltas` e leveza real para a familia.
 
 ---
 
@@ -166,6 +171,25 @@ Guia de nota:
 
 ---
 
+## 7.2 Gate transversal - Taste editorial
+Pergunta central:
+1. entre as versoes tecnicamente corretas, esta e a mais viva, clara e leve?
+
+Criticos:
+1. sem `metaforas soltas`;
+2. imagem dominante da licao protegida do inicio ao fim;
+3. tom vivo, nao escolar, nao professoral, nao generico;
+4. guardiao e Portador soam como pessoas do Reino, nao placeholders;
+5. a mae consegue conduzir sem atrito de linguagem;
+6. feedback real de familias, quando existir, foi lido como dado e nao como ordem.
+
+Leitura do gate:
+1. `PASS`: a licao soa viva e inevitavel.
+2. `EM REFINAMENTO`: a licao funciona, mas ainda falta forca editorial.
+3. `BLOCK PREMIUM`: a licao ate passa estruturalmente, mas ainda nao soa premium.
+
+---
+
 ## 8) Leitura do resultado
 
 ### PASS Estrutural
@@ -173,10 +197,11 @@ Guia de nota:
 2. eixo Estrutura >= 4.
 
 ### PASS Premium
-1. todos os 4 eixos >= 4;
+1. todos os 5 eixos >= 4;
 2. North Star >= 4;
-3. nenhuma falha critica;
-4. sensacao geral de produto premium.
+3. `Gate transversal - Taste editorial` em `PASS`;
+4. nenhuma falha critica;
+5. sensacao geral de produto premium.
 
 ### BLOCK
 1. qualquer bloqueio automatico;
@@ -195,6 +220,7 @@ Guia de nota:
 - Pedagogia: X/5
 - UX do Portador: X/5
 - North Star: X/5
+- Taste editorial: PASS / EM REFINAMENTO / BLOCK PREMIUM
 - Status: PASS PREMIUM / PASS ESTRUTURAL / BLOCK
 - Motivo principal:
 ```

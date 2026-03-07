@@ -94,3 +94,8 @@ Ordem:
 Primeiro vamos consolidar sistema e `TASTE`.
 Depois vamos entrar na `MV-S-002` com controle.
 So depois pensamos em lote e escala.
+
+## Prompt pronto para retomar
+Use este comando na proxima sessao:
+
+`Leia README.md, Revisao/README.md, Revisao/000_COMECAR_AQUI.md, Revisao/001_CONTEXTO_DETALHADO_PROXIMA_SESSAO.md, Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md, Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md e Revisao/00_SISTEMA_REVISAO_CANONICO/018_TASK_ROBUSTA_REVISAO_DIRIGIDA_L002.md. Depois continue exatamente de onde paramos: revise 011_TOPICOS a partir de 006 e 012_TRANSVERSAIS com foco explicito em TASTE, retome a revisao dirigida da MV-S-002 usando logs/2026-03-07-09h46-revisao002.md, e registre o que precisar voltar para a L001 e para o sistema.`

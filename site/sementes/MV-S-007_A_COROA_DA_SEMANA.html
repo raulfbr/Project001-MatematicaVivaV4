@@ -1,740 +1,686 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Coroa da Semana | Matemática Viva</title>
-    <!-- CSS ISOLADO DE SEMENTES -->
+    <title>A Coroa da Semana | Matem&aacute;tica Viva</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    <style>
-        /* INLINE STYLES FOR CRITICAL RENDERING PRIORITY */
-        body { background-color: #F8F9FA; color: #374151; }
-        .lesson-container { max-width: 768px; margin: 0 auto; padding-bottom: 4rem; }
-        
-        /* CARD COMPONENT */
-        .scene-card {
-            background: #FFFFFF;
-            border-radius: 12px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(0, 0, 0, 0.04);
-            position: relative;
-            overflow: hidden;
-        }
-        .scene-card::before {
-            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-            background: linear-gradient(90deg, #FCD34D 0%, #F59E0B 100%);
-            opacity: 0.8;
-        }
-
-        /* HEADER & TYPOGRAPHY */
-        .scene-header {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.35rem;
-            color: #111827;
-            margin-bottom: 2rem;
-            display: flex; align-items: center; gap: 0.75rem; font-weight: 600;
-        }
-        .scene-icon { font-size: 1.5rem; }
-        h2 { font-family:'Outfit'; color:#6B7280; font-size:1rem; text-transform:uppercase; letter-spacing:2px; margin: 3rem 0 1rem 0; text-align:center; }
-        strong { font-weight: 600; color: #1F2937; }
-
-        /* COMPONENTS */
-        .script-persona-block {
-            background: #F9FAFB;
-            border: 1px solid #F3F4F6;
-            border-left: 4px solid #10B981;
-            border-radius: 8px;
-            margin-top: 1.5rem; padding: 1.5rem;
-        }
-        .script-avatar { border: 2px solid #FFFFFF; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        
-        .instruction-box {
-            background: #FEFCE8; border: 1px solid #FEF9C3; color: #854D0E;
-            border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;
-            display: flex; gap: 1rem; align-items: flex-start;
-        }
-        .instruction-icon { font-size: 1.5rem; }
-        
-        .portador-block { border-left: 4px solid #10B981 !important; background: #FFFFFF !important; }
-        .script-name { text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
-
-        /* MOBILE OPTIMIZATION */
-        @media (max-width: 768px) {
-            .lesson-container { padding: 0; }
-            .scene-card { border-radius: 0; margin: 0 0 0.5rem 0; box-shadow: none; border-bottom: 1px solid #E5E7EB; }
-            .scene-card::before { height: 3px; }
-            h2 { font-size: 1.4rem; padding: 0 1.5rem; margin-top: 2rem; }
-        }
-    </style>
 </head>
+
 <body class="clima-1">
-    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard">🏡</a>
+    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard"><i
+            class="ph-duotone ph-house duotone-forest"></i></a>
 
     <div class="lesson-container">
-        <!-- HERO SECTION -->
         <header class="lesson-hero">
-            <div class="lesson-meta-tag">Lição 007 • A Coroa da Semana • ⏱️ 15-20 min</div>
+            <div class="lesson-meta-tag">Li&ccedil;&atilde;o 007 &bull; A Coroa da Semana &bull; <i
+                    class="ph-duotone ph-timer duotone-carmim"></i> 15-20 min</div>
             <h1 class="hero-title">A Coroa da Semana</h1>
-            <p class="hero-quote">"Sete cores no arco-íris, sete dias na semana — o Rei ama o número 7."</p>
-            <!-- ASSETS ISOLADOS DE SEMENTES -->
-            <img src="../assets/sementes/guardioes/celeste-raposa.png" 
-                 onError="this.src='../assets/sementes/guardioes/placeholder.png'"
-                 alt="celeste" class="hero-guardian">
+            <p class="hero-quote">&ldquo;Celeste mostra que, depois da m&atilde;o inteira, o Reino ainda abre uma coroa
+                de seis e sete brilhos entre a semana e o arco-&iacute;ris.&rdquo;</p>
+            <img src="../assets/sementes/guardioes/celeste-raposa.png"
+                onError="this.src='../assets/sementes/guardioes/placeholder.png'"
+                alt="Ilustra&ccedil;&atilde;o da guardi&atilde; Celeste correndo sob um arco-&iacute;ris de sete cores"
+                class="hero-guardian">
         </header>
 
         <article class="lesson-body">
-            
-
-
-
-
-
-
-<div class="lesson-header-nav" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #E5E7EB;">
-    <div style="width: 33%;">
-        
-        <a href="MV-S-006_O_DESENHO_DO_REI.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
-            <span>←</span> <span>O Desenho do Rei</span>
-        </a>
-        
-    </div>
-    
-    <div style="width: 33%; text-align: center;">
-        <img src="../assets/icon-sementes.png" alt="Sementes" style="height: 32px; opacity: 0.8;" onerror="this.style.display='none'">
-    </div>
-    
-    <div style="width: 33%; text-align: right;">
-        
-        <a href="MV-S-008_O_PAR_PERFEITO.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem;">
-            <span>O Par Perfeito</span> <span>→</span>
-        </a>
-        
-    </div>
-</div>
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧</span>
-        Preparação do Portador
-    </div>
-    
-    
-    
-    
-    <div style="text-align: center; margin-bottom: 1.5rem; color: #6B7280; font-size: 0.9rem; font-style: italic;">
-        [Foco: Números 6 e 7 — quantidade e reconhecimento]
-    </div>
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">💡</span>
-    <div>
-        
-        
-        <strong>Dica do Coração:</strong> Hoje Celeste nos leva numa trilha especial.<br>Ela vai nos mostrar onde o 6 e o 7 se escondem no mundo.<br>Ajude seu filho a VER esses números ao redor.<br>
-    
-    </div>
-</div>
-
-
-    
-    
-    
-    
-    
-    <div class="materials-box" style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:8px; padding:1.25rem; margin:1.5rem 0;">
-        
-        <p><strong>🎯 Essencial:</strong></p>
-        <ul style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>7 objetos pequenos (pedras ou sementes) (7)</li>
-            
-            <li>Card Celeste (1)</li>
-            
-        </ul>
-        
-        
-        
-        <p style="margin-top:1rem;"><strong>📦 Se tiver:</strong></p>
-        <ul style="margin-top:0.5rem; margin-left:1rem; color:#6B7280;">
-            
-            <li>Cartões 6 e 7 (2)</li>
-            
-        </ul>
-        
-        
-        
-        
-    </div>
-    
-
-    
-    
-    <p><strong>🌟 Seu filho vai descobrir:</strong> Que 6 e 7 são quantidades que podemos ver e contar.</p>
-    
-
-    <p><strong>🛡️ Protocolo de Impecabilidade:</strong> Use OBJETOS REAIS para contar até 6 e 7.<br>Mãos não bastam — precisamos de mais!<br></p>
-    <p><strong>🕊️ Nota de Graça:</strong> Se contar errado, Celeste diz: 'Vamos contar de novo — juntos!'</p>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🎬</span>
-        Ritual de Abertura
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🕯️</span>
-    <div>
-        
-        
-        Luz natural, objetos coloridos espalhados.
-    
-    </div>
-</div>
-
-
-    <p><strong>🌫️ Transição:</strong> Feche os olhos. O sol brilha forte na clareira.<br>Celeste está esperando com uma surpresa.<br></p>
-
-    
-    
-    <div class="sensory-box" style="background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); border-radius:8px; padding:1.25rem; margin:1.5rem 0; font-style:italic; color:#92400E; border-left:4px solid #F59E0B;">
-        O ar cheira a flores silvestres e terra molhada.<br>Celeste ergue o focinho: "Sente esse cheiro? É aventura!"<br>Ela aponta para um arco-íris imaginário no céu.<br>
-    </div>
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Com entusiasmo, sorrindo, e brilho nos olhos! Contagie a criança.">
-                        <span style="font-style: normal;">✨</span> (animado)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            Olha! Celeste está olhando para o céu!<br>O que será que ela viu?<br>
-        </div>
-    </div>
-</div>
-
-
-    <div style="text-align:center; margin-top:2rem;">
-        <p style="font-size:0.9rem; color:#9CA3AF; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:1px;">Visualizar</p>
-        <img src="../assets/cards/guardioes/celeste-raposa.png" 
-             style="width:120px; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.1); transform: rotate(-2deg); border: 4px solid white;"
-             onError="this.src='../assets/cards/guardioes/placeholder.png'"
-             alt="Card celeste">
-    </div>
-
-</div>
-
-
-
-
-<h2>🗺️ A Jornada</h2>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        O Arco-Íris de Celeste
-    </div>
-    
-    
-        
-        
-<div class="local-card">
-    <p><strong>📍 Local:</strong> Clareira Perguntas</p>
-    <p class="local-label">Visualizar</p>
-    <img src="../assets/cards/locais/local-clareira-perguntas.png" alt="Clareira Perguntas">
-</div>
-
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Conte 7 objetos junto com a criança.<br>"Vamos fazer nosso próprio arco-íris com 7 tesouros!"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Incline a cabeça, olhe com atenção. Como um detetive descobrindo uma pista.">
-                        <span style="font-style: normal;">🧐</span> (curioso)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Você sabia que o arco-íris tem SETE cores?"<br>[Celeste conta nos dedos]<br>"Vermelho, laranja, amarelo, verde, azul, anil, violeta!"<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        Mais que as Mãos
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Mostre 5 objetos. Adicione 1 (seis). Adicione mais 1 (sete).<br>"Passou da mão! Agora precisamos de ajuda!"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Com entusiasmo, sorrindo, e brilho nos olhos! Contagie a criança.">
-                        <span style="font-style: normal;">✨</span> (animado)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Olha! Cinco dedos numa mão... mais um, é SEIS!"<br>[Celeste mostra a pata]<br>"Mais um ainda... SETE! Precisamos de mais que uma mão!"<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        A Semana do Reino
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Conte os dias da semana nos dedos.<br>"Segunda, terça... até domingo! Sete dias!"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(satisfeito)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Sete dias tem a semana. Sete cores o arco-íris."<br>"O Rei ama o número 7. É especial."<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-
-
-
-<h2>🧱 O Concreto</h2>
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🧱</span>
-        Atividade Concreta
-    </div>
-    
-    
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">📋</span>
-    <div>
-        
-        
-        <strong>Passo a Passo:</strong>
-        <ol style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>
-                Separe 7 objetos coloridos.
-                
-                <br><em>Fala sugerida: "Vamos fazer um arco-íris!"</em>
-                
-            </li>
-            
-            <li>
-                Conte até 5 (uma mão).
-                
-                <br><em>Fala sugerida: "Um, dois, três, quatro, cinco — uma mão inteira!"</em>
-                
-            </li>
-            
-            <li>
-                Adicione 1 objeto. "Seis!"
-                
-                <br><em>Fala sugerida: "Mais um! Passou da mão! É o SEIS!"</em>
-                
-            </li>
-            
-            <li>
-                Adicione mais 1. "Sete!"
-                
-                <br><em>Fala sugerida: "Mais um! SETE! O número especial do Rei!"</em>
-                
-            </li>
-            
-        </ol>
-    
-    </div>
-</div>
-
-
-    
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🗣️</span>
-        Narramos Juntos
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🤫</span>
-    <div>
-        
-        
-        Guarde os 7 tesouros numa linha.<br>"Celeste adorou seu arco-íris!"<br>
-    
-    </div>
-</div>
-
-
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-        </div>
-        <div class="script-text">
-            "O que você descobriu hoje na Clareira? O que contaria para o Melquior?"
-        </div>
-    </div>
-</div>
-
-
-    <p><strong>Perguntas do Coração:</strong></p>
-    <ul style="margin-left:1.5rem; margin-top:0.5rem;">
-        <li>Quantas cores tem o arco-íris?</li>
-        
-        <li>O que mais você conhece que tem 7?</li>
-        
-        <li>O 6 ou o 7 é maior?</li>
-        
-    </ul>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🏁</span>
-        Ritual de Fechamento
-    </div>
-    
-    
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(satisfeito)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Você conheceu dois novos amigos hoje: 6 e 7!"<br>"O Rei está feliz. Até a próxima aventura!"<br>
-        </div>
-    </div>
-</div>
-
-
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-        </div>
-        <div class="script-text">
-            Um, dois, três... sete! Voltamos.
-        </div>
-    </div>
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🔗</span>
-        Conexão da Jornada
-    </div>
-    
-    
-    
-    <p><strong>⬅️ Última Aventura:</strong> Íris nos mostrou a beleza de 1 a 5. Agora, Celeste apresenta dois novos amigos!</p>
-    
-    
-        <div onclick="window.location.href='MV-S-008_O_PAR_PERFEITO.html'" style="cursor: pointer;">
-            <p><strong>➡️ Próxima Aventura:</strong> Você conhece 1 a 7 agora. Amanhã, Íris vai nos ensinar a encontrar pares perfeitos.</p>
-            
-            <div style="margin-top:0.5rem; text-align:right;">
-                <span style="font-size:0.85rem; color:#4B5563; background:#F3F4F6; padding:0.25rem 0.75rem; border-radius:1rem;">
-                    Ir para O Par Perfeito →
-                </span>
+            <nav class="lesson-header-nav" aria-label="Navegacao entre licoes">
+                <div style="width: 33%;">
+                    <a href="MV-S-006_O_DESENHO_DO_REI.html" class="nav-mini-link">
+                        <span>&larr;</span> <span>O Desenho do Rei</span>
+                    </a>
+                </div>
+
+                <div style="width: 33%; text-align: center;">
+                    <i class="ph-duotone ph-plant duotone-forest" style="font-size: 1.5rem;"></i>
+                    <span
+                        style="font-family: var(--font-heading); font-weight: 700; color: var(--primary); font-size: 0.9rem; margin-left: 0.5rem;">Sementes</span>
+                </div>
+
+                <div style="width: 33%; text-align: right;">
+                    <a href="MV-S-008_O_PAR_PERFEITO.html" class="nav-mini-link" style="justify-content: flex-end;">
+                        <span>O Par Perfeito</span> <span>&rarr;</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-clipboard-text duotone-terra"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Prepara&ccedil;&atilde;o do Portador
+                </div>
+
+                <div class="prep-focus-tag">
+                    Foco da li&ccedil;&atilde;o: perceber que `6` e `7` passam da m&atilde;o completa e aparecem como
+                    coroas vivas no arco-&iacute;ris e no ritmo da semana
+                </div>
+
+                <div class="prep-bridge-box">
+                    <p><strong>Fio da Jornada:</strong> Ontem, &Iacute;ris mostrou que os numerais de `1` a `5` guardam
+                        um desenho pr&oacute;prio. Hoje, Celeste vai abrir mais dois passos da trilha: `6` e `7`
+                        aparecem quando a m&atilde;o j&aacute; est&aacute; cheia e o Reino ainda continua. Amanh&atilde;,
+                        &Iacute;ris vai mostrar que cada tesouro tamb&eacute;m pode encontrar o seu par.</p>
+                </div>
+
+                <div class="instruction-box prep-heart-box">
+                    <i class="ph-duotone ph-lightbulb duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p style="margin-bottom:0.5rem;"><strong>Dica do Cora&ccedil;&atilde;o:</strong> hoje n&atilde;o
+                            apresse a crian&ccedil;a para decorar `6` e `7`. Primeiro deixe que ela sinta a surpresa de
+                            que a m&atilde;o inteira j&aacute; terminou, mas a trilha do Reino ainda continua.</p>
+                        <p>Se ela perceber que `6` &eacute; um passo al&eacute;m do `5`, e que `7` abre uma coroa maior
+                            ainda, a li&ccedil;&atilde;o j&aacute; encontrou o seu fruto principal.</p>
+                    </div>
+                </div>
+
+                <aside class="materials-box" aria-label="Lista de Materiais para a Preparacao do Portador">
+                    <p><strong><i class="ph-duotone ph-target duotone-terra"></i> Essencial:</strong></p>
+                    <ul>
+                        <li>7 objetos pequenos semelhantes, como pedras, sementes, tampinhas ou bot&otilde;es</li>
+                        <li>1 espa&ccedil;o simples sobre a mesa ou no ch&atilde;o para formar pequenas trilhas ou coroas
+                        </li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-arrows-left-right duotone-indigo"></i>
+                            Substitui&ccedil;&otilde;es caseiras:</strong></p>
+                    <ul>
+                        <li>Se n&atilde;o houver objetos iguais, use o que a casa oferecer: colheres, blocos, meias
+                            dobradas, folhas ou pregadores j&aacute; servem.</li>
+                        <li>Se faltar mesa, use um pano aberto, o tapete ou a pr&oacute;pria palma da m&atilde;o como
+                            refer&ecirc;ncia inicial para o `5`.</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-package duotone-gold"></i> Se
+                            tiver:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Cart&otilde;es com os numerais `6` e `7`, ou um arco desenhado levemente num papel, para
+                            apoiar a ideia de coroa</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-warning-circle duotone-gold"></i> Plano
+                            B:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Se o dia estiver curto, vivam bem o `6` primeiro e deixem o `7` aparecer logo em seguida,
+                            sem transformar a li&ccedil;&atilde;o em corrida.</li>
+                    </ul>
+                </aside>
+
+                <div class="prep-copy">
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-sparkle duotone-magic"></i>
+                            <span>Descoberta da Crian&ccedil;a</span>
+                        </p>
+                        <ul>
+                            <li>Que `6` e `7` n&atilde;o cabem mais numa m&atilde;o s&oacute;, mas continuam podendo ser
+                                contados com paz.</li>
+                            <li>Que `7` aparece como padr&atilde;o vivo na semana e no arco-&iacute;ris.</li>
+                            <li>Que os n&uacute;meros podem crescer sem perder a beleza da ordem.</li>
+                        </ul>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-check-circle duotone-forest"></i>
+                            <span>Sinal de Fruto de Hoje</span>
+                        </p>
+                        <p>Se a crian&ccedil;a conseguir contar at&eacute; `6` e `7` com objetos reais, perceber que a
+                            m&atilde;o completa j&aacute; ficou para tr&aacute;s ou reconhecer que o `7` aparece na semana
+                            e no arco-&iacute;ris, o fruto do dia j&aacute; nasceu.</p>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-star-four duotone-gold"></i>
+                            <span>Segredo do Maravilhamento</span>
+                        </p>
+                        <p>N&atilde;o apresente `6` e `7` como degrau escolar que precisa ser vencido. Hoje o Reino quer
+                            mostrar que, quando a m&atilde;o pensa que terminou, a contagem ainda pode se abrir como coroa
+                            sobre a trilha.</p>
+                    </div>
+
+                    <div class="strategy-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-strategy duotone-forest"></i>
+                            <span>Estrat&eacute;gia do Mestre: Passar da M&atilde;o sem Perder a Paz</span>
+                        </p>
+                        <p><strong>Por que funciona:</strong> a passagem do `5` para o `6` e o `7` &eacute; um marco
+                            sens&iacute;vel. Quando a crian&ccedil;a v&ecirc; esse passo em objetos reais, ela n&atilde;o
+                            recebe apenas um n&uacute;mero novo; recebe uma experi&ecirc;ncia de crescimento
+                            compreens&iacute;vel.</p>
+                        <p><strong>A&ccedil;&atilde;o de hoje:</strong> deixe a m&atilde;o completa servir de
+                            refer&ecirc;ncia, e mostre como `6` e `7` aparecem depois dela, com mais um brilho, depois
+                            mais outro.</p>
+                        <p><strong>Eco no Reino:</strong> o Portador aprende a n&atilde;o tratar o al&eacute;m-da-m&atilde;o
+                            como pressa de avan&ccedil;o, mas como expans&atilde;o serena do olhar da crian&ccedil;a.</p>
+                        <p style="margin-top:0.75rem;"><strong>Se houver irm&atilde;os:</strong> a menor pode entregar os
+                            tesouros um a um, enquanto a crian&ccedil;a-alvo forma a coroa de `6` e de `7` sem perder o
+                            foco do gesto principal.</p>
+                    </div>
+
+                    <div class="graca-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-heart duotone-heart"></i>
+                            <span>Nota de Gra&ccedil;a</span>
+                        </p>
+                        <p>Se a crian&ccedil;a ainda quiser voltar ao `5`, tudo bem. Isso n&atilde;o &eacute; recuo;
+                            &eacute; o corpo procurando sua base segura antes de dar mais dois passos.</p>
+                    </div>
+                </div>
             </div>
-            
-        </div>
-    
 
-</div>
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-film-strip duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Ritual de Entrada
+                </div>
 
+                <div class="instruction-box ritual-bastidores-box">
+                    <i class="ph-duotone ph-lamp duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div><strong>Prepara&ccedil;&atilde;o:</strong> deixe os sete objetos reunidos, mas ainda quietos,
+                        como pequenos brilhos &agrave; espera. Se puder, abra um pouco de luz e deixe a mesa limpa para a
+                        coroa aparecer com calma.</div>
+                </div>
 
+                <div class="script-persona-block portador-block ritual-portador-block">
+                    <div class="script-avatar-icon">
+                        <i class="ph-duotone ph-fire duotone-carmim"></i>
+                    </div>
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Portador da Tocha</span>
+                            <span class="script-tone">[Tom de convite, claro e admirado, como quem levanta os olhos para
+                                algo que se abre no alto.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>Respire fundo. A casa ainda est&aacute; aqui, mas nossos olhos j&aacute; come&ccedil;am a
+                                subir pela trilha.</p>
+                            <p>Hoje chegamos de novo &agrave; <strong>Clareira das Perguntas</strong>. O ar est&aacute;
+                                leve, e acima dela o c&eacute;u parece guardar um arco que ainda n&atilde;o se fechou por
+                                inteiro.</p>
+                            <p class="acting-cue">[Pausa breve. Deixe a imagina&ccedil;&atilde;o pousar.]</p>
+                            <p>Algu&eacute;m passou por aqui antes de n&oacute;s, recolhendo pequenos brilhos pela trilha.
+                                Parece que, mesmo depois da m&atilde;o inteira, ainda restam passos que o Reino quer
+                                mostrar.</p>
+                            <p>Fique atento. A coroa de hoje ainda n&atilde;o apareceu inteira.</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card-container ritual-local-card">
+                    <p class="local-label">Lugar revelado</p>
+                    <img src="../assets/cards/locais/local-clareira-perguntas.png"
+                        class="card-visual-asset rotate-left hover-float"
+                        onError="this.src='../assets/cards/locais/placeholder.png'"
+                        alt="Clareira das Perguntas">
+                </div>
+            </div>
 
+            <h2><i class="ph-duotone ph-map-trifold duotone-gold" style="margin-right:0.5rem;"></i> A Jornada</h2>
 
+            <div class="scene-card journey-scene journey-scene--reveal">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-star-four duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Celeste e a Trilha que Continua
+                </div>
 
+                <div class="card-container journey-reveal-card">
+                    <p class="local-label">Guardi&atilde; revelada</p>
+                    <img src="../assets/cards/guardioes/celeste-raposa.png"
+                        class="card-visual-asset rotate-right hover-float"
+                        onError="this.src='../assets/cards/guardioes/placeholder.png'"
+                        alt="Card da guardi&atilde; Celeste">
+                </div>
 
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧‍👦</span>
-        Para a Família
-    </div>
-    
-    
-    <p><strong>📚 Por que isso importa:</strong></p>
-    <div style="padding:0.5rem 0;">
-        6 e 7 são os primeiros números que ultrapassam uma mão.<br>Isso exige um novo nível de abstração — contar sem apoio visual imediato.<br>
-    </div>
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🧠 Método CPA (Jerome Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Concreto:</strong> Objetos físicos contados um a um.</li>
-            <li><strong>Pictórico:</strong> Vetado.</li>
-            <li><strong>Abstrato:</strong> Reconhecimento dos numerais 6 e 7.</li>
-        </ul>
-        
-        <span style="color:#6B7280; font-size:0.9rem;">Bruner: Concreto domina em Sementes.</span>
-        
-    </div>
-    
-    
-    
-    
-    <div class="cm-box">
-        <strong>🏛️ Princípio Charlotte Mason:</strong><br>
-        <em>"Education is the science of relations."</em><br>
-        <span style="color:#6B7280;">Conectar 7 a arco-íris e semana cria relações significativas.</span>
-    </div>
-    
-    
-    
-    
-    <div class="tgtb-box">
-        <strong>📘 Conexão TGTB:</strong><br>
-        <span style="color:#92400E;">Corresponde à lição de Números 6 a 7.
-Celeste traz conexão com a natureza (arco-íris, semana).
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🌀 Currículo em Espiral (Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Agora:</strong> Contagem 6-7 — Sementes — contar até 7 com objetos</li>
-            <li><strong>Depois:</strong> Raízes — operações com 6 e 7</li>
-        </ul>
-        
-    </div>
-    
-    
-    
-    
-    <div class="espiritual-box">
-        <strong>✨ Reflexão Espiritual:</strong><br>
-        <span style="color:#166534;">Deus criou o mundo em 6 dias e descansou no 7º.
-O padrão de 7 está tecido na criação.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="graca-box">
-        <strong>🕊️ Nota de Graça:</strong><br>
-        Se confundir 6 e 7, tudo bem.
-Celeste diz: "Vamos contar de novo — juntos!"
+                <div class="instruction-box journey-instruction-box">
+                    <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Gesto do Portador:</strong> deixe cinco tesouros bem vis&iacute;veis diante da
+                            crian&ccedil;a e segure mais dois perto de si, como se ainda estivessem escondidos na
+                            trilha.</p>
+                        <p><strong>Pergunta de entrada:</strong> &ldquo;Quando a m&atilde;o inteira j&aacute; est&aacute;
+                            cheia, o caminho acaba ou o Reino ainda pode continuar?&rdquo;</p>
+                    </div>
+                </div>
 
-    </div>
-    
+                <div class="script-persona-block journey-script">
+                    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="Celeste">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Celeste</span>
+                            <span class="script-tone">[Tom vivo, curioso e feliz por ter encontrado mais um rastro.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>&ldquo;Veja: cinco brilhos j&aacute; enchem a m&atilde;o inteira. Mas a trilha n&atilde;o
+                                terminou.&rdquo;</p>
+                            <p>&ldquo;Quando o Reino quer crescer sem perder a beleza, ele n&atilde;o joga tudo fora;
+                                acrescenta mais um passo... e depois outro.&rdquo;</p>
+                            <p>&ldquo;Venha. Hoje vou mostrar dois amigos novos: o `6`, que passa da m&atilde;o, e o
+                                `7`, que abre uma coroa mais larga no c&eacute;u e nos dias.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-</div>
+            <div class="scene-card journey-scene">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-star-four duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    O Sexto Brilho Depois da M&atilde;o
+                </div>
 
+                <div class="instruction-box journey-instruction-box">
+                    <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Gesto do Portador:</strong> mostre os cinco tesouros j&aacute; reunidos e acrescente
+                            apenas mais um, um pouco al&eacute;m da linha da m&atilde;o.</p>
+                        <p><strong>Clima:</strong> deixe a crian&ccedil;a sentir a surpresa do al&eacute;m, sem correr
+                            para a resposta.</p>
+                    </div>
+                </div>
 
+                <div class="script-persona-block journey-script">
+                    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="Celeste">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Celeste</span>
+                            <span class="script-tone">[Tom de descoberta, como quem aponta um rastro novo na terra.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>&ldquo;Aqui est&aacute; o `5`: uma m&atilde;o inteira. Agora olhe... mais um brilho se
+                                juntou a ele.&rdquo;</p>
+                            <p>&ldquo;Isso &eacute; `6`: a m&atilde;o j&aacute; ficou completa, mas o caminho foi al&eacute;m
+                                dela sem se perder.&rdquo;</p>
+                            <p>&ldquo;O `6` n&atilde;o &eacute; bagun&ccedil;a; &eacute; um passo novo depois da plenitude
+                                que voc&ecirc; j&aacute; conhecia.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="scene-card journey-scene">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-star-four duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    A Coroa do Sete
+                </div>
 
+                <div class="instruction-box journey-instruction-box">
+                    <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Gesto do Portador:</strong> acrescente o s&eacute;timo brilho e deixe os sete objetos
+                            formarem um arco simples, como come&ccedil;o de coroa.</p>
+                        <p><strong>Ponte viva:</strong> daqui a pouco, a crian&ccedil;a vai formar com as pr&oacute;prias
+                            m&atilde;os duas coroas: uma de `6` e outra de `7`.</p>
+                    </div>
+                </div>
+
+                <div class="script-persona-block journey-script">
+                    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="Celeste">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Celeste</span>
+                            <span class="script-tone">[Tom admirado, como quem olha para cima e reconhece uma ordem bela.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>&ldquo;E agora mais um. Veja: `7` n&atilde;o apenas vai al&eacute;m da m&atilde;o; ele abre
+                                a coroa toda.&rdquo;</p>
+                            <p>&ldquo;Sete cores no arco-&iacute;ris. Sete dias na semana. O Reino gosta quando a beleza
+                                reaparece em mais de um lugar.&rdquo;</p>
+                            <p>&ldquo;Venha formar essa coroa comigo. Quero ver suas m&atilde;os mostrarem o `6` e o `7`
+                                sem pressa e com verdade.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2><i class="ph-duotone ph-wall duotone-terra" style="margin-right:0.5rem;"></i> O Concreto</h2>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-wall duotone-terra" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    O Concreto
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-target duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Objetivo de hoje:</strong> formar com as m&atilde;os uma coroa de `6` e outra de `7`,
+                            percebendo que ambos passam da m&atilde;o inteira sem perder a ordem da contagem.</p>
+                        <p style="margin-top:0.5rem;"><strong>Liga&ccedil;&atilde;o com a Jornada:</strong> Celeste mostrou
+                            que, depois do `5`, a trilha continua. Agora a crian&ccedil;a vai se tornar autora dessas duas
+                            coroas, em vez de apenas assistir a descoberta.</p>
+                    </div>
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-hand-coins duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Atividade principal:</strong> construir duas coroas concretas: uma de `6` e outra de
+                            `7`.</p>
+                        <ol style="margin:0.75rem 0 0 1.25rem;">
+                            <li>Separe seis objetos e coloque cinco deles em pequena curva, como base vis&iacute;vel da
+                                m&atilde;o cheia.</li>
+                            <li style="margin-top:0.5rem;">Acrescente o sexto brilho no fim da curva e diga com calma:
+                                &ldquo;Aqui a m&atilde;o j&aacute; terminou, mas a coroa continuou.&rdquo;</li>
+                            <li style="margin-top:0.5rem;">Agora desfa&ccedil;am e montem uma nova coroa com sete objetos:
+                                cinco na base, depois o sexto, depois o s&eacute;timo, para que a crian&ccedil;a veja e
+                                conte o crescimento.</li>
+                            <li style="margin-top:0.5rem;">Pe&ccedil;a que a crian&ccedil;a compare as duas coroas:
+                                &ldquo;Qual ficou com um passo a mais? Qual abriu a semana inteira?&rdquo;</li>
+                            <li style="margin-top:0.5rem;">Por fim, deixe a crian&ccedil;a escolher qual coroa quer montar
+                                outra vez sozinha, com sua pr&oacute;pria ordem de contagem.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-users-three duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Varia&ccedil;&atilde;o leve 1:</strong> se faltar espa&ccedil;o, use a pr&oacute;pria
+                            m&atilde;o como base do `5` e coloque o sexto e o s&eacute;timo brilho ao lado dela.</p>
+                        <p style="margin-top:0.75rem;"><strong>Varia&ccedil;&atilde;o leve 2:</strong> se houver outra
+                            crian&ccedil;a, uma pode entregar os tesouros e a outra formar a coroa. Depois troquem, sem
+                            transformar o momento em corrida.</p>
+                    </div>
+                </div>
+
+                <div class="strategy-box">
+                    <p><strong>Falas que sustentam:</strong> &ldquo;A m&atilde;o encheu, mas o caminho continuou.&rdquo;
+                        &ldquo;O `6` passa da m&atilde;o por um brilho.&rdquo; &ldquo;O `7` abre a coroa toda.&rdquo;</p>
+                    <p style="margin-top:0.75rem;"><strong>Adapta&ccedil;&atilde;o para casa real:</strong> se a energia
+                        estiver baixa, fa&ccedil;am apenas uma coroa de `6` e depois acrescentem o s&eacute;timo brilho
+                        diante dos olhos da crian&ccedil;a. O importante &eacute; viver a passagem, n&atilde;o completar
+                        um protocolo longo.</p>
+                    <p style="margin-top:0.75rem;"><strong>Sinal de fruto do dia:</strong> se a crian&ccedil;a conseguir
+                        contar at&eacute; `6` e `7` com objetos reais, ou reconhecer que `7` vai um passo al&eacute;m do
+                        `6`, o fruto j&aacute; apareceu.</p>
+                    <p style="margin-top:0.75rem;"><strong>Ponte para Narramos Juntos:</strong> antes de guardar, deixe as
+                        duas coroas vis&iacute;veis e pergunte qual delas ficou com `6` e qual abriu o `7`. Isso pode
+                        abrir naturalmente o reconto daqui a pouco.</p>
+                </div>
+            </div>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-chat-circle-dots duotone-terra"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Narramos Juntos
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-ear duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Postura de escuta do Portador:</strong> deixe a crian&ccedil;a olhar de novo para as
+                            duas coroas antes de falar. Hoje a narra&ccedil;&atilde;o pode vir pela fala, pelo dedo
+                            apontando o sexto e o s&eacute;timo brilho, pela remontagem curta da coroa ou por frases bem
+                            pequenas.</p>
+                        <p style="margin-top:0.5rem;">N&atilde;o apresse a resposta. O centro aqui &eacute; recolher se a
+                            crian&ccedil;a percebeu que a trilha seguiu depois da m&atilde;o cheia e como isso apareceu na
+                            semana e no arco-&iacute;ris.</p>
+                    </div>
+                </div>
+
+                <div class="script-persona-block">
+                    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar"
+                        alt="Celeste, guardi&atilde; da Vastid&atilde;o">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Celeste</span>
+                        </div>
+                        <div class="script-text">
+                            <p>&ldquo;Me conte onde a m&atilde;o terminou e onde a coroa continuou. Se quiser, mostre com o
+                                dedo qual brilho virou o sexto e qual abriu o sete.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-chat-circle duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Perguntas de reconto:</strong></p>
+                        <ul style="margin:0.5rem 0 0 1.25rem;">
+                            <li>Qual coroa ficou com `6` e qual chegou ao `7`?</li>
+                            <li style="margin-top:0.5rem;">Em que momento a m&atilde;o j&aacute; n&atilde;o bastava mais?</li>
+                            <li style="margin-top:0.5rem;">O que o sexto brilho fez com a coroa?</li>
+                            <li style="margin-top:0.5rem;">Como o `7` lembrou a semana inteira ou as cores do arco-&iacute;ris?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="strategy-box">
+                    <p><strong>Perguntas do cora&ccedil;&atilde;o:</strong> &ldquo;Qual coroa pareceu mais completa para
+                        voc&ecirc;?&rdquo; &ldquo;Teve algum brilho que parecia pedir mais espa&ccedil;o?&rdquo; &ldquo;Como
+                        voc&ecirc; soube que a trilha n&atilde;o parou no `5`?&rdquo;</p>
+                    <p style="margin-top:0.75rem;"><strong>Formas leg&iacute;timas de narra&ccedil;&atilde;o:</strong> a
+                        crian&ccedil;a pode narrar falando, apontando, remontando a coroa, agrupando os objetos de novo,
+                        desenhando um pequeno arco ou mostrando com a m&atilde;o onde a passagem aconteceu.</p>
+                    <p style="margin-top:0.75rem;"><strong>Adapta&ccedil;&atilde;o digna e inclusiva:</strong> se a fala
+                        n&atilde;o vier pronta, pe&ccedil;a primeiro que a crian&ccedil;a toque o `5`, depois o `6`, depois
+                        o `7`. Se houver outra crian&ccedil;a, uma pode segurar a coroa enquanto a outra conta o caminho, sem
+                        transformar a narra&ccedil;&atilde;o em prova.</p>
+                </div>
+            </div>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-flag duotone-forest" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Ritual de Fechamento
+                </div>
+
+                <div class="script-persona-block">
+                    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar"
+                        alt="Celeste, guardi&atilde; da Vastid&atilde;o">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Celeste</span>
+                            <span style="font-style: normal;"><i
+                                    class="ph-duotone ph-sparkle duotone-gold"></i></span>
+                        </div>
+                        <div class="script-text">
+                            <p class="acting-cue">[Celeste recolhe o olhar para as duas coroas e sorri como quem viu a
+                                trilha ganhar dois passos novos.]</p>
+                            <p>&ldquo;Hoje voc&ecirc; viu que a m&atilde;o cheia n&atilde;o era o fim. Depois dela, o Reino
+                                ainda abriu um sexto brilho e uma coroa inteira de sete.&rdquo;</p>
+                            <p>&ldquo;Guarde essa passagem com paz. A Vastid&atilde;o gosta de quem aprende a ir al&eacute;m
+                                sem perder a ordem.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="script-persona-block portador-block" style="margin-top: 1.5rem;">
+                    <div class="script-avatar-icon">
+                        <i class="ph-duotone ph-fire duotone-carmim"></i>
+                    </div>
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Portador da Tocha</span>
+                        </div>
+                        <div class="script-text">
+                            <p>Respire fundo. A clareira pode descansar agora. Guardem os brilhos devagar, como quem sabe
+                                que o `6` e o `7` j&aacute; encontraram um lugar verdadeiro no olhar da crian&ccedil;a.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-link duotone-indigo" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Conex&atilde;o da Jornada
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-path duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Mem&oacute;ria viva:</strong> hoje, Celeste mostrou que `6` e `7` n&atilde;o s&atilde;o
+                            apenas n&uacute;meros maiores que `5`; eles aparecem como passos que continuam a trilha e como
+                            coroas que o mundo reconhece na semana e no arco-&iacute;ris.</p>
+                        <p style="margin-top:0.5rem;"><strong>Pr&oacute;xima dobra da trilha:</strong> na pr&oacute;xima
+                            li&ccedil;&atilde;o, a ordem desses tesouros vai se acalmar em pares. Depois de ver a coroa
+                            crescer, a crian&ccedil;a vai sentir a paz de quando cada coisa encontra o seu lugar de repouso.</p>
+                    </div>
+                </div>
+
+                <a href="MV-S-008_O_PAR_PERFEITO.html" class="connection-link-card">
+                    <span class="connection-link-label">Pr&oacute;xima li&ccedil;&atilde;o</span>
+                    <span class="connection-link-title">O Par Perfeito</span>
+                </a>
+            </div>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-plant duotone-forest" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Sementes para o Dia
+                </div>
+
+                <div class="instruction-box daily-seeds-box">
+                    <div>
+                        <p><strong>Escolha 1 ou 2 movimentos</strong> se fizer sentido para a sua fam&iacute;lia, hoje ou ao
+                            longo da semana. A li&ccedil;&atilde;o principal j&aacute; foi vivida; aqui ficam continuidades
+                            leves para `6` e `7` continuarem respirando sem peso.</p>
+                        <p><strong><i class="ph-duotone ph-magnifying-glass duotone-forest"></i>
+                                Explora&ccedil;&atilde;o:</strong> procurem pela casa grupos de `6` ou `7` coisas
+                            poss&iacute;veis de contar, como l&aacute;pis, blocos, prendedores ou colheres.</p>
+                        <p><strong><i class="ph-duotone ph-mask-happy duotone-indigo"></i> Dramatiza&ccedil;&atilde;o:</strong>
+                            caminhem cinco passos juntos, parem, e depois celebrem o sexto e o s&eacute;timo como se a trilha
+                            tivesse se aberto um pouco mais.</p>
+                        <p><strong><i class="ph-duotone ph-pencil-simple duotone-terra"></i> Cria&ccedil;&atilde;o:</strong>
+                            montem uma mini coroa ou um pequeno arco com `7` objetos coloridos, sem buscar perfei&ccedil;&atilde;o
+                            visual.</p>
+                        <p><strong><i class="ph-duotone ph-chat-circle duotone-carmim"></i> Narra&ccedil;&atilde;o:</strong>
+                            convide a crian&ccedil;a a contar para algu&eacute;m da casa quando percebeu que a m&atilde;o j&aacute;
+                            tinha acabado e o caminho ainda seguia.</p>
+                        <p><strong><i class="ph-duotone ph-moon-stars duotone-sky"></i> Reflex&atilde;o:</strong> antes de
+                            dormir, lembrem juntos um dia da semana ou uma cor do arco-&iacute;ris e perguntem se ela caberia
+                            melhor na coroa de `6` ou na de `7`.</p>
+                        <p>Uma pequena continua&ccedil;&atilde;o j&aacute; basta. `Sementes para o Dia` n&atilde;o &eacute;
+                            dever de casa; &eacute; apenas uma forma leve de deixar a coroa continuar viva.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-graduation-cap duotone-carmim"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Forma&ccedil;&atilde;o do Portador
+                </div>
+
+                <div class="instruction-box formation-intro-box">
+                    <i class="ph-duotone ph-strategy duotone-forest"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <strong>Estrat&eacute;gia do Mestre:</strong> Passar da M&atilde;o sem Perder a Coroa
+                        <p style="margin-top:0.5rem;">Hoje voc&ecirc; conduziu a crian&ccedil;a por uma travessia delicada:
+                            a m&atilde;o chegou ao `5`, mas a li&ccedil;&atilde;o n&atilde;o deixou a experi&ecirc;ncia parar
+                            ali. Celeste abriu a continuidade na Jornada, o concreto encarnou duas coroas reais e a
+                            narra&ccedil;&atilde;o recolheu a passagem.</p>
+                        <p style="margin-top:0.5rem;">O centro da estrat&eacute;gia foi este: mostrar que crescer em
+                            quantidade n&atilde;o precisa romper a ordem nem produzir pressa. O `6` e o `7` vieram como
+                            prolongamento belo, n&atilde;o como salto ansioso.</p>
+                    </div>
+                </div>
+
+                <div class="formation-stack">
+                    <div class="strategy-box">
+                        <p><strong>Por que isso importa:</strong> muitas crian&ccedil;as descansam no que cabe inteiro na
+                            m&atilde;o. Quando voc&ecirc; mostra, com paz, que a trilha continua depois disso, o pensamento
+                            aprende a se expandir sem medo e sem se perder.</p>
+                        <p style="margin-top:0.75rem;"><strong>O que o Portador aprende hoje:</strong> passar do `5` para o
+                            `6` e o `7` pede media&ccedil;&atilde;o concreta, imagem viva e fala serena. Isso fortalece a
+                            confian&ccedil;a da crian&ccedil;a e evita que o n&uacute;mero maior apare&ccedil;a como mera
+                            exig&ecirc;ncia escolar.</p>
+                    </div>
+
+                    <div class="bruner-box">
+                        <p><strong><i class="ph-duotone ph-brain duotone-terra"></i> M&eacute;todo CPA:</strong></p>
+                        <ul style="margin:0.5rem 0 0 1.5rem;">
+                            <li><strong>Concreto:</strong> a crian&ccedil;a montou coroas reais com objetos e viu, com os
+                                olhos e as m&atilde;os, onde o `6` e o `7` ultrapassam a base da m&atilde;o.</li>
+                            <li><strong>Pict&oacute;rico:</strong> a imagem da semana e do arco-&iacute;ris ajudou a dar forma
+                                mental est&aacute;vel a essa nova quantidade.</li>
+                            <li><strong>Abstrato:</strong> mais adiante, `6` e `7` poder&atilde;o ser reconhecidos como
+                                s&iacute;mbolos e quantidades com mais rapidez, porque hoje j&aacute; ganharam corpo e
+                                narrativa.</li>
+                        </ul>
+                    </div>
+
+                    <div class="cm-box">
+                        <p><strong><i class="ph-duotone ph-feather duotone-forest"></i> Princ&iacute;pio Charlotte
+                                Mason:</strong></p>
+                        <p style="margin-top:0.5rem; font-style:italic; color:#4B5563;">&ldquo;Never be within doors when you
+                            can rightly be without.&rdquo;</p>
+                        <p style="margin-top:0.5rem;">Hoje isso apareceu como fidelidade a imagens vivas do mundo. Semana,
+                            trilha e arco-&iacute;ris impediram que o `7` virasse abstra&ccedil;&atilde;o seca; a crian&ccedil;a
+                            encontrou quantidade em rela&ccedil;&atilde;o com a cria&ccedil;&atilde;o.</p>
+                    </div>
+
+                    <div class="tgtb-box">
+                        <p><strong><i class="ph-duotone ph-link duotone-indigo"></i> Conex&atilde;o TGTB:</strong></p>
+                        <p style="margin-top:0.5rem;">Este passo corresponde a `000-L7 - Numbers 6 to 7 / N&uacute;meros 6 e
+                            7`. O foco n&atilde;o &eacute; acelerar contagem, mas introduzir essas novas quantidades com
+                            sentido, imagem dominante e experi&ecirc;ncia concreta.</p>
+                    </div>
+
+                    <div class="spiral-box">
+                        <p><strong><i class="ph-duotone ph-spiral duotone-forest"></i> Curr&iacute;culo em espiral:</strong>
+                        </p>
+                        <p style="margin-top:0.5rem;"><strong>Agora:</strong> a crian&ccedil;a percebe que `6` e `7`
+                            prolongam o que j&aacute; conhecia da m&atilde;o completa.</p>
+                        <p style="margin-top:0.5rem;"><strong>Depois:</strong> essa passagem vai sustentar pares,
+                            correspond&ecirc;ncias, sequ&ecirc;ncias e outras quantidades sem quebrar o senso de ordem.</p>
+                        <p style="margin-top:0.5rem;"><strong>Por que isso traz paz:</strong> voc&ecirc; n&atilde;o precisa
+                            fazer a crian&ccedil;a dominar tudo hoje. Basta que ela sinta que ir al&eacute;m do `5` continua
+                            sendo habit&aacute;vel.</p>
+                    </div>
+
+                    <div class="graca-box">
+                        <p><strong><i class="ph-duotone ph-heart duotone-heart"></i> Nota de Gra&ccedil;a:</strong></p>
+                        <p style="margin-top:0.5rem;">Se a crian&ccedil;a ainda confundir qual coroa era `6` e qual era `7`,
+                            a li&ccedil;&atilde;o n&atilde;o falhou. Se ela percebeu que a trilha passou da m&atilde;o e que
+                            isso aconteceu com beleza, a semente principal j&aacute; foi plantada.</p>
+                    </div>
+
+                    <div class="sementes-box">
+                        <p><strong><i class="ph-duotone ph-plant duotone-forest"></i> As Sementes Continuam:</strong></p>
+                        <p style="margin-top:0.5rem;">Nos pr&oacute;ximos reencontros, voc&ecirc; poder&aacute; notar se a
+                            crian&ccedil;a come&ccedil;a a procurar naturalmente o que vem depois da m&atilde;o cheia e se
+                            organiza grupos maiores com menos hesita&ccedil;&atilde;o. Esse &eacute; o eco verdadeiro desta
+                            li&ccedil;&atilde;o.</p>
+                    </div>
+                </div>
+            </div>
         </article>
 
-        <!-- NAVIGATION FOOTER -->
         <nav class="lesson-nav">
-            
-            
-
-            
             <a href="MV-S-006_O_DESENHO_DO_REI.html" class="nav-btn prev">
-                <span class="nav-label">← Anterior</span>
+                <span class="nav-label"><i class="ph-duotone ph-arrow-left duotone-gold"></i> Anterior</span>
                 <span class="nav-title">O Desenho do Rei</span>
             </a>
-            
-            
-            
             <a href="MV-S-008_O_PAR_PERFEITO.html" class="nav-btn next">
-                <span class="nav-label">Próxima →</span>
+                <span class="nav-label">Pr&oacute;xima <i class="ph-duotone ph-arrow-right duotone-gold"></i></span>
                 <span class="nav-title">O Par Perfeito</span>
             </a>
-            
         </nav>
 
         <footer style="text-align: center; margin-top: 4rem; color: #A8A29E; font-size: 0.8rem;">
-            Matemática Viva • Forjado com Estilo e Propósito
+            Matem&aacute;tica Viva &bull; Forjado com Estilo e Prop&oacute;sito
         </footer>
     </div>
 </body>
+
 </html>

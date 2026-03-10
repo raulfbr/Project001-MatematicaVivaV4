@@ -1,5 +1,9 @@
 # Manual do Portador da Tocha
 
+> Status editorial em 2026-03-10: este arquivo permanece como referencia historica de desenvolvimento.
+> O manual publicado e mantido para as familias agora e `site/manual-portador.html`.
+> Nao atualizar este markdown como se ele fosse a fonte canonica sem antes decidir uma fonte unica ou uma pipeline de geracao.
+
 *Um guia para você que vai conduzir a jornada do seu filho pelo Reino Contado*
 
 ---

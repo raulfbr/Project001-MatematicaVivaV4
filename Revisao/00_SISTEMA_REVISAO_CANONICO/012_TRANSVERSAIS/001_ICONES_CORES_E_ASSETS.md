@@ -65,7 +65,7 @@
 1. o legado pode ter alguns icones ou titulos antigos; preservar apenas quando nao quebrar a leitura.
 2. variacao historica de icone nao vira automaticamente novo padrao.
 3. em caso de conflito, a secao precisa obedecer primeiro a funcao liturgica, depois a memoria do legado.
-4. o icone canonico de `Narramos Juntos` e `ph-chat-circle-dots`; o HTML atual de `MV-S-001` usa `ph-chat-teardrop-text`; ambos sao funcionais e semanticamente proximos, mas a padronizacao deve caminhar para `ph-chat-circle-dots` nas proximas licoes editadas.
+4. o icone canonico de `Narramos Juntos` e `ph-chat-circle-dots`; as licoes `MV-S-001` e `MV-S-002` ja foram alinhadas a esse padrao.
 
 ## Impacto no premium
 1. consistencia visual sustenta confianca imediata.

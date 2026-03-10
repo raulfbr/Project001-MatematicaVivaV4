@@ -18,40 +18,25 @@ Objetivo:
 
 ---
 
-## 2) Ativacao obrigatoria do protocolo
-Toda revisao de licao padrao deve ser ativada assim:
-1. abrir este protocolo;
-2. abrir `004_RUBRICA_PREMIUM_REVISAO.md`;
-3. abrir `011_TOPICOS/000_README.md`;
-4. abrir os 12 topicos oficiais `001-012`, na ordem;
-5. abrir `012_TRANSVERSAIS/000_README.md`;
-6. abrir o pacote minimo transversal: `002`, `003`, `005`, `006`, `008`;
-7. abrir a licao atual;
-8. abrir a licao anterior;
-9. abrir a licao seguinte;
-10. so depois iniciar diagnostico e patch.
+## 2) Autoridade documental
+Este arquivo ja nao carrega sozinho a ativacao completa da revisao.
 
-Regra:
-1. `topicos relevantes` vale apenas para transversais adicionais;
-2. os 12 topicos da licao devem sempre ser auditados.
+Fonte de verdade:
+1. `023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md` = ativacao, ordem de leitura, cerne macro e algoritmo;
+2. este `003` = execucao do patch, reauditoria, gates e formato de log;
+3. `004_RUBRICA_PREMIUM_REVISAO.md` = pontuacao e veredito.
 
 ---
 
-## 3) Ordem obrigatoria de leitura antes de revisar
-1. `Revisao/00_SISTEMA_REVISAO_CANONICO/002_ESQUELETO_GERAL_LICAO_SEMENTES.md`
-2. `Revisao/00_SISTEMA_REVISAO_CANONICO/003_PROTOCOLO_REVISAO_POR_LICAO.md`
-3. `Revisao/00_SISTEMA_REVISAO_CANONICO/004_RUBRICA_PREMIUM_REVISAO.md`
-4. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/000_README.md`
-5. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/001_BASE_E_HERO.md` ate `012_NAVEGACAO_INFERIOR.md`
-6. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/000_README.md`
-7. pacote minimo transversal: `002`, `003`, `005`, `006`, `008`
-8. licao atual
-9. licao anterior
-10. licao seguinte
+## 3) Ativacao obrigatoria antes deste arquivo
+Antes de usar este protocolo, a sessao deve ter sido ativada pelo `023`.
 
-Regra:
-1. nao revisar uma licao isoladamente do seu encadeamento;
-2. nao pontuar na rubrica antes de fechar a matriz topica e as fronteiras.
+Minimos esperados ao entrar aqui:
+1. cerne macro da licao ja preenchido;
+2. topicos `001-012` ja abertos;
+3. pacote minimo transversal ja aberto;
+4. licao atual, anterior e seguinte ja lidas no suficiente;
+5. escopo da sessao ja congelado.
 
 ---
 
@@ -63,8 +48,8 @@ Antes de editar qualquer HTML:
 3. confirmar que o arquivo esta em UTF-8;
 4. identificar se a licao e `MV-S-000` ou licao padrao;
 5. identificar se ha alias legado relevante;
-6. abrir os 12 topicos oficiais;
-7. abrir o pacote minimo transversal;
+6. confirmar que a ativacao oficial do `023` foi seguida;
+7. confirmar que o cerne macro da licao foi registrado;
 8. preparar a matriz `001-012` com `PASS / GAP / BLOCK`;
 9. mapear as fronteiras criticas que precisarao ser auditadas depois;
 10. confirmar se ha task robusta especifica da licao em andamento.
@@ -76,7 +61,9 @@ Checklist:
 4. qual conceito concreto precisa ser vivido?
 5. qual e o gancho para a proxima?
 6. qual e a imagem dominante da licao?
-7. onde a licao pode confundir fronteiras entre topicos adjacentes?
+7. qual e o fruto do dia?
+8. onde a licao pode confundir fronteiras entre topicos adjacentes?
+9. como um irmao menor pode participar sem dissolver o foco de `5-6 anos`?
 
 Se alguma dessas respostas estiver nebulosa:
 1. parar o patch e diagnosticar antes.

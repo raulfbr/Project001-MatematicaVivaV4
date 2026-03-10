@@ -3,20 +3,51 @@
 ## Sessao [data]
 
 ### Ativacao do protocolo
+- Guia central `023` consultado:
+- Status `005` consultado:
+- Escopo congelado:
 - Licao A:
 - Licao B:
-- Ordem oficial de leitura concluida:
 - Topicos `001-012` abertos:
 - Pacote minimo transversal aberto (`002`, `003`, `005`, `006`, `008`):
 - Licao anterior e proxima abertas:
-- Excecao `MV-S-000` considerada:
-- North Star consultado:
+- Task especifica da licao consultada:
+- Validacao humana da Familia Rodrigues: concluida / pendente
 
-### Escopo congelado
-- Licao A:
-- Licao B:
-- Fora de escopo:
-- Contexto consultado:
+### Contexto consultado
+- README e contexto geral:
+- Estado real do projeto:
+- Skeleton da licao:
+- Protocolo `003`:
+- Rubrica `004`:
+
+## LICAO A - CERNE MACRO
+
+### Identidade da licao
+- Arquivo:
+- Titulo:
+- Guardiao:
+- Lugar revelado:
+- Proxima licao:
+
+### Cerne da ideia
+- Promessa da licao:
+- Conceito matematico vivo:
+- Papel no curriculo mestre / TGTB:
+- Imagem dominante:
+- Fruto do dia:
+- Risco familia real:
+- Hospitalidade multi-crianca:
+
+### Fronteiras de maior risco
+- `003 -> 004`:
+- `004 -> 005`:
+- `005 -> 006`:
+- `006 -> 007`:
+- `008 -> 009`:
+- `009 -> 010`:
+- `010 -> 011`:
+- `011 -> 012`:
 
 ## LICAO A - MATRIZ TOPICA
 
@@ -33,16 +64,6 @@
 - `010_SEMENTES_PARA_O_DIA`: PASS / GAP / BLOCK
 - `011_FORMACAO_DO_PORTADOR`: PASS / GAP / BLOCK
 - `012_NAVEGACAO_INFERIOR`: PASS / GAP / BLOCK
-
-### Fronteiras criticas
-- `003 -> 004`:
-- `004 -> 005`:
-- `005 -> 006`:
-- `006 -> 007`:
-- `008 -> 009`:
-- `009 -> 010`:
-- `010 -> 011`:
-- `011 -> 012`:
 
 ### Findings
 - Critico:
@@ -71,6 +92,34 @@
 ### Risco residual
 - [...]
 
+## LICAO B - CERNE MACRO
+
+### Identidade da licao
+- Arquivo:
+- Titulo:
+- Guardiao:
+- Lugar revelado:
+- Proxima licao:
+
+### Cerne da ideia
+- Promessa da licao:
+- Conceito matematico vivo:
+- Papel no curriculo mestre / TGTB:
+- Imagem dominante:
+- Fruto do dia:
+- Risco familia real:
+- Hospitalidade multi-crianca:
+
+### Fronteiras de maior risco
+- `003 -> 004`:
+- `004 -> 005`:
+- `005 -> 006`:
+- `006 -> 007`:
+- `008 -> 009`:
+- `009 -> 010`:
+- `010 -> 011`:
+- `011 -> 012`:
+
 ## LICAO B - MATRIZ TOPICA
 
 ### Matriz `001-012`
@@ -86,16 +135,6 @@
 - `010_SEMENTES_PARA_O_DIA`: PASS / GAP / BLOCK
 - `011_FORMACAO_DO_PORTADOR`: PASS / GAP / BLOCK
 - `012_NAVEGACAO_INFERIOR`: PASS / GAP / BLOCK
-
-### Fronteiras criticas
-- `003 -> 004`:
-- `004 -> 005`:
-- `005 -> 006`:
-- `006 -> 007`:
-- `008 -> 009`:
-- `009 -> 010`:
-- `010 -> 011`:
-- `011 -> 012`:
 
 ### Findings
 - Critico:
@@ -128,10 +167,11 @@
 
 ### Validacao transversal
 - Encoding:
-- Drift entre protocolo, rubrica, topicos e template:
+- Drift entre `023`, `003`, `004`, `011_TOPICOS`, `012_TRANSVERSAIS` e template:
 - Ajuste de sistema necessario:
 
 ### Handoff
 - Proximo par sugerido:
 - Task robusta a abrir, se necessario:
+- Validacao humana pendente:
 - Observacoes:

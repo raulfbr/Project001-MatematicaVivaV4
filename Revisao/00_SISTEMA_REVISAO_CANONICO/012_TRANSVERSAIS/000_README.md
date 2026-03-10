@@ -3,15 +3,15 @@
 Esta pasta contem as regras que atravessam varios topicos.
 
 ## Missao
-1. evitar duplicacao de regra nos arquivos por topico;
+1. evitar duplicacao de regra dentro dos topicos;
 2. reduzir drift entre secoes da licao;
 3. acelerar revisao por IA e por humano;
-4. concentrar num unico lugar as diretrizes que valem para mais de uma secao.
+4. concentrar HTML, tom, reveal, pedagogia, encoding e North Star em fontes estaveis.
 
-## Quando consultar esta pasta
-1. antes de revisar uma licao por inteiro;
-2. quando houver duvida entre topicos adjacentes;
-3. quando a decisao envolver HTML, tom, assets, reveal, CPA, North Star ou encoding.
+## Como usar esta pasta
+1. ativar a sessao pelo `023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`;
+2. abrir sempre o pacote minimo transversal antes do primeiro patch;
+3. abrir arquivos adicionais quando a licao pedir decisao de HTML, assets, reveal ou excecao.
 
 ## Pacote minimo de ativacao
 Em revisao padrao de `MV-S-001+`, abrir sempre:
@@ -22,24 +22,12 @@ Em revisao padrao de `MV-S-001+`, abrir sempre:
 5. `008_NORTH_STAR_OPERACIONAL.md`
 
 Abrir tambem, quando fizer sentido:
-1. `001_ICONES_CORES_E_ASSETS.md` para Hero, Header, cards e identidades visuais;
-2. `004_GUARDIOES_CARDS_E_REVEAL.md` quando a licao tocar Ritual, Jornada, reveals e guardioes;
-3. `007_EXCECAO_L000_PORTAL.md` apenas para `MV-S-000`.
-
-## Ordem recomendada
 1. `001_ICONES_CORES_E_ASSETS.md`
-2. `002_REGRAS_DE_HTML_E_ANTI_PATTERNS.md`
-3. `003_TOM_NARRATIVO_E_DIRECAO_DO_PORTADOR.md`
-4. `004_GUARDIOES_CARDS_E_REVEAL.md`
-5. `005_CRITERIOS_PEDAGOGICOS_CM_CPA_TGTB.md`
-6. `006_ENCODING_E_SANITY_CHECK.md`
-7. `007_EXCECAO_L000_PORTAL.md`
-8. `008_NORTH_STAR_OPERACIONAL.md`
+2. `004_GUARDIOES_CARDS_E_REVEAL.md`
+3. `007_EXCECAO_L000_PORTAL.md`
 
 ## Regra de autoridade
-1. se um topico conflitar com uma regra transversal, primeiro revisar o conflito;
-2. `008_NORTH_STAR_OPERACIONAL.md` funciona como gate final de espirito da obra;
-3. esta pasta e canonica dentro do sistema de revisao, nao apenas apoio.
-4. `TASTE` nao mora so nos topicos; esta pasta protege `TASTE` nas camadas de HTML, iconografia, tom, reveal, pedagogia e realidade de uso.
-5. `006_ENCODING_E_SANITY_CHECK.md` nao e opcional depois de patch em HTML;
-6. `008_NORTH_STAR_OPERACIONAL.md` nao e filtro de fechamento apenas; ele participa da decisao desde o primeiro diagnostico.
+1. este diretorio governa regras que atravessam varios topicos;
+2. `008_NORTH_STAR_OPERACIONAL.md` funciona como gate de espirito da obra desde o diagnostico, nao apenas no fechamento;
+3. `006_ENCODING_E_SANITY_CHECK.md` nao e opcional depois de patch em HTML;
+4. esta pasta nao deve repetir a ativacao passo a passo, porque isso agora mora no `023`.

@@ -43,11 +43,13 @@ Regra:
 
 ## 2.2 Pre-condicoes antes de pontuar
 Antes de atribuir nota:
-1. abrir os 12 topicos oficiais `001-012`;
-2. preencher a matriz topica com `PASS / GAP / BLOCK`;
-3. auditar as fronteiras criticas entre secoes adjacentes;
-4. consultar `008_NORTH_STAR_OPERACIONAL.md`;
-5. so entao pontuar os 5 eixos.
+1. ativar a sessao pelo `023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`;
+2. preencher o cerne macro da licao;
+3. abrir os 12 topicos oficiais `001-012`;
+4. preencher a matriz topica com `PASS / GAP / BLOCK`;
+5. auditar as fronteiras criticas entre secoes adjacentes;
+6. consultar `008_NORTH_STAR_OPERACIONAL.md`;
+7. so entao pontuar os 5 eixos.
 
 Regra:
 1. rubrica sem matriz topica completa nao vale como fechamento premium.

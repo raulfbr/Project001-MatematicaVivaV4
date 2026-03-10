@@ -2,7 +2,13 @@
 Data: 2026-03-06
 Base canonica: `LORE/north_star.yaml`
 Escopo: sistema de revisao HTML-first + piloto `MV-S-001..003`
-Status: integrada ao sistema; pronta para piloto
+Status: integrada ao sistema; gate operacional concluido
+
+Nota de fase (estado atual em 2026-03-06):
+1. esta task cumpriu a integracao do North Star ao sistema base;
+2. a liberacao de piloto registrada abaixo era valida no momento da task, mas nao substitui mais o quadro vivo de fase;
+3. a fonte viva de status agora e `005_STATUS_REVISAO_SEMENTES.md`;
+4. no estado atual do projeto, o piloto `001-003` segue bloqueado ate o fechamento documental final da pasta `Revisao/`.
 
 ---
 
@@ -13,11 +19,11 @@ Executado:
 3. integrado North Star a `004_RUBRICA_PREMIUM_REVISAO.md`
 4. integrado North Star ao `002_ESQUELETO_GERAL_LICAO_SEMENTES.md`
 5. atualizado `005_STATUS_REVISAO_SEMENTES.md`
-6. atualizado `RadmeRevisao.md`
+6. atualizado `README.md` de `Revisao/`
 
 Estado resultante:
 1. o North Star virou gate operacional real;
-2. o piloto `001-003` ja pode ser executado com filtro explicito de fidelidade.
+2. o piloto `001-003` passou a ter filtro explicito de fidelidade quando vier a ser liberado pelo quadro vivo de status.
 
 ---
 
@@ -99,7 +105,7 @@ Fazer o North Star descer do `LORE/` para o workflow diario de revisao.
 Resultado esperado:
 1. qualquer IA ou humano consegue revisar uma licao e medir alinhamento North Star;
 2. o North Star vira criterio de veto real;
-3. o piloto `001-003` ja pode ser executado com esse filtro.
+3. o piloto `001-003` passa a ter esse filtro pronto para uso quando for oficialmente liberado.
 
 ---
 
@@ -125,7 +131,7 @@ Se houver conflito:
 3. integrar North Star a `004_RUBRICA_PREMIUM_REVISAO.md`
 4. integrar North Star ao `002_ESQUELETO_GERAL_LICAO_SEMENTES.md`
 5. atualizar `005_STATUS_REVISAO_SEMENTES.md`
-6. atualizar `RadmeRevisao.md`
+6. atualizar `Revisao/README.md`
 
 ---
 
@@ -224,7 +230,7 @@ BLOCK quando:
 3. transformar tudo em perguntas objetivas.
 
 Saida:
-1. `008_NORTH_STAR_OPERACIONAL.md`
+1. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/008_NORTH_STAR_OPERACIONAL.md`
 
 ### Fase 2 - Integracao ao sistema
 1. adicionar gate North Star ao protocolo;
@@ -266,7 +272,7 @@ Se qualquer resposta for `nao`:
 
 ## 9) Definition of Done desta task
 Esta task so fecha quando:
-1. existir `008_NORTH_STAR_OPERACIONAL.md`;
+1. existir `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/008_NORTH_STAR_OPERACIONAL.md`;
 2. o protocolo citar explicitamente o gate North Star;
 3. a rubrica bloquear desalinhamento North Star;
 4. o esqueleto geral citar North Star como criterio de integridade;

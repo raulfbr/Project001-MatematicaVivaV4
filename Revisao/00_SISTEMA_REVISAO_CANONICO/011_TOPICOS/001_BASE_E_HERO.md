@@ -59,5 +59,12 @@
 1. Base do Documento e Hero compartilham o mesmo topico por serem camada de abertura, mas o Header Superior continua sendo topico proprio.
 2. `MV-S-000` pode divergir em clima e composicao, mas `MV-S-001+` segue este contrato.
 
+## Checklist de revisao
+1. `doctype`, `html lang`, `head`, `body`, `home-btn` e `lesson-container` existem e estao corretos?
+2. o Hero tem `lesson-meta-tag`, `hero-title`, `hero-quote` e asset principal coerente?
+3. o asset principal tem `alt` util e fallback quando necessario?
+4. a frase do Hero orienta a familia em segundos sem soar marketing vazio?
+5. o Hero abre a licao com identidade propria sem competir com o Header Superior?
+
 ## Prompt operacional para IA
 `Revise Base e Hero validando doctype, html lang, head, body, home-btn, lesson-container e Hero completo; bloqueie qualquer quebra de integridade, identidade ou abertura generica.`

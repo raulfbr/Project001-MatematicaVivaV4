@@ -5,7 +5,7 @@
 2. dramatizar o conceito matematico em movimento, cena a cena;
 3. transformar a narracao em experiencia encarnada, respiravel e memoravel;
 4. honrar a licao anterior, amadurecer a licao presente e deixar um eco limpo para a proxima;
-5. desembocar naturalmente no `006_MOMENTO_DE_CONEXAO.md`, sem salto seco.
+5. desembocar naturalmente no `006_O_CONCRETO.md`, sem salto seco.
 
 ## Posicao no fluxo
 1. vem imediatamente depois do `004_RITUAL_DE_ENTRADA.md`;
@@ -31,6 +31,15 @@
 8. preferir paragrafos reais em `script-text`; evitar montar a narracao inteira em linhas quebradas por `<br>`.
 9. as cenas devem ter progressao reconhecivel: reveal, desenvolvimento, culminacao e ponte.
 10. o HTML precisa manter legibilidade, hierarquia visual e auditabilidade de cada cena.
+11. a Jornada pode usar micro-acoes corporais e pequenas manipulacoes, mas nao deve consumir a experiencia manual principal de `006_O_CONCRETO.md`.
+
+## Mapa minimo antes de escrever a Jornada
+1. `qual verdade viva sera vista hoje?`
+2. `qual enredo ou necessidade faz essa licao existir?`
+3. `qual acao concreta acontece dentro da narracao?`
+4. `qual experiencia manual diferente fica reservada para O Concreto?`
+5. `o que a crianca podera recontar em Narramos Juntos?`
+6. `que fio discreto liga ontem, hoje e amanha?`
 
 ## Arquitetura canonica da secao
 ### 1. Cena de reveal do guardiao
@@ -63,10 +72,11 @@
    e. outra forma concreta de inteligibilidade.
 3. a culminacao nao deve soar como professor explicando; ela deve soar como mundo se mostrando.
 
-### 4. Ponte para o Momento de Conexao
+### 4. Ponte para O Concreto
 1. a ultima fala ou ultima cena deve deixar a familia pronta para agir com as maos.
 2. o adulto precisa entender por que a atividade concreta vem a seguir.
 3. a crianca precisa sentir que vai continuar a historia, nao trocar de assunto.
+4. a ponte precisa apontar para uma experiencia manual nova, nao para repetir o mesmo gesto que acabou de acontecer na cena.
 
 ## Subtopicos que precisam estar claros no texto
 ### 1. Necessidade viva
@@ -118,6 +128,7 @@
 3. a fala do guardiao deve ajudar o adulto a entender o `por que` da atividade seguinte.
 4. a licao precisa permanecer concreta, digna e viva no sentido Charlotte Mason.
 5. o premium aqui depende de profundidade com respiracao, nao de excesso de explicacao.
+6. se a Jornada ja esgotou a principal experiencia manual da licao, `006` tende a virar repeticao e a arquitetura da licao falhou.
 
 ## Direcao visual premium
 1. a Jornada deve parecer mais luminosa e preciosa que as secoes vizinhas.
@@ -151,13 +162,14 @@
 6. escrever falas bonitas, mas desligadas do tema matematico da licao.
 7. quebrar a ligacao com licao anterior e proxima quando a propria trilha pede costura.
 8. usar visual neutro demais numa secao que deveria carregar maravilhamento.
+9. gastar na Jornada exatamente a mesma manipulacao que deveria florescer depois em O Concreto.
 
 ## PASS estrutural
 1. reveal formal do guardiao aparece uma vez, no lugar certo.
 2. ha progressao real de cenas.
 3. a voz do guardiao e recognoscivel.
 4. a matematica aparece como parte da historia.
-5. a ponte para o `Momento de Conexao` esta viva e clara.
+5. a ponte para o `O Concreto` esta viva e clara.
 
 ## BLOCK estrutural
 1. guardiao sem reveal formal.
@@ -171,6 +183,7 @@
 2. o guardiao pode nomear o conceito de forma simples, se isso nascer organicamente da cena.
 3. a instruction box guia o adulto, mas nao toma o lugar da fala do guardiao.
 4. o eco de licao anterior ou proxima e desejavel quando ajuda a trilha, nao quando vira propaganda.
+5. pequenas acoes em cena sao permitidas; repetir em `006` a mesma acao principal, com o mesmo material e o mesmo objetivo, nao e.
 
 ## Checklist de revisao
 1. o guardiao parece realmente vivo nesta licao?
@@ -181,4 +194,4 @@
 6. a costura com a trilha geral ficou sutil e elegante?
 
 ## Prompt operacional para IA
-`Revise A Jornada como o coracao narrativo da licao: preserve reveal unico do guardiao, construa cenas progressivas, de voz propria e com gesto matematico encarnado, e feche com ponte viva para o Momento de Conexao. Se a secao soar escolar, estatica ou desligada da trilha entre licoes, ela reprova.`
+`Revise A Jornada como o coracao narrativo da licao: preserve reveal unico do guardiao, construa cenas progressivas, de voz propria e com gesto matematico encarnado, e feche com ponte viva para um O Concreto realmente distinto. Se a secao soar escolar, estatica, repetitiva ou desligada da trilha entre licoes, ela reprova.`

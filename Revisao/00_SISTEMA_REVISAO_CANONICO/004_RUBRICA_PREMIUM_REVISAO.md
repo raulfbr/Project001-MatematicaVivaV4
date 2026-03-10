@@ -1,5 +1,5 @@
 # RUBRICA PREMIUM DE REVISAO
-Data: 2026-03-07
+Data: 2026-03-10
 Status: canonico
 Escopo: licoes HTML do ciclo Sementes
 
@@ -11,7 +11,8 @@ Esta rubrica existe para transformar "impecavel" em criterio objetivo.
 Ela serve para:
 1. avaliar qualidade sem depender so de intuicao;
 2. comparar licoes de forma coerente;
-3. bloquear publicacao de licao que pareca bonita mas esteja fraca.
+3. bloquear publicacao de licao que pareca bonita mas esteja fraca;
+4. impedir que uma licao seja aprovada sem passar pela matriz topica e pelas fronteiras.
 
 ---
 
@@ -40,6 +41,17 @@ Regra:
 2. `TASTE` e o que separa uma licao correta de uma licao viva, memoravel e recognoscivel como premium.
 3. ele aparece em escolha de palavra, ritmo, imagem dominante, ausencia de `metaforas soltas` e leveza real para a familia.
 
+## 2.2 Pre-condicoes antes de pontuar
+Antes de atribuir nota:
+1. abrir os 12 topicos oficiais `001-012`;
+2. preencher a matriz topica com `PASS / GAP / BLOCK`;
+3. auditar as fronteiras criticas entre secoes adjacentes;
+4. consultar `008_NORTH_STAR_OPERACIONAL.md`;
+5. so entao pontuar os 5 eixos.
+
+Regra:
+1. rubrica sem matriz topica completa nao vale como fechamento premium.
+
 ---
 
 ## 3) Eixo 1 - Estrutura
@@ -52,7 +64,8 @@ Criticos:
 3. navegacao superior correta;
 4. navegacao inferior correta;
 5. `Conexao da Jornada` presente;
-6. `Formacao do Portador` integra.
+6. `Formacao do Portador` integra;
+7. matriz topica sem buracos estruturais.
 
 Guia de nota:
 1. `0`: estrutura quebrada
@@ -74,7 +87,8 @@ Criticos:
 3. Portador com voz nobre;
 4. transicoes suaves;
 5. fechamento com fio de ouro;
-6. teaser da proxima licao vivo.
+6. teaser da proxima licao vivo;
+7. fronteiras narrativas claras entre `004`, `005`, `008` e `009`.
 
 Guia de nota:
 1. `0`: narrativa quebrada ou confusa
@@ -96,7 +110,8 @@ Criticos:
 3. reconto ajuda a consolidar;
 4. extensoes sao leves e coerentes;
 5. formacao do adulto explica o por que;
-6. nao ha abstracao precoce.
+6. nao ha abstracao precoce;
+7. `A Jornada` e `O Concreto` nao colapsam no mesmo gesto central.
 
 Guia de nota:
 1. `0`: pedagogia falha
@@ -118,7 +133,8 @@ Criticos:
 3. sem excesso de densidade;
 4. preparo realista;
 5. blocos visuais limpos;
-6. sensacao de guia premium.
+6. sensacao de guia premium;
+7. fronteiras entre `Sementes para o Dia` e `Formacao do Portador` claras para o adulto.
 
 Guia de nota:
 1. `0`: friccao alta
@@ -130,28 +146,9 @@ Guia de nota:
 
 ---
 
-## 7) Gates objetivos
-Uma licao nao pode ser considerada pronta se:
-1. Estrutura < 4
-2. Narrativa < 4
-3. Pedagogia < 4
-4. UX do Portador < 4
-5. North Star < 4
-
-Bloqueios automaticos:
-1. secao obrigatoria ausente;
-2. navegacao errada;
-3. encoding quebrado;
-4. guardiao aparecendo no Ritual;
-5. concreto fraco ou abstrato demais;
-6. `Formacao do Portador` pobre ou mutilada.
-7. tom que afasta do North Star.
-
----
-
-## 7.1 Eixo 5 - Alinhamento North Star
+## 7) Eixo 5 - Alinhamento North Star
 Pergunta central:
-1. esta licao permanece fiel ao espirito de Matemática Viva?
+1. esta licao permanece fiel ao espirito de Matematica Viva?
 
 Criticos:
 1. familia no centro;
@@ -167,11 +164,56 @@ Guia de nota:
 3. `2`: parcialmente fiel, mas instavel
 4. `3`: boa intencao, execucao irregular
 5. `4`: fiel e consistente
-6. `5`: plenamente recognoscivel como Matemática Viva premium
+6. `5`: plenamente recognoscivel como Matematica Viva premium
 
 ---
 
-## 7.2 Gate transversal - Taste editorial
+## 8) Gates objetivos
+Uma licao nao pode ser considerada pronta se:
+1. `Cobertura topica` estiver em `BLOCK`;
+2. `Fronteiras topicas` estiverem em `BLOCK`;
+3. Estrutura < 4;
+4. Narrativa < 4;
+5. Pedagogia < 4;
+6. UX do Portador < 4;
+7. North Star < 4.
+
+Bloqueios automaticos:
+1. secao obrigatoria ausente;
+2. navegacao errada;
+3. encoding quebrado;
+4. guardiao aparecendo no Ritual;
+5. concreto fraco ou abstrato demais;
+6. `Formacao do Portador` pobre ou mutilada;
+7. tom que afasta do North Star;
+8. fronteira `Jornada -> O Concreto` colapsada;
+9. fronteira `Ritual -> Jornada` com reveal quebrado.
+
+## 8.1 Gate de cobertura topica
+Pergunta central:
+1. os 12 topicos foram realmente auditados e fechados?
+
+Leitura do gate:
+1. `PASS`: matriz `001-012` completa, sem buracos e sem `BLOCK` aberto.
+2. `BLOCK`: topico omitido, topico sem veredito ou `BLOCK` ignorado.
+
+## 8.2 Gate de fronteiras topicas
+Pergunta central:
+1. as secoes vizinhas cumprem papeis diferentes e bem costurados?
+
+Criticos:
+1. `004 -> 005`;
+2. `005 -> 006`;
+3. `006 -> 007`;
+4. `008 -> 009`;
+5. `009 -> 010`;
+6. `010 -> 011`.
+
+Leitura do gate:
+1. `PASS`: as fronteiras obrigatorias estao nitidas e a progressao da licao respira.
+2. `BLOCK`: duas secoes adjacentes fazem quase o mesmo trabalho, ou uma invade a funcao da outra.
+
+## 8.3 Gate transversal - Taste editorial
 Pergunta central:
 1. entre as versoes tecnicamente corretas, esta e a mais viva, clara e leve?
 
@@ -190,31 +232,39 @@ Leitura do gate:
 
 ---
 
-## 8) Leitura do resultado
+## 9) Leitura do resultado
 
 ### PASS Estrutural
-1. nenhum bloqueio automatico;
-2. eixo Estrutura >= 4.
+1. `Cobertura topica` em `PASS`;
+2. `Fronteiras topicas` em `PASS`;
+3. nenhum bloqueio automatico;
+4. eixo Estrutura >= 4.
 
 ### PASS Premium
-1. todos os 5 eixos >= 4;
-2. North Star >= 4;
-3. `Gate transversal - Taste editorial` em `PASS`;
-4. nenhuma falha critica;
-5. sensacao geral de produto premium.
+1. `Cobertura topica` em `PASS`;
+2. `Fronteiras topicas` em `PASS`;
+3. todos os 5 eixos >= 4;
+4. North Star >= 4;
+5. `Gate transversal - Taste editorial` em `PASS`;
+6. nenhuma falha critica;
+7. sensacao geral de produto premium.
 
 ### BLOCK
 1. qualquer bloqueio automatico;
-2. qualquer eixo abaixo de 4;
-3. risco real de uso confuso por familia;
-4. licao fiel na forma, mas infiel ao North Star.
+2. `Cobertura topica` em `BLOCK`;
+3. `Fronteiras topicas` em `BLOCK`;
+4. qualquer eixo abaixo de 4;
+5. risco real de uso confuso por familia;
+6. licao fiel na forma, mas infiel ao North Star.
 
 ---
 
-## 9) Formato de avaliacao por licao
+## 10) Formato de avaliacao por licao
 
 ```md
 ## MV-S-XXX - [Titulo]
+- Cobertura topica: PASS / BLOCK
+- Fronteiras topicas: PASS / BLOCK
 - Estrutura: X/5
 - Narrativa: X/5
 - Pedagogia: X/5
@@ -227,13 +277,14 @@ Leitura do gate:
 
 ---
 
-## 10) Regra de uso da rubrica
+## 11) Regra de uso da rubrica
 Esta rubrica nao substitui o julgamento editorial.
 
 Ela existe para:
 1. disciplinar o julgamento;
 2. impedir autoengano;
-3. sustentar escala com padrao.
+3. sustentar escala com padrao;
+4. impedir revisao "por sensacao geral" sem topicos e fronteiras.
 
 Se uma licao "parece boa", mas a rubrica nao fecha:
 1. a licao ainda nao esta pronta.

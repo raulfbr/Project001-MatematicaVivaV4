@@ -17,6 +17,7 @@ estrutura:
     - {arquivo: origem_guardioes.yaml, desc: "Nevasca canonizada (SSOT Bernardo)"}
     - {arquivo: padroes_narrativos.yaml, desc: "Regras narração (YAML Lean)"}
     - {arquivo: curriculo_espiral.yaml, desc: "Progressão espiral K-12 (Bruner)"}
+    - {arquivo: rei_e_reino.yaml, desc: "O Rei, promessas do Rei, aparições no currículo — SSOT do motivo narrativo"}
   extensoes:
     - {arquivo: evolucao_guardioes.yaml, desc: "Guardiões por ciclo K12"}
     - {arquivo: artefatos.yaml, desc: "6 objetos simbólicos rituais"}
@@ -58,6 +59,7 @@ mapa_ssot:
     locais: {dono: [5 Locais sensoriais], linhas: ~76}
     artefatos: {dono: [6 Artefatos + Rituais transição], linhas: ~219}
     padroes_narrativos: {dono: [Regras narração, Tom, Stage Directions], linhas: ~90}
+    rei_e_reino: {dono: [O Rei, Promessas do Rei, Aparições no currículo, Regras de uso], linhas: ~90}
   bmad:
     orchestrator: {path: .bmad/orchestrator.yaml, dono: [Modos, Vetos, Comandos]}
     triade: {path: .bmad/expansion-packs/matematica-viva/triade.yaml, dono: [CM/CPA/TGTB, Ciclos CPA]}
@@ -71,6 +73,7 @@ referencias_cruzadas:
   guardioes.yaml: {ref_por: [locais, climas, origem, padroes]}
   north_star.yaml: {ref_por: [TODOS]}
   CURRICULOS_MESTRE: {ref_por: [workflows], principio: "Não duplicar conteúdo"}
+  rei_e_reino.yaml: {ref_por: [MV-S-001 (Fio da Jornada), curriculos_mestre (hooks), qualquer lição com motivo Rei]}
 
 # CHECKLIST REVISÃO
 checklist: [Sintaxe YAML válida?, SSOT respeitado?, YAML Lean aplicado?, North Star alinhado?]

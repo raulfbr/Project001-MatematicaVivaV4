@@ -41,7 +41,7 @@ Conclusao:
 
 ### Altos
 1. varios topicos nao distinguiam bem subtopicos minimos de meras sugestoes editoriais.
-2. `Momento de Conexao` precisava proteger mais claramente fallback pratico e veto a abstracao precoce.
+2. `O Concreto` precisava proteger mais claramente fallback pratico e veto a abstracao precoce.
 3. `Ritual de Entrada` precisava explicitar melhor o contrato de reveal: local no Ritual, guardiao na Jornada.
 4. `Header Superior` e `Navegacao Inferior` precisavam declarar a coerencia mutua como criterio objetivo.
 
@@ -63,7 +63,7 @@ Conclusao:
    h. BLOCK estrutural;
    i. ambiguidades resolvidas;
    j. prompt operacional mais executavel.
-2. `Momento de Conexao` agora fixa objetivo, acao concreta, fallback e ponte para `Narramos Juntos`.
+2. `O Concreto` agora fixa objetivo, acao concreta, fallback e ponte para `Narramos Juntos`.
 3. `Formacao do Portador` agora fixa `Estrategia do Mestre` como abertura obrigatoria e deixa claros os blocos premium minimos.
 4. `Conexao da Jornada` agora fica explicitamente tratada como secao canonica obrigatoria e gate estrutural.
 5. `Ritual de Entrada` e `A Jornada` agora registram com mais rigor a separacao de reveal entre local e guardiao.

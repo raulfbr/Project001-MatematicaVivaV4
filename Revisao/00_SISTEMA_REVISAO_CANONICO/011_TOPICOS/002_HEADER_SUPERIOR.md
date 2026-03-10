@@ -63,5 +63,12 @@
 3. o header superior e obrigatorio mesmo quando o footer ja existe.
 4. a tag HTML pode variar, mas a topologia de 3 zonas nao.
 
+## Checklist de revisao
+1. existem 3 zonas claras: anterior, selo `Sementes` e proxima?
+2. os nomes e arquivos das licoes adjacentes estao corretos?
+3. o centro permanece recognoscivel e estavel no topo?
+4. o header superior conversa com a navegacao inferior sem divergencia?
+5. o topo evita virar um `Voltar` generico ou um bloco assimetrico demais?
+
 ## Prompt operacional para IA
 `Revise o Header Superior tomando MV-S-003 como referencia visual: exija 3 zonas, selo Sementes central, licao anterior a esquerda e proxima licao a direita; trate genericidade ou erro de navegacao como bloqueio.`

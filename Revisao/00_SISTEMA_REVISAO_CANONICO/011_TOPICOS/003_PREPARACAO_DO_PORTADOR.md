@@ -38,16 +38,19 @@
 4. `materials-box` deve separar `Essencial` de `Substituicoes caseiras` e, quando fizer sentido, `Se tiver` ou `Plano B`.
 5. a secao deve ser escaneavel no celular; evitar blocos longos, excesso de inline style e `<br>` usado como mecanismo principal de layout.
 6. a nomenclatura visual e a ordem dos subtopicos devem permanecer estaveis entre licoes adjacentes.
+7. `Fio da Jornada` aqui e orientacao inicial do adulto; nao deve competir com `009_CONEXAO_DA_JORNADA.md`, que faz o fecho e o teaser final.
 
 ## Contrato de conteudo por subtopico
 1. `Foco da licao`
    a. deve dizer em uma linha o conceito matematico vivo da licao;
-   b. precisa dizer ao Portador o que observar na crianca;
-   c. deve soar como orientacao serena, nao titulo burocratico.
+   b. precisa deixar claro qual enredo governa a experiencia de hoje;
+   c. deve dizer ao Portador o que observar na crianca;
+   d. deve soar como orientacao serena, nao titulo burocratico.
 2. `Fio da jornada`
    a. precisa ligar a licao atual ao que veio antes;
    b. quando natural, deve insinuar o proximo passo do ciclo;
-   c. serve para o adulto perceber que nao esta conduzindo episodios soltos.
+   c. serve para o adulto perceber que nao esta conduzindo episodios soltos;
+   d. deve orientar antes da licao, nao repetir literalmente o texto da `Conexao da Jornada`.
 3. `Dica do coracao`
    a. regula a postura emocional do adulto;
    b. deve substituir pressao por presenca;
@@ -71,8 +74,12 @@
       i. por que funciona;
       ii. acao de hoje;
       iii. eco na vida ou no Reino;
+      iv. continuidade possivel para alem desta pagina.
    d. deve ajudar tanto o aprendizado da crianca quanto a confianca do Portador;
-   e. pode preparar uma futura extensao premium narrada, mas nao substitui a presenca do adulto.
+   e. nao e uma sexta atividade da mesma licao; e uma estrategia formativa mais funda, ligada a atencao, relacao, linguagem, rotina ou postura do aprender;
+   f. se a ideia for apenas `mais uma atividade ligada ao tema de hoje`, ela pertence em `010_SEMENTES_PARA_O_DIA.md`;
+   g. pode atravessar duas ou mais licoes quando isso fortalecer a casa, o vinculo e a aprendizagem;
+   h. pode preparar uma futura extensao premium narrada, mas nao substitui a presenca do adulto.
 8. `Nota de graca`
    a. deve desarmar culpa e perfeccionismo;
    b. precisa restaurar o adulto sem banalizar a licao;
@@ -110,9 +117,18 @@
 
 ## Ambiguidades resolvidas
 1. `protocolo` legado foi absorvido por `Segredo do Maravilhamento`; evitar manter os dois como secoes paralelas.
-2. `Estrategia do Mestre` pode aparecer aqui em formato breve e acionavel; a Formacao do Portador pode aprofundar depois.
+2. `Estrategia do Mestre` pode aparecer aqui em formato breve e acionavel; `011_FORMACAO_DO_PORTADOR.md` pode aprofundar depois.
 3. uma futura experiencia premium de narracao guiada com imagem fixa pode complementar a licao, mas nao substitui o Portador da Tocha nesta etapa.
 4. esta secao e para o adulto, mas a escrita ainda precisa carregar beleza, Reino e promessa.
+5. `Fio da Jornada` orienta o adulto no inicio; `Conexao da Jornada` fecha a licao no fim. Os dois podem coexistir, mas com funcoes e copys diferentes.
+6. se o adulto terminar esta secao sem saber `o que esta sendo trabalhado hoje`, `qual historia governa a licao` e `qual atitude deve levar para a mesa`, a Preparacao falhou.
+
+## Checklist de revisao
+1. foco, fio, dica, materiais, descoberta, segredo, estrategia e nota de graca existem funcionalmente?
+2. os materiais sao realistas e trazem substituicoes suficientes para casa comum?
+3. a `Estrategia do Mestre` e realmente estrategia formativa, e nao apenas atividade extra tematizada?
+4. o tom alivia carga mental e culpa do Portador em vez de aumenta-las?
+5. o adulto termina a secao sabendo o conceito, o enredo, a postura e a acao de hoje?
 
 ## Prompt operacional para IA
-`Revise Preparacao do Portador exigindo foco da licao, fio da jornada, dica do coracao, materiais, descoberta da crianca, segredo do maravilhamento, estrategia do mestre e nota de graca; bloqueie qualquer secao fria, culpabilizante, sem estrategia acionavel ou desconectada do tema matematico vivo da licao.`
+`Revise Preparacao do Portador exigindo foco da licao, fio da jornada, dica do coracao, materiais, descoberta da crianca, segredo do maravilhamento, estrategia do mestre e nota de graca; confirme que o adulto entende o conceito, o enredo, a postura e a acao de hoje. Bloqueie qualquer secao fria, culpabilizante, sem estrategia acionavel ou que confunda Estrategia do Mestre com atividade extra da mesma licao.`

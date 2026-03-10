@@ -3,7 +3,13 @@ Data: 2026-03-06 (America/Sao_Paulo)
 Base imediata: `Revisao/99_HISTORICO_E_TRANSICAO/ESQUELETO_GERAL_PLANO_PROXIMA_SESSAO.md`
 Escopo operacional: `site/sementes/MV-S-000..025`
 Prioridade: critica
-Status: planejamento estruturado; pronto para piloto
+Status: planejamento estruturado; task-base concluida
+
+Nota de fase (estado atual em 2026-03-06):
+1. esta task cumpriu a criacao do sistema base;
+2. a liberacao de piloto registrada abaixo era valida no momento da task, mas deixou de ser a leitura operacional principal;
+3. a fonte viva de status agora e `005_STATUS_REVISAO_SEMENTES.md`;
+4. no estado atual do projeto, o piloto `001-003` segue bloqueado ate o fechamento documental final da pasta `Revisao/`.
 
 ---
 
@@ -18,7 +24,7 @@ Executado:
 
 Estado resultante:
 1. a fase de planejamento deixou de ser conceitual;
-2. o sistema de revisao ja pode ser testado no piloto `001-003`.
+2. o sistema de revisao ficou suficientemente estruturado para habilitar um futuro piloto `001-003`, sujeito ao quadro vivo de status.
 
 ---
 
@@ -70,7 +76,7 @@ Consequencia antes desta rodada:
 Gaps observados nos documentos e HTMLs reais:
 
 1. `Conexao da Jornada` aparece nos HTMLs publicados 000-025 e no template legado, mas nao esta incluida no contrato `T0-T9` atual de `padrao_visual_sementes.md`.
-2. `Momento de Conexao` e o nome alvo, mas a maior parte do acervo ainda usa `O Concreto` / `Atividade Concreta`.
+2. `O Concreto` e o nome alvo, mas a maior parte do acervo ainda usa `O Concreto` / `Atividade Concreta`.
 3. `Hero`, `head`, `body`, `home button` e container geral existem de fato nas licoes, mas ainda nao estao tratados como uma camada documental propria no plano por topicos.
 4. Existem regras transversais demais para ficarem embutidas em arquivos de topico:
    - icones e paleta;
@@ -104,7 +110,7 @@ Para `MV-S-001+`, a estrutura canonica proposta passa a ser:
 4. Preparacao do Portador
 5. Ritual de Entrada
 6. A Jornada
-7. Momento de Conexao
+7. O Concreto
 8. Narramos Juntos
 9. Ritual de Fechamento
 10. Conexao da Jornada
@@ -113,7 +119,7 @@ Para `MV-S-001+`, a estrutura canonica proposta passa a ser:
 13. Navegacao Inferior
 
 ### 4.3 Regras de nomenclatura
-1. Nome alvo da secao: `Momento de Conexao`.
+1. Nome alvo da secao: `O Concreto`.
 2. Alias temporario aceitavel no acervo atual: `O Concreto` / `Atividade Concreta`.
 3. `Conexao da Jornada` volta a ser tratada como secao canonica, nao como detalhe opcional.
 4. `MV-S-000` tera arquivo de excecao propria e nao deve ditar sozinha a regra da licao padrao.
@@ -130,7 +136,7 @@ Para `MV-S-001+`, a estrutura canonica proposta passa a ser:
 Para construir e usar o sistema:
 
 1. `README.md`
-2. `Revisao/RadmeRevisao.md`
+2. `Revisao/README.md`
 3. `Revisao/01_REFERENCIAS_DE_APOIO/padrao_visual_sementes.md`
 4. `Revisao/01_REFERENCIAS_DE_APOIO/topicos_licao_revisao.md`
 5. `Revisao/01_REFERENCIAS_DE_APOIO/framework_estrategia_mestria.md`
@@ -200,7 +206,7 @@ Proposta de arquivos:
 3. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/003_PREPARACAO_DO_PORTADOR.md`
 4. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/004_RITUAL_DE_ENTRADA.md`
 5. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/005_A_JORNADA.md`
-6. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/006_MOMENTO_DE_CONEXAO.md`
+6. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/006_O_CONCRETO.md`
 7. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/007_NARRAMOS_JUNTOS.md`
 8. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/008_RITUAL_DE_FECHAMENTO.md`
 9. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/009_CONEXAO_DA_JORNADA.md`
@@ -301,7 +307,7 @@ Objetivo:
 Entregas:
 1. decidir definitivamente:
    - `Conexao da Jornada` = obrigatoria;
-   - `Momento de Conexao` = nome alvo;
+   - `O Concreto` = nome alvo;
    - `O Concreto` = alias legado;
    - `MV-S-000` = excecao.
 2. definir o indice final dos arquivos.
@@ -504,7 +510,7 @@ Para proteger foco e velocidade, esta fase nao deve:
 3. Risco: cair em refactor estrutural demais e perder urgencia das familias.
    - Mitigacao: separar claramente `sistema de revisao` de `revisao das licoes`.
 
-4. Risco: abrir ambiguidade entre `O Concreto` e `Momento de Conexao`.
+4. Risco: abrir ambiguidade entre `O Concreto` e `O Concreto`.
    - Mitigacao: nome alvo fixado + alias legado aceito temporariamente.
 
 5. Risco: esquecer a excecao de `MV-S-000`.
@@ -560,7 +566,7 @@ Para nao abrir varias frentes ao mesmo tempo:
 10. Criar `003_PREPARACAO_DO_PORTADOR.md`
 11. Criar `004_RITUAL_DE_ENTRADA.md`
 12. Criar `005_A_JORNADA.md`
-13. Criar `006_MOMENTO_DE_CONEXAO.md`
+13. Criar `006_O_CONCRETO.md`
 14. Criar `007_NARRAMOS_JUNTOS.md`
 15. Criar `008_RITUAL_DE_FECHAMENTO.md`
 16. Criar `009_CONEXAO_DA_JORNADA.md`

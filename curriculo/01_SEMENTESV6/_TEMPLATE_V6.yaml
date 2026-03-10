@@ -42,7 +42,7 @@ _meta:
       termo_prioritario: maravilhamento
       evitar_caixa_alta_imperativa: true
       ritual_mostra_local_jornada_mostra_guardiao: true
-      ordem_preferida_blocos: [Ritual de Entrada, A Jornada, Momento de Conexão, Narramos Juntos, Ritual de Fechamento, Sementes para o Dia, Formação do Portador]
+      ordem_preferida_blocos: [Ritual de Entrada, A Jornada, O Concreto, Narramos Juntos, Ritual de Fechamento, Sementes para o Dia, Formação do Portador]
       sementes_do_dia_framework_5: [Exploração, Dramatização, Criação, Narração, Reflexão]
     compatibilidade:
       licao_000_liturgica_sem_objetivo_matematico: true

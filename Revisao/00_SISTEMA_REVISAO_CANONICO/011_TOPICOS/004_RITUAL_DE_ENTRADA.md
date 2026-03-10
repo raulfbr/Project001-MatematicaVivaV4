@@ -20,7 +20,7 @@
 
 ## Contrato tecnico
 1. a secao deve abrir com `scene-card` + `scene-header` proprio do Ritual de Entrada.
-2. os bastidores devem vir em `instruction-box ritual-bastidores-box`.
+2. a preparacao do ambiente deve vir em `instruction-box ritual-bastidores-box` ou classe equivalente da mesma familia visual.
 3. o roteiro do Portador deve vir em um unico `script-persona-block portador-block ritual-portador-block`.
 4. o nome do bloco permanece `Portador da Tocha`; o tom pode aparecer em `script-tone`.
 5. acting cues ficam dentro de `script-text`, em `p.acting-cue`, nunca como caixa paralela.
@@ -29,11 +29,13 @@
 8. o HTML deve permanecer leve e escaneavel: bastidor, monobloco do Portador, card do local e fecho de passagem.
 
 ## Subtopicos canonicos
-### 1. Bastidores do Portador
+### 1. Preparacao do ambiente
 1. diz ao adulto o que ajustar no ambiente antes da fala com a crianca.
 2. deve ser curto, concreto e elegante: luz, objetos, ritmo, seguranca, disposicao da mesa.
 3. quando houver material sensivel, a regra de seguranca entra aqui sem quebrar o tom.
 4. o bastidor prepara o adulto; nao substitui o roteiro falado.
+5. o label recomendado para a familia e `Preparacao`, seguindo a boa intuicao da licao `000`.
+6. `Bastidores do Portador` pode sobreviver como nome interno de revisao, mas nao precisa aparecer como titulo visivel para a familia.
 
 ### 2. Monobloco do Portador
 1. o Portador conduz toda a travessia em uma unica fala nobre, calma e respiravel.
@@ -113,6 +115,7 @@
 1. o Ritual pode insinuar que ha alguem ou algo por perto, desde que a identidade continue inteiramente aberta.
 2. o Bastidor pode carregar regra de seguranca, mas a alma da secao continua no roteiro falado.
 3. o card do local faz parte do Ritual; o card do guardiao pertence a Jornada.
+4. para a familia, o nome preferencial do bloco curto e `Preparacao:`; isso soa mais claro, mais nobre e menos teatral que `Bastidores do Portador`.
 
 ## Checklist de revisao
 1. o adulto consegue preparar o ambiente sem reler cinco vezes?
@@ -122,4 +125,4 @@
 5. o fecho deixa vontade de seguir?
 
 ## Prompt operacional para IA
-`Revise o Ritual de Entrada como portal cerimonial da licao: preserve bastidores curtos, monobloco nobre do Portador, reveal exclusivo do local e um fecho de limiar vivo. Se o guardiao aparecer antes da Jornada, a secao reprova.`
+`Revise o Ritual de Entrada como portal cerimonial da licao: preserve uma Preparacao curta do ambiente, monobloco nobre do Portador, reveal exclusivo do local e um fecho de limiar vivo. Se o guardiao aparecer antes da Jornada, a secao reprova.`

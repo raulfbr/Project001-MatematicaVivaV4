@@ -4,7 +4,7 @@ Esta pasta guarda materiais que explicam de onde o sistema atual nasceu.
 
 ## Conteudo atual
 
-- `ESQUELETO_GERAL_PLANO_PROXIMA_SESSAO.md` = plano original que disparou a construção do sistema canônico.
+- `ESQUELETO_GERAL_PLANO_PROXIMA_SESSAO.md` = plano original que disparou a construcao do sistema atual.
 
 ## Regra de uso
 

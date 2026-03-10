@@ -14,7 +14,7 @@
 1. `002_HEADER_SUPERIOR.md` foi recalibrado com base em `L003`, e as licoes `001-003` agora compartilham a topologia canonica de 3 zonas no topo.
 2. `004_RITUAL_DE_ENTRADA.md` foi recalibrado e agora tem reflexo mais fiel nas licoes `001-003`: bastidor curto, monobloco do Portador, reveal do local e limiar vivo.
 3. `005_A_JORNADA.md` foi recalibrado como coracao narrativo e agora se reflete melhor nas licoes `001-003`, com reveal formal, progressao de cenas, voz propria dos guardioes e ponte mais clara para o concreto.
-4. `006_MOMENTO_DE_CONEXAO.md` esta direcionalmente correto, mas hoje cobre uma realidade mista: `001` usa `Momento de Conexao`, enquanto `002` e `003` ainda usam `O Concreto`.
+4. `006_O_CONCRETO.md` esta direcionalmente correto, mas hoje cobre uma realidade mista: `001` usa `O Concreto`, enquanto `002` e `003` ainda usam `O Concreto`.
 5. `011_FORMACAO_DO_PORTADOR.md` descreve bem o alvo premium, mas as licoes `002` e `003` ainda nao entregam a abertura canonica com `Estrategia do Mestre` dentro da propria secao.
 6. `003_PREPARACAO_DO_PORTADOR.md` foi recalibrado, e as licoes `001-003` agora compartilham uma preparacao mais estavel, com `Fio da Jornada` e `Estrategia do Mestre` no proprio topo da experiencia do Portador.
 
@@ -54,7 +54,7 @@
 4. leitura rapida: o topico esta forte, reconhecivel e mais premium nas tres licoes.
 5. faltando: nada bloqueante neste recorte; os proximos ganhos serao por refinamento de outras secoes.
 
-### 006 - Momento de Conexao
+### 006 - O Concreto
 1. `001`: PASS parcial. usa nome canonico e o nucleo concreto esta forte.
 2. `002`: PARCIAL. usa alias legado `O Concreto`.
 3. `003`: PARCIAL. usa alias legado `O Concreto`.

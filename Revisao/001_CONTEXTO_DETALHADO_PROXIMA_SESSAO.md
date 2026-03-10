@@ -14,10 +14,11 @@ Ele responde:
 1. a frente ativa continua sendo a revisao `HTML-first`;
 2. `MV-S-001` ja recebeu patch dirigido relevante na sessao de `2026-03-07`, mas ainda nao fechou a leitura topica completa e nao pode ser baseline total;
 3. os topicos `001-005` foram os mais consolidados ate aqui; de `006` em diante ainda precisamos refinar o sistema com foco explicito em `TASTE`;
-4. a proxima execucao correta agora e revisar `011_TOPICOS/` a partir de `006` e `012_TRANSVERSAIS/`, eliminando drift e deixando o sistema mais usavel;
+4. houve uma passada adicional de refinamento em `006-011` e `012_TRANSVERSAIS/`, deixando `TASTE` mais explicito no sistema e reduzindo linguagem de auditoria exposta na `MV-S-002`;
 5. `MV-S-002` ja pode entrar em revisao dirigida, apoiada por `018_TASK_ROBUSTA_REVISAO_DIRIGIDA_L002.md` e pelo log `logs/2026-03-07-09h46-revisao002.md`, sem assumir `L001` como modelo total;
 6. `MV-S-002` e `MV-S-003` continuam fora do lote ate a entrada controlada da `002` confirmar o metodo;
 7. o nome fisico `00_SISTEMA_REVISAO_CANONICO` foi mantido por estabilidade, mas ainda estamos fechando esse sistema.
+8. a proxima sessao ja nao comeca do zero: ela comeca com revisao manual da Familia Rodrigues sobre a `MV-S-002`.
 
 ## O que ja foi decidido
 1. nao entrar agora em Next, refactor amplo de app ou expansao de pipeline;
@@ -61,26 +62,25 @@ Ele responde:
 7. `Revisao/01_REFERENCIAS_DE_APOIO/` = apoio forte, mas nao fonte primaria.
 
 ## Metodo da proxima sessao
-Primeiro vamos consolidar o sistema com o aprendizado da `MV-S-001`, sem perder o foco em `TASTE`.
+Primeiro vamos validar manualmente o que a ultima passada de `TASTE` realmente sustentou na `MV-S-002`.
 
 Ordem:
-1. abrir `005_STATUS_REVISAO_SEMENTES.md` e confirmar a leitura do estado atual;
-2. revisar `011_TOPICOS/` a partir de `006` e `012_TRANSVERSAIS/` com o norte de escrita refinado e foco explicito em `TASTE`;
-3. abrir `018_TASK_ROBUSTA_REVISAO_DIRIGIDA_L002.md`;
-4. abrir `logs/2026-03-07-09h46-revisao002.md` como pre-diagnostico da `MV-S-002`;
-5. reler `site/sementes/MV-S-002_AS_PEDRAS_DA_FORTALEZA.html` como experiencia unica;
-6. executar a revisao da `L002` de forma controlada;
+1. abrir `005_STATUS_REVISAO_SEMENTES.md` e confirmar o registro da passada mais recente;
+2. abrir `logs/2026-03-08_CONVERSA_ENTENDIMENTO_PROJETO_REVISAO_TASTE_L002.md`;
+3. reler `site/sementes/MV-S-002_AS_PEDRAS_DA_FORTALEZA.html` como experiencia unica;
+4. realizar revisao manual da Familia Rodrigues;
+5. registrar o que a leitura humana confirmou, tensionou ou recusou;
+6. so depois decidir se ainda falta nova passada de `TASTE` ou se a `L002` pode subir de status;
 7. devolver para o sistema o que a `L002` revelar sobre `TASTE`, realidade de uso e feedback de familias.
 
 ## Primeira acao concreta da proxima sessao
 1. abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`;
-2. abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/003_PROTOCOLO_REVISAO_POR_LICAO.md`;
-3. revisar `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/` a partir de `006` e `012_TRANSVERSAIS/` com lente explicita de `TASTE`;
-4. abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/018_TASK_ROBUSTA_REVISAO_DIRIGIDA_L002.md`;
-5. abrir `logs/2026-03-07-09h46-revisao002.md`;
-6. reler `site/sementes/MV-S-002_AS_PEDRAS_DA_FORTALEZA.html` como experiencia unica;
-7. entrar em patch de `MV-S-002` de forma controlada;
-8. registrar o que precisa voltar para `L001` e para o sistema.
+2. abrir `logs/2026-03-08_CONVERSA_ENTENDIMENTO_PROJETO_REVISAO_TASTE_L002.md`;
+3. reler `site/sementes/MV-S-002_AS_PEDRAS_DA_FORTALEZA.html` como experiencia unica;
+4. fazer a revisao manual da Familia Rodrigues;
+5. registrar o que foi confirmado e o que ainda incomoda;
+6. so depois entrar em patch de `MV-S-002`, se necessario;
+7. registrar o que precisa voltar para `L001` e para o sistema.
 
 ## Definicao de sucesso da proxima sessao
 1. qualquer pessoa consegue reabrir a pasta e saber o que ler primeiro;

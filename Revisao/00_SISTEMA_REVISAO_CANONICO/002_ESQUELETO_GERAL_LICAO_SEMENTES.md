@@ -26,7 +26,7 @@ Escopo:
 1. ordem da experiencia da licao;
 2. blocos obrigatorios;
 3. blocos recomendados;
-4. aliases legados aceitos temporariamente;
+4. nomes legados ainda encontrados no acervo;
 5. relacao entre secoes.
 
 Nao-escopo:
@@ -48,7 +48,7 @@ Toda licao `MV-S-001+` deve seguir esta ordem:
 4. Preparacao do Portador
 5. Ritual de Entrada
 6. A Jornada
-7. Momento de Conexao
+7. O Concreto
 8. Narramos Juntos
 9. Ritual de Fechamento
 10. Conexao da Jornada
@@ -72,7 +72,7 @@ Regra de ouro:
 | B3 | Preparacao do Portador | Obrigatorio | Bastidores e leitura do adulto |
 | B4 | Ritual de Entrada | Obrigatorio | Transicao para o Reino e local |
 | B5 | A Jornada | Obrigatorio | Encontro com o guardiao e nucleo narrativo |
-| B6 | Momento de Conexao | Obrigatorio | Nucleo concreto da licao |
+| B6 | O Concreto | Obrigatorio | Nucleo concreto da licao |
 | B7 | Narramos Juntos | Obrigatorio | Reconto, escuta e consolidacao viva |
 | B8 | Ritual de Fechamento | Obrigatorio | Volta com dignidade e fio de ouro |
 | B9 | Conexao da Jornada | Obrigatorio | Gancho para a licao seguinte |
@@ -88,21 +88,20 @@ Titulos alvo das secoes:
 1. `Preparacao do Portador`
 2. `Ritual de Entrada`
 3. `A Jornada`
-4. `Momento de Conexao`
+4. `O Concreto`
 5. `Narramos Juntos`
 6. `Ritual de Fechamento`
 7. `Conexao da Jornada`
 8. `Sementes para o Dia`
 9. `Formacao do Portador`
 
-Alias legados aceitos temporariamente:
+Nomes legados ainda encontrados no acervo:
 
-1. `O Concreto` -> alias de `Momento de Conexao`
-2. `Atividade Concreta` -> alias interno legado de `Momento de Conexao`
+1. `Atividade Concreta` -> nome antigo que deve convergir para `O Concreto`
 
 Regra:
-1. em documentacao nova, usar apenas `Momento de Conexao`;
-2. no acervo existente, aceitar `O Concreto` durante a migracao desde que a funcao da secao esteja correta.
+1. em documentacao nova, usar apenas `O Concreto`;
+2. no acervo existente, corrigir para `O Concreto` sempre que a secao for revisada.
 
 ---
 
@@ -212,7 +211,7 @@ Nao pode:
 Referencia:
 1. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/005_A_JORNADA.md`
 
-### B6 - Momento de Conexao
+### B6 - O Concreto
 Funcao:
 1. trazer o conceito para as maos, corpo, objetos e experiencia concreta.
 
@@ -227,7 +226,7 @@ Nao pode:
 2. trocar o concreto por explicacao abstrata.
 
 Referencia:
-1. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/006_MOMENTO_DE_CONEXAO.md`
+1. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/006_O_CONCRETO.md`
 
 ### B7 - Narramos Juntos
 Funcao:
@@ -362,7 +361,7 @@ BLOCK quando:
 1. falta bloco obrigatorio;
 2. `Conexao da Jornada` some;
 3. `Formacao do Portador` esta mutilada;
-4. `Momento de Conexao` nao existe funcionalmente.
+4. `O Concreto` nao existe funcionalmente.
 
 ### Gate Narrativo
 PASS quando:
@@ -413,7 +412,7 @@ Topicos:
 3. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/003_PREPARACAO_DO_PORTADOR.md`
 4. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/004_RITUAL_DE_ENTRADA.md`
 5. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/005_A_JORNADA.md`
-6. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/006_MOMENTO_DE_CONEXAO.md`
+6. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/006_O_CONCRETO.md`
 7. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/007_NARRAMOS_JUNTOS.md`
 8. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/008_RITUAL_DE_FECHAMENTO.md`
 9. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/009_CONEXAO_DA_JORNADA.md`

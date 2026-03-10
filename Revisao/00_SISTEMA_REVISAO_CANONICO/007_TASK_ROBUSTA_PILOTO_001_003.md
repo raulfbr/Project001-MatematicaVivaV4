@@ -4,6 +4,12 @@ Escopo: `MV-S-001`, `MV-S-002`, `MV-S-003`
 Regra desta fase: nao editar licoes antes do precheck estrutural completo
 Status: pronto para execucao futura
 
+Nota de fase (estado atual em 2026-03-06):
+1. esta task estrutura a execucao futura do piloto;
+2. ela nao libera, por si so, o inicio do piloto;
+3. a fonte viva de status agora e `005_STATUS_REVISAO_SEMENTES.md`;
+4. no estado atual do projeto, o piloto `001-003` permanece bloqueado ate o fechamento documental final da pasta `Revisao/`.
+
 ---
 
 ## 0) Decisao desta task
@@ -48,7 +54,7 @@ Pergunta central:
 
 ## 4) Fontes obrigatorias
 1. `LORE/north_star.yaml`
-2. `Revisao/RadmeRevisao.md`
+2. `Revisao/README.md`
 3. `Revisao/00_SISTEMA_REVISAO_CANONICO/001_TASK_ROBUSTA_SISTEMA_REVISAO_HTML_FIRST.md`
 4. `Revisao/00_SISTEMA_REVISAO_CANONICO/006_TASK_ROBUSTA_ALINHAMENTO_NORTH_STAR_NA_REVISAO.md`
 5. `Revisao/00_SISTEMA_REVISAO_CANONICO/002_ESQUELETO_GERAL_LICAO_SEMENTES.md`
@@ -71,7 +77,7 @@ Pergunta central:
 ### MV-S-001
 Funcao no piloto:
 1. validar licao padrao mais precoce;
-2. testar nomenclatura alvo `Momento de Conexao`;
+2. testar nomenclatura alvo `O Concreto`;
 3. testar transicao Portal -> licao padrao.
 
 ### MV-S-002
@@ -109,7 +115,7 @@ Checklist:
 1. `002_ESQUELETO_GERAL_LICAO_SEMENTES.md` presente e estavel?
 2. `003_PROTOCOLO_REVISAO_POR_LICAO.md` cobre a ordem real da revisao?
 3. `004_RUBRICA_PREMIUM_REVISAO.md` tem nota e veto suficientes?
-4. `008_NORTH_STAR_OPERACIONAL.md` esta acionavel?
+4. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/008_NORTH_STAR_OPERACIONAL.md` esta acionavel?
 5. todos os 12 topicos existem?
 6. todas as transversais necessarias existem?
 

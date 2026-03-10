@@ -49,7 +49,7 @@ Este documento define **TODAS** as seções e elementos obrigatórios de uma li�
 - [ ] Script Block com Tom: `(Tom: [Adj] — descrição)`
 - [ ] Guardião: Card UMA VEZ por lição
 
-### O Concreto / Momento de Conexão
+### O Concreto
 - [ ] H2/Scene: `ph-wall duotone-terra` ou `ph-cube`
 - [ ] Tom sugestivo (não imperativo)
 - [ ] Objetivo claro + Sugestões
@@ -380,7 +380,7 @@ Este documento define **TODAS** as seções e elementos obrigatórios de uma li�
 
 ---
 
-## 🧱 5. O Concreto / Momento de Conexão
+## 🧱 5. O Concreto
 
 ### H2 + Scene Header
 ```html

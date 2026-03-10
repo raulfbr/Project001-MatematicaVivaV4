@@ -17,7 +17,7 @@ Criar um esqueleto único e canônico para revisão progressiva de lições, com
 3. Preparação do Portador
 4. Ritual de Entrada
 5. A Jornada
-6. Momento de Conexão
+6. O Concreto
 7. Narramos Juntos
 8. Ritual de Fechamento
 9. Conexão da Jornada

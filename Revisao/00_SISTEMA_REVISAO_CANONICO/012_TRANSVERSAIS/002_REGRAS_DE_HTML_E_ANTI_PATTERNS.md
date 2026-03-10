@@ -16,11 +16,14 @@
 4. quebrar ordem das secoes;
 5. duplicar scripts ou assets;
 6. remover wrappers essenciais de boxes ou cards.
+7. usar `div onclick` quando um link semantico resolver melhor.
+8. manter `style=` inline como muleta quando ja existir classe canonica equivalente no sistema.
 
 ## PASS
 1. markup legivel;
 2. blocos coerentes;
 3. estrutura facil de auditar.
+4. sem gambiarra semantica para maquiar decisao editorial ou visual.
 
 ## FAIL
 1. remendo rapido que piora consistencia;

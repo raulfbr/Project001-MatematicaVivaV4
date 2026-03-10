@@ -375,7 +375,7 @@ Toda lição Sementes (001–025) deve seguir esta ordem mínima:
 2. **Preparação do Portador**
 3. **Ritual de Entrada**
 4. **A Jornada (Guardiões)**
-5. **Momento de Conexão** (atividade concreta fluida)
+5. **O Concreto** (atividade concreta fluida)
 6. **Narramos Juntos**
 7. **Ritual de Fechamento**
 8. **🌱 Sementes para o Dia** (recomendado no padrão atual)
@@ -394,7 +394,7 @@ Use os IDs abaixo para revisão técnica e editorial. Cada lição deve mapear 1
 | T1 | Preparação do Portador | foco da lição, dica do coração, materiais, filho descobre, protocolo, nota de graça | Obrigatório |
 | T2 | Ritual de Entrada | bastidores, Portador em monobloco, card do local com label | Obrigatório |
 | T3 | A Jornada | H2 da jornada, cenas narrativas, card do guardião, instrução de ação, fala/persona | Obrigatório |
-| T4 | Momento de Conexão | objetivo concreto, instrução prática, adaptação de acesso | Obrigatório |
+| T4 | O Concreto | objetivo concreto, instrução prática, adaptação de acesso | Obrigatório |
 | T5 | Narramos Juntos | instrução de escuta, pergunta principal, perguntas do coração | Obrigatório |
 | T6 | Ritual de Fechamento | fala final, fio de ouro, transição de volta | Obrigatório |
 | T7 | Sementes para o Dia | introdução, 5 atividades (Exploração/Dramatização/Criação/Narração/Reflexão), frase final | Recomendado |
@@ -407,15 +407,15 @@ Para evitar variação desnecessária entre lições, usar estes títulos exatam
 1. `Preparação do Portador`
 2. `Ritual de Entrada`
 3. `A Jornada`
-4. `Momento de Conexão`
+4. `O Concreto`
 5. `Narramos Juntos`
 6. `Ritual de Fechamento`
 7. `Sementes para o Dia`
 8. `Formação do Portador`
 
 Regra de migração:
-* Legado aceitável temporário: `O Concreto` como alias de `Momento de Conexão`.
-* Padrão alvo de todas as lições: `Momento de Conexão`.
+* Legado aceitável temporário: `O Concreto` como alias de `O Concreto`.
+* Padrão alvo de todas as lições: `O Concreto`.
 
 ### 18.3 Regra de Completude por Lição
 Critério objetivo para aprovar estrutura:
@@ -426,8 +426,8 @@ Critério objetivo para aprovar estrutura:
 
 ---
 
-## 19. Atividade Concreta: Momento de Conexão 🧱
-A "Atividade Concreta" foi renomeada para **Momento de Conexão** na Lição 000, para refletir seu objetivo.
+## 19. Atividade Concreta: O Concreto 🧱
+A "Atividade Concreta" foi renomeada para **O Concreto** na Lição 000, para refletir seu objetivo.
 
 ### 19.1 Ícones de Atividades (Sementes do Dia)
 Para a seção "Sementes do Dia", usamos ícones que representam o **tipo de interação**:
@@ -514,7 +514,7 @@ Antes de dizer "Terminei", pergunte-se:
 
 1.  **Consistência de Ícones:** O ícone "Para a Família" virou `ph-graduation-cap`? O ícone Sementes Box é único?
 2.  **CPA Review:** Estou sugerindo algo abstrato (2+2=4) no ciclo Sementes (4-6 anos)? Se sim, **VETO**. Deve ser concreto (duas pedras + duas pedras).
-3.  **Fluidez:** O texto do "Momento de Conexão" parece uma ordem militar ("Faça isso") ou um convite gentil ("Convide a criança...")?
+3.  **Fluidez:** O texto do "O Concreto" parece uma ordem militar ("Faça isso") ou um convite gentil ("Convide a criança...")?
 4.  **Estética:** As boxes (.cm-box, .bruner-box) estão limpas, sem `<br>` quebrados, com parágrafos elegantes?
 
 > **Lembrete Final:** Você não está apenas editando código HTML. Você está construindo a catedral onde memórias entre pai e filho serão forjadas. Trabalhe com reverência.

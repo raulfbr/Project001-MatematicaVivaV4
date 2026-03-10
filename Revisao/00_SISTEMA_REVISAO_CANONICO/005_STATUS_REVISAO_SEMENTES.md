@@ -117,6 +117,28 @@ Proximo passo:
 4. a licao ainda nao recebeu veredito final `PASS ESTRUTURAL` ou `PASS PREMIUM`;
 5. antes de fechar a `L002`, ainda precisamos reler o todo com `T00-T13` e confrontar a pagina com validacao humana real de familias.
 
+## 3.6 Registro desta passada - refinamento de `TASTE` e comparacao de contexto
+1. `011_TOPICOS/006-011` receberam passada fina adicional para deixar `TASTE` mais operacional, especialmente em:
+   a. convocacao viva para agir em `O Concreto`;
+   b. escuta real e reconto compartilhado em `Narramos Juntos`;
+   c. pouso domestico no `Ritual de Fechamento`;
+   d. alivio explicito em `Sementes para o Dia`;
+   e. diferenca entre linguagem de auditoria e linguagem visivel para a familia.
+2. `012_TRANSVERSAIS/` recebeu reforco de regra para:
+   a. tratar `div onclick` e `style=` inline como anti-pattern quando houver alternativa canonica;
+   b. nomear que `TASTE` vive tambem em iconografia, HTML e micro-escolhas de frase;
+   c. considerar familia com mais de uma crianca no gate North Star.
+3. a `MV-S-002` recebeu refinamento residual de `TASTE`:
+   a. hero mais vivo;
+   b. pergunta de entrada mais natural;
+   c. icone canonico em `Narramos Juntos`;
+   d. alt text mais digno;
+   e. `Conexao TGTB` explicita na formacao;
+   f. reducao de linguagem de auditoria exposta para a familia em `O Concreto`.
+4. foi criado um registro pedagogico em `logs/2026-03-08_CONVERSA_ENTENDIMENTO_PROJETO_REVISAO_TASTE_L002.md`, comparando o projeto real com `logs/2026-03-08-PRD-LOVABLE`.
+5. veredito honesto desta passada: `TASTE` avancou bem, mas a validacao ainda nao pode ser considerada fechada sem leitura manual humana.
+6. proxima sessao: revisao manual da Familia Rodrigues sobre a `MV-S-002` e sobre a experiencia real da licao.
+
 ---
 
 ## 4) Ordem de execucao aprovada
@@ -140,6 +162,7 @@ Prioridade maxima:
 5. revisar status, handoff e indices a partir do que o teste dirigido mostrou
 6. revisar `MV-S-002` em paralelo controlado para calibrar `TASTE` e realidade de uso
 7. so depois decidir a entrada de `MV-S-002` como licao estabilizada e de `MV-S-003`
+8. na proxima sessao, realizar revisao manual da Familia Rodrigues antes de qualquer veredito final da `L002`
 
 Prioridade alta:
 1. registrar findings de cobertura dos topicos

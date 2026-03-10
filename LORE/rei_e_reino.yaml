@@ -1,0 +1,93 @@
+# REI E REINO CONTADO — SSOT do Motivo Narrativo
+# YAML Lean v1.0 | 2026-03-07
+# Fonte única de verdade para o Rei, o Reino e as Promessas do Rei.
+# Qualquer HTML, script ou documento que use "o Rei" ou "promessa do Rei"
+# deve consultar este arquivo — nunca definir por conta própria.
+
+id: rei_e_reino
+versao: "1.0"
+tipo: lore_motivo
+criado_em: 2026-03-07
+ref_north_star: LORE/north_star.yaml
+ref_guardioes: LORE/guardioes.yaml
+ref_index: LORE/index.yaml
+
+# O REI — Definição Canônica
+rei:
+  nome_canonico: O Rei
+  natureza: autor_invisivel
+  status_narrativo: presente_mas_nunca_em_cena
+  modelo_literario: |
+    Inspirado em Eru Ilúvatar (Tolkien) e no Proprietário do Jardim (Lewis).
+    O Rei não é personagem com falas ou aparições — é a presença que sustenta
+    o Reino. Sua autoridade é sentida nas coisas, não declarada em discurso.
+  desc: |
+    No universo de Matemática Viva, o Rei é o autor de tudo que cresce no
+    Reino Contado. Ele plantou as leis que governam números, formas, tempo
+    e padrões. Os Guardiões são seus administradores — servem o que ele
+    já colocou no mundo. As crianças (Herdeiros) são convidadas a descobrir
+    o que ele já escondeu à espera delas.
+  o_que_nao_e:
+    - personagem com fala direta nas lições
+    - conceito teológico a ser explicado ao Portador
+    - metáfora decorativa intercambiável com qualquer outro substantivo
+    - personagem que aparece visualmente ou tem card
+
+# AS PROMESSAS DO REI — Definição Canônica
+promessas_do_rei:
+  definicao: |
+    "Promessa do Rei" é a expressão usada no ciclo Sementes para nomear
+    qualquer objeto, padrão ou quantidade que contém em si um destino
+    ainda não revelado. A semente carrega a promessa da árvore. O número
+    carrega a promessa da relação que ainda vai aparecer.
+  origem_narrativa: MV-S-001 (primeira ocorrência canônica no ciclo)
+  tom: reverência sem explicação — o Portador conduz com a mesma reverência de Celeste
+  regra_critica: |
+    O Portador não precisa explicar "quem é o Rei" à criança.
+    A criança entra na reverência pelo clima, não pela definição.
+    A âncora existe SOMENTE no Fio da Jornada da L001 — para o adulto.
+
+# APARIÇÕES NO CURRÍCULO (onde "o Rei" ou "promessa do Rei" aparecem)
+aparicoes_curriculo:
+  - {licao: MV-S-000, contexto: "pistas que o Rei deixou escondidas (fala de Melquior sobre Celeste)", tipo: ambiencia}
+  - {licao: MV-S-001, contexto: "três pequenas promessas do Rei (hero-quote + Celeste cenas 1 e 3)", tipo: motivo_central, ancora: "Fio da Jornada da Preparação"}
+  - {licao: MV-S-006, contexto: "O Desenho do Rei (hook curricular)", tipo: hook}
+  - {licao: MV-S-018, contexto: "a coroação da Dúzia pelo Grande Rei (hook curricular)", tipo: hook}
+  - {licao: MV-S-031, contexto: "Onde o Rei assinou com Círculos nas flores (hook curricular)", tipo: hook}
+  - {licao: MV-S-070, contexto: "O Mosaico do Rei (hook curricular)", tipo: hook}
+  - {licao: MV-S-078, contexto: "O Bordado do Rei (hook curricular)", tipo: hook}
+  - {licao: MV-S-100, contexto: "O Palmo do Rei (hook curricular)", tipo: hook}
+  - {licao: MV-S-107, contexto: "a perfeição da esfera que o Grande Rei desenhou (hook curricular)", tipo: hook}
+  - {licao: MV-S-113, contexto: "a composição completa que o Rei teceu no jardim (hook curricular)", tipo: hook}
+
+# REGRAS DE USO PARA REDATORES E IA
+regras_de_uso:
+  - {regra: "Nunca apresentar o Rei visualmente — sem card, sem imagem, sem avatar"}
+  - {regra: "Nunca colocar falas diretas do Rei nos scripts das lições"}
+  - {regra: "Não criar novo sinônimo para o Rei sem deliberação registrada aqui"}
+  - {regra: "Ao usar promessa do Rei em nova lição, verificar se está em aparicoes_curriculo — se não, adicionar aqui"}
+  - {regra: "A âncora de definição para o Portador existe UMA VEZ: no Fio da Jornada da MV-S-001"}
+  - {regra: "Em lições L002+, o Portador já carrega o entendimento — não re-explicar"}
+
+# RELAÇÃO COM OS GUARDIÕES
+relacao_guardioes: |
+  Os Guardiões são administradores do que o Rei plantou — não seus substitutos.
+  Celeste fareja as pistas que ele deixou. Noé guarda o tempo que ele ordenou.
+  Bernardo constrói com os materiais que ele criou. Melquior apresenta o Reino
+  que ele inaugurou. Íris contempla a beleza que ele assinou.
+  Nenhum Guardião fala "em nome do Rei" — eles revelam o que já está lá.
+
+# ANTI-PATTERNS
+anti_patterns:
+  - usar "o Rei" como enfeite poético sem relação com o conteúdo da lição
+  - criar "o Rei" como personagem de plot (aparece, resolve conflito, etc.)
+  - re-explicar as promessas do Rei em cada lição — a âncora é uma vez só
+  - variar o nome sem registro aqui (ex: Grande Rei, Rei Eterno, etc. são aceitáveis se já em aparicoes_curriculo, mas novos precisam ser registrados)
+
+# SSOT — MANUTENÇÃO
+ssot:
+  dono: LORE/rei_e_reino.yaml
+  nota: |
+    Se a definição do Rei mudar (narrativa ou pedagógica), mudar AQUI.
+    Todos os HTMLs e YAMLs que usam o motivo derivam deste arquivo.
+    Não criar definições paralelas em outros documentos.

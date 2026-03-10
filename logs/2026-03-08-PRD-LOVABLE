@@ -1,0 +1,637 @@
+.md
+# 📋 PRD — MATEMÁTICA VIVA
+## Product Requirements Document v1.0
+### Documento Canônico Completo — Rodada 10
+
+---
+
+> **Este documento é a fonte única de verdade (SSOT) do produto Matemática Viva.**
+> Última atualização: Março 2026 | Versão: 3.5 "Sovereign Positive Gold"
+
+---
+
+## 📊 RESUMO EXECUTIVO
+
+| Métrica | Valor |
+|---------|-------|
+| Lições Planejadas | 121 (Ciclo Sementes) |
+| Lições Completas | 6 (000–005) com narrativa imersiva |
+| Guardiões | 5 (Melquior, Noé, Celeste, Bernardo, Iris) |
+| Ciclos K-12 | 4 (Sementes, Raízes, Lógica, Legado) |
+| Rodadas de Dev | 10 completas |
+| Stack | React 18 + TypeScript + Vite + Tailwind |
+| Design System | "Positive Gold" (paper/ink/gold) |
+| Status | MVP funcional com 6 lições jogáveis |
+
+---
+
+## 🎯 1. VISÃO DO PRODUTO & PROBLEMA
+
+### O Problema
+Famílias educadoras brasileiras (homeschool) enfrentam um vácuo: não existe currículo de matemática em português que una **rigor pedagógico** (Charlotte Mason, Singapura Math, CPA) com **encantamento narrativo**. O que existe é:
+- (a) Apostilas secas com exercícios repetitivos
+- (b) Apps gamificados rasos que tratam a criança como rato de laboratório
+- (c) Materiais importados em inglês inacessíveis à maioria
+
+**Resultado:** mães frustradas, crianças entediadas, e a matemática sendo vivida como castigo ao invés de maravilha.
+
+### A Solução
+**Matemática Viva** é um currículo digital premium onde cada lição é uma *jornada narrativa* — com personagens (Os 5 Guardiões), um antagonista (O Caos), rituais de entrada/saída, e manipulativos físicos reais. O pai/mãe é o *Portador da Tocha* que guia o *Viajante* (criança) pelo Reino Contado. Não é um app. É uma **liturgia do lar** — um momento sagrado de 15-20 minutos onde família se conecta através da beleza dos números.
+
+### Público-Alvo
+- **Primário:** Mães educadoras (25-45 anos), cristãs, classe média, que buscam excelência
+- **Secundário:** Pais envolvidos na educação dos filhos, famílias bilíngues
+- **Personas:** "Renata" (mãe pioneira, pesquisadora, quer o melhor) e "Priscila" (mãe prática, precisa de roteiro claro)
+- **Viajante:** Crianças de 4-6 anos (Ciclo Sementes), expandindo para 0-18 (K-12 completo)
+
+### Proposta de Valor Única
+> "O único currículo de matemática em português onde cada número tem uma história, cada conceito tem um guardião, e cada família vive uma aventura. Charlotte Mason encontra Nárnia — e o resultado é uma criança que *ama* matemática antes de saber que está aprendendo."
+
+---
+
+## 🏛️ 2. ARQUITETURA PEDAGÓGICA
+
+### Pilares Pedagógicos
+
+#### Charlotte Mason (Pilar Principal)
+- Narração, living books, hábitos, atmosfera
+- Curtas lições (15-20min) — "attention is not a tap to be turned on"
+- "Things before Signs" — manipular ANTES de abstrair
+- **Referência:** Vol 1 "Home Education", Vol 6 "Philosophy of Education"
+
+#### CPA — Concreto → Pictórico → Abstrato (Jerome Bruner → Singapore Math)
+- Cada lição começa com objetos reais
+- Passa por representação visual (desenho, pictograma)
+- Só DEPOIS chega ao símbolo numérico
+- **Referência:** Jerome Bruner "Toward a Theory of Instruction" (1966)
+
+#### TGTB — The Good and the Beautiful
+- Beleza como veículo — números são bonitos, padrões são arte
+- A natureza é laboratório
+- Estética não é decoração, é pedagogia
+- **Referência:** TGTB Math Level K-4 curriculum structure
+
+#### Dehaene — Neurociência do Número
+- Subitização (reconhecer quantidades sem contar)
+- "Number Sense" — o sentido numérico inato
+- Ten Frame como ponte entre dedos e base 10
+- **Referência:** Stanislas Dehaene "The Number Sense" (2011)
+
+### Estrutura de Cada Lição (Liturgia de 8 Fases)
+
+| # | Fase | Tempo | Descrição | Referência |
+|---|------|-------|-----------|------------|
+| 1 | Preparação | 2 min | Fio da jornada + dica do coração + materiais | CM: "Atmosfera antes de instrução" |
+| 2 | Ritual de Entrada | 2 min | Vela, bússola, fala do Guardião — transição do mundano ao sagrado | CM: "Hábito como trilho" |
+| 3 | O Caos (Antagonista) | 1 min | O inimigo ataca — motivação narrativa para a lição | Lewis: "Todo herói precisa de um dragão" |
+| 4 | A Jornada (CPA) | 8-10 min | 2-3 cenas com manipulativos → desenho → símbolo | Bruner: CPA spiral |
+| 5 | Momento de Conexão | 2 min | Pai e filho juntos — o vínculo humano | CM: "Relação é o meio da educação" |
+| 6 | Narramos Juntos | 2 min | Criança reconta a história com suas palavras | CM: "Narração é o ato de saber" |
+| 7 | Fechamento | 1 min | Teaser da próxima aventura, apagar a vela | CM: "Deixe-os querendo mais" |
+| 8 | Sementes do Dia | Após | Atividades orgânicas ao longo do dia | CM: "A vida é a escola" |
+
+### Protocolo Bernardo (Gestão de Erros)
+Quando a criança erra, NÃO corrigimos diretamente. Ativamos o "Protocolo Bernardo": o Guardião Bernardo (urso construtor) entra na narrativa e diz algo como "Hmm, a pedra não encaixou. Vamos tentar de outro jeito?" Isso transforma erro em **exploração**, não em falha.
+- **Base teórica:** Carol Dweck (Growth Mindset) + Charlotte Mason ("nunca permita que a criança falhe")
+
+---
+
+## 🦁 3. OS 5 GUARDIÕES — TAXONOMIA PEDAGÓGICA
+
+Cada Guardião não é apenas um personagem — é uma **categoria matemática personificada**. A criança não sabe que está aprendendo taxonomia; ela sabe que tem 5 amigos com poderes diferentes.
+
+### Melquior (Leão Dourado) 🦁
+- **Cor:** #D4A84B (Gold)
+- **Domínio:** Narrativa & Sabedoria
+- **Papel:** Mentor que abre e fecha cada jornada. Representa a RAZÃO — o porquê dos números existirem.
+- **Matemática:** Metacognição, resolução de problemas, pensamento lógico
+- **Referência:** CM: "O professor como guia, não instrutor"
+
+### Noé (Coruja Púrpura) 🦉
+- **Cor:** #7B68B8 (Purple)
+- **Domínio:** Padrões & Sequências
+- **Papel:** Observador silencioso que vê a ORDEM no caos. Representa PADRÕES — repetição, sequência, previsibilidade.
+- **Matemática:** Sequências, ordinalidade, classificação, seriação
+- **Referência:** Dehaene: "O cérebro é uma máquina de detectar padrões"
+
+### Celeste (Raposa Laranja) 🦊
+- **Cor:** #E8A87C (Orange)
+- **Domínio:** Espaço & Posição
+- **Papel:** Brincalhona que se esconde e aparece. Representa ESPAÇO — dentro/fora, perto/longe, em cima/embaixo.
+- **Matemática:** Geometria espacial, posição, orientação, simetria
+- **Referência:** Clements & Sarama: "Spatial thinking is foundational"
+
+### Bernardo (Urso Marrom) 🐻
+- **Cor:** #8B7355 (Brown)
+- **Domínio:** Quantidade & Construção
+- **Papel:** Construtor paciente que ergue pedra por pedra. Representa QUANTIDADE — contar, comparar, medir.
+- **Matemática:** Cardinalidade, subitização, comparação, Ten Frame
+- **Referência:** Singapore Math: "Number bonds and ten frames"
+
+### Iris (Pássaro Teal) 🐦
+- **Cor:** #7EC8C8 (Teal)
+- **Domínio:** Beleza & Completude
+- **Papel:** Cantora que vê a beleza nos números. Representa ESTÉTICA — o 5 como estrela, o par como harmonia.
+- **Matemática:** Composição/decomposição, benchmark 5 e 10, proporção
+- **Referência:** TGTB: "Beauty is not decoration, it is recognition"
+
+---
+
+## ⚙️ 4. ARQUITETURA TÉCNICA
+
+### Stack Tecnológico
+
+| Tecnologia | Versão | Uso no Projeto |
+|-----------|--------|----------------|
+| React | 18.3 | SPA com componentes reutilizáveis — tipagem forte em todo o conteúdo pedagógico |
+| TypeScript | 5.x | Type-safety — cada lição tem interface tipada, erros pegos em build |
+| Vite | 5.x | Build ultrarrápido, HMR instantâneo, otimização de assets |
+| Tailwind CSS | 3.x | Design system via tokens HSL — paper/ink/gold + cores dos Guardiões |
+| Framer Motion | 12.x | Page transitions, stagger animations, micro-interações |
+| React Router | 6.x | Roteamento com layout aninhado (AppLayout → pages) |
+| Shadcn/UI | latest | Componentes acessíveis (Radix) customizados para o design editorial |
+| Tanstack Query | 5.x | Preparado para data fetching quando migrar para backend |
+| Lucide Icons | 0.462 | Iconografia consistente + emojis narrativos |
+
+### Decisões Arquiteturais Importantes
+
+1. **Conteúdo como TypeScript (não Markdown/CMS):** Lições são objetos `.ts` tipados. Isso garante type-safety (erros de estrutura são pegos em build), autocompletion, e zero latência. Trade-off: para 121+ lições, considerar migração para database.
+
+2. **Lição fora do AppLayout:** A rota `/licao/:id` renderiza SEM sidebar — decisão intencional. A lição é experiência imersiva, como abrir um livro. O pai não deve ser distraído.
+
+3. **Design Tokens HSL:** Todas as cores são CSS variables em HSL no `:root` do `index.css`, referenciadas via Tailwind config. Permite: dark mode futuro, temas por Guardião, consistência zero-drift.
+
+4. **Guardiões como dados tipados:** `guardians.ts` define `Guardian` interface com `id`, `color`, `domain`, `tone`, `sementes`. Renderização dinâmica sem hardcode.
+
+5. **Ilustrações como ES6 imports:** Watercolor PNGs em `src/assets/` — não URLs externas. Versionamento, otimização Vite, funciona offline.
+
+### Estrutura de Arquivos
+
+```
+src/
+├── assets/              → Ilustrações watercolor dos Guardiões (5 PNGs)
+├── components/
+│   ├── layout/          → AppLayout, DesktopSidebar, MobileBottomNav
+│   ├── ui/              → ~40 Shadcn components customizados
+│   ├── PageTransition.tsx → Framer Motion wrapper (fade + slide)
+│   ├── LessonTimer.tsx    → Timer 15-20min com cor do Guardião
+│   └── ProtocoloBernardo.tsx → Sidebar de gestão de erros
+├── content/
+│   └── governance/      → 5 docs canônicos (Magna Carta, Livro do Reino...)
+├── data/
+│   ├── guardians.ts        → Dados tipados dos 5 Guardiões
+│   ├── guardian-images.ts  → Mapa ID→ilustração
+│   ├── curriculum-sementes.ts → Estrutura 121 lições (3 trimestres, 8 estações)
+│   ├── lesson-content-000.ts → Conteúdo completo: O Portal do Reino
+│   ├── lesson-content-001.ts → A Trindade na Palma
+│   ├── lesson-content-002.ts → As Pedras da Fortaleza
+│   ├── lesson-content-003.ts → A Estrela do Reino
+│   ├── lesson-content-004.ts → A Ordem do Dia
+│   ├── lesson-content-005.ts → O Esconderijo da Glória
+│   └── lesson-tags.ts      → Tags e títulos narrativos
+├── pages/
+│   ├── Dashboard.tsx    → Visão geral do Reino (hero + stats + cards)
+│   ├── Licao.tsx        → Experiência imersiva da lição (tela cheia)
+│   ├── Mapa.tsx         → Mapa do Reino com trail interativo
+│   ├── Guardioes.tsx    → Galeria dos 5 Guardiões com ilustrações
+│   ├── Manual.tsx       → Manual do Portador (8 partes)
+│   ├── Curriculo.tsx    → Grade curricular completa
+│   ├── Notas.tsx        → PRD + 9 Rodadas de desenvolvimento
+│   ├── Diario.tsx       → Diário do Viajante (placeholder)
+│   ├── Biblioteca.tsx   → Biblioteca pedagógica
+│   ├── Blog.tsx         → Blog & Ensaios
+│   ├── Livros.tsx       → Livros Dourados
+│   ├── Legado.tsx       → O Legado (visão K-12)
+│   └── Perfil.tsx       → Configurações
+└── index.css            → Design system tokens (HSL)
+```
+
+### Rotas da Aplicação
+
+| Rota | Página | Layout | Descrição |
+|------|--------|--------|-----------|
+| `/` | Dashboard | AppLayout | Visão geral do Reino, CTAs, cards de lições |
+| `/licao/:id` | Licao | **Sem layout** (imersivo) | Experiência completa da lição |
+| `/mapa` | Mapa | AppLayout | Mapa do Reino com trilha de 6 territórios |
+| `/curriculo` | Curriculo | AppLayout | Grade curricular das 121 lições |
+| `/manual` | Manual | **Sem layout** (imersivo) | Manual do Portador (8 partes) |
+| `/guardioes` | Guardioes | AppLayout | Galeria dos 5 Guardiões |
+| `/diario` | Diario | AppLayout | Diário do Viajante |
+| `/notas` | Notas | AppLayout | PRD + Rodadas de desenvolvimento |
+| `/livros` | Livros | AppLayout | Livros Dourados recomendados |
+| `/blog` | Blog | AppLayout | Blog pedagógico |
+| `/biblioteca` | Biblioteca | AppLayout | Biblioteca de referências |
+| `/legado` | Legado | AppLayout | Visão K-12 completa |
+| `/perfil` | Perfil | AppLayout | Configurações |
+
+---
+
+## 🎨 5. DESIGN SYSTEM — "POSITIVE GOLD"
+
+### Filosofia Visual
+O design é **editorial, não tecnológico**. Parece um livro ilustrado aberto sobre uma mesa de madeira, não um app da App Store.
+- **Referências:** Penguin Classics, cadernos Moleskine, ilustrações de Beatrix Potter
+- **Paleta "Positive Gold":** papel envelhecido, tinta nanquim, ouro de iluminura medieval
+
+### Tokens de Cor (CSS Variables HSL)
+
+| Token | Valor HSL | Uso |
+|-------|-----------|-----|
+| `--paper` | 45 30% 96% | Fundo principal — calor de página envelhecida |
+| `--ink` | 30 20% 18% | Texto principal — nanquim, não preto puro |
+| `--gold` | 43 76% 55% | Acento — iluminura, destaque, CTAs |
+| `--guardian-noe` | 255 35% 56% | Cor do Guardião Noé (púrpura) |
+| `--guardian-celeste` | 22 72% 70% | Cor do Guardião Celeste (laranja) |
+| `--guardian-bernardo` | 30 20% 42% | Cor do Guardião Bernardo (marrom) |
+| `--guardian-iris` | 180 40% 64% | Cor do Guardião Iris (teal) |
+
+### Tipografia
+
+| Fonte | Uso | Razão |
+|-------|-----|-------|
+| **Libre Baskerville** (serif) | Títulos, narrativa, citações | Evoca livros clássicos — é a fonte dos volumes de C.S. Lewis na edição Harper |
+| **Outfit** (sans-serif) | Interface, labels, body text | Geométrica moderna sem ser fria — complemento perfeito para UI funcional |
+
+### Componentes Customizados
+- `.paper-texture` — overlay com textura de papel sobre toda a app
+- `.quote-card` — cards com borda dourada para citações e reflexões
+- `.module-card` — cards de conteúdo com sombra sutil
+- `.btn-gold` — botões com gradiente dourado
+- `.nav-item` / `.nav-item-active` — navegação com estado ativo
+- `.guardian-card-*` — cards temáticos por Guardião (5 variantes)
+- `.reading-container` — container de leitura com max-width para legibilidade
+
+---
+
+## 📖 6. CONTEÚDO PRODUZIDO (LIÇÕES 000–005)
+
+6 lições completas com narrativa imersiva, scripts de diálogo, direções de palco, manipulativos CPA, e micro-narrativas do Caos. Cada lição tem ~3.000-5.000 palavras de conteúdo.
+
+### Lição 000 — O Portal do Reino
+- **ID:** MV-S-000
+- **Guardião:** Melquior (Leão Dourado)
+- **Foco:** Onboarding — inauguração do espaço sagrado
+- **O Caos:** Nevoeiro da Dúvida ("Isso não vai funcionar. Matemática é chata.")
+- **Manipulativo:** Vela + 3 pedras
+- **Conceito:** Contagem 1-3, subitização
+- **Especial:** Inclui "Momento de Silêncio" — 30 segundos de pausa contemplativa
+
+### Lição 001 — A Trindade na Palma
+- **ID:** MV-S-001
+- **Guardião:** Melquior (Leão Dourado)
+- **Foco:** Números 1-3, correspondência um-a-um
+- **O Caos:** Nevoeiro que apaga nomes ("Os números não têm nome. São todos iguais.")
+- **Manipulativo:** 3 pedras + mão
+- **Conceito:** Cardinalidade, correspondência biunívoca
+
+### Lição 002 — As Pedras da Fortaleza
+- **ID:** MV-S-002
+- **Guardião:** Bernardo (Urso Marrom)
+- **Foco:** Ten Frame (2×5), organização espacial
+- **O Caos:** Vento da Pressa ("Joga tudo de qualquer jeito! Rápido!")
+- **Manipulativo:** Ten Frame de papelão + 10 pedras/feijões
+- **Conceito:** Estrutura, organização, subitização estruturada
+- **Referência pedagógica:** Singapore Math ten frames, Bruner CPA
+
+### Lição 003 — A Estrela do Reino
+- **ID:** MV-S-003
+- **Guardião:** Iris (Pássaro Teal)
+- **Foco:** Números 4-5, benchmark "mão cheia"
+- **O Caos:** Sombra da Incompletude ("Quatro é suficiente. O cinco é exagero.")
+- **Manipulativo:** 5 pétalas/dedos
+- **Conceito:** Composição do 5, benchmark, plenitude
+
+### Lição 004 — A Ordem do Dia
+- **ID:** MV-S-004
+- **Guardião:** Noé (Coruja Púrpura)
+- **Foco:** Sequência temporal, ordinalidade 1-5
+- **O Caos:** Desordem que embaralha a rotina ("Primeiro dormir, depois acordar!")
+- **Manipulativo:** 5 cartões de rotina diária
+- **Conceito:** Ordinalidade, sequência, antes/depois
+
+### Lição 005 — O Esconderijo da Glória
+- **ID:** MV-S-005
+- **Guardião:** Celeste (Raposa Laranja)
+- **Foco:** Posição espacial (dentro/fora, perto/longe, em cima/embaixo)
+- **O Caos:** Névoa que confunde caminhos ("Dentro, fora, tanto faz!")
+- **Manipulativo:** Objetos da casa + corpo da criança
+- **Conceito:** Linguagem espacial, geometria posicional
+
+---
+
+## 🗺️ 7. MAPA DO REINO — TERRITÓRIOS
+
+O Mapa do Reino é uma trilha visual com 6 territórios, cada um com identidade própria:
+
+| ID | Território | Emoji | Descrição | Guardião Primário |
+|----|-----------|-------|-----------|-------------------|
+| S1-T1 | Colinas da Fundação | ⛰️ | Onde tudo começa — as primeiras pedras do conhecimento | Melquior |
+| S1-T2 | Pátio do Artesão | 🏗️ | Oficina de Bernardo — construir com as mãos | Bernardo |
+| S2-T1 | Floresta dos Padrões | 🌲 | Onde Noé observa as sequências da natureza | Noé |
+| S2-T2 | Rio das Comparações | 🏞️ | Águas que medem e comparam quantidades | Iris |
+| S2-T3 | Montanha da Ordem | 🏔️ | O pico onde tudo se organiza em sequência | Noé |
+| S3-T1 | Jardim da Harmonia | 🌸 | Onde a beleza dos números floresce | Iris |
+
+---
+
+## 📚 8. CURRÍCULO COMPLETO — CICLO SEMENTES (121 LIÇÕES)
+
+### Estrutura: 3 Trimestres → 8 Estações → 121 Lições
+
+#### 1º TRIMESTRE: O DESPERTAR NO JARDIM (Lições 000-040)
+
+**Estação 1 — A Fundação** (Senso Numérico e Observação, 5 anos)
+| # | ID | Título PT | Guardião | Hook Narrativo |
+|---|----|-----------|---------|----|
+| 000 | MV-S-000 | O Portal | Melquior | O Convite do Mentor Melquior |
+| 001 | MV-S-001 | Números 1 a 3 | Celeste | A Trindade na Palma |
+| 002 | MV-S-002 | Quadros de Dez | Bernardo | As Pedras da Fortaleza |
+| 003 | MV-S-003 | Números 4 a 5 | Iris | A Estrela do Reino |
+| 004 | MV-S-004 | Ordem dos Eventos | Noé | O Ritmo do Criador |
+| 005 | MV-S-005 | Palavras de Posição | Celeste | O Esconderijo da Glória |
+| 006 | MV-S-006 | Prática de Números | Iris | O Desenho do Rei |
+| 007 | MV-S-007 | Números 6 e 7 | Celeste | A Coroa da Semana |
+| 008 | MV-S-008 | Correspondência Pt.1 | Iris | O Par Perfeito |
+| 009 | MV-S-009 | Números 8 e 9 | Noé | O Celeiro de Noé |
+| 010 | MV-S-010 | Ordinais Pt.1 | Celeste | A Fila da Providência |
+| 011 | MV-S-011 | Números 10 e 11 | Celeste | A Plenitude das Mãos |
+| 012 | MV-S-012 | Número 0 | Bernardo | O Vazio Sagrado |
+| 013 | MV-S-013 | Número 12 | Noé | Os Doze Sinos |
+| 014 | MV-S-014 | Classificação Pt.1 | Iris | A Cesta de Tesouros |
+| 015 | MV-S-015 | Revisão | Melquior | A Celebração da Fundação |
+
+**Estação 2 — O Pátio do Artesão** (Construção e Comparação)
+| # | ID | Título PT | Guardião | Hook |
+|---|----|-----------|---------|----|
+| 016 | MV-S-016 | Mais, Menos, Igual | Bernardo | A Balança de Bernardo |
+| 017 | MV-S-017 | Números 13 e 14 | Celeste | Os Passos da Raposa |
+| 018 | MV-S-018 | Padrões Pt.1 | Noé | O Colar da Coruja |
+| 019 | MV-S-019 | Números 15 e 16 | Iris | As Notas da Canção |
+| 020 | MV-S-020 | Adição Pt.1 | Bernardo | A Primeira Soma |
+| 021 | MV-S-021 | Números 17 e 18 | Celeste | O Mapa dos Passos |
+| 022 | MV-S-022 | Correspondência Pt.2 | Noé | O Espelho dos Pares |
+| 023 | MV-S-023 | Números 19 e 20 | Bernardo | A Torre Completa |
+| 024 | MV-S-024 | Subtração Pt.1 | Iris | A Pena que Voou |
+| 025 | MV-S-025 | Medição Pt.1 | Celeste | A Ponte da Raposa |
+| 026 | MV-S-026 | Classificação Pt.2 | Noé | O Arquivo da Coruja |
+| 027 | MV-S-027 | Formas 2D Pt.1 | Iris | O Jardim das Formas |
+| 028 | MV-S-028 | Ordinais Pt.2 | Celeste | A Corrida dos Guardiões |
+| 029 | MV-S-029 | Adição Pt.2 | Bernardo | O Muro Cresce |
+| 030 | MV-S-030 | Revisão | Melquior | O Banquete do Artesão |
+
+#### 2º TRIMESTRE: A JORNADA PELA FLORESTA (Lições 041-080)
+
+**Estação 3 — Floresta dos Padrões** (Padrões e Sequências)
+- Lições 031-045: Padrões AB/ABB/ABC, contagem de 2 em 2, formas 3D, gráficos
+- Guardião dominante: Noé
+
+**Estação 4 — Rio das Comparações** (Medição e Comparação)
+- Lições 046-060: Medição não-standard, peso, capacidade, tempo, dinheiro
+- Guardião dominante: Iris
+
+**Estação 5 — Montanha da Ordem** (Operações e Lógica)
+- Lições 061-080: Adição/subtração até 10, problemas de história, decomposição
+- Guardião dominante: Bernardo
+
+#### 3º TRIMESTRE: O RETORNO AO JARDIM (Lições 081-121)
+
+**Estação 6 — Jardim da Harmonia** (Integração e Beleza)
+- Lições 081-095: Simetria, frações visuais, calendário, estimativa
+- Guardião dominante: Iris
+
+**Estação 7 — O Caminho do Rei** (Consolidação)
+- Lições 096-110: Revisão espiral de todos os conceitos, problemas multi-step
+- Guardião dominante: Melquior
+
+**Estação 8 — A Celebração Final** (Avaliação e Festa)
+- Lições 111-121: Avaliação formativa narrativa, "Banquete de Ideias", preparação para Ciclo Raízes
+- Guardião dominante: Melquior
+
+---
+
+## 💰 9. MODELO DE NEGÓCIO & MÉTRICAS
+
+### Precificação Proposta
+
+| Plano | Preço | Acesso |
+|-------|-------|--------|
+| Mensal | R$ 97/mês | 1 ciclo ativo |
+| Anual ⭐ | R$ 797/ano | Economia de 32% |
+| Vitalício | R$ 1.997 | Todos os ciclos K-12 para sempre |
+
+### Justificativa de Preço
+- **Comparativo:** TGTB Math = $44/nível (~R$220). Saxon Math = $80 (~R$400). Nosso: R$97/mês com narrativa + digital + impressão.
+- **Custo por lição:** 121 lições ÷ R$797 = **R$6,58 por lição**. Uma aula particular custa R$80-150.
+- **Valor percebido:** Não é "material didático" — é "experiência de família". Mesma categoria de preço que retreats e mentorias de maternidade.
+
+### KPIs (Key Performance Indicators)
+
+| Métrica | Meta | Razão |
+|---------|------|-------|
+| Completion Rate | > 70% das lições iniciadas são finalizadas | Se a narrativa prende, a família termina |
+| Streak Semanal | > 3 lições/semana | Consistência importa mais que intensidade |
+| Narração Espontânea | > 50% das famílias usam o Diário | Se a criança reconta, ela APRENDEU (CM) |
+| NPS | > 70 | Famílias que recomendam = crescimento orgânico |
+| Churn Mensal | < 5% | Retenção é o verdadeiro product-market fit |
+| LTV / CAC | > 3:1 | Sustentabilidade do negócio |
+
+---
+
+## 🔐 10. GOVERNANÇA & DOCUMENTOS CANÔNICOS
+
+O Matemática Viva é governado por 5 documentos canônicos — o "Pentateuco de Ouro". Nenhuma decisão de produto, conteúdo ou design pode contradizer esses documentos.
+
+| # | Documento | Guardião | Descrição |
+|---|-----------|----------|-----------|
+| 1 | 📜 Centro de Comando | Maestro | Hub canônico que indexa todos os documentos e define o estado atual (v3.5) |
+| 2 | ⚖️ Magna Carta | Charlotte Mason | Valores, papéis, regras de decisão. CM como mestre, AI invisível |
+| 3 | 🦁 Livro do Reino | Melquior | Identidade narrativa: Guardiões, Viajante, Dignidades, visual consistency |
+| 4 | 📊 Matriz de Evolução K-12 | Noé | SSOT curricular: ciclos, cronobiologia, autonomia, BNCC |
+| 5 | 🔧 Manual do Ofício | Bernardo | Liturgia prática: ferramentas do Portador, sintaxe, frontmatter |
+
+---
+
+## 📱 11. ESTRATÉGIA MOBILE & FRAMEWORK
+
+### Por que React (e NÃO HTML puro)
+
+O Matemática Viva é construído com **React 18 + TypeScript + Vite** — um framework JavaScript moderno que gera HTML/CSS/JS otimizado em build, mas durante o desenvolvimento trabalhamos com componentes reutilizáveis, tipagem forte, e estado reativo.
+
+| Critério | HTML Puro | React + TypeScript |
+|----------|-----------|-------------------|
+| Componentes | ❌ Copiar/colar em cada página | ✅ Um componente reusado em 15 lugares |
+| Tipagem | ❌ Erros só no navegador | ✅ Erros detectados em build |
+| Estado Reativo | ❌ Manipulação manual de DOM | ✅ useState/useEffect automático |
+| Roteamento | ❌ Reload completo por página | ✅ SPA — navegação instantânea |
+| Ecossistema | ❌ Tudo manual | ✅ npm com 2M+ pacotes |
+| Mobile | ⚠️ Só responsivo CSS | ✅ PWA ou Capacitor nativo |
+| Manutenção 121 lições | 🔴 Mudar header = 121 edits | 🟢 Mudar layout = 1 edit |
+
+### Estratégia Mobile — 2 Caminhos
+
+#### Opção 1: PWA ⭐ (Recomendada para v1)
+Progressive Web App — instalável direto do navegador.
+- ✅ iPhone + Android
+- ✅ Instala na tela inicial
+- ✅ Funciona offline (Service Worker)
+- ✅ Zero custo de publicação
+- ✅ Setup em 1-2 horas com `vite-plugin-pwa`
+- ⚠️ Push notifications limitadas no iOS
+
+**POR QUE É IDEAL:** O Matemática Viva é app de LEITURA — não precisa de câmera, GPS, ou sensores. PWA entrega 95% da experiência nativa com 10% do esforço.
+
+#### Opção 2: Capacitor (Marco 3+)
+Empacota o React como app nativo real.
+- ✅ App Store / Google Play
+- ✅ Acesso total a câmera, notificações
+- ✅ Usa MESMO código React
+- ⚠️ Requer Xcode (Mac) + Android Studio
+- ⚠️ Apple $99/ano, Google $25 único
+
+### Comparativo de Frameworks Mobile
+
+| Framework | Tipo | Reuso de Código | Tempo Setup | Recomendação |
+|-----------|------|----------------|-------------|--------------|
+| **PWA** | Web Instalável | 100% | 1-2h | ✅ AGORA |
+| **Capacitor** | Híbrido Nativo | 100% | 1-2 dias | ✅ MARCO 3 |
+| React Native | Nativo Cross | ~60% | 2-4 semanas | ⚠️ Desnecessário |
+| Flutter | Nativo Cross | 0% (Dart) | Reescrita total | ❌ Descartado |
+| Swift/Kotlin | 100% Nativo | 0% (2 codebases) | Reescrita total | ❌ Descartado |
+
+---
+
+## 🗺️ 12. ROADMAP COMPLETO — TODAS AS FASES
+
+### FASE 1 — MVP "Jogável" (Rodadas 10-14) 🔶 EM ANDAMENTO
+**Objetivo:** Primeira família pode fazer 15 lições completas com progresso salvo.
+
+| Entrega | Descrição | Dependência |
+|---------|-----------|-------------|
+| Lovable Cloud | Auth + database + storage | Ativação do backend |
+| Onboarding narrativo | Nome do Viajante, idade, quiz | Cloud |
+| Progresso persistente | Lições completadas, streaks, badges | Cloud |
+| Diário do Viajante v1 | Texto + foto por lição | Cloud + Storage |
+| Lições 006-015 | Estação 2 completa (15 total) | Conteúdo |
+| PWA | App instalável no celular | vite-plugin-pwa |
+
+### FASE 2 — "Vendável" (Rodadas 15-20) ⬜ PLANEJADO
+**Objetivo:** Produto comercializável com 30+ lições e pagamento.
+
+| Entrega | Descrição | Dependência |
+|---------|-----------|-------------|
+| Landing page | Sales page premium com social proof | Design |
+| Stripe | Assinatura mensal R$97 / anual R$797 | Cloud + Stripe |
+| PDF Gutenberg | Impressão de cada lição | Template engine |
+| 30+ lições | Trimestre 1 completo | Conteúdo massivo |
+| Blog SEO | Artigos pedagógicos indexáveis | SEO |
+| Email marketing | Drip campaign para trial → conversão | Cloud + Edge Functions |
+
+### FASE 3 — "Escalável" (Rodadas 20-30) ⬜ FUTURO
+**Objetivo:** Produto completo de 1 ano com comunidade ativa.
+
+| Entrega | Descrição | Dependência |
+|---------|-----------|-------------|
+| 121 lições | Ano inteiro Sementes | Conteúdo |
+| Capacitor | App nativo na App Store / Google Play | Fase 2 validada |
+| Comunidade | Fórum/grupo de famílias | Cloud |
+| Áudio narração | Lições com áudio opcional | Storage + TTS |
+| Dark mode | Modo noturno para leitura | CSS variables |
+| Ciclo Brotos | Expansão 0-3 anos (upsell) | Conteúdo |
+
+### FASE 4 — "Império" (Ano 2+) ⬜ VISÃO
+**Objetivo:** Currículo K-12 completo, marketplace, expansão internacional.
+
+| Entrega | Descrição |
+|---------|-----------|
+| Ciclo Raízes (7-10 anos) | 121 lições com profundidade crescente |
+| Ciclo Lógica (11-14 anos) | Álgebra, geometria, pensamento formal |
+| Ciclo Legado (15-18 anos) | Cálculo, estatística, projetos |
+| Marketplace de kits | Materiais físicos por estação (vendas complementares) |
+| Certificação de tutores | Co-ops e grupos de estudo certificados |
+| Versão em inglês | Mercado internacional |
+| App tablet nativo | React Native ou Flutter para experiência tablet otimizada |
+
+---
+
+## 📈 13. HISTÓRICO DE DESENVOLVIMENTO (10 RODADAS)
+
+| Rodada | Título | Entregas Principais |
+|--------|--------|---------------------|
+| R1 | V4 Evolução Inicial | Redesign completo, sidebar, Dashboard, Manual 8 partes, Lição 001 |
+| R2 | Refinamento Técnico | Cores YAML v1.1, fontes Baskerville+Outfit, card system |
+| R3 | Diagnóstico Profundo | Análise CM, 26 lições mapeadas, arquitetura de conteúdo |
+| R4 | Expansão Pedagógica | Currículo Sementes completo (121 lições), CPA, tags narrativos |
+| R5 | Blog & Biblioteca | Blog pedagógico, biblioteca de referências, O Legado |
+| R6 | Timer & Protocolo | LessonTimer, ProtocoloBernardo, refinamento da lição |
+| R7 | Guardiões Expandidos | Página dedicada dos Guardiões, dados tipados, seções "Sementes" |
+| R8 | Visual & Geografia | 5 ilustrações watercolor, Mapa do Reino com 6 territórios, Lição 000 |
+| R9 | Conteúdo Massivo | Lições 002-005 completas, 6 narrativas do Caos, page transitions |
+| R10 | PRD & Expansão Narrativa | Lições 000-004 reescritas 3x, PRD completo, seção Mobile |
+
+---
+
+## 🔑 14. GLOSSÁRIO TÉCNICO
+
+| Termo | Definição |
+|-------|-----------|
+| **CPA** | Concreto → Pictórico → Abstrato. Sequência de Jerome Bruner para aprendizagem matemática |
+| **CM** | Charlotte Mason. Educadora britânica (1842-1923). Filosofia de "living education" |
+| **TGTB** | The Good and the Beautiful. Currículo americano que integra beleza na educação |
+| **SPA** | Single Page Application. App web que carrega uma vez e navega sem reload |
+| **PWA** | Progressive Web App. Site que pode ser instalado como app no celular |
+| **HSL** | Hue, Saturation, Lightness. Formato de cor usado nos tokens CSS |
+| **SSOT** | Single Source of Truth. Documento canônico que é a referência definitiva |
+| **Subitização** | Capacidade de reconhecer quantidade sem contar (ex: ver 3 pontos e saber que são 3) |
+| **Ten Frame** | Grade 2×5 usada para visualizar números até 10 |
+| **Bond Number** | Decomposição de um número em duas partes (ex: 5 = 3 + 2) |
+| **Narração** | Técnica CM onde a criança reconta o que ouviu com suas próprias palavras |
+| **Portador da Tocha** | O pai ou mãe que guia a lição |
+| **Viajante** | A criança que vive a aventura |
+| **Reino Contado** | O mundo narrativo onde as lições acontecem |
+| **O Caos** | Antagonista narrativo — representa o erro, a pressa, a desordem |
+| **Protocolo Bernardo** | Sistema de gestão de erros sem correção direta |
+| **Liturgia do Lar** | A rotina sagrada de 15-20 min dedicada à lição |
+| **Banquete de Ideias** | Celebração ao final de cada estação (CM) |
+
+---
+
+## ✅ 15. CHECKLIST DE QUALIDADE
+
+### Para cada lição ser considerada "completa":
+- [ ] Tem narrativa do Caos (antagonista) com intro e resolução
+- [ ] Tem preparação com "Fio da Jornada" e "Dica do Coração"
+- [ ] Tem ritual de entrada com fala do Guardião
+- [ ] Tem 2-3 cenas de jornada com manipulativos CPA
+- [ ] Tem momento de conexão (pai + filho)
+- [ ] Tem "Narramos Juntos" com perguntas do coração
+- [ ] Tem fechamento com teaser da próxima lição
+- [ ] Tem "Sementes do Dia" (atividades orgânicas)
+- [ ] Tem "Formação do Portador" (CPA, CM, TGTB, espiral)
+- [ ] Tem lista de materiais necessários
+- [ ] Todas as falas têm speaker, direction e text
+- [ ] Tag narrativo está definido em lesson-tags.ts
+- [ ] Guardião correto atribuído
+
+### Para o produto ser "Premium":
+- [ ] Auth funcional (login/cadastro)
+- [ ] Progresso salvo (quais lições fez)
+- [ ] Diário do Viajante (texto + foto)
+- [ ] Timer integrado por lição
+- [ ] Mapa do Reino com progresso visual
+- [ ] PDF imprimível por lição
+- [ ] PWA instalável
+- [ ] Landing page de vendas
+- [ ] Pagamento com Stripe
+- [ ] Mobile responsivo impecável
+- [ ] Ilustrações watercolor para todos os contextos
+- [ ] 30+ lições mínimo para lançar
+
+---
+
+> **"A Qualidade Não é Negociável."** — Magna Carta, Matemática Viva
+>
+> Este PRD é um documento vivo. Cada rodada o expande. Cada decisão o refina.
+> O objetivo é claro: criar o currículo de matemática mais bonito, profundo e amado do Brasil.
+
+---
+*Gerado em Março 2026 | Rodada 10 | Matemática Viva v3.5 "Sovereign Positive Gold"*

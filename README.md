@@ -310,16 +310,16 @@ Resumo rapido da decisao atual para retomar sem perda de contexto:
 Trilha ativa desta fase:
 
 1. manter foco em `Revisao/` e no fluxo `HTML-first`;
-2. tratar `MV-S-001` como referencia parcial do metodo, e nao como baseline total fechado;
-3. revisar `011_TOPICOS/` a partir de `006` e `012_TRANSVERSAIS/` com foco explicito em `TASTE`;
-4. preparar e usar a task robusta da `MV-S-002` para revisao dirigida em paralelo controlado;
-5. usar feedback real de familias como dado de refinamento, nao como ordem de mudanca.
+2. usar o protocolo central em `023` e as auditorias `025` e `028` como baseline operacional atual;
+3. tratar `Manual do Portador`, `MV-S-001` e `MV-S-002` como pacote pronto para validacao humana;
+4. registrar o uso real da Familia Rodrigues antes de liberar `MV-S-003`;
+5. usar feedback real de familias como dado de refinamento, nao como ordem automatica de mudanca.
 
 Status atual:
 
-1. `MV-S-001` teve um recorte dirigido forte em `2026-03-07`, mas ainda nao esta consolidada como baseline total.
-2. o proximo foco seguro e fechar a leitura topica de `006` em diante e revisar a `MV-S-002` em paralelo controlado.
-3. o diferencial de curto prazo esta em `TASTE` editorial: unidade de imagem, fim de metaforas soltas, leveza para o Portador e tom realmente vivo.
+1. o protocolo central de revisao esta consolidado.
+2. `Manual do Portador`, `MV-S-001` e `MV-S-002` passaram por rodada profunda, auditoria por IA e publicacao.
+3. o proximo foco seguro e colher validacao humana e registrar o uso real antes de liberar `MV-S-003`.
 4. `apps/web` e a trilha V5 seguem como frente tecnica paralela, nao como condutora da sessao atual.
 
 ## Anotacao Para Amanha
@@ -335,19 +335,18 @@ Para retomar sem perder contexto:
 
 Ponto exato onde paramos:
 
-1. `MV-S-001` ja recebeu patch dirigido relevante, mas ainda nao pode ser tratada como baseline total.
-2. a pasta `Revisao` continua sendo o centro operacional da fase.
-3. a camada `011_TOPICOS/` + `012_TRANSVERSAIS/` ainda precisa de passada fina, com prioridade pratica em `006-012` e foco explicito em `TASTE`.
-4. a conversa estrategica mais recente fixou que o gargalo agora e `TASTE`, nao orquestracao pesada de multi-agent.
-5. o repositorio ja possui trilhas de orquestracao experimental, mas a decisao atual e usar apenas papeis e lentes leves, nao um harness novo.
-6. a `MV-S-002` ja pode ser aberta em revisao dirigida para calibrar `TASTE`, desde que a task robusta continue governando a entrada.
-7. feedback real de familias deve entrar como dado qualificado para refinar a experiencia e tornar o produto mais real.
+1. a pasta `Revisao` continua sendo o centro operacional da fase.
+2. o baseline operacional atual mora em `023`, `025`, `028` e nas licoes `001-002` lidas em conjunto, nao em uma licao isolada.
+3. `Manual do Portador`, `MV-S-001` e `MV-S-002` estao prontos para selo humano da Familia Rodrigues.
+4. a conversa estrategica mais recente fixou que o gargalo agora e validacao real de uso, nao nova camada de orquestracao.
+5. o repositorio ja possui trilhas de orquestracao experimental, mas a decisao atual continua sendo usar papeis e lentes leves.
+6. feedback real de familias deve entrar como dado qualificado para refinar a experiencia e tornar o produto mais real.
 
 Proximo passo recomendado para a sessao seguinte:
 
 1. abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`;
-2. revisar `011_TOPICOS/` a partir de `006` e `012_TRANSVERSAIS/` um por um com foco em `TASTE`;
-3. abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/018_TASK_ROBUSTA_REVISAO_DIRIGIDA_L002.md`;
-4. usar `logs/2026-03-07-09h46-revisao002.md` como insumo-base da entrada da `MV-S-002`;
-5. abrir o HTML da `MV-S-002` e revisar de forma controlada;
-6. devolver para o sistema o que a `L002` ensinar sobre `TASTE` e realidade de uso.
+2. abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/028_AUDITORIA_FINAL_GERAL_PROTOCOLO_MANUAL_L001_L002.md`;
+3. reler `site/manual-portador.html`, `site/sementes/MV-S-001_A_TRINDADE_NA_PALMA.html` e `site/sementes/MV-S-002_AS_PEDRAS_DA_FORTALEZA.html`;
+4. fazer a validacao humana da Familia Rodrigues;
+5. registrar o que foi confirmado, tensionado ou recusado;
+6. so depois decidir se `MV-S-003` pode entrar ou se ainda existe patch residual.

@@ -79,9 +79,9 @@ Antes de escalar revisao em lote:
 ---
 
 ## 6) Proximo passo seguro
-1. publicar a rodada atual;
-2. colher validacao humana da Familia Rodrigues;
-3. registrar qualquer ajuste real de uso;
+1. colher validacao humana da Familia Rodrigues;
+2. registrar qualquer ajuste real de uso;
+3. atualizar o status com o que a validacao humana confirmar;
 4. so depois decidir a entrada de `MV-S-003`.
 
 ---

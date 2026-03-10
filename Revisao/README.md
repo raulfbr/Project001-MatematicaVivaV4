@@ -62,20 +62,17 @@ Leia nesta ordem:
 
 ## Estado atual da fase
 1. a frente ativa continua sendo `HTML-first`;
-2. `MV-S-001` recebeu um recorte dirigido forte, mas ainda nao funciona como baseline total do sistema;
-3. a subfase atual e revisar `011_TOPICOS/` a partir de `006` e `012_TRANSVERSAIS/` com foco explicito em `TASTE`;
-4. `MV-S-002` entra na mesa por `018_TASK_ROBUSTA_REVISAO_DIRIGIDA_L002.md`, inclusive para calibrar `TASTE` em paralelo controlado;
-5. `MV-S-003` ainda nao entra em lote; primeiro a entrada da `002` precisa ser controlada;
-6. o repositorio ja possui trilhas de orquestracao experimental, mas a decisao atual e usar apenas papeis e lentes leves, nao multi-agent pesado.
+2. o protocolo central agora esta consolidado em `023` e auditado em `028`;
+3. `Manual do Portador`, `MV-S-001` e `MV-S-002` passaram por rodada profunda e estao prontos para validacao humana da Familia Rodrigues;
+4. `MV-S-003` ainda nao entra em lote; primeiro precisamos colher e registrar o uso humano real do manual e das licoes `001-002`;
+5. o repositorio ja possui trilhas de orquestracao experimental, mas a decisao atual continua sendo usar papeis e lentes leves, nao multi-agent pesado.
 
 ## Regra desta fase
-1. usar `MV-S-001` apenas como referencia parcial nos pontos ja auditados; ela ainda nao e baseline total;
-2. revisar os topicos e transversais da pasta `Revisao`, com prioridade pratica em `006-012`, e com foco explicito em `TASTE`;
-3. usar `018_TASK_ROBUSTA_REVISAO_DIRIGIDA_L002.md` como gate de entrada da `MV-S-002`;
-4. tratar feedback real de familias como dado de produto, nao como ordem de mudanca;
-5. usar validacao humana de familias pioneiras, incluindo a Familia Rodrigues quando houver sessao, como calibracao de `TASTE` e realidade de uso;
-6. so depois decidir se `MV-S-002` e `MV-S-003` entram como lote;
-7. so depois entrar nas proximas licoes.
+1. nao usar `MV-S-001` isoladamente como baseline total; o baseline operacional atual mora no protocolo central e nas auditorias `025` e `028`, com `L001` e `L002` lidas em conjunto;
+2. tratar feedback real de familias como dado de produto, nao como ordem automatica de mudanca;
+3. usar validacao humana de familias pioneiras, especialmente da Familia Rodrigues, como calibracao real de `TASTE` e usabilidade;
+4. so depois do selo humano decidir a entrada de `MV-S-003` e das proximas licoes;
+5. manter a pasta `Revisao` como governanca viva da fase, sem voltar a espalhar regra procedural em tasks historicas.
 
 ## Regra critica de encoding
 1. salvar sempre em UTF-8;

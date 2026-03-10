@@ -79,7 +79,7 @@ Esta auditoria fecha a rodada atual em quatro camadas:
 2. manual: PASS PREMIUM
 3. `MV-S-001`: PASS PREMIUM
 4. `MV-S-002`: PASS PREMIUM
-5. estado de publicacao: pronto para commit e push
+5. estado de publicacao: publicado no GitHub e pronto para deploy automatico
 6. estado humano: validacao final da Familia Rodrigues ainda pendente
 
 ---

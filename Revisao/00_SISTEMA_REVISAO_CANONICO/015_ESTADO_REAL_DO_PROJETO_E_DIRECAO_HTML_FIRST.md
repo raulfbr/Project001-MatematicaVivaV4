@@ -232,10 +232,10 @@ Ao usar `apps/web`:
 Fatos de decisao:
 1. a frente ativa e a revisao HTML-first;
 2. a pasta `Revisao` foi reorganizada e esta virando a governanca central da fase;
-3. `MV-S-001` ja recebeu patch dirigido relevante, mas ainda nao pode ser tratada como baseline total;
-4. o piloto documental `001-003` ainda nao foi executado;
-5. o proximo foco correto e revisar `011_TOPICOS/` a partir de `006` e `012_TRANSVERSAIS/` com foco explicito em `TASTE`;
-6. a `MV-S-002` ja pode abrir em revisao dirigida, mas sempre com task robusta propria e entrada controlada.
+3. o protocolo central agora esta consolidado em `023` e auditado em `028`;
+4. `Manual do Portador`, `MV-S-001` e `MV-S-002` ja passaram por rodada profunda e estao prontos para validacao humana;
+5. o piloto documental alem de `001-002` ainda nao foi executado;
+6. o proximo foco correto e colher uso humano real antes de decidir a entrada de `MV-S-003`.
 
 ---
 
@@ -259,4 +259,4 @@ Fatos de decisao:
 5. a decisao correta agora e fechar `Revisao` com rigor antes de tocar o lote real de licoes.
 
 Frase final:
-1. primeiro clareza de sistema e `TASTE`, depois entrada controlada da `MV-S-002`, depois piloto documental, depois escala.
+1. primeiro validacao humana do que o sistema consolidou, depois registro dos achados reais, depois decisao sobre `MV-S-003`, depois escala.

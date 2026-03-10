@@ -1,750 +1,679 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Esconderijo da Glória | Matemática Viva</title>
-    <!-- CSS ISOLADO DE SEMENTES -->
+    <title>O Esconderijo da Gl&oacute;ria | Matem&aacute;tica Viva</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    <style>
-        /* INLINE STYLES FOR CRITICAL RENDERING PRIORITY */
-        body { background-color: #F8F9FA; color: #374151; }
-        .lesson-container { max-width: 768px; margin: 0 auto; padding-bottom: 4rem; }
-        
-        /* CARD COMPONENT */
-        .scene-card {
-            background: #FFFFFF;
-            border-radius: 12px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(0, 0, 0, 0.04);
-            position: relative;
-            overflow: hidden;
-        }
-        .scene-card::before {
-            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-            background: linear-gradient(90deg, #FCD34D 0%, #F59E0B 100%);
-            opacity: 0.8;
-        }
-
-        /* HEADER & TYPOGRAPHY */
-        .scene-header {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.35rem;
-            color: #111827;
-            margin-bottom: 2rem;
-            display: flex; align-items: center; gap: 0.75rem; font-weight: 600;
-        }
-        .scene-icon { font-size: 1.5rem; }
-        h2 { font-family:'Outfit'; color:#6B7280; font-size:1rem; text-transform:uppercase; letter-spacing:2px; margin: 3rem 0 1rem 0; text-align:center; }
-        strong { font-weight: 600; color: #1F2937; }
-
-        /* COMPONENTS */
-        .script-persona-block {
-            background: #F9FAFB;
-            border: 1px solid #F3F4F6;
-            border-left: 4px solid #10B981;
-            border-radius: 8px;
-            margin-top: 1.5rem; padding: 1.5rem;
-        }
-        .script-avatar { border: 2px solid #FFFFFF; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        
-        .instruction-box {
-            background: #FEFCE8; border: 1px solid #FEF9C3; color: #854D0E;
-            border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;
-            display: flex; gap: 1rem; align-items: flex-start;
-        }
-        .instruction-icon { font-size: 1.5rem; }
-        
-        .portador-block { border-left: 4px solid #10B981 !important; background: #FFFFFF !important; }
-        .script-name { text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
-
-        /* MOBILE OPTIMIZATION */
-        @media (max-width: 768px) {
-            .lesson-container { padding: 0; }
-            .scene-card { border-radius: 0; margin: 0 0 0.5rem 0; box-shadow: none; border-bottom: 1px solid #E5E7EB; }
-            .scene-card::before { height: 3px; }
-            h2 { font-size: 1.4rem; padding: 0 1.5rem; margin-top: 2rem; }
-        }
-    </style>
 </head>
+
 <body class="clima-1">
-    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard">🏡</a>
+    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard"><i
+            class="ph-duotone ph-house duotone-forest"></i></a>
 
     <div class="lesson-container">
-        <!-- HERO SECTION -->
         <header class="lesson-hero">
-            <div class="lesson-meta-tag">Lição 005 • O Esconderijo da Glória • ⏱️ 15-20 min</div>
-            <h1 class="hero-title">O Esconderijo da Glória</h1>
-            <p class="hero-quote">"Celeste mostra que até o lugar onde algo descansa pode virar descoberta."</p>
-            <!-- ASSETS ISOLADOS DE SEMENTES -->
-            <img src="../assets/sementes/guardioes/celeste-raposa.png" 
-                 onError="this.src='../assets/sementes/guardioes/placeholder.png'"
-                 alt="Ilustração da guardiã Celeste farejando um tesouro escondido" class="hero-guardian">
+            <div class="lesson-meta-tag">Li&ccedil;&atilde;o 005 &bull; O Esconderijo da Gl&oacute;ria &bull; <i
+                    class="ph-duotone ph-timer duotone-carmim"></i> 15-20 min</div>
+            <h1 class="hero-title">O Esconderijo da Gl&oacute;ria</h1>
+            <p class="hero-quote">&ldquo;Celeste mostra que at&eacute; um pequeno tesouro precisa de um lugar para
+                descansar.&rdquo;</p>
+            <img src="../assets/sementes/guardioes/celeste-raposa.png"
+                onError="this.src='../assets/sementes/guardioes/placeholder.png'"
+                alt="Ilustra&ccedil;&atilde;o da guardi&atilde; Celeste farejando um tesouro escondido"
+                class="hero-guardian">
         </header>
 
         <article class="lesson-body">
-
-
-
-
-
-
-<nav class="lesson-header-nav" aria-label="Navegacao entre licoes" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #E5E7EB;">
-    <div style="width: 33%;">
-        
-        <a href="MV-S-004_A_ORDEM_DO_DIA.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
-            <span>←</span> <span>A Ordem do Dia</span>
-        </a>
-        
-    </div>
-    
-    <div style="width: 33%; text-align: center;">
-        <img src="../assets/icon-sementes.png" alt="Sementes" style="height: 32px; opacity: 0.8;" onerror="this.style.display='none'">
-    </div>
-    
-    <div style="width: 33%; text-align: right;">
-        
-        <a href="MV-S-006_O_DESENHO_DO_REI.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem;">
-            <span>O Desenho do Rei</span> <span>→</span>
-        </a>
-        
-    </div>
-</div>
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧</span>
-        Preparação do Portador
-    </div>
-    
-    
-    
-    
-    <div style="text-align: center; margin-bottom: 1.5rem; color: #6B7280; font-size: 0.9rem; font-style: italic;">
-        Foco da lição: perceber posições espaciais vivas, como em cima, embaixo, atrás e na frente
-    </div>
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">💡</span>
-    <div>
-        
-        
-        <strong>Dica do Coração:</strong> Hoje é dia de brincar de esconde-esconde com Celeste!<br>A raposa adora encontrar tesouros escondidos.<br>Ajude seu filho a perceber o mundo ao redor — o que está em cima? Embaixo? Atrás?<br>
-    
-    </div>
-</div>
-
-
-    
-    
-    
-    
-    
-    <div class="materials-box" style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:8px; padding:1.25rem; margin:1.5rem 0;">
-        
-        <p><strong>🎯 Essencial:</strong></p>
-        <ul style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>1 objeto pequeno (brinquedo ou bolinha) (1)</li>
-            
-            <li>Card Celeste (1)</li>
-            
-            <li>3 lugares diferentes (cadeira (3)</li>
-            
-        </ul>
-        
-        
-        
-        
-        
-        
-    </div>
-    
-
-    
-    
-    <p><strong>🌟 Seu filho vai descobrir:</strong> Que as coisas ocupam lugares diferentes no espaço e que podemos descrever onde elas estão.</p>
-    
-
-    <p><strong>🛡️ Protocolo de Impecabilidade:</strong> Mova-se pelo espaço. Use o CORPO para demonstrar.<br>Em cima da cadeira. Embaixo da mesa. Atrás do sofá.<br></p>
-    <p><strong>🕊️ Nota de Graça:</strong> Se confundir direita com esquerda, tudo bem! Até adultos confundem. Celeste também se perde às vezes.</p>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🎬</span>
-        Ritual de Entrada
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🕯️</span>
-    <div>
-        
-        
-        Luz natural, espaço para movimentar-se, objetos espalhados.
-    
-    </div>
-</div>
-
-
-    <p><strong>🌫️ Transição:</strong> Feche os olhos e imagine uma clareira ensolarada.<br>O ar está morno e cheira a flores silvestres.<br></p>
-
-    
-    
-    <div class="sensory-box" style="background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); border-radius:8px; padding:1.25rem; margin:1.5rem 0; font-style:italic; color:#92400E; border-left:4px solid #F59E0B;">
-        O sol brilha entre as folhas, criando manchas de luz no chão.<br>Uma raposa laranja aparece, com o focinho erguido, farejando o ar.<br>Celeste pisca: "Sente esse cheiro? É aventura! Venha, tenho segredos para mostrar!"<br>
-    </div>
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Com entusiasmo, sorrindo, e brilho nos olhos! Contagie a criança.">
-                        <span style="font-style: normal;">✨</span> (animado)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            Shhh... Você ouve passos rápidos na grama?<br>Alguém está farejando algo... É Celeste!<br>
-        </div>
-    </div>
-</div>
-
-
-    <div style="text-align:center; margin-top:2rem;">
-        <p style="font-size:0.9rem; color:#9CA3AF; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:1px;">Visualizar</p>
-        <img src="../assets/cards/guardioes/celeste-raposa.png" 
-             style="width:120px; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.1); transform: rotate(-2deg); border: 4px solid white;"
-             onError="this.src='../assets/cards/guardioes/placeholder.png'"
-             alt="Card celeste">
-    </div>
-
-</div>
-
-
-
-
-<h2>🗺️ A Jornada</h2>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        O Tesouro Escondido
-    </div>
-    
-    
-        
-        
-<div class="local-card">
-    <p><strong>📍 Local:</strong> Clareira Perguntas</p>
-    <p class="local-label">Visualizar</p>
-    <img src="../assets/cards/locais/local-clareira-perguntas.png" alt="Clareira Perguntas">
-</div>
-
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Esconda o objeto em algum lugar visível.<br>"Celeste escondeu um tesouro! Vamos procurar?"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Incline a cabeça, olhe com atenção. Como um detetive descobrindo uma pista.">
-                        <span style="font-style: normal;">🧐</span> (curioso)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Eu escondi um tesouro nesta clareira!"<br>[Celeste fareja o ar]<br>"Mas onde será que ele está? EM CIMA de algo? EMBAIXO?"<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        A Busca
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Guie a criança usando apenas palavras de posição.<br>"Está EMBAIXO da cadeira? Não! Tente ATRÁS do sofá..."<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Com entusiasmo, sorrindo, e brilho nos olhos! Contagie a criança.">
-                        <span style="font-style: normal;">✨</span> (animado)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Está EMBAIXO da pedra? ATRÁS da árvore?"<br>[Celeste corre de um lado para outro]<br>"NA FRENTE do arbusto? EM CIMA do tronco?"<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        Encontrado!
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Deixe a criança esconder o objeto.<br>Faça perguntas usando posições até "encontrar".<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(satisfeito)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Você encontrou! O tesouro estava [posição]!"<br>"Agora é sua vez de esconder para mim encontrar!"<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-
-
-
-<h2>🧱 O Concreto</h2>
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🧱</span>
-        O Concreto
-    </div>
-    
-    
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">📋</span>
-    <div>
-        
-        
-        <strong>Passo a Passo:</strong>
-        <ol style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>
-                Esconda o objeto EM CIMA de algo.
-                
-                <br><em>Fala sugerida: "O tesouro está EM CIMA de alguma coisa!"</em>
-                
-            </li>
-            
-            <li>
-                Depois que encontrar, esconda EMBAIXO.
-                
-                <br><em>Fala sugerida: "Agora ele se escondeu EMBAIXO!"</em>
-                
-            </li>
-            
-            <li>
-                Continue com ATRÁS e NA FRENTE.
-                
-                <br><em>Fala sugerida: "ATRÁS da almofada? NA FRENTE do livro?"</em>
-                
-            </li>
-            
-            <li>
-                Troque — criança esconde, você procura.
-                
-                <br><em>Fala sugerida: "Agora sou eu que procuro! Está EM CIMA? EMBAIXO?"</em>
-                
-            </li>
-            
-        </ol>
-    
-    </div>
-</div>
-
-
-    
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🗣️</span>
-        Narramos Juntos
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🤫</span>
-    <div>
-        
-        
-        Guarde o tesouro com carinho.<br>"Celeste adorou brincar com você!"<br>
-    
-    </div>
-</div>
-
-
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-        </div>
-        <div class="script-text">
-            "O que você descobriu hoje na Clareira? O que contaria para o Melquior?"
-        </div>
-    </div>
-</div>
-
-
-    <p><strong>Perguntas do Coração:</strong></p>
-    <ul style="margin-left:1.5rem; margin-top:0.5rem;">
-        <li>Onde Celeste escondeu o tesouro hoje?</li>
-        
-        <li>Qual esconderijo foi o mais difícil de encontrar?</li>
-        
-        <li>Você prefere esconder ou procurar?</li>
-        
-    </ul>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🏁</span>
-        Ritual de Fechamento
-    </div>
-    
-    
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(satisfeito)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Você tem olhos de explorador! Sabe onde cada coisa mora!"<br>"Até a próxima aventura, pequeno farejador!"<br>
-        </div>
-    </div>
-</div>
-
-
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-        </div>
-        <div class="script-text">
-            Em cima, embaixo, atrás, na frente... Voltamos.
-        </div>
-    </div>
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🔗</span>
-        Conexão da Jornada
-    </div>
-    
-    
-    
-    <p><strong>⬅️ Última Aventura:</strong> Noé nos ensinou a ordem. Agora, Celeste vai nos mostrar onde as coisas se escondem!</p>
-    
-    
-        <a href="MV-S-006_O_DESENHO_DO_REI.html" class="connection-link-card">
-            <span class="connection-link-label">Próxima lição</span>
-            <span class="connection-link-title">O Desenho do Rei</span>
-        </a>
-    
-
-</div>
-
-
-
-
-
-
-
-<div class="scene-card">
-    <div class="scene-header">
-        <span class="scene-icon">🌱</span>
-        Sementes para o Dia
-    </div>
-
-    <div class="instruction-box">
-        <span class="instruction-icon">💡</span>
-        <div>
-            <strong>Escolha 1 ou 2 movimentos</strong> se fizer sentido para a sua família, hoje ou ao longo da semana. A lição principal já foi vivida; aqui ficam continuidades leves para o espaço respirar pela casa.
-        </div>
-    </div>
-
-    <p><strong>Exploração:</strong> procurem pela casa algo em cima, embaixo, atrás e na frente de outra coisa.</p>
-    <p><strong>Dramatização:</strong> brinquem de ser Celeste por dois minutos: uma pessoa esconde, a outra fareja e procura.</p>
-    <p><strong>Narração:</strong> peçam à criança que conte ou mostre para alguém da casa onde o tesouro descansou hoje.</p>
-</nav>
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧‍👦</span>
-        Formação do Portador
-    </div>
-    
-    
-    <div class="instruction-box formation-intro-box">
-        <span class="instruction-icon">🌿</span>
-        <div>
-            <strong>Estratégia do Mestre:</strong> ensinar o <em>onde</em> sem pressa.
-            <p style="margin-top:0.5rem;">Hoje você conduziu a lição em três movimentos amarrados: Celeste dramatizou a busca na Jornada, a criança experimentou os lugares em O Concreto e depois começou a recontar o espaço em Narramos Juntos.</p>
-            <p style="margin-top:0.5rem;">Antes de pedir linguagem refinada, você ofereceu relação vivida entre corpo, objeto e ambiente. Esse é o centro pedagógico de hoje.</p>
-        </div>
-    </div>
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🧠 Método CPA (Jerome Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Concreto:</strong> Corpo no espaço, objetos escondidos fisicamente.</li>
-            <li><strong>Pictórico:</strong> Vetado (apenas na extensão com fotos).</li>
-            <li><strong>Abstrato:</strong> Vocabulário de posição.</li>
-        </ul>
-        
-        <span style="color:#6B7280; font-size:0.9rem;">CM: The child's body is the first classroom.</span>
-        
-    </div>
-    
-    
-    
-    
-    <div class="cm-box">
-        <strong>🏛️ Princípio Charlotte Mason:</strong><br>
-        <em>"Education is the science of relations."</em><br>
-        <span style="color:#6B7280;">A criança forma relações espaciais entre objetos e seu próprio corpo.</span>
-    </div>
-    
-    
-    
-    
-    <div class="tgtb-box">
-        <strong>📘 Conexão TGTB:</strong><br>
-        <span style="color:#92400E;">Corresponde à lição de Palavras de Posição.
-Celeste traz a dimensão de Aventura e Descoberta para um conceito espacial.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🌀 Currículo em Espiral (Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Agora:</strong> Posição Espacial — Sementes — em cima, embaixo, atrás, na frente</li>
-            <li><strong>Depois:</strong> Raízes — direita, esquerda, entre, ao lado, coordenadas simples</li>
-        </ul>
-        
-    </div>
-    
-    
-    
-    
-    <div class="espiritual-box">
-        <strong>✨ Reflexão Espiritual:</strong><br>
-        <span style="color:#166534;">Deus conhece onde estamos em cada momento.
-"Onde posso ir para me esconder do Teu Espírito?" — Salmo 139.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="graca-box">
-        <strong>🕊️ Nota de Graça:</strong><br>
-        Se a criança inverter as posições, faça dela um jogo.
-"Opa! Você disse embaixo, mas está em cima! Celeste ficou confusa também!"
-
-    </div>
-    
-
-</div>
-
-
-
-
+            <nav class="lesson-header-nav" aria-label="Navegacao entre licoes">
+                <div style="width: 33%;">
+                    <a href="MV-S-004_A_ORDEM_DO_DIA.html" class="nav-mini-link">
+                        <span>&larr;</span> <span>A Ordem do Dia</span>
+                    </a>
+                </div>
+
+                <div style="width: 33%; text-align: center;">
+                    <i class="ph-duotone ph-plant duotone-forest" style="font-size: 1.5rem;"></i>
+                    <span
+                        style="font-family: var(--font-heading); font-weight: 700; color: var(--primary); font-size: 0.9rem; margin-left: 0.5rem;">Sementes</span>
+                </div>
+
+                <div style="width: 33%; text-align: right;">
+                    <a href="MV-S-006_O_DESENHO_DO_REI.html" class="nav-mini-link" style="justify-content: flex-end;">
+                        <span>O Desenho do Rei</span> <span>&rarr;</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-clipboard-text duotone-terra"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Prepara&ccedil;&atilde;o do Portador
+                </div>
+
+                <div class="prep-focus-tag">
+                    Foco da li&ccedil;&atilde;o: perceber onde algo est&aacute; repousando no espa&ccedil;o: em cima,
+                    embaixo, atr&aacute;s e na frente
+                </div>
+
+                <div class="prep-bridge-box">
+                    <p><strong>Fio da Jornada:</strong> Ontem, No&eacute; mostrou que o dia encontra paz quando cada passo
+                        ocupa o seu lugar na fila. Hoje, Celeste vai mostrar que o mundo tamb&eacute;m se organiza por
+                        lugares: um tesouro pode descansar em cima, embaixo, atr&aacute;s ou na frente. Amanh&atilde;,
+                        &Iacute;ris vai revelar que os n&uacute;meros tamb&eacute;m t&ecirc;m um desenho pr&oacute;prio.
+                    </p>
+                </div>
+
+                <div class="instruction-box prep-heart-box">
+                    <i class="ph-duotone ph-lightbulb duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p style="margin-bottom:0.5rem;"><strong>Dica do Cora&ccedil;&atilde;o:</strong> hoje o mais
+                            importante n&atilde;o &eacute; a crian&ccedil;a repetir todas as palavras de posi&ccedil;&atilde;o,
+                            mas perceber rela&ccedil;&otilde;es reais com os olhos, com o corpo e com as m&atilde;os.</p>
+                        <p>Se a fala ainda n&atilde;o vier pronta, deixe primeiro que ela aponte, esconda, mova e mostre.
+                            O vocabul&aacute;rio cresce melhor quando nasce de um lugar realmente vivido.</p>
+                    </div>
+                </div>
+
+                <aside class="materials-box" aria-label="Lista de Materiais para a Preparacao do Portador">
+                    <p><strong><i class="ph-duotone ph-target duotone-terra"></i> Essencial:</strong></p>
+                    <ul>
+                        <li>1 pequeno tesouro, como uma pedrinha bonita, bolinha, tampinha, semente grande ou miniatura
+                        </li>
+                        <li>1 objeto de refer&ecirc;ncia para criar os lugares, como caixa, livro grosso, banquinho ou
+                            almofada firme</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-arrows-left-right duotone-indigo"></i>
+                            Substitui&ccedil;&otilde;es caseiras:</strong></p>
+                    <ul>
+                        <li>Se faltar mesa ou caixa, use o pr&oacute;prio corpo: o tesouro pode ficar em cima da m&atilde;o,
+                            embaixo do pano, atr&aacute;s das costas ou na frente do peito.</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-package duotone-gold"></i> Se
+                            tiver:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Um pano leve, cestinha pequena ou card da Celeste para tornar a busca mais bonita e clara</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-warning-circle duotone-gold"></i> Plano
+                            B:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Se o dia estiver corrido, escolha apenas dois contrastes vivos, como em cima e embaixo. O
+                            importante &eacute; que um lugar seja realmente percebido em rela&ccedil;&atilde;o ao outro.</li>
+                    </ul>
+                </aside>
+
+                <div class="prep-copy">
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-sparkle duotone-magic"></i>
+                            <span>Descoberta da Crian&ccedil;a</span>
+                        </p>
+                        <ul>
+                            <li>Que objetos n&atilde;o apenas existem; eles ocupam lugares em rela&ccedil;&atilde;o a
+                                outras coisas.</li>
+                            <li>Que &ldquo;em cima&rdquo;, &ldquo;embaixo&rdquo;, &ldquo;atr&aacute;s&rdquo; e
+                                &ldquo;na frente&rdquo; podem ser vistos, sentidos e nomeados.</li>
+                            <li>Que o espa&ccedil;o tamb&eacute;m pode ser lido com calma, como uma pequena pista viva.</li>
+                        </ul>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-check-circle duotone-forest"></i>
+                            <span>Sinal de Fruto de Hoje</span>
+                        </p>
+                        <p>Se a crian&ccedil;a conseguiu mostrar onde o tesouro estava, mesmo apontando ou movendo o objeto
+                            com o corpo, a li&ccedil;&atilde;o j&aacute; come&ccedil;ou a frutificar.</p>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-star-four duotone-gold"></i>
+                            <span>Segredo do Maravilhamento</span>
+                        </p>
+                        <p>N&atilde;o transforme a busca em prova de vocabul&aacute;rio. Primeiro o tesouro precisa parecer
+                            realmente escondido e depois realmente encontrado. A palavra certa pousa melhor quando nasce do
+                            espanto e da rela&ccedil;&atilde;o.</p>
+                    </div>
+
+                    <div class="strategy-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-strategy duotone-forest"></i>
+                            <span>Estrat&eacute;gia do Mestre: Dar Nome ao Onde</span>
+                        </p>
+                        <p><strong>Por que funciona:</strong> antes de entender mapas, linhas e orienta&ccedil;&otilde;es,
+                            a crian&ccedil;a precisa perceber rela&ccedil;&otilde;es espaciais no que est&aacute; diante
+                            dela. Quando um lugar &eacute; vivido, a linguagem deixa de soar abstrata.</p>
+                        <p><strong>A&ccedil;&atilde;o de hoje:</strong> ao longo do dia, nomeie discretamente um ou dois
+                            lugares reais: o copo na frente do prato, o pano em cima da cadeira, o sapato embaixo do banco.
+                            Menos explica&ccedil;&atilde;o, mais apontar com paz.</p>
+                        <p><strong>Eco no Reino:</strong> o Portador aprende que orientar o olhar da crian&ccedil;a
+                            tamb&eacute;m &eacute; formar pensamento. O espa&ccedil;o deixa de ser fundo neutro e vira parte
+                            da inteligibilidade do mundo.</p>
+                        <p style="margin-top:0.75rem;"><strong>Se houver irm&atilde;os:</strong> a mais velha pode escolher
+                            o lugar do tesouro e a menor pode celebrar quando o esconderijo for descoberto, sem roubar o foco
+                            da rela&ccedil;&atilde;o espacial principal.</p>
+                    </div>
+
+                    <div class="graca-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-heart duotone-heart"></i>
+                            <span>Nota de Gra&ccedil;a</span>
+                        </p>
+                        <p>Se a crian&ccedil;a inverter um lugar, n&atilde;o corrija com dureza. Mostre de novo, mova o
+                            tesouro e deixem o espa&ccedil;o falar. Hoje estamos semeando rela&ccedil;&atilde;o, n&atilde;o
+                            testando perfei&ccedil;&atilde;o verbal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-film-strip duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Ritual de Entrada
+                </div>
+
+                <div class="instruction-box ritual-bastidores-box">
+                    <i class="ph-duotone ph-lamp duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div><strong>Prepara&ccedil;&atilde;o:</strong> deixe o pequeno tesouro perto de voc&ecirc; e escolha
+                        um &uacute;nico objeto de refer&ecirc;ncia na mesa, no ch&atilde;o ou no colo. O ambiente precisa
+                        de pouco: um lugar vis&iacute;vel, um tesouro real e um ritmo mais calmo.</div>
+                </div>
+
+                <div class="script-persona-block portador-block ritual-portador-block">
+                    <div class="script-avatar-icon">
+                        <i class="ph-duotone ph-fire duotone-carmim"></i>
+                    </div>
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Portador da Tocha</span>
+                            <span class="script-tone">[Tom leve, atento, como quem entra em um lugar que guarda pistas.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>Viajante, feche os olhos por um instante. Respire fundo... e deixe o corpo ficar mais quieto.
+                            </p>
+                            <p>Agora caminhamos at&eacute; a <strong>Clareira das Perguntas</strong>. O ch&atilde;o aqui
+                                cheira a folha morna, terra macia e vento que passou devagar pelos arbustos.</p>
+                            <p class="acting-cue">[Pausa breve. D&ecirc; tempo para a clareira aparecer.]</p>
+                            <p>Alguma coisa pequena brilha por aqui, mas n&atilde;o se oferece inteira de uma vez. Na
+                                clareira, at&eacute; um tesouro gosta de escolher um lugar para descansar.</p>
+                            <p>Escute com aten&ccedil;&atilde;o. H&aacute; passos leves e um focinho curioso procurando a
+                                pista certa no ar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container ritual-local-card">
+                    <p class="local-label">Lugar revelado</p>
+                    <img src="../assets/cards/locais/local-clareira-perguntas.png"
+                        class="card-visual-asset rotate-right hover-float"
+                        onError="this.src='../assets/cards/locais/placeholder.png'"
+                        alt="Clareira das Perguntas">
+                </div>
+            </div>
+
+            <h2><i class="ph-duotone ph-map-trifold duotone-gold" style="margin-right:0.5rem;"></i> A Jornada</h2>
+
+            <div class="scene-card journey-scene journey-scene--reveal">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-star-four duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Celeste e o Brilho Escondido
+                </div>
+
+                <div class="card-container journey-reveal-card">
+                    <p class="local-label">Guardi&atilde; revelada</p>
+                    <img src="../assets/cards/guardioes/celeste-raposa.png"
+                        class="card-visual-asset rotate-left hover-float"
+                        onError="this.src='../assets/cards/guardioes/placeholder.png'"
+                        alt="Card da guardi&atilde; Celeste">
+                </div>
+
+                <div class="instruction-box journey-instruction-box">
+                    <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Gesto do Portador:</strong> deixe o pequeno tesouro meio escondido perto do objeto de
+                            refer&ecirc;ncia, sem ainda nomear o lugar exato.</p>
+                        <p><strong>Pergunta de entrada:</strong> &ldquo;Se algo pequeno quisesse descansar em segredo,
+                            onde voc&ecirc; procuraria primeiro?&rdquo;</p>
+                    </div>
+                </div>
+
+                <div class="script-persona-block journey-script">
+                    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="Celeste">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Celeste</span>
+                            <span class="script-tone">[Tom vivo, curioso e feliz por ter encontrado uma boa pista.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>&ldquo;Sente esse cheiro? &Eacute; aventura... e um brilho pequeno escondido em algum lugar
+                                da clareira.&rdquo;</p>
+                            <p>&ldquo;Ele n&atilde;o sumiu. S&oacute; escolheu um lugar para repousar. Talvez em cima.
+                                Talvez embaixo. Talvez atr&aacute;s. Talvez na frente.&rdquo;</p>
+                            <p>&ldquo;Venha comigo. Hoje seus olhos v&atilde;o aprender a ler o onde.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scene-card journey-scene">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-star-four duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    As Pistas do Lugar
+                </div>
+
+                <div class="instruction-box journey-instruction-box">
+                    <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Gesto do Portador:</strong> circule o objeto de refer&ecirc;ncia com o dedo ou com a
+                            m&atilde;o, mostrando seus lados sem revelar o tesouro cedo demais.</p>
+                        <p><strong>Clima:</strong> deixe cada palavra parecer um lugar real, n&atilde;o uma lista corrida.</p>
+                    </div>
+                </div>
+
+                <div class="script-persona-block journey-script">
+                    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="Celeste">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Celeste</span>
+                            <span class="script-tone">[Tom observador, como quem fareja e nomeia sem pressa.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>&ldquo;Em cima, a luz toca primeiro. Embaixo, a sombra protege. Atr&aacute;s, o olhar precisa
+                                contornar. Na frente, o mundo se oferece sem esconder nada.&rdquo;</p>
+                            <p>&ldquo;Veja como um mesmo tesouro muda de lugar sem mudar de valor. O que muda &eacute; onde
+                                ele descansa.&rdquo;</p>
+                            <p>&ldquo;Olhe de novo. Qual desses lugares parece guardar melhor o brilho?&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scene-card journey-scene">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-star-four duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Agora Seus Olhos Podem Procurar
+                </div>
+
+                <div class="instruction-box journey-instruction-box">
+                    <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Gesto do Portador:</strong> convide a crian&ccedil;a a procurar o tesouro nomeando uma
+                            pista de cada vez, at&eacute; encontr&aacute;-lo.</p>
+                        <p><strong>Ponte viva:</strong> quando o tesouro for achado, anuncie que agora ser&aacute; a vez da
+                            crian&ccedil;a escolher novos lugares para ele repousar.</p>
+                    </div>
+                </div>
+
+                <div class="script-persona-block journey-script">
+                    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="Celeste">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Celeste</span>
+                            <span class="script-tone">[Tom encorajador, sem entregar a resposta pronta.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>&ldquo;N&atilde;o vou resolver isso sozinha. Hoje quero os seus olhos comigo.&rdquo;</p>
+                            <p>&ldquo;Procure devagar. Se n&atilde;o estiver em cima, talvez esteja embaixo. Se n&atilde;o
+                                estiver na frente, talvez tenha escolhido ficar atr&aacute;s.&rdquo;</p>
+                            <p>&ldquo;Quando voc&ecirc; o encontrar, a clareira vai confiar a voc&ecirc; o pr&oacute;ximo
+                                esconderijo.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2><i class="ph-duotone ph-wall duotone-terra" style="margin-right:0.5rem;"></i> O Concreto</h2>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-wall duotone-terra" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    O Concreto
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-target duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Objetivo de hoje:</strong> perceber, com o corpo e com as m&atilde;os, que um objeto
+                            pode ocupar lugares diferentes em rela&ccedil;&atilde;o a outro.</p>
+                        <p style="margin-top:0.5rem;"><strong>Liga&ccedil;&atilde;o com a Jornada:</strong> Celeste
+                            ajudou a crian&ccedil;a a procurar um tesouro. Agora a crian&ccedil;a vai se tornar autora dos
+                            lugares do tesouro, em vez de apenas procur&aacute;-lo.</p>
+                    </div>
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-hand-coins duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Atividade principal:</strong> dar ao tesouro quatro lugares vivos em torno de um mesmo
+                            objeto de refer&ecirc;ncia.</p>
+                        <ol style="margin:0.75rem 0 0 1.25rem;">
+                            <li>Coloque o objeto de refer&ecirc;ncia no centro da experi&ecirc;ncia: uma caixa, livro,
+                                almofada ou banquinho.</li>
+                            <li style="margin-top:0.5rem;">Convide a crian&ccedil;a a colocar o tesouro <strong>em
+                                    cima</strong>. Fa&ccedil;am uma pausa curta e olhem o lugar.</li>
+                            <li style="margin-top:0.5rem;">Depois, pe&ccedil;a que o tesouro v&aacute; <strong>embaixo</strong>,
+                                depois <strong>atr&aacute;s</strong> e depois <strong>na frente</strong>, um lugar de cada vez.</li>
+                            <li style="margin-top:0.5rem;">Quando os quatro lugares j&aacute; tiverem sido vividos, troquem:
+                                a crian&ccedil;a escolhe um lugar em sil&ecirc;ncio e voc&ecirc; tenta nome&aacute;-lo.</li>
+                            <li style="margin-top:0.5rem;">Fa&ccedil;am mais uma rodada curta se ainda houver aten&ccedil;&atilde;o.
+                                Se o ritmo cair, encerrem em paz. A rela&ccedil;&atilde;o j&aacute; nasceu.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-users-three duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Varia&ccedil;&atilde;o leve 1:</strong> se faltar objeto de refer&ecirc;ncia, use o
+                            pr&oacute;prio corpo: o tesouro pode ficar em cima da cabe&ccedil;a, embaixo da m&atilde;o,
+                            atr&aacute;s das costas e na frente do peito.</p>
+                        <p style="margin-top:0.75rem;"><strong>Varia&ccedil;&atilde;o leve 2:</strong> se houver mais de uma
+                            crian&ccedil;a, a mais velha pode posicionar o tesouro e a menor pode repetir um dos lugares
+                            com alegria, sem virar outra licao paralela.</p>
+                    </div>
+                </div>
+
+                <div class="strategy-box">
+                    <p><strong>Falas que sustentam:</strong> &ldquo;Agora ele descansou em cima.&rdquo; &ldquo;Agora a
+                        sombra o guardou embaixo.&rdquo; &ldquo;Atr&aacute;s, o olhar precisa contornar.&rdquo; &ldquo;Na
+                        frente, ele se deixa ver.&rdquo;</p>
+                    <p style="margin-top:0.75rem;"><strong>Adapta&ccedil;&atilde;o para casa real:</strong> se o dia
+                        estiver apertado, vivam apenas dois lugares com clareza. Melhor dois lugares verdadeiros do que
+                        quatro corridos. Se o tesouro rolar ou cair, fa&ccedil;am disso parte da brincadeira.</p>
+                    <p style="margin-top:0.75rem;"><strong>Sinal de fruto do dia:</strong> se a crian&ccedil;a conseguiu
+                        colocar ou mostrar o tesouro em um lugar pedido, ou nomear um dos lugares com sentido, o fruto
+                        principal j&aacute; apareceu.</p>
+                    <p style="margin-top:0.75rem;"><strong>Ponte para Narramos Juntos:</strong> antes de guardar, deixe o
+                        tesouro em um &uacute;ltimo lugar escolhido pela crian&ccedil;a. Esse lugar pode abrir o reconto
+                        daqui a pouco.</p>
+                </div>
+            </div>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-chat-circle-dots duotone-terra"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Narramos Juntos
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-ear duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Postura de escuta do Portador:</strong> ou&ccedil;a antes de corrigir. Hoje a
+                            narra&ccedil;&atilde;o pode nascer da fala, do dedo apontando, do corpo mostrando um lugar ou do
+                            pr&oacute;prio tesouro sendo movido outra vez.</p>
+                        <p style="margin-top:0.5rem;">Se a crian&ccedil;a ficar em sil&ecirc;ncio, deixe que mostre
+                            primeiro. A linguagem costuma se abrir melhor depois de um gesto verdadeiro.</p>
+                    </div>
+                </div>
+
+                <div class="script-persona-block">
+                    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar"
+                        alt="Celeste, guardi&atilde; da Clareira das Perguntas">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Celeste</span>
+                        </div>
+                        <div class="script-text">
+                            <p>&ldquo;Me conte onde o brilho descansou hoje. Quero ouvir com a sua boca... ou ver com as
+                                suas m&atilde;os.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-chat-circle duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Perguntas de reconto:</strong></p>
+                        <ul style="margin:0.5rem 0 0 1.25rem;">
+                            <li>Onde o tesouro apareceu primeiro na clareira?</li>
+                            <li style="margin-top:0.5rem;">Qual lugar foi mais f&aacute;cil de encontrar: em cima,
+                                embaixo, atr&aacute;s ou na frente?</li>
+                            <li style="margin-top:0.5rem;">Qual lugar voc&ecirc; escolheu quando chegou a sua vez de
+                                esconder?</li>
+                            <li style="margin-top:0.5rem;">O que seus olhos precisaram fazer para encontrar o lugar certo?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="strategy-box">
+                    <p><strong>Perguntas do cora&ccedil;&atilde;o:</strong> &ldquo;Qual esconderijo pareceu mais bonito
+                        hoje?&rdquo; &ldquo;Em qual lugar o tesouro parecia mais seguro?&rdquo; &ldquo;Como voc&ecirc;
+                        se sentiu quando encontrou a pista certa?&rdquo;</p>
+                    <p style="margin-top:0.75rem;"><strong>Formas leg&iacute;timas de narra&ccedil;&atilde;o:</strong> a
+                        crian&ccedil;a pode narrar falando, apontando, colocando o tesouro de novo no lugar, mostrando com
+                        o corpo ou respondendo em frases bem curtas.</p>
+                    <p style="margin-top:0.75rem;"><strong>Adapta&ccedil;&atilde;o digna e inclusiva:</strong> se a fala
+                        n&atilde;o vier pronta, pe&ccedil;a primeiro: &ldquo;Mostre para mim onde ficou.&rdquo; Depois
+                        convide uma palavra ou uma frase pequena. Se houver duas crian&ccedil;as, uma pode mostrar e a
+                        outra nomear.</p>
+                </div>
+            </div>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-flag duotone-forest" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Ritual de Fechamento
+                </div>
+
+                <div class="script-persona-block">
+                    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar"
+                        alt="Celeste, guardi&atilde; da Clareira das Perguntas">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Celeste</span>
+                            <span style="font-style: normal;"><i
+                                    class="ph-duotone ph-sparkle duotone-gold"></i></span>
+                        </div>
+                        <div class="script-text">
+                            <p class="acting-cue">[Celeste se aquieta por um instante, como quem honra o lugar que acabou
+                                de ser visto.]</p>
+                            <p>&ldquo;Agora seus olhos sabem mais do que sabiam quando chegaram. Um tesouro n&atilde;o
+                                est&aacute; apenas aqui ou ali; ele repousa em rela&ccedil;&atilde;o a algo.&rdquo;</p>
+                            <p>&ldquo;Volte quando quiser. A clareira gosta de quem observa com calma antes de correr para
+                                responder.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="script-persona-block portador-block" style="margin-top: 1.5rem;">
+                    <div class="script-avatar-icon">
+                        <i class="ph-duotone ph-fire duotone-carmim"></i>
+                    </div>
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Portador da Tocha</span>
+                        </div>
+                        <div class="script-text">
+                            <p>Respire fundo. A clareira fica para tr&aacute;s e a casa volta devagar. O tesouro pode ser
+                                guardado agora, mas o olhar que aprende a perceber lugares continua com voc&ecirc;s.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-link duotone-indigo" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Conex&atilde;o da Jornada
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-path duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Mem&oacute;ria viva:</strong> hoje, Celeste mostrou que o espa&ccedil;o tamb&eacute;m
+                            fala. Um mesmo tesouro muda de lugar quando vai para cima, para baixo, para tr&aacute;s ou para
+                            a frente de outra coisa.</p>
+                        <p style="margin-top:0.5rem;"><strong>Pr&oacute;xima dobra da trilha:</strong> na pr&oacute;xima
+                            li&ccedil;&atilde;o, &Iacute;ris vai mostrar que os n&uacute;meros tamb&eacute;m carregam
+                            caminhos pr&oacute;prios: cada um tem um desenho para os olhos e para o corpo.</p>
+                    </div>
+                </div>
+
+                <a href="MV-S-006_O_DESENHO_DO_REI.html" class="connection-link-card">
+                    <span class="connection-link-label">Pr&oacute;xima li&ccedil;&atilde;o</span>
+                    <span class="connection-link-title">O Desenho do Rei</span>
+                </a>
+            </div>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-plant duotone-forest" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Sementes para o Dia
+                </div>
+
+                <div class="instruction-box daily-seeds-box">
+                    <div>
+                        <p><strong>Escolha 1 ou 2 movimentos</strong> se fizer sentido para a sua fam&iacute;lia, hoje ou
+                            ao longo da semana. A li&ccedil;&atilde;o principal j&aacute; foi vivida; aqui ficam
+                            continuidades opcionais para o espa&ccedil;o continuar falando pela casa.</p>
+                        <p><strong><i class="ph-duotone ph-magnifying-glass duotone-forest"></i>
+                                Explora&ccedil;&atilde;o:</strong> procurem pela casa algo em cima, embaixo, atr&aacute;s
+                            e na frente de outra coisa. N&atilde;o precisam ca&ccedil;ar tudo; um ou dois exemplos j&aacute;
+                            bastam.</p>
+                        <p><strong><i class="ph-duotone ph-mask-happy duotone-indigo"></i> Dramatiza&ccedil;&atilde;o:</strong>
+                            uma pessoa vira Celeste e a outra esconde o pequeno tesouro. Depois troquem. O segredo &eacute;
+                            brincar com as pistas, n&atilde;o correr para ganhar.</p>
+                        <p><strong><i class="ph-duotone ph-pencil-simple duotone-terra"></i> Cria&ccedil;&atilde;o:</strong>
+                            escolham um objeto da casa e fa&ccedil;am quatro cart&otilde;es simples: em cima, embaixo,
+                            atr&aacute;s e na frente. Coloquem o tesouro em um dos lugares e deixem a crian&ccedil;a marcar
+                            qual foi.</p>
+                        <p><strong><i class="ph-duotone ph-chat-circle duotone-carmim"></i> Narra&ccedil;&atilde;o:</strong>
+                            pe&ccedil;am &agrave; crian&ccedil;a que conte para algu&eacute;m da casa onde o tesouro
+                            descansou hoje. Se a fala vier curta, vale apontar ou mostrar com o pr&oacute;prio objeto.</p>
+                        <p><strong><i class="ph-duotone ph-moon-stars duotone-sky"></i> Reflex&atilde;o:</strong> antes
+                            de dormir, relembrem um ou dois lugares vistos no dia: o prato na frente, o brinquedo embaixo,
+                            o pano em cima. Um minuto de mem&oacute;ria mansa j&aacute; basta.</p>
+                        <p>Uma pequena continuidade, feita com leveza, j&aacute; ajuda o olhar da casa a ficar mais atento
+                            ao lugar das coisas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-graduation-cap duotone-carmim"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Forma&ccedil;&atilde;o do Portador
+                </div>
+
+                <div class="instruction-box formation-intro-box">
+                    <i class="ph-duotone ph-strategy duotone-forest"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <strong>Estrat&eacute;gia do Mestre:</strong> Dar Nome ao Onde
+                        <p style="margin-top:0.5rem;">Hoje voc&ecirc; conduziu a li&ccedil;&atilde;o em tr&ecirc;s
+                            movimentos amarrados: Celeste despertou a busca na Jornada, a crian&ccedil;a posicionou o
+                            tesouro em O Concreto e depois come&ccedil;ou a recontar os lugares onde ele repousou.</p>
+                        <p style="margin-top:0.5rem;">O centro da estrat&eacute;gia foi simples: voc&ecirc; n&atilde;o
+                            despejou defini&ccedil;&otilde;es; ajudou o olhar da crian&ccedil;a a perceber rela&ccedil;&otilde;es
+                            reais. Assim, a palavra nasce de um mundo vivido.</p>
+                    </div>
+                </div>
+
+                <div class="formation-stack">
+                    <div class="strategy-box">
+                        <p><strong>Por que isso importa:</strong> antes de mapas, geometrias e instru&ccedil;&otilde;es
+                            complexas, a crian&ccedil;a precisa entender que as coisas se orientam umas pelas outras no
+                            espa&ccedil;o. Essa inteligibilidade nasce cedo e com simplicidade.</p>
+                        <p style="margin-top:0.75rem;"><strong>O que o Portador aprende hoje:</strong> dizer
+                            &ldquo;onde&rdquo; com paz ajuda a crian&ccedil;a a perceber o mundo de forma mais clara. Isso
+                            n&atilde;o &eacute; detalhe perif&eacute;rico; &eacute; funda&ccedil;&atilde;o de linguagem e
+                            orienta&ccedil;&atilde;o.</p>
+                    </div>
+
+                    <div class="bruner-box">
+                        <p><strong><i class="ph-duotone ph-brain duotone-terra"></i> M&eacute;todo CPA:</strong></p>
+                        <ul style="margin:0.5rem 0 0 1.5rem;">
+                            <li><strong>Concreto:</strong> mover um objeto real em rela&ccedil;&atilde;o a outro com as
+                                m&atilde;os e com o corpo.</li>
+                            <li><strong>Pict&oacute;rico:</strong> pode vir depois em desenhos simples, fotos ou setas, mas
+                                ainda n&atilde;o governa esta li&ccedil;&atilde;o.</li>
+                            <li><strong>Abstrato:</strong> nasce mais tarde como vocabul&aacute;rio est&aacute;vel e,
+                                adiante, orienta&ccedil;&atilde;o mais complexa no espa&ccedil;o.</li>
+                        </ul>
+                    </div>
+
+                    <div class="cm-box">
+                        <p><strong><i class="ph-duotone ph-feather duotone-forest"></i> Princ&iacute;pio Charlotte
+                                Mason:</strong></p>
+                        <p style="margin-top:0.5rem; font-style:italic; color:#4B5563;">&ldquo;Education is the science of
+                            relations.&rdquo;</p>
+                        <p style="margin-top:0.5rem;">Hoje essa rela&ccedil;&atilde;o apareceu no espa&ccedil;o: um
+                            objeto em rela&ccedil;&atilde;o a outro, uma crian&ccedil;a em rela&ccedil;&atilde;o ao lugar,
+                            um olhar aprendendo a ler o mundo sem pressa.</p>
+                    </div>
+
+                    <div class="tgtb-box">
+                        <p><strong><i class="ph-duotone ph-link duotone-indigo"></i> Conex&atilde;o TGTB:</strong></p>
+                        <p style="margin-top:0.5rem;">Este passo corresponde ao trabalho inicial com linguagem espacial.
+                            O foco n&atilde;o &eacute; decorar termos, mas perceber rela&ccedil;&otilde;es de posi&ccedil;&atilde;o
+                            que mais tarde sustentar&atilde;o orienta&ccedil;&atilde;o, geometria e leitura do espa&ccedil;o.</p>
+                    </div>
+
+                    <div class="spiral-box">
+                        <p><strong><i class="ph-duotone ph-spiral duotone-forest"></i> Curr&iacute;culo em espiral:</strong>
+                        </p>
+                        <p style="margin-top:0.5rem;"><strong>Agora:</strong> a crian&ccedil;a percebe lugares simples em
+                            rela&ccedil;&atilde;o a um objeto de refer&ecirc;ncia.</p>
+                        <p style="margin-top:0.5rem;"><strong>Depois:</strong> esse mesmo olhar voltar&aacute; em
+                            dire&ccedil;&atilde;o, lado, vizinhan&ccedil;a, trajetos, formas e organiza&ccedil;&otilde;es
+                            mais elaboradas do espa&ccedil;o.</p>
+                        <p style="margin-top:0.5rem;"><strong>Por que isso traz paz:</strong> voc&ecirc; n&atilde;o
+                            precisa apressar o futuro. Basta honrar o onde de hoje com clareza e o restante ter&aacute;
+                            onde se apoiar.</p>
+                    </div>
+
+                    <div class="graca-box">
+                        <p><strong><i class="ph-duotone ph-heart duotone-heart"></i> Nota de Gra&ccedil;a:</strong></p>
+                        <p style="margin-top:0.5rem;">Se a crian&ccedil;a trocou um lugar ou precisou ver de novo, a
+                            li&ccedil;&atilde;o n&atilde;o falhou. O fruto de hoje &eacute; mais manso: o olhar come&ccedil;ou
+                            a perceber rela&ccedil;&otilde;es que antes passavam despercebidas.</p>
+                    </div>
+
+                    <div class="sementes-box">
+                        <p><strong><i class="ph-duotone ph-plant duotone-forest"></i> As Sementes Continuam:</strong></p>
+                        <p style="margin-top:0.5rem;">Quando a casa voltar a nomear com leveza onde as coisas est&atilde;o,
+                            voc&ecirc; n&atilde;o estar&aacute; apenas repetindo vocabul&aacute;rio. Estar&aacute;
+                            fortalecendo uma intelig&ecirc;ncia espacial dom&eacute;stica, concreta e calma.</p>
+                    </div>
+                </div>
+            </div>
         </article>
 
-        <!-- NAVIGATION FOOTER -->
         <nav class="lesson-nav">
-            
-            
-
-            
             <a href="MV-S-004_A_ORDEM_DO_DIA.html" class="nav-btn prev">
-                <span class="nav-label">← Anterior</span>
+                <span class="nav-label"><i class="ph-duotone ph-arrow-left duotone-gold"></i> Anterior</span>
                 <span class="nav-title">A Ordem do Dia</span>
             </a>
-            
-            
-            
             <a href="MV-S-006_O_DESENHO_DO_REI.html" class="nav-btn next">
-                <span class="nav-label">Próxima →</span>
+                <span class="nav-label">Pr&oacute;xima <i class="ph-duotone ph-arrow-right duotone-gold"></i></span>
                 <span class="nav-title">O Desenho do Rei</span>
             </a>
-            
         </nav>
 
         <footer style="text-align: center; margin-top: 4rem; color: #A8A29E; font-size: 0.8rem;">
-            Matemática Viva • Forjado com Estilo e Propósito
+            Matem&aacute;tica Viva &bull; Forjado com Estilo e Prop&oacute;sito
         </footer>
     </div>
 </body>
+
 </html>

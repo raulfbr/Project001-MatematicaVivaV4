@@ -1,6 +1,6 @@
 # STATUS DA REVISAO SEMENTES
 Data base: 2026-03-10
-Status geral: protocolo central consolidado em `023`; `Manual do Portador`, `MV-S-001` e `MV-S-002` passaram pela rodada profunda atual e estao prontos para validacao humana da Familia Rodrigues
+Status geral: protocolo central consolidado em `023`; `Manual do Portador`, `MV-S-001` e `MV-S-002` seguem prontos para validacao humana; por decisao da sessao de `2026-03-10`, o lote `MV-S-003` ate `MV-S-010` entrou em revisao profunda por IA com validacao humana posterior
 
 ---
 
@@ -22,14 +22,19 @@ Regra:
 ## 2) Estado atual da fase
 Fase ativa:
 1. protocolo topico a topico centralizado em fonte unica;
-2. `MV-S-001` e `MV-S-002` revisitadas contra esse protocolo;
+2. `MV-S-001` e `MV-S-002` revisitadas contra esse protocolo e mantidas prontas para selo humano;
 3. `Manual do Portador` reescrito na abertura para alinhar `Licao 000`, mobile-first e impressao opcional;
-4. preparacao para validacao humana final da Familia Rodrigues.
+4. `MV-S-003` e `MV-S-004` receberam primeira passada profunda por IA em `2026-03-10`;
+5. a task `029` abriu o lote estruturado `MV-S-003` ate `MV-S-010`;
+6. a task `030` abriu a reauditoria criteriosa por licao com conselho `experts`;
+7. a validacao humana da Familia Rodrigues ficou adiada para depois do fechamento deste lote, salvo se aparecer `BLOCK` duro que exija retorno imediato.
 
-Antes de escalar revisao em lote:
-1. colher o selo humano da Familia Rodrigues sobre `MV-S-001` e `MV-S-002`;
-2. registrar qualquer ajuste real de uso que aparecer;
-3. so depois decidir a entrada de `MV-S-003` e do piloto mais amplo.
+Antes de fechar o lote atual:
+1. reauditar `MV-S-003` e `MV-S-004` dentro do lote;
+2. migrar `MV-S-005` ate `MV-S-010` ao contrato canonico atual;
+3. executar a reauditoria por licao e por `experts` descrita na `030`;
+4. fechar auditoria transversal do bloco `003-010`;
+5. so depois levar o conjunto para validacao humana posterior.
 
 ---
 
@@ -62,27 +67,37 @@ Antes de escalar revisao em lote:
 | `026_TASK_ROBUSTA_REVISAO_MANUAL_PORTADOR_E_AUDITORIA_FINAL.md` | Feito | Rodada atual documentada |
 | `027_DISCUSSAO_MUDANCA_E_MELHORIA_MANUAL_PORTADOR_L000_MOBILE.md` | Feito | Base de decisao para a revisao do manual |
 | `028_AUDITORIA_FINAL_GERAL_PROTOCOLO_MANUAL_L001_L002.md` | Feito | Auditoria final consolidada desta rodada |
+| `029_TASK_ROBUSTA_REVISAO_IMPECAVEL_L003_L010.md` | Ativa | Task canonica do lote atual `L003-L010` |
+| `030_TASK_ROBUSTA_REAUDITORIA_TOTAL_L003_L010_POR_LICAO_COM_EXPERTS.md` | Ativa | Reauditoria rigorosa do lote por licao e com conselho `experts` |
 | `MV-S-001` | PASS PREMIUM por IA | Pronta para validacao humana |
 | `MV-S-002` | PASS PREMIUM por IA | Pronta para validacao humana |
 | `Manual do Portador` | PASS PREMIUM por IA | Abertura mobile-first e anatomia real do metodo consolidadas |
 
 ---
 
-## 5) Licoes auditadas neste estado
+## 5) Licoes auditadas e em lote ativo
 
 | Licao | Estado | Observacao |
 |---|---|---|
-| `MV-S-001_A_TRINDADE_NA_PALMA.html` | Passou pela matriz topica e fronteiras | Pronta para selo humano |
-| `MV-S-002_AS_PEDRAS_DA_FORTALEZA.html` | Passou pela matriz topica e fronteiras | Pronta para selo humano |
-| `MV-S-003` | Ainda nao entrou em rodada final | Espera validacao humana de `001` e `002` |
+| `MV-S-001_A_TRINDADE_NA_PALMA.html` | Passou pela matriz topica e fronteiras | Pronta para selo humano, com validacao adiada |
+| `MV-S-002_AS_PEDRAS_DA_FORTALEZA.html` | Passou pela matriz topica e fronteiras | Pronta para selo humano, com validacao adiada |
+| `MV-S-003_A_ESTRELA_DO_REINO.html` | Primeira passada profunda por IA concluida | Reauditar dentro da `029` |
+| `MV-S-004_A_ORDEM_DO_DIA.html` | Primeira passada profunda por IA concluida | Reauditar dentro da `029` |
+| `MV-S-005_O_ESCONDERIJO_DA_GLÓRIA.html` | Em fila de revisao profunda | Entra na Onda 2 da `029` |
+| `MV-S-006_O_DESENHO_DO_REI.html` | Em fila de revisao profunda | Entra na Onda 2 da `029` |
+| `MV-S-007_A_COROA_DA_SEMANA.html` | Em fila de revisao profunda | Entra na Onda 3 da `029` |
+| `MV-S-008_O_PAR_PERFEITO.html` | Em fila de revisao profunda | Entra na Onda 3 da `029` |
+| `MV-S-009_O_CELEIRO_DE_NOÉ.html` | Em fila de revisao profunda | Entra na Onda 4 da `029` |
+| `MV-S-010_A_FILA_DA_PROVIDÊNCIA.html` | Em fila de revisao profunda | Entra na Onda 4 da `029` |
 
 ---
 
 ## 6) Proximo passo seguro
-1. colher validacao humana da Familia Rodrigues;
-2. registrar qualquer ajuste real de uso;
-3. atualizar o status com o que a validacao humana confirmar;
-4. so depois decidir a entrada de `MV-S-003`.
+1. executar a `029_TASK_ROBUSTA_REVISAO_IMPECAVEL_L003_L010.md`;
+2. executar a `030_TASK_ROBUSTA_REAUDITORIA_TOTAL_L003_L010_POR_LICAO_COM_EXPERTS.md`;
+3. reauditar `L003-L004` no contexto do lote e do conselho `experts`;
+4. revisar `L005-L010` sob o mesmo metodo e fechar a auditoria transversal;
+5. so depois encaminhar o bloco para validacao humana posterior da Familia Rodrigues.
 
 ---
 

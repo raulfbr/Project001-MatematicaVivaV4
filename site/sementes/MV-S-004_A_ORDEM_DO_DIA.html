@@ -1,734 +1,679 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Ordem do Dia | Matemática Viva</title>
-    <!-- CSS ISOLADO DE SEMENTES -->
+    <title>A Ordem do Dia | Matem&aacute;tica Viva</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    <style>
-        /* INLINE STYLES FOR CRITICAL RENDERING PRIORITY */
-        body { background-color: #F8F9FA; color: #374151; }
-        .lesson-container { max-width: 768px; margin: 0 auto; padding-bottom: 4rem; }
-        
-        /* CARD COMPONENT */
-        .scene-card {
-            background: #FFFFFF;
-            border-radius: 12px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(0, 0, 0, 0.04);
-            position: relative;
-            overflow: hidden;
-        }
-        .scene-card::before {
-            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-            background: linear-gradient(90deg, #FCD34D 0%, #F59E0B 100%);
-            opacity: 0.8;
-        }
-
-        /* HEADER & TYPOGRAPHY */
-        .scene-header {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.35rem;
-            color: #111827;
-            margin-bottom: 2rem;
-            display: flex; align-items: center; gap: 0.75rem; font-weight: 600;
-        }
-        .scene-icon { font-size: 1.5rem; }
-        h2 { font-family:'Outfit'; color:#6B7280; font-size:1rem; text-transform:uppercase; letter-spacing:2px; margin: 3rem 0 1rem 0; text-align:center; }
-        strong { font-weight: 600; color: #1F2937; }
-
-        /* COMPONENTS */
-        .script-persona-block {
-            background: #F9FAFB;
-            border: 1px solid #F3F4F6;
-            border-left: 4px solid #10B981;
-            border-radius: 8px;
-            margin-top: 1.5rem; padding: 1.5rem;
-        }
-        .script-avatar { border: 2px solid #FFFFFF; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        
-        .instruction-box {
-            background: #FEFCE8; border: 1px solid #FEF9C3; color: #854D0E;
-            border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;
-            display: flex; gap: 1rem; align-items: flex-start;
-        }
-        .instruction-icon { font-size: 1.5rem; }
-        
-        .portador-block { border-left: 4px solid #10B981 !important; background: #FFFFFF !important; }
-        .script-name { text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
-
-        /* MOBILE OPTIMIZATION */
-        @media (max-width: 768px) {
-            .lesson-container { padding: 0; }
-            .scene-card { border-radius: 0; margin: 0 0 0.5rem 0; box-shadow: none; border-bottom: 1px solid #E5E7EB; }
-            .scene-card::before { height: 3px; }
-            h2 { font-size: 1.4rem; padding: 0 1.5rem; margin-top: 2rem; }
-        }
-    </style>
 </head>
+
 <body class="clima-1">
-    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard">🏡</a>
+    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard"><i
+            class="ph-duotone ph-house duotone-forest"></i></a>
 
     <div class="lesson-container">
-        <!-- HERO SECTION -->
         <header class="lesson-hero">
-            <div class="lesson-meta-tag">Lição 004 • A Ordem do Dia • ⏱️ 15-20 min</div>
+            <div class="lesson-meta-tag">Li&ccedil;&atilde;o 004 &bull; A Ordem do Dia &bull; <i
+                    class="ph-duotone ph-timer duotone-carmim"></i> 15-20 min</div>
             <h1 class="hero-title">A Ordem do Dia</h1>
-            <p class="hero-quote">"Há um tempo para tudo debaixo do céu: um tempo de plantar e um tempo de colher."</p>
-            <!-- ASSETS ISOLADOS DE SEMENTES -->
-            <img src="../assets/sementes/guardioes/noe-coruja.png" 
-                 onError="this.src='../assets/sementes/guardioes/placeholder.png'"
-                 alt="noe" class="hero-guardian">
+            <p class="hero-quote">&ldquo;No&eacute; mostra que o dia encontra paz quando cada passo aprende o seu
+                lugar.&rdquo;</p>
+            <img src="../assets/sementes/guardioes/noe-coruja.png"
+                onError="this.src='../assets/sementes/guardioes/placeholder.png'"
+                alt="Ilustra&ccedil;&atilde;o do guardi&atilde;o No&eacute; guardando a ordem do dia"
+                class="hero-guardian">
         </header>
 
         <article class="lesson-body">
-            
-
-
-
-
-
-
-<div class="lesson-header-nav" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #E5E7EB;">
-    <div style="width: 33%;">
-        
-        <a href="MV-S-003_A_ESTRELA_DO_REINO.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
-            <span>←</span> <span>A Estrela do Reino</span>
-        </a>
-        
-    </div>
-    
-    <div style="width: 33%; text-align: center;">
-        <img src="../assets/icon-sementes.png" alt="Sementes" style="height: 32px; opacity: 0.8;" onerror="this.style.display='none'">
-    </div>
-    
-    <div style="width: 33%; text-align: right;">
-        
-        <a href="MV-S-005_O_ESCONDERIJO_DA_GLÓRIA.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem;">
-            <span>O Esconderijo da Glória</span> <span>→</span>
-        </a>
-        
-    </div>
-</div>
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧</span>
-        Preparação do Portador
-    </div>
-    
-    
-    
-    
-    <div style="text-align: center; margin-bottom: 1.5rem; color: #6B7280; font-size: 0.9rem; font-style: italic;">
-        [Foco: Ordenação 1 a 5 e Sequência Temporal]
-    </div>
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">💡</span>
-    <div>
-        
-        
-        <strong>Dica do Coração:</strong> Hoje encontramos Noé, o sábio Guardião do Tempo.<br>Ele se move devagar, mas com propósito.<br>Ajude seu filho a sentir a calma de colocar as coisas no lugar certo.<br>
-    
-    </div>
-</div>
-
-
-    
-    
-    
-    
-    
-    <div class="materials-box" style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:8px; padding:1.25rem; margin:1.5rem 0;">
-        
-        <p><strong>🎯 Essencial:</strong></p>
-        <ul style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>5 Cartões Numerados (1-5) (5)</li>
-            
-            <li>5 Objetos pequenos (pedras ou sementes) (5)</li>
-            
-            <li>Card Noé (1)</li>
-            
-        </ul>
-        
-        
-        
-        
-        
-        
-    </div>
-    
-
-    
-    
-    <p><strong>🌟 Seu filho vai descobrir:</strong> Que existe uma ordem natural (1 vem antes do 2) e que seguir a ordem ajuda o dia a fluir.</p>
-    
-
-    <p><strong>🛡️ Protocolo de Impecabilidade:</strong> Não corra. A lição É sobre ordem e calma.<br>Ao ordenar os números/objetos, faça movimentos deliberados.<br></p>
-    <p><strong>🕊️ Nota de Graça:</strong> Se a ordem for quebrada, lembre-se: o caos precede a criação. Noé tem paciência infinita.</p>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🎬</span>
-        Ritual de Abertura
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🕯️</span>
-    <div>
-        
-        
-        Pouca luz, silêncio profundo, como numa biblioteca antiga.
-    
-    </div>
-</div>
-
-
-    <p><strong>🌫️ Transição:</strong> Respire fundo e solte o ar devagar, como o vento nas folhas velhas.<br>Estamos entrando na Árvore do Silêncio.<br></p>
-
-    
-    
-    <div class="sensory-box" style="background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); border-radius:8px; padding:1.25rem; margin:1.5rem 0; font-style:italic; color:#92400E; border-left:4px solid #F59E0B;">
-        O cheiro aqui é de papel antigo e madeira nobre.<br>Uma coruja grande pousa suavemente num galho grosso.<br>Noé ajusta seus óculos e diz: "Hoo... Tudo tem seu lugar."<br>
-    </div>
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(solene)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            Shhh... Você ouve o bater de asas pesadas?<br>Alguém nos observa lá de cima, com olhos de lua. É Noé.<br>
-        </div>
-    </div>
-</div>
-
-
-    <div style="text-align:center; margin-top:2rem;">
-        <p style="font-size:0.9rem; color:#9CA3AF; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:1px;">Visualizar</p>
-        <img src="../assets/cards/guardioes/noe-coruja.png" 
-             style="width:120px; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.1); transform: rotate(-2deg); border: 4px solid white;"
-             onError="this.src='../assets/cards/guardioes/placeholder.png'"
-             alt="Card noe">
-    </div>
-
-</div>
-
-
-
-
-<h2>🗺️ A Jornada</h2>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        A Chegada de Noé
-    </div>
-    
-    
-        
-        
-<div class="local-card">
-    <p><strong>📍 Local:</strong> Arvore Silencio</p>
-    <p class="local-label">Visualizar</p>
-    <img src="../assets/cards/locais/local-arvore-silencio.png" alt="Arvore Silencio">
-</div>
-
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Espalhe os 5 cartões numerados no chão, FORA de ordem.<br>"Olha, Noé deixou os números misturados. Vamos ajudar?"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar" alt="noe">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">noe</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(sabio)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Saudações, pequenos viajantes. O tempo não para, mas podemos organizá-lo."<br>[Noé mostra 5 pergaminhos enrolados]<br>"Para fazer uma história, precisamos de começo, meio e fim. Ordem."<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        O Primeiro Passo
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Peça para a criança encontrar o cartão '1' e colocá-lo na esquerda.<br>Coloque uma pedra/semente sobre ele. "Um."<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar" alt="noe">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">noe</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(paciente)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Quem vem primeiro? Quem abre a porta do dia?"<br>[Noé aponta para o horizonte]<br>"O número Um é o líder da fila."<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        A Fila Anda
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Encontre o 2, depois o 3, 4 e 5.<br>A cada número, coloque a quantidade correspondente de pedras em cima.<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar" alt="noe">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">noe</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Voz firme que diz 'Eu acredito em você'.">
-                        <span style="font-style: normal;">💪</span> (encorajador)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Muito bem. E quem vem logo atrás, segurando a mão do Um?"<br>"E depois? A fila precisa ser perfeita para atravessar a ponte do tempo."<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-
-
-
-<h2>🧱 O Concreto</h2>
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🧱</span>
-        Atividade Concreta
-    </div>
-    
-    
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">📋</span>
-    <div>
-        
-        
-        <strong>Passo a Passo:</strong>
-        <ol style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>
-                Misture os cartões. Diga "O Caos!".
-                
-                <br><em>Fala sugerida: "Oh não! Os dias de Noé estão bagunçados!"</em>
-                
-            </li>
-            
-            <li>
-                Pergunte: "Qual é o primeiro?" (Ajude se precisar)
-                
-                <br><em>Fala sugerida: "Isso. O Um começa tudo."</em>
-                
-            </li>
-            
-            <li>
-                Continue até o 5. Alinhe-os perfeitamente.
-                
-                <br><em>Fala sugerida: "Um, Dois, Três, Quatro, Cinco. Que paz ver tudo em ordem."</em>
-                
-            </li>
-            
-            <li>
-                (Desafio) Tire um número da fila e feche o espaço. "Quem sumiu?"
-                
-                <br><em>Fala sugerida: "Olha! A fila quebrou! Quem está faltando?"</em>
-                
-            </li>
-            
-        </ol>
-    
-    </div>
-</div>
-
-
-    
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🗣️</span>
-        Narramos Juntos
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🤫</span>
-    <div>
-        
-        
-        Recolha os cartões devagar.<br>"A ordem volta para o envelope, mas fica na cabeça."<br>
-    
-    </div>
-</div>
-
-
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar" alt="noe">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">noe</span>
-            
-        </div>
-        <div class="script-text">
-            "O que você descobriu hoje na Clareira? O que contaria para o Melquior?"
-        </div>
-    </div>
-</div>
-
-
-    <p><strong>Perguntas do Coração:</strong></p>
-    <ul style="margin-left:1.5rem; margin-top:0.5rem;">
-        <li>O que nós ajudamos Noé a fazer hoje?</li>
-        
-        <li>Qual número vem depois do 2?</li>
-        
-        <li>Você gosta mais de quando as coisas estão bagunçadas ou arrumadas?</li>
-        
-    </ul>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🏁</span>
-        Ritual de Fechamento
-    </div>
-    
-    
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar" alt="noe">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">noe</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(satisfeito)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Hoo... Agora o Reino pode girar em paz. Tudo está em seu lugar."<br>"Você tem o dom da Ordem, Viajante."<br>
-        </div>
-    </div>
-</div>
-
-
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-        </div>
-        <div class="script-text">
-            Um, dois, três, quatro, cinco... Voltamos.
-        </div>
-    </div>
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🔗</span>
-        Conexão da Jornada
-    </div>
-    
-    
-    
-    <p><strong>⬅️ Última Aventura:</strong> Íris nos mostrou a beleza da Estrela de 5 pontas. Hoje, Noé vai nos ensinar a colocar esses 5 pontos em fila.</p>
-    
-    
-        <div onclick="window.location.href='MV-S-005_O_ESCONDERIJO_DA_GLÓRIA.html'" style="cursor: pointer;">
-            <p><strong>➡️ Próxima Aventura:</strong> Agora que tudo está em ordem, vamos descobrir o que existe quando não há... nada. O segredo do Zero.</p>
-            
-            <div style="margin-top:0.5rem; text-align:right;">
-                <span style="font-size:0.85rem; color:#4B5563; background:#F3F4F6; padding:0.25rem 0.75rem; border-radius:1rem;">
-                    Ir para O Esconderijo da Glória →
-                </span>
+            <nav class="lesson-header-nav" aria-label="Navegacao entre licoes">
+                <div style="width: 33%;">
+                    <a href="MV-S-003_A_ESTRELA_DO_REINO.html" class="nav-mini-link">
+                        <span>&larr;</span> <span>A Estrela do Reino</span>
+                    </a>
+                </div>
+
+                <div style="width: 33%; text-align: center;">
+                    <i class="ph-duotone ph-plant duotone-forest" style="font-size: 1.5rem;"></i>
+                    <span
+                        style="font-family: var(--font-heading); font-weight: 700; color: var(--primary); font-size: 0.9rem; margin-left: 0.5rem;">Sementes</span>
+                </div>
+
+                <div style="width: 33%; text-align: right;">
+                    <a href="MV-S-005_O_ESCONDERIJO_DA_GLÓRIA.html" class="nav-mini-link"
+                        style="justify-content: flex-end;">
+                        <span>O Esconderijo da Gl&oacute;ria</span> <span>&rarr;</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-clipboard-text duotone-terra"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Prepara&ccedil;&atilde;o do Portador
+                </div>
+
+                <div class="prep-focus-tag">
+                    Foco da li&ccedil;&atilde;o: perceber que de 1 a 5 existe uma ordem est&aacute;vel, do primeiro ao
+                    &uacute;ltimo
+                </div>
+
+                <div class="prep-bridge-box">
+                    <p><strong>Fio da Jornada:</strong> Ontem, &Iacute;ris mostrou que a quantidade podia aparecer como
+                        forma: quatro guardando e um acendendo o centro. Hoje, No&eacute; vai mostrar que esses mesmos
+                        n&uacute;meros tamb&eacute;m podem caminhar em ordem, um depois do outro. Amanh&atilde;, Celeste
+                        nos mostrar&aacute; onde as coisas se escondem no espa&ccedil;o.</p>
+                </div>
+
+                <div class="instruction-box prep-heart-box">
+                    <i class="ph-duotone ph-lightbulb duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p style="margin-bottom:0.5rem;"><strong>Dica do Cora&ccedil;&atilde;o:</strong> Hoje o ritmo
+                            importa tanto quanto a resposta. No&eacute; ensina sem pressa: primeiro, depois, e s&oacute;
+                            ent&atilde;o o seguinte.</p>
+                        <p>Quando a crian&ccedil;a percebe que a fila tem um lugar certo para cada passo, mesmo sem falar
+                            tudo com perfei&ccedil;&atilde;o, a li&ccedil;&atilde;o j&aacute; encontrou paz.</p>
+                    </div>
+                </div>
+
+                <aside class="materials-box" aria-label="Lista de Materiais para a Preparacao do Portador">
+                    <p><strong><i class="ph-duotone ph-target duotone-terra"></i> Essencial:</strong></p>
+                    <ul>
+                        <li>5 cart&otilde;es, papeizinhos ou quadradinhos marcados de 1 a 5</li>
+                        <li>5 objetos pequenos para acompanhar a fila, como pedras, sementes, tampinhas ou bot&otilde;es
+                        </li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-arrows-left-right duotone-indigo"></i>
+                            Substitui&ccedil;&otilde;es caseiras:</strong></p>
+                    <ul>
+                        <li>Se n&atilde;o houver cart&otilde;es prontos, escreva os n&uacute;meros em tirinhas de papel ou
+                            use montinhos de 1 a 5 objetos.</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-package duotone-gold"></i> Se
+                            tiver:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Uma faixa de papel, barbante ou fita para marcar visualmente a linha onde a fila vai nascer
+                        </li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-warning-circle duotone-gold"></i> Plano
+                            B:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Se a crian&ccedil;a ainda n&atilde;o reconhece os grafismos, organize primeiro montinhos do
+                            menor para o maior. Depois aproxime os numerais com paz.</li>
+                    </ul>
+                </aside>
+
+                <div class="prep-copy">
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-sparkle duotone-magic"></i>
+                            <span>Descoberta da Crian&ccedil;a</span>
+                        </p>
+                        <ul>
+                            <li>Que existe um primeiro passo, um depois e um &uacute;ltimo lugar na fila.</li>
+                            <li>Que a ordem n&atilde;o &eacute; inven&ccedil;&atilde;o do humor do momento; ela permanece.
+                            </li>
+                            <li>Que seguir uma sequ&ecirc;ncia ajuda os olhos e o cora&ccedil;&atilde;o a descansarem.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-check-circle duotone-forest"></i>
+                            <span>Sinal de Fruto de Hoje</span>
+                        </p>
+                        <p>Se a crian&ccedil;a percebeu que a fila quebra quando um passo sai do lugar e respira melhor
+                            quando a ordem volta, o fruto principal j&aacute; apareceu.</p>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-star-four duotone-gold"></i>
+                            <span>Segredo do Maravilhamento</span>
+                        </p>
+                        <p>N&atilde;o corra para testar &ldquo;qual vem depois do 3&rdquo; como prova escolar. Deixe a
+                            fila nascer diante dos olhos. A ordem ensina melhor quando primeiro aparece com paz.</p>
+                    </div>
+
+                    <div class="strategy-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-strategy duotone-forest"></i>
+                            <span>Estrat&eacute;gia do Mestre: A Liturgia do Depois</span>
+                        </p>
+                        <p><strong>Por que funciona:</strong> Muitas crian&ccedil;as sabem contar sem ainda sentir o que
+                            vem antes e depois. Quando o Portador organiza o dia e os n&uacute;meros com calma, a ordem
+                            vira experi&ecirc;ncia real e n&atilde;o apenas recita&ccedil;&atilde;o.</p>
+                        <p><strong>A&ccedil;&atilde;o de hoje:</strong> Em um momento comum, nomeie duas ou tr&ecirc;s
+                            partes do dia em sequ&ecirc;ncia: primeiro acordamos, depois comemos, depois sa&iacute;mos;
+                            ou primeiro guardamos, depois lavamos, depois descansamos.</p>
+                        <p><strong>Eco no Reino:</strong> O adulto aprende que ordem n&atilde;o &eacute; dureza. &Eacute;
+                            um modo de tornar o caminho leg&iacute;vel e seguro para a crian&ccedil;a.</p>
+                        <p style="margin-top:0.75rem;"><strong>Se houver irm&atilde;os:</strong> a mais velha pode ordenar
+                            a fila principal, enquanto a menor entrega um cart&atilde;o ou nomeia quem veio primeiro, sem
+                            dissolver o foco da licao.</p>
+                    </div>
+
+                    <div class="graca-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-heart duotone-heart"></i>
+                            <span>Nota de Gra&ccedil;a</span>
+                        </p>
+                        <p>Se a ordem sair trocada, n&atilde;o entre em p&acirc;nico. No&eacute; n&atilde;o humilha a fila;
+                            ele a ajuda a encontrar de novo o seu lugar.</p>
+                    </div>
+                </div>
             </div>
-            
-        </div>
-    
 
-</div>
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-film-strip duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Ritual de Entrada
+                </div>
 
+                <div class="instruction-box ritual-bastidores-box">
+                    <i class="ph-duotone ph-lamp duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div><strong>Prepara&ccedil;&atilde;o:</strong> Deixe os cinco cart&otilde;es misturados sobre a mesa
+                        ou no tapete e abaixe um pouco o ritmo da casa antes de chamar a crian&ccedil;a.</div>
+                </div>
 
+                <div class="script-persona-block portador-block ritual-portador-block">
+                    <div class="script-avatar-icon">
+                        <i class="ph-duotone ph-fire duotone-carmim"></i>
+                    </div>
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Portador da Tocha</span>
+                            <span class="script-tone">[Tom sereno, pausado. Conduza a subida com quietude.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>Viajante, feche os olhos por um instante. Respire fundo... mais uma vez... e deixe a pressa
+                                ir embora.</p>
+                            <p>Subimos devagar pela <strong>&Aacute;rvore do Sil&ecirc;ncio</strong>. O cheiro aqui &eacute;
+                                de madeira antiga, folhas secas e papel guardado com cuidado.</p>
+                            <p class="acting-cue">[Pausa breve. Deixe a imagina&ccedil;&atilde;o subir antes da
+                                pr&oacute;xima frase.]</p>
+                            <p>L&aacute; no alto, o Reino parece mais claro. Algumas coisas s&oacute; descansam quando
+                                encontram o lugar certo.</p>
+                            <p>Escute bem. Algu&eacute;m guarda, l&aacute; de cima, o ritmo do come&ccedil;o e do fim.</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card-container ritual-local-card">
+                    <p class="local-label">Lugar revelado</p>
+                    <img src="../assets/cards/locais/local-arvore-silencio.png"
+                        class="card-visual-asset rotate-left hover-float"
+                        onError="this.src='../assets/cards/locais/placeholder.png'" alt="&Aacute;rvore do Sil&ecirc;ncio">
+                </div>
+            </div>
 
+            <!-- JORNADA -->
+            <h2><i class="ph-duotone ph-map-trifold duotone-gold" style="margin-right:0.5rem;"></i> A Jornada</h2>
 
+            <div class="scene-card journey-scene journey-scene--reveal">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-star-four duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    No&eacute; e os Pergaminhos Misturados
+                </div>
 
+                <div class="card-container journey-reveal-card">
+                    <p class="local-label">Guardi&atilde;o revelado</p>
+                    <img src="../assets/cards/guardioes/noe-coruja.png"
+                        class="card-visual-asset rotate-left hover-float"
+                        onError="this.src='../assets/cards/guardioes/placeholder.png'" alt="Card do guardi&atilde;o No&eacute;">
+                </div>
 
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧‍👦</span>
-        Para a Família
-    </div>
-    
-    
-    <p><strong>📚 Por que isso importa:</strong></p>
-    <div style="padding:0.5rem 0;">
-        A habilidade de ordenar (ordinalidade) é diferente de contar quantidade (cardinalidade).<br>Saber que "3 vem depois de 2" é a base da linha numérica mental.<br>Além disso, a ordem traz previsibilidade e segurança emocional para a criança.<br>
-    </div>
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🧠 Método CPA (Jerome Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Concreto:</strong> Ordenar cartões e pedras fisicamente.</li>
-            <li><strong>Pictórico:</strong> Vetado (apenas na extensão com desenhos da rotina).</li>
-            <li><strong>Abstrato:</strong> A sequência numérica visual.</li>
-        </ul>
-        
-        <span style="color:#6B7280; font-size:0.9rem;">CM: Habits of Order.</span>
-        
-    </div>
-    
-    
-    
-    
-    <div class="cm-box">
-        <strong>🏛️ Princípio Charlotte Mason:</strong><br>
-        <em>"Education is a discipline."</em><br>
-        <span style="color:#6B7280;">O hábito da ordem (física e mental) é formado através de práticas consistentes e gentis.</span>
-    </div>
-    
-    
-    
-    
-    <div class="tgtb-box">
-        <strong>📘 Conexão TGTB:</strong><br>
-        <span style="color:#92400E;">Corresponde à lição de Ordenação 1-5.
-Noé traz a dimensão do Tempo e da Sabedoria para um conceito puramente lógico.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🌀 Currículo em Espiral (Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Agora:</strong> Sequência Numérica — Sementes — 1 a 5</li>
-            <li><strong>Depois:</strong> Raízes — Linha numérica até 100, antecessor/sucessor</li>
-        </ul>
-        
-    </div>
-    
-    
-    
-    
-    <div class="espiritual-box">
-        <strong>✨ Reflexão Espiritual:</strong><br>
-        <span style="color:#166534;">Deus é um Deus de ordem, não de confusão.
-A criação seguiu uma sequência (Dia 1, Dia 2...).
-Ordenar é imitar o Criador.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="graca-box">
-        <strong>🕊️ Nota de Graça:</strong><br>
-        Se a criança trocar a ordem, não corrija com "Não!".
-Pergunte: "O 4 vem antes do 3? Vamos perguntar para o Noé?" (E consulte a fila correta).
+                <div class="instruction-box journey-instruction-box">
+                    <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Gesto do Portador:</strong> Mostre os cinco cart&otilde;es ou papeizinhos misturados, sem
+                            fila nem ordem.</p>
+                        <p><strong>Pergunta de entrada:</strong> &ldquo;Como um dia descansa quando cada passo quer andar ao
+                            mesmo tempo?&rdquo;</p>
+                    </div>
+                </div>
 
-    </div>
-    
+                <div class="script-persona-block journey-script">
+                    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar" alt="No&eacute;">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">No&eacute;</span>
+                            <span class="script-tone">[Tom calmo e atento. Como quem protege o tempo sem apress&aacute;-lo.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>&ldquo;Viajante, o dia tamb&eacute;m se cansa quando tudo quer ser primeiro.&rdquo;</p>
+                            <p>&ldquo;Aqui tenho cinco passos do tempo. Misturados, eles confundem o olhar. Em ordem, eles
+                                podem servir com paz.&rdquo;</p>
+                            <p>&ldquo;Venha comigo. Vamos descobrir quem abre a fila e quem guarda o fim.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-</div>
+            <div class="scene-card journey-scene">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-star-four duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    O Primeiro Abre o Caminho
+                </div>
 
+                <div class="instruction-box journey-instruction-box">
+                    <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Gesto do Portador:</strong> Convide a crian&ccedil;a a encontrar o cart&atilde;o 1 e
+                            coloc&aacute;-lo no come&ccedil;o da linha, &agrave; esquerda.</p>
+                        <p><strong>Ritmo:</strong> Fa&ccedil;a uma pequena pausa depois do primeiro lugar, como quem respeita
+                            um come&ccedil;o verdadeiro.</p>
+                    </div>
+                </div>
 
+                <div class="script-persona-block journey-script">
+                    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar" alt="No&eacute;">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">No&eacute;</span>
+                            <span class="script-tone">[Tom paciente. D&ecirc; peso ao primeiro passo.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>&ldquo;Toda fila precisa de um come&ccedil;o. Nem o quinto pode abrir o que o primeiro ainda
+                                n&atilde;o iniciou.&rdquo;</p>
+                            <p>&ldquo;Coloque o Um aqui. Ele n&atilde;o manda por vaidade; ele apenas abre o caminho para os
+                                outros.&rdquo;</p>
+                            <p>&ldquo;Agora j&aacute; podemos ver por onde o dia vai respirar.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="scene-card journey-scene">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-star-four duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    O Quinto Guarda o Pouso
+                </div>
 
+                <div class="instruction-box journey-instruction-box">
+                    <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Gesto do Portador:</strong> Mostre o cart&atilde;o 5 e coloque-o na outra ponta da
+                            linha, deixando o meio ainda em aberto.</p>
+                        <p><strong>Clima:</strong> Nomeie o espa&ccedil;o vazio como caminho esperando seus passos do meio.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="script-persona-block journey-script">
+                    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar" alt="No&eacute;">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">No&eacute;</span>
+                            <span class="script-tone">[Tom sereno, como quem mostra que at&eacute; o fim tem um lugar
+                                manso.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>&ldquo;E aqui est&aacute; o Cinco. Ele n&atilde;o corre para a frente; ele guarda o pouso do
+                                caminho.&rdquo;</p>
+                            <p>&ldquo;Veja: o come&ccedil;o j&aacute; sabe onde est&aacute;, o fim tamb&eacute;m. Agora os
+                                passos do meio esperam suas m&atilde;os para encontrar lugar.&rdquo;</p>
+                            <p>&ldquo;Continue comigo. Voc&ecirc; vai acordar essa fila inteira daqui a pouco.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2><i class="ph-duotone ph-wall duotone-terra" style="margin-right:0.5rem;"></i> O Concreto</h2>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-wall duotone-terra" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    O Concreto
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-target duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Objetivo de hoje:</strong> perceber que de 1 a 5 existe uma ordem est&aacute;vel, do
+                            primeiro ao &uacute;ltimo, e que os passos do meio n&atilde;o podem trocar de lugar sem quebrar
+                            a paz da fila.</p>
+                        <p style="margin-top:0.5rem;"><strong>Liga&ccedil;&atilde;o com a Jornada:</strong> No&eacute;
+                            mostrou o come&ccedil;o e o fim do caminho. Agora a crian&ccedil;a vai acordar o meio da fila e
+                            fazer o dia respirar com as pr&oacute;prias m&atilde;os.</p>
+                    </div>
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-hand-coins duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Atividade principal:</strong> completar a fila de 1 a 5 e acompanhar cada passo com a
+                            quantidade correspondente.</p>
+                        <ol style="margin:0.75rem 0 0 1.25rem;">
+                            <li>Deixe o 1 na ponta esquerda e o 5 na ponta direita. Entregue 2, 3 e 4 misturados para a
+                                crian&ccedil;a.</li>
+                            <li style="margin-top:0.5rem;">Convide-a a preencher os lugares do meio, um por um, at&eacute;
+                                a fila ficar inteira.</li>
+                            <li style="margin-top:0.5rem;">Depois, coloquem um objeto sobre o 1, dois sobre o 2, tr&ecirc;s
+                                sobre o 3, quatro sobre o 4 e cinco sobre o 5, sem correr.</li>
+                            <li style="margin-top:0.5rem;">Passem o dedo pela fila completa e contem juntos de 1 a 5,
+                                percebendo o caminho inteiro.</li>
+                            <li style="margin-top:0.5rem;">Uma &uacute;nica vez, tire um cart&atilde;o do meio e pergunte
+                                quem sumiu. Depois devolvam a paz &agrave; fila.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-users-three duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Varia&ccedil;&atilde;o leve 1:</strong> se os grafismos ainda forem pesados, monte a
+                            fila com montinhos de 1 a 5 objetos, do menor para o maior, e aproxime os numerais depois.</p>
+                        <p style="margin-top:0.75rem;"><strong>Varia&ccedil;&atilde;o leve 2:</strong> se houver mais de
+                            uma crian&ccedil;a, a mais velha continua organizando os lugares da fila. A menor pode entregar
+                            um cart&atilde;o, colocar um objeto ou celebrar quando a linha ficar inteira.</p>
+                    </div>
+                </div>
+
+                <div class="strategy-box">
+                    <p><strong>Falas que sustentam:</strong> &ldquo;O primeiro abre o caminho.&rdquo; &ldquo;O do meio n&atilde;o
+                        pode saltar a frente.&rdquo; &ldquo;Agora o olhar consegue descansar do come&ccedil;o ao fim.&rdquo;
+                    </p>
+                    <p style="margin-top:0.75rem;"><strong>Adapta&ccedil;&atilde;o para casa real:</strong> se o dia estiver
+                        corrido, montem a fila apenas uma vez e contem com o dedo. Se faltarem cart&otilde;es prontos,
+                        escreva os numerais em pap&eacute;is simples ou use cinco objetos em linha para marcar os lugares.</p>
+                    <p style="margin-top:0.75rem;"><strong>Sinal de fruto do dia:</strong> se a crian&ccedil;a percebeu que
+                        existe um lugar certo para cada passo e notou quando a fila quebrou, o fruto j&aacute; apareceu.</p>
+                    <p style="margin-top:0.75rem;"><strong>Ponte para Narramos Juntos:</strong> antes de guardar, deixe a
+                        fila pronta por alguns segundos. A crian&ccedil;a poder&aacute; mostrar onde o caminho come&ccedil;a,
+                        onde termina e quem precisou voltar ao lugar certo.</p>
+                </div>
+            </div>
+
+            <!-- NARRAMOS -->
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-chat-circle-dots duotone-terra"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Narramos Juntos
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-ear duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Postura de escuta do Portador:</strong> deixe a crian&ccedil;a olhar para a fila antes
+                            de responder. O reconto pode nascer da fala, do dedo caminhando pelos lugares ou da
+                            reorganiza&ccedil;&atilde;o dos cart&otilde;es.</p>
+                        <p style="margin-top:0.5rem;">Ou&ccedil;a antes de corrigir. Hoje estamos recolhendo ordem viva,
+                            n&atilde;o aplicando prova de sucessor.</p>
+                        <p style="margin-top:0.5rem;">Se a fala vier curta, o gesto ainda pode abrir a narracao com
+                            dignidade.</p>
+                    </div>
+                </div>
+
+                <div class="script-persona-block">
+                    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar"
+                        alt="No&eacute;, guardi&atilde;o da &Aacute;rvore do Sil&ecirc;ncio">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">No&eacute;</span>
+                        </div>
+                        <div class="script-text">
+                            <p>&ldquo;Me conte como a fila do dia encontrou paz hoje. Quem abriu o caminho, quem guardou o
+                                fim, e como os passos do meio acharam lugar?&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-chat-circle duotone-neutral"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Perguntas de reconto:</strong></p>
+                        <ul style="margin:0.5rem 0 0 1.25rem;">
+                            <li>O que No&eacute; encontrou misturado no alto da &Aacute;rvore do Sil&ecirc;ncio?</li>
+                            <li style="margin-top:0.5rem;">Quem abriu a fila e quem guardou o fim?</li>
+                            <li style="margin-top:0.5rem;">Como suas m&atilde;os ajudaram 2, 3 e 4 a encontrar lugar?</li>
+                            <li style="margin-top:0.5rem;">O que seus olhos perceberam quando a fila ficou inteira?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="strategy-box">
+                    <p><strong>Perguntas do cora&ccedil;&atilde;o:</strong> &ldquo;Como a fila parecia antes e depois de
+                        entrar em ordem?&rdquo; &ldquo;Qual lugar foi mais dif&iacute;cil de encontrar?&rdquo; &ldquo;O que
+                        voc&ecirc; sentiu quando tudo ficou em paz?&rdquo;</p>
+                    <p style="margin-top:0.75rem;"><strong>Formas leg&iacute;timas de narra&ccedil;&atilde;o:</strong> a
+                        crian&ccedil;a pode narrar falando, apontando o primeiro e o &uacute;ltimo, caminhando com o dedo
+                        pela fila, reorganizando os cart&otilde;es ou contando em frases curtas.</p>
+                    <p style="margin-top:0.75rem;"><strong>Adapta&ccedil;&atilde;o digna e inclusiva:</strong> se a fala
+                        n&atilde;o vier pronta, pe&ccedil;a primeiro que a crian&ccedil;a mostre o come&ccedil;o e o fim.
+                        Depois convide-a a dizer uma frase pequena sobre o meio da fila. Se houver duas crian&ccedil;as,
+                        uma pode falar e a outra apontar. Sil&ecirc;ncio atento tamb&eacute;m conta.</p>
+                </div>
+            </div>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-flag duotone-forest" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Ritual de Fechamento
+                </div>
+
+                <div class="script-persona-block">
+                    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar"
+                        alt="No&eacute;, guardi&atilde;o da &Aacute;rvore do Sil&ecirc;ncio">
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">No&eacute;</span>
+                            <span style="font-style: normal;"><i
+                                    class="ph-duotone ph-hands-praying duotone-terra"></i></span>
+                        </div>
+                        <div class="script-text">
+                            <p class="acting-cue">[No&eacute; abaixa um pouco a cabe&ccedil;a, como quem honra a paz que
+                                acabou de nascer.]</p>
+                            <p>&ldquo;Agora o caminho do dia pode respirar sem trope&ccedil;o. O primeiro, o meio e o fim
+                                j&aacute; sabem o seu lugar.&rdquo;</p>
+                            <p>&ldquo;Volte quando quiser. A ordem n&atilde;o foge; ela espera com paci&ecirc;ncia quem a
+                                procura.&rdquo;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="script-persona-block portador-block" style="margin-top: 1.5rem;">
+                    <div class="script-avatar-icon">
+                        <i class="ph-duotone ph-fire duotone-carmim"></i>
+                    </div>
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Portador da Tocha</span>
+                        </div>
+                        <div class="script-text">
+                            <p>Respire fundo. A sala de casa volta devagar. A fila pode ser guardada agora, mas a paz de
+                                ver cada passo no lugar certo continua com voc&ecirc;s.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-link duotone-indigo" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Conex&atilde;o da Jornada
+                </div>
+
+                <div class="instruction-box">
+                    <i class="ph-duotone ph-path duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p><strong>Mem&oacute;ria viva:</strong> hoje, No&eacute; mostrou que de 1 a 5 existe um caminho
+                            est&aacute;vel: o primeiro abre, o &uacute;ltimo guarda o pouso e os passos do meio encontram
+                            paz quando entram em ordem.</p>
+                        <p style="margin-top:0.5rem;"><strong>Pr&oacute;xima dobra da trilha:</strong> na pr&oacute;xima
+                            li&ccedil;&atilde;o, Celeste vai mostrar onde as coisas se escondem: em cima, embaixo,
+                            atr&aacute;s e na frente.</p>
+                    </div>
+                </div>
+
+                <a href="MV-S-005_O_ESCONDERIJO_DA_GLÓRIA.html" class="connection-link-card">
+                    <span class="connection-link-label">Pr&oacute;xima li&ccedil;&atilde;o</span>
+                    <span class="connection-link-title">O Esconderijo da Gl&oacute;ria</span>
+                </a>
+            </div>
+
+            <!-- SEMENTES -->
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-plant duotone-forest" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Sementes para o Dia
+                </div>
+
+                <div class="instruction-box daily-seeds-box">
+                    <div>
+                        <p><strong>Escolha 1 ou 2 movimentos</strong> se fizer sentido para a sua fam&iacute;lia, hoje ou
+                            ao longo da semana. A li&ccedil;&atilde;o principal j&aacute; foi vivida; aqui ficam
+                            continuidades opcionais para a ordem voltar a respirar pela casa.</p>
+                        <p><strong><i class="ph-duotone ph-magnifying-glass duotone-forest"></i>
+                                Explora&ccedil;&atilde;o:</strong> procurem pequenas sequ&ecirc;ncias pela casa: sapatos
+                            na porta, talheres na mesa, degraus, pregadores, panelas. Perguntem: &ldquo;Onde o primeiro
+                            come&ccedil;a? Onde o &uacute;ltimo descansa?&rdquo;</p>
+                        <p><strong><i class="ph-duotone ph-mask-happy duotone-indigo"></i> Dramatiza&ccedil;&atilde;o:</strong>
+                            façam a trilha do dia no ch&atilde;o com cinco folhas ou pap&eacute;is numerados. A crian&ccedil;a
+                            caminha do primeiro ao quinto, e um irm&atilde;o menor pode anunciar quando o come&ccedil;o ou
+                            o fim aparecem.</p>
+                        <p><strong><i class="ph-duotone ph-pencil-simple duotone-terra"></i> Cria&ccedil;&atilde;o:</strong>
+                            escolham tr&ecirc;s ou cinco momentos simples da rotina e organizem em ordem com desenhos,
+                            objetos ou fotos. A ordem precisa parecer poss&iacute;vel, n&atilde;o elaborada.</p>
+                        <p><strong><i class="ph-duotone ph-chat-circle duotone-carmim"></i> Narra&ccedil;&atilde;o:</strong>
+                            pe&ccedil;am &agrave; crian&ccedil;a que conte para algu&eacute;m da casa como a fila do dia
+                            encontrou paz. Se a fala vier curta, vale mostrar com o dedo por onde o caminho come&ccedil;a.
+                        </p>
+                        <p><strong><i class="ph-duotone ph-moon-stars duotone-sky"></i> Reflex&atilde;o:</strong> antes
+                            de dormir, relembrem com leveza duas ou tr&ecirc;s partes do dia em ordem:
+                            &ldquo;primeiro... depois... por fim...&rdquo; Um minuto basta para a li&ccedil;&atilde;o
+                            pousar.</p>
+                        <p>Uma pequena continuidade, feita com leveza, j&aacute; basta para a ordem continuar viva no
+                            cotidiano.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-graduation-cap duotone-carmim"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Forma&ccedil;&atilde;o do Portador
+                </div>
+
+                <div class="instruction-box formation-intro-box">
+                    <i class="ph-duotone ph-strategy duotone-forest"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <strong>Estrat&eacute;gia do Mestre:</strong> Dar Paz ao Depois
+                        <p style="margin-top:0.5rem;">Hoje voc&ecirc; conduziu a li&ccedil;&atilde;o em tr&ecirc;s
+                            movimentos amarrados: No&eacute; revelou o come&ccedil;o e o fim da fila na Jornada, a
+                            crian&ccedil;a completou o caminho em O Concreto e depois começou a recontar como a ordem
+                            apareceu.</p>
+                        <p style="margin-top:0.5rem;">O centro da estrat&eacute;gia foi simples e profundo: antes de
+                            cobrar rapidez, voc&ecirc; ofereceu um caminho leg&iacute;vel. Quando o olhar encontra
+                            sequ&ecirc;ncia, a mente e o cora&ccedil;&atilde;o descansam melhor.</p>
+                    </div>
+                </div>
+
+                <div class="formation-stack">
+                    <div class="strategy-box">
+                        <p><strong>Por que isso importa:</strong> nesta li&ccedil;&atilde;o, a crian&ccedil;a n&atilde;o
+                            apenas recitou n&uacute;meros; ela percebeu que existe um lugar est&aacute;vel para cada passo.
+                            Isso sustenta sequ&ecirc;ncia, antecipa antes e depois e traz clareza para muito al&eacute;m da
+                            contagem simples.</p>
+                        <p style="margin-top:0.75rem;"><strong>O que o Portador aprende hoje:</strong> ordem n&atilde;o
+                            precisa ser peso. Quando ela nasce com calma, ela se torna amparo para a crian&ccedil;a, e n&atilde;o
+                            cobran&ccedil;a.</p>
+                    </div>
+
+                    <div class="bruner-box">
+                        <p><strong><i class="ph-duotone ph-brain duotone-terra"></i> M&eacute;todo CPA:</strong></p>
+                        <ul style="margin:0.5rem 0 0 1.5rem;">
+                            <li><strong>Concreto:</strong> cart&otilde;es e objetos organizados fisicamente do primeiro ao
+                                quinto.</li>
+                            <li><strong>Pict&oacute;rico:</strong> pode aparecer depois, em desenhos ou fotos da rotina
+                                colocados em ordem simples.</li>
+                            <li><strong>Abstrato:</strong> fica para mais tarde como linguagem de sequ&ecirc;ncia, antes,
+                                depois, primeiro e &uacute;ltimo.</li>
+                        </ul>
+                    </div>
+
+                    <div class="cm-box">
+                        <p><strong><i class="ph-duotone ph-feather duotone-forest"></i> Princ&iacute;pio Charlotte
+                                Mason:</strong></p>
+                        <p style="margin-top:0.5rem; font-style:italic; color:#4B5563;">&ldquo;Education is a
+                            discipline.&rdquo;</p>
+                        <p style="margin-top:0.5rem;">Aqui, disciplina n&atilde;o significa dureza. Significa formar
+                            h&aacute;bitos gentis de aten&ccedil;&atilde;o, sequ&ecirc;ncia e descanso no lugar certo. O
+                            simples de hoje j&aacute; serve a esse trabalho.</p>
+                    </div>
+
+                    <div class="tgtb-box">
+                        <p><strong><i class="ph-duotone ph-link duotone-indigo"></i> Conex&atilde;o TGTB:</strong></p>
+                        <p style="margin-top:0.5rem;">Este passo corresponde ao trabalho inicial de ordenar de 1 a 5. O
+                            foco n&atilde;o &eacute; s&oacute; reconhecer numerais, mas perceber que a sequ&ecirc;ncia
+                            possui um caminho est&aacute;vel, do primeiro ao &uacute;ltimo.</p>
+                    </div>
+
+                    <div class="spiral-box">
+                        <p><strong><i class="ph-duotone ph-spiral duotone-forest"></i> Curr&iacute;culo em espiral:</strong>
+                        </p>
+                        <p style="margin-top:0.5rem;"><strong>Agora:</strong> a crian&ccedil;a percebe uma sequ&ecirc;ncia
+                            curta e est&aacute;vel de 1 a 5.</p>
+                        <p style="margin-top:0.5rem;"><strong>Depois:</strong> isso voltar&aacute; em linhas num&eacute;ricas,
+                            antecessor e sucessor, rotinas, calend&aacute;rio e outras estruturas ordenadas.</p>
+                        <p style="margin-top:0.5rem;"><strong>Por que isso traz paz:</strong> n&atilde;o h&aacute; pressa
+                            para transformar isso em treino duro. Basta uma trilha curta e clara, reencontrada muitas vezes
+                            com leveza.</p>
+                    </div>
+
+                    <div class="graca-box">
+                        <p><strong><i class="ph-duotone ph-heart duotone-heart"></i> Nota de Gra&ccedil;a:</strong></p>
+                        <p style="margin-top:0.5rem;">Se a fila precisou nascer duas vezes, a li&ccedil;&atilde;o n&atilde;o
+                            falhou. O fruto de hoje &eacute; mais manso: o come&ccedil;o, o meio e o fim ganharam lugar
+                            diante dos olhos. Isso j&aacute; basta para seguir com paz.</p>
+                    </div>
+
+                    <div class="sementes-box">
+                        <p><strong><i class="ph-duotone ph-plant duotone-forest"></i> As Sementes Continuam:</strong></p>
+                        <p style="margin-top:0.5rem;">Quando a crian&ccedil;a voltar a perceber primeiro, depois e por
+                            fim no cotidiano, voc&ecirc; n&atilde;o estar&aacute; repetindo conte&uacute;do; estar&aacute;
+                            fortalecendo uma trilha mental e dom&eacute;stica. Uma rotina pequena vivida com ordem j&aacute;
+                            continua a li&ccedil;&atilde;o.</p>
+                    </div>
+                </div>
+            </div>
         </article>
 
-        <!-- NAVIGATION FOOTER -->
         <nav class="lesson-nav">
-            
-            
-
-            
             <a href="MV-S-003_A_ESTRELA_DO_REINO.html" class="nav-btn prev">
-                <span class="nav-label">← Anterior</span>
+                <span class="nav-label"><i class="ph-duotone ph-arrow-left duotone-gold"></i> Anterior</span>
                 <span class="nav-title">A Estrela do Reino</span>
             </a>
-            
-            
-            
             <a href="MV-S-005_O_ESCONDERIJO_DA_GLÓRIA.html" class="nav-btn next">
-                <span class="nav-label">Próxima →</span>
-                <span class="nav-title">O Esconderijo da Glória</span>
+                <span class="nav-label">Pr&oacute;xima <i class="ph-duotone ph-arrow-right duotone-gold"></i></span>
+                <span class="nav-title">O Esconderijo da Gl&oacute;ria</span>
             </a>
-            
         </nav>
 
         <footer style="text-align: center; margin-top: 4rem; color: #A8A29E; font-size: 0.8rem;">
-            Matemática Viva • Forjado com Estilo e Propósito
+            Matem&aacute;tica Viva &bull; Forjado com Estilo e Prop&oacute;sito
         </footer>
     </div>
 </body>
+
 </html>

@@ -1,100 +1,76 @@
-# REVISÃO L013 — TOPICO A TOPICO
+# RE-REVISÃO L013 (PÓS-REESCRITA) — TOPICO A TOPICO
 Data: 2026-03-10
 Skill: `revisao-sementes-topico-a-topico`
 
-## MV-S-013 - O Rio que se Une
+## MV-S-013 - O Rio que se Une (versão canônica)
 
 ### Findings do Diagnóstico Inicial
-- Critico: lição inteira em formato legado (não migrada para contrato canônico 031)
-- Alto: tópico T010 `Sementes para o Dia` completamente ausente; `div onclick` para navegação (l.607); CSS inline duplicando `style.css` (l.12-73); nomes legados (`Ritual de Abertura`, `Atividade Concreta`, `Para a Família`); emojis em vez de Phosphor Icons; `Pictórico: Vetado` (anti-projeto); Melquior em minúsculas (l.301)
-- Medio: Sem Fio da Jornada, Descoberta da Criança, Sinal de Fruto, Segredo do Maravilhamento, Estratégia do Mestre, Sussurro do Portal, variações, ponte para Narramos, adaptação casa viva, postura de escuta; `[Foco: ...]` com colchetes template (l.133); `Reflexão Espiritual` fora do contrato; nav legada com `img` central
-- Baixo: `favicon.ico` referenciado; card local sem formato canônico
+- Critico: nenhum
+- Alto: nenhum
+- Medio: nenhum
+- Baixo: `favicon.ico` referenciado (dívida técnica transversal)
 
 ### Cerne Macro
 - TGTB ref: `000-L13 - Plus and Equals Signs / Sinais de Mais e Igual`
-- Promessa: a criança descobre que `+` significa "juntar" e `=` significa "virar" através de dois rios de pedras que se encontram
+- Promessa: a criança descobre que + significa "juntar" e = significa "é igual a" através de dois rios de pedras
 - Guardião e Lugar: Melquior (leão) no Jardim Central
-- Imagem Dominante: dois riachos de pedras que se unem / confluência / força da união
-- Conceito Vivo: `+` como juntar e `=` como resultado — símbolos como histórias, não como abstração
-- Fruto do Dia: a criança junta dois grupos, conta o total e reconhece que `+` e `=` contam essa história
-
-### Resíduos Legados (20+ encontrados)
-1. `Ritual de Abertura` em vez de `Ritual de Entrada` (l.198)
-2. `Atividade Concreta` em vez de `O Concreto` (l.433)
-3. `Para a Família` em vez de `Formação do Portador` (l.631)
-4. `div onclick` para navegação (l.607)
-5. Emojis inline (🏡, 🗺️, 🧱, 🗣️, 🏁, 🔗, 👨‍👩‍👧‍👦, 💡, 📋, etc.) em vez de Phosphor Icons
-6. CSS inline crítico duplicando `style.css` (l.12-73)
-7. `[Foco: ...]` com colchetes de template (l.133)
-8. Sem `<nav>` semântico superior com Phosphor
-9. Sem `Sementes para o Dia` — tópico T010 ausente
-10. `Conexão da Jornada` com `⬅️ Última Aventura` / `➡️ Próxima Aventura`
-11. Sem `section` tags canônicos (`journey-section`, `concrete-section`, etc.)
-12. Sem `prep-bridge-box` (Fio da Jornada)
-13. Sem `Segredo do Maravilhamento`
-14. Sem `Estratégia do Mestre` na Preparação
-15. Sem `Descoberta da Criança`
-16. Sem `Sinal de Fruto de Hoje`
-17. Sem `Sussurro do Portal`
-18. Sem `acting-cue` / pausa
-19. Guardião `melquior` em minúsculas (l.301)
-20. Sem `footer` padronizado (usa footer custom inline, l.733)
-21. Card do local com formato legado (l.271-275)
+- Imagem Dominante: dois riachos de pedras que se unem / confluência / força da união / linguagem secreta
+- Conceito Vivo: + como juntar e = como resultado — símbolos como histórias concretas
+- Fruto do Dia: a criança junta dois grupos, conta o total e reconhece o papel do + e do =
 
 ### Matriz Tópica (PASS/GAP/BLOCK)
-- 001 Base e Hero: GAP — Hero quote presente mas sem HTML entities. Sem Phosphor icons. Meta-tag com emojis. Alt text genérico (`melquior`).
-- 002 Header Superior: BLOCK — `div` não-semântica, `img` para ícone central, estilos inline rígidos. Sem `<nav>` com Phosphor.
-- 003 Preparacao do Portador: BLOCK — Foco com colchetes template. Sem Fio da Jornada. Sem Descoberta da Criança. Sem Sinal de Fruto. Sem Segredo do Maravilhamento. Sem Estratégia do Mestre. Materiais mínimos sem substituições caseiras. Sem Plano B. Graça presente mas minimalista.
-- 004 Ritual de Entrada: BLOCK — `Ritual de Abertura`. Sem card canônico do local. Sem Sussurro do Portal. Sensory box com estilo inline. `Transição` em vez de tom canônico do Portador.
-- 005 A Jornada: GAP — Três cenas presentes (Dois Rios, A União, O Resultado). Melquior com falas coerentes. Mas: sem `journey-section`, gesto do Portador simplificado, nome em minúsculas, card local em formato legado.
-- 006 O Concreto: GAP — Passo a passo com 4 passos. `Atividade Concreta`. Sem ligação explícita com Jornada. Sem variação. Sem adaptação casa viva. Sem ponte para Narramos.
-- 007 Narramos Juntos: GAP — Perguntas presentes. Mas: sem postura de escuta do Portador, sem formas legítimas expandidas, sem adaptação digna. Instrução pede guardar pedras antes de narrar.
-- 008 Ritual de Fechamento: GAP — Melquior e Portador presentes. Tom minimalista, sem acting-cue, sem devolução da casa.
-- 009 Conexao da Jornada: BLOCK — Formato legado com `div onclick`. Sem memória viva. Sem teaser narrativo real. `⬅️/➡️ Última/Próxima Aventura`.
-- 010 Sementes para o Dia: BLOCK — AUSENTE. Tópico completamente inexistente.
-- 011 Formacao do Portador: BLOCK — `Para a Família`. `Pictórico: Vetado`. Sem `O que o Portador aprende`. Sem Espiral expandida. Sem Estratégia do Mestre. `Reflexão Espiritual` fora do contrato canônico.
-- 012 Navegacao Inferior: GAP — Links corretos mas emojis (←/→), `lesson-nav` em vez de `lesson-footer-nav`.
+- 001 Base e Hero: PASS — Hero com Melquior e quote forte ("linguagem secreta dos números"). Encoding HTML entities. Phosphor icon no timer. Alt text descritivo.
+- 002 Header Superior: PASS — `<nav class="lesson-header-nav" aria-label>` semântico. Phosphor plant icon. Links corretos `L012 ← L013 → L014`.
+- 003 Preparacao do Portador: PASS — `prep-focus-tag` sem colchetes. `prep-bridge-box` com Fio da Jornada (L012→L013→L014). Dica do Coração protetora ("não são símbolos para decorar — são histórias para sentir"). Materials-box com Essencial, Substituições caseiras, Se tiver, Plano B. Descoberta da Criança (3 itens). Sinal de Fruto de Hoje. Segredo do Maravilhamento. Estratégia do Mestre (Símbolo Depois da Experiência). Nota de Graça.
+- 004 Ritual de Entrada: PASS — Nome canônico. `ritual-bastidores-box`. Portador com `acting-cue`. Card do local com `ritual-local-card`. Sussurro do Portal ("não mostre os sinais ainda").
+- 005 A Jornada: PASS — `<section class="journey-section">`. Três cenas (Os Dois Rios, A União, O Resultado). Melquior capitalizado. `journey-instruction-box` com Gesto do Portador. Ponte para O Concreto explícita.
+- 006 O Concreto: PASS — `<section class="concrete-section">`. Passo a passo (4 passos, símbolo por último). Ligação explícita com Jornada. Variação leve. Adaptação casa viva. Fruto que buscamos. Ponte para Narramos Juntos.
+- 007 Narramos Juntos: PASS — `<section class="narration-section">`. Postura de escuta. Melquior com tom de escuta. Perguntas abertas (4). Formas dignas de narrar expandidas.
+- 008 Ritual de Fechamento: PASS — `<section class="closing-section">`. Melquior com `acting-cue`. Portador com devolução da casa ("guardamos as pedras e voltamos").
+- 009 Conexao da Jornada: PASS — `<section class="connection-section">`. Memória viva. Teaser narrativo L014 (Bernardo, feixes com +). `<a href>` semântico.
+- 010 Sementes para o Dia: PASS — `<section class="seeds-section">`. 5 movimentos canônicos. Ancora "1 ou 2". Opcionalidade real.
+- 011 Formacao do Portador: PASS — `<section class="formation-section">`. Por que importa. O que o Portador aprende. CPA corrigido ("Pictórico: pode vir depois"). Charlotte Mason. Conexão TGTB (`000-L13`). Espiral. Estratégia. Graça. Sementes Continuam.
+- 012 Navegacao Inferior: PASS — `<nav class="lesson-footer-nav" aria-label>` semântico. Links corretos. Sem emojis.
 
 ### Fronteiras Críticas Inspecionadas
-- 003 -> 004: GAP — Preparação com colchetes não desemboca de forma canônica no Ritual legado.
-- 004 -> 005: GAP — Ritual revela lugar sem Sussurro; Jornada revela Melquior sem card canônico.
-- 005 -> 006: GAP — Sem ligação explícita Jornada → Concreto.
-- 006 -> 007: GAP — Falta ponte explícita para narração.
-- 008 -> 009: GAP — Fechamento minimalista antes de Conexão legada.
-- 009 -> 010: BLOCK — Sementes ausente.
-- 010 -> 011: BLOCK — Não aplicável (Sementes ausente).
-- 011 -> 012: GAP — Formação legada seguida de navegação legada.
+- 003 -> 004: PASS — Preparação completa desemboca no Ritual com fluidez.
+- 004 -> 005: PASS — Ritual revela Jardim Central com card; Jornada revela Melquior.
+- 005 -> 006: PASS — Ponte explícita ("é hora de a criança criar a própria união").
+- 006 -> 007: PASS — Ponte explícita ("convide a criança a contar o que descobriu").
+- 008 -> 009: PASS — Fechamento pousa; Conexão olha adiante para L014.
+- 009 -> 010: PASS — Conexão fecha trilha; Sementes abre continuidades leves.
+- 010 -> 011: PASS — Sementes e Formação separadas e claras.
+- 011 -> 012: PASS — Formação fecha antes da navegação técnica.
 
 ### Pareceres e Conselhos dos Experts
-- **Charlotte Mason:** BLOCK. Criança recebe instruções diretas com `<br>` sem mediação narrativa na Preparação. `Pictórico: Vetado` contradiz o espírito do projeto.
-- **Jerome Bruner:** GAP. CPA presente mas `Pictórico: Vetado` — projeto adia, nunca veta. Abstrato (símbolos + e =) aparece quase em paralelo ao concreto, sem camada pictórica intermediária.
-- **Susan Macaulay:** GAP. Legível mas com emojis sem classes semânticas, `<br>` excessivos e colchetes template. Mãe precisa de reler.
-- **Mãe Ansiosa:** GAP. Graça presente (`O Rei sorriu ao ver você chegar`) mas sem proteção contra ansiedade de "não entender símbolos novos".
-- **Mãe Veterana:** GAP. Plano B ausente. Sem adaptação para dia curto. Sem substituições caseiras expandidas.
-- **Beatrix Potter:** GAP. Imagem dos rios existe no Hero mas se dilui em tom instrucional durante o Concreto.
-- **Engenharia:** BLOCK. CSS inline duplicado. `div onclick`. Emojis vs Phosphor. Encoding misto (UTF-8 direto). Sem `<section>` canônicos.
-- **Design:** BLOCK. Layout antigo. Sem hierarquia visual canônica. Cards sem classes corretas.
+- **Charlotte Mason:** PASS. Criança como pessoa capaz. Experiência concreta antes de qualquer símbolo. Sem professoralismo.
+- **Jerome Bruner:** PASS. CPA exemplar: pedras juntas (C), pode vir depois (P), sinais como reconhecimento visual (A). Sequência protegida. `Pictórico: Vetado` corrigido.
+- **Susan Macaulay:** PASS. Instruções escaneáveis. Blocos limpos. Mãe conduz sem reler.
+- **Mãe Ansiosa:** PASS. Dica do Coração protege ("não são símbolos para decorar"). Graça genuína. Plano B presente.
+- **Mãe Veterana:** PASS. Plano B realista ("viva a união dos rios primeiro"). Substituições caseiras. Adaptação para irmãos.
+- **Beatrix Potter:** PASS. Imagem dominante (rios que se unem) sustentada do Hero ao Fechamento. Sem metáfora solta.
+- **Engenharia:** PASS. Sem CSS inline. Phosphor icons. `<nav>` semântico. `<section>` canônicos. `<a href>` em vez de `div onclick`. Encoding consistente.
+- **Design:** PASS. Hierarquia visual canônica. Cards corretos. Mobile viável.
 
 ### Patch e Adequações Realizadas
-- Estruturais: nenhum patch possível — requer reescrita completa
-- Narrativas: nenhum patch possível — requer reescrita completa
-- Pedagógicas: nenhum patch possível — requer reescrita completa
-- Lapidação / Taste: nenhum patch possível — requer migração ao contrato canônico
+- Estruturais: reescrita completa do HTML legado para contrato canônico
+- Narrativas: preservadas as 3 cenas originais (Dois Rios, A União, O Resultado); enriquecidas com acting-cues e gestos do Portador
+- Pedagógicas: adicionados todos os blocos ausentes; corrigido `Pictórico: Vetado` → formulação canônica; reforçada sequência concreto → símbolo
+- Lapidação / Taste: Melquior capitalizado; encoding normalizado; tom editorial alinhado
 
 ### Tabela de Validação de Fechamento
-- Cobertura topica: BLOCK (T010 ausente)
-- Fronteiras topicas: GAP
-- North Star: BLOCK
-- Estrutura: BLOCK
-- Narrativa: GAP
-- Pedagogia: GAP
-- Navegacao: BLOCK
-- Tecnica: BLOCK
-- Taste editorial: GAP
-- Leveza da Mãe: Parcial — sem Fio, sem Fruto, sem Plano B. Símbols novos (+ e =) podem gerar ansiedade.
-- Status Geral: BLOCK — REESCRITA NECESSÁRIA
+- Cobertura topica: PASS
+- Fronteiras topicas: PASS
+- North Star: PASS
+- Estrutura: PASS
+- Narrativa: PASS
+- Pedagogia: PASS
+- Navegacao: PASS
+- Tecnica: PASS
+- Taste editorial: PASS
+- Leveza da Mãe: A condução ficou genuinamente leve; rios como metáfora imersiva sem peso.
+- Status Geral: PASS PREMIUM
 
 ### Risco residual e Proximo passo
-- A lição inteira precisa ser migrada para o contrato canônico usando L009 ou L010 como modelo estrutural.
-- O que é aproveitável na reescrita: as 3 cenas da Jornada (Dois Rios, A União, O Resultado) com Melquior, o conceito vivo (+ como juntar, = como resultado) e o passo a passo do Concreto.
-- Após reescrita, submeter a nova revisão tópico a tópico.
+- Não houve validação visual em navegador.
+- Pronta para validação humana.

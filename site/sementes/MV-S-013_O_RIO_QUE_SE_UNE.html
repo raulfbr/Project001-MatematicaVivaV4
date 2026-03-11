@@ -1,738 +1,680 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Rio que se Une | Matemática Viva</title>
-    <!-- CSS ISOLADO DE SEMENTES -->
+    <title>O Rio que se Une | Matem&aacute;tica Viva</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    <style>
-        /* INLINE STYLES FOR CRITICAL RENDERING PRIORITY */
-        body { background-color: #F8F9FA; color: #374151; }
-        .lesson-container { max-width: 768px; margin: 0 auto; padding-bottom: 4rem; }
-        
-        /* CARD COMPONENT */
-        .scene-card {
-            background: #FFFFFF;
-            border-radius: 12px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(0, 0, 0, 0.04);
-            position: relative;
-            overflow: hidden;
-        }
-        .scene-card::before {
-            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-            background: linear-gradient(90deg, #FCD34D 0%, #F59E0B 100%);
-            opacity: 0.8;
-        }
-
-        /* HEADER & TYPOGRAPHY */
-        .scene-header {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.35rem;
-            color: #111827;
-            margin-bottom: 2rem;
-            display: flex; align-items: center; gap: 0.75rem; font-weight: 600;
-        }
-        .scene-icon { font-size: 1.5rem; }
-        h2 { font-family:'Outfit'; color:#6B7280; font-size:1rem; text-transform:uppercase; letter-spacing:2px; margin: 3rem 0 1rem 0; text-align:center; }
-        strong { font-weight: 600; color: #1F2937; }
-
-        /* COMPONENTS */
-        .script-persona-block {
-            background: #F9FAFB;
-            border: 1px solid #F3F4F6;
-            border-left: 4px solid #10B981;
-            border-radius: 8px;
-            margin-top: 1.5rem; padding: 1.5rem;
-        }
-        .script-avatar { border: 2px solid #FFFFFF; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        
-        .instruction-box {
-            background: #FEFCE8; border: 1px solid #FEF9C3; color: #854D0E;
-            border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;
-            display: flex; gap: 1rem; align-items: flex-start;
-        }
-        .instruction-icon { font-size: 1.5rem; }
-        
-        .portador-block { border-left: 4px solid #10B981 !important; background: #FFFFFF !important; }
-        .script-name { text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
-
-        /* MOBILE OPTIMIZATION */
-        @media (max-width: 768px) {
-            .lesson-container { padding: 0; }
-            .scene-card { border-radius: 0; margin: 0 0 0.5rem 0; box-shadow: none; border-bottom: 1px solid #E5E7EB; }
-            .scene-card::before { height: 3px; }
-            h2 { font-size: 1.4rem; padding: 0 1.5rem; margin-top: 2rem; }
-        }
-    </style>
 </head>
+
 <body class="clima-1">
-    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard">🏡</a>
+    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard"><i
+            class="ph-duotone ph-house duotone-forest"></i></a>
 
     <div class="lesson-container">
-        <!-- HERO SECTION -->
         <header class="lesson-hero">
-            <div class="lesson-meta-tag">Lição 013 • O Rio que se Une • ⏱️ 15-20 min</div>
+            <div class="lesson-meta-tag">Li&ccedil;&atilde;o 013 &bull; O Rio que se Une &bull; <i
+                    class="ph-duotone ph-timer duotone-carmim"></i> 15-20 min</div>
             <h1 class="hero-title">O Rio que se Une</h1>
-            <p class="hero-quote">"Dois riachos que viram um só. Melquior ensina a força da união no Reino."</p>
-            <!-- ASSETS ISOLADOS DE SEMENTES -->
-            <img src="../assets/sementes/guardioes/melquior-leao.png" 
-                 onError="this.src='../assets/sementes/guardioes/placeholder.png'"
-                 alt="melquior" class="hero-guardian">
+            <p class="hero-quote">&ldquo;Melquior mostra dois riachos que se encontram e revela a linguagem secreta
+                dos n&uacute;meros: o sinal que junta e o sinal que diz &lsquo;&eacute; igual a&rsquo;.&rdquo;</p>
+            <img src="../assets/sementes/guardioes/melquior-leao.png"
+                onError="this.src='../assets/sementes/guardioes/placeholder.png'"
+                alt="Ilustra&ccedil;&atilde;o do guardi&atilde;o Melquior, le&atilde;o s&aacute;bio do Jardim Central"
+                class="hero-guardian">
         </header>
 
         <article class="lesson-body">
-            
-
-
-
-
-
-
-<div class="lesson-header-nav" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #E5E7EB;">
-    <div style="width: 33%;">
-        
-        <a href="MV-S-012_O_SEGREDO_DO_FEIXE.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
-            <span>←</span> <span>O Segredo do Feixe</span>
-        </a>
-        
-    </div>
-    
-    <div style="width: 33%; text-align: center;">
-        <img src="../assets/icon-sementes.png" alt="Sementes" style="height: 32px; opacity: 0.8;" onerror="this.style.display='none'">
-    </div>
-    
-    <div style="width: 33%; text-align: right;">
-        
-        <a href="MV-S-014_O_CELEIRO_QUE_CRESCE.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem;">
-            <span>O Celeiro que Cresce</span> <span>→</span>
-        </a>
-        
-    </div>
-</div>
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧</span>
-        Preparação do Portador
-    </div>
-    
-    
-    
-    
-    <div style="text-align: center; margin-bottom: 1.5rem; color: #6B7280; font-size: 0.9rem; font-style: italic;">
-        [Foco: Símbolos + e = — unir e resultar]
-    </div>
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">💡</span>
-    <div>
-        
-        
-        <strong>Dica do Coração:</strong> Hoje Melquior nos mostra dois rios que se encontram.<br>É a primeira vez que vemos + e =.<br>Não são símbolos — são histórias!<br>
-    
-    </div>
-</div>
-
-
-    
-    
-    
-    
-    
-    <div class="materials-box" style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:8px; padding:1.25rem; margin:1.5rem 0;">
-        
-        <p><strong>🎯 Essencial:</strong></p>
-        <ul style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>6 objetos pequenos (pedras ou sementes) (6)</li>
-            
-            <li>Card Melquior (1)</li>
-            
-        </ul>
-        
-        
-        
-        <p style="margin-top:1rem;"><strong>📦 Se tiver:</strong></p>
-        <ul style="margin-top:0.5rem; margin-left:1rem; color:#6B7280;">
-            
-            <li>Cartões + e = (ou desenhados) (2)</li>
-            
-        </ul>
-        
-        
-        
-        
-    </div>
-    
-
-    
-    
-    <p><strong>🌟 Seu filho vai descobrir:</strong> Que + significa "juntar" e = significa "virar" ou "é igual a".</p>
-    
-
-    <p><strong>🛡️ Protocolo de Impecabilidade:</strong> Use OBJETOS FÍSICOS primeiro.<br>+ e = vêm DEPOIS da experiência concreta.<br></p>
-    <p><strong>🕊️ Nota de Graça:</strong> Melquior diz: 'O Rei sorriu ao ver você chegar.' Mesmo quando confundimos os sinais!</p>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🎬</span>
-        Ritual de Abertura
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🕯️</span>
-    <div>
-        
-        
-        Ambiente majestoso, luz dourada, calmo.
-    
-    </div>
-</div>
-
-
-    <p><strong>🌫️ Transição:</strong> Feche os olhos. O jardim está dourado pelo pôr do sol.<br>Melquior espera perto da fonte central.<br></p>
-
-    
-    
-    <div class="sensory-box" style="background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); border-radius:8px; padding:1.25rem; margin:1.5rem 0; font-style:italic; color:#92400E; border-left:4px solid #F59E0B;">
-        O ar cheira a flores antigas e água corrente.<br>Melquior inclina sua juba dourada.<br>"O Rei sorriu ao ver você chegar."<br>
-    </div>
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(solene)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            Você vê aquele leão majestoso?<br>É Melquior, o sábio. Ele tem algo importante para mostrar.<br>
-        </div>
-    </div>
-</div>
-
-
-    <div style="text-align:center; margin-top:2rem;">
-        <p style="font-size:0.9rem; color:#9CA3AF; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:1px;">Visualizar</p>
-        <img src="../assets/cards/guardioes/melquior-leao.png" 
-             style="width:120px; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.1); transform: rotate(-2deg); border: 4px solid white;"
-             onError="this.src='../assets/cards/guardioes/placeholder.png'"
-             alt="Card melquior">
-    </div>
-
-</div>
-
-
-
-
-<h2>🗺️ A Jornada</h2>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        Os Dois Rios
-    </div>
-    
-    
-        
-        
-<div class="local-card">
-    <p><strong>📍 Local:</strong> Jardim Central</p>
-    <p class="local-label">Visualizar</p>
-    <img src="../assets/cards/locais/local-jardim-central.png" alt="Jardim Central">
-</div>
-
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Faça dois grupos de pedras: 3 de um lado, 2 do outro.<br>"Olha: um rio tem 3, o outro tem 2."<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">melquior</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(sabio)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Veja estes dois riachos de pedras."<br>[Melquior aponta para dois grupos]<br>"Um tem três pedras. O outro tem duas. Separados."<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        A União
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Junte os dois grupos. Mostre ou desenhe o símbolo +.<br>"Este símbolo significa JUNTAR. Três MAIS dois."<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">melquior</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(profundo)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Mas no Reino Contado, rios se encontram."<br>[Melquior junta os grupos]<br>"Quando juntamos, usamos este símbolo: +"<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        O Resultado
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Conte o total. Mostre o símbolo =.<br>"Três mais dois É IGUAL A cinco!"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">melquior</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(satisfeito)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "E o que acontece? Viram CINCO!"<br>[Melquior mostra o símbolo =]<br>"Este símbolo diz: 'é igual a'. 3 + 2 = 5."<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-
-
-
-<h2>🧱 O Concreto</h2>
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🧱</span>
-        Atividade Concreta
-    </div>
-    
-    
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">📋</span>
-    <div>
-        
-        
-        <strong>Passo a Passo:</strong>
-        <ol style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>
-                Faça 2 grupos (3 + 2).
-                
-                <br><em>Fala sugerida: "Um rio de três, outro de dois!"</em>
-                
-            </li>
-            
-            <li>
-                Junte fisicamente os grupos.
-                
-                <br><em>Fala sugerida: "Os rios se encontram!"</em>
-                
-            </li>
-            
-            <li>
-                Conte o total.
-                
-                <br><em>Fala sugerida: "Quantos agora? Um, dois, três, quatro, CINCO!"</em>
-                
-            </li>
-            
-            <li>
-                Mostre os símbolos (opcional).
-                
-                <br><em>Fala sugerida: "Isso é: 3 + 2 = 5!"</em>
-                
-            </li>
-            
-        </ol>
-    
-    </div>
-</div>
-
-
-    
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🗣️</span>
-        Narramos Juntos
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🤫</span>
-    <div>
-        
-        
-        Guarde as pedras juntas.<br>"Melquior ficou feliz com o seu trabalho!"<br>
-    
-    </div>
-</div>
-
-
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">melquior</span>
-            
-        </div>
-        <div class="script-text">
-            "O que você descobriu hoje na Clareira? O que contaria para o Melquior?"
-        </div>
-    </div>
-</div>
-
-
-    <p><strong>Perguntas do Coração:</strong></p>
-    <ul style="margin-left:1.5rem; margin-top:0.5rem;">
-        <li>O que acontece quando dois rios se encontram?</li>
-        
-        <li>O que o símbolo + faz?</li>
-        
-        <li>Quanto é 3 + 2?</li>
-        
-    </ul>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🏁</span>
-        Ritual de Fechamento
-    </div>
-    
-    
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">melquior</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Mão no peito, sorriso sincero. Agradeça de coração.">
-                        <span style="font-style: normal;">🙏</span> (grato)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Você aprendeu a linguagem dos números!"<br>"+ junta. = mostra. O Rei está orgulhoso."<br>
-        </div>
-    </div>
-</div>
-
-
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-        </div>
-        <div class="script-text">
-            Juntos... somos mais. Voltamos.
-        </div>
-    </div>
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🔗</span>
-        Conexão da Jornada
-    </div>
-    
-    
-    
-    <p><strong>⬅️ Última Aventura:</strong> Bernardo nos ensinou a fazer feixes. Agora, Melquior ensina como JUNTAR grupos!</p>
-    
-    
-        <div onclick="window.location.href='MV-S-014_O_CELEIRO_QUE_CRESCE.html'" style="cursor: pointer;">
-            <p><strong>➡️ Próxima Aventura:</strong> Você conhece + e =. Amanhã, Bernardo faz mais feixes e nós usamos o + para contar!</p>
-            
-            <div style="margin-top:0.5rem; text-align:right;">
-                <span style="font-size:0.85rem; color:#4B5563; background:#F3F4F6; padding:0.25rem 0.75rem; border-radius:1rem;">
-                    Ir para O Celeiro que Cresce →
-                </span>
+            <nav class="lesson-header-nav" aria-label="Navegacao entre licoes">
+                <div style="width: 33%;">
+                    <a href="MV-S-012_O_SEGREDO_DO_FEIXE.html" class="nav-mini-link">
+                        <span>&larr;</span> <span>O Segredo do Feixe</span>
+                    </a>
+                </div>
+
+                <div style="width: 33%; text-align: center;">
+                    <i class="ph-duotone ph-plant duotone-forest" style="font-size: 1.5rem;"></i>
+                    <span
+                        style="font-family: var(--font-heading); font-weight: 700; color: var(--primary); font-size: 0.9rem; margin-left: 0.5rem;">Sementes</span>
+                </div>
+
+                <div style="width: 33%; text-align: right;">
+                    <a href="MV-S-014_O_CELEIRO_QUE_CRESCE.html" class="nav-mini-link"
+                        style="justify-content: flex-end;">
+                        <span>O Celeiro que Cresce</span> <span>&rarr;</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-clipboard-text duotone-terra"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Prepara&ccedil;&atilde;o do Portador
+                </div>
+
+                <div class="prep-focus-tag">
+                    Foco da li&ccedil;&atilde;o: apresentar os s&iacute;mbolos + e = como hist&oacute;rias vivas
+                    &mdash; rios que se juntam e revelam o resultado &mdash; sem transformar sinais em
+                    decora&ccedil;&atilde;o abstrata
+                </div>
+
+                <div class="prep-bridge-box">
+                    <p><strong>Fio da Jornada:</strong> Ontem, Bernardo mostrou que dez gravetos soltos podem virar um
+                        feixe forte. Hoje, Melquior vai nos levar ao Jardim Central para ver dois rios que se
+                        encontram &mdash; e descobrir que essa uni&atilde;o tem um nome: +. Amanh&atilde;, Bernardo
+                        vai usar esse sinal para contar feixes novos.</p>
+                </div>
+
+                <div class="instruction-box prep-heart-box">
+                    <i class="ph-duotone ph-lightbulb duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p style="margin-bottom:0.5rem;"><strong>Dica do Cora&ccedil;&atilde;o:</strong> hoje &eacute;
+                            a primeira vez que a crian&ccedil;a v&ecirc; + e =. N&atilde;o s&atilde;o s&iacute;mbolos
+                            para decorar &mdash; s&atilde;o hist&oacute;rias para sentir. Dois rios que se juntam
+                            (&lsquo;mais&rsquo;) e o rio maior que nasce da uni&atilde;o
+                            (&lsquo;&eacute; igual a&rsquo;).</p>
+                        <p>Se a crian&ccedil;a juntar dois grupos e contar o total, o fruto principal j&aacute;
+                            nasceu. Se reconhecer o sinal +, &eacute; b&ocirc;nus.</p>
+                    </div>
+                </div>
+
+                <aside class="materials-box" aria-label="Lista de Materiais para a Preparacao do Portador">
+                    <p><strong><i class="ph-duotone ph-target duotone-terra"></i> Essencial:</strong></p>
+                    <ul>
+                        <li>6 objetos pequenos semelhantes: pedras, sementes, tampinhas ou blocos</li>
+                        <li>Card do guardi&atilde;o Melquior</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-arrows-left-right duotone-indigo"></i>
+                            Substitui&ccedil;&otilde;es caseiras:</strong></p>
+                    <ul>
+                        <li>Se n&atilde;o tiver pedras, use o que a casa tiver: colheres, legos, pregadores,
+                            gr&atilde;os de feij&atilde;o.</li>
+                        <li>Se n&atilde;o tiver cart&otilde;es de + e =, desenhe-os num papel ou fa&ccedil;a com
+                            palitos.</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-package duotone-gold"></i> Se
+                            tiver:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Cart&otilde;es com os sinais + e = (ou desenhados em papel)</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-warning-circle duotone-gold"></i> Plano
+                            B:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Se o dia estiver curto, viva a uni&atilde;o dos dois rios (juntar grupos) e deixe os
+                            s&iacute;mbolos + e = para um momento de calma posterior.</li>
+                    </ul>
+                </aside>
+
+                <div class="prep-copy">
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-sparkle duotone-magic"></i>
+                            <span>Descoberta da Crian&ccedil;a</span>
+                        </p>
+                        <ul>
+                            <li>Que + significa &ldquo;juntar&rdquo; &mdash; dois grupos que viram um.</li>
+                            <li>Que = significa &ldquo;&eacute; igual a&rdquo; ou &ldquo;virou&rdquo; &mdash; o
+                                resultado da uni&atilde;o.</li>
+                            <li>Que s&iacute;mbolos matem&aacute;ticos contam hist&oacute;rias concretas.</li>
+                        </ul>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-check-circle duotone-forest"></i>
+                            <span>Sinal de Fruto de Hoje</span>
+                        </p>
+                        <p>Se a crian&ccedil;a junta dois grupos e conta o total, ou diz &ldquo;tr&ecirc;s mais
+                            dois d&aacute; cinco&rdquo;, ou aponta para o sinal + e diz &ldquo;juntar&rdquo;, o
+                            fruto j&aacute; apareceu.</p>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-star-four duotone-gold"></i>
+                            <span>Segredo do Maravilhamento</span>
+                        </p>
+                        <p>N&atilde;o apresente + e = como s&iacute;mbolos para decorar. Hoje o Reino quer que a
+                            crian&ccedil;a veja dois rios de pedras que se encontram e descubra que a
+                            matem&aacute;tica tem uma linguagem para contar essa hist&oacute;ria.</p>
+                    </div>
+
+                    <div class="strategy-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-strategy duotone-forest"></i>
+                            <span>Estrat&eacute;gia do Mestre: S&iacute;mbolo Depois da Experi&ecirc;ncia</span>
+                        </p>
+                        <p><strong>Por que funciona:</strong> se a crian&ccedil;a primeiro junta fisicamente os
+                            objetos e s&oacute; depois v&ecirc; o sinal +, o s&iacute;mbolo nasce com significado.
+                            A abstra&ccedil;&atilde;o vem depois da a&ccedil;&atilde;o.</p>
+                        <p><strong>A&ccedil;&atilde;o de hoje:</strong> fa&ccedil;a dois grupos (3 e 2). Junte-os.
+                            Conte o total. S&oacute; ent&atilde;o mostre (ou desenhe) os sinais + e =.</p>
+                        <p><strong>Eco no Reino:</strong> o Portador protege a sequ&ecirc;ncia concreto &rarr;
+                            s&iacute;mbolo. Nunca o contr&aacute;rio.</p>
+                        <p style="margin-top:0.75rem;"><strong>Se houver irm&atilde;os:</strong> o menor pode
+                            entregar as pedras de um &ldquo;rio&rdquo;; a crian&ccedil;a-alvo junta e conta.</p>
+                    </div>
+
+                    <div class="graca-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-heart duotone-heart"></i>
+                            <span>Nota de Gra&ccedil;a</span>
+                        </p>
+                        <p>Se a crian&ccedil;a confundir + com =, tudo bem! Melquior diz: &ldquo;O Rei tem
+                            paci&ecirc;ncia. Vamos de novo &mdash; juntos.&rdquo;</p>
+                    </div>
+                </div>
             </div>
-            
-        </div>
-    
 
-</div>
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-film-strip duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Ritual de Entrada
+                </div>
 
+                <div class="instruction-box ritual-bastidores-box">
+                    <i class="ph-duotone ph-lamp duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div><strong>Prepara&ccedil;&atilde;o:</strong> separe 3 pedras de um lado e 2 do outro, antes de
+                        come&ccedil;ar. Se tiver os cart&otilde;es + e =, deixe-os escondidos para revelar depois do
+                        concreto.</div>
+                </div>
 
+                <div class="script-persona-block portador-block ritual-portador-block">
+                    <div class="script-avatar-icon">
+                        <i class="ph-duotone ph-fire duotone-carmim"></i>
+                    </div>
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Portador da Tocha</span>
+                            <span class="script-tone">[Tom solene e majestoso, como quem entra num lugar sagrado.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>Respire fundo. A casa fica aqui, mas o caminho nos leva adiante.</p>
+                            <p>Hoje voltamos ao <strong>Jardim Central</strong>. O ar cheira a flores antigas e
+                                &aacute;gua corrente. Melquior espera perto da fonte.</p>
+                            <p class="acting-cue">[Pausa. Deixe a crian&ccedil;a imaginar o Jardim.]</p>
+                            <p>Voc&ecirc; v&ecirc; aquele le&atilde;o majestoso? &Eacute; Melquior, o s&aacute;bio.
+                                Ele tem algo importante para mostrar.</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card-container ritual-local-card">
+                    <p class="local-label">Lugar revelado</p>
+                    <img src="../assets/cards/locais/local-jardim-central.png"
+                        class="card-visual-asset rotate-left hover-float"
+                        onError="this.src='../assets/cards/locais/placeholder.png'"
+                        alt="Card do Jardim Central, lugar da licao">
+                </div>
 
+                <div class="instruction-box ritual-whisper-box">
+                    <i class="ph-duotone ph-feather duotone-indigo"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div><strong>Sussurro do Portal:</strong> n&atilde;o mostre os sinais + e = ainda. Deixe
+                        primeiro os rios de pedras contarem a hist&oacute;ria. O s&iacute;mbolo vem depois do
+                        concreto.</div>
+                </div>
+            </div>
 
+            <section class="journey-section">
+                <h2><i class="ph-duotone ph-map-trifold duotone-gold" style="margin-right:0.5rem;"></i> A Jornada</h2>
 
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-waves duotone-indigo"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 1 - Os Dois Rios
+                    </div>
 
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧‍👦</span>
-        Para a Família
-    </div>
-    
-    
-    <p><strong>📚 Por que isso importa:</strong></p>
-    <div style="padding:0.5rem 0;">
-        + e = são os símbolos mais fundamentais da matemática.<br>Apresentá-los como "histórias" (rios que se unem) cria significado antes de abstração.<br>
-    </div>
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🧠 Método CPA (Jerome Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Concreto:</strong> Objetos juntos fisicamente.</li>
-            <li><strong>Pictórico:</strong> Vetado.</li>
-            <li><strong>Abstrato:</strong> Símbolos + e = (reconhecimento visual).</li>
-        </ul>
-        
-        <span style="color:#6B7280; font-size:0.9rem;">Bruner: Símbolo vem DEPOIS da experiência.</span>
-        
-    </div>
-    
-    
-    
-    
-    <div class="cm-box">
-        <strong>🏛️ Princípio Charlotte Mason:</strong><br>
-        <em>"Education is the science of relations."</em><br>
-        <span style="color:#6B7280;">Conectar símbolos a ações cria relação significativa.</span>
-    </div>
-    
-    
-    
-    
-    <div class="tgtb-box">
-        <strong>📘 Conexão TGTB:</strong><br>
-        <span style="color:#92400E;">Corresponde à lição de Sinais de Mais e Igual.
-Melquior traz sabedoria e peso para símbolos importantes.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🌀 Currículo em Espiral (Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Agora:</strong> Adição e Igualdade — Sementes — + como juntar, = como resultado</li>
-            <li><strong>Depois:</strong> Raízes — operações formais, sentenças numéricas</li>
-        </ul>
-        
-    </div>
-    
-    
-    
-    
-    <div class="espiritual-box">
-        <strong>✨ Reflexão Espiritual:</strong><br>
-        <span style="color:#166534;">Quando nos unimos, somos mais fortes.
-Dois rios juntos formam um rio maior.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="graca-box">
-        <strong>🕊️ Nota de Graça:</strong><br>
-        Se confundir + com =, tudo bem!
-Melquior diz: "O Rei tem paciência. Vamos de novo."
+                    <div class="instruction-box journey-instruction-box">
+                        <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Gesto do Portador:</strong> fa&ccedil;a dois grupos de pedras separados:
+                                3 de um lado, 2 do outro. &ldquo;Olha: um rio tem tr&ecirc;s pedras, o outro tem
+                                duas. Separados.&rdquo;</p>
+                        </div>
+                    </div>
 
-    </div>
-    
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar"
+                            alt="Card do guardiao Melquior">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Melquior</span>
+                                <span class="script-tone">[Tom s&aacute;bio e contemplativo, como quem olha para
+                                    algo que j&aacute; conhece h&aacute; muito tempo.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>&ldquo;Veja estes dois riachos de pedras. Um tem tr&ecirc;s. O outro tem duas.
+                                    Separados, cada um segue seu caminho.&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-</div>
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-arrows-merge duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 2 - A Uni&atilde;o
+                    </div>
 
+                    <div class="instruction-box journey-instruction-box">
+                        <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Gesto do Portador:</strong> junte fisicamente os dois grupos de pedras.
+                                &ldquo;Agora os rios se encontraram!&rdquo;</p>
+                            <p><strong>Clima:</strong> fa&ccedil;a do momento da jun&ccedil;&atilde;o algo
+                                significativo &mdash; n&atilde;o apressado.</p>
+                        </div>
+                    </div>
 
+                    <div class="script-persona-block journey-script">
+                        <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="Melquior">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Melquior</span>
+                                <span class="script-tone">[Tom profundo e admirado.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>&ldquo;Mas no Reino Contado, rios se encontram. Tr&ecirc;s pedras e duas pedras
+                                    se uniram.&rdquo;</p>
+                                <p>&ldquo;E no idioma dos n&uacute;meros, essa uni&atilde;o tem um sinal especial:
+                                    +. Ele significa &lsquo;juntar&rsquo;.&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-equals duotone-forest"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 3 - O Resultado
+                    </div>
 
+                    <div class="instruction-box journey-instruction-box">
+                        <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Gesto do Portador:</strong> conte o total junto com a crian&ccedil;a.
+                                &ldquo;Um, dois, tr&ecirc;s, quatro, CINCO! Tr&ecirc;s mais dois &eacute; igual a
+                                cinco!&rdquo;</p>
+                        </div>
+                    </div>
+
+                    <div class="script-persona-block journey-script">
+                        <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="Melquior">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Melquior</span>
+                                <span class="script-tone">[Tom satisfeito, como quem v&ecirc; a
+                                    compreens&atilde;o nascer.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>&ldquo;E o que aconteceu? Viram CINCO! O rio ficou maior.&rdquo;</p>
+                                <p>&ldquo;E existe outro sinal para contar isso: =. Ele diz &lsquo;&eacute; igual
+                                    a&rsquo;. Tr&ecirc;s mais dois &eacute; igual a cinco. 3 + 2 = 5.&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p style="margin-top:0.75rem;"><strong>Ponte para O Concreto:</strong> depois de ver Melquior
+                        contar a hist&oacute;ria dos rios, &eacute; hora de a crian&ccedil;a criar a pr&oacute;pria
+                        uni&atilde;o.</p>
+                </div>
+            </section>
+
+            <section class="concrete-section">
+                <h2><i class="ph-duotone ph-wall duotone-terra" style="margin-right:0.5rem;"></i> O Concreto</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-arrows-merge duotone-terra"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Rios de Pedras
+                    </div>
+
+                    <div class="instruction-box">
+                        <i class="ph-duotone ph-list-checks duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Passo a passo:</strong></p>
+                            <ol style="margin:0.75rem 0 0 1.25rem;">
+                                <li>Fa&ccedil;a dois grupos (3 e 2). &ldquo;Um rio de tr&ecirc;s, outro de
+                                    dois!&rdquo;</li>
+                                <li style="margin-top:0.5rem;">Junte fisicamente os grupos.
+                                    &ldquo;Os rios se encontram!&rdquo;</li>
+                                <li style="margin-top:0.5rem;">Conte o total: &ldquo;Um, dois, tr&ecirc;s, quatro,
+                                    CINCO!&rdquo;</li>
+                                <li style="margin-top:0.5rem;">S&oacute; agora mostre (ou desenhe) os sinais + e =.
+                                    &ldquo;Isso &eacute;: 3 + 2 = 5!&rdquo;</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <p><strong>Liga&ccedil;&atilde;o com a Jornada:</strong> a Jornada mostrou a hist&oacute;ria dos
+                        rios; aqui a crian&ccedil;a cria a pr&oacute;pria uni&atilde;o e descobre que + conta essa
+                        a&ccedil;&atilde;o.</p>
+
+                    <div class="prep-copy">
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-check-circle duotone-forest"></i>
+                                <span>Varia&ccedil;&atilde;o leve</span>
+                            </p>
+                            <p>Repita com outros n&uacute;meros: 2 + 1, 4 + 1, 1 + 3. Sempre concreto primeiro,
+                                s&iacute;mbolo depois. Se a crian&ccedil;a quiser, ela mesma desenha o +.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-baby duotone-magic"></i>
+                                <span>Adapta&ccedil;&atilde;o para casa viva</span>
+                            </p>
+                            <p>Com irm&atilde;os menores, o pequeno pode segurar um grupo; a crian&ccedil;a-alvo
+                                segura o outro e decidem juntos quando &ldquo;os rios se encontram&rdquo;.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-seedling duotone-gold"></i>
+                                <span>Fruto que buscamos</span>
+                            </p>
+                            <p>N&atilde;o &eacute; decorar sinais. &Eacute; a crian&ccedil;a sentir que juntar tem
+                                um nome (+) e que o resultado tem um sinal (=).</p>
+                        </div>
+                    </div>
+
+                    <p style="margin-top:0.75rem;"><strong>Ponte para Narramos Juntos:</strong> depois de criar
+                        rios pr&oacute;prios, convide a crian&ccedil;a a contar o que descobriu sobre juntar.</p>
+                </div>
+            </section>
+
+            <section class="narration-section">
+                <h2><i class="ph-duotone ph-book-open-text duotone-magic" style="margin-right:0.5rem;"></i> Narramos
+                    Juntos</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-chat-circle-text duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        O que os rios ensinaram
+                    </div>
+
+                    <div class="instruction-box">
+                        <i class="ph-duotone ph-ear duotone-neutral"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Postura de escuta do Portador:</strong> deixe as pedras reunidas &agrave;
+                                vista. A crian&ccedil;a pode narrar juntando e separando os grupos, apontando,
+                                desenhando o + no ar ou recontando com as pr&oacute;prias palavras.</p>
+                        </div>
+                    </div>
+
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar"
+                            alt="Melquior, guardiao do Jardim Central">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Melquior</span>
+                                <span class="script-tone">[Tom de quem escuta de verdade.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>&ldquo;O que voc&ecirc; descobriu hoje? O que acontece quando dois rios se
+                                    encontram?&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><strong>Perguntas abertas:</strong></p>
+                    <ul>
+                        <li>O que acontece quando dois rios se encontram?</li>
+                        <li>O que o sinal + faz?</li>
+                        <li>Quanto &eacute; 3 + 2?</li>
+                        <li>O que o sinal = quer dizer?</li>
+                    </ul>
+
+                    <p style="margin-top:0.75rem;"><strong>Formas dignas de narrar:</strong> a crian&ccedil;a pode
+                        juntar e separar as pedras, desenhar o + com o dedo, contar a hist&oacute;ria dos rios com
+                        suas palavras ou simplesmente mostrar o resultado.</p>
+                </div>
+            </section>
+
+            <section class="closing-section">
+                <h2><i class="ph-duotone ph-sunset duotone-carmim" style="margin-right:0.5rem;"></i> Ritual de
+                    Fechamento</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-heartbeat duotone-heart"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Quando os rios descansam
+                    </div>
+
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar"
+                            alt="Melquior, guardiao do Jardim Central">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Melquior</span>
+                                <span class="script-tone">[Tom grato e satisfeito.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p class="acting-cue">[Melquior inclina a juba dourada e sorri.]</p>
+                                <p>&ldquo;Voc&ecirc; aprendeu a linguagem dos n&uacute;meros! O + junta. O = mostra
+                                    o resultado. O Rei est&aacute; orgulhoso.&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="script-persona-block portador-block">
+                        <div class="script-avatar-icon">
+                            <i class="ph-duotone ph-fire duotone-carmim"></i>
+                        </div>
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Portador da Tocha</span>
+                            </div>
+                            <div class="script-text">
+                                <p>Juntos somos mais. Guardamos as pedras e voltamos para casa levando a linguagem
+                                    de quem sabe que juntar &eacute; uma hist&oacute;ria bonita.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="connection-section">
+                <h2><i class="ph-duotone ph-signpost duotone-indigo" style="margin-right:0.5rem;"></i>
+                    Conex&atilde;o da Jornada</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-path duotone-indigo"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Dos rios ao celeiro
+                    </div>
+
+                    <p><strong>Mem&oacute;ria viva:</strong> hoje Melquior mostrou que dois rios de pedras podem se
+                        encontrar, e que a matem&aacute;tica tem sinais para contar essa hist&oacute;ria: + e =.
+                        O corpo aprendeu que juntar tem nome e resultado.</p>
+
+                    <a href="MV-S-014_O_CELEIRO_QUE_CRESCE.html" class="journey-connection-card"
+                        style="text-decoration:none; display:block;">
+                        <div class="instruction-box" style="margin-bottom:0;">
+                            <i class="ph-duotone ph-package duotone-gold"
+                                style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                            <div>
+                                <p style="margin-bottom:0.35rem;"><strong>Pr&oacute;xima trilha:</strong>
+                                    amanh&atilde;, Bernardo vai usar esse + para contar feixes novos no celeiro que
+                                    cresce.</p>
+                                <p style="margin:0; color:#6B7280;">Ir para <strong>O Celeiro que Cresce</strong>
+                                    &rarr;</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="seeds-section">
+                <h2><i class="ph-duotone ph-flower-lotus duotone-forest" style="margin-right:0.5rem;"></i> Sementes
+                    para o Dia</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-sprout duotone-forest"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Escolha 1 ou 2 movimentos
+                    </div>
+
+                    <p>Uma continua&ccedil;&atilde;o pequena j&aacute; basta. `Sementes para o Dia` existe para
+                        que o + reapare&ccedil;a na vida comum, n&atilde;o para transformar o dia em aula de
+                        s&iacute;mbolos.</p>
+
+                    <ul>
+                        <li><strong>Explora&ccedil;&atilde;o:</strong> procurem pela casa coisas que se juntam:
+                            meias em pares, talheres lado a lado, brinquedos que se encaixam.</li>
+                        <li><strong>Dramatiza&ccedil;&atilde;o:</strong> brinquem de &ldquo;rios&rdquo; com
+                            brinquedos: dois grupos que se encontram e viram um maior.</li>
+                        <li><strong>Cria&ccedil;&atilde;o:</strong> a crian&ccedil;a desenha dois rios que se
+                            encontram e escreve (ou desenha) o + no meio.</li>
+                        <li><strong>Narra&ccedil;&atilde;o:</strong> na refei&ccedil;&atilde;o, pergunte:
+                            &ldquo;O que juntamos hoje?&rdquo;</li>
+                        <li><strong>Reflex&atilde;o:</strong> antes de dormir, contem juntos: &ldquo;Dois
+                            travesseiros mais um cobertor... tr&ecirc;s coisas na cama!&rdquo;</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="formation-section">
+                <h2><i class="ph-duotone ph-scroll duotone-terra" style="margin-right:0.5rem;"></i>
+                    Forma&ccedil;&atilde;o do Portador</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-graduation-cap duotone-terra"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        O que o adulto aprende ao lado de Melquior
+                    </div>
+
+                    <div class="prep-copy">
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-book-bookmark duotone-gold"></i>
+                                <span>Por que isso importa</span>
+                            </p>
+                            <p>+ e = s&atilde;o os s&iacute;mbolos mais fundamentais da matem&aacute;tica.
+                                Quando a crian&ccedil;a os descobre como hist&oacute;rias concretas (rios que se
+                                juntam), ganha significado antes da abstra&ccedil;&atilde;o.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-seal-check duotone-forest"></i>
+                                <span>O que o Portador aprende hoje</span>
+                            </p>
+                            <p>Que s&iacute;mbolos matem&aacute;ticos n&atilde;o precisam ser decorados &mdash;
+                                precisam ser vividos. O adulto protege essa sequ&ecirc;ncia: a&ccedil;&atilde;o
+                                concreta primeiro, nome do s&iacute;mbolo depois.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-cubes duotone-indigo"></i>
+                                <span>CPA / Bruner</span>
+                            </p>
+                            <p><strong>Concreto:</strong> objetos juntos fisicamente (pedras que se unem).</p>
+                            <p><strong>Pict&oacute;rico:</strong> pode vir depois, mas hoje o concreto governa.</p>
+                            <p><strong>Abstrato:</strong> os s&iacute;mbolos + e = nascem como reconhecimento
+                                visual de uma a&ccedil;&atilde;o j&aacute; vivida.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-feather duotone-magic"></i>
+                                <span>Charlotte Mason</span>
+                            </p>
+                            <p>&ldquo;Education is the science of relations.&rdquo; Hoje essa rela&ccedil;&atilde;o
+                                apareceu entre a a&ccedil;&atilde;o de juntar e o sinal +: a crian&ccedil;a
+                                conectou s&iacute;mbolo a experi&ecirc;ncia.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-books duotone-gold"></i>
+                                <span>Conex&atilde;o TGTB</span>
+                            </p>
+                            <p>Este passo corresponde a <code>000-L13 - Plus and Equals Signs / Sinais de Mais e
+                                    Igual</code>. Melquior traz sabedoria e peso para s&iacute;mbolos
+                                importantes.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-arrows-clockwise duotone-forest"></i>
+                                <span>Curr&iacute;culo em espiral</span>
+                            </p>
+                            <p>Hoje a crian&ccedil;a vive + e = como hist&oacute;rias concretas. Depois, esses
+                                sinais v&atilde;o sustentar senten&ccedil;as num&eacute;ricas, opera&ccedil;&otilde;es
+                                formais e resolu&ccedil;&atilde;o de problemas.</p>
+                        </div>
+
+                        <div class="strategy-box">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-compass-tool duotone-carmim"></i>
+                                <span>Estrat&eacute;gia do Mestre: S&iacute;mbolo Depois da Experi&ecirc;ncia</span>
+                            </p>
+                            <p>O adulto protege a li&ccedil;&atilde;o garantindo que o concreto venha antes do
+                                s&iacute;mbolo. Se a crian&ccedil;a juntou os grupos e contou o resultado, o +
+                                ganha sentido naturalmente.</p>
+                        </div>
+
+                        <div class="graca-box">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-heart-straight duotone-heart"></i>
+                                <span>Nota de Gra&ccedil;a</span>
+                            </p>
+                            <p>Se a crian&ccedil;a confundir + com =, Melquior diz: &ldquo;O Rei tem
+                                paci&ecirc;ncia. Vamos de novo &mdash; juntos.&rdquo; Nenhum s&iacute;mbolo precisa
+                                ser vencido na primeira vez.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-plant duotone-forest"></i>
+                                <span>As Sementes Continuam</span>
+                            </p>
+                            <p>Depois de conhecer + e =, a crian&ccedil;a estar&aacute; pronta para ver com
+                                Bernardo como usar esses sinais para contar feixes no celeiro que cresce.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="lesson-footer-nav" aria-label="Navegacao entre licoes">
+                <a href="MV-S-012_O_SEGREDO_DO_FEIXE.html" class="lesson-footer-link">
+                    <span class="lesson-footer-direction">&larr; Anterior</span>
+                    <span class="lesson-footer-title">O Segredo do Feixe</span>
+                </a>
+
+                <a href="MV-S-014_O_CELEIRO_QUE_CRESCE.html" class="lesson-footer-link" style="text-align:right;">
+                    <span class="lesson-footer-direction">Pr&oacute;xima &rarr;</span>
+                    <span class="lesson-footer-title">O Celeiro que Cresce</span>
+                </a>
+            </nav>
         </article>
-
-        <!-- NAVIGATION FOOTER -->
-        <nav class="lesson-nav">
-            
-            
-
-            
-            <a href="MV-S-012_O_SEGREDO_DO_FEIXE.html" class="nav-btn prev">
-                <span class="nav-label">← Anterior</span>
-                <span class="nav-title">O Segredo do Feixe</span>
-            </a>
-            
-            
-            
-            <a href="MV-S-014_O_CELEIRO_QUE_CRESCE.html" class="nav-btn next">
-                <span class="nav-label">Próxima →</span>
-                <span class="nav-title">O Celeiro que Cresce</span>
-            </a>
-            
-        </nav>
-
-        <footer style="text-align: center; margin-top: 4rem; color: #A8A29E; font-size: 0.8rem;">
-            Matemática Viva • Forjado com Estilo e Propósito
-        </footer>
     </div>
 </body>
+
 </html>

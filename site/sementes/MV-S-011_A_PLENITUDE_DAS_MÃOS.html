@@ -1,735 +1,687 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Plenitude das Mãos | Matemática Viva</title>
-    <!-- CSS ISOLADO DE SEMENTES -->
+    <title>A Plenitude das M&atilde;os | Matem&aacute;tica Viva</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    <style>
-        /* INLINE STYLES FOR CRITICAL RENDERING PRIORITY */
-        body { background-color: #F8F9FA; color: #374151; }
-        .lesson-container { max-width: 768px; margin: 0 auto; padding-bottom: 4rem; }
-        
-        /* CARD COMPONENT */
-        .scene-card {
-            background: #FFFFFF;
-            border-radius: 12px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(0, 0, 0, 0.04);
-            position: relative;
-            overflow: hidden;
-        }
-        .scene-card::before {
-            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-            background: linear-gradient(90deg, #FCD34D 0%, #F59E0B 100%);
-            opacity: 0.8;
-        }
-
-        /* HEADER & TYPOGRAPHY */
-        .scene-header {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.35rem;
-            color: #111827;
-            margin-bottom: 2rem;
-            display: flex; align-items: center; gap: 0.75rem; font-weight: 600;
-        }
-        .scene-icon { font-size: 1.5rem; }
-        h2 { font-family:'Outfit'; color:#6B7280; font-size:1rem; text-transform:uppercase; letter-spacing:2px; margin: 3rem 0 1rem 0; text-align:center; }
-        strong { font-weight: 600; color: #1F2937; }
-
-        /* COMPONENTS */
-        .script-persona-block {
-            background: #F9FAFB;
-            border: 1px solid #F3F4F6;
-            border-left: 4px solid #10B981;
-            border-radius: 8px;
-            margin-top: 1.5rem; padding: 1.5rem;
-        }
-        .script-avatar { border: 2px solid #FFFFFF; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        
-        .instruction-box {
-            background: #FEFCE8; border: 1px solid #FEF9C3; color: #854D0E;
-            border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;
-            display: flex; gap: 1rem; align-items: flex-start;
-        }
-        .instruction-icon { font-size: 1.5rem; }
-        
-        .portador-block { border-left: 4px solid #10B981 !important; background: #FFFFFF !important; }
-        .script-name { text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
-
-        /* MOBILE OPTIMIZATION */
-        @media (max-width: 768px) {
-            .lesson-container { padding: 0; }
-            .scene-card { border-radius: 0; margin: 0 0 0.5rem 0; box-shadow: none; border-bottom: 1px solid #E5E7EB; }
-            .scene-card::before { height: 3px; }
-            h2 { font-size: 1.4rem; padding: 0 1.5rem; margin-top: 2rem; }
-        }
-    </style>
 </head>
+
 <body class="clima-1">
-    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard">🏡</a>
+    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard"><i
+            class="ph-duotone ph-house duotone-forest"></i></a>
 
     <div class="lesson-container">
-        <!-- HERO SECTION -->
         <header class="lesson-hero">
-            <div class="lesson-meta-tag">Lição 011 • A Plenitude das Mãos • ⏱️ 15-20 min</div>
-            <h1 class="hero-title">A Plenitude das Mãos</h1>
-            <p class="hero-quote">"Dez dedos para abraçar o mundo e um a mais para apontar para o céu."</p>
-            <!-- ASSETS ISOLADOS DE SEMENTES -->
-            <img src="../assets/sementes/guardioes/celeste-raposa.png" 
-                 onError="this.src='../assets/sementes/guardioes/placeholder.png'"
-                 alt="celeste" class="hero-guardian">
+            <div class="lesson-meta-tag">Li&ccedil;&atilde;o 011 &bull; A Plenitude das M&atilde;os &bull; <i
+                    class="ph-duotone ph-timer duotone-carmim"></i> 15-20 min</div>
+            <h1 class="hero-title">A Plenitude das M&atilde;os</h1>
+            <p class="hero-quote">&ldquo;Celeste mostra que duas m&atilde;os completas guardam dez brilhos inteiros,
+                e que o d&eacute;cimo primeiro ainda encontra lugar quando a plenitude quer crescer.&rdquo;</p>
+            <img src="../assets/sementes/guardioes/celeste-raposa.png"
+                onError="this.src='../assets/sementes/guardioes/placeholder.png'"
+                alt="Ilustra&ccedil;&atilde;o da guardi&atilde; Celeste celebrando as duas m&atilde;os completas"
+                class="hero-guardian">
         </header>
 
         <article class="lesson-body">
-            
-
-
-
-
-
-
-<div class="lesson-header-nav" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #E5E7EB;">
-    <div style="width: 33%;">
-        
-        <a href="MV-S-010_A_FILA_DA_PROVIDÊNCIA.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
-            <span>←</span> <span>A Fila da Providência</span>
-        </a>
-        
-    </div>
-    
-    <div style="width: 33%; text-align: center;">
-        <img src="../assets/icon-sementes.png" alt="Sementes" style="height: 32px; opacity: 0.8;" onerror="this.style.display='none'">
-    </div>
-    
-    <div style="width: 33%; text-align: right;">
-        
-        <a href="MV-S-012_O_SEGREDO_DO_FEIXE.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem;">
-            <span>O Segredo do Feixe</span> <span>→</span>
-        </a>
-        
-    </div>
-</div>
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧</span>
-        Preparação do Portador
-    </div>
-    
-    
-    
-    
-    <div style="text-align: center; margin-bottom: 1.5rem; color: #6B7280; font-size: 0.9rem; font-style: italic;">
-        [Foco: Números 10 e 11 — base decimal, duas mãos completas]
-    </div>
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">💡</span>
-    <div>
-        
-        
-        <strong>Dica do Coração:</strong> Hoje é um dia especial: chegamos ao DEZ!<br>Celeste vai nos mostrar como nossas mãos são perfeitas para contar.<br>É um marco — celebre com seu filho!<br>
-    
-    </div>
-</div>
-
-
-    
-    
-    
-    
-    
-    <div class="materials-box" style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:8px; padding:1.25rem; margin:1.5rem 0;">
-        
-        <p><strong>🎯 Essencial:</strong></p>
-        <ul style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>Suas mãos e as da criança (4)</li>
-            
-            <li>Card Celeste (1)</li>
-            
-            <li>11 objetos pequenos (11)</li>
-            
-        </ul>
-        
-        
-        
-        
-        
-        
-    </div>
-    
-
-    
-    
-    <p><strong>🌟 Seu filho vai descobrir:</strong> Que 10 são duas mãos completas e 11 é "um a mais".</p>
-    
-
-    <p><strong>🛡️ Protocolo de Impecabilidade:</strong> Use as MÃOS como material principal.<br>A base decimal vive nos dedos.<br></p>
-    <p><strong>🕊️ Nota de Graça:</strong> Celeste diz: 'Dez é perfeito. Onze é a surpresa depois da perfeição!'</p>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🎬</span>
-        Ritual de Abertura
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🕯️</span>
-    <div>
-        
-        
-        Luz natural, mãos limpas, ambiente alegre.
-    
-    </div>
-</div>
-
-
-    <p><strong>🌫️ Transição:</strong> Feche os olhos. Sinta o sol na clareira.<br>Celeste está pulando de alegria — ela descobriu algo!<br></p>
-
-    
-    
-    <div class="sensory-box" style="background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); border-radius:8px; padding:1.25rem; margin:1.5rem 0; font-style:italic; color:#92400E; border-left:4px solid #F59E0B;">
-        O ar está leve, cheiro de manhã nova.<br>Celeste ergue as patinhas: "Sente esse cheiro? É aventura!"<br>Ela mostra suas patas: "Olha quantos dedos tenho!"<br>
-    </div>
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Com entusiasmo, sorrindo, e brilho nos olhos! Contagie a criança.">
-                        <span style="font-style: normal;">✨</span> (animado)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            Olha só! Celeste está contando nos dedos!<br>Ela parece muito animada. Vamos ver o que descobriu?<br>
-        </div>
-    </div>
-</div>
-
-
-    <div style="text-align:center; margin-top:2rem;">
-        <p style="font-size:0.9rem; color:#9CA3AF; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:1px;">Visualizar</p>
-        <img src="../assets/cards/guardioes/celeste-raposa.png" 
-             style="width:120px; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.1); transform: rotate(-2deg); border: 4px solid white;"
-             onError="this.src='../assets/cards/guardioes/placeholder.png'"
-             alt="Card celeste">
-    </div>
-
-</div>
-
-
-
-
-<h2>🗺️ A Jornada</h2>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        As Duas Mãos
-    </div>
-    
-    
-        
-        
-<div class="local-card">
-    <p><strong>📍 Local:</strong> Clareira Perguntas</p>
-    <p class="local-label">Visualizar</p>
-    <img src="../assets/cards/locais/local-clareira-perguntas.png" alt="Clareira Perguntas">
-</div>
-
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Mostre suas duas mãos abertas.<br>"Vamos contar: uma mão... 1, 2, 3, 4, 5. Outra mão... 6, 7, 8, 9... DEZ!"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Com entusiasmo, sorrindo, e brilho nos olhos! Contagie a criança.">
-                        <span style="font-style: normal;">✨</span> (animado)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Olha! Uma mão tem CINCO dedos!"<br>[Celeste mostra uma pata]<br>"E a outra mão tem mais CINCO! Quanto é cinco e cinco?"<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        O Número Perfeito
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Conte 10 objetos organizados em duas fileiras de 5.<br>"Olha: 5 aqui, 5 aqui. Juntos fazem DEZ!"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(satisfeito)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "DEZ! É especial! É perfeito!"<br>[Celeste bate as patas]<br>"Todas as criaturas contam em grupos de dez por causa das mãos!"<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        Um a Mais
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Adicione o 11º objeto.<br>"DEZ dedos... e mais um! ONZE!"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Incline a cabeça, olhe com atenção. Como um detetive descobrindo uma pista.">
-                        <span style="font-style: normal;">🧐</span> (curioso)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Mas... e se tivermos UM A MAIS?"<br>[Celeste adiciona um objeto]<br>"É ONZE! Dez... e um para apontar para o céu!"<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-
-
-
-<h2>🧱 O Concreto</h2>
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🧱</span>
-        Atividade Concreta
-    </div>
-    
-    
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">📋</span>
-    <div>
-        
-        
-        <strong>Passo a Passo:</strong>
-        <ol style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>
-                Mostre suas duas mãos abertas.
-                
-                <br><em>Fala sugerida: "Quantos dedos você tem? Vamos contar!"</em>
-                
-            </li>
-            
-            <li>
-                Conte uma mão (1-5), depois a outra (6-10).
-                
-                <br><em>Fala sugerida: "Cinco e cinco fazem... DEZ!"</em>
-                
-            </li>
-            
-            <li>
-                Pegue 10 objetos. Organize em duas fileiras de 5.
-                
-                <br><em>Fala sugerida: "Duas mãos de objetos! DEZ!"</em>
-                
-            </li>
-            
-            <li>
-                Adicione 1 objeto. "Onze!"
-                
-                <br><em>Fala sugerida: "Dez... e mais um. ONZE!"</em>
-                
-            </li>
-            
-        </ol>
-    
-    </div>
-</div>
-
-
-    
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🗣️</span>
-        Narramos Juntos
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🤫</span>
-    <div>
-        
-        
-        Mostre os 10 dedos mais uma vez.<br>"Celeste está orgulhosa de você!"<br>
-    
-    </div>
-</div>
-
-
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-        </div>
-        <div class="script-text">
-            "O que você descobriu hoje na Clareira? O que contaria para o Melquior?"
-        </div>
-    </div>
-</div>
-
-
-    <p><strong>Perguntas do Coração:</strong></p>
-    <ul style="margin-left:1.5rem; margin-top:0.5rem;">
-        <li>O que torna o número 10 tão especial?</li>
-        
-        <li>Quantos dedos você tem no total?</li>
-        
-        <li>O que vem depois do 10?</li>
-        
-    </ul>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🏁</span>
-        Ritual de Fechamento
-    </div>
-    
-    
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="celeste">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">celeste</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(satisfeito)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Você descobriu o segredo do DEZ!"<br>"Dez dedos, dez tesouros, dez estrelas no céu!"<br>
-        </div>
-    </div>
-</div>
-
-
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-        </div>
-        <div class="script-text">
-            Dez, nove, oito... um. Voltamos.
-        </div>
-    </div>
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🔗</span>
-        Conexão da Jornada
-    </div>
-    
-    
-    
-    <p><strong>⬅️ Última Aventura:</strong> Você aprendeu primeiro, segundo, terceiro. Agora, vamos conhecer o número que completa as duas mãos!</p>
-    
-    
-        <div onclick="window.location.href='MV-S-012_O_SEGREDO_DO_FEIXE.html'" style="cursor: pointer;">
-            <p><strong>➡️ Próxima Aventura:</strong> Você conhece o poder do 10. Amanhã, Bernardo vai nos mostrar como dez gravetos viram UM grupo forte!</p>
-            
-            <div style="margin-top:0.5rem; text-align:right;">
-                <span style="font-size:0.85rem; color:#4B5563; background:#F3F4F6; padding:0.25rem 0.75rem; border-radius:1rem;">
-                    Ir para O Segredo do Feixe →
-                </span>
+            <nav class="lesson-header-nav" aria-label="Navegacao entre licoes">
+                <div style="width: 33%;">
+                    <a href="MV-S-010_A_FILA_DA_PROVID&Ecirc;NCIA.html" class="nav-mini-link">
+                        <span>&larr;</span> <span>A Fila da Provid&ecirc;ncia</span>
+                    </a>
+                </div>
+
+                <div style="width: 33%; text-align: center;">
+                    <i class="ph-duotone ph-plant duotone-forest" style="font-size: 1.5rem;"></i>
+                    <span
+                        style="font-family: var(--font-heading); font-weight: 700; color: var(--primary); font-size: 0.9rem; margin-left: 0.5rem;">Sementes</span>
+                </div>
+
+                <div style="width: 33%; text-align: right;">
+                    <a href="MV-S-012_O_SEGREDO_DO_FEIXE.html" class="nav-mini-link" style="justify-content: flex-end;">
+                        <span>O Segredo do Feixe</span> <span>&rarr;</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-clipboard-text duotone-terra"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Prepara&ccedil;&atilde;o do Portador
+                </div>
+
+                <div class="prep-focus-tag">
+                    Foco da li&ccedil;&atilde;o: viver o marco do `10` como duas m&atilde;os completas e perceber que
+                    `11` &eacute; um passo al&eacute;m da plenitude, sem perder a paz
+                </div>
+
+                <div class="prep-bridge-box">
+                    <p><strong>Fio da Jornada:</strong> Ontem, Celeste mostrou que a fila conta uma hist&oacute;ria de
+                        antes e depois. Hoje, ela vai abrir as duas m&atilde;os inteiras e revelar que `10` &eacute;
+                        especial: &eacute; quando os dedos todos participam. Amanh&atilde;, Bernardo vai nos mostrar
+                        que dez objetos soltos podem virar um &uacute;nico grupo forte.</p>
+                </div>
+
+                <div class="instruction-box prep-heart-box">
+                    <i class="ph-duotone ph-lightbulb duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p style="margin-bottom:0.5rem;"><strong>Dica do Cora&ccedil;&atilde;o:</strong> hoje
+                            &eacute; um marco, mas n&atilde;o transforme o marco em prova. O `10` nasce das
+                            m&atilde;os abertas com admira&ccedil;&atilde;o, n&atilde;o com press&atilde;o.</p>
+                        <p>Se a crian&ccedil;a abrir as duas m&atilde;os e sentir que `dez` &eacute; especial, o fruto
+                            principal j&aacute; nasceu. Se perceber que `11` vai al&eacute;m, &eacute; b&ocirc;nus.</p>
+                    </div>
+                </div>
+
+                <aside class="materials-box" aria-label="Lista de Materiais para a Preparacao do Portador">
+                    <p><strong><i class="ph-duotone ph-target duotone-terra"></i> Essencial:</strong></p>
+                    <ul>
+                        <li>As m&atilde;os da crian&ccedil;a e do adulto</li>
+                        <li>11 objetos pequenos semelhantes: pedras, blocos, sementes, tampinhas</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-arrows-left-right duotone-indigo"></i>
+                            Substitui&ccedil;&otilde;es caseiras:</strong></p>
+                    <ul>
+                        <li>Se n&atilde;o houver 11 objetos iguais, use o que a casa tiver: colheres, pregadores,
+                            meias enroladas.</li>
+                        <li>Se faltar espa&ccedil;o, use as pr&oacute;prias m&atilde;os como material principal e os
+                            objetos apenas para confirmar.</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-package duotone-gold"></i> Se
+                            tiver:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Cart&otilde;es com os numerais `10` e `11` para mostrar depois da contagem concreta</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-warning-circle duotone-gold"></i> Plano
+                            B:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Se o dia estiver curto, viva bem o `10` com as m&atilde;os e deixe o `11` como extens&atilde;o
+                            leve se houver paz.</li>
+                    </ul>
+                </aside>
+
+                <div class="prep-copy">
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-sparkle duotone-magic"></i>
+                            <span>Descoberta da Crian&ccedil;a</span>
+                        </p>
+                        <ul>
+                            <li>Que `10` s&atilde;o duas m&atilde;os completas &mdash; plenitude dos dedos.</li>
+                            <li>Que `11` &eacute; o primeiro passo al&eacute;m dessa plenitude.</li>
+                            <li>Que marcos podem ser celebrados com admira&ccedil;&atilde;o, n&atilde;o com pressa.</li>
+                        </ul>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-check-circle duotone-forest"></i>
+                            <span>Sinal de Fruto de Hoje</span>
+                        </p>
+                        <p>Se a crian&ccedil;a consegue abrir as duas m&atilde;os e dizer &ldquo;dez&rdquo;, ou
+                            contar 10 objetos com paz, ou perceber que `11` &eacute; &ldquo;mais um depois de
+                            tudo&rdquo;, o fruto j&aacute; apareceu.</p>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-star-four duotone-gold"></i>
+                            <span>Segredo do Maravilhamento</span>
+                        </p>
+                        <p>N&atilde;o apresente o `10` como degrau escolar. Hoje o Reino quer celebrar que as duas
+                            m&atilde;os juntas guardam uma plenitude, e que mesmo depois dela ainda cabe mais um
+                            brilho.</p>
+                    </div>
+
+                    <div class="strategy-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-strategy duotone-forest"></i>
+                            <span>Estrat&eacute;gia do Mestre: Celebrar sem Pressionar</span>
+                        </p>
+                        <p><strong>Por que funciona:</strong> o `10` &eacute; um marco sens&iacute;vel. Se a
+                            crian&ccedil;a o recebe com admira&ccedil;&atilde;o concreta (m&atilde;os abertas, objetos
+                            contados com calma), o n&uacute;mero ganha corpo e sentido sem gerar ansiedade de
+                            desempenho.</p>
+                        <p><strong>A&ccedil;&atilde;o de hoje:</strong> use as m&atilde;os como material principal.
+                            Conte devagar: uma m&atilde;o inteira (5), depois a outra (6, 7, 8, 9, 10). Depois,
+                            acrescente o d&eacute;cimo primeiro objeto com surpresa leve.</p>
+                        <p><strong>Eco no Reino:</strong> o Portador aprende a n&atilde;o transformar marcos em
+                            press&atilde;o, mas em celebra&ccedil;&atilde;o serena.</p>
+                        <p style="margin-top:0.75rem;"><strong>Se houver irm&atilde;os:</strong> o menor pode
+                            entregar os objetos um a um; a crian&ccedil;a-alvo conta e comemora cada m&atilde;o
+                            completa.</p>
+                    </div>
+
+                    <div class="graca-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-heart duotone-heart"></i>
+                            <span>Nota de Gra&ccedil;a</span>
+                        </p>
+                        <p>Se a crian&ccedil;a se confundir entre `9` e `10`, volte &agrave; m&atilde;o e conte
+                            junto, devagar. Celeste n&atilde;o tem pressa; ela tem admira&ccedil;&atilde;o.</p>
+                    </div>
+                </div>
             </div>
-            
-        </div>
-    
 
-</div>
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-film-strip duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Ritual de Entrada
+                </div>
 
+                <div class="instruction-box ritual-bastidores-box">
+                    <i class="ph-duotone ph-lamp duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div><strong>Prepara&ccedil;&atilde;o:</strong> deixe os 11 objetos reunidos, mas ainda n&atilde;o
+                        contados. Se puder, convide a crian&ccedil;a a abrir as m&atilde;os antes de come&ccedil;ar,
+                        como quem se prepara para receber algo especial.</div>
+                </div>
 
+                <div class="script-persona-block portador-block ritual-portador-block">
+                    <div class="script-avatar-icon">
+                        <i class="ph-duotone ph-fire duotone-carmim"></i>
+                    </div>
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Portador da Tocha</span>
+                            <span class="script-tone">[Tom de celebra&ccedil;&atilde;o calma, como quem sabe que
+                                algo especial est&aacute; prestes a acontecer.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>Respire fundo. A casa ainda est&aacute; aqui, mas nossos olhos j&aacute; sobem pela
+                                trilha.</p>
+                            <p>Hoje chegamos de volta &agrave; <strong>Clareira das Perguntas</strong>. O ar est&aacute;
+                                diferente. Parece que Celeste encontrou algo que esperou a semana inteira para
+                                mostrar.</p>
+                            <p class="acting-cue">[Pausa breve. Deixe a crian&ccedil;a abrir as m&atilde;os.]</p>
+                            <p>Olhe para suas m&atilde;os. Quantos dedos voc&ecirc; tem? Hoje a resposta vai brilhar
+                                de um jeito novo.</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card-container ritual-local-card">
+                    <p class="local-label">Lugar revelado</p>
+                    <img src="../assets/cards/locais/local-clareira-perguntas.png"
+                        class="card-visual-asset rotate-left hover-float"
+                        onError="this.src='../assets/cards/locais/placeholder.png'"
+                        alt="Card da Clareira das Perguntas, lugar da licao">
+                </div>
 
+                <div class="instruction-box ritual-whisper-box">
+                    <i class="ph-duotone ph-feather duotone-indigo"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div><strong>Sussurro do Portal:</strong> n&atilde;o revele Celeste ainda. Deixe primeiro as
+                        m&atilde;os abertas ensinarem que hoje h&aacute; algo especial no ar.</div>
+                </div>
+            </div>
 
+            <section class="journey-section">
+                <h2><i class="ph-duotone ph-map-trifold duotone-gold" style="margin-right:0.5rem;"></i> A Jornada</h2>
 
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-hand-palm duotone-forest"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 1 - As Duas M&atilde;os
+                    </div>
 
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧‍👦</span>
-        Para a Família
-    </div>
-    
-    
-    <p><strong>📚 Por que isso importa:</strong></p>
-    <div style="padding:0.5rem 0;">
-        O número 10 é a base do sistema decimal.<br>Entender que 10 dedos = 1 grupo de dez é fundação para valor posicional.<br>
-    </div>
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🧠 Método CPA (Jerome Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Concreto:</strong> Dedos, objetos em grupos de 5.</li>
-            <li><strong>Pictórico:</strong> Vetado.</li>
-            <li><strong>Abstrato:</strong> Símbolos 10 e 11.</li>
-        </ul>
-        
-        <span style="color:#6B7280; font-size:0.9rem;">Bruner: Mãos são o primeiro manipulativo.</span>
-        
-    </div>
-    
-    
-    
-    
-    <div class="cm-box">
-        <strong>🏛️ Princípio Charlotte Mason:</strong><br>
-        <em>"Education is the science of relations."</em><br>
-        <span style="color:#6B7280;">Conectar 10 dedos à base decimal cria relação significativa.</span>
-    </div>
-    
-    
-    
-    
-    <div class="tgtb-box">
-        <strong>📘 Conexão TGTB:</strong><br>
-        <span style="color:#92400E;">Corresponde à lição de Números 10 a 11.
-Celeste traz celebração para este marco.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🌀 Currículo em Espiral (Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Agora:</strong> Base Decimal — Sementes — 10 como duas mãos</li>
-            <li><strong>Depois:</strong> Raízes — valor posicional, dezenas</li>
-        </ul>
-        
-    </div>
-    
-    
-    
-    
-    <div class="espiritual-box">
-        <strong>✨ Reflexão Espiritual:</strong><br>
-        <span style="color:#166534;">Os Dez Mandamentos — dez leis para viver bem.
-O 10 carrega peso de completude na tradição.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="graca-box">
-        <strong>🕊️ Nota de Graça:</strong><br>
-        Se a criança se confundir, conte junto.
-Celeste diz: "Vamos de novo — juntos!"
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar"
+                            alt="Card da guardia Celeste">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Celeste</span>
+                                <span class="script-tone">[Tom de descoberta alegre, como quem finalmente revela um
+                                    segredo esperado.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>&ldquo;Olha! Uma m&atilde;o tem cinco dedos. Voc&ecirc; j&aacute; sabia
+                                    disso.&rdquo;</p>
+                                <p>&ldquo;Mas quando a outra m&atilde;o se abre ao lado dela... cinco e cinco se
+                                    encontram. E o que nasce?&rdquo;</p>
+                                <p>&ldquo;Dez. Uma plenitude inteira. Todas as pontas dos dedos reunidas.&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
 
-    </div>
-    
+                    <div class="instruction-box journey-instruction-box">
+                        <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Gesto do Portador:</strong> mostre suas duas m&atilde;os abertas. Conte
+                                junto: uma m&atilde;o inteira (1, 2, 3, 4, 5), depois a outra (6, 7, 8, 9... dez!).
+                                Deixe a crian&ccedil;a ver que `dez` fecha as duas m&atilde;os completas.</p>
+                        </div>
+                    </div>
+                </div>
 
-</div>
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-crown duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 2 - O N&uacute;mero da Plenitude
+                    </div>
 
+                    <div class="instruction-box journey-instruction-box">
+                        <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Gesto do Portador:</strong> conte 10 objetos e organize em duas fileiras de
+                                5, como duas m&atilde;os deitadas. Deixe a crian&ccedil;a ver que `5 + 5 = 10`.</p>
+                            <p><strong>Clima:</strong> celebre com calma. N&atilde;o como quem venceu uma prova,
+                                mas como quem encontrou algo completo.</p>
+                        </div>
+                    </div>
 
+                    <div class="script-persona-block journey-script">
+                        <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="Celeste">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Celeste</span>
+                                <span class="script-tone">[Tom admirado e satisfeito, sem explos&atilde;o.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>&ldquo;Dez! &Eacute; especial. Todas as criaturas contam em grupos de dez por causa
+                                    das m&atilde;os.&rdquo;</p>
+                                <p>&ldquo;O Reino inteiro descansa nessa plenitude. As m&atilde;os n&atilde;o precisam
+                                    mais de nada para estarem completas.&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-plus-circle duotone-indigo"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 3 - Um a Mais
+                    </div>
 
+                    <div class="instruction-box journey-instruction-box">
+                        <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Gesto do Portador:</strong> acrescente o d&eacute;cimo primeiro objeto ao lado
+                                das duas fileiras. Deixe a crian&ccedil;a perceber que, mesmo depois da plenitude,
+                                o caminho ainda continua.</p>
+                        </div>
+                    </div>
+
+                    <div class="script-persona-block journey-script">
+                        <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar" alt="Celeste">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Celeste</span>
+                                <span class="script-tone">[Tom curioso e encantado, como quem descobre uma
+                                    surpresa.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>&ldquo;Mas... e se ainda houver mais um? Olhe: dez brilhos completos, e agora
+                                    mais um se juntou a eles.&rdquo;</p>
+                                <p>&ldquo;Onze! A plenitude n&atilde;o &eacute; o fim. &Eacute; o come&ccedil;o de
+                                    algo ainda maior.&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p style="margin-top:0.75rem;"><strong>Ponte para O Concreto:</strong> depois de ver Celeste
+                        mostrar as duas m&atilde;os e a surpresa do onze, &eacute; hora de a crian&ccedil;a formar
+                        a plenitude com as pr&oacute;prias m&atilde;os.</p>
+                </div>
+            </section>
+
+            <section class="concrete-section">
+                <h2><i class="ph-duotone ph-wall duotone-terra" style="margin-right:0.5rem;"></i> O Concreto</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-hand-palm duotone-terra"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        As M&atilde;os da Plenitude
+                    </div>
+
+                    <div class="instruction-box">
+                        <i class="ph-duotone ph-list-checks duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Passo a passo:</strong></p>
+                            <ol style="margin:0.75rem 0 0 1.25rem;">
+                                <li>Mostre suas duas m&atilde;os abertas. Conte junto com a crian&ccedil;a: 1, 2, 3,
+                                    4, 5 (uma m&atilde;o)... 6, 7, 8, 9, 10 (a outra).</li>
+                                <li style="margin-top:0.5rem;">Pegue 10 objetos e organize em duas fileiras de 5.
+                                    &ldquo;Duas m&atilde;os de tesouros! Dez!&rdquo;</li>
+                                <li style="margin-top:0.5rem;">Deixe a crian&ccedil;a desfazer e refazer as fileiras,
+                                    contando com calma.</li>
+                                <li style="margin-top:0.5rem;">Acrescente o 11&ordm; objeto. &ldquo;Dez... e mais um.
+                                    Onze!&rdquo;</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <p><strong>Liga&ccedil;&atilde;o com a Jornada:</strong> a Jornada mostrou a plenitude e a
+                        surpresa; aqui a crian&ccedil;a sente no corpo o marco do `10` e o passo al&eacute;m.</p>
+
+                    <div class="prep-copy">
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-check-circle duotone-forest"></i>
+                                <span>Varia&ccedil;&atilde;o leve</span>
+                            </p>
+                            <p>Se a crian&ccedil;a quiser repetir, convide-a a contar os dedos de toda a
+                                fam&iacute;lia presente e ver quantos &ldquo;dezes&rdquo; existem na casa.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-baby duotone-magic"></i>
+                                <span>Adapta&ccedil;&atilde;o para casa viva</span>
+                            </p>
+                            <p>Com irm&atilde;os menores, o pequeno pode entregar os objetos um a um enquanto a
+                                crian&ccedil;a-alvo conta e forma as fileiras.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-seedling duotone-gold"></i>
+                                <span>Fruto que buscamos</span>
+                            </p>
+                            <p>N&atilde;o &eacute; decorar s&iacute;mbolos. &Eacute; a crian&ccedil;a sentir que `10`
+                                &eacute; completo e que `11` &eacute; o primeiro passo al&eacute;m da plenitude.</p>
+                        </div>
+                    </div>
+
+                    <p style="margin-top:0.75rem;"><strong>Ponte para Narramos Juntos:</strong> depois de viver a
+                        plenitude, convide a crian&ccedil;a a contar o que descobriu sobre as m&atilde;os.</p>
+                </div>
+            </section>
+
+            <section class="narration-section">
+                <h2><i class="ph-duotone ph-book-open-text duotone-magic" style="margin-right:0.5rem;"></i> Narramos
+                    Juntos</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-chat-circle-text duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        O que as m&atilde;os revelaram
+                    </div>
+
+                    <div class="instruction-box">
+                        <i class="ph-duotone ph-ear duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Postura de escuta do Portador:</strong> deixe a crian&ccedil;a olhar de novo
+                                para as duas fileiras antes de falar. Hoje a narra&ccedil;&atilde;o pode vir pela
+                                fala, abrindo e fechando as m&atilde;os, apontando os dedos ou recontando os
+                                objetos.</p>
+                        </div>
+                    </div>
+
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar"
+                            alt="Celeste, guardia da Vastidao">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Celeste</span>
+                                <span class="script-tone">[Tom de quem escuta de verdade.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>&ldquo;Me conte o que voc&ecirc; descobriu. Onde a m&atilde;o terminou e onde a
+                                    plenitude come&ccedil;ou?&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><strong>Perguntas abertas:</strong></p>
+                    <ul>
+                        <li>O que torna o `10` t&atilde;o especial?</li>
+                        <li>Quantos dedos voc&ecirc; tem no total?</li>
+                        <li>O que aconteceu quando o `11` chegou?</li>
+                        <li>O `10` &eacute; o fim ou o come&ccedil;o de algo?</li>
+                    </ul>
+
+                    <p style="margin-top:0.75rem;"><strong>Formas dignas de narrar:</strong> a crian&ccedil;a pode
+                        abrir e fechar as m&atilde;os, contar os dedos, apontar o 11&ordm; objeto, recontar devagar
+                        ou dizer com suas palavras por que `10` parece completo.</p>
+                </div>
+            </section>
+
+            <section class="closing-section">
+                <h2><i class="ph-duotone ph-sunset duotone-carmim" style="margin-right:0.5rem;"></i> Ritual de
+                    Fechamento</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-heartbeat duotone-heart"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Quando a plenitude descansa
+                    </div>
+
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar"
+                            alt="Celeste, guardia da Vastidao">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Celeste</span>
+                                <span class="script-tone">[Tom de satisfa&ccedil;&atilde;o calma.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p class="acting-cue">[Celeste olha para as duas m&atilde;os da crian&ccedil;a e
+                                    sorri como quem viu algo se completar.]</p>
+                                <p>&ldquo;Hoje suas m&atilde;os se encontraram inteiras. Dez dedos, dez brilhos, uma
+                                    plenitude.&rdquo;</p>
+                                <p>&ldquo;E mesmo depois de tudo, o caminho ainda cabe mais um passo. Guarde essa
+                                    surpresa com admira&ccedil;&atilde;o.&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="script-persona-block portador-block">
+                        <div class="script-avatar-icon">
+                            <i class="ph-duotone ph-fire duotone-carmim"></i>
+                        </div>
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Portador da Tocha</span>
+                            </div>
+                            <div class="script-text">
+                                <p>Agora guardamos os tesouros devagar e voltamos para casa levando nos dedos a
+                                    plenitude de quem contou dez com paz e viu que onze ainda cabe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="connection-section">
+                <h2><i class="ph-duotone ph-signpost duotone-indigo" style="margin-right:0.5rem;"></i> Conex&atilde;o
+                    da Jornada</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-path duotone-indigo"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Da plenitude ao feixe
+                    </div>
+
+                    <p><strong>Mem&oacute;ria viva:</strong> hoje Celeste mostrou que `10` &eacute; a plenitude das
+                        m&atilde;os e que `11` &eacute; o primeiro passo al&eacute;m. O corpo aprendeu que completude
+                        n&atilde;o &eacute; fim, mas base.</p>
+
+                    <a href="MV-S-012_O_SEGREDO_DO_FEIXE.html" class="journey-connection-card"
+                        style="text-decoration:none; display:block;">
+                        <div class="instruction-box" style="margin-bottom:0;">
+                            <i class="ph-duotone ph-package duotone-gold"
+                                style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                            <div>
+                                <p style="margin-bottom:0.35rem;"><strong>Pr&oacute;xima trilha:</strong> amanh&atilde;,
+                                    Bernardo vai mostrar como dez objetos soltos podem virar um &uacute;nico grupo
+                                    forte &mdash; o segredo do feixe.</p>
+                                <p style="margin:0; color:#6B7280;">Ir para <strong>O Segredo do Feixe</strong>
+                                    &rarr;</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="seeds-section">
+                <h2><i class="ph-duotone ph-flower-lotus duotone-forest" style="margin-right:0.5rem;"></i> Sementes
+                    para o Dia</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-sprout duotone-forest"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Escolha 1 ou 2 movimentos
+                    </div>
+
+                    <p>Uma pequena continua&ccedil;&atilde;o j&aacute; basta. `Sementes para o Dia` existe para
+                        deixar o `10` reaparecer na vida comum, n&atilde;o para transformar o dia em protocolo de
+                        contagem.</p>
+
+                    <ul>
+                        <li><strong>Explora&ccedil;&atilde;o:</strong> procurem pela casa coisas que v&ecirc;m em
+                            pares de cinco: dedos, pratos de uma m&atilde;o, talheres de uma pia.</li>
+                        <li><strong>Dramatiza&ccedil;&atilde;o:</strong> contem quantos passos a crian&ccedil;a d&aacute;
+                            at&eacute; a porta. Se passar de 10, celebrem o marco com surpresa.</li>
+                        <li><strong>Cria&ccedil;&atilde;o:</strong> desenhe duas m&atilde;os num papel e cole 10
+                            pequenas sementes, uma em cada dedo.</li>
+                        <li><strong>Narra&ccedil;&atilde;o:</strong> na refei&ccedil;&atilde;o, pergunte: &ldquo;Onde
+                            o `10` apareceu hoje no dia?&rdquo;</li>
+                        <li><strong>Reflex&atilde;o:</strong> antes de dormir, contem juntos os dedos das duas
+                            m&atilde;os e lembrem que a plenitude mora neles.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="formation-section">
+                <h2><i class="ph-duotone ph-scroll duotone-terra" style="margin-right:0.5rem;"></i> Forma&ccedil;&atilde;o
+                    do Portador</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-graduation-cap duotone-terra"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        O que o adulto aprende ao lado de Celeste
+                    </div>
+
+                    <div class="prep-copy">
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-book-bookmark duotone-gold"></i>
+                                <span>Por que isso importa</span>
+                            </p>
+                            <p>O `10` &eacute; a base do sistema decimal. Quando a crian&ccedil;a entende que dez
+                                dedos formam uma plenitude, ganha a base corporal para futuro valor posicional sem
+                                precisar de abstra&ccedil;&atilde;o prematura.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-seal-check duotone-forest"></i>
+                                <span>O que o Portador aprende hoje</span>
+                            </p>
+                            <p>Que marcos num&eacute;ricos n&atilde;o pedem corrida. Quando o adulto celebra o `10`
+                                com admira&ccedil;&atilde;o e n&atilde;o com press&atilde;o, a crian&ccedil;a
+                                internaliza a base decimal com seguran&ccedil;a.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-cubes duotone-indigo"></i>
+                                <span>CPA / Bruner</span>
+                            </p>
+                            <p><strong>Concreto:</strong> dedos e objetos reais organizados em grupos de 5.</p>
+                            <p><strong>Pict&oacute;rico:</strong> pode vir depois, mas hoje o concreto governa.</p>
+                            <p><strong>Abstrato:</strong> os s&iacute;mbolos `10` e `11` nascem de uma contagem que
+                                j&aacute; foi vivida no corpo.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-feather duotone-magic"></i>
+                                <span>Charlotte Mason</span>
+                            </p>
+                            <p>&ldquo;Education is the science of relations.&rdquo; Hoje essa rela&ccedil;&atilde;o
+                                apareceu entre dedos, m&atilde;os e quantidade: a crian&ccedil;a conectou 10 dedos
+                                &agrave; base decimal sem sair do concreto.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-books duotone-gold"></i>
+                                <span>Conex&atilde;o TGTB</span>
+                            </p>
+                            <p>Este passo corresponde a <code>000-L11 - Numbers 10 to 11 / N&uacute;meros 10 e
+                                    11</code>. O alvo &eacute; viver `10` como marco corporal e `11` como primeiro
+                                passo al&eacute;m.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-arrows-clockwise duotone-forest"></i>
+                                <span>Curr&iacute;culo em espiral</span>
+                            </p>
+                            <p>Hoje a crian&ccedil;a vive a plenitude das m&atilde;os. Depois, essa base vai
+                                sustentar feixes, dezenas, valor posicional e composi&ccedil;&atilde;o num&eacute;rica
+                                com confian&ccedil;a.</p>
+                        </div>
+
+                        <div class="strategy-box">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-compass-tool duotone-carmim"></i>
+                                <span>Estrat&eacute;gia do Mestre: Marco sem Press&atilde;o</span>
+                            </p>
+                            <p>O adulto protege a li&ccedil;&atilde;o quando n&atilde;o transforma o `10` em
+                                obriga&ccedil;&atilde;o de acerto r&aacute;pido. O cora&ccedil;&atilde;o
+                                matem&aacute;tico aqui &eacute; sentir a plenitude, n&atilde;o recitar um
+                                n&uacute;mero.</p>
+                        </div>
+
+                        <div class="graca-box">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-heart-straight duotone-heart"></i>
+                                <span>Nota de Gra&ccedil;a</span>
+                            </p>
+                            <p>Se a crian&ccedil;a se confundir, conte junto, devagar, de novo. Celeste diz:
+                                &ldquo;Vamos de novo &mdash; juntos!&rdquo; Nenhum marco precisa ser vencido
+                                sozinho.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-plant duotone-forest"></i>
+                                <span>As Sementes Continuam</span>
+                            </p>
+                            <p>Depois de viver a plenitude, a crian&ccedil;a estar&aacute; pronta para ver com
+                                Bernardo como dez objetos soltos podem virar um &uacute;nico feixe forte.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="lesson-footer-nav" aria-label="Navegacao entre licoes">
+                <a href="MV-S-010_A_FILA_DA_PROVID&Ecirc;NCIA.html" class="lesson-footer-link">
+                    <span class="lesson-footer-direction">&larr; Anterior</span>
+                    <span class="lesson-footer-title">A Fila da Provid&ecirc;ncia</span>
+                </a>
+
+                <a href="MV-S-012_O_SEGREDO_DO_FEIXE.html" class="lesson-footer-link" style="text-align:right;">
+                    <span class="lesson-footer-direction">Pr&oacute;xima &rarr;</span>
+                    <span class="lesson-footer-title">O Segredo do Feixe</span>
+                </a>
+            </nav>
         </article>
-
-        <!-- NAVIGATION FOOTER -->
-        <nav class="lesson-nav">
-            
-            
-
-            
-            <a href="MV-S-010_A_FILA_DA_PROVIDÊNCIA.html" class="nav-btn prev">
-                <span class="nav-label">← Anterior</span>
-                <span class="nav-title">A Fila da Providência</span>
-            </a>
-            
-            
-            
-            <a href="MV-S-012_O_SEGREDO_DO_FEIXE.html" class="nav-btn next">
-                <span class="nav-label">Próxima →</span>
-                <span class="nav-title">O Segredo do Feixe</span>
-            </a>
-            
-        </nav>
-
-        <footer style="text-align: center; margin-top: 4rem; color: #A8A29E; font-size: 0.8rem;">
-            Matemática Viva • Forjado com Estilo e Propósito
-        </footer>
     </div>
 </body>
+
 </html>

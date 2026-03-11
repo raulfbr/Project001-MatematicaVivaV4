@@ -1,7 +1,7 @@
 # REVISAO TOPICO A TOPICO - L010
 Data: 2026-03-10
 Licao: `MV-S-010_A_FILA_DA_PROVIDÊNCIA.html`
-Status da sessao: em revisao
+Status da sessao: reauditoria concluida
 Escopo congelado: revisar apenas a `L010`; `L009` e `L011` entram somente como fronteiras curriculares
 Validacao humana da Familia Rodrigues: pendente
 
@@ -255,3 +255,28 @@ o gesto manual segue distinto da Jornada e nao foi afetado pelo reforco editoria
 ### Decisao desta reabertura
 1. a `L010` continua aprovada na revisao topico a topico por IA;
 2. esta passada foi de refinamento editorial da imagem dominante, nao de correcao estrutural.
+
+---
+
+## 13) Reauditoria de acabamento premium
+Data: 2026-03-10
+Modo: confirmacao final pelo protocolo topico a topico
+
+### Findings desta reauditoria
+1. `Baixo`: a licao ainda carregava backticks literais em texto final, inclusive no `Fio da Jornada`, em `Sementes para o Dia`, em instrucoes praticas e em `Formacao do Portador`.
+
+### Deliberacao com conselho
+1. `Charlotte Mason` manteve `PASS`: a licao continua distinguindo lugar e quantidade sem escolarizar cedo demais.
+2. `Jerome Bruner` manteve `PASS`: a ordinalidade segue nascendo do gesto concreto de reorganizar a fila.
+3. `Susan Macaulay` manteve `PASS`: a pagina continua leve para casa real e nao aumenta o peso da matematica.
+4. `Mae Ansiosa` nao abriu alerta novo: a licao nao pressiona desempenho e o ajuste reduziu ruido textual.
+5. `Mae Veterana` nao abriu alerta novo: a pagina segue realista para o primeiro mes e mais acabada editorialmente.
+6. `Engenharia` manteve `PASS`: parser HTML `OK`, residuos legados ausentes e nenhum ajuste estrutural necessario.
+
+### Alterado nesta reauditoria
+1. foram removidos todos os backticks literais restantes do HTML;
+2. nenhum outro patch foi necessario.
+
+### Veredito atualizado
+1. `L010` permanece `PASS` em `001-012`;
+2. estado final confirmado: pronta para futura validacao humana, sem necessidade de nova passada de patch antes disso, salvo ajuste visual em navegador.

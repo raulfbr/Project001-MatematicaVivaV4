@@ -1,734 +1,632 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Segredo do Feixe | Matemática Viva</title>
-    <!-- CSS ISOLADO DE SEMENTES -->
+    <title>A Fila da Provid&ecirc;ncia | Matem&aacute;tica Viva</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    <style>
-        /* INLINE STYLES FOR CRITICAL RENDERING PRIORITY */
-        body { background-color: #F8F9FA; color: #374151; }
-        .lesson-container { max-width: 768px; margin: 0 auto; padding-bottom: 4rem; }
-        
-        /* CARD COMPONENT */
-        .scene-card {
-            background: #FFFFFF;
-            border-radius: 12px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(0, 0, 0, 0.04);
-            position: relative;
-            overflow: hidden;
-        }
-        .scene-card::before {
-            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-            background: linear-gradient(90deg, #FCD34D 0%, #F59E0B 100%);
-            opacity: 0.8;
-        }
-
-        /* HEADER & TYPOGRAPHY */
-        .scene-header {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.35rem;
-            color: #111827;
-            margin-bottom: 2rem;
-            display: flex; align-items: center; gap: 0.75rem; font-weight: 600;
-        }
-        .scene-icon { font-size: 1.5rem; }
-        h2 { font-family:'Outfit'; color:#6B7280; font-size:1rem; text-transform:uppercase; letter-spacing:2px; margin: 3rem 0 1rem 0; text-align:center; }
-        strong { font-weight: 600; color: #1F2937; }
-
-        /* COMPONENTS */
-        .script-persona-block {
-            background: #F9FAFB;
-            border: 1px solid #F3F4F6;
-            border-left: 4px solid #10B981;
-            border-radius: 8px;
-            margin-top: 1.5rem; padding: 1.5rem;
-        }
-        .script-avatar { border: 2px solid #FFFFFF; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        
-        .instruction-box {
-            background: #FEFCE8; border: 1px solid #FEF9C3; color: #854D0E;
-            border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;
-            display: flex; gap: 1rem; align-items: flex-start;
-        }
-        .instruction-icon { font-size: 1.5rem; }
-        
-        .portador-block { border-left: 4px solid #10B981 !important; background: #FFFFFF !important; }
-        .script-name { text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
-
-        /* MOBILE OPTIMIZATION */
-        @media (max-width: 768px) {
-            .lesson-container { padding: 0; }
-            .scene-card { border-radius: 0; margin: 0 0 0.5rem 0; box-shadow: none; border-bottom: 1px solid #E5E7EB; }
-            .scene-card::before { height: 3px; }
-            h2 { font-size: 1.4rem; padding: 0 1.5rem; margin-top: 2rem; }
-        }
-    </style>
 </head>
+
 <body class="clima-1">
-    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard">🏡</a>
+    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard"><i
+            class="ph-duotone ph-house duotone-forest"></i></a>
 
     <div class="lesson-container">
-        <!-- HERO SECTION -->
         <header class="lesson-hero">
-            <div class="lesson-meta-tag">Lição 012 • O Segredo do Feixe • ⏱️ 15-20 min</div>
-            <h1 class="hero-title">O Segredo do Feixe</h1>
-            <p class="hero-quote">"Ver dez gravetos virarem UM grupo forte nas mãos do Urso que abraça."</p>
-            <!-- ASSETS ISOLADOS DE SEMENTES -->
-            <img src="../assets/sementes/guardioes/bernardo-urso.png" 
-                 onError="this.src='../assets/sementes/guardioes/placeholder.png'"
-                 alt="bernardo" class="hero-guardian">
+            <div class="lesson-meta-tag">Li&ccedil;&atilde;o 010 &bull; A Fila da Provid&ecirc;ncia &bull; <i
+                    class="ph-duotone ph-timer duotone-carmim"></i> 15-20 min</div>
+            <h1 class="hero-title">A Fila da Provid&ecirc;ncia</h1>
+            <p class="hero-quote">&ldquo;Celeste mostra que a fila n&atilde;o conta quantos h&aacute;, mas quem vem
+                primeiro, quem espera depois e como a ordem tamb&eacute;m conta uma hist&oacute;ria.&rdquo;</p>
+            <img src="../assets/sementes/guardioes/celeste-raposa.png"
+                onError="this.src='../assets/sementes/guardioes/placeholder.png'"
+                alt="Ilustra&ccedil;&atilde;o da guardi&atilde; Celeste correndo ao lado de uma fila ordenada"
+                class="hero-guardian">
         </header>
 
         <article class="lesson-body">
-            
-
-
-
-
-
-
-<div class="lesson-header-nav" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #E5E7EB;">
-    <div style="width: 33%;">
-        
-        <a href="MV-S-011_A_PLENITUDE_DAS_MÃOS.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
-            <span>←</span> <span>A Plenitude das Mãos</span>
-        </a>
-        
-    </div>
-    
-    <div style="width: 33%; text-align: center;">
-        <img src="../assets/icon-sementes.png" alt="Sementes" style="height: 32px; opacity: 0.8;" onerror="this.style.display='none'">
-    </div>
-    
-    <div style="width: 33%; text-align: right;">
-        
-        <a href="MV-S-013_O_RIO_QUE_SE_UNE.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem;">
-            <span>O Rio que se Une</span> <span>→</span>
-        </a>
-        
-    </div>
-</div>
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧</span>
-        Preparação do Portador
-    </div>
-    
-    
-    
-    
-    <div style="text-align: center; margin-bottom: 1.5rem; color: #6B7280; font-size: 0.9rem; font-style: italic;">
-        [Foco: Agrupar 10 objetos como 1 grupo — base do valor posicional]
-    </div>
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">💡</span>
-    <div>
-        
-        
-        <strong>Dica do Coração:</strong> Hoje Bernardo vai nos mostrar algo mágico!<br>Dez gravetos separados viram UM feixe forte.<br>É o segredo que faz os números crescerem.<br>
-    
-    </div>
-</div>
-
-
-    
-    
-    
-    
-    
-    <div class="materials-box" style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:8px; padding:1.25rem; margin:1.5rem 0;">
-        
-        <p><strong>🎯 Essencial:</strong></p>
-        <ul style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>10 palitos ou gravetos (10)</li>
-            
-            <li>Elástico ou barbante (1)</li>
-            
-            <li>Card Bernardo (1)</li>
-            
-        </ul>
-        
-        
-        
-        
-        
-        
-    </div>
-    
-
-    
-    
-    <p><strong>🌟 Seu filho vai descobrir:</strong> Que podemos juntar 10 objetos e tratá-los como 1 grupo.</p>
-    
-
-    <p><strong>🛡️ Protocolo de Impecabilidade:</strong> Use objetos que podem ser AMARRADOS ou AGRUPADOS.<br>Palitos, canudos, lápis — qualquer coisa que vire "feixe".<br></p>
-    <p><strong>🕊️ Nota de Graça:</strong> Bernardo diz: 'Mais uma vez. Comigo.' Se o feixe desmontar, montamos de novo!</p>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🎬</span>
-        Ritual de Abertura
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🕯️</span>
-    <div>
-        
-        
-        Ambiente de oficina, luz natural, mesa com materiais.
-    
-    </div>
-</div>
-
-
-    <p><strong>🌫️ Transição:</strong> Feche os olhos. Sinta o cheiro de madeira.<br>Estamos entrando na oficina de Bernardo.<br></p>
-
-    
-    
-    <div class="sensory-box" style="background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); border-radius:8px; padding:1.25rem; margin:1.5rem 0; font-style:italic; color:#92400E; border-left:4px solid #F59E0B;">
-        O ar cheira a serragem e terra molhada.<br>Bernardo ergue suas mãos grandes e gentis.<br>"Mais uma vez. Comigo."<br>
-    </div>
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(firme)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            Você ouve o barulho de madeira?<br>É Bernardo trabalhando na oficina!<br>
-        </div>
-    </div>
-</div>
-
-
-    <div style="text-align:center; margin-top:2rem;">
-        <p style="font-size:0.9rem; color:#9CA3AF; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:1px;">Visualizar</p>
-        <img src="../assets/cards/guardioes/bernardo-urso.png" 
-             style="width:120px; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.1); transform: rotate(-2deg); border: 4px solid white;"
-             onError="this.src='../assets/cards/guardioes/placeholder.png'"
-             alt="Card bernardo">
-    </div>
-
-</div>
-
-
-
-
-<h2>🗺️ A Jornada</h2>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        Os Gravetos Soltos
-    </div>
-    
-    
-        
-        
-<div class="local-card">
-    <p><strong>📍 Local:</strong> Caverna Recomeco</p>
-    <p class="local-label">Visualizar</p>
-    <img src="../assets/cards/locais/local-caverna-recomeco.png" alt="Caverna Recomeco">
-</div>
-
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Espalhe 10 palitos na mesa.<br>"Veja: dez gravetos soltos. Vamos contar?"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/bernardo-urso.png" class="script-avatar" alt="bernardo">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">bernardo</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(firme)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Olha esses gravetos — dez deles, todos separados."<br>[Bernardo mostra os palitos espalhados]<br>"Assim, são fracos. Qualquer vento leva."<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        A União Faz a Força
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Junte os 10 palitos e amarre com elástico.<br>"Dez gravetos viraram UM grupo! Um feixe!"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/bernardo-urso.png" class="script-avatar" alt="bernardo">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">bernardo</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Voz firme que diz 'Eu acredito em você'.">
-                        <span style="font-style: normal;">💪</span> (encorajador)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Mas se juntarmos os dez... olha o que acontece!"<br>[Bernardo amarra os palitos]<br>"Viram UM FEIXE forte! Um só!"<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        O Segredo
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Mostre o feixe como "um" objeto.<br>"Agora você tem UM feixe. Quanto vale? DEZ!"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/bernardo-urso.png" class="script-avatar" alt="bernardo">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">bernardo</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(satisfeito)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Este é o segredo: dez viram um."<br>"Um feixe de dez. É assim que os números grandes funcionam!"<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-
-
-
-<h2>🧱 O Concreto</h2>
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🧱</span>
-        Atividade Concreta
-    </div>
-    
-    
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">📋</span>
-    <div>
-        
-        
-        <strong>Passo a Passo:</strong>
-        <ol style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>
-                Espalhe 10 palitos. Conte junto.
-                
-                <br><em>Fala sugerida: "Dez gravetos! Vamos contar: 1, 2, 3... 10!"</em>
-                
-            </li>
-            
-            <li>
-                Junte os 10 palitos.
-                
-                <br><em>Fala sugerida: "Agora vamos juntar todos!"</em>
-                
-            </li>
-            
-            <li>
-                Amarre com elástico ou barbante.
-                
-                <br><em>Fala sugerida: "Pronto! Viraram UM feixe!"</em>
-                
-            </li>
-            
-            <li>
-                Pergunte: Quantos gravetos no feixe?
-                
-                <br><em>Fala sugerida: "É UM feixe, mas vale DEZ!"</em>
-                
-            </li>
-            
-        </ol>
-    
-    </div>
-</div>
-
-
-    
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🗣️</span>
-        Narramos Juntos
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🤫</span>
-    <div>
-        
-        
-        Guarde o feixe num lugar especial.<br>"Bernardo ficou orgulhoso de você!"<br>
-    
-    </div>
-</div>
-
-
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/bernardo-urso.png" class="script-avatar" alt="bernardo">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">bernardo</span>
-            
-        </div>
-        <div class="script-text">
-            "O que você descobriu hoje na Clareira? O que contaria para o Melquior?"
-        </div>
-    </div>
-</div>
-
-
-    <p><strong>Perguntas do Coração:</strong></p>
-    <ul style="margin-left:1.5rem; margin-top:0.5rem;">
-        <li>O que Bernardo fez com os dez gravetos?</li>
-        
-        <li>Por que juntar os gravetos deixa eles mais fortes?</li>
-        
-        <li>Quantos gravetos tem no seu feixe?</li>
-        
-    </ul>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🏁</span>
-        Ritual de Fechamento
-    </div>
-    
-    
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/bernardo-urso.png" class="script-avatar" alt="bernardo">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">bernardo</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Infle o peito, sorria com satisfação. Mostre que é uma honra.">
-                        <span style="font-style: normal;">🦁</span> (orgulhoso)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Você descobriu o segredo!"<br>"Dez viram um. Juntos somos fortes."<br>
-        </div>
-    </div>
-</div>
-
-
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-        </div>
-        <div class="script-text">
-            Dez... um. Juntos. Voltamos.
-        </div>
-    </div>
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🔗</span>
-        Conexão da Jornada
-    </div>
-    
-    
-    
-    <p><strong>⬅️ Última Aventura:</strong> Celeste nos mostrou o poder do 10. Agora, Bernardo vai nos mostrar como 10 viram UM!</p>
-    
-    
-        <div onclick="window.location.href='MV-S-013_O_RIO_QUE_SE_UNE.html'" style="cursor: pointer;">
-            <p><strong>➡️ Próxima Aventura:</strong> Você sabe fazer feixes. Amanhã, Melquior ensina como juntar grupos — a magia do + e do =!</p>
-            
-            <div style="margin-top:0.5rem; text-align:right;">
-                <span style="font-size:0.85rem; color:#4B5563; background:#F3F4F6; padding:0.25rem 0.75rem; border-radius:1rem;">
-                    Ir para O Rio que se Une →
-                </span>
+            <nav class="lesson-header-nav" aria-label="Navegacao entre licoes">
+                <div style="width: 33%;">
+                    <a href="MV-S-009_O_CELEIRO_DE_NOÉ.html" class="nav-mini-link">
+                        <span>&larr;</span> <span>O Celeiro de No&eacute;</span>
+                    </a>
+                </div>
+
+                <div style="width: 33%; text-align: center;">
+                    <i class="ph-duotone ph-plant duotone-forest" style="font-size: 1.5rem;"></i>
+                    <span
+                        style="font-family: var(--font-heading); font-weight: 700; color: var(--primary); font-size: 0.9rem; margin-left: 0.5rem;">Sementes</span>
+                </div>
+
+                <div style="width: 33%; text-align: right;">
+                    <a href="MV-S-011_A_PLENITUDE_DAS_MÃOS.html" class="nav-mini-link" style="justify-content: flex-end;">
+                        <span>A Plenitude das M&atilde;os</span> <span>&rarr;</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-clipboard-text duotone-terra"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Prepara&ccedil;&atilde;o do Portador
+                </div>
+
+                <div class="prep-focus-tag">
+                    Foco da li&ccedil;&atilde;o: viver a ordinalidade em fila concreta, percebendo quem vem primeiro,
+                    segundo, terceiro, quarto e quinto
+                </div>
+
+                <div class="prep-bridge-box">
+                    <p><strong>Fio da Jornada:</strong> Ontem, No&eacute; nos ensinou a guardar e contar 8 e 9 com
+                        paz. Hoje, Celeste vai mudar a pergunta: n&atilde;o &eacute; sobre quantos h&aacute;, mas sobre
+                        quem vem antes e quem vem depois. Amanh&atilde;, as duas m&atilde;os completas abrir&atilde;o o
+                        caminho para o 10.</p>
+                </div>
+
+                <div class="instruction-box prep-heart-box">
+                    <i class="ph-duotone ph-lightbulb duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p style="margin-bottom:0.5rem;"><strong>Dica do Cora&ccedil;&atilde;o:</strong> hoje a
+                            crian&ccedil;a n&atilde;o precisa contar tudo de novo. Ela precisa perceber rela&ccedil;&atilde;o
+                            de lugar: quem est&aacute; na frente, no meio e no fim.</p>
+                        <p>Se ela consegue dizer "este vem primeiro" ou reorganizar uma fila simples com clareza, o fruto
+                            principal do dia j&aacute; apareceu.</p>
+                    </div>
+                </div>
+
+                <aside class="materials-box" aria-label="Lista de Materiais para a Preparacao do Portador">
+                    <p><strong><i class="ph-duotone ph-target duotone-terra"></i> Essencial:</strong></p>
+                    <ul>
+                        <li>5 objetos ou personagens pequenos para formar uma fila: bonecos, carrinhos, bichinhos ou
+                            blocos diferentes</li>
+                        <li>1 espa&ccedil;o reto na mesa, no ch&atilde;o ou sobre um pano para alinhar a fila</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-arrows-left-right duotone-indigo"></i>
+                            Substitui&ccedil;&otilde;es caseiras:</strong></p>
+                    <ul>
+                        <li>Se n&atilde;o houver bonecos, use colheres, pregadores, meias enroladas ou tampinhas.</li>
+                        <li>Se a crian&ccedil;a resistir a nomear ordinais, deixe primeiro que ela mova e observe a
+                            posi&ccedil;&atilde;o antes de falar.</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-package duotone-gold"></i> Se
+                            tiver:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Uma linha marcada com fita ou barbante para ajudar o olho a perceber a ordem da fila</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-warning-circle duotone-gold"></i> Plano
+                            B:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Se o dia estiver apertado, trabalhe bem apenas primeiro, segundo e terceiro, deixando
+                            quarto e quinto como extens&atilde;o leve.</li>
+                    </ul>
+                </aside>
+
+                <div class="prep-copy">
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-sparkle duotone-magic"></i>
+                            <span>Descoberta da Crian&ccedil;a</span>
+                        </p>
+                        <ul>
+                            <li>Que posi&ccedil;&atilde;o e quantidade n&atilde;o s&atilde;o a mesma coisa.</li>
+                            <li>Que uma fila conta uma hist&oacute;ria de antes e depois.</li>
+                            <li>Que primeiro, segundo e terceiro nomeiam lugares, n&atilde;o objetos.</li>
+                        </ul>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-check-circle duotone-forest"></i>
+                            <span>Sinal de Fruto de Hoje</span>
+                        </p>
+                        <p>Se a crian&ccedil;a consegue identificar quem est&aacute; primeiro, mover algu&eacute;m para o
+                            segundo lugar ou reconhecer quem ficou por &uacute;ltimo, o fruto j&aacute; nasceu.</p>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-star-four duotone-gold"></i>
+                            <span>Segredo do Maravilhamento</span>
+                        </p>
+                        <p>N&atilde;o transforme ordinalidade em lista fria de palavras. Hoje Celeste quer mostrar que a
+                            ordem na fila revela um pequeno drama: quem vai na frente, quem espera, quem chega depois.</p>
+                    </div>
+
+                    <div class="strategy-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-strategy duotone-forest"></i>
+                            <span>Estrat&eacute;gia do Mestre: Lugar antes da Defini&ccedil;&atilde;o</span>
+                        </p>
+                        <p><strong>Por que funciona:</strong> a crian&ccedil;a entende ordinalidade melhor quando move e
+                            observa uma fila real do que quando apenas repete vocabul&aacute;rio.</p>
+                        <p><strong>A&ccedil;&atilde;o de hoje:</strong> monte filas simples, troque personagens de lugar
+                            e nomeie as posi&ccedil;&otilde;es junto com a crian&ccedil;a.</p>
+                        <p><strong>Eco no Reino:</strong> o Portador aprende que ordem n&atilde;o &eacute; rigidez; &eacute;
+                            rela&ccedil;&atilde;o compreens&iacute;vel.</p>
+                        <p style="margin-top:0.75rem;"><strong>Se houver irm&atilde;os:</strong> o menor pode bagun&ccedil;ar
+                            ou rearrumar a fila; a crian&ccedil;a principal nomeia o que mudou.</p>
+                    </div>
+
+                    <div class="graca-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-heart duotone-heart"></i>
+                            <span>Nota de Gra&ccedil;a</span>
+                        </p>
+                        <p>Se a crian&ccedil;a disser "um, dois, tr&ecirc;s" quando voc&ecirc; espera "primeiro, segundo,
+                            terceiro", n&atilde;o corrija com dureza. Ela est&aacute; perto; s&oacute; ainda precisa ver a
+                            diferen&ccedil;a.</p>
+                    </div>
+                </div>
             </div>
-            
-        </div>
-    
 
-</div>
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-film-strip duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Ritual de Entrada
+                </div>
 
+                <div class="instruction-box ritual-bastidores-box">
+                    <i class="ph-duotone ph-lamp duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div><strong>Prepara&ccedil;&atilde;o:</strong> alinhe os personagens como uma pequena fila de
+                        chegada ou de colheita, sem explicar tudo ainda. Deixe que a ordem seja vista antes de ser
+                        nomeada.</div>
+                </div>
 
+                <div class="script-persona-block portador-block ritual-portador-block">
+                    <div class="script-avatar-icon">
+                        <i class="ph-duotone ph-fire duotone-carmim"></i>
+                    </div>
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Portador da Tocha</span>
+                            <span class="script-tone">[Tom vivo e curioso, como quem percebe movimento no ar.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>Respire fundo. O vento de Celeste j&aacute; passou por aqui.</p>
+                            <p>Chegamos &agrave; <strong>Rua das Fam&iacute;lias</strong>. H&aacute; passos no ch&atilde;o,
+                                pequenos rastros e uma fila de provid&ecirc;ncia se formando, como se cada um soubesse
+                                que existe uma ordem boa para caminhar, colher e agradecer.</p>
+                            <p class="acting-cue">[Pausa breve. Mostre a fila sem explicar tudo.]</p>
+                            <p>Hoje n&atilde;o vamos perguntar quantos h&aacute;. Vamos perguntar quem veio primeiro,
+                                quem espera depois e como cada lugar muda a hist&oacute;ria da fila.</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card-container ritual-local-card">
+                    <p class="local-label">Lugar revelado</p>
+                    <img src="../assets/cards/locais/local-rua-familias.png"
+                        class="card-visual-asset rotate-left hover-float"
+                        onError="this.src='../assets/cards/locais/placeholder.png'"
+                        alt="Card da Rua das Familias, lugar da licao">
+                    <p class="asset-caption">Na Rua das Fam&iacute;lias, a fila da provid&ecirc;ncia aparece como
+                        caminho, espera, colheita e gratid&atilde;o em ordem.</p>
+                </div>
 
+                <div class="instruction-box ritual-whisper-box">
+                    <i class="ph-duotone ph-feather duotone-indigo"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div><strong>Sussurro do Portal:</strong> n&atilde;o revele Celeste logo de sa&iacute;da. Deixe
+                        primeiro a fila da provid&ecirc;ncia ensinar a diferen&ccedil;a entre lugar e quantidade.</div>
+                </div>
+            </div>
 
+            <section class="journey-section">
+                <h2><i class="ph-duotone ph-map-trifold duotone-gold" style="margin-right:0.5rem;"></i> A Jornada</h2>
 
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-flag-checkered duotone-carmim"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 1 - A Fila da Provid&ecirc;ncia se Forma
+                    </div>
 
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧‍👦</span>
-        Para a Família
-    </div>
-    
-    
-    <p><strong>📚 Por que isso importa:</strong></p>
-    <div style="padding:0.5rem 0;">
-        Agrupar 10 em 1 feixe é a base do valor posicional.<br>Quando a criança entende que "1 dezena = 10 unidades", toda a matemática fica mais fácil.<br>
-    </div>
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🧠 Método CPA (Jerome Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Concreto:</strong> Palitos agrupados fisicamente.</li>
-            <li><strong>Pictórico:</strong> Vetado.</li>
-            <li><strong>Abstrato:</strong> Conceito de "grupo de 10".</li>
-        </ul>
-        
-        <span style="color:#6B7280; font-size:0.9rem;">Bruner: Mãos fazem, mente entende.</span>
-        
-    </div>
-    
-    
-    
-    
-    <div class="cm-box">
-        <strong>🏛️ Princípio Charlotte Mason:</strong><br>
-        <em>"Education is a discipline."</em><br>
-        <span style="color:#6B7280;">Fazer feixes desenvolve coordenação e conceito simultaneamente.</span>
-    </div>
-    
-    
-    
-    
-    <div class="tgtb-box">
-        <strong>📘 Conexão TGTB:</strong><br>
-        <span style="color:#92400E;">Corresponde à lição de Feixes de Dez Parte 1.
-Bernardo traz persistência e força para o conceito.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🌀 Currículo em Espiral (Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Agora:</strong> Valor Posicional — Sementes — 10 unidades = 1 feixe</li>
-            <li><strong>Depois:</strong> Raízes — dezenas e unidades, composição</li>
-        </ul>
-        
-    </div>
-    
-    
-    
-    
-    <div class="espiritual-box">
-        <strong>✨ Reflexão Espiritual:</strong><br>
-        <span style="color:#166534;">Unidos somos mais fortes.
-Cada graveto é importante, mas juntos fazem diferença.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="graca-box">
-        <strong>🕊️ Nota de Graça:</strong><br>
-        Se o feixe desmontar, Bernardo diz:
-"Mais uma vez. Comigo."
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar"
+                            alt="Card da guardia Celeste">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Celeste</span>
+                                <span class="script-tone">[Tom leve, r&aacute;pido e curioso, sem perder a clareza.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>Veja s&oacute;! A fila j&aacute; come&ccedil;ou, mas nem tudo se descobre contando.</p>
+                                <p>Hoje eu quero saber quem vem na frente, quem espera depois e quem est&aacute;
+                                    guardando o final desse caminho de provid&ecirc;ncia.</p>
+                            </div>
+                        </div>
+                    </div>
 
-    </div>
-    
+                    <p>Celeste passa pela fila como quem l&ecirc; uma hist&oacute;ria no vento. Um personagem est&aacute;
+                        na frente. Outro vem logo depois. Outro ainda segura o terceiro lugar. A ordem parece desenhar o
+                        caminho sem precisar aumentar a quantidade, como se cada lugar tivesse uma pequena tarefa a
+                        cumprir.</p>
+                </div>
 
-</div>
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-arrows-horizontal duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 2 - Trocar de Lugar Muda a Hist&oacute;ria
+                    </div>
 
+                    <p>Celeste encosta o focinho no segundo da fila e o move para a frente. De repente, n&atilde;o temos
+                        mais a mesma hist&oacute;ria, embora a quantidade de personagens continue igual.</p>
 
+                    <div class="instruction-box">
+                        <i class="ph-duotone ph-hand-pointing duotone-magic"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p style="margin-bottom:0.5rem;"><strong>Convite do Portador:</strong> troque dois objetos
+                                de lugar e pergunte: &ldquo;Quem ficou primeiro agora? E quem foi para o segundo?&rdquo;
+                            </p>
+                            <p>Deixe a crian&ccedil;a ver que a posi&ccedil;&atilde;o mudou sem que o grupo tenha
+                                crescido ou diminu&iacute;do.</p>
+                        </div>
+                    </div>
 
+                    <p>A fila ensina que ordinalidade n&atilde;o fala de "quantos" est&atilde;o ali, mas do lugar que
+                        cada um ocupa no caminho.</p>
+                </div>
 
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-path duotone-indigo"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 3 - Quem Vai Primeiro?
+                    </div>
+
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar"
+                            alt="Card da guardia Celeste">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Celeste</span>
+                                <span class="script-tone">[Tom brincante, como quem adora pequenas pistas.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>Agora ficou claro: o primeiro abre o caminho, o segundo vem logo atr&aacute;s, o
+                                    terceiro ainda guarda um lugar diferente.</p>
+                                <p>A fila tem uma ordem. E a ordem tamb&eacute;m conta.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>Quando a crian&ccedil;a nomeia os lugares, ela come&ccedil;a a distinguir rela&ccedil;&atilde;o
+                        de posi&ccedil;&atilde;o. A fila deixa de ser s&oacute; um grupo parado e passa a ser uma pequena
+                        narrativa.</p>
+
+                    <p style="margin-top:0.75rem;"><strong>Ponte para O Concreto:</strong> depois de ver Celeste trocar
+                        e nomear lugares, &eacute; hora de a crian&ccedil;a montar a pr&oacute;pria fila e dizer quem vai
+                        em cada posi&ccedil;&atilde;o.</p>
+                </div>
+            </section>
+
+            <section class="concrete-section">
+                <h2><i class="ph-duotone ph-wall duotone-terra" style="margin-right:0.5rem;"></i> O Concreto</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-users-three duotone-terra"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        A Fila em Movimento
+                    </div>
+
+                    <div class="instruction-box">
+                        <i class="ph-duotone ph-list-checks duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Passo a passo:</strong></p>
+                            <ol style="margin:0.75rem 0 0 1.25rem;">
+                                <li>Alinhe 5 objetos em fila reta.</li>
+                                <li>Pergunte: &ldquo;Quem est&aacute; primeiro? Quem est&aacute; segundo?&rdquo;</li>
+                                <li>Troque dois personagens de lugar e repita a pergunta.</li>
+                                <li>Se houver paz, estenda at&eacute; terceiro, quarto e quinto.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <p><strong>Liga&ccedil;&atilde;o com a Jornada:</strong> a Jornada mostrou que trocar lugares muda a
+                        hist&oacute;ria; aqui a crian&ccedil;a sente isso com as pr&oacute;prias m&atilde;os.</p>
+
+                    <div class="prep-copy">
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-check-circle duotone-forest"></i>
+                                <span>Varia&ccedil;&atilde;o leve</span>
+                            </p>
+                            <p>Fa&ccedil;a uma fila de pessoas reais da casa e pergunte quem est&aacute; primeiro e quem
+                                ficou por &uacute;ltimo.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-baby duotone-magic"></i>
+                                <span>Adapta&ccedil;&atilde;o para casa viva</span>
+                            </p>
+                            <p>Com irm&atilde;os menores, o pequeno pode mexer a fila; a crian&ccedil;a principal nomeia
+                                as posi&ccedil;&otilde;es que mudaram.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-seedling duotone-gold"></i>
+                                <span>Fruto que buscamos</span>
+                            </p>
+                            <p>N&atilde;o &eacute; recitar palavras bonitas, mas perceber que posi&ccedil;&atilde;o muda
+                                quando o lugar muda, mesmo que a quantidade permane&ccedil;a igual.</p>
+                        </div>
+                    </div>
+
+                    <p style="margin-top:0.75rem;"><strong>Ponte para Narramos Juntos:</strong> depois de mover a fila,
+                        convide a crian&ccedil;a a contar o que mudou e quem ficou em cada lugar.</p>
+                </div>
+            </section>
+
+            <section class="narration-section">
+                <h2><i class="ph-duotone ph-book-open-text duotone-magic" style="margin-right:0.5rem;"></i> Narramos
+                    Juntos</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-chat-circle-text duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        O que a fila contou
+                    </div>
+
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar"
+                            alt="Card da guardia Celeste">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Celeste</span>
+                                <span class="script-tone">[Tom atento, como quem ouve uma pista importante.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>Conta para mim: quem ficou primeiro? E o que mudou quando trocamos a ordem?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><strong>Perguntas abertas:</strong></p>
+                    <ul>
+                        <li>Quem estava primeiro antes? E depois?</li>
+                        <li>O segundo continuou sendo o segundo quando a fila mudou?</li>
+                        <li>O que quer dizer estar por &uacute;ltimo?</li>
+                    </ul>
+
+                    <p style="margin-top:0.75rem;"><strong>Formas dignas de narrar:</strong> a crian&ccedil;a pode
+                        apontar, reorganizar a fila de novo, nomear os lugares ou recontar a pequena corrida em voz
+                        pr&oacute;pria.</p>
+                </div>
+            </section>
+
+            <section class="closing-section">
+                <h2><i class="ph-duotone ph-sunset duotone-carmim" style="margin-right:0.5rem;"></i> Ritual de
+                    Fechamento</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-heartbeat duotone-heart"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Quando a fila repousa
+                    </div>
+
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/celeste-raposa.png" class="script-avatar"
+                            alt="Card da guardia Celeste">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Celeste</span>
+                                <span class="script-tone">[Tom satisfeito, leve e brilhante.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>Agora j&aacute; ficou claro: a fila n&atilde;o fala s&oacute; de grupo. Ela fala de
+                                    lugar.</p>
+                                <p>Primeiro, segundo, terceiro... cada posi&ccedil;&atilde;o guarda sua pequena parte da
+                                    hist&oacute;ria.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="script-persona-block portador-block">
+                        <div class="script-avatar-icon">
+                            <i class="ph-duotone ph-fire duotone-carmim"></i>
+                        </div>
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Portador da Tocha</span>
+                            </div>
+                            <div class="script-text">
+                                <p>Guardamos a fila com cuidado e voltamos para casa levando nos olhos a ordem do caminho.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="connection-section">
+                <h2><i class="ph-duotone ph-signpost duotone-indigo" style="margin-right:0.5rem;"></i> Conex&atilde;o
+                    da Jornada</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-path duotone-indigo"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Da fila para as duas m&atilde;os
+                    </div>
+
+                    <p><strong>Mem&oacute;ria viva:</strong> hoje Celeste mostrou que a fila n&atilde;o fala de quantos
+                        est&atilde;o juntos, mas de quem vem primeiro, depois e por &uacute;ltimo.</p>
+
+                    <a href="MV-S-011_A_PLENITUDE_DAS_MÃOS.html" class="journey-connection-card"
+                        style="text-decoration:none; display:block;">
+                        <div class="instruction-box" style="margin-bottom:0;">
+                            <i class="ph-duotone ph-hand-palm duotone-gold"
+                                style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                            <div>
+                                <p style="margin-bottom:0.35rem;"><strong>Pr&oacute;xima trilha:</strong> amanh&atilde;,
+                                    as duas m&atilde;os completas v&atilde;o nos mostrar o 10 e abrir a surpresa do
+                                    11.</p>
+                                <p style="margin:0; color:#6B7280;">Ir para <strong>A Plenitude das M&atilde;os</strong>
+                                    &rarr;</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="seeds-section">
+                <h2><i class="ph-duotone ph-flower-lotus duotone-forest" style="margin-right:0.5rem;"></i> Sementes
+                    para o Dia</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-sprout duotone-forest"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Escolha 1 ou 2 movimentos
+                    </div>
+
+                    <p>Uma pequena continua&ccedil;&atilde;o j&aacute; basta. Sementes para o Dia existe para deixar
+                        a ordinalidade reaparecer na vida comum, sem transformar a casa em exerc&iacute;cio sem fim.</p>
+
+                    <ul>
+                        <li><strong>Explora&ccedil;&atilde;o:</strong> observe uma fila real do dia: sapatos, pratos,
+                            irm&atilde;os, cadeiras ou pessoas entrando no carro.</li>
+                        <li><strong>Dramatiza&ccedil;&atilde;o:</strong> fa&ccedil;a os brinquedos "desfilarem" e pergunte
+                            quem est&aacute; primeiro e quem ficou por &uacute;ltimo.</li>
+                        <li><strong>Cria&ccedil;&atilde;o:</strong> monte uma fila nova e troque dois personagens de lugar
+                            para a crian&ccedil;a dizer o que mudou.</li>
+                        <li><strong>Narra&ccedil;&atilde;o:</strong> na refei&ccedil;&atilde;o, pergunte: "Quem estava
+                            primeiro na nossa fila de hoje?"</li>
+                        <li><strong>Reflex&atilde;o:</strong> note com a crian&ccedil;a como a ordem ajuda a caminhada a
+                            fazer sentido.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="formation-section">
+                <h2><i class="ph-duotone ph-scroll duotone-terra" style="margin-right:0.5rem;"></i> Forma&ccedil;&atilde;o
+                    do Portador</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-graduation-cap duotone-terra"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        O que o adulto aprende ao lado de Celeste
+                    </div>
+
+                    <div class="prep-copy">
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-book-bookmark duotone-gold"></i>
+                                <span>Por que isso importa</span>
+                            </p>
+                            <p>Ordinalidade sustenta instru&ccedil;&otilde;es, sequ&ecirc;ncias, organiza&ccedil;&atilde;o
+                                narrativa e a capacidade de localizar elementos dentro de um conjunto.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-seal-check duotone-forest"></i>
+                                <span>O que o Portador aprende hoje</span>
+                            </p>
+                            <p>Que primeiro, segundo e terceiro n&atilde;o nomeiam quantos existem, mas a rela&ccedil;&atilde;o
+                                de cada um com o caminho da fila.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-cubes duotone-indigo"></i>
+                                <span>CPA / Bruner</span>
+                            </p>
+                            <p><strong>Concreto:</strong> fila real de objetos ou pessoas sendo reorganizada.</p>
+                            <p><strong>Pict&oacute;rico:</strong> pode vir depois, mas hoje a fila concreta governa.</p>
+                            <p><strong>Abstrato:</strong> vocabul&aacute;rio ordinal nasce do gesto de observar e trocar
+                                posi&ccedil;&otilde;es.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-feather duotone-magic"></i>
+                                <span>Charlotte Mason</span>
+                            </p>
+                            <p>A crian&ccedil;a vive primeiro, define depois. Hoje a rela&ccedil;&atilde;o de posi&ccedil;&atilde;o
+                                precisa ser sentida e vista antes de ser explicada.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-books duotone-gold"></i>
+                                <span>Conex&atilde;o TGTB</span>
+                            </p>
+                            <p>Este passo corresponde a <code>000-L10 - Ordinal Numbers: Part 1 / N&uacute;meros
+                                    Ordinais: Parte 1</code>. O alvo &eacute; introduzir primeiro a quinto em
+                                situa&ccedil;&otilde;es concretas e respir&aacute;veis.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-arrows-clockwise duotone-forest"></i>
+                                <span>Curr&iacute;culo em espiral</span>
+                            </p>
+                            <p>Hoje a crian&ccedil;a localiza lugares numa fila concreta. Depois, essa percep&ccedil;&atilde;o
+                                vai sustentar datas, sequ&ecirc;ncias maiores e novas experi&ecirc;ncias ordinais.</p>
+                        </div>
+
+                        <div class="strategy-box">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-compass-tool duotone-carmim"></i>
+                                <span>Estrat&eacute;gia do Mestre: Rela&ccedil;&atilde;o antes de R&oacute;tulo</span>
+                            </p>
+                            <p>O adulto protege a l&ccedil;&atilde;o quando n&atilde;o transforma ordinalidade em
+                                memorizac&atilde;o. O cora&ccedil;&atilde;o matem&aacute;tico aqui &eacute; ver o lugar
+                                mudar quando a fila muda.</p>
+                        </div>
+
+                        <div class="graca-box">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-heart-straight duotone-heart"></i>
+                                <span>Nota de Gra&ccedil;a</span>
+                            </p>
+                            <p>Se a crian&ccedil;a confundir cardinal com ordinal, n&atilde;o trate isso como erro grave.
+                                Apenas mostre de novo: a quantidade continua igual, mas o lugar mudou.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-plant duotone-forest"></i>
+                                <span>As Sementes Continuam</span>
+                            </p>
+                            <p>Depois de ver a fila com Celeste, a crian&ccedil;a estar&aacute; mais pronta para receber
+                                o 10 como marco inteiro e vis&iacute;vel nas duas m&atilde;os.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="lesson-footer-nav" aria-label="Navegacao entre licoes">
+                <a href="MV-S-009_O_CELEIRO_DE_NOÉ.html" class="lesson-footer-link">
+                    <span class="lesson-footer-direction">&larr; Anterior</span>
+                    <span class="lesson-footer-title">O Celeiro de No&eacute;</span>
+                </a>
+
+                <a href="MV-S-011_A_PLENITUDE_DAS_MÃOS.html" class="lesson-footer-link" style="text-align:right;">
+                    <span class="lesson-footer-direction">Pr&oacute;xima &rarr;</span>
+                    <span class="lesson-footer-title">A Plenitude das M&atilde;os</span>
+                </a>
+            </nav>
         </article>
-
-        <!-- NAVIGATION FOOTER -->
-        <nav class="lesson-nav">
-            
-            
-
-            
-            <a href="MV-S-011_A_PLENITUDE_DAS_MÃOS.html" class="nav-btn prev">
-                <span class="nav-label">← Anterior</span>
-                <span class="nav-title">A Plenitude das Mãos</span>
-            </a>
-            
-            
-            
-            <a href="MV-S-013_O_RIO_QUE_SE_UNE.html" class="nav-btn next">
-                <span class="nav-label">Próxima →</span>
-                <span class="nav-title">O Rio que se Une</span>
-            </a>
-            
-        </nav>
-
-        <footer style="text-align: center; margin-top: 4rem; color: #A8A29E; font-size: 0.8rem;">
-            Matemática Viva • Forjado com Estilo e Propósito
-        </footer>
     </div>
 </body>
+
 </html>

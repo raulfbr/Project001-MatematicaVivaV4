@@ -271,3 +271,25 @@ Formacao fecha antes da navegacao tecnica, sem ruido.
 ### Decisao
 1. `L006` passou na revisao topico a topico por IA.
 2. estado final: pronta para futura validacao humana, sem necessidade de nova passada de patch antes disso, salvo se a validacao visual encontrar ajuste de layout.
+
+---
+
+## 12) Reauditoria pela skill `revisao-sementes-topico-a-topico`
+Data: 2026-03-10
+Modo: confirmacao de fechamento via skill
+
+### Leitura de conselho
+1. `Charlotte Mason` confirmou que a licao continua tratando a crianca como pessoa e nao como caligrafia em miniatura.
+2. `Jerome Bruner` confirmou que a ordem `contemplacao -> gesto no ar -> superficie real -> narracao` permanece viva e inteligivel.
+3. `Susan Macaulay` confirmou que a licao continua praticavel para casa real, com preparo leve e sem peso desnecessario para a mae.
+4. `Mae Ansiosa` nao abriu alerta novo: a pagina nao pressiona desempenho nem sugere comparacao.
+5. `Mae Veterana` nao abriu alerta novo: a experiencia segue realista para o primeiro mes e nao promete maestria instantanea.
+6. `Beatrix Potter` nao abriu alerta textual novo: a imagem dominante do rastro bonito na areia continua organica e coerente.
+7. `Design` nao abriu alerta estrutural novo: navegacao, blocos e hierarquia continuam claros.
+8. `Engenharia` confirmou integridade tecnica basica nesta passada: sem residuos legados, `hrefs` corretos em UTF-8 e parser HTML `OK`.
+
+### Confirmado nesta reauditoria
+1. nenhum finding novo foi aberto no HTML da licao;
+2. nao houve necessidade de patch adicional em `MV-S-006_O_DESENHO_DO_REI.html`;
+3. o estado final da pagina permanece `PASS` em `001-012`;
+4. o melhor curso nesta sessao foi preservar o arquivo e registrar a confirmacao formal no log.

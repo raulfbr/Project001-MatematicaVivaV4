@@ -1,7 +1,7 @@
 # REVISAO TOPICO A TOPICO - L008
 Data: 2026-03-10
 Licao: `MV-S-008_O_PAR_PERFEITO.html`
-Status da sessao: em revisao
+Status da sessao: reauditoria concluida
 Escopo congelado: revisar apenas a `L008`; `L007` e `L009` entram somente como fronteiras curriculares
 Validacao humana da Familia Rodrigues: pendente
 
@@ -212,3 +212,30 @@ formacao fecha antes da navegacao tecnica.
 ### Decisao
 1. `L008` passou na revisao topico a topico por IA;
 2. estado final: alinhada ao protocolo e pronta para futura validacao humana, sem necessidade de nova passada de patch antes disso, salvo ajuste visual de layout.
+
+---
+
+## 12) Reauditoria de confirmacao
+Data: 2026-03-10
+Modo: confirmacao de fechamento pelo protocolo topico a topico
+
+### Findings desta reauditoria
+1. `Baixo`: havia um residuo editorial no texto introdutorio de `Sementes para o Dia`, com backticks literais em `Sementes para o Dia`, o que enfraquecia o acabamento premium e denunciava origem de rascunho.
+2. `Baixo`: havia backticks literais tambem em transicoes narrativas que mencionavam `6`, `7`, `8` e `9`, o que quebrava a organicidade do texto final.
+
+### Deliberacao com conselho
+1. `Charlotte Mason` manteve `PASS`: a licao continua respeitando a crianca como pessoa e nao como exercicio de classificacao.
+2. `Jerome Bruner` manteve `PASS`: o pareamento concreto continua vindo antes de qualquer representacao abstrata.
+3. `Susan Macaulay` manteve `PASS`: a experiencia segue aplicavel em casa real e nao pesa sobre a mae.
+4. `Mae Ansiosa` nao abriu alerta novo: o texto nao pressiona desempenho nem comparacao.
+5. `Beatrix Potter` abriu apenas tensao de acabamento: o uso de backticks literais feria a organicidade do texto final.
+6. `Engenharia` manteve `PASS`: links locais, estrutura e parser HTML permaneceram corretos.
+
+### Alterado nesta reauditoria
+1. o paragrafo introdutorio de `Sementes para o Dia` foi limpo, removendo os backticks literais;
+2. o `Fio da Jornada` e a `Conexao da Jornada` tiveram os backticks numericos removidos;
+3. nenhum outro patch foi necessario no HTML da licao.
+
+### Veredito atualizado
+1. `L008` permanece `PASS` em `001-012`;
+2. estado final confirmado: pronta para futura validacao humana, sem necessidade de nova passada de patch antes disso, salvo ajuste visual em navegador.

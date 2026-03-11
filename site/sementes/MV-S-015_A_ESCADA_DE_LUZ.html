@@ -1,738 +1,662 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Escada de Luz | Matemática Viva</title>
-    <!-- CSS ISOLADO DE SEMENTES -->
+    <title>A Escada de Luz | Matem&aacute;tica Viva</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    <style>
-        /* INLINE STYLES FOR CRITICAL RENDERING PRIORITY */
-        body { background-color: #F8F9FA; color: #374151; }
-        .lesson-container { max-width: 768px; margin: 0 auto; padding-bottom: 4rem; }
-        
-        /* CARD COMPONENT */
-        .scene-card {
-            background: #FFFFFF;
-            border-radius: 12px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(0, 0, 0, 0.04);
-            position: relative;
-            overflow: hidden;
-        }
-        .scene-card::before {
-            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-            background: linear-gradient(90deg, #FCD34D 0%, #F59E0B 100%);
-            opacity: 0.8;
-        }
-
-        /* HEADER & TYPOGRAPHY */
-        .scene-header {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.35rem;
-            color: #111827;
-            margin-bottom: 2rem;
-            display: flex; align-items: center; gap: 0.75rem; font-weight: 600;
-        }
-        .scene-icon { font-size: 1.5rem; }
-        h2 { font-family:'Outfit'; color:#6B7280; font-size:1rem; text-transform:uppercase; letter-spacing:2px; margin: 3rem 0 1rem 0; text-align:center; }
-        strong { font-weight: 600; color: #1F2937; }
-
-        /* COMPONENTS */
-        .script-persona-block {
-            background: #F9FAFB;
-            border: 1px solid #F3F4F6;
-            border-left: 4px solid #10B981;
-            border-radius: 8px;
-            margin-top: 1.5rem; padding: 1.5rem;
-        }
-        .script-avatar { border: 2px solid #FFFFFF; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        
-        .instruction-box {
-            background: #FEFCE8; border: 1px solid #FEF9C3; color: #854D0E;
-            border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;
-            display: flex; gap: 1rem; align-items: flex-start;
-        }
-        .instruction-icon { font-size: 1.5rem; }
-        
-        .portador-block { border-left: 4px solid #10B981 !important; background: #FFFFFF !important; }
-        .script-name { text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
-
-        /* MOBILE OPTIMIZATION */
-        @media (max-width: 768px) {
-            .lesson-container { padding: 0; }
-            .scene-card { border-radius: 0; margin: 0 0 0.5rem 0; box-shadow: none; border-bottom: 1px solid #E5E7EB; }
-            .scene-card::before { height: 3px; }
-            h2 { font-size: 1.4rem; padding: 0 1.5rem; margin-top: 2rem; }
-        }
-    </style>
 </head>
+
 <body class="clima-2">
-    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard">🏡</a>
+    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard"><i
+            class="ph-duotone ph-house duotone-forest"></i></a>
 
     <div class="lesson-container">
-        <!-- HERO SECTION -->
         <header class="lesson-hero">
-            <div class="lesson-meta-tag">Lição 015 • A Escada de Luz • ⏱️ 15-20 min</div>
+            <div class="lesson-meta-tag">Li&ccedil;&atilde;o 015 &bull; A Escada de Luz &bull; <i
+                    class="ph-duotone ph-timer duotone-carmim"></i> 15-20 min</div>
             <h1 class="hero-title">A Escada de Luz</h1>
-            <p class="hero-quote">"Contemplar com o Maestro os trinta passos que já demos rumo ao Deslumbramento."</p>
-            <!-- ASSETS ISOLADOS DE SEMENTES -->
-            <img src="../assets/sementes/guardioes/melquior-leao.png" 
-                 onError="this.src='../assets/sementes/guardioes/placeholder.png'"
-                 alt="melquior" class="hero-guardian">
+            <p class="hero-quote">&ldquo;Melquior guia a crian&ccedil;a por uma escada de trinta degraus brilhantes,
+                celebrando cada patamar como uma vit&oacute;ria serena.&rdquo;</p>
+            <img src="../assets/sementes/guardioes/melquior-leao.png"
+                onError="this.src='../assets/sementes/guardioes/placeholder.png'"
+                alt="Ilustra&ccedil;&atilde;o do guardi&atilde;o Melquior no topo da Escada de Luz"
+                class="hero-guardian">
         </header>
 
         <article class="lesson-body">
-            
-
-
-
-
-
-
-<div class="lesson-header-nav" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #E5E7EB;">
-    <div style="width: 33%;">
-        
-        <a href="MV-S-014_O_CELEIRO_QUE_CRESCE.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
-            <span>←</span> <span>O Celeiro que Cresce</span>
-        </a>
-        
-    </div>
-    
-    <div style="width: 33%; text-align: center;">
-        <img src="../assets/icon-sementes.png" alt="Sementes" style="height: 32px; opacity: 0.8;" onerror="this.style.display='none'">
-    </div>
-    
-    <div style="width: 33%; text-align: right;">
-        
-        <a href="MV-S-016_O_BANDO_QUE_CRESCE.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem;">
-            <span>O Bando que Cresce</span> <span>→</span>
-        </a>
-        
-    </div>
-</div>
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧</span>
-        Preparação do Portador
-    </div>
-    
-    
-    
-    
-    <div style="text-align: center; margin-bottom: 1.5rem; color: #6B7280; font-size: 0.9rem; font-style: italic;">
-        [Foco: Contagem fluente até 30]
-    </div>
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">💡</span>
-    <div>
-        
-        
-        <strong>Dica do Coração:</strong> Hoje celebramos! Chegamos ao 30!<br>Melquior nos guia pela Escada de Luz.<br>Cada degrau é um número que seu filho já conhece.<br>
-    
-    </div>
-</div>
-
-
-    
-    
-    
-    
-    
-    <div class="materials-box" style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:8px; padding:1.25rem; margin:1.5rem 0;">
-        
-        <p><strong>🎯 Essencial:</strong></p>
-        <ul style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>Card Melquior (1)</li>
-            
-        </ul>
-        
-        
-        
-        <p style="margin-top:1rem;"><strong>📦 Se tiver:</strong></p>
-        <ul style="margin-top:0.5rem; margin-left:1rem; color:#6B7280;">
-            
-            <li>30 objetos pequenos (opcional) (30)</li>
-            
-            <li>Uma escada imaginária (ou desenhada) (1)</li>
-            
-        </ul>
-        
-        
-        
-        
-    </div>
-    
-
-    
-    
-    <p><strong>🌟 Seu filho vai descobrir:</strong> Que contar até 30 é possível e até divertido.</p>
-    
-
-    <p><strong>🛡️ Protocolo de Impecabilidade:</strong> Conte com RITMO. Pausas a cada 10.<br>1 a 10... 11 a 20... 21 a 30.<br></p>
-    <p><strong>🕊️ Nota de Graça:</strong> Melquior diz: 'O Rei sorriu ao ver você chegar.' A cada tropeço, subimos de novo!</p>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🎬</span>
-        Ritual de Abertura
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🕯️</span>
-    <div>
-        
-        
-        Ambiente iluminado, majestoso, como um templo.
-    
-    </div>
-</div>
-
-
-    <p><strong>🌫️ Transição:</strong> Feche os olhos. As estrelas brilham sobre o jardim.<br>Melquior espera no pé de uma grande escadaria.<br></p>
-
-    
-    
-    <div class="sensory-box" style="background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); border-radius:8px; padding:1.25rem; margin:1.5rem 0; font-style:italic; color:#92400E; border-left:4px solid #F59E0B;">
-        O ar está fresco, cheiro de noite clara.<br>Melquior ergue a juba sob as estrelas.<br>"O Rei sorriu ao ver você chegar."<br>
-    </div>
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(solene)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            Você vê aquela escadaria que brilha?<br>Melquior vai nos guiar até o topo. Trinta degraus!<br>
-        </div>
-    </div>
-</div>
-
-
-    <div style="text-align:center; margin-top:2rem;">
-        <p style="font-size:0.9rem; color:#9CA3AF; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:1px;">Visualizar</p>
-        <img src="../assets/cards/guardioes/melquior-leao.png" 
-             style="width:120px; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.1); transform: rotate(-2deg); border: 4px solid white;"
-             onError="this.src='../assets/cards/guardioes/placeholder.png'"
-             alt="Card melquior">
-    </div>
-
-</div>
-
-
-
-
-<h2>🗺️ A Jornada</h2>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        Os Primeiros Dez
-    </div>
-    
-    
-        
-        
-<div class="local-card">
-    <p><strong>📍 Local:</strong> Jardim Central</p>
-    <p class="local-label">Visualizar</p>
-    <img src="../assets/cards/locais/local-jardim-central.png" alt="Jardim Central">
-</div>
-
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Conte de 1 a 10, pausadamente.<br>"Subimos dez degraus! Pausa!"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">melquior</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(profundo)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Cada degrau é um número. Vamos subir juntos."<br>[Melquior sobe devagar]<br>"Um, dois, três... até dez. O primeiro descanso."<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        A Segunda Dezena
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Conte de 11 a 20.<br>"Mais dez! Estamos no 20! Pausa!"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">melquior</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Voz firme que diz 'Eu acredito em você'.">
-                        <span style="font-style: normal;">💪</span> (encorajador)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Agora os próximos dez. Você consegue!"<br>[Melquior continua]<br>"Onze, doze, treze... até vinte!"<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        O Topo
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Conte de 21 a 30.<br>"TRINTA! Você chegou ao topo!"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">melquior</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(satisfeito)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Os últimos dez! Vamos lá!"<br>[Melquior sorrindo]<br>"Vinte e um, vinte e dois... TRINTA!"<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-
-
-
-<h2>🧱 O Concreto</h2>
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🧱</span>
-        Atividade Concreta
-    </div>
-    
-    
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">📋</span>
-    <div>
-        
-        
-        <strong>Passo a Passo:</strong>
-        <ol style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>
-                Conte 1 a 10. Pause e celebre.
-                
-                <br><em>Fala sugerida: "Dez! Primeira parada!"</em>
-                
-            </li>
-            
-            <li>
-                Conte 11 a 20. Pause e celebre.
-                
-                <br><em>Fala sugerida: "Vinte! Mais da metade!"</em>
-                
-            </li>
-            
-            <li>
-                Conte 21 a 30. Celebre muito!
-                
-                <br><em>Fala sugerida: "TRINTA! Você conseguiu!"</em>
-                
-            </li>
-            
-            <li>
-                (Opcional) Use 30 objetos para contar.
-                
-                <br><em>Fala sugerida: "Cada objeto, um degrau!"</em>
-                
-            </li>
-            
-        </ol>
-    
-    </div>
-</div>
-
-
-    
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🗣️</span>
-        Narramos Juntos
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🤫</span>
-    <div>
-        
-        
-        Imagine descer a escada devagar.<br>"Melquior está muito orgulhoso!"<br>
-    
-    </div>
-</div>
-
-
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">melquior</span>
-            
-        </div>
-        <div class="script-text">
-            "O que você descobriu hoje na Clareira? O que contaria para o Melquior?"
-        </div>
-    </div>
-</div>
-
-
-    <p><strong>Perguntas do Coração:</strong></p>
-    <ul style="margin-left:1.5rem; margin-top:0.5rem;">
-        <li>Quantos degraus você subiu hoje?</li>
-        
-        <li>Qual número foi mais difícil de lembrar?</li>
-        
-        <li>O que vem depois do 29?</li>
-        
-    </ul>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🏁</span>
-        Ritual de Fechamento
-    </div>
-    
-    
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">melquior</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(majestoso)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Você subiu trinta degraus de luz!"<br>"O Rei está muito orgulhoso. Até a próxima jornada."<br>
-        </div>
-    </div>
-</div>
-
-
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-        </div>
-        <div class="script-text">
-            Dez, vinte, trinta. Voltamos.
-        </div>
-    </div>
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🔗</span>
-        Conexão da Jornada
-    </div>
-    
-    
-    
-    <p><strong>⬅️ Última Aventura:</strong> Bernardo nos ensinou feixes. Agora, Melquior nos leva até o 30 — três grupos de dez!</p>
-    
-    
-        <div onclick="window.location.href='MV-S-016_O_BANDO_QUE_CRESCE.html'" style="cursor: pointer;">
-            <p><strong>➡️ Próxima Aventura:</strong> Você conta até 30! Amanhã, começamos a Estação 2 — Bernardo ensina a adição!</p>
-            
-            <div style="margin-top:0.5rem; text-align:right;">
-                <span style="font-size:0.85rem; color:#4B5563; background:#F3F4F6; padding:0.25rem 0.75rem; border-radius:1rem;">
-                    Ir para O Bando que Cresce →
-                </span>
+            <nav class="lesson-header-nav" aria-label="Navegacao entre licoes">
+                <div style="width: 33%;">
+                    <a href="MV-S-014_O_CELEIRO_QUE_CRESCE.html" class="nav-mini-link">
+                        <span>&larr;</span> <span>O Celeiro que Cresce</span>
+                    </a>
+                </div>
+                <div style="width: 33%; text-align: center;">
+                    <i class="ph-duotone ph-plant duotone-forest" style="font-size: 1.5rem;"></i>
+                    <span
+                        style="font-family: var(--font-heading); font-weight: 700; color: var(--primary); font-size: 0.9rem; margin-left: 0.5rem;">Sementes</span>
+                </div>
+                <div style="width: 33%; text-align: right;">
+                    <a href="MV-S-016_O_BANDO_QUE_CRESCE.html" class="nav-mini-link"
+                        style="justify-content: flex-end;">
+                        <span>O Bando que Cresce</span> <span>&rarr;</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-clipboard-text duotone-terra"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Prepara&ccedil;&atilde;o do Portador
+                </div>
+
+                <div class="prep-focus-tag">
+                    Foco da li&ccedil;&atilde;o: contar de 1 a 30 com ritmo e pausas a cada dez, celebrando cada
+                    patamar como uma conquista serena
+                </div>
+
+                <div class="prep-bridge-box">
+                    <p><strong>Fio da Jornada:</strong> Ontem, Bernardo usou o + para contar feixes no celeiro.
+                        Hoje, Melquior nos convida a subir uma escada de trinta degraus de luz, pausando a cada dez
+                        para celebrar. Amanh&atilde;, come&ccedil;amos a Esta&ccedil;&atilde;o 2 &mdash; Bernardo
+                        vai nos ensinar a adi&ccedil;&atilde;o.</p>
+                </div>
+
+                <div class="instruction-box prep-heart-box">
+                    <i class="ph-duotone ph-lightbulb duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p style="margin-bottom:0.5rem;"><strong>Dica do Cora&ccedil;&atilde;o:</strong> hoje
+                            &eacute; celebra&ccedil;&atilde;o, n&atilde;o prova. Cada grupo de dez &eacute; um
+                            patamar para descansar e admirar o quanto j&aacute; subimos.</p>
+                        <p>Se a crian&ccedil;a contar at&eacute; 20 com paz, o fruto j&aacute; nasceu. Se chegar
+                            a 30, &eacute; a escada inteira!</p>
+                    </div>
+                </div>
+
+                <aside class="materials-box" aria-label="Lista de Materiais">
+                    <p><strong><i class="ph-duotone ph-target duotone-terra"></i> Essencial:</strong></p>
+                    <ul>
+                        <li>Card do guardi&atilde;o Melquior</li>
+                        <li>As pr&oacute;prias m&atilde;os e dedos para marcar patamares</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-arrows-left-right duotone-indigo"></i>
+                            Substitui&ccedil;&otilde;es caseiras:</strong></p>
+                    <ul>
+                        <li>Se n&atilde;o tiver 30 objetos, use os degraus de uma escada real, passos pela casa
+                            ou batidas de palma.</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-package duotone-gold"></i> Se
+                            tiver:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>30 objetos pequenos para contar um a um</li>
+                        <li>Uma escada desenhada no papel com 30 degraus</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-warning-circle duotone-gold"></i> Plano
+                            B:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Se o dia estiver curto, viva os primeiros 20 degraus e deixe o &uacute;ltimo patamar
+                            para outro momento de calma.</li>
+                    </ul>
+                </aside>
+
+                <div class="prep-copy">
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-sparkle duotone-magic"></i>
+                            <span>Descoberta da Crian&ccedil;a</span>
+                        </p>
+                        <ul>
+                            <li>Que contar at&eacute; 30 &eacute; poss&iacute;vel e at&eacute; divertido.</li>
+                            <li>Que a cada 10 h&aacute; um patamar de descanso &mdash; o padr&atilde;o decimal.</li>
+                            <li>Que marcos num&eacute;ricos podem ser celebrados com admira&ccedil;&atilde;o.</li>
+                        </ul>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-check-circle duotone-forest"></i>
+                            <span>Sinal de Fruto de Hoje</span>
+                        </p>
+                        <p>Se a crian&ccedil;a conta at&eacute; 20 ou 30 com pausas r&iacute;tmicas, ou percebe que
+                            cada grupo de 10 &eacute; um patamar, o fruto j&aacute; apareceu.</p>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-star-four duotone-gold"></i>
+                            <span>Segredo do Maravilhamento</span>
+                        </p>
+                        <p>N&atilde;o transforme a contagem em recita&ccedil;&atilde;o mec&acirc;nica. Cada
+                            patamar &eacute; uma parada para olhar para tr&aacute;s e admirar quantos degraus
+                            j&aacute; subimos.</p>
+                    </div>
+
+                    <div class="strategy-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-strategy duotone-forest"></i>
+                            <span>Estrat&eacute;gia do Mestre: Pausas que Celebram</span>
+                        </p>
+                        <p><strong>Por que funciona:</strong> pausar a cada 10 refor&ccedil;a o padr&atilde;o
+                            decimal sem explic&aacute;-lo. A crian&ccedil;a sente que 10 &eacute; um marco natural.</p>
+                        <p><strong>A&ccedil;&atilde;o de hoje:</strong> conte devagar; a cada 10, pare, celebre e
+                            s&oacute; ent&atilde;o continue. Use o corpo: bata palmas, pise firme ou levante os
+                            bra&ccedil;os.</p>
+                        <p><strong>Eco no Reino:</strong> o Portador aprende que ritmo &eacute; mais importante
+                            que velocidade na contagem.</p>
+                        <p style="margin-top:0.75rem;"><strong>Se houver irm&atilde;os:</strong> cada um pode
+                            contar uma dezena diferente, revezando nos patamares.</p>
+                    </div>
+
+                    <div class="graca-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-heart duotone-heart"></i>
+                            <span>Nota de Gra&ccedil;a</span>
+                        </p>
+                        <p>Se a crian&ccedil;a esquecer um n&uacute;mero, Melquior diz: &ldquo;O Rei tem
+                            paci&ecirc;ncia. Vamos de novo &mdash; juntos.&rdquo; A cada trope&ccedil;o, subimos
+                            de novo.</p>
+                    </div>
+                </div>
             </div>
-            
-        </div>
-    
 
-</div>
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-film-strip duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Ritual de Entrada
+                </div>
 
+                <div class="instruction-box ritual-bastidores-box">
+                    <i class="ph-duotone ph-lamp duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div><strong>Prepara&ccedil;&atilde;o:</strong> se tiver objetos, separe-os em tr&ecirc;s
+                        grupos de 10. Se n&atilde;o, prepare-se para contar com palmas, passos ou dedos.</div>
+                </div>
 
+                <div class="script-persona-block portador-block ritual-portador-block">
+                    <div class="script-avatar-icon">
+                        <i class="ph-duotone ph-fire duotone-carmim"></i>
+                    </div>
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Portador da Tocha</span>
+                            <span class="script-tone">[Tom solene e majestoso.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>Respire fundo. As estrelas brilham sobre o Jardim Central.</p>
+                            <p>Melquior espera no p&eacute; de uma grande escadaria. Cada degrau brilha como se
+                                esperasse por n&oacute;s.</p>
+                            <p class="acting-cue">[Pausa. Deixe a crian&ccedil;a imaginar a escada.]</p>
+                            <p>Vamos subir juntos? Trinta degraus de luz nos esperam.</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card-container ritual-local-card">
+                    <p class="local-label">Lugar revelado</p>
+                    <img src="../assets/cards/locais/local-jardim-central.png"
+                        class="card-visual-asset rotate-left hover-float"
+                        onError="this.src='../assets/cards/locais/placeholder.png'"
+                        alt="Card do Jardim Central, lugar da licao">
+                </div>
 
+                <div class="instruction-box ritual-whisper-box">
+                    <i class="ph-duotone ph-feather duotone-indigo"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div><strong>Sussurro do Portal:</strong> n&atilde;o comece a contar rapidamente. Deixe a
+                        escada ser admirada antes do primeiro passo.</div>
+                </div>
+            </div>
 
+            <section class="journey-section">
+                <h2><i class="ph-duotone ph-map-trifold duotone-gold" style="margin-right:0.5rem;"></i> A Jornada</h2>
 
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-stairs duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 1 - Os Primeiros Dez
+                    </div>
 
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧‍👦</span>
-        Para a Família
-    </div>
-    
-    
-    <p><strong>📚 Por que isso importa:</strong></p>
-    <div style="padding:0.5rem 0;">
-        Contar até 30 é um marco importante na fluência numérica.<br>Pausas a cada 10 reforçam o padrão decimal.<br>
-    </div>
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🧠 Método CPA (Jerome Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Concreto:</strong> Movimento (degraus) + contagem oral.</li>
-            <li><strong>Pictórico:</strong> Vetado.</li>
-            <li><strong>Abstrato:</strong> Sequência numérica memorizada.</li>
-        </ul>
-        
-        <span style="color:#6B7280; font-size:0.9rem;">CM: Lições curtas, celebração constante.</span>
-        
-    </div>
-    
-    
-    
-    
-    <div class="cm-box">
-        <strong>🏛️ Princípio Charlotte Mason:</strong><br>
-        <em>"Education is an atmosphere."</em><br>
-        <span style="color:#6B7280;">A atmosfera de celebração torna a contagem prazerosa.</span>
-    </div>
-    
-    
-    
-    
-    <div class="tgtb-box">
-        <strong>📘 Conexão TGTB:</strong><br>
-        <span style="color:#92400E;">Corresponde à lição de Prática de Contagem até 30.
-Melquior traz majestade e celebração.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🌀 Currículo em Espiral (Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Agora:</strong> Contagem Fluente — Sementes — contar até 30 com pausas</li>
-            <li><strong>Depois:</strong> Raízes — contar até 100, contagem de 2 em 2</li>
-        </ul>
-        
-    </div>
-    
-    
-    
-    
-    <div class="espiritual-box">
-        <strong>✨ Reflexão Espiritual:</strong><br>
-        <span style="color:#166534;">Cada passo é progresso.
-30 degraus são 30 decisões de continuar.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="graca-box">
-        <strong>🕊️ Nota de Graça:</strong><br>
-        Se esquecer um número, Melquior diz:
-"O Rei tem paciência. Vamos de novo."
+                    <div class="instruction-box journey-instruction-box">
+                        <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Gesto do Portador:</strong> conte de 1 a 10, pausadamente. A cada
+                                n&uacute;mero, d&ecirc; um passo, bata uma palma ou mova um objeto.
+                                &ldquo;Subimos dez degraus! Primeiro patamar!&rdquo;</p>
+                        </div>
+                    </div>
 
-    </div>
-    
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar"
+                            alt="Card do guardiao Melquior">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Melquior</span>
+                                <span class="script-tone">[Tom profundo e contemplativo.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>&ldquo;Cada degrau &eacute; um n&uacute;mero. Vamos subir juntos.&rdquo;</p>
+                                <p>&ldquo;Um, dois, tr&ecirc;s... at&eacute; dez. O primeiro descanso. Olhe para
+                                    baixo &mdash; j&aacute; subimos dez!&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-</div>
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-trend-up duotone-indigo"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 2 - A Segunda Dezena
+                    </div>
 
+                    <div class="instruction-box journey-instruction-box">
+                        <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Gesto do Portador:</strong> conte de 11 a 20, com o mesmo ritmo.
+                                &ldquo;Mais dez! Segundo patamar! Estamos no vinte!&rdquo;</p>
+                            <p><strong>Clima:</strong> celebre como quem descansa numa parada de montanha.</p>
+                        </div>
+                    </div>
 
+                    <div class="script-persona-block journey-script">
+                        <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="Melquior">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Melquior</span>
+                                <span class="script-tone">[Tom encorajador e firme.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>&ldquo;Agora os pr&oacute;ximos dez. Voc&ecirc; consegue!&rdquo;</p>
+                                <p>&ldquo;Onze, doze, treze... at&eacute; vinte! Mais da metade!&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-sun duotone-carmim"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 3 - O Topo
+                    </div>
 
+                    <div class="instruction-box journey-instruction-box">
+                        <i class="ph-duotone ph-hand-pointing duotone-neutral"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Gesto do Portador:</strong> conte de 21 a 30. No &ldquo;trinta&rdquo;,
+                                celebre com entusiasmo sereno. &ldquo;TRINTA! Voc&ecirc; chegou ao topo da
+                                Escada de Luz!&rdquo;</p>
+                        </div>
+                    </div>
+
+                    <div class="script-persona-block journey-script">
+                        <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="Melquior">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Melquior</span>
+                                <span class="script-tone">[Tom satisfeito e majestoso.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>&ldquo;Os &uacute;ltimos dez! Vamos l&aacute;!&rdquo;</p>
+                                <p>&ldquo;Vinte e um, vinte e dois... TRINTA! Voc&ecirc; subiu trinta degraus de
+                                    luz!&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p style="margin-top:0.75rem;"><strong>Ponte para O Concreto:</strong> depois de subir com
+                        Melquior, &eacute; hora de a crian&ccedil;a contar por conta pr&oacute;pria.</p>
+                </div>
+            </section>
+
+            <section class="concrete-section">
+                <h2><i class="ph-duotone ph-wall duotone-terra" style="margin-right:0.5rem;"></i> O Concreto</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-stairs duotone-terra"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Minha Escada
+                    </div>
+
+                    <div class="instruction-box">
+                        <i class="ph-duotone ph-list-checks duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Passo a passo:</strong></p>
+                            <ol style="margin:0.75rem 0 0 1.25rem;">
+                                <li>Conte de 1 a 10. Pare e celebre: &ldquo;Dez! Primeira parada!&rdquo;</li>
+                                <li style="margin-top:0.5rem;">Conte de 11 a 20. Pare e celebre: &ldquo;Vinte!
+                                    Mais da metade!&rdquo;</li>
+                                <li style="margin-top:0.5rem;">Conte de 21 a 30. Celebre: &ldquo;TRINTA! Voc&ecirc;
+                                    conseguiu!&rdquo;</li>
+                                <li style="margin-top:0.5rem;">(Opcional) Use objetos &mdash; cada um &eacute; um
+                                    degrau. Organize em tr&ecirc;s filas de 10.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <p><strong>Liga&ccedil;&atilde;o com a Jornada:</strong> a Jornada mostrou a subida com
+                        Melquior; aqui a crian&ccedil;a sobe por conta pr&oacute;pria.</p>
+
+                    <div class="prep-copy">
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-check-circle duotone-forest"></i>
+                                <span>Varia&ccedil;&atilde;o leve</span>
+                            </p>
+                            <p>Conte de tr&aacute;s para frente (30 a 1) descendo a escada. Ou conte de 2 em 2
+                                at&eacute; 30.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-baby duotone-magic"></i>
+                                <span>Adapta&ccedil;&atilde;o para casa viva</span>
+                            </p>
+                            <p>Com irm&atilde;os, cada um conta uma dezena. O menor come&ccedil;a (1 a 10), o
+                                m&eacute;dio continua (11 a 20), a crian&ccedil;a-alvo fecha (21 a 30).</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-seedling duotone-gold"></i>
+                                <span>Fruto que buscamos</span>
+                            </p>
+                            <p>N&atilde;o &eacute; velocidade. &Eacute; a crian&ccedil;a sentir que 30 &eacute;
+                                poss&iacute;vel, que cada dezena &eacute; um patamar natural.</p>
+                        </div>
+                    </div>
+
+                    <p style="margin-top:0.75rem;"><strong>Ponte para Narramos Juntos:</strong> depois de subir
+                        a escada, convide a crian&ccedil;a a contar como foi.</p>
+                </div>
+            </section>
+
+            <section class="narration-section">
+                <h2><i class="ph-duotone ph-book-open-text duotone-magic" style="margin-right:0.5rem;"></i>
+                    Narramos Juntos</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-chat-circle-text duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        O que a escada revelou
+                    </div>
+
+                    <div class="instruction-box">
+                        <i class="ph-duotone ph-ear duotone-neutral"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Postura de escuta do Portador:</strong> deixe a crian&ccedil;a contar
+                                de novo se quiser, ou narrar com as pr&oacute;prias palavras qual patamar foi o
+                                mais dif&iacute;cil ou o mais divertido.</p>
+                        </div>
+                    </div>
+
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar"
+                            alt="Melquior, guardiao do Jardim Central">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Melquior</span>
+                                <span class="script-tone">[Tom de quem escuta de verdade.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>&ldquo;Me conte: quantos degraus voc&ecirc; subiu? Qual foi o mais
+                                    dif&iacute;cil?&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><strong>Perguntas abertas:</strong></p>
+                    <ul>
+                        <li>Quantos degraus voc&ecirc; subiu hoje?</li>
+                        <li>Qual n&uacute;mero foi mais dif&iacute;cil de lembrar?</li>
+                        <li>O que vem depois do 29?</li>
+                        <li>O que acontece a cada 10 degraus?</li>
+                    </ul>
+
+                    <p style="margin-top:0.75rem;"><strong>Formas dignas de narrar:</strong> a crian&ccedil;a pode
+                        recontar a subida com gestos, bater palmas a cada patamar, desenhar a escada ou
+                        simplesmente dizer o n&uacute;mero que mais gostou.</p>
+                </div>
+            </section>
+
+            <section class="closing-section">
+                <h2><i class="ph-duotone ph-sunset duotone-carmim" style="margin-right:0.5rem;"></i> Ritual de
+                    Fechamento</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-heartbeat duotone-heart"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Quando a escada descansa
+                    </div>
+
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar"
+                            alt="Melquior, guardiao do Jardim Central">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Melquior</span>
+                                <span class="script-tone">[Tom majestoso e grato.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p class="acting-cue">[Melquior ergue a juba sob as estrelas.]</p>
+                                <p>&ldquo;Voc&ecirc; subiu trinta degraus de luz! O Rei est&aacute; muito
+                                    orgulhoso. At&eacute; a pr&oacute;xima jornada.&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="script-persona-block portador-block">
+                        <div class="script-avatar-icon">
+                            <i class="ph-duotone ph-fire duotone-carmim"></i>
+                        </div>
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Portador da Tocha</span>
+                            </div>
+                            <div class="script-text">
+                                <p>Dez, vinte, trinta. Descemos a escada devagar e voltamos para casa com trinta
+                                    degraus de luz nos olhos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="connection-section">
+                <h2><i class="ph-duotone ph-signpost duotone-indigo" style="margin-right:0.5rem;"></i>
+                    Conex&atilde;o da Jornada</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-path duotone-indigo"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Da escada ao bando
+                    </div>
+
+                    <p><strong>Mem&oacute;ria viva:</strong> hoje Melquior guiou a subida de 30 degraus com pausas
+                        a cada dez. O corpo aprendeu que contar &eacute; subir com ritmo &mdash; e que cada
+                        patamar &eacute; uma celebra&ccedil;&atilde;o.</p>
+
+                    <a href="MV-S-016_O_BANDO_QUE_CRESCE.html" class="journey-connection-card"
+                        style="text-decoration:none; display:block;">
+                        <div class="instruction-box" style="margin-bottom:0;">
+                            <i class="ph-duotone ph-users duotone-gold"
+                                style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                            <div>
+                                <p style="margin-bottom:0.35rem;"><strong>Pr&oacute;xima trilha:</strong>
+                                    amanh&atilde;, come&ccedil;amos a Esta&ccedil;&atilde;o 2 &mdash; Bernardo
+                                    vai nos ensinar a adi&ccedil;&atilde;o com o bando que cresce!</p>
+                                <p style="margin:0; color:#6B7280;">Ir para <strong>O Bando que Cresce</strong>
+                                    &rarr;</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="seeds-section">
+                <h2><i class="ph-duotone ph-flower-lotus duotone-forest" style="margin-right:0.5rem;"></i>
+                    Sementes para o Dia</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-sprout duotone-forest"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Escolha 1 ou 2 movimentos
+                    </div>
+
+                    <p>Uma continua&ccedil;&atilde;o leve j&aacute; basta. `Sementes para o Dia` existe para
+                        que a contagem reapare&ccedil;a na vida comum.</p>
+
+                    <ul>
+                        <li><strong>Explora&ccedil;&atilde;o:</strong> contem quantos passos d&atilde;o at&eacute;
+                            a cozinha. Passaram de 30?</li>
+                        <li><strong>Dramatiza&ccedil;&atilde;o:</strong> subam uma escada real contando cada
+                            degrau.</li>
+                        <li><strong>Cria&ccedil;&atilde;o:</strong> desenhe uma escada de 30 degraus e pinte
+                            os patamares (10, 20, 30) com cores especiais.</li>
+                        <li><strong>Narra&ccedil;&atilde;o:</strong> na refei&ccedil;&atilde;o, conte:
+                            &ldquo;Hoje subimos 30 degraus de luz!&rdquo;</li>
+                        <li><strong>Reflex&atilde;o:</strong> antes de dormir, contem juntos de 10 em 10:
+                            &ldquo;Dez, vinte, trinta.&rdquo;</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="formation-section">
+                <h2><i class="ph-duotone ph-scroll duotone-terra" style="margin-right:0.5rem;"></i>
+                    Forma&ccedil;&atilde;o do Portador</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-graduation-cap duotone-terra"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        O que o adulto aprende ao lado de Melquior
+                    </div>
+
+                    <div class="prep-copy">
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-book-bookmark duotone-gold"></i>
+                                <span>Por que isso importa</span>
+                            </p>
+                            <p>Contar at&eacute; 30 &eacute; um marco na flu&ecirc;ncia num&eacute;rica. As
+                                pausas a cada 10 refor&ccedil;am o padr&atilde;o decimal que sustentar&aacute;
+                                valor posicional e opera&ccedil;&otilde;es futuras.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-seal-check duotone-forest"></i>
+                                <span>O que o Portador aprende hoje</span>
+                            </p>
+                            <p>Que ritmo e celebra&ccedil;&atilde;o transformam contagem em experi&ecirc;ncia
+                                prazerosa. O adulto protege o ritmo; a crian&ccedil;a protege a
+                                alegria.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-cubes duotone-indigo"></i>
+                                <span>CPA / Bruner</span>
+                            </p>
+                            <p><strong>Concreto:</strong> movimento (degraus, passos, palmas) + contagem oral.</p>
+                            <p><strong>Pict&oacute;rico:</strong> pode vir depois, mas hoje o concreto governa.</p>
+                            <p><strong>Abstrato:</strong> sequ&ecirc;ncia num&eacute;rica internalizada pelo
+                                corpo.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-feather duotone-magic"></i>
+                                <span>Charlotte Mason</span>
+                            </p>
+                            <p>&ldquo;Education is an atmosphere.&rdquo; A atmosfera de celebra&ccedil;&atilde;o
+                                torna a contagem prazerosa e a crian&ccedil;a absorve o padr&atilde;o decimal
+                                sem que ningu&eacute;m precise explic&aacute;-lo.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-books duotone-gold"></i>
+                                <span>Conex&atilde;o TGTB</span>
+                            </p>
+                            <p>Este passo corresponde a <code>000-L15 - Counting Practice to 30 / Pr&aacute;tica
+                                    de Contagem at&eacute; 30</code>. Melquior traz majestade e
+                                celebra&ccedil;&atilde;o.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-arrows-clockwise duotone-forest"></i>
+                                <span>Curr&iacute;culo em espiral</span>
+                            </p>
+                            <p>Hoje a crian&ccedil;a conta at&eacute; 30 com pausas. Depois, essa flu&ecirc;ncia
+                                vai sustentar contagem at&eacute; 100, contagem de 2 em 2 e opera&ccedil;&otilde;es
+                                com dezenas.</p>
+                        </div>
+
+                        <div class="strategy-box">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-compass-tool duotone-carmim"></i>
+                                <span>Estrat&eacute;gia do Mestre: Ritmo antes de Velocidade</span>
+                            </p>
+                            <p>O adulto protege a li&ccedil;&atilde;o quando n&atilde;o transforma a contagem
+                                em corrida de velocidade. O cora&ccedil;&atilde;o matem&aacute;tico aqui &eacute;
+                                sentir cada patamar, n&atilde;o recitar r&aacute;pido.</p>
+                        </div>
+
+                        <div class="graca-box">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-heart-straight duotone-heart"></i>
+                                <span>Nota de Gra&ccedil;a</span>
+                            </p>
+                            <p>Se a crian&ccedil;a esquecer um n&uacute;mero, Melquior diz: &ldquo;O Rei tem
+                                paci&ecirc;ncia. Vamos de novo.&rdquo; A cada trope&ccedil;o, subimos de
+                                novo.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-plant duotone-forest"></i>
+                                <span>As Sementes Continuam</span>
+                            </p>
+                            <p>Depois de subir 30 degraus, a crian&ccedil;a estar&aacute; pronta para a
+                                Esta&ccedil;&atilde;o 2 &mdash; onde Bernardo vai ensinar a
+                                adi&ccedil;&atilde;o.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="lesson-footer-nav" aria-label="Navegacao entre licoes">
+                <a href="MV-S-014_O_CELEIRO_QUE_CRESCE.html" class="lesson-footer-link">
+                    <span class="lesson-footer-direction">&larr; Anterior</span>
+                    <span class="lesson-footer-title">O Celeiro que Cresce</span>
+                </a>
+                <a href="MV-S-016_O_BANDO_QUE_CRESCE.html" class="lesson-footer-link" style="text-align:right;">
+                    <span class="lesson-footer-direction">Pr&oacute;xima &rarr;</span>
+                    <span class="lesson-footer-title">O Bando que Cresce</span>
+                </a>
+            </nav>
         </article>
-
-        <!-- NAVIGATION FOOTER -->
-        <nav class="lesson-nav">
-            
-            
-
-            
-            <a href="MV-S-014_O_CELEIRO_QUE_CRESCE.html" class="nav-btn prev">
-                <span class="nav-label">← Anterior</span>
-                <span class="nav-title">O Celeiro que Cresce</span>
-            </a>
-            
-            
-            
-            <a href="MV-S-016_O_BANDO_QUE_CRESCE.html" class="nav-btn next">
-                <span class="nav-label">Próxima →</span>
-                <span class="nav-title">O Bando que Cresce</span>
-            </a>
-            
-        </nav>
-
-        <footer style="text-align: center; margin-top: 4rem; color: #A8A29E; font-size: 0.8rem;">
-            Matemática Viva • Forjado com Estilo e Propósito
-        </footer>
     </div>
 </body>
+
 </html>

@@ -1,738 +1,631 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Celeiro de Noé | Matemática Viva</title>
-    <!-- CSS ISOLADO DE SEMENTES -->
+    <title>O Celeiro de No&eacute; | Matem&aacute;tica Viva</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
-    <style>
-        /* INLINE STYLES FOR CRITICAL RENDERING PRIORITY */
-        body { background-color: #F8F9FA; color: #374151; }
-        .lesson-container { max-width: 768px; margin: 0 auto; padding-bottom: 4rem; }
-        
-        /* CARD COMPONENT */
-        .scene-card {
-            background: #FFFFFF;
-            border-radius: 12px;
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(0, 0, 0, 0.04);
-            position: relative;
-            overflow: hidden;
-        }
-        .scene-card::before {
-            content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
-            background: linear-gradient(90deg, #FCD34D 0%, #F59E0B 100%);
-            opacity: 0.8;
-        }
-
-        /* HEADER & TYPOGRAPHY */
-        .scene-header {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.35rem;
-            color: #111827;
-            margin-bottom: 2rem;
-            display: flex; align-items: center; gap: 0.75rem; font-weight: 600;
-        }
-        .scene-icon { font-size: 1.5rem; }
-        h2 { font-family:'Outfit'; color:#6B7280; font-size:1rem; text-transform:uppercase; letter-spacing:2px; margin: 3rem 0 1rem 0; text-align:center; }
-        strong { font-weight: 600; color: #1F2937; }
-
-        /* COMPONENTS */
-        .script-persona-block {
-            background: #F9FAFB;
-            border: 1px solid #F3F4F6;
-            border-left: 4px solid #10B981;
-            border-radius: 8px;
-            margin-top: 1.5rem; padding: 1.5rem;
-        }
-        .script-avatar { border: 2px solid #FFFFFF; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-        
-        .instruction-box {
-            background: #FEFCE8; border: 1px solid #FEF9C3; color: #854D0E;
-            border-radius: 8px; padding: 1.25rem; margin: 1.5rem 0;
-            display: flex; gap: 1rem; align-items: flex-start;
-        }
-        .instruction-icon { font-size: 1.5rem; }
-        
-        .portador-block { border-left: 4px solid #10B981 !important; background: #FFFFFF !important; }
-        .script-name { text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
-
-        /* MOBILE OPTIMIZATION */
-        @media (max-width: 768px) {
-            .lesson-container { padding: 0; }
-            .scene-card { border-radius: 0; margin: 0 0 0.5rem 0; box-shadow: none; border-bottom: 1px solid #E5E7EB; }
-            .scene-card::before { height: 3px; }
-            h2 { font-size: 1.4rem; padding: 0 1.5rem; margin-top: 2rem; }
-        }
-    </style>
 </head>
+
 <body class="clima-1">
-    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard">🏡</a>
+    <a href="../index.html" class="home-btn" title="Voltar ao Dashboard"><i
+            class="ph-duotone ph-house duotone-forest"></i></a>
 
     <div class="lesson-container">
-        <!-- HERO SECTION -->
         <header class="lesson-hero">
-            <div class="lesson-meta-tag">Lição 009 • O Celeiro de Noé • ⏱️ 15-20 min</div>
-            <h1 class="hero-title">O Celeiro de Noé</h1>
-            <p class="hero-quote">"Oito fardos de esperança guardados para a chuva. Nove tesouros para o amanhã."</p>
-            <!-- ASSETS ISOLADOS DE SEMENTES -->
-            <img src="../assets/sementes/guardioes/noe-coruja.png" 
-                 onError="this.src='../assets/sementes/guardioes/placeholder.png'"
-                 alt="noe" class="hero-guardian">
+            <div class="lesson-meta-tag">Li&ccedil;&atilde;o 009 &bull; O Celeiro de No&eacute; &bull; <i
+                    class="ph-duotone ph-timer duotone-carmim"></i> 15-20 min</div>
+            <h1 class="hero-title">O Celeiro de No&eacute;</h1>
+            <p class="hero-quote">&ldquo;No&eacute; guarda oito fardos de esperan&ccedil;a e ainda abre espa&ccedil;o
+                para o nono, mostrando que as quantidades crescem sem perder a paz.&rdquo;</p>
+            <img src="../assets/sementes/guardioes/noe-coruja.png"
+                onError="this.src='../assets/sementes/guardioes/placeholder.png'"
+                alt="Ilustra&ccedil;&atilde;o do guardi&atilde;o No&eacute; observando fardos guardados no celeiro"
+                class="hero-guardian">
         </header>
 
         <article class="lesson-body">
-            
-
-
-
-
-
-
-<div class="lesson-header-nav" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #E5E7EB;">
-    <div style="width: 33%;">
-        
-        <a href="MV-S-008_O_PAR_PERFEITO.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem;">
-            <span>←</span> <span>O Par Perfeito</span>
-        </a>
-        
-    </div>
-    
-    <div style="width: 33%; text-align: center;">
-        <img src="../assets/icon-sementes.png" alt="Sementes" style="height: 32px; opacity: 0.8;" onerror="this.style.display='none'">
-    </div>
-    
-    <div style="width: 33%; text-align: right;">
-        
-        <a href="MV-S-010_A_FILA_DA_PROVIDÊNCIA.html" class="nav-mini-link" style="text-decoration: none; color: #6B7280; font-size: 0.9rem; display: flex; align-items: center; justify-content: flex-end; gap: 0.5rem;">
-            <span>A Fila da Providência</span> <span>→</span>
-        </a>
-        
-    </div>
-</div>
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧</span>
-        Preparação do Portador
-    </div>
-    
-    
-    
-    
-    <div style="text-align: center; margin-bottom: 1.5rem; color: #6B7280; font-size: 0.9rem; font-style: italic;">
-        [Foco: Números 8 e 9 — quantidade e reconhecimento]
-    </div>
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">💡</span>
-    <div>
-        
-        
-        <strong>Dica do Coração:</strong> Hoje entramos no celeiro de Noé.<br>Ele guardou provisões com paciência — e nós vamos contar.<br>Ajude seu filho a sentir a calma de contar devagar.<br>
-    
-    </div>
-</div>
-
-
-    
-    
-    
-    
-    
-    <div class="materials-box" style="background:#F0FDF4; border:1px solid #BBF7D0; border-radius:8px; padding:1.25rem; margin:1.5rem 0;">
-        
-        <p><strong>🎯 Essencial:</strong></p>
-        <ul style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>9 objetos pequenos (blocos ou pedras) (9)</li>
-            
-            <li>Card Noé (1)</li>
-            
-        </ul>
-        
-        
-        
-        <p style="margin-top:1rem;"><strong>📦 Se tiver:</strong></p>
-        <ul style="margin-top:0.5rem; margin-left:1rem; color:#6B7280;">
-            
-            <li>Cartões 8 e 9 (2)</li>
-            
-        </ul>
-        
-        
-        
-        
-    </div>
-    
-
-    
-    
-    <p><strong>🌟 Seu filho vai descobrir:</strong> Que 8 e 9 são quantidades maiores, mas ainda contáveis.</p>
-    
-
-    <p><strong>🛡️ Protocolo de Impecabilidade:</strong> Conte DEVAGAR. Noé nunca tem pressa.<br>Use objetos empilháveis se possível.<br></p>
-    <p><strong>🕊️ Nota de Graça:</strong> Noé diz: 'Respire. O número espera por você.'</p>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🎬</span>
-        Ritual de Abertura
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🕯️</span>
-    <div>
-        
-        
-        Luz baixa, ambiente calmo, como um celeiro antigo.
-    
-    </div>
-</div>
-
-
-    <p><strong>🌫️ Transição:</strong> Feche os olhos. O ar está fresco e cheira a madeira.<br>Noé está esperando na Árvore do Silêncio.<br></p>
-
-    
-    
-    <div class="sensory-box" style="background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%); border-radius:8px; padding:1.25rem; margin:1.5rem 0; font-style:italic; color:#92400E; border-left:4px solid #F59E0B;">
-        O ar cheira a casca de árvore e folhas secas.<br>Noé pisca seus olhos amarelos como duas luas.<br>"Respire. O número espera por você."<br>
-    </div>
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(solene)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            Shhh... Ouve? O silêncio do celeiro de Noé.<br>Ele guarda coisas importantes ali.<br>
-        </div>
-    </div>
-</div>
-
-
-    <div style="text-align:center; margin-top:2rem;">
-        <p style="font-size:0.9rem; color:#9CA3AF; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:1px;">Visualizar</p>
-        <img src="../assets/cards/guardioes/noe-coruja.png" 
-             style="width:120px; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.1); transform: rotate(-2deg); border: 4px solid white;"
-             onError="this.src='../assets/cards/guardioes/placeholder.png'"
-             alt="Card noe">
-    </div>
-
-</div>
-
-
-
-
-<h2>🗺️ A Jornada</h2>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        Os Fardos do Celeiro
-    </div>
-    
-    
-        
-        
-<div class="local-card">
-    <p><strong>📍 Local:</strong> Arvore Silencio</p>
-    <p class="local-label">Visualizar</p>
-    <img src="../assets/cards/locais/local-arvore-silencio.png" alt="Arvore Silencio">
-</div>
-
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Mostre 9 objetos empilhados (ou enfileirados).<br>"Noé guardou muitas coisas! Vamos contar?"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar" alt="noe">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">noe</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(sabio)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Eu guardei provisões para o inverno."<br>[Noé aponta para pilhas de objetos]<br>"Vamos contar juntos. Devagar."<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        Oito Tesouros
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Conte até 8 com a criança, tocando cada objeto.<br>"Oito! Quase encheu as duas mãos!"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar" alt="noe">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">noe</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(paciente)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Um, dois, três... devagar..."<br>[Noé conta pausadamente]<br>"...seis, sete, OITO. Oito fardos de esperança."<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-    
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">✨</span>
-        Nove — O Último Antes do Dez
-    </div>
-    
-    
-        
-
-        
-        
-
-        
-            
-<div class="instruction-box">
-    <span class="instruction-icon">👉</span>
-    <div>
-        
-        
-                Adicione o 9º objeto.<br>"Nove! O último antes de completar as duas mãos!"<br>
-            
-    </div>
-</div>
-
-        
-
-        
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar" alt="noe">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">noe</span>
-            
-                
-                
-                    
-                    <span class="script-tone">(satisfeito)</span>
-                
-            
-        </div>
-        <div class="script-text">
-            "E mais um... NOVE!"<br>"O nove é o último antes do grande dez."<br>
-        </div>
-    </div>
-</div>
-
-    
-</div>
-
-
-
-
-
-<h2>🧱 O Concreto</h2>
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🧱</span>
-        Atividade Concreta
-    </div>
-    
-    
-    
-
-    
-<div class="instruction-box">
-    <span class="instruction-icon">📋</span>
-    <div>
-        
-        
-        <strong>Passo a Passo:</strong>
-        <ol style="margin-top:0.5rem; margin-left:1rem;">
-            
-            <li>
-                Coloque 9 objetos em fila ou pilha.
-                
-                <br><em>Fala sugerida: "O celeiro de Noé está cheio!"</em>
-                
-            </li>
-            
-            <li>
-                Conte devagar até 8, tocando cada objeto.
-                
-                <br><em>Fala sugerida: "Um... dois... três... devagar como Noé."</em>
-                
-            </li>
-            
-            <li>
-                Pause no 8. "Oito fardos!"
-                
-                <br><em>Fala sugerida: "OITO! Quase duas mãos inteiras!"</em>
-                
-            </li>
-            
-            <li>
-                Adicione o último. "Nove!"
-                
-                <br><em>Fala sugerida: "NOVE! O último antes do dez!"</em>
-                
-            </li>
-            
-        </ol>
-    
-    </div>
-</div>
-
-
-    
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🗣️</span>
-        Narramos Juntos
-    </div>
-    
-    
-    
-<div class="instruction-box">
-    <span class="instruction-icon">🤫</span>
-    <div>
-        
-        
-        Guarde os objetos devagar, como Noé faria.<br>"Noé está orgulhoso de você."<br>
-    
-    </div>
-</div>
-
-
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar" alt="noe">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">noe</span>
-            
-        </div>
-        <div class="script-text">
-            "O que você descobriu hoje na Clareira? O que contaria para o Melquior?"
-        </div>
-    </div>
-</div>
-
-
-    <p><strong>Perguntas do Coração:</strong></p>
-    <ul style="margin-left:1.5rem; margin-top:0.5rem;">
-        <li>O que Noé guardou no celeiro?</li>
-        
-        <li>O 8 ou o 9 é maior?</li>
-        
-        <li>O que acontece depois do 9?</li>
-        
-    </ul>
-
-</div>
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🏁</span>
-        Ritual de Fechamento
-    </div>
-    
-    
-    
-<div class="script-persona-block ">
-    <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar" alt="noe">
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">noe</span>
-            
-                
-                
-                    <span class="script-tone tone-tooltip" data-tooltip="Mão no peito, sorriso sincero. Agradeça de coração.">
-                        <span style="font-style: normal;">🙏</span> (grato)
-                    </span>
-                
-            
-        </div>
-        <div class="script-text">
-            "Você contou com paciência. Como eu."<br>"Respire. O número espera. Até a próxima vez."<br>
-        </div>
-    </div>
-</div>
-
-
-    
-
-    
-<div class="script-persona-block portador-block">
-    <span class="portador-icon">🔥</span>
-    <div class="script-content">
-        <div class="script-header">
-            <span class="script-name">Portador da Tocha</span>
-            
-        </div>
-        <div class="script-text">
-            Um, dois, três... nove. Voltamos.
-        </div>
-    </div>
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">🔗</span>
-        Conexão da Jornada
-    </div>
-    
-    
-    
-    <p><strong>⬅️ Última Aventura:</strong> Íris nos ensinou a fazer pares. Agora, Noé nos apresenta 8 e 9!</p>
-    
-    
-        <div onclick="window.location.href='MV-S-010_A_FILA_DA_PROVIDÊNCIA.html'" style="cursor: pointer;">
-            <p><strong>➡️ Próxima Aventura:</strong> Você conhece 1 a 9. Amanhã, Celeste vai nos ensinar quem é o primeiro da fila!</p>
-            
-            <div style="margin-top:0.5rem; text-align:right;">
-                <span style="font-size:0.85rem; color:#4B5563; background:#F3F4F6; padding:0.25rem 0.75rem; border-radius:1rem;">
-                    Ir para A Fila da Providência →
-                </span>
+            <nav class="lesson-header-nav" aria-label="Navegacao entre licoes">
+                <div style="width: 33%;">
+                    <a href="MV-S-008_O_PAR_PERFEITO.html" class="nav-mini-link">
+                        <span>&larr;</span> <span>O Par Perfeito</span>
+                    </a>
+                </div>
+
+                <div style="width: 33%; text-align: center;">
+                    <i class="ph-duotone ph-plant duotone-forest" style="font-size: 1.5rem;"></i>
+                    <span
+                        style="font-family: var(--font-heading); font-weight: 700; color: var(--primary); font-size: 0.9rem; margin-left: 0.5rem;">Sementes</span>
+                </div>
+
+                <div style="width: 33%; text-align: right;">
+                    <a href="MV-S-010_A_FILA_DA_PROVIDÊNCIA.html" class="nav-mini-link" style="justify-content: flex-end;">
+                        <span>A Fila da Provid&ecirc;ncia</span> <span>&rarr;</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-clipboard-text duotone-terra"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Prepara&ccedil;&atilde;o do Portador
+                </div>
+
+                <div class="prep-focus-tag">
+                    Foco da li&ccedil;&atilde;o: contar `8` e `9` em objetos reais com calma, percebendo que quantidades
+                    maiores ainda podem ser acolhidas com paz
+                </div>
+
+                <div class="prep-bridge-box">
+                    <p><strong>Fio da Jornada:</strong> Ontem, &Iacute;ris nos ensinou a unir o que pertence em pares.
+                        Hoje, No&eacute; vai mostrar outra forma de ordem: guardar e contar com paci&ecirc;ncia os fardos
+                        do celeiro. Amanh&atilde;, Celeste vai deslocar nosso olhar da quantidade para a posi&ccedil;&atilde;o
+                        na fila.</p>
+                </div>
+
+                <div class="instruction-box prep-heart-box">
+                    <i class="ph-duotone ph-lightbulb duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div>
+                        <p style="margin-bottom:0.5rem;"><strong>Dica do Cora&ccedil;&atilde;o:</strong> No&eacute; n&atilde;o
+                            corre. Hoje o alvo n&atilde;o &eacute; "chegar logo ao `9`", mas viver cada n&uacute;mero
+                            como algo que pode ser guardado e contado sem atropelo.</p>
+                        <p>Se a crian&ccedil;a respirou, apontou um a um e n&atilde;o se perdeu no caminho, a l&ccedil;&atilde;o
+                            j&aacute; encontrou seu fruto.</p>
+                    </div>
+                </div>
+
+                <aside class="materials-box" aria-label="Lista de Materiais para a Preparacao do Portador">
+                    <p><strong><i class="ph-duotone ph-target duotone-terra"></i> Essencial:</strong></p>
+                    <ul>
+                        <li>9 objetos pequenos semelhantes: blocos, pedras, sementes grandes, tampinhas ou pequenos
+                            rolinhos de papel</li>
+                        <li>1 pano, bandeja ou caixa rasa para servir como celeiro</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-arrows-left-right duotone-indigo"></i>
+                            Substitui&ccedil;&otilde;es caseiras:</strong></p>
+                    <ul>
+                        <li>Se n&atilde;o houver 9 itens iguais, use o que a casa tiver em quantidade suficiente, desde
+                            que a crian&ccedil;a consiga mover um a um.</li>
+                        <li>Se faltar uma caixa, um pano dobrado ou um canto da mesa j&aacute; podem virar celeiro.</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-package duotone-gold"></i> Se
+                            tiver:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Cart&otilde;es com os numerais `8` e `9`, para mostrar depois da contagem concreta</li>
+                    </ul>
+                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-warning-circle duotone-gold"></i> Plano
+                            B:</strong></p>
+                    <ul style="color:#6B7280;">
+                        <li>Se o dia estiver curto, viva bem o `8` primeiro e deixe o `9` aparecer como mais um fardo
+                            que o celeiro ainda consegue acolher.</li>
+                    </ul>
+                </aside>
+
+                <div class="prep-copy">
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-sparkle duotone-magic"></i>
+                            <span>Descoberta da Crian&ccedil;a</span>
+                        </p>
+                        <ul>
+                            <li>Que `8` e `9` s&atilde;o grandes, mas n&atilde;o assustadores.</li>
+                            <li>Que quantidades maiores ainda podem ser contadas uma a uma com paz.</li>
+                            <li>Que guardar e contar pedem aten&ccedil;&atilde;o, ritmo e serenidade.</li>
+                        </ul>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-check-circle duotone-forest"></i>
+                            <span>Sinal de Fruto de Hoje</span>
+                        </p>
+                        <p>Se a crian&ccedil;a consegue apontar ou mover os objetos at&eacute; `8` ou `9` sem pular
+                            etapas, ou percebe que ainda cabe mais um depois do `8`, o fruto do dia j&aacute; apareceu.</p>
+                    </div>
+
+                    <div class="prep-section">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-star-four duotone-gold"></i>
+                            <span>Segredo do Maravilhamento</span>
+                        </p>
+                        <p>N&atilde;o transforme a experi&ecirc;ncia em pressa para "acertar n&uacute;meros grandes".
+                            Hoje o Reino quer mostrar que o celeiro ainda comporta mais, e que a contagem pode crescer
+                            sem perder a paz.</p>
+                    </div>
+
+                    <div class="strategy-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-strategy duotone-forest"></i>
+                            <span>Estrat&eacute;gia do Mestre: Guardar sem Pressa</span>
+                        </p>
+                        <p><strong>Por que funciona:</strong> quantidades maiores come&ccedil;am a exigir ritmo e
+                            aten&ccedil;&atilde;o sustentada. Quando a crian&ccedil;a move um objeto por vez, ela
+                            compreende o crescimento sem se afogar nele.</p>
+                        <p><strong>A&ccedil;&atilde;o de hoje:</strong> deixe cada fardo ser tocado e nomeado antes do
+                            pr&oacute;ximo, como algo valioso que merece lugar no celeiro.</p>
+                        <p><strong>Eco no Reino:</strong> o Portador aprende a oferecer tempo em vez de pressa, e a
+                            transformar contagem em gesto de cuidado.</p>
+                        <p style="margin-top:0.75rem;"><strong>Se houver irm&atilde;os:</strong> o menor pode entregar os
+                            fardos; a crian&ccedil;a principal faz a contagem e a guarda.</p>
+                    </div>
+
+                    <div class="graca-box">
+                        <p class="prep-section-title">
+                            <i class="ph-duotone ph-heart duotone-heart"></i>
+                            <span>Nota de Gra&ccedil;a</span>
+                        </p>
+                        <p>Se a crian&ccedil;a se perder, volte um pouco sem drama. No&eacute; nunca se zanga com quem
+                            recome&ccedil;a devagar.</p>
+                    </div>
+                </div>
             </div>
-            
-        </div>
-    
 
-</div>
+            <div class="scene-card">
+                <div class="scene-header">
+                    <i class="ph-duotone ph-film-strip duotone-magic"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    Ritual de Entrada
+                </div>
 
+                <div class="instruction-box ritual-bastidores-box">
+                    <i class="ph-duotone ph-lamp duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div><strong>Prepara&ccedil;&atilde;o:</strong> deixe os fardos reunidos, mas ainda n&atilde;o
+                        contados. Se puder, traga um pouco de quietude ao ambiente, como se a casa inteira respirasse
+                        mais baixo.</div>
+                </div>
 
+                <div class="script-persona-block portador-block ritual-portador-block">
+                    <div class="script-avatar-icon">
+                        <i class="ph-duotone ph-fire duotone-carmim"></i>
+                    </div>
+                    <div class="script-content">
+                        <div class="script-header">
+                            <span class="script-name">Portador da Tocha</span>
+                            <span class="script-tone">[Tom grave, calmo e firme, como quem convida a ouvir o sil&ecirc;ncio.]</span>
+                        </div>
+                        <div class="script-text">
+                            <p>Respire fundo. O vento parece mais lento hoje.</p>
+                            <p>Chegamos &agrave; <strong>&Aacute;rvore do Sil&ecirc;ncio</strong>. Dali, avista-se um
+                                celeiro antigo, de madeira firme, onde nada &eacute; jogado de qualquer jeito.</p>
+                            <p class="acting-cue">[Pausa breve. Deixe a crian&ccedil;a imaginar o peso bom da madeira.]</p>
+                            <p>Algu&eacute;m guardou provis&otilde;es ali com muita paci&ecirc;ncia. Hoje vamos aprender
+                                a contar sem atropelar o que o Reino confiou.</p>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="card-container ritual-local-card">
+                    <p class="local-label">Lugar revelado</p>
+                    <img src="../assets/cards/locais/local-arvore-silencio.png"
+                        class="card-visual-asset rotate-left hover-float"
+                        onError="this.src='../assets/cards/locais/placeholder.png'"
+                        alt="Card da Arvore do Silencio, portal de entrada do guardiao Noe">
+                    <p class="asset-caption">Da &Aacute;rvore do Sil&ecirc;ncio, o olhar aprende a desacelerar antes de
+                        entrar no celeiro.</p>
+                </div>
 
+                <div class="instruction-box ritual-whisper-box">
+                    <i class="ph-duotone ph-feather duotone-indigo"
+                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                    <div><strong>Sussurro do Portal:</strong> ainda n&atilde;o revele No&eacute;. Deixe primeiro o
+                        sil&ecirc;ncio ensinar que hoje a contagem vir&aacute; acompanhada de espera e cuidado.</div>
+                </div>
+            </div>
 
+            <section class="journey-section">
+                <h2><i class="ph-duotone ph-map-trifold duotone-gold" style="margin-right:0.5rem;"></i> A Jornada</h2>
 
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-barn duotone-terra"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 1 - A Porta do Celeiro
+                    </div>
 
-<div class="scene-card" >
-    
-    <div class="scene-header">
-        <span class="scene-icon">👨‍👩‍👧‍👦</span>
-        Para a Família
-    </div>
-    
-    
-    <p><strong>📚 Por que isso importa:</strong></p>
-    <div style="padding:0.5rem 0;">
-        8 e 9 preparam para o conceito de dezena (10).<br>A paciência de Noé modela o ritmo certo para contagem precisa.<br>
-    </div>
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🧠 Método CPA (Jerome Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Concreto:</strong> Objetos físicos contados devagar.</li>
-            <li><strong>Pictórico:</strong> Vetado.</li>
-            <li><strong>Abstrato:</strong> Reconhecimento dos numerais 8 e 9.</li>
-        </ul>
-        
-        <span style="color:#6B7280; font-size:0.9rem;">CM: Lições curtas, atenção focada.</span>
-        
-    </div>
-    
-    
-    
-    
-    <div class="cm-box">
-        <strong>🏛️ Princípio Charlotte Mason:</strong><br>
-        <em>"Habit of attention should be trained."</em><br>
-        <span style="color:#6B7280;">Contar devagar treina atenção sustentada.</span>
-    </div>
-    
-    
-    
-    
-    <div class="tgtb-box">
-        <strong>📘 Conexão TGTB:</strong><br>
-        <span style="color:#92400E;">Corresponde à lição de Números 8 a 9.
-Noé traz calma e paciência para grandes números.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="bruner-box">
-        <strong>🌀 Currículo em Espiral (Bruner):</strong><br>
-        <ul style="margin:0.5rem 0 0 1.5rem;">
-            <li><strong>Agora:</strong> Contagem 8-9 — Sementes — contar até 9 com objetos</li>
-            <li><strong>Depois:</strong> Raízes — operações com 8 e 9, valor posicional</li>
-        </ul>
-        
-    </div>
-    
-    
-    
-    
-    <div class="espiritual-box">
-        <strong>✨ Reflexão Espiritual:</strong><br>
-        <span style="color:#166534;">Noé esperou com paciência na arca.
-Provisão vem para quem espera com fé.
-</span>
-    </div>
-    
-    
-    
-    
-    <div class="graca-box">
-        <strong>🕊️ Nota de Graça:</strong><br>
-        Se a criança se perder na contagem, Noé diz:
-"Respire. Vamos de novo. O número espera."
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar"
+                            alt="Card do guardiao Noe">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">No&eacute;</span>
+                                <span class="script-tone">[Tom sereno, paciente e atento.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>Voc&ecirc; chegou. Entre devagar. O celeiro escuta passos apressados e n&atilde;o
+                                    gosta deles.</p>
+                                <p>Aqui cada fardo tem seu tempo, e cada quantidade merece ser tocada uma a uma.</p>
+                            </div>
+                        </div>
+                    </div>
 
-    </div>
-    
+                    <p>Por dentro, o celeiro cheira a palha seca, madeira guardada e chuva que ainda n&atilde;o caiu.
+                        No&eacute; n&atilde;o olha para os montes com ansiedade. Ele olha como quem sabe que provis&atilde;o
+                        bem guardada atravessa o tempo.</p>
+                </div>
 
-</div>
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-stack duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 2 - O Oitavo Fardo
+                    </div>
 
+                    <p>No&eacute; separa os fardos e toca cada um com o bico, sem pular nenhum. Quando o s&eacute;timo j&aacute;
+                        repousa em seu lugar, ele ainda n&atilde;o termina. Com a mesma calma, abre espa&ccedil;o para o
+                        <strong>oitavo</strong>.</p>
 
+                    <div class="instruction-box">
+                        <i class="ph-duotone ph-hand-pointing duotone-magic"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p style="margin-bottom:0.5rem;"><strong>Convite do Portador:</strong> mova um objeto de
+                                cada vez e conte junto com a crian&ccedil;a, sem pressa, at&eacute; o `8`.</p>
+                            <p>Deixe o corpo sentir que ainda cabe mais um depois do que parecia bastante.</p>
+                        </div>
+                    </div>
 
+                    <p>O celeiro n&atilde;o ficou apertado. O `8` n&atilde;o chegou como excesso; chegou como nova
+                        provis&atilde;o acolhida com paz.</p>
+                </div>
 
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-number-circle-nine duotone-indigo"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Cena 3 - O Nono Ainda Cabe
+                    </div>
+
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar"
+                            alt="Card do guardiao Noe">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">No&eacute;</span>
+                                <span class="script-tone">[Tom de paz convicta, sem surpresa ansiosa.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>Quando a provis&atilde;o &eacute; contada com aten&ccedil;&atilde;o, o cora&ccedil;&atilde;o
+                                    n&atilde;o se assusta com o que cresce.</p>
+                                <p>Veja: o nono fardo tamb&eacute;m encontrou seu lugar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>Agora o celeiro guarda `8` e ainda acolhe `9`. A crian&ccedil;a percebe que grandes quantidades
+                        continuam sendo feitas de passos simples: um, depois outro, depois outro, sem saltos falsos.</p>
+
+                    <p style="margin-top:0.75rem;"><strong>Ponte para O Concreto:</strong> depois de ver No&eacute;
+                        guardar, &eacute; hora de a crian&ccedil;a colocar os pr&oacute;prios fardos em ordem e cont&aacute;-los
+                        com as m&atilde;os.</p>
+                </div>
+            </section>
+
+            <section class="concrete-section">
+                <h2><i class="ph-duotone ph-wall duotone-terra" style="margin-right:0.5rem;"></i> O Concreto</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-crate duotone-terra"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Guardando os Fardos
+                    </div>
+
+                    <div class="instruction-box">
+                        <i class="ph-duotone ph-list-checks duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        <div>
+                            <p><strong>Passo a passo:</strong></p>
+                            <ol style="margin:0.75rem 0 0 1.25rem;">
+                                <li>Coloque os 9 objetos fora do celeiro improvisado.</li>
+                                <li>Convide a crian&ccedil;a a levar um por um para dentro, contando em voz calma.</li>
+                                <li>Pare no `8`, olhe o conjunto e pergunte se ainda cabe mais um.</li>
+                                <li>Entregue o nono objeto e complete a guarda com serenidade.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <p><strong>Liga&ccedil;&atilde;o com a Jornada:</strong> a Jornada mostrou No&eacute; guardando a
+                        provis&atilde;o; aqui a crian&ccedil;a assume esse gesto e sente no corpo o crescimento de `8`
+                        para `9`.</p>
+
+                    <div class="prep-copy">
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-check-circle duotone-forest"></i>
+                                <span>Varia&ccedil;&atilde;o leve</span>
+                            </p>
+                            <p>Se quiser repetir, retire tudo do celeiro e recomece. Outra op&ccedil;&atilde;o &eacute;
+                                contar primeiro at&eacute; `8`, depois perguntar o que muda quando chega o `9`.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-baby duotone-magic"></i>
+                                <span>Adapta&ccedil;&atilde;o para casa viva</span>
+                            </p>
+                            <p>Com irm&atilde;os menores, o pequeno pode ser o entregador dos fardos, enquanto a
+                                crian&ccedil;a principal faz a contagem e decide quando o celeiro recebeu cada um.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-seedling duotone-gold"></i>
+                                <span>Fruto que buscamos</span>
+                            </p>
+                            <p>N&atilde;o &eacute; decorar `8` e `9` isoladamente, mas perceber que quantidades maiores
+                                seguem sendo constru&iacute;das com um-por-um fiel.</p>
+                        </div>
+                    </div>
+
+                    <p style="margin-top:0.75rem;"><strong>Ponte para Narramos Juntos:</strong> quando o celeiro
+                        estiver cheio, convide a crian&ccedil;a a contar o que viu acontecer com o `8` e com o `9`.</p>
+                </div>
+            </section>
+
+            <section class="narration-section">
+                <h2><i class="ph-duotone ph-book-open-text duotone-magic" style="margin-right:0.5rem;"></i> Narramos
+                    Juntos</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-chat-circle-text duotone-gold"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        O que foi guardado com paz
+                    </div>
+
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar"
+                            alt="Card do guardiao Noe">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">No&eacute;</span>
+                                <span class="script-tone">[Tom paciente, de quem espera a resposta sem apertar.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>Conte para mim: quando o celeiro parecia cheio, o que aconteceu quando o oitavo e o
+                                    nono fardo chegaram?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><strong>Perguntas abertas:</strong></p>
+                    <ul>
+                        <li>Como voc&ecirc; soube que j&aacute; tinha `8`?</li>
+                        <li>O que mudou quando o `9` entrou no celeiro?</li>
+                        <li>Foi f&aacute;cil ou dif&iacute;cil contar sem correr?</li>
+                    </ul>
+
+                    <p style="margin-top:0.75rem;"><strong>Formas dignas de narrar:</strong> a crian&ccedil;a pode
+                        repetir a contagem tocando os objetos, apontar o `8` e o `9`, ou contar a pequena hist&oacute;ria
+                        do fardo que ainda encontrou lugar.</p>
+                </div>
+            </section>
+
+            <section class="closing-section">
+                <h2><i class="ph-duotone ph-sunset duotone-carmim" style="margin-right:0.5rem;"></i> Ritual de
+                    Fechamento</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-heartbeat duotone-heart"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Quando o celeiro repousa
+                    </div>
+
+                    <div class="script-persona-block">
+                        <img src="../assets/cards/guardioes/noe-coruja.png" class="script-avatar"
+                            alt="Card do guardiao Noe">
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">No&eacute;</span>
+                                <span class="script-tone">[Tom de gratid&atilde;o quieta.]</span>
+                            </div>
+                            <div class="script-text">
+                                <p>Voc&ecirc; guardou bem. O celeiro n&atilde;o precisou de correria para receber o que
+                                    cresceu.</p>
+                                <p>Leve com voc&ecirc; esta paz: quantidades grandes tamb&eacute;m obedecem ao cuidado de
+                                    um passo por vez.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="script-persona-block portador-block">
+                        <div class="script-avatar-icon">
+                            <i class="ph-duotone ph-fire duotone-carmim"></i>
+                        </div>
+                        <div class="script-content">
+                            <div class="script-header">
+                                <span class="script-name">Portador da Tocha</span>
+                            </div>
+                            <div class="script-text">
+                                <p>Agora fechamos a porta do celeiro e voltamos para casa levando a calma de No&eacute;
+                                    no peito.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="connection-section">
+                <h2><i class="ph-duotone ph-signpost duotone-indigo" style="margin-right:0.5rem;"></i> Conex&atilde;o
+                    da Jornada</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-path duotone-indigo"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Do celeiro &agrave; fila
+                    </div>
+
+                    <p><strong>Mem&oacute;ria viva:</strong> hoje No&eacute; mostrou que `8` e `9` ainda podem ser
+                        guardados com paz, um por um, no celeiro do Reino.</p>
+
+                    <a href="MV-S-010_A_FILA_DA_PROVIDÊNCIA.html" class="journey-connection-card"
+                        style="text-decoration:none; display:block;">
+                        <div class="instruction-box" style="margin-bottom:0;">
+                            <i class="ph-duotone ph-queue duotone-gold"
+                                style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                            <div>
+                                <p style="margin-bottom:0.35rem;"><strong>Pr&oacute;xima trilha:</strong> amanh&atilde;,
+                                    Celeste vai nos mostrar que n&atilde;o importa apenas quantos est&atilde;o aqui, mas
+                                    tamb&eacute;m quem vem primeiro, segundo e depois na fila.</p>
+                                <p style="margin:0; color:#6B7280;">Ir para <strong>A Fila da Provid&ecirc;ncia</strong>
+                                    &rarr;</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="seeds-section">
+                <h2><i class="ph-duotone ph-flower-lotus duotone-forest" style="margin-right:0.5rem;"></i> Sementes
+                    para o Dia</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-sprout duotone-forest"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        Escolha 1 ou 2 movimentos
+                    </div>
+
+                    <p>Uma pequena continua&ccedil;&atilde;o j&aacute; basta. `Sementes para o Dia` existe para deixar
+                        a calma de No&eacute; reaparecer na vida comum, n&atilde;o para transformar o dia inteiro em
+                        exerc&iacute;cio de contagem.</p>
+
+                    <ul>
+                        <li><strong>Explora&ccedil;&atilde;o:</strong> conte com a crian&ccedil;a pequenos grupos reais
+                            da casa, sempre um a um.</li>
+                        <li><strong>Dramatiza&ccedil;&atilde;o:</strong> diga que alguns tesouros ainda precisam entrar
+                            no celeiro e deixe a crian&ccedil;a guard&aacute;-los com calma.</li>
+                        <li><strong>Cria&ccedil;&atilde;o:</strong> monte um celeiro simples com caixa ou pano e guarde
+                            ali `8` ou `9` objetos.</li>
+                        <li><strong>Narra&ccedil;&atilde;o:</strong> pergunte no fim do dia: "O que o oitavo e o nono
+                            fardo ensinaram hoje?"</li>
+                        <li><strong>Reflex&atilde;o:</strong> observe com a crian&ccedil;a como at&eacute; o que cresce
+                            pode ser recebido sem pressa.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="formation-section">
+                <h2><i class="ph-duotone ph-scroll duotone-terra" style="margin-right:0.5rem;"></i> Forma&ccedil;&atilde;o
+                    do Portador</h2>
+
+                <div class="scene-card">
+                    <div class="scene-header">
+                        <i class="ph-duotone ph-graduation-cap duotone-terra"
+                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
+                        O que o adulto aprende ao lado de No&eacute;
+                    </div>
+
+                    <div class="prep-copy">
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-book-bookmark duotone-gold"></i>
+                                <span>Por que isso importa</span>
+                            </p>
+                            <p>`8` e `9` ampliam a experi&ecirc;ncia num&eacute;rica da crian&ccedil;a. Ela aprende que
+                                quantidades maiores ainda obedecem ao mesmo princ&iacute;pio fiel do um-por-um.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-seal-check duotone-forest"></i>
+                                <span>O que o Portador aprende hoje</span>
+                            </p>
+                            <p>Que o crescimento da quantidade n&atilde;o pede pressa. Pede ritmo, aten&ccedil;&atilde;o
+                                e serenidade para que a crian&ccedil;a n&atilde;o se perca.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-cubes duotone-indigo"></i>
+                                <span>CPA / Bruner</span>
+                            </p>
+                            <p><strong>Concreto:</strong> fardos reais sendo movidos e guardados um a um.</p>
+                            <p><strong>Pict&oacute;rico:</strong> pode aparecer depois, mas n&atilde;o governa a li&ccedil;&atilde;o.</p>
+                            <p><strong>Abstrato:</strong> o reconhecimento de `8` e `9` nasce de uma contagem que j&aacute;
+                                foi vivida no corpo.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-feather duotone-magic"></i>
+                                <span>Charlotte Mason</span>
+                            </p>
+                            <p>Li&ccedil;&otilde;es curtas, atentas e concretas. Hoje a crian&ccedil;a n&atilde;o recebe
+                                apenas um n&uacute;mero; recebe uma experi&ecirc;ncia de contagem com sentido.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-books duotone-gold"></i>
+                                <span>Conex&atilde;o TGTB</span>
+                            </p>
+                            <p>Este passo corresponde a <code>000-L9 - Numbers 8 to 9</code>. A li&ccedil;&atilde;o
+                                prepara a crian&ccedil;a para quantidades maiores sem abandonar a base concreta.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-arrows-clockwise duotone-forest"></i>
+                                <span>Curr&iacute;culo em espiral</span>
+                            </p>
+                            <p>Hoje a crian&ccedil;a guarda e conta at&eacute; `9`. Depois, essa experi&ecirc;ncia vai
+                                sustentar compara&ccedil;&otilde;es, composi&ccedil;&otilde;es e futuras entradas no
+                                `10`.</p>
+                        </div>
+
+                        <div class="strategy-box">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-compass-tool duotone-carmim"></i>
+                                <span>Estrat&eacute;gia do Mestre: Ritmo antes da Pressa</span>
+                            </p>
+                            <p>O adulto serve a li&ccedil;&atilde;o quando n&atilde;o mede sucesso por velocidade. O
+                                gesto principal hoje &eacute; guardar e contar sem perder o fio.</p>
+                        </div>
+
+                        <div class="graca-box">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-heart-straight duotone-heart"></i>
+                                <span>Nota de Gra&ccedil;a</span>
+                            </p>
+                            <p>Se a crian&ccedil;a se atrapalhar, volte ao &uacute;ltimo n&uacute;mero seguro e siga dali.
+                                No&eacute; honra recome&ccedil;os pacientes.</p>
+                        </div>
+
+                        <div class="prep-section">
+                            <p class="prep-section-title">
+                                <i class="ph-duotone ph-plant duotone-forest"></i>
+                                <span>As Sementes Continuam</span>
+                            </p>
+                            <p>Depois de guardar `8` e `9`, a crian&ccedil;a estar&aacute; pronta para ver com Celeste
+                                que, al&eacute;m de quantos h&aacute;, tamb&eacute;m importa onde cada um se coloca.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <nav class="lesson-footer-nav" aria-label="Navegacao entre licoes">
+                <a href="MV-S-008_O_PAR_PERFEITO.html" class="lesson-footer-link">
+                    <span class="lesson-footer-direction">&larr; Anterior</span>
+                    <span class="lesson-footer-title">O Par Perfeito</span>
+                </a>
+
+                <a href="MV-S-010_A_FILA_DA_PROVIDÊNCIA.html" class="lesson-footer-link" style="text-align:right;">
+                    <span class="lesson-footer-direction">Pr&oacute;xima &rarr;</span>
+                    <span class="lesson-footer-title">A Fila da Provid&ecirc;ncia</span>
+                </a>
+            </nav>
         </article>
-
-        <!-- NAVIGATION FOOTER -->
-        <nav class="lesson-nav">
-            
-            
-
-            
-            <a href="MV-S-008_O_PAR_PERFEITO.html" class="nav-btn prev">
-                <span class="nav-label">← Anterior</span>
-                <span class="nav-title">O Par Perfeito</span>
-            </a>
-            
-            
-            
-            <a href="MV-S-010_A_FILA_DA_PROVIDÊNCIA.html" class="nav-btn next">
-                <span class="nav-label">Próxima →</span>
-                <span class="nav-title">A Fila da Providência</span>
-            </a>
-            
-        </nav>
-
-        <footer style="text-align: center; margin-top: 4rem; color: #A8A29E; font-size: 0.8rem;">
-            Matemática Viva • Forjado com Estilo e Propósito
-        </footer>
     </div>
 </body>
+
 </html>

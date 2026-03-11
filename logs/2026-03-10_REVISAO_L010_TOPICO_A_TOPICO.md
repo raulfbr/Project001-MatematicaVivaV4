@@ -212,3 +212,46 @@ formacao fecha antes da navegacao tecnica.
 ### Decisao
 1. `L010` passou na revisao topico a topico por IA;
 2. estado final: alinhada ao protocolo e pronta para futura validacao humana, sem necessidade de nova passada de patch antes disso, salvo ajuste visual de layout.
+
+---
+
+## 12) Reabertura editorial da imagem dominante
+### Diagnostico inicial desta reabertura
+1. a `L010` foi reaberta ja em estado canonico, nao em estado legado;
+2. a tensao identificada nao era estrutural, mas editorial: o ritual ainda estava mais forte em `Rua das Familias` do que em `Fila da Providencia`;
+3. o alvo desta passada foi reforcar a imagem dominante sem quebrar a arquitetura aprovada da pagina.
+
+### Tema principal reconfirmado
+1. `TGTB ref`: `000-L10 - Ordinal Numbers: Part 1 / Numeros Ordinais: Parte 1`;
+2. guardia: `Celeste`;
+3. ideia viva: `A Fila da Providencia`, em que a ordem dos lugares conta uma historia;
+4. risco monitorado: a licao cair para lista escolar de ordinais ou para uma corrida sem espessura narrativa.
+
+### Topicos reabertos
+1. `004_RITUAL_DE_ENTRADA` -> `PASS`
+#### Tensionado
+1. o portal inicial nomeava bem o lugar, mas ainda enfraquecia a imagem dominante da providencia.
+#### Alterado
+1. o bastidor, o monobloco do Portador, a legenda do card e o sussurro do portal passaram a nomear explicitamente a `fila da providencia`, `colheita` e `gratidao em ordem`.
+
+2. `005_A_JORNADA` -> `PASS`
+#### Tensionado
+1. a cena de reveal estava funcional, mas podia ancorar melhor a primeira cena no cerne da licao.
+#### Alterado
+1. a `Cena 1` foi renomeada para `A Fila da Providencia se Forma`;
+2. a fala de Celeste e a descricao da cena ganharam reforco do eixo `providencia`, para que a historia dos lugares apareca desde a primeira leitura.
+
+### Reauditoria dos vizinhos imediatos
+1. `003_PREPARACAO_DO_PORTADOR` -> `PASS`
+o `Fio da Jornada` continua consistente com a nova entrada e nao precisou de patch.
+2. `006_O_CONCRETO` -> `PASS`
+o gesto manual segue distinto da Jornada e nao foi afetado pelo reforco editorial.
+
+### Sanity checks desta reabertura
+1. `Ritual de Abertura`, `Para a Familia`, `Atividade Concreta` e `div onclick` continuam ausentes;
+2. parser HTML simples retornou `OK`;
+3. nao houve necessidade de nova reescrita estrutural da pagina.
+
+### Decisao desta reabertura
+1. a `L010` continua aprovada na revisao topico a topico por IA;
+2. esta passada foi de refinamento editorial da imagem dominante, nao de correcao estrutural.

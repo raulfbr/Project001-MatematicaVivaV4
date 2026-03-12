@@ -20,9 +20,11 @@
 ### 1. Familia no centro
 1. servir a familia real;
 2. reduzir friccao para o Portador;
-3. manter adaptabilidade sem perder o norte;
-4. lembrar que, na pratica, muitas vezes quem conduz e a mae;
-5. escrever para aliviar a pressao que essa mae costuma colocar sobre si mesma.
+3. o metodo serve a vida real do lar, nao o contrario;
+4. cada licao forma a crianca e o Portador ao mesmo tempo;
+5. manter adaptabilidade sem perder o norte;
+6. lembrar que, na pratica, muitas vezes quem conduz e a mae;
+7. escrever para aliviar a pressao que essa mae costuma colocar sobre si mesma.
 
 ### 2. Tom redentor
 1. aliviar o adulto;
@@ -53,8 +55,9 @@
 
 ### 7. Identidade tribal
 1. linguagem reconhecivel de Matematica Viva;
-2. Reino como cultura comum;
-3. guardioes e ritual como unidade familiar.
+2. Reino como cultura comum do lar;
+3. guardioes e ritual como unidade familiar;
+4. ritual e ordem como fontes de paz, clareza e continuidade.
 
 ## Vetos
 1. linguagem de culpa, trauma ou medo;

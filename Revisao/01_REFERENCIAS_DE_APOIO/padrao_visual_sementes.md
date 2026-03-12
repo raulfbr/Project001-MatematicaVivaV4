@@ -170,8 +170,8 @@ Regras para formatar falas e instruções de atuação (Acting Cues). A diferen�
 *   **Nos Diálogos:** Use apenas o **Avatar** (`.script-avatar`) no bloco de fala. *NÃO* coloque o card grande novamente.
 *   **Fluxo Padrão:**
     1.  **Cena:** Contexto/Local.
-    2.  **Visualizar:** Card do Local (Onde estamos).
-    3.  **Apresentar:** Card do Guardião (Quem nos recebe).
+    2.  **Reveal do Local:** use o label `Mostre este card a crianca.` no card do lugar.
+    3.  **Reveal do Guardião:** use o label `Mostre este card a crianca.` no card de quem nos recebe.
     4.  **Agir:** Avatar inicia o diálogo.
 
 ---
@@ -244,9 +244,9 @@ A Lição 000 é a **PORTA DE ENTRADA**. O tom deve ser:
 ## 11. Labels Obrigatórios (Visual Cues) 🏷️
 Regras para uso consistente de labels nas lições.
 
-### 11.1 Label "Mostrar Card"
-*   **Uso:** SEMPRE antes de exibir um card visual (Guardião ou Local).
-*   **Classe:** `<p class="local-label">Mostrar Card</p>`
+### 11.1 Label "Mostre este card a crianca."
+*   **Uso:** SEMPRE antes de exibir um card visual (Guardião ou Local) para a familia.
+*   **Classe:** `<p class="local-label">Mostre este card &agrave; crian&ccedil;a</p>`
 *   **Posição:** Imediatamente antes da tag `<img>`.
 
 ### 11.2 Centralização de Títulos de Local

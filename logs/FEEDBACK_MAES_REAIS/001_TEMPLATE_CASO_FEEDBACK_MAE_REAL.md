@@ -77,6 +77,12 @@ Logs relacionados:
 ### Candidatos a canonizacao
 1.
 
+### Atualizacao da lista viva
+1.
+
+### Atualizacao do index de promocao
+1.
+
 ---
 
 ## 7) Status de promocao

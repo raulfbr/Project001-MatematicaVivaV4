@@ -55,6 +55,7 @@ Leia nesta ordem:
 3. ele exige escolher a formulacao mais viva, mais leve e mais recognoscivel como `Matematica Viva`, e nao apenas a primeira que "passa";
 4. se duas versoes atendem a rubrica, vence a que preserva melhor maravilhamento, clareza domestica e calor real para a familia;
 5. feedback real de familias entra como dado valioso de calibracao; com feedback consolidado de ate `4 familias`, o produto tende a ficar mais estruturado e mais real.
+6. para desempates editoriais finos e autoria humana responsavel, consultar `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`.
 
 ## Nota de naming
 1. o nome fisico `00_SISTEMA_REVISAO_CANONICO` foi mantido para estabilidade de caminhos;

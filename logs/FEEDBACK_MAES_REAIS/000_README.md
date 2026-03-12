@@ -56,7 +56,9 @@ Quando surgir feedback real de uma mae:
 5. marcar se o aprendizado:
    a. fica local;
    b. sobe para sintese;
-   c. vira candidato a regra sistemica.
+   c. vira candidato a transversal operacional ou ao `North Star`.
+6. se surgir candidato forte ao `North Star`, atualizar tambem `002_LISTA_VIVA_CANDIDATOS_NORTH_STAR.md`.
+7. se o status do caso mudar, atualizar tambem `INDEX_PROMOCAO_CANONICA.md`.
 
 Checklist minimo de uso:
 1. preservar o texto bruto da mae;
@@ -64,6 +66,7 @@ Checklist minimo de uso:
 3. explicitar o que foi mudado de verdade;
 4. registrar o que NAO foi mudado e por que;
 5. marcar um proximo passo claro.
+6. se um candidato ja existir na lista viva, aumentar a recorrencia em vez de criar frase paralela.
 
 ---
 
@@ -79,7 +82,7 @@ Checklist minimo de uso:
 9. decisoes;
 10. o que foi aplicado;
 11. o que o sistema aprendeu;
-12. status de promocao.
+12. desdobramento detalhado do status de promocao.
 
 ---
 
@@ -127,3 +130,15 @@ Regra importante:
 `Estamos ouvindo a mae real como evidencia ou usando a mae real como desculpa para improviso?`
 
 Se a resposta tender a `improviso`, parar e reorganizar.
+
+---
+
+## 11) Fluxo das proximas rodadas
+Para cada novo feedback real de mae:
+1. abrir um novo caso no ano correspondente;
+2. preencher o template inteiro, incluindo critica e validacao;
+3. decidir o status atual do caso;
+4. atualizar o `INDEX_PROMOCAO_CANONICA.md` se houver mudanca de status;
+5. atualizar a `SINTESIS/` se aparecer padrao que serve para mais de uma licao;
+6. atualizar a `002_LISTA_VIVA_CANDIDATOS_NORTH_STAR.md` se surgir ou reforcar candidato forte;
+7. so discutir subida para o `008` depois de recorrencia suficiente.

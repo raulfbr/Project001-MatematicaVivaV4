@@ -1,7 +1,7 @@
 # EXECUCAO - TEXT WRAP DE ICONES EM INSTRUCTION BOXES - L003
 Data: 2026-03-12
 Status: implementado de forma incremental
-Escopo: introduzir o modificador opt-in `instruction-box--wrap` no design system e aplicá-lo nas caixas densas da `L003`
+Escopo: introduzir o modificador opt-in `instruction-box--wrap` no design system e aplica-lo nas caixas densas da `L003`
 
 ---
 

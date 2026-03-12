@@ -25,6 +25,7 @@ Abrir tambem, quando fizer sentido:
 1. `001_ICONES_CORES_E_ASSETS.md`
 2. `004_GUARDIOES_CARDS_E_REVEAL.md`
 3. `007_EXCECAO_L000_PORTAL.md`
+4. `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md` = so para desempate fino, frase-assinatura e fechamento premium
 
 ## Regra de autoridade
 1. este diretorio governa regras que atravessam varios topicos;

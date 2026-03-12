@@ -44,9 +44,11 @@
 5. assets quebrados precisam de fallback previsivel quando o sistema ja usar fallback nessa camada.
 
 ## Regras de labels
-1. antes de card visual, usar label consistente (`Mostrar Card`) quando essa convencao estiver presente na obra.
-2. labels nao devem competir com o asset; servem como cue para o Portador.
-3. nao inventar verbos novos para a mesma acao sem motivo forte.
+1. no HTML visivel para a familia, o `local-label` preferencial dos cards de reveal e `Mostre este card a crianca.`.
+2. a distincao entre `local` e `guardiao` continua sendo feita pela arquitetura da secao e pelo tipo de card, nao pelo texto do label.
+3. quando o timing do gesto precisar de reforco, repetir a mesma orientacao tambem no `instruction-box`.
+4. labels nao devem competir com o asset nem soar poeticos demais quando a mae precisa de uma acao clara naquele instante.
+5. nao inventar verbos novos para a mesma acao sem motivo forte.
 
 ## PASS
 1. icone e cor reforcam a funcao da secao.

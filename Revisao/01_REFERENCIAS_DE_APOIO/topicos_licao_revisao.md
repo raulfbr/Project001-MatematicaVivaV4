@@ -39,7 +39,7 @@ Este documento define **TODAS** as seções e elementos obrigatórios de uma li�
 - [ ] Instruction Box: `ph-lamp duotone-gold`
 - [ ] Portador Block ÚNICO (Voz Única)
 - [ ] Acting Cues em `[ ]` estilo dourado itálico
-- [ ] Card do Local com label "Mostrar Card"
+- [ ] Card do Local com label "Mostre este card a crianca."
 
 ### A Jornada
 - [ ] H2: `ph-map-trifold duotone-gold`
@@ -289,7 +289,7 @@ Este documento define **TODAS** as seções e elementos obrigatórios de uma li�
 
             <!-- VISUAL REVEAL -->
             <div class="card-container" style="margin: 1.5rem 0;">
-                <p class="local-label">Mostrar Card</p>
+                <p class="local-label">Mostre este card &agrave; crian&ccedil;a</p>
                 <img src="../assets/cards/locais/[local].png" 
                      style="width: 100%; max-width: 400px; border-radius: 12px; 
                             box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 4px solid #FFF;" 
@@ -326,7 +326,7 @@ Este documento define **TODAS** as seções e elementos obrigatórios de uma li�
 
     <!-- Card Container -->
     <div class="card-container">
-        <p class="local-label">Mostrar Card</p>
+        <p class="local-label">Mostre este card &agrave; crian&ccedil;a</p>
         <img src="../assets/cards/guardioes/[guardiao].png" 
              class="card-visual-asset rotate-left hover-float"
              onError="this.src='../assets/cards/guardioes/placeholder.png'" 
@@ -749,7 +749,7 @@ Este documento define **TODAS** as seções e elementos obrigatórios de uma li�
 | Regra | Verificação | Seção Padrão |
 |-------|-------------|--------------|
 | Emojis estruturais | ❌ Zero (usar Phosphor) | §7 |
-| Labels de card | "Mostrar Card" (não "Visualizar") | §11.1 |
+| Labels de card | "Mostre este card a crianca." | §11.1 |
 | Capitalização | Guardiões sempre capitalizados | §10.2 |
 | Tom | Sem "Shhh...", sem imperativo | §10.4, §19.2 |
 | Cards | Guardião aparece UMA VEZ | §6 |

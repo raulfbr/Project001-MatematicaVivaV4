@@ -185,6 +185,12 @@ Ordem:
 6. cards e reveals
 7. semantica de links e wrappers
 
+Checagem obrigatoria dentro de `labels e classes` + `cards e reveals`:
+1. `reveal`, neste sistema, significa o momento em que o local ou o guardiao e mostrado visualmente a crianca, geralmente com o card;
+2. se o card exige gesto imediato do adulto, o HTML visivel precisa deixar essa acao clara;
+3. quando isso reduzir traducao mental para a mae, preferir o label `Mostre este card a crianca.` no proprio card de reveal;
+4. a diferenca entre `local` e `guardiao` continua sendo garantida pela secao e pela arquitetura, nao por um label bonito demais.
+
 Regra:
 1. nao reescrever a narrativa antes de garantir que a arquitetura da pagina esta certa.
 
@@ -207,6 +213,7 @@ Perguntas de controle:
 2. o adulto se sente guiado ou sobrecarregado?
 3. a crianca e tratada como pessoa capaz?
 4. narrativa e instrucoes parecem parte do mesmo produto?
+5. quando ha card de reveal, a mae sabe exatamente quando mostra-lo?
 
 ---
 

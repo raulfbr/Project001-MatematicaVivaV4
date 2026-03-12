@@ -140,7 +140,7 @@
 
                 <!-- BLOCO 1: PREPARO (Bastidores - Técnico) -->
                 <!-- O Pai lê isso EM SILÊNCIO antes de começar -->
-                <div class="instruction-box">
+                <div class="instruction-box instruction-box--wrap ritual-bastidores-box">
                     <i class="ph-duotone ph-lamp duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
                     <div>
                         <strong>Preparação:</strong>
@@ -154,52 +154,46 @@
 
                 <!-- BLOCO 2: O RITUAL (Monobloco Unificado) -->
                 <!-- Voz Única: O Portador fala tudo, inclusive a descrição. -->
-                <div class="script-persona-block portador-block">
+                <div class="script-persona-block portador-block ritual-portador-block">
                     <div class="script-avatar-icon">
                         <i class="ph-duotone ph-fire duotone-carmim"></i>
                     </div>
                     <div class="script-content">
                         <div class="script-header">
                             <span class="script-name">Portador da Tocha</span>
+                            <span class="script-tone">[Voz baixa, firme e acolhedora. Hoje é começo, não pressa.]</span>
                         </div>
                         <div class="script-text">
+                            <p>Respire fundo.</p>
                             <p>"Luz de fora acalma.</p>
                             <p>Sol de dentro acende.</p>
-                            <p>Respirem... Estamos no Reino."</p>
+                            <p>Hoje o Portal do Reino Contado se abre para você."</p>
 
                             <!-- Acting Cue Interno -->
-                            <p style="color: var(--accent-gold); font-style: italic; margin-top: 1rem;">[Feche os olhos.
-                                Respire fundo...]</p>
+                            <p class="acting-cue">[Feche os olhos por um instante.]</p>
 
-                            <p>"Quando você abrir os olhos, estaremos em um lugar muito especial..."</p>
-
-                            <!-- VISUAL REVEAL (Sincronia) -->
-                            <div class="card-container" style="margin: 1.5rem 0;">
-                                <p class="local-label">Mostrar Card</p>
-                                <img src="../assets/cards/locais/local-jardim-central.png"
-                                    style="width: 100%; max-width: 400px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 4px solid #FFF;"
-                                    alt="Jardim Central">
-                                <p
-                                    style="margin-top: 0.5rem; font-weight: 700; font-size: 1.1rem; color: var(--primary); text-align: center;">
-                                    ✨ O Jardim Central do Reino Contado ✨
-                                </p>
-                            </div>
+                            <p>"Quando você abrir os olhos, estaremos no Jardim Central do Reino Contado.</p>
 
                             <!-- IMMERSION (Voz sobre Imagem - SEM LEÃO) -->
-                            <p>"O ar cheira a terra molhada e musgo fresco... O sol dourado aquece o rosto.</p>
+                            <p>O ar cheira a terra molhada e musgo fresco... O sol dourado aquece o rosto.</p>
                             <p>Pássaros cantam ao longe... Flores balançam com a brisa.</p>
                             <p>E alguém muito especial espera por você aqui...</p>
 
                             <!-- BRIDGE DIALOGUE (Ponte) -->
-                            <p style="margin-top: 1.5rem;">Hoje a porta do Reino se abriu a você.</p>
+                            <p style="margin-top: 1.5rem;">Hoje o primeiro passo no Reino foi dado.</p>
                             <p>Animais sábios aguardam ansiosos para recebê-lo com alegria."</p>
 
-                            <p style="color: var(--accent-gold); font-style: italic; margin-top: 0.5rem;">[Olhe nos
-                                olhos da criança]</p>
+                            <p class="acting-cue">[Olhe nos olhos da criança]</p>
 
                             <p>"Você está pronto para conhecê-los?"</p>
                         </div>
                     </div>
+                </div>
+
+                <div class="card-container ritual-local-card">
+                    <p class="local-label">Mostre este card &agrave; crian&ccedil;a</p>
+                    <img src="../assets/cards/locais/local-jardim-central.png" class="card-visual-asset hover-float"
+                        onError="this.src='../assets/cards/locais/placeholder.png'" alt="Jardim Central do Reino Contado">
                 </div>
 
 
@@ -212,7 +206,7 @@
 
 
 
-            <div class="scene-card">
+            <div class="scene-card journey-scene journey-scene--reveal">
 
                 <div class="scene-header">
                     <i class="ph-duotone ph-crown duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
@@ -228,8 +222,8 @@
 
 
 
-                <div class="card-container">
-                    <p class="local-label">Mostrar Card</p>
+                <div class="card-container journey-reveal-card">
+                    <p class="local-label">Mostre este card &agrave; crian&ccedil;a</p>
                     <img src="../assets/cards/guardioes/melquior-leao.png"
                         class="card-visual-asset rotate-left hover-float"
                         onError="this.src='../assets/cards/guardioes/placeholder.png'"
@@ -239,33 +233,26 @@
 
 
 
-                <div class="instruction-box">
+                <div class="instruction-box journey-instruction-box">
                     <i class="ph-duotone ph-hand-pointing duotone-neutral rotate-90"
                         style="font-size:1.5rem; margin-right:0.5rem;"></i>
                     <div>
-
-
-                        Leia com calma. Olhe nos olhos da criança.<br>Dê tempo para ela se acomodar.<br>
-
+                        <p><strong>Gesto do Portador:</strong> Mostre este card à criança e espere o olhar dela repousar
+                            em Melquior antes da primeira fala.</p>
+                        <p><strong>Ritmo:</strong> Leia com calma, olhe nos olhos da criança e dê tempo para ela se
+                            acomodar.</p>
                     </div>
                 </div>
 
 
 
 
-                <div class="script-persona-block">
+                <div class="script-persona-block journey-script">
                     <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
                     <div class="script-content">
                         <div class="script-header">
                             <span class="script-name">Melquior</span>
-
-
-
-
-                            <span style="font-style: normal;"><i class="ph-duotone ph-smiley duotone-gold"></i></span>
-                            (Tom: Acolhedor — Sorriso na voz, braços abertos.)
-
-
+                            <span class="script-tone">[Tom acolhedor. Sorriso na voz, braços abertos.]</span>
                         </div>
                         <div class="script-text">
                             <p>"Aproxime-se, pequeno Herdeiro."</p>
@@ -280,7 +267,7 @@
 
 
             <!-- QUEM É MELQUIOR (MOVIDO PARA CÁ - antes da História da Criação) -->
-            <div class="scene-card">
+            <div class="scene-card journey-scene">
 
                 <div class="scene-header">
                     <i class="ph-duotone ph-crown duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
@@ -288,34 +275,26 @@
                 </div>
 
 
-                <div class="instruction-box">
+                <div class="instruction-box journey-instruction-box">
                     <i class="ph-duotone ph-hand-pointing duotone-neutral rotate-90"
                         style="font-size:1.5rem; margin-right:0.5rem;"></i>
                     <div>
-                        Este é o momento de estabelecer Melquior como figura paterna/mentora.<br>
-                        <strong>Segure o card perto da criança</strong> — deixe que ela toque,
-                        observe os detalhes da juba, os olhos gentis.<br>
-                        A conexão física com o card reforça o vínculo com o Guardião.
+                        <p><strong>Gesto do Portador:</strong> Mantenha este card diante da criança e deixe que ela toque
+                            ou observe a juba e os olhos de Melquior.</p>
+                        <p><strong>Clima:</strong> Este é um momento de vínculo, não de pressa. A conexão física com o
+                            card reforça o encontro com o Guardião.</p>
                     </div>
                 </div>
 
 
 
 
-                <div class="script-persona-block">
+                <div class="script-persona-block journey-script">
                     <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="Melquior">
                     <div class="script-content">
                         <div class="script-header">
                             <span class="script-name">Melquior</span>
-
-
-
-
-                            <span style="font-style: normal;"><i
-                                    class="ph-duotone ph-shield-check duotone-forest"></i></span> (Tom: Nobre — Postura
-                            ereta, voz profunda, mas gentil.)
-
-
+                            <span class="script-tone">[Tom nobre. Postura ereta, voz profunda, mas gentil.]</span>
                         </div>
                         <div class="script-text">
                             <p>"Eu sou Melquior, o Leão Dourado."</p>
@@ -332,7 +311,7 @@
 
 
 
-            <div class="scene-card">
+            <div class="scene-card journey-scene">
 
                 <div class="scene-header">
                     <i class="ph-duotone ph-scroll duotone-terra" style="font-size:1.5rem; margin-right:0.5rem;"></i>
@@ -343,34 +322,24 @@
 
 
 
-                <div class="instruction-box">
+                <div class="instruction-box journey-instruction-box">
                     <i class="ph-duotone ph-hand-pointing duotone-neutral rotate-90"
                         style="font-size:1.5rem; margin-right:0.5rem;"></i>
                     <div>
-
-
-                        Fale com reverência, como quem conta um segredo antigo.<br>Faça pausas nas vírgulas. Deixe as
-                        palavras criarem imagens.<br>
-
+                        <p><strong>Clima:</strong> Fale com reverência, como quem conta um segredo antigo.</p>
+                        <p><strong>Ritmo:</strong> Faça pausas nas vírgulas e deixe as palavras criarem imagens.</p>
                     </div>
                 </div>
 
 
 
 
-                <div class="script-persona-block">
+                <div class="script-persona-block journey-script">
                     <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
                     <div class="script-content">
                         <div class="script-header">
                             <span class="script-name">Melquior</span>
-
-
-
-
-                            (Tom: Reverente — Voz calma, ritmo lento, como uma oração.)
-                            </span>
-
-
+                            <span class="script-tone">[Tom reverente. Voz calma, ritmo lento, como uma oração.]</span>
                         </div>
                         <div class="script-text">
                             <p>"Há muito, muito tempo, o Grande Rei olhou para o mundo e decidiu criar algo especial.
@@ -398,7 +367,7 @@
 
 
 
-            <div class="scene-card">
+            <div class="scene-card journey-scene">
 
                 <div class="scene-header">
                     <i class="ph-duotone ph-eyeglasses duotone-terra"
@@ -411,8 +380,8 @@
 
 
 
-                <div class="card-container">
-                    <p class="local-label">Mostrar Card</p>
+                <div class="card-container journey-reveal-card">
+                    <p class="local-label">Mostre este card &agrave; crian&ccedil;a</p>
                     <img src="../assets/cards/guardioes/noe-coruja.png"
                         class="card-visual-asset rotate-left hover-float"
                         onError="this.src='../assets/cards/guardioes/placeholder.png'" alt="Ilustração da Coruja Noé">
@@ -421,40 +390,31 @@
 
 
 
-                <div class="instruction-box">
+                <div class="instruction-box journey-instruction-box">
                     <i class="ph-duotone ph-hand-pointing duotone-neutral rotate-90"
                         style="font-size:1.5rem; margin-right:0.5rem;"></i>
                     <div>
-
-
-                        Aponte para cima como se visse Noé.<br>Mostre o card do Noé agora.<br>
-
+                        <p><strong>Gesto do Portador:</strong> Aponte para o alto e, em seguida, mostre este card à
+                            criança.</p>
+                        <p><strong>Clima:</strong> Desacelere a voz, como quem honra silêncio e tempo.</p>
                     </div>
                 </div>
 
 
 
 
-                <div class="script-persona-block">
+                <div class="script-persona-block journey-script">
                     <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
                     <div class="script-content">
                         <div class="script-header">
                             <span class="script-name">Melquior</span>
-
-
-
-
-                            <span style="font-style: normal;"><i
-                                    class="ph-duotone ph-hands-praying duotone-terra"></i></span> (Tom: Respeitoso —
-                            Admiração, levemente sussurrado.)
-
-
+                            <span class="script-tone">[Tom respeitoso. Admiração leve, quase sussurrada.]</span>
                         </div>
                         <div class="script-text">
                             <p>"Veja! Ali, no galho mais alto... <strong>Olhos grandes que veem o tempo passar
                                     devagar.</strong>"</p>
                             <p>É a Coruja Noé. Ele nos ensina a ouvir o silêncio e a esperar com paciência."</p>
-                            <p>[Aponte para cima]</p>
+                            <p class="acting-cue">[Aponte para cima]</p>
                             <p>"Consegue vê-lo? Seus olhos são como duas luas amarelas.</p>
                             <p>Quando você precisar de calma, Noé estará lá."</p>
                         </div>
@@ -466,7 +426,7 @@
 
 
 
-            <div class="scene-card">
+            <div class="scene-card journey-scene">
 
                 <div class="scene-header">
                     <i class="ph-duotone ph-star-four duotone-magic" style="font-size:1.5rem; margin-right:0.5rem;"></i>
@@ -478,8 +438,8 @@
 
 
 
-                <div class="card-container">
-                    <p class="local-label">Mostrar Card</p>
+                <div class="card-container journey-reveal-card">
+                    <p class="local-label">Mostre este card &agrave; crian&ccedil;a</p>
                     <img src="../assets/cards/guardioes/celeste-raposa.png"
                         class="card-visual-asset rotate-left hover-float"
                         onError="this.src='../assets/cards/guardioes/placeholder.png'"
@@ -489,40 +449,32 @@
 
 
 
-                <div class="instruction-box">
+                <div class="instruction-box journey-instruction-box">
                     <i class="ph-duotone ph-hand-pointing duotone-neutral rotate-90"
                         style="font-size:1.5rem; margin-right:0.5rem;"></i>
                     <div>
-
-
-                        Faça o gesto de farejar o ar.<br>Mostre o card da Celeste.<br>
-
+                        <p><strong>Gesto do Portador:</strong> Faça o gesto de farejar o ar e depois mostre este card à
+                            criança.</p>
+                        <p><strong>Clima:</strong> Deixe a alegria vir primeiro, como quem percebe aventura chegando.</p>
                     </div>
                 </div>
 
 
 
 
-                <div class="script-persona-block">
+                <div class="script-persona-block journey-script">
                     <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
                     <div class="script-content">
                         <div class="script-header">
                             <span class="script-name">Melquior</span>
-
-
-
-                            <span style="font-style: normal;"><i class="ph-duotone ph-confetti duotone-gold"></i></span>
-                            (Tom: Animado — Com entusiasmo, sorrindo, e
-                            brilho nos olhos! Contagie a criança.)
-                            </span>
-
-
+                            <span class="script-tone">[Tom animado. Entusiasmo com brilho nos olhos, sem pressa
+                                exagerada.]</span>
                         </div>
                         <div class="script-text">
                             <p>"Sente este vento rápido?"</p>
                             <p><strong>Um vulto laranja que corre entre as árvores!</strong></p>
                             <p>Rápida como um pensamento. É a Raposa Celeste! Ela adora segredos e padrões."</p>
-                            <p>[Fareja o ar]</p>
+                            <p class="acting-cue">[Fareje o ar]</p>
                             <p>"Está sentindo? Cheira a aventura! Celeste é curiosa como você. Ela fareja mistérios!"
                             </p>
                         </div>
@@ -534,7 +486,7 @@
 
 
 
-            <div class="scene-card">
+            <div class="scene-card journey-scene">
 
                 <div class="scene-header">
                     <i class="ph-duotone ph-paw-print duotone-forest"
@@ -547,8 +499,8 @@
 
 
 
-                <div class="card-container">
-                    <p class="local-label">Mostrar Card</p>
+                <div class="card-container journey-reveal-card">
+                    <p class="local-label">Mostre este card &agrave; crian&ccedil;a</p>
                     <img src="../assets/cards/guardioes/bernardo-urso.png"
                         class="card-visual-asset rotate-left hover-float"
                         onError="this.src='../assets/cards/guardioes/placeholder.png'"
@@ -558,34 +510,25 @@
 
 
 
-                <div class="instruction-box">
+                <div class="instruction-box journey-instruction-box">
                     <i class="ph-duotone ph-hand-pointing duotone-neutral rotate-90"
                         style="font-size:1.5rem; margin-right:0.5rem;"></i>
                     <div>
-
-
-                        Bata os pés no chão imitando passos pesados.<br>Mostre o card do Bernardo.<br>
-
+                        <p><strong>Gesto do Portador:</strong> Bata os pés no chão imitando passos pesados e depois mostre
+                            este card à criança.</p>
+                        <p><strong>Clima:</strong> Faça a cena soar forte e segura, nunca dura ou assustadora.</p>
                     </div>
                 </div>
 
 
 
 
-                <div class="script-persona-block">
+                <div class="script-persona-block journey-script">
                     <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
                     <div class="script-content">
                         <div class="script-header">
                             <span class="script-name">Melquior</span>
-
-
-
-
-                            <span style="font-style: normal;"><i
-                                    class="ph-duotone ph-shield-check duotone-forest"></i></span> (Tom: Firme — Voz
-                            segura, grave, com peso.)
-
-
+                            <span class="script-tone">[Tom firme. Voz segura, grave, com peso bom.]</span>
                         </div>
                         <div class="script-text">
                             <p><strong>"Uma montanha de pelo quente e bondade.</strong></p>
@@ -603,7 +546,7 @@
 
 
 
-            <div class="scene-card">
+            <div class="scene-card journey-scene">
 
                 <div class="scene-header">
                     <i class="ph-duotone ph-feather duotone-forest" style="font-size:1.5rem; margin-right:0.5rem;"></i>
@@ -615,8 +558,8 @@
 
 
 
-                <div class="card-container">
-                    <p class="local-label">Mostrar Card</p>
+                <div class="card-container journey-reveal-card">
+                    <p class="local-label">Mostre este card &agrave; crian&ccedil;a</p>
                     <img src="../assets/cards/guardioes/iris-passarinho.png"
                         class="card-visual-asset rotate-left hover-float"
                         onError="this.src='../assets/cards/guardioes/placeholder.png'" alt="Ilustração da Pardal Íris">
@@ -625,42 +568,33 @@
 
 
 
-                <div class="instruction-box">
+                <div class="instruction-box journey-instruction-box">
                     <i class="ph-duotone ph-hand-pointing duotone-neutral rotate-90"
                         style="font-size:1.5rem; margin-right:0.5rem;"></i>
                     <div>
-
-
-                        Aponte para algo pequeno perto de vocês.<br>Mostre o card da Íris.<br>
-
+                        <p><strong>Gesto do Portador:</strong> Aponte para algo pequeno perto de vocês e depois mostre este
+                            card à criança.</p>
+                        <p><strong>Clima:</strong> Fale com delicadeza, como quem viu um detalhe precioso.</p>
                     </div>
                 </div>
 
 
 
 
-                <div class="script-persona-block">
+                <div class="script-persona-block journey-script">
                     <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
                     <div class="script-content">
                         <div class="script-header">
                             <span class="script-name">Melquior</span>
-
-
-
-                            <span style="font-style: normal;"><i
-                                    class="ph-duotone ph-butterfly duotone-forest"></i></span> (Tom: Delicado — Suave e
-                            leve, como se
-                            tocasse uma asa de borboleta.)
-                            </span>
-
-
+                            <span class="script-tone">[Tom delicado. Suave e leve, como quem toca uma asa de
+                                borboleta.]</span>
                         </div>
                         <div class="script-text">
                             <p>"E olhe bem de perto para aquela flor... <strong>Ela é pequena, mas vê coisas
                                     gigantes.</strong></p>
                             <p>Lá está Íris, a pequena Pardal! Ela vê o que ninguém mais vê: a beleza num grão de
                                 areia."</p>
-                            <p>[Aponte para baixo, para algo pequeno]</p>
+                            <p class="acting-cue">[Aponte para baixo, para algo pequeno]</p>
                             <p>"Você consegue ver o brilho do colar dela? Íris tem olhos de artista. Ela encontra beleza
                                 em tudo."</p>
                         </div>
@@ -672,7 +606,7 @@
 
 
 
-            <div class="scene-card">
+            <div class="scene-card journey-scene">
 
                 <div class="scene-header">
                     <i class="ph-duotone ph-door-open duotone-terra" style="font-size:1.5rem; margin-right:0.5rem;"></i>
@@ -687,33 +621,24 @@
 
 
 
-                <div class="instruction-box">
+                <div class="instruction-box journey-instruction-box">
                     <i class="ph-duotone ph-hand-pointing duotone-neutral rotate-90"
                         style="font-size:1.5rem; margin-right:0.5rem;"></i>
                     <div>
-
-
-                        Abrace a criança ou aperte sua mão.<br>Este é o momento de selamento.<br>
-
+                        <p><strong>Gesto do Portador:</strong> Abrace a criança ou aperte sua mão.</p>
+                        <p><strong>Clima:</strong> Este é o momento de selamento. Fale com paz, não com pressa.</p>
                     </div>
                 </div>
 
 
 
 
-                <div class="script-persona-block">
+                <div class="script-persona-block journey-script">
                     <img src="../assets/cards/guardioes/melquior-leao.png" class="script-avatar" alt="melquior">
                     <div class="script-content">
                         <div class="script-header">
                             <span class="script-name">Melquior</span>
-
-
-
-
-                            <span style="font-style: normal;"><i class="ph-duotone ph-sun duotone-gold"></i></span>
-                            (Tom: Esperançoso — Olhar nos olhos, transmitir confiança.)
-
-
+                            <span class="script-tone">[Tom esperançoso. Olhe nos olhos e transmita confiança.]</span>
                         </div>
                         <div class="script-text">
                             <p>"Noé, Celeste, Bernardo, Íris... e eu, Melquior. Todos nós estamos aqui para caminhar com
@@ -790,14 +715,11 @@
 
 
 
-                <div class="instruction-box">
+                <div class="instruction-box instruction-box--wrap">
                     <i class="ph-duotone ph-ear duotone-neutral" style="font-size:1.5rem; margin-right:0.5rem;"></i>
                     <div>
-
-
-                        Não force perguntas hoje.<br>Se a criança quiser falar, ouça.<br>Se preferir silêncio, respeite.
-                        O coração guardou.<br>
-
+                        <p><strong>Nota ao Portador:</strong> Não force perguntas hoje. Se a criança quiser falar, ouça.</p>
+                        <p><strong>Se vier silêncio:</strong> respeite. O coração guardou.</p>
                     </div>
                 </div>
 
@@ -811,7 +733,7 @@
 
                         </div>
                         <div class="script-text">
-                            "O que você descobriu hoje no Jardim? O que contaria para o Melquior?"
+                            <p>"O que você descobriu hoje no Jardim? O que contaria para o Melquior?"</p>
                         </div>
                     </div>
                 </div>
@@ -845,19 +767,13 @@
                     <div class="script-content">
                         <div class="script-header">
                             <span class="script-name">Melquior</span>
-
-
-
-
-                            <span style="font-style: normal;"><i class="ph-duotone ph-sun duotone-gold"></i></span>
-                            (Tom: Esperançoso)
-
-
+                            <span class="script-tone">[Tom esperançoso.]</span>
                         </div>
                         <div class="script-text">
-                            "Herdeiro... obrigado por ter vindo hoje.<br><br>Amanhã Celeste estará esperando na
-                            Clareira.<br>As três sementes do carvalho estão guardadas para você.<br><br>Descanse bem. O
-                            Reino espera seu retorno."<br>
+                            <p>"Herdeiro... obrigado por ter vindo hoje."</p>
+                            <p>"Amanhã Celeste estará esperando na Clareira. As três sementes do carvalho estão guardadas
+                                para você."</p>
+                            <p>"Descanse bem. O Reino espera seu retorno."</p>
                         </div>
                     </div>
                 </div>
@@ -875,13 +791,11 @@
                             <span class="script-name">Portador da Tocha</span>
                         </div>
                         <div class="script-text">
-                            "A Luz se apaga, mas o brilho fica no coração."<br>"O Reino descansa. Até amanhã,
-                            Herdeiro."<br>
+                            <p>Respire fundo. A casa volta devagar. O Portal pode repousar por agora, mas o brilho deste
+                                encontro continua vivo na casa.</p>
                         </div>
                     </div>
                 </div>
-
-
             </div>
 
 
@@ -899,7 +813,7 @@
 
 
 
-                <div onclick="window.location.href='MV-S-001_A_TRINDADE_NA_PALMA.html'" style="cursor: pointer;">
+                <a href="MV-S-001_A_TRINDADE_NA_PALMA.html" class="connection-card-link">
                     <p><strong><i class="ph-duotone ph-arrow-right duotone-gold"></i> Próxima Aventura:</strong> Amanhã,
                         Celeste vai nos mostrar algo especial — três
                         sementes do carvalho mais velho do Reino!</p>
@@ -911,7 +825,7 @@
                         </span>
                     </div>
 
-                </div>
+                </a>
 
 
             </div>

@@ -138,7 +138,7 @@
    c. instruction box;
    d. bloco de fala.
 3. o fundo e a borda devem sugerir passagem, brilho e centralidade, sem ruir a leitura.
-4. labels de reveal precisam ser nomeadas com beleza: `Guardiao revelado`, `Guardia revelada` ou a forma acentuada correspondente no HTML final.
+4. no HTML visivel para a familia, o label preferencial do reveal do guardiao e `Mostre este card a crianca.`.
 5. evitar repeticao de branco plano + card solto + bloco neutro sem intencao.
 
 ## O que a Jornada precisa produzir no adulto

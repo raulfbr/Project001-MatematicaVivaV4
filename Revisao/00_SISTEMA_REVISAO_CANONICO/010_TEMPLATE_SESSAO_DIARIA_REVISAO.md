@@ -28,6 +28,7 @@
 - Titulo:
 - Guardiao:
 - Lugar revelado:
+- Comando de mostrar o card para a mae:
 - Proxima licao:
 
 ### Cerne da ideia
@@ -99,6 +100,7 @@
 - Titulo:
 - Guardiao:
 - Lugar revelado:
+- Comando de mostrar o card para a mae:
 - Proxima licao:
 
 ### Cerne da ideia

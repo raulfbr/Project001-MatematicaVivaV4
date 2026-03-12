@@ -4,6 +4,7 @@
 1. sempre que revisar falas, instrucoes, frases de transicao e a voz do adulto;
 2. sempre que houver duvida entre texto correto e texto fiel ao espirito de Matematica Viva;
 3. antes de aprovar Ritual de Entrada, Jornada, Narramos Juntos, Fechamento e Formacao do Portador.
+4. em desempates finos de formulacao, consultar tambem `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`.
 
 ## Missao desta transversal
 1. proteger a dignidade narrativa do Portador;
@@ -20,6 +21,7 @@
 7. quando a secao trouxer orientacoes, estrategias, materiais ou comandos, ela deve ser objetiva, pratica e fluida.
 8. em qualquer caso, a escrita precisa continuar leve, inteligivel e bem acabada.
 9. `TASTE` vive em micro-escolhas: uma frase pode estar correta e ainda assim nao ser a frase certa para o Reino.
+10. quando duas formulacoes sao boas, vence a que guarda melhor calor humano, clareza domestica e identidade recognoscivel.
 
 ## Voz do Portador
 1. nobre, calorosa e clara.

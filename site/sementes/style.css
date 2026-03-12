@@ -964,6 +964,35 @@ li {
     flex-shrink: 0;
 }
 
+/* Opt-in text wrap for long instruction boxes */
+.instruction-box--wrap {
+    display: block;
+    overflow: hidden;
+}
+
+.instruction-box--wrap > i:first-child {
+    float: left;
+    display: block;
+    font-size: 1.5rem !important;
+    line-height: 1;
+    margin-top: 0.2rem !important;
+    margin-right: 1.25rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.instruction-box--wrap ol,
+.instruction-box--wrap ul {
+    display: block;
+    list-style-position: inside;
+    margin: 0.75rem 0 0 0 !important;
+    padding-left: 0 !important;
+}
+
+.instruction-box--wrap li {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 /* Navigation */
 .lesson-header-nav {
     display: flex;

@@ -1,0 +1,129 @@
+# README - FEEDBACK DE MAES REAIS
+
+## 1) Missao desta pasta
+Esta pasta existe para guardar, organizar e promover feedback real de maes sem perder:
+1. a voz bruta da mae;
+2. a leitura critica;
+3. a decisao editorial;
+4. o aprendizado do sistema.
+
+Formula desta trilha:
+`feedback bruto -> leitura critica -> sintese -> canonizacao seletiva`
+
+---
+
+## 2) O que NAO fazer aqui
+1. nao usar esta pasta como deposito de conversa solta sem conclusao;
+2. nao jogar feedback bruto direto no `North Star`;
+3. nao reescrever a fala da mae de forma a apagar sua friccao real;
+4. nao transformar um caso isolado em principio universal cedo demais.
+
+---
+
+## 3) Estrutura oficial
+1. `000_README.md` = funcao e regra de uso desta trilha
+2. `001_TEMPLATE_CASO_FEEDBACK_MAE_REAL.md` = template para novos casos
+3. `002_LISTA_VIVA_CANDIDATOS_NORTH_STAR.md` = candidatos fortes ainda em observacao
+4. `INDEX_PROMOCAO_CANONICA.md` = quadro de bordo da promocao de aprendizados
+5. `CASOS/` = dossies por mae, data e licao
+6. `SINTESIS/` = padroes transversais ja extraidos dos casos
+
+---
+
+## 4) Convencao de nomes
+### Casos
+Usar:
+`YYYY-MM-DD_NOME_MV-S-XXX.md`
+
+Exemplo:
+`2026-03-12_MARINA_MV-S-003.md`
+
+### Sinteses
+Usar:
+`YYYY-MM-DD_SINTESIS_TEMA.md`
+
+Exemplo:
+`2026-03-12_SINTESIS_INICIAL_PADROES_MARINA_L003.md`
+
+---
+
+## 5) Como usar
+Quando surgir feedback real de uma mae:
+1. criar um caso em `CASOS/ANO/`;
+2. colar o feedback bruto;
+3. registrar a leitura critica;
+4. registrar o que foi aplicado ou recusado;
+5. marcar se o aprendizado:
+   a. fica local;
+   b. sobe para sintese;
+   c. vira candidato a regra sistemica.
+
+Checklist minimo de uso:
+1. preservar o texto bruto da mae;
+2. registrar tambem o que a mae validou, nao so o que criticou;
+3. explicitar o que foi mudado de verdade;
+4. registrar o que NAO foi mudado e por que;
+5. marcar um proximo passo claro.
+
+---
+
+## 6) Campos minimos de um caso
+1. data;
+2. nome da mae;
+3. licao ou artefato avaliado;
+4. origem do feedback;
+5. status do caso;
+6. status de promocao atual;
+7. feedback bruto;
+8. leitura critica;
+9. decisoes;
+10. o que foi aplicado;
+11. o que o sistema aprendeu;
+12. status de promocao.
+
+---
+
+## 7) Estados oficiais de promocao
+1. `LOCAL`
+2. `EM SINTESIS`
+3. `CANDIDATO A TRANSVERSAL`
+4. `CANDIDATO A NORTH STAR`
+5. `CANONIZADO`
+
+Regra:
+1. usar esses nomes exatamente assim no `INDEX_PROMOCAO_CANONICA.md`;
+2. quando possivel, espelhar o status atual tambem no dossie do caso;
+3. nao inventar estados paralelos sem necessidade.
+
+---
+
+## 8) Regra de promocao
+### Fica em `LOCAL`
+Quando o aprendizado e local da licao.
+
+### Sobe para `SINTESIS/`
+Quando o padrao serve para varias licoes, mas ainda nao virou `CANDIDATO A TRANSVERSAL`.
+
+### Sobe para arquivo canonico
+Quando o padrao ja ficou duravel e passou pelos gates anteriores.
+
+Regra importante:
+1. feedback bruto nao sobe direto para o `008_NORTH_STAR_OPERACIONAL.md`;
+2. primeiro ele vira sintese;
+3. so depois, se for mesmo principio, sobe para o `North Star`.
+
+---
+
+## 9) Anti-patterns
+1. abrir caso sem registrar o que foi efetivamente aplicado;
+2. guardar so critica e perder o que a mae confirmou como funcionando;
+3. promover frase forte cedo demais so porque ela soa bonita;
+4. usar um caso isolado para justificar mudanca sistemica ampla;
+5. deixar o caso sem fechamento e sem proximo passo.
+
+---
+
+## 10) Pergunta de controle
+`Estamos ouvindo a mae real como evidencia ou usando a mae real como desculpa para improviso?`
+
+Se a resposta tender a `improviso`, parar e reorganizar.

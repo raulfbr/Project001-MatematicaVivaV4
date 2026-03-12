@@ -1293,6 +1293,32 @@ li {
     margin-top: 0.85rem;
 }
 
+.bridge-highlight-box {
+    background: #EEF2FF;
+    border-left-color: #4F46E5;
+}
+
+.bridge-highlight-box strong {
+    color: #3730A3;
+}
+
+.heart-questions-box {
+    background: #FFF7ED;
+    border-left: 4px solid #C2410C;
+    padding: 1rem 1.25rem;
+    border-radius: 0 8px 8px 0;
+    margin-top: 1rem;
+    color: #7C2D12;
+}
+
+.heart-questions-box p + ul {
+    margin-top: 0.5rem;
+}
+
+.heart-questions-box li + li {
+    margin-top: 0.5rem;
+}
+
 .connection-card-link {
     display: block;
     color: inherit;
@@ -1611,6 +1637,11 @@ i.ph-duotone {
 .duotone-indigo {
     color: var(--potter-indigo);
     --ph-duotone-accent-color: #E0E7FF;
+}
+
+.duotone-sky {
+    color: #0284C7;
+    --ph-duotone-accent-color: #DBEAFE;
 }
 
 /* === CARD CONTAINER CENTERING (Fix user feedback) === */

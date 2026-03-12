@@ -1,0 +1,12 @@
+{
+  "desktop": {
+    "innerWidth": 1440,
+    "scrollWidth": 1440,
+    "scrollHeight": 15077
+  },
+  "mobile": {
+    "innerWidth": 393,
+    "scrollWidth": 393,
+    "scrollHeight": 19512
+  }
+}

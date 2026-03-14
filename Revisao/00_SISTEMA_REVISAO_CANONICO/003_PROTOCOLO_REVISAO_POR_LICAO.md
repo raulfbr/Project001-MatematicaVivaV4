@@ -53,6 +53,7 @@ Antes de editar qualquer HTML:
 8. preparar a matriz `001-012` com `PASS / GAP / BLOCK`;
 9. mapear as fronteiras criticas que precisarao ser auditadas depois;
 10. confirmar se ha task robusta especifica da licao em andamento.
+11. confirmar se existe caso relevante em `Revisao/FEEDBACK_MAES_REAIS/` para esta licao ou friccao semelhante.
 
 Checklist:
 1. qual e a promessa da licao?
@@ -254,6 +255,9 @@ Checar:
 8. imagem dominante da licao protegida do Hero ao fechamento;
 9. trechos tecnicamente corretos, mas sem vida, sem calor ou com cara de material escolar;
 10. pontos em que uma troca pequena de formulacao elevaria muito o `TASTE`.
+11. pontos em que a mae precisaria traduzir o texto;
+12. pontos em que a pergunta parece bonita, mas pouco respondível para `4-6 anos`;
+13. pontos em que o bloco nao deixa claro se e para falar, mostrar ou fazer.
 
 Objetivo:
 1. deixar a licao com aparencia e leitura de produto premium;

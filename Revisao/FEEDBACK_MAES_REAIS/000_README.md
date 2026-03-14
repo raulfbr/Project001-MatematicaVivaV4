@@ -67,6 +67,11 @@ Checklist minimo de uso:
 4. registrar o que NAO foi mudado e por que;
 5. marcar um proximo passo claro.
 6. se um candidato ja existir na lista viva, aumentar a recorrencia em vez de criar frase paralela.
+7. registrar tambem o que o caso ensinou sobre `TASTE`, especialmente:
+   a. onde a mae precisou traduzir;
+   b. onde a pergunta nao pousou;
+   c. onde a poesia atrapalhou a funcao;
+   d. onde o feedback positivo protegeu a identidade da obra.
 
 ---
 
@@ -130,6 +135,16 @@ Regra importante:
 `Estamos ouvindo a mae real como evidencia ou usando a mae real como desculpa para improviso?`
 
 Se a resposta tender a `improviso`, parar e reorganizar.
+
+## 10.1) Taste da mae real
+1. `taste da mae real` nao significa gosto pessoal soberano;
+2. significa a friccao ou a paz que aparecem quando o texto encontra a boca, a mao e o tempo real da mae;
+3. ele ajuda a detectar:
+   a. traducao mental escondida;
+   b. pergunta abstrata demais;
+   c. comando bonito, mas pouco usavel;
+   d. overcorrection que mataria o Reino;
+4. esse `taste` entra no sistema como calibragem qualificada, nao como veto automatico.
 
 ---
 

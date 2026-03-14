@@ -137,6 +137,7 @@ Criticos:
 5. blocos visuais limpos;
 6. sensacao de guia premium;
 7. fronteiras entre `Sementes para o Dia` e `Formacao do Portador` claras para o adulto.
+8. a mae nao precisa traduzir mentalmente o que dizer ou fazer.
 
 Guia de nota:
 1. `0`: friccao alta
@@ -226,11 +227,13 @@ Criticos:
 4. guardiao e Portador soam como pessoas do Reino, nao placeholders;
 5. a mae consegue conduzir sem atrito de linguagem;
 6. feedback real de familias, quando existir, foi lido como dado e nao como ordem.
+7. quando houver evidencia real, a formulacao final reduz releitura, improviso e traducao adulta.
 
 Leitura do gate:
 1. `PASS`: a licao soa viva e inevitavel.
 2. `EM REFINAMENTO`: a licao funciona, mas ainda falta forca editorial.
 3. `BLOCK PREMIUM`: a licao ate passa estruturalmente, mas ainda nao soa premium.
+4. `BLOCK PREMIUM` tambem se aplica quando a beleza da escrita continua exigindo traducao mental recorrente da mae.
 
 ---
 

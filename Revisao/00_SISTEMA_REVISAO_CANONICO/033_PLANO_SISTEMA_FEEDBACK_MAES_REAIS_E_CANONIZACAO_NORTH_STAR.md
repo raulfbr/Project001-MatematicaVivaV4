@@ -72,7 +72,7 @@ Funcao:
 ## 4) Melhor estrutura proposta
 ### 4.1 Pasta nova
 Criar:
-`logs/FEEDBACK_MAES_REAIS/`
+`Revisao/FEEDBACK_MAES_REAIS/`
 
 Motivo:
 1. feedback de maes reais e uma classe propria de evidencia;
@@ -81,7 +81,7 @@ Motivo:
 
 ### 4.2 Estrutura interna recomendada
 ```text
-logs/FEEDBACK_MAES_REAIS/
+Revisao/FEEDBACK_MAES_REAIS/
   000_README.md
   001_TEMPLATE_CASO_FEEDBACK_MAE_REAL.md
   002_LISTA_VIVA_CANDIDATOS_NORTH_STAR.md
@@ -119,7 +119,7 @@ Razao:
 
 ## 5) Formato recomendado do arquivo de caso
 Exemplo:
-`logs/FEEDBACK_MAES_REAIS/CASOS/2026/2026-03-12_MARINA_MV-S-003.md`
+`Revisao/FEEDBACK_MAES_REAIS/CASOS/2026/2026-03-12_MARINA_MV-S-003.md`
 
 Estrutura recomendada:
 
@@ -312,7 +312,7 @@ Assim:
 
 ## 13) Fases recomendadas de execucao
 ### Fase 1 - Estrutura
-1. criar `logs/FEEDBACK_MAES_REAIS/`;
+1. criar `Revisao/FEEDBACK_MAES_REAIS/`;
 2. criar `000_README.md`;
 3. criar `001_TEMPLATE_CASO_FEEDBACK_MAE_REAL.md`;
 4. criar `002_LISTA_VIVA_CANDIDATOS_NORTH_STAR.md`;

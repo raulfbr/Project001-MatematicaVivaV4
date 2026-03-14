@@ -36,6 +36,16 @@ O aprendizado ja subiu para arquivo canonico.
    - Candidato a:
      a. transversal operacional de empatia;
      b. refinamento futuro do `008`
+   - Complementos ativos:
+      a. `2026-03-13_MARINA_MV-S-003_AUDIO_001_009_UNIFICADO.md`
+      b. `2026-03-13_MARINA_MV-S-003_REUNIOES_EXPERTS.md`
+      c. `2026-03-13_MARINA_MV-S-003_PLANO_DE_MUDANCA_DETALHADO.md`
+      d. `SINTESIS/2026-03-13_TASTE_DA_MAE_REAL_COMO_CALIBRAGEM_OPERACIONAL.md`
+   - Leitura atual recomendada:
+      a. ler o caso base de `2026-03-12`;
+      b. depois ler o consolidado de audio de `2026-03-13`;
+      c. depois ler reunioes + plano detalhado antes de patchar a `L003`;
+      d. usar a sintese de `taste da mae real` para calibrar a revisao sem canonizar cedo demais
 
 ---
 

@@ -19,7 +19,7 @@ Escopo: criar a trilha operacional de feedback de maes reais e rodar o caso pilo
 
 ## 2) Decisao desta task
 Nesta rodada, a melhor decisao e:
-1. criar a pasta `logs/FEEDBACK_MAES_REAIS/`;
+1. criar a pasta `Revisao/FEEDBACK_MAES_REAIS/`;
 2. criar README, template, lista viva e indice de promocao;
 3. migrar `Marina x L003` para o novo formato de caso;
 4. criar uma primeira sintese transversal a partir desse caso;
@@ -30,12 +30,12 @@ Nesta rodada, a melhor decisao e:
 
 ## 3) Arquivos em escopo
 ### Criar
-1. `logs/FEEDBACK_MAES_REAIS/000_README.md`
-2. `logs/FEEDBACK_MAES_REAIS/001_TEMPLATE_CASO_FEEDBACK_MAE_REAL.md`
-3. `logs/FEEDBACK_MAES_REAIS/002_LISTA_VIVA_CANDIDATOS_NORTH_STAR.md`
-4. `logs/FEEDBACK_MAES_REAIS/INDEX_PROMOCAO_CANONICA.md`
-5. `logs/FEEDBACK_MAES_REAIS/CASOS/2026/2026-03-12_MARINA_MV-S-003.md`
-6. `logs/FEEDBACK_MAES_REAIS/SINTESIS/2026-03-12_SINTESIS_INICIAL_PADROES_MARINA_L003.md`
+1. `Revisao/FEEDBACK_MAES_REAIS/000_README.md`
+2. `Revisao/FEEDBACK_MAES_REAIS/001_TEMPLATE_CASO_FEEDBACK_MAE_REAL.md`
+3. `Revisao/FEEDBACK_MAES_REAIS/002_LISTA_VIVA_CANDIDATOS_NORTH_STAR.md`
+4. `Revisao/FEEDBACK_MAES_REAIS/INDEX_PROMOCAO_CANONICA.md`
+5. `Revisao/FEEDBACK_MAES_REAIS/CASOS/2026/2026-03-12_MARINA_MV-S-003.md`
+6. `Revisao/FEEDBACK_MAES_REAIS/SINTESIS/2026-03-12_SINTESIS_INICIAL_PADROES_MARINA_L003.md`
 
 ### Atualizar
 1. `Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md`
@@ -58,7 +58,7 @@ Nesta rodada, a melhor decisao e:
 
 ## 5) Passo a passo executado
 ### Fase 1 - Estrutura
-1. criar a pasta-base `logs/FEEDBACK_MAES_REAIS/`;
+1. criar a pasta-base `Revisao/FEEDBACK_MAES_REAIS/`;
 2. criar `000_README.md`;
 3. criar `001_TEMPLATE_CASO_FEEDBACK_MAE_REAL.md`;
 4. criar `002_LISTA_VIVA_CANDIDATOS_NORTH_STAR.md`;
@@ -112,7 +112,7 @@ Ao fim desta task, o projeto passa a ter:
 ---
 
 ## 7) Definition of Done
-1. a pasta `logs/FEEDBACK_MAES_REAIS/` existe;
+1. a pasta `Revisao/FEEDBACK_MAES_REAIS/` existe;
 2. ha README e template utilizaveis;
 3. o caso `Marina x L003` esta migrado;
 4. a sintese inicial existe;

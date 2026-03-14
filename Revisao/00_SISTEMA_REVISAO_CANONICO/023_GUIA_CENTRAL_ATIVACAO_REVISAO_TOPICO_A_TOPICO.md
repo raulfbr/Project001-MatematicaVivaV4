@@ -53,6 +53,7 @@ Este guia foi estabilizado em coerencia com:
 Consequencia pratica:
 1. a revisao nao fecha em teoria bonita;
 2. a revisao precisa produzir uma licao usavel, viva, concreta e premium.
+3. quando houver feedback real de mae, ele entra como calibragem qualificada do uso real e do `TASTE`.
 
 ---
 
@@ -76,7 +77,8 @@ Abrir sempre nesta ordem:
 16. licao anterior
 17. licao seguinte
 18. task especifica da licao, se existir
-19. `Revisao/00_SISTEMA_REVISAO_CANONICO/010_TEMPLATE_SESSAO_DIARIA_REVISAO.md`
+19. caso e sintese de `Revisao/FEEDBACK_MAES_REAIS/`, se houver feedback real relevante
+20. `Revisao/00_SISTEMA_REVISAO_CANONICO/010_TEMPLATE_SESSAO_DIARIA_REVISAO.md`
 
 Regra:
 1. transversais adicionais entram por necessidade;

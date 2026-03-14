@@ -22,7 +22,7 @@ Se a pergunta for `quais arquivos sao historicos e nao fonte procedural?`
 Se a pergunta for `onde mora o sistema de feedback de maes reais?`
 1. governanca e plano: `033_PLANO_SISTEMA_FEEDBACK_MAES_REAIS_E_CANONIZACAO_NORTH_STAR.md`
 2. implantacao pratica: `034_TASK_ROBUSTA_IMPLANTACAO_SISTEMA_FEEDBACK_MAES_REAIS.md`
-3. evidencia e casos: `logs/FEEDBACK_MAES_REAIS/`
+3. evidencia e casos: `Revisao/FEEDBACK_MAES_REAIS/`
 
 ## 1) Ponto de entrada
 1. `Revisao/000_COMECAR_AQUI.md`

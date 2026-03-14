@@ -56,6 +56,28 @@
 4. `TASTE` bom faz a frase sair da boca com naturalidade;
 5. `TASTE` bom parece ajuda real, nao exibicao de escrita.
 
+## Calibragem por mae real
+1. quando houver feedback real de mae sobre a licao ou sobre friccao semelhante, ele deve entrar como calibragem qualificada de `TASTE`;
+2. essa calibragem nao manda sozinha na decisao editorial final;
+3. ela revela pontos em que a frase parecia boa no papel, mas exigiu traducao ou improviso em casa real;
+4. sinais fortes de desalinhamento:
+   a. a mae precisou reler;
+   b. a mae precisou traduzir;
+   c. a mae improvisou pergunta melhor;
+   d. a mae nao soube se era para falar, mostrar ou fazer;
+   e. a crianca nao conseguiu responder sem mediacao interpretativa extra;
+5. quando isso acontecer, a correcao mais fiel costuma ser redistribuir melhor funcao, gesto e atmosfera.
+
+## Regra de uso inteligente do taste da mae
+1. nao copiar automaticamente a formulacao improvisada pela mae;
+2. extrair o principio funcional por tras do improviso;
+3. reescrever mantendo calor, Reino e usabilidade;
+4. usar feedback positivo da mae como trava contra overcorrection;
+5. sempre perguntar:
+   a. o que ela tensionou?
+   b. o que ela preservou?
+   c. o que isso ensina sobre a funcao do bloco?
+
 ## Reino no centro
 1. `TASTE` protege o fio de ouro do Reino;
 2. ele evita que narrativa e instrucao virem linguagens concorrentes;
@@ -110,8 +132,16 @@ Quando houver duas opcoes boas, pergunte:
 3. qual delas a mae usaria sem vergonha nem cansaco?
 4. qual delas a crianca ouviria como parte do mesmo Reino?
 5. qual delas eu gostaria de manter daqui a dois anos?
+6. qual delas exigiria menos traducao mental de uma mae real?
 
 Se a resposta nao for clara, ainda nao chegou na frase certa.
+
+## Perguntas de controle quando houver feedback real
+1. a mae real confirmou que a frase sai da boca com naturalidade?
+2. a mae real precisou substituir a pergunta por outra mais concreta?
+3. a beleza da frase ajudou a conduzir ou atrapalhou a conduzir?
+4. o bloco continua recognoscivel como Matematica Viva depois do ajuste?
+5. estamos refinando a obra ou apenas obedecendo ao ultimo comentario ouvido?
 
 ## PASS
 1. a frase parece simples, mas nao simploria;

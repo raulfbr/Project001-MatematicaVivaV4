@@ -1,3 +1,10 @@
+> Leitura recomendada para retomada:
+> 1. `README.md` = visao geral do projeto.
+> 2. `AI_CONTEXT.md` = contexto vivo, estado atual e proximo passo seguro.
+> 3. `Revisao/` = execucao operacional da fase ativa.
+>
+> Se voce abriu o repositorio agora, leia primeiro `AI_CONTEXT.md` logo apos este README.
+
 <div align="center">
 
 # 🦁 Matemática Viva
@@ -264,13 +271,24 @@ Se você chegou até aqui, **você já é um de nós**.
 
 ---
 
+## Nota de Governanca
+
+As secoes abaixo preservam snapshots historicos e nao devem ser lidas como estado operacional mais atual.
+
+Para retomar corretamente hoje:
+
+1. use `AI_CONTEXT.md` como contexto vivo;
+2. use `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md` como quadro operacional atual;
+3. use `Revisao/00_SISTEMA_REVISAO_CANONICO/023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`, `003` e `004` como execucao canonica.
+
 ## Fase Atual (Revisão Sementes)
 
 Fluxo oficial para retomar sem perder contexto:
 
 1. Leia este `README.md` (visão geral do projeto).
-2. Em seguida, vá para [`Revisao/README.md`](Revisao/README.md) para entrar na fase de revisão.
-3. Execute a revisão usando a ordem e os checklists definidos na pasta `Revisao`.
+2. Em seguida, leia [`AI_CONTEXT.md`](AI_CONTEXT.md) para entender o estado atual real do projeto.
+3. Depois vá para [`Revisao/README.md`](Revisao/README.md) para entrar na fase de revisão.
+4. Execute a revisão usando a ordem e os checklists definidos na pasta `Revisao`.
 
 ### Regra Crítica de Encoding (obrigatória)
 
@@ -282,9 +300,9 @@ Para não quebrar texto de lições HTML (ex.: `Coração` virando `CoraÃ§Ã£
 `rg -n "Ã|Â|â|\\b\\w+\\?\\w+\\b" site/sementes/MV-S-00[1-3]*.html`
 4. Se aparecer padrão quebrado, corrigir antes de seguir.
 
-## Onde Paramos (2026-02-28)
+## Onde Paramos (2026-02-28) - Snapshot Historico
 
-Resumo rapido da decisao atual para retomar sem perda de contexto:
+Resumo rapido de uma decisao historica. Para o estado atual, consulte `AI_CONTEXT.md` e `005_STATUS_REVISAO_SEMENTES.md`.
 
 1. Projeto pivoteado para ciclo tecnico Matematica Viva V5.
 2. PRD canonicamente unificado em um documento unico (`v1.1.0`).
@@ -322,9 +340,9 @@ Status atual:
 3. o proximo foco seguro e colher validacao humana e registrar o uso real antes de liberar `MV-S-003`.
 4. `apps/web` e a trilha V5 seguem como frente tecnica paralela, nao como condutora da sessao atual.
 
-## Anotacao Para Amanha
+## Anotacao Para Amanha - Snapshot Historico
 
-Para retomar sem perder contexto:
+Para entender uma retomada historica daquela sessao:
 
 1. Leia este `README.md` ate esta secao final.
 2. Entre em [`Revisao/000_COMECAR_AQUI.md`](Revisao/000_COMECAR_AQUI.md).

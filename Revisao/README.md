@@ -2,18 +2,33 @@
 
 Este arquivo e o ponto de entrada da fase de revisao.
 
+## Leitura correta desta fase
+
+Antes de usar este README como contexto vivo principal:
+
+1. leia `README.md`;
+2. leia `AI_CONTEXT.md`;
+3. depois volte para este arquivo.
+
+Regra:
+
+1. `README.md` = macro do projeto;
+2. `AI_CONTEXT.md` = estado vivo e leitura correta do momento;
+3. `Revisao/README.md` = mapa da fase de revisao;
+4. `023`, `003`, `004` e `005` = governanca operacional.
+
 ## Se voce fechar tudo agora e voltar na proxima sessao
 Leia nesta ordem:
 1. `README.md` da raiz do projeto
-2. `Revisao/000_COMECAR_AQUI.md`
-3. `Revisao/00_SISTEMA_REVISAO_CANONICO/015_ESTADO_REAL_DO_PROJETO_E_DIRECAO_HTML_FIRST.md`
-4. `Revisao/001_CONTEXTO_DETALHADO_PROXIMA_SESSAO.md`
-5. `Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md`
-6. `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`
-7. `Revisao/00_SISTEMA_REVISAO_CANONICO/016_TASK_ROBUSTA_TESTE_DIRIGIDO_L001_TOPICO_POR_TOPICO.md`
-8. `Revisao/00_SISTEMA_REVISAO_CANONICO/017_TASK_ROBUSTA_APLICACAO_MODULAR_L001.md`
+2. `AI_CONTEXT.md`
+3. `Revisao/000_COMECAR_AQUI.md`
+4. `Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md`
+5. `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`
+6. `Revisao/00_SISTEMA_REVISAO_CANONICO/023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`
+7. `Revisao/00_SISTEMA_REVISAO_CANONICO/003_PROTOCOLO_REVISAO_POR_LICAO.md`
+8. `Revisao/00_SISTEMA_REVISAO_CANONICO/004_RUBRICA_PREMIUM_REVISAO.md`
 9. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/008_NORTH_STAR_OPERACIONAL.md`
-10. `Revisao/00_SISTEMA_REVISAO_CANONICO/018_TASK_ROBUSTA_REVISAO_DIRIGIDA_L002.md`
+10. caso relevante em `Revisao/FEEDBACK_MAES_REAIS/`, se houver friccao semelhante
 
 ## Onde estao todas as diretrizes
 1. `Revisao/00_SISTEMA_REVISAO_CANONICO/002_ESQUELETO_GERAL_LICAO_SEMENTES.md` = contrato macro da licao.
@@ -23,6 +38,21 @@ Leia nesta ordem:
 5. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/` = regras que atravessam varias secoes.
 6. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/008_NORTH_STAR_OPERACIONAL.md` = gate de espirito da obra.
 7. `Revisao/00_SISTEMA_REVISAO_CANONICO/015_ESTADO_REAL_DO_PROJETO_E_DIRECAO_HTML_FIRST.md` = leitura principal atual do estado real do projeto.
+
+## O que faz a revisao ser premium de verdade
+1. `North Star` governa o espirito da obra;
+2. `North Star Operacional` traduz esse espirito em gate real de revisao;
+3. `Rubrica Premium` define o fechamento minimo por eixos;
+4. `TASTE` separa licao correta de licao realmente Matematica Viva;
+5. feedback real de maes entra como calibragem qualificada de usabilidade, tom e `TASTE`;
+6. quando houver caso relevante, consultar `Revisao/FEEDBACK_MAES_REAIS/` antes de patchar ou fechar premium;
+7. experts e personas maternas nao sao decoracao; sao lentes de julgamento da obra em uso real.
+
+## Onde mora o aprendizado com maes reais
+1. `Revisao/FEEDBACK_MAES_REAIS/000_README.md` = regra de uso da trilha
+2. `Revisao/FEEDBACK_MAES_REAIS/INDEX_PROMOCAO_CANONICA.md` = maturidade de promocao dos aprendizados
+3. `Revisao/FEEDBACK_MAES_REAIS/002_LISTA_VIVA_CANDIDATOS_NORTH_STAR.md` = heuristicas fortes ainda nao canonizadas
+4. regra critica: feedback bruto nao sobe direto para o `North Star`; ele passa por caso, sintese e promocao seletiva
 
 ## Navegacao da pasta
 1. `Revisao/000_COMECAR_AQUI.md` = entrada curta para retomada.
@@ -64,16 +94,18 @@ Leia nesta ordem:
 ## Estado atual da fase
 1. a frente ativa continua sendo `HTML-first`;
 2. o protocolo central agora esta consolidado em `023` e auditado em `028`;
-3. `Manual do Portador`, `MV-S-001` e `MV-S-002` passaram por rodada profunda e estao prontos para validacao humana da Familia Rodrigues;
-4. `MV-S-003` ainda nao entra em lote; primeiro precisamos colher e registrar o uso humano real do manual e das licoes `001-002`;
-5. o repositorio ja possui trilhas de orquestracao experimental, mas a decisao atual continua sendo usar papeis e lentes leves, nao multi-agent pesado.
+3. `Manual do Portador`, `MV-S-001` e `MV-S-002` seguem como `PASS PREMIUM` por IA e continuam relevantes como baseline qualitativo;
+4. o quadro operacional mais recente em `005_STATUS_REVISAO_SEMENTES.md` ja moveu a operacao para o lote `MV-S-003` ate `MV-S-010`, com validacao humana posterior;
+5. feedback real de maes, `TASTE`, North Star e conselho `experts` continuam sendo lentes centrais desta fase;
+6. o repositorio ja possui trilhas de orquestracao experimental, mas a decisao atual continua sendo usar papeis e lentes leves, nao multi-agent pesado.
 
 ## Regra desta fase
 1. nao usar `MV-S-001` isoladamente como baseline total; o baseline operacional atual mora no protocolo central e nas auditorias `025` e `028`, com `L001` e `L002` lidas em conjunto;
 2. tratar feedback real de familias como dado de produto, nao como ordem automatica de mudanca;
 3. usar validacao humana de familias pioneiras, especialmente da Familia Rodrigues, como calibracao real de `TASTE` e usabilidade;
-4. so depois do selo humano decidir a entrada de `MV-S-003` e das proximas licoes;
-5. manter a pasta `Revisao` como governanca viva da fase, sem voltar a espalhar regra procedural em tasks historicas.
+4. seguir o lote vigente conforme `005_STATUS_REVISAO_SEMENTES.md`, sem voltar a snapshots antigos como se fossem estado atual;
+5. quando houver friccao semelhante, consultar `Revisao/FEEDBACK_MAES_REAIS/` antes de patchar;
+6. manter a pasta `Revisao` como governanca viva da fase, sem voltar a espalhar regra procedural em tasks historicas.
 
 ## Regra critica de encoding
 1. salvar sempre em UTF-8;

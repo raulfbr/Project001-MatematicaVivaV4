@@ -1,7 +1,7 @@
 # REVISAO TOPICO A TOPICO - MV-S-008
 Data: 2026-03-16
 Licao: `MV-S-008_O_PAR_PERFEITO.html`
-Tipo: reauditoria profunda com patch tecnico pequeno
+Tipo: reauditoria profunda com patch pequeno de integridade, acabamento e usabilidade
 Status final: `PASS PREMIUM`
 
 ---
@@ -50,8 +50,8 @@ Heuristicas fortes usadas:
 Leitura critica:
 1. a `L008` segue forte no editorial e na pedagogia;
 2. a migracao estrutural feita nas rodadas anteriores continua bem sustentada;
-3. nesta sessao, o principal finding real foi tecnico: os links para a `L009` estavam quebrados por encoding em tres pontos;
-4. por isso, o melhor curso foi preservar a licao e corrigir apenas a integridade de navegacao.
+3. nesta sessao, os findings reais ficaram pequenos, mas relevantes para uso: os links para a `L009` estavam quebrados por encoding em tres pontos, havia um vazamento residual de backticks em `Sementes para o Dia` e algumas perguntas ainda podiam pousar de forma mais concreta na mae real;
+4. por isso, o melhor curso foi preservar a licao e corrigir integridade de navegacao, acabamento de UI e respondibilidade fina.
 
 ---
 
@@ -84,7 +84,7 @@ Observacao: a despedida pousa a licao com serenidade e boa hierarquia.
 Observacao: teaser correto para `L009`; recebeu patch tecnico para restaurar o link.
 
 10. `010_SEMENTES_PARA_O_DIA`: `PASS PREMIUM`
-Observacao: continuidades leves, caseiras e sem peso.
+Observacao: continuidades leves, caseiras e agora ainda mais ancoradas em gesto simples da casa real.
 
 11. `011_FORMACAO_DO_PORTADOR`: `PASS PREMIUM`
 Observacao: secao formativa forte, coerente com a licao e com o contrato atual.
@@ -123,12 +123,19 @@ Ajustes feitos:
 1. corrigi o `href` quebrado da navegacao superior para `L009`;
 2. corrigi o `href` quebrado de `Conexao da Jornada` para `L009`;
 3. corrigi o `href` quebrado da navegacao inferior para `L009`;
-4. normalizei os tres links para percent-encoding tecnico estavel do nome com acento.
+4. normalizei os tres links para percent-encoding tecnico estavel do nome com acento;
+5. removi um backtick residual visivel em `Sementes para o Dia`;
+6. tornei a `Dica do Coracao` mais concreta para a mae real;
+7. substitui uma pergunta do `Concreto` por formulacao com menor traducao mental;
+8. refinei perguntas de `Narramos Juntos` para nascerem melhor do gesto vivido;
+9. troquei a `Reflexao opcional` de `Sementes para o Dia` por um gesto simples e praticavel da casa real.
 
 Justificativa:
 1. a licao estava forte e nao pedia reescrita editorial;
 2. havia falha objetiva de navegacao em tres pontos centrais da experiencia;
-3. o patch necessario era tecnico, pequeno e suficiente para manter a pagina integra.
+3. havia um ruido pequeno de acabamento vazando para a interface publicada;
+4. havia tambem espaco para reduzir traducao mental da mae em perguntas e extensoes;
+5. o patch necessario continuou pequeno e suficiente para manter a pagina integra e mais usavel.
 
 ---
 
@@ -140,7 +147,9 @@ Razoes:
 2. a mae recebe orientacao clara para observar, aproximar e repousar sem correria;
 3. a imagem do ninho permanece coerente do inicio ao fim;
 4. a integridade tecnica da navegacao foi restaurada nesta sessao;
-5. a pagina permanece premium sem precisar de novo refinamento narrativo.
+5. a pagina nao vaza mais sintaxe de edicao em texto visivel;
+6. as perguntas e extensoes agora pousam com menos traducao para a mae real;
+7. a pagina permanece premium sem precisar de novo refinamento narrativo amplo.
 
 ---
 

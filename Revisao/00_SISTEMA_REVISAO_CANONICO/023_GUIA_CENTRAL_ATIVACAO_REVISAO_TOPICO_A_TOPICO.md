@@ -73,17 +73,19 @@ Abrir sempre nesta ordem:
 12. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/001_BASE_E_HERO.md` ate `012_NAVEGACAO_INFERIOR.md`, na ordem oficial
 13. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/000_README.md`
 14. pacote minimo transversal: `002`, `003`, `005`, `006`, `008`
-15. licao atual
-16. licao anterior
-17. licao seguinte
-18. task especifica da licao, se existir
-19. caso e sintese de `Revisao/FEEDBACK_MAES_REAIS/`, se houver feedback real relevante
-20. `Revisao/00_SISTEMA_REVISAO_CANONICO/010_TEMPLATE_SESSAO_DIARIA_REVISAO.md`
+15. quando houver criacao de licao, reescrita profunda, imagem dominante nebulosa ou duvida sobre ancora concreta do conceito, abrir tambem `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`
+16. licao atual
+17. licao anterior
+18. licao seguinte
+19. task especifica da licao, se existir
+20. caso e sintese de `Revisao/FEEDBACK_MAES_REAIS/`, se houver feedback real relevante
+21. `Revisao/00_SISTEMA_REVISAO_CANONICO/010_TEMPLATE_SESSAO_DIARIA_REVISAO.md`
 
 Regra:
 1. transversais adicionais entram por necessidade;
-2. os 12 topicos sempre entram;
-3. nenhuma licao deve ser auditada isoladamente do seu antes e depois.
+2. `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md` e a transversal indicada quando a dificuldade principal for encarnar melhor o conceito sem perder rigor;
+3. os 12 topicos sempre entram;
+4. nenhuma licao deve ser auditada isoladamente do seu antes e depois.
 
 ---
 
@@ -114,11 +116,13 @@ Registrar no minimo:
 8. `Risco de fronteira`: onde a licao pode confundir topicos adjacentes.
 9. `Risco familia real`: onde uma casa cansada, com mais de uma crianca, pode travar.
 10. `Hospitalidade multi-crianca`: como um irmao menor pode entrar sem dissolver o foco do herdeiro de `5-6 anos`.
+11. `Ancora concreta`: onde o conceito pousa melhor na criacao, na casa, no corpo, no ritmo, no caminho ou em objetos cotidianos.
 
 Regra:
 1. nao patchar HTML antes de esse cerne estar claro;
 2. se a imagem dominante ou o fruto do dia estiverem nebulosos, diagnosticar antes de editar;
-3. a matriz `001-012` deve ser lida a partir deste cerne, nao contra ele.
+3. se a ancora concreta tambem estiver nebulosa, abrir `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md` antes de patchar;
+4. a matriz `001-012` deve ser lida a partir deste cerne, nao contra ele.
 
 ---
 

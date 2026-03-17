@@ -26,11 +26,13 @@ Abrir tambem, quando fizer sentido:
 2. `004_GUARDIOES_CARDS_E_REVEAL.md`
 3. `007_EXCECAO_L000_PORTAL.md`
 4. `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md` = so para desempate fino, frase-assinatura e fechamento premium
-5. `Revisao/FEEDBACK_MAES_REAIS/` = quando houver feedback real relevante da licao ou da mesma friccao
+5. `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md` = para criacao de licao, reescrita profunda ou decisao de ancora concreta, imagem dominante e revelacao do conceito
+6. `Revisao/FEEDBACK_MAES_REAIS/` = quando houver feedback real relevante da licao ou da mesma friccao
 
 ## Regra de autoridade
 1. este diretorio governa regras que atravessam varios topicos;
 2. `008_NORTH_STAR_OPERACIONAL.md` funciona como gate de espirito da obra desde o diagnostico, nao apenas no fechamento;
 3. `006_ENCODING_E_SANITY_CHECK.md` nao e opcional depois de patch em HTML;
-4. esta pasta nao deve repetir a ativacao passo a passo, porque isso agora mora no `023`.
-5. feedback real de mae pode calibrar o uso dessas transversais, mas nao substitui sua autoridade.
+4. `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md` nao substitui `008`, `009`, o curriculo nem os `12 topicos`; ela ajuda a decidir como o conceito ganha corpo e maravilhamento sem perder rigor;
+5. esta pasta nao deve repetir a ativacao passo a passo, porque isso agora mora no `023`.
+6. feedback real de mae pode calibrar o uso dessas transversais, mas nao substitui sua autoridade.

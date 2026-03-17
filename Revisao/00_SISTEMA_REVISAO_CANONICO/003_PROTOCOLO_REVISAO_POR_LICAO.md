@@ -54,6 +54,7 @@ Antes de editar qualquer HTML:
 9. mapear as fronteiras criticas que precisarao ser auditadas depois;
 10. confirmar se ha task robusta especifica da licao em andamento.
 11. confirmar se existe caso relevante em `Revisao/FEEDBACK_MAES_REAIS/` para esta licao ou friccao semelhante.
+12. se a licao estiver abstrata, distante ou com imagem dominante frouxa, abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md` antes do patch narrativo.
 
 Checklist:
 1. qual e a promessa da licao?
@@ -65,9 +66,11 @@ Checklist:
 7. qual e o fruto do dia?
 8. onde a licao pode confundir fronteiras entre topicos adjacentes?
 9. como um irmao menor pode participar sem dissolver o foco de `5-6 anos`?
+10. qual e a ancora concreta mais fiel para esta verdade matematica?
 
 Se alguma dessas respostas estiver nebulosa:
 1. parar o patch e diagnosticar antes.
+2. quando a nebulosidade for de imagem dominante, ancora concreta ou maravilhamento encarnado, consultar a `TX10`.
 
 ---
 

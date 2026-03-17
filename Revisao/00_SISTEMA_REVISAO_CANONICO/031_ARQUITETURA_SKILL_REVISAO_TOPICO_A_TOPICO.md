@@ -171,11 +171,13 @@ Antes de qualquer patch, a skill deve seguir esta ordem:
 11. abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/005_CRITERIOS_PEDAGOGICOS_CM_CPA_TGTB.md`;
 12. abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/006_ENCODING_E_SANITY_CHECK.md`;
 13. abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/008_NORTH_STAR_OPERACIONAL.md`;
-14. abrir os `experts` obrigatorios definidos para a passada.
+14. abrir `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md` quando houver criacao, reescrita profunda, imagem dominante frouxa ou duvida de ancora concreta;
+15. abrir os `experts` obrigatorios definidos para a passada.
 
 Regra:
 1. a skill nao pode tocar o HTML antes de montar o cerne macro da licao.
 2. a skill nao pode fechar a licao como premium sem aplicar o `North Star` como gate final.
+3. se o principal problema da licao for abstracao, distancia ou ausencia de revelacao concreta, a skill deve consultar a `TX10` antes do patch narrativo.
 
 ---
 

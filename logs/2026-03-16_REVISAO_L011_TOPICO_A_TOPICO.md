@@ -1,7 +1,7 @@
 # REVISAO TOPICO A TOPICO - L011
 Data: 2026-03-16
 Licao: `MV-S-011_A_PLENITUDE_DAS_MÃOS.html`
-Status da sessao: reauditoria de fechamento concluida
+Status da sessao: reauditoria de fechamento com refino pequeno concluida
 Escopo congelado: revisar apenas a `L011`; `L010` e `L012` entram apenas como fronteiras curriculares
 Validacao humana da familia: pendente
 
@@ -23,16 +23,20 @@ Validacao humana da familia: pendente
 ---
 
 ## 2) Fontes e lentes ativadas
-1. HTML da licao `L011`
-2. Licoes de fronteira `L010` e `L012`
-3. Curriculo mestre `011_A_PLENITUDE_DAS_MAOS.yaml`
-4. `023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`
-5. `003_PROTOCOLO_REVISAO_POR_LICAO.md`
-6. `004_RUBRICA_PREMIUM_REVISAO.md`
-7. `008_NORTH_STAR_OPERACIONAL.md`
-8. `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`
-9. Revisoes anteriores de `2026-03-10` e `2026-03-12`
-10. Validacao visual de `2026-03-12`
+1. `AI_CONTEXT.md`
+2. `Revisao/README.md`
+3. HTML da licao `L011`
+4. Licoes de fronteira `L010` e `L012`
+5. Curriculo mestre `011_A_PLENITUDE_DAS_MAOS.yaml`
+6. `023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`
+7. `003_PROTOCOLO_REVISAO_POR_LICAO.md`
+8. `004_RUBRICA_PREMIUM_REVISAO.md`
+9. `008_NORTH_STAR_OPERACIONAL.md`
+10. `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`
+11. `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`
+12. `Revisao/FEEDBACK_MAES_REAIS/SINTESIS/2026-03-13_TASTE_DA_MAE_REAL_COMO_CALIBRAGEM_OPERACIONAL.md`
+13. Revisoes anteriores de `2026-03-10` e `2026-03-12`
+14. Validacao visual de `2026-03-12`
 
 ---
 
@@ -42,7 +46,7 @@ Validacao humana da familia: pendente
 3. A fronteira `L011 -> L012` continua clara: a plenitude corporal prepara naturalmente a ideia do feixe.
 4. O `North Star` permanece preservado: o adulto e aliviado, a crianca e chamada para admiracao concreta, e o marco nao vira pressao.
 5. `TASTE` permanece alinhado: Celeste segue leve, viva e recognoscivel, e a imagem das maos completas sustenta a licao do comeco ao fim.
-6. Nao apareceu finding objetivo que justificasse patch no HTML.
+6. Os findings reais desta rodada foram pequenos, mas objetivos: ainda havia vazamento de backticks na UI em varios textos visiveis e o fechamento opcional podia pousar melhor no gesto concreto da casa.
 
 ---
 
@@ -78,34 +82,46 @@ O opcional domestico nao invade a formacao do adulto.
 
 ---
 
-## 6) Sanity checks
-1. Leitura explicita em UTF-8 confirmou que o link anterior aponta para `MV-S-010_A_FILA_DA_PROVIDÊNCIA.html`.
-2. Leitura explicita em UTF-8 confirmou que o link seguinte aponta para `MV-S-012_O_SEGREDO_DO_FEIXE.html`.
-3. `Mostre este card a crianca`: presente em entidades no Ritual e no reveal da Jornada.
-4. `Respire fundo.`: presente no Ritual.
-5. `Respire fundo. A casa volta devagar.`: presente no fechamento.
-6. `onclick=`: ausente
-7. `journey-connection-card`: ausente
-8. `lesson-footer-nav`: ausente
-9. `git diff` do HTML nesta rodada: vazio
+## 6) Patch aplicado
+1. removi backticks literais que ainda vazavam para a UI em blocos visiveis da preparacao, do concreto, da conexao, de sementes e da formacao.
+2. normalizei a apresentacao dos numerais com `code` onde isso ajuda a leitura sem parecer sintaxe de edicao.
+3. refinei a terceira pergunta do coracao para ela nascer melhor do gesto vivido.
+4. refinei a `Reflexao opcional` de `Sementes para o Dia` para um gesto mais domestico e respondível.
+5. removi a marcacao visual de codigo no fechamento de `Sementes para o Dia`.
+
+Leitura editorial:
+1. nao houve necessidade de patch estrutural nem reescrita ampla.
+2. a melhor decisao desta rodada foi preservar a licao e refinar apenas o que ainda prejudicava acabamento e usabilidade fina.
 
 ---
 
-## 7) Juizes consultados
+## 7) Sanity checks
+1. Leitura explicita confirmou que o link anterior aponta para `MV-S-010_A_FILA_DA_PROVIDÊNCIA.html`.
+2. Leitura explicita confirmou que o link seguinte aponta para `MV-S-012_O_SEGREDO_DO_FEIXE.html`.
+3. `onclick=`: ausente
+4. `journey-connection-card`: ausente
+5. `lesson-footer-nav`: ausente
+6. nao ha vazamento de backticks literais na UI.
+
+---
+
+## 8) Juizes consultados
 1. `North Star Operacional`: aprova porque o `10` aparece como celebracao concreta, nao pressao de desempenho.
 2. `TASTE`: aprova porque a imagem das maos completas continua viva, recognoscivel e respiravel.
 3. `Susan Macaulay + Mae Ansiosa`: aprovam a clareza do gesto e a leveza da conducao.
 4. `Charlotte Mason + Jerome Bruner`: aprovam a prioridade do corpo e da experiencia antes de qualquer abstracao.
+5. `TX10 + feedback de mae real`: aprovam o refino do fechamento porque ele agora pousa melhor no gesto concreto das maos e da rotina da casa.
 
 ---
 
-## 8) Veredito sincero
+## 9) Veredito sincero
 1. `L011` permanece em `PASS PREMIUM`.
-2. Esta rodada foi de confirmacao e preservacao, nao de patch.
-3. A melhor decisao aqui foi nao mexer numa licao que ja esta viva, clara e fiel ao projeto.
+2. Esta rodada foi de confirmacao com acabamento e usabilidade fina, nao de reconstrucao.
+3. A melhor decisao aqui foi nao mexer na arquitetura da licao e corrigir apenas o que ainda vazava para a UI ou exigia traducao mental extra.
 
 ---
 
-## 9) Risco residual
-1. validacao humana com familia real continua sendo o proximo gate fora da IA;
-2. os logs desta data ainda podem exibir ruido de encoding no terminal, mesmo quando o HTML esta correto.
+## 10) Risco residual
+1. validacao humana com familia real continua sendo o proximo gate fora da IA.
+2. o YAML desta licao segue em estado antigo de rascunho e continua menos confiavel que o HTML publicado como retrato do produto final.
+3. os logs desta data ainda podem exibir ruido de encoding no terminal, mesmo quando o HTML esta correto.

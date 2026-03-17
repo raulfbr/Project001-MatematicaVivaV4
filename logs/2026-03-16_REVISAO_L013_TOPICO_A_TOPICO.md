@@ -1,7 +1,7 @@
 # REVISAO TOPICO A TOPICO - L013
 Data: 2026-03-16
 Licao: `MV-S-013_O_RIO_QUE_SE_UNE.html`
-Status da sessao: reauditoria de fechamento concluida
+Status da sessao: reauditoria de fechamento com refino pequeno concluida
 Escopo congelado: revisar apenas a `L013`; `L012` e `L014` entram apenas como fronteiras curriculares
 Validacao humana da familia: pendente
 
@@ -23,34 +23,34 @@ Validacao humana da familia: pendente
 ---
 
 ## 2) Fontes e lentes ativadas
-1. HTML da licao `L013`
-2. Licoes de fronteira `L012` e `L014`
-3. Curriculo mestre `013_O_RIO_QUE_SE_UNE.yaml`
-4. `023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`
-5. `003_PROTOCOLO_REVISAO_POR_LICAO.md`
-6. `004_RUBRICA_PREMIUM_REVISAO.md`
-7. `008_NORTH_STAR_OPERACIONAL.md`
-8. `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`
-9. Revisao anterior de `2026-03-10`
+1. `AI_CONTEXT.md`
+2. `Revisao/README.md`
+3. HTML da licao `L013`
+4. Licoes de fronteira `L012` e `L014`
+5. Curriculo mestre `013_O_RIO_QUE_SE_UNE.yaml`
+6. `023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`
+7. `003_PROTOCOLO_REVISAO_POR_LICAO.md`
+8. `004_RUBRICA_PREMIUM_REVISAO.md`
+9. `008_NORTH_STAR_OPERACIONAL.md`
+10. `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`
+11. `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`
+12. `Revisao/FEEDBACK_MAES_REAIS/SINTESIS/2026-03-13_TASTE_DA_MAE_REAL_COMO_CALIBRAGEM_OPERACIONAL.md`
+13. Revisao anterior de `2026-03-10`
 
 ---
 
 ## 3) Diagnostico desta rodada
-1. O coracao pedagógico da licao ja estava forte: concreto primeiro, simbolo depois.
+1. O coracao pedagogico da licao ja estava forte: concreto primeiro, simbolo depois.
 2. A fronteira `L012 -> L013` segue boa: sai-se do feixe para a linguagem que conta uniao, sem abstração precoce.
 3. A fronteira `L013 -> L014` continua honesta: o `+` prepara o celeiro que cresce sem invadir a proxima licao.
-4. O `North Star` segue preservado no tema e na pedagogia.
-5. O problema desta rodada era de contrato de interface e de gramatica ritual: ainda havia marcadores legados no HTML visivel.
+4. `North Star`, `TASTE` e `TX10` seguem preservados: a licao nasce de gesto concreto, imagem dominante recognoscivel e simbolo depois da experiencia.
+5. O finding objetivo real desta rodada foi pequeno, mas pertinente: ainda havia vazamento de sintaxe de edicao em `Sementes para o Dia`.
 
 ---
 
 ## 4) Findings objetivos encontrados
-1. `Ritual de Entrada` ainda usava o label `Lugar revelado`, em vez de instruir claramente a mae.
-2. Ainda havia `Sussurro do Portal` em licao comum, o que contraria a gramatica ritual atual.
-3. A primeira cena da Jornada ainda estava sem reveal moderno do guardiao e com naming de cena mais legado.
-4. `Conexao da Jornada` ainda usava `journey-connection-card`.
-5. A navegacao inferior ainda usava `lesson-footer-nav` e `lesson-footer-link`.
-6. O fechamento ainda nao pousava na formula canonica `Respire fundo. A casa volta devagar.`.
+1. O HTML ainda publicava backticks literais em `Sementes para o Dia`, reduzindo o acabamento premium da UI.
+2. O log da rodada estava subdocumentado para a regua atual: faltavam `AI_CONTEXT`, `Revisao/README`, `TX10` e feedback de mae real como lentes explicitamente ativadas.
 
 ---
 
@@ -87,51 +87,32 @@ O opcional domestico nao invade a formacao do adulto.
 ---
 
 ## 7) Patch aplicado
-1. `Ritual de Entrada`
-   ganhou `Card do lugar` claro para a mae e entrou na formula canonica `Respire fundo.`.
-2. Label do card do local
-   `Lugar revelado` -> `Mostre este card a crianca`.
-3. `Sussurro do Portal`
-   removido por contrariar a gramatica atual de licao comum.
-4. Reveal da Jornada
-   a primeira cena ganhou `journey-scene--reveal`, card visivel do Melquior e naming mais vivo.
-5. Cena 2 e Cena 3
-   titulos ajustados para formulacoes menos legadas e mais narrativas.
-6. `Ritual de Fechamento`
-   passou a pousar em `Respire fundo. A casa volta devagar.`
-7. `Conexao da Jornada`
-   saiu de `journey-connection-card` e foi convertida para `instruction-box` + `connection-link-card`.
-8. `Navegacao inferior`
-   saiu de `lesson-footer-nav` e foi alinhada a `lesson-nav`.
+1. Remocao do backtick literal em `Sementes para o Dia`, sem reescrever o bloco.
+2. Atualizacao deste log para refletir a rodada real e as lentes efetivamente usadas.
 
 ---
 
 ## 8) Sanity checks
-1. `Lugar revelado`: ausente
-2. `Sussurro do Portal`: ausente
-3. `ritual-whisper-box`: ausente
-4. `journey-connection-card`: ausente
-5. `lesson-footer-nav`: ausente
-6. `lesson-footer-link`: ausente
-7. `Mostre este card a crianca`: presente em entidades no Ritual e no reveal da Jornada
-8. `Respire fundo.`: presente no Ritual
-9. `A casa volta devagar`: presente no fechamento
-10. Leitura explicita em UTF-8 confirmou links corretos para `L012` e `L014`
+1. Busca por backtick literal no HTML apos o patch: vazia.
+2. `Mostre este card a crianca`: presente em entidades no Ritual e no reveal da Jornada.
+3. `Respire fundo.`: presente no Ritual.
+4. `A casa volta devagar`: presente no fechamento.
+5. Leitura explicita em UTF-8 confirmou links corretos para `L012` e `L014`.
 
 ---
 
 ## 9) Juizes consultados
-1. `North Star Operacional`: aprova porque a mae agora recebe instrucoes mais claras sem perda de nobreza.
-2. `TASTE`: aprova porque a imagem dos rios continua viva, mas com menos traducao mental.
-3. `Susan Macaulay + Mae Ansiosa`: aprovam a troca de labels e a eliminacao de componentes legados que sobrecarregavam a leitura.
+1. `North Star Operacional`: aprova porque a mae continua sendo conduzida com clareza sem perder nobreza.
+2. `TASTE`: aprova porque a imagem dos rios continua viva e recognoscivel.
+3. `TX10 + feedback de mae real`: aprovam a preservacao da ordem `gesto -> simbolo` e a limpeza de acabamento que evita traducao desnecessaria.
 4. `Charlotte Mason + Jerome Bruner`: aprovam a preservacao da ordem correta `acao concreta -> simbolo`.
 
 ---
 
 ## 10) Veredito sincero
 1. `L013` fecha esta rodada em `PASS PREMIUM`.
-2. Aqui houve patch real, mas disciplinado: contrato visual e ritual foram alinhados sem reescrever o coracao da licao.
-3. O ganho principal foi reduzir traducao mental da mae e devolver a pagina ao canone atual.
+2. Aqui houve patch pequeno e disciplinado: limpeza de acabamento e alinhamento honesto do registro.
+3. O ganho principal foi manter a pagina premium sem deixar sintaxe de edicao vazar para a experiencia publicada.
 
 ---
 

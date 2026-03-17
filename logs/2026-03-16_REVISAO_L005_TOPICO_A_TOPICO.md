@@ -1,7 +1,7 @@
 # REVISAO TOPICO A TOPICO - MV-S-005
 Data: 2026-03-16
 Licao: `MV-S-005_O_ESCONDERIJO_DA_GLÓRIA.html`
-Tipo: revisao profunda com patch premium pequeno
+Tipo: revisao profunda com patch premium pequeno e encarnado
 Status final: `PASS PREMIUM`
 
 ---
@@ -16,11 +16,15 @@ Fontes principais consultadas:
 6. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/008_NORTH_STAR_OPERACIONAL.md`
 7. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`
 8. `Revisao/00_SISTEMA_REVISAO_CANONICO/040_TASK_ROBUSTA_LENTE_PREMIUM_TASTE_L005_O_ESCONDERIJO_DA_GLORIA.md`
-9. `Revisao/FEEDBACK_MAES_REAIS/SINTESIS/2026-03-13_TASTE_DA_MAE_REAL_COMO_CALIBRAGEM_OPERACIONAL.md`
-10. `curriculo/_SISTEMA/CURRICULOS_MESTRE/000_K_SEMENTES_CURRICULO_MESTRE.md`
-11. `curriculo/01_SEMENTESV6/005_O_ESCONDERIJO_DA_GLORIA.yaml`
-12. `site/sementes/MV-S-004_A_ORDEM_DO_DIA.html`
-13. `site/sementes/MV-S-006_O_DESENHO_DO_REI.html`
+9. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`
+10. `Revisao/FEEDBACK_MAES_REAIS/SINTESIS/2026-03-13_TASTE_DA_MAE_REAL_COMO_CALIBRAGEM_OPERACIONAL.md`
+11. `curriculo/_SISTEMA/CURRICULOS_MESTRE/000_K_SEMENTES_CURRICULO_MESTRE.md`
+12. `curriculo/01_SEMENTESV6/005_O_ESCONDERIJO_DA_GLORIA.yaml`
+13. `site/sementes/MV-S-004_A_ORDEM_DO_DIA.html`
+14. `site/sementes/MV-S-006_O_DESENHO_DO_REI.html`
+
+TX10 / Encantamento Encarnado: `ACIONADA`
+Feedback real de maes: `FRICCAO SEMELHANTE CONSULTADA`
 
 ---
 
@@ -30,7 +34,7 @@ Fontes principais consultadas:
 3. Lugar: Clareira das Perguntas.
 4. Conceito vivo: `em cima`, `embaixo`, `atrás`, `na frente`.
 5. Papel no curriculo: introduzir relacao espacial por gesto e leitura do `onde`, antes de qualquer formalizacao mais abstrata.
-6. Imagem dominante: um brilho pequeno que escolhe lugares diferentes e convida o olhar a ler o `onde`.
+6. Imagem dominante: um brilho pequeno que repousa em lugares diferentes e faz o olhar procurar o `onde`.
 7. Fruto do dia: a crianca procura, coloca, mostra ou nomeia o tesouro em relacao a um objeto de referencia.
 8. Risco de fronteira: `Jornada` gastar o mesmo gesto principal que deveria florescer em `O Concreto`.
 9. Risco de familia real: a mae nao saber se deve mostrar, esconder, procurar, nomear ou perguntar em cada bloco.
@@ -44,7 +48,8 @@ Heuristicas fortes usadas:
 2. o `onde` precisa nascer do corpo antes de nascer da palavra
 3. Celeste convida a procurar; ela nao recita um glossario
 4. quando a pergunta puder ser respondida apontando ou reposicionando o tesouro, ela tende a estar mais pronta
-5. se a mae nao sabe se fala, mostra ou move, o bloco ainda nao esta premium
+5. criacao pode revelar; casa encarna; corpo confirma
+6. se a mae nao sabe se fala, mostra ou move, o bloco ainda nao esta premium
 
 Leitura critica:
 1. a `L005` ja estava perto do premium;
@@ -55,8 +60,8 @@ Leitura critica:
 ---
 
 ## 4. Matriz dos 12 topicos
-1. `001_BASE_E_HERO`: `PASS`
-Observacao: base integra; hero forte e coerente com Celeste e com a leitura do espaco.
+1. `001_BASE_E_HERO`: `PASS PREMIUM`
+Observacao: base integra; o hero ficou mais concreto e mais fiel ao brilho que repousa em lugares reais.
 
 2. `002_HEADER_SUPERIOR`: `PASS`
 Observacao: navegacao superior correta e alinhada com licoes adjacentes.
@@ -119,12 +124,15 @@ Arquivo alterado:
 1. `site/sementes/MV-S-005_O_ESCONDERIJO_DA_GLÓRIA.html`
 
 Ajustes feitos:
-1. refinei a pergunta de entrada da Jornada para tirar excesso de opcoes logo na abertura e deixar o convite mais natural;
-2. refinei uma fala de Celeste em `As Pistas do Lugar` para soar mais corporal e visual.
+1. tornei o `Hero` mais concreto e mais ligado ao brilho que repousa em lugares reais;
+2. refinei a entrada da Celeste para manter sensorialidade sem soar vaga;
+3. refinei uma fala de `As Pistas do Lugar` para soar mais corporal e visual;
+4. concretizei uma pergunta do coracao em `Narramos Juntos`;
+5. ampliei `Sementes para o Dia` com exemplos que unem casa, corpo e criacao sem pesar para a mae.
 
 Justificativa:
 1. nao havia falha estrutural dura;
-2. havia espaco para reduzir traducao mental da mae na entrada da experiencia;
+2. havia espaco para reduzir traducao mental da mae e encarnar melhor a imagem dominante;
 3. o patch preserva a alma da Celeste e melhora a respiracao operacional da licao.
 
 ---
@@ -137,7 +145,8 @@ Razoes:
 2. a experiencia espacial continua concreta, viva e apropriada para `Sementes`;
 3. a licao trata posicao por busca e relacao, nao por lista seca de termos;
 4. a mae consegue entender melhor o que fazer em cada bloco;
-5. a licao preserva a identidade da Celeste como guardiã curiosa e calorosa.
+5. a licao preserva a identidade da Celeste como guardia curiosa e calorosa.
+6. a licao ficou mais coerente com `premium + taste + TX10`.
 
 ---
 

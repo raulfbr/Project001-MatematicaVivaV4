@@ -1,7 +1,7 @@
 # REVISAO TOPICO A TOPICO - L010
 Data: 2026-03-16
 Licao: `MV-S-010_A_FILA_DA_PROVIDÊNCIA.html`
-Status da sessao: reauditoria de fechamento concluida
+Status da sessao: reauditoria de fechamento com refino pequeno concluida
 Escopo congelado: revisar apenas a `L010`; `L009` e `L011` entram apenas como fronteiras curriculares
 Validacao humana da familia: pendente
 
@@ -17,22 +17,26 @@ Validacao humana da familia: pendente
 7. `Imagem dominante`: a fila da providencia como caminho vivo de antes e depois.
 8. `Fruto do dia`: a crianca apontar, trocar e reler lugares numa fila concreta com paz.
 9. `Risco de fronteira`: ordinalidade virar lista seca de palavras ou colapsar de volta em contagem cardinal.
-10. `Risco familia real`: a mae precisar traduzir demais quando a fila muda.
+10. `Risco familia real`: a mae precisar traduzir demais quando a fila muda ou quando a pergunta fica mais bonita que respondível.
 11. `Hospitalidade multi-crianca`: um irmao pode trocar personagens de lugar enquanto a crianca principal nomeia o que mudou.
 
 ---
 
 ## 2) Fontes e lentes ativadas
-1. HTML da licao `L010`
-2. Licoes de fronteira `L009` e `L011`
-3. Curriculo mestre `010_A_FILA_DA_PROVIDENCIA.yaml`
-4. `023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`
-5. `003_PROTOCOLO_REVISAO_POR_LICAO.md`
-6. `004_RUBRICA_PREMIUM_REVISAO.md`
-7. `008_NORTH_STAR_OPERACIONAL.md`
-8. `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`
-9. Revisoes anteriores de `2026-03-10` e `2026-03-12`
-10. Validacao visual de `2026-03-12`
+1. `AI_CONTEXT.md`
+2. `Revisao/README.md`
+3. HTML da licao `L010`
+4. Licoes de fronteira `L009` e `L011`
+5. Curriculo mestre `010_A_FILA_DA_PROVIDENCIA.yaml`
+6. `023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`
+7. `003_PROTOCOLO_REVISAO_POR_LICAO.md`
+8. `004_RUBRICA_PREMIUM_REVISAO.md`
+9. `008_NORTH_STAR_OPERACIONAL.md`
+10. `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`
+11. `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`
+12. `Revisao/FEEDBACK_MAES_REAIS/SINTESIS/2026-03-13_TASTE_DA_MAE_REAL_COMO_CALIBRAGEM_OPERACIONAL.md`
+13. Revisoes anteriores de `2026-03-10` e `2026-03-12`
+14. Validacao visual de `2026-03-12`
 
 ---
 
@@ -41,7 +45,7 @@ Validacao humana da familia: pendente
 2. As fronteiras `L009 -> L010` e `L010 -> L011` continuam honestas: sai-se de quantidade guardada para posicao em fila, e aponta-se para o `10` sem roubar a licao seguinte.
 3. O `North Star` permanece preservado: a mae e aliviada, a crianca descobre com as maos e a fila continua imagem viva, nao exercicio escolar frio.
 4. `TASTE` permanece bom: Celeste continua leve, rapida e nitida, sem virar explicadora seca.
-5. O unico finding objetivo desta rodada foi um typo em `Formacao do Portador`: `memorizac&atilde;o`.
+5. Os findings reais desta rodada foram pequenos, mas objetivos: uma pergunta do coracao ainda pedia traducao mental extra da mae, e `Sementes para o Dia` ainda fechava com formulacao um pouco abstrata para a casa real.
 
 ---
 
@@ -78,22 +82,23 @@ O opcional domestico nao invade a formacao do adulto.
 ---
 
 ## 6) Patch aplicado
-1. Correcao tipografica em `Formacao do Portador`:
-   `memorizac&atilde;o` -> `memoriza&ccedil;&atilde;o`
+1. refinei a terceira pergunta do coracao para reduzir traducao mental da mae.
+2. refinei a `Reflexao opcional` de `Sementes para o Dia` para um gesto mais domestico e respondível.
+3. removi a marcacao visual de codigo em `Sementes para o Dia` no fechamento do bloco.
 
 Leitura editorial:
-1. nao houve necessidade de patch estrutural ou narrativo;
-2. a melhor decisao desta rodada foi preservar a licao e corrigir apenas o defeito objetivo encontrado.
+1. nao houve necessidade de patch estrutural nem reescrita ampla.
+2. a melhor decisao desta rodada foi preservar a licao e refinar apenas o que ainda exigia traducao mental desnecessaria.
 
 ---
 
 ## 7) Sanity checks
-1. Leitura explicita em UTF-8 confirmou que o link anterior aponta para `MV-S-009_O_CELEIRO_DE_NOÉ.html`.
-2. Leitura explicita em UTF-8 confirmou que os links para `L011` apontam para o nome real em disco: `MV-S-011_A_PLENITUDE_DAS_MÃOS.html`.
+1. Leitura explicita confirmou que o link anterior aponta para `MV-S-009_O_CELEIRO_DE_NOÉ.html`.
+2. Leitura explicita confirmou que os links para `L011` apontam para o nome real em disco: `MV-S-011_A_PLENITUDE_DAS_MÃOS.html`.
 3. `onclick=`: ausente
 4. `journey-connection-card`: ausente
 5. `lesson-footer-nav`: ausente
-6. typo `memorizac&atilde;o`: removido
+6. nao ha vazamento de backticks literais na UI.
 
 ---
 
@@ -102,16 +107,17 @@ Leitura editorial:
 2. `TASTE`: aprova porque Celeste segue recognoscivel e a fila continua imagem viva do comeco ao fim.
 3. `Susan Macaulay + Mae Ansiosa`: aprovam a clareza operacional e a ausencia de overediting.
 4. `Charlotte Mason + Jerome Bruner`: aprovam a prioridade do gesto concreto sobre definicao abstrata.
+5. `TX10 + feedback de mae real`: aprovam o refino do fechamento porque ele agora pousa melhor na rotina da casa e pede menos traducao mental.
 
 ---
 
 ## 9) Veredito sincero
 1. `L010` permanece em `PASS PREMIUM`.
-2. Esta rodada foi de acabamento, nao de reconstrucao.
-3. O melhor trabalho aqui foi resistir a mexer no que ja estava vivo e corrigir apenas o que estava de fato errado.
+2. Esta rodada foi de acabamento e usabilidade fina, nao de reconstrucao.
+3. O melhor trabalho aqui foi resistir a mexer no que ja estava vivo e corrigir apenas o que ainda criava traducao mental desnecessaria.
 
 ---
 
 ## 10) Risco residual
-1. validacao humana com familia real continua sendo o proximo gate fora da IA;
+1. validacao humana com familia real continua sendo o proximo gate fora da IA.
 2. os logs desta data ainda podem exibir ruido de encoding no terminal, mesmo quando o HTML esta correto.

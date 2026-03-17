@@ -1,7 +1,7 @@
 # REVISAO TOPICO A TOPICO - MV-S-004
 Data: 2026-03-16
 Licao: `MV-S-004_A_ORDEM_DO_DIA.html`
-Tipo: reauditoria profunda com patch premium pequeno
+Tipo: reauditoria profunda com patch premium pequeno e sensorial
 Status final: `PASS PREMIUM`
 
 ---
@@ -16,12 +16,17 @@ Fontes principais consultadas:
 6. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/008_NORTH_STAR_OPERACIONAL.md`
 7. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`
 8. `Revisao/00_SISTEMA_REVISAO_CANONICO/039_TASK_ROBUSTA_LENTE_PREMIUM_TASTE_L004_A_ORDEM_DO_DIA.md`
-9. `Revisao/FEEDBACK_MAES_REAIS/SINTESIS/2026-03-13_TASTE_DA_MAE_REAL_COMO_CALIBRAGEM_OPERACIONAL.md`
-10. `curriculo/_SISTEMA/CURRICULOS_MESTRE/000_K_SEMENTES_CURRICULO_MESTRE.md`
-11. `curriculo/01_SEMENTESV6/004_A_ORDEM_DO_DIA.yaml`
-12. `site/sementes/MV-S-003_A_ESTRELA_DO_REINO.html`
-13. `site/sementes/MV-S-005_O_ESCONDERIJO_DA_GLÓRIA.html`
-14. experts: `mae_ansiosa`, `mae_veterana`, `susan_macaulay`, `charlotte_mason`
+9. `Revisao/00_SISTEMA_REVISAO_CANONICO/041_PLANO_DETALHADO_REVISAO_PROFUNDA_L004_A_ORDEM_DO_DIA.md`
+10. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`
+11. `Revisao/FEEDBACK_MAES_REAIS/SINTESIS/2026-03-13_TASTE_DA_MAE_REAL_COMO_CALIBRAGEM_OPERACIONAL.md`
+12. `curriculo/_SISTEMA/CURRICULOS_MESTRE/000_K_SEMENTES_CURRICULO_MESTRE.md`
+13. `curriculo/01_SEMENTESV6/004_A_ORDEM_DO_DIA.yaml`
+14. `site/sementes/MV-S-003_A_ESTRELA_DO_REINO.html`
+15. `site/sementes/MV-S-005_O_ESCONDERIJO_DA_GL%C3%93RIA.html`
+16. experts: `mae_ansiosa`, `mae_veterana`, `susan_macaulay`, `charlotte_mason`
+
+TX10 / Encantamento Encarnado: `ACIONADA`
+Feedback real de maes: `FRICCAO SEMELHANTE CONSULTADA`
 
 ---
 
@@ -31,7 +36,7 @@ Fontes principais consultadas:
 3. Lugar: Arvore do Silencio.
 4. Conceito vivo: primeiro, meio e ultimo; ordem estavel; caminho curto de `1 a 5`.
 5. Papel no curriculo: consolidar ordenacao `1-5` e abrir sequencia temporal sem cair em moral de rotina.
-6. Imagem dominante: a fila do dia que respira quando cada passo encontra o seu lugar.
+6. Imagem dominante: o dia se abrindo aos poucos e deixando a fila dos acontecimentos aparecer com paz.
 7. Fruto do dia: a crianca reconhece e reconstrui uma sequencia curta, ligando começo, meio e fim a um caminho real.
 8. Risco de fronteira: `Jornada` e `O Concreto` colapsarem na mesma fila sem diferenca de autoria.
 9. Risco de familia real: a mae sentir que a licao esta policiando a rotina da casa.
@@ -45,7 +50,8 @@ Heuristicas fortes usadas:
 2. sequencia precisa aparecer primeiro como caminho, nao como discurso
 3. ordem mansa vence rotina policiada
 4. pergunta de reconto boa nasce do cartao, da fila, do dedo, do primeiro e do ultimo
-5. se a frase parece correta, mas nao cabe na boca de uma mae cansada, ainda nao esta premium
+5. natureza abre; casa encarna; corpo confirma
+6. se a frase parece correta, mas nao cabe na boca de uma mae cansada, ainda nao esta premium
 
 Leitura critica:
 1. a `L004` ja estava estruturalmente madura;
@@ -56,8 +62,8 @@ Leitura critica:
 ---
 
 ## 4. Matriz dos 12 topicos
-1. `001_BASE_E_HERO`: `PASS`
-Observacao: base integra e hero coerente com Noe e com o tema da ordem.
+1. `001_BASE_E_HERO`: `PASS PREMIUM`
+Observacao: base integra; o hero agora abre a licao com mais sensorialidade e menos formulacao abstrata.
 
 2. `002_HEADER_SUPERIOR`: `PASS`
 Observacao: topologia correta; navegacao superior coerente com a trilha.
@@ -120,15 +126,16 @@ Arquivo alterado:
 1. `site/sementes/MV-S-004_A_ORDEM_DO_DIA.html`
 
 Ajustes feitos:
-1. concretizei uma pergunta do coracao em `Narramos Juntos`;
-2. concretizei a linha de `Narracao` em `Sementes para o Dia`, tirando formulacao mais larga e deixando a mae convidar a crianca a contar a fila `do primeiro ao ultimo`;
-3. normalizei `fa&ccedil;am` e `come&ccedil;ou` para evitar ruido de encoding no HTML;
-4. estabilizei os `href`s da `L005` em percent-encoding UTF-8 para evitar nova corrupcao de path em nome com acento.
+1. tornei o `Hero` mais sensorial, ligando a ordem ao gesto real da primeira luz na janela;
+2. reescrevi a primeira fala de Noe para abrir a percepcao do dia antes do discurso sobre a fila;
+3. concretizei uma pergunta do coracao em `Narramos Juntos`;
+4. ampliei `Sementes para o Dia` com uma exploracao que une casa e natureza sem aumentar carga da mae;
+5. mantive os ajustes tecnicos anteriores de encoding e `href` como base limpa desta rodada.
 
 Justificativa:
 1. a licao nao tinha falha estrutural dura;
-2. havia ganhos reais de usabilidade oral e limpeza tecnica;
-3. o patch preserva Noe como guardiao da ordem mansa e reduz traducao mental para a mae.
+2. havia ganhos reais de usabilidade oral, sensorialidade e imagem dominante;
+3. o patch preserva Noe como guardiao do ritmo paciente do dia e reduz traducao mental para a mae.
 
 ---
 
@@ -137,7 +144,7 @@ Veredito: `PASS PREMIUM`
 
 Razoes:
 1. a licao esta integra no contrato canônico atual;
-2. a narrativa, a pedagogia e a UX do Portador ficaram mais coerentes com a lente `premium + taste`;
+2. a narrativa, a pedagogia e a UX do Portador ficaram mais coerentes com a lente `premium + taste + TX10`;
 3. a licao evita cair em moralizacao de rotina e mantem a ordem como paz e inteligibilidade;
 4. os ajustes desta sessao foram pequenos, mas de alto valor para casa real;
 5. a `L004` esta pronta para seguir no lote ativo e para futura validacao humana.

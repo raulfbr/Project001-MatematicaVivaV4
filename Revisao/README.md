@@ -28,7 +28,8 @@ Leia nesta ordem:
 7. `Revisao/00_SISTEMA_REVISAO_CANONICO/003_PROTOCOLO_REVISAO_POR_LICAO.md`
 8. `Revisao/00_SISTEMA_REVISAO_CANONICO/004_RUBRICA_PREMIUM_REVISAO.md`
 9. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/008_NORTH_STAR_OPERACIONAL.md`
-10. caso relevante em `Revisao/FEEDBACK_MAES_REAIS/`, se houver friccao semelhante
+10. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`, quando houver criacao, reescrita profunda ou decisao de imagem dominante
+11. caso relevante em `Revisao/FEEDBACK_MAES_REAIS/`, se houver friccao semelhante
 
 ## Onde estao todas as diretrizes
 1. `Revisao/00_SISTEMA_REVISAO_CANONICO/002_ESQUELETO_GERAL_LICAO_SEMENTES.md` = contrato macro da licao.
@@ -37,7 +38,8 @@ Leia nesta ordem:
 4. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/` = diretrizes por secao da licao.
 5. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/` = regras que atravessam varias secoes.
 6. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/008_NORTH_STAR_OPERACIONAL.md` = gate de espirito da obra.
-7. `Revisao/00_SISTEMA_REVISAO_CANONICO/015_ESTADO_REAL_DO_PROJETO_E_DIRECAO_HTML_FIRST.md` = leitura principal atual do estado real do projeto.
+7. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md` = lente para revelacao concreta, imagem dominante e criacao/revisao de licoes com maravilhamento encarnado.
+8. `Revisao/00_SISTEMA_REVISAO_CANONICO/015_ESTADO_REAL_DO_PROJETO_E_DIRECAO_HTML_FIRST.md` = snapshot historico util, mas nao leitura principal atual do estado do projeto.
 
 ## O que faz a revisao ser premium de verdade
 1. `North Star` governa o espirito da obra;
@@ -46,7 +48,8 @@ Leia nesta ordem:
 4. `TASTE` separa licao correta de licao realmente Matematica Viva;
 5. feedback real de maes entra como calibragem qualificada de usabilidade, tom e `TASTE`;
 6. quando houver caso relevante, consultar `Revisao/FEEDBACK_MAES_REAIS/` antes de patchar ou fechar premium;
-7. experts e personas maternas nao sao decoracao; sao lentes de julgamento da obra em uso real.
+7. `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md` ajuda a unir conceito curricular, simples da vida comum, criacao, casa e corpo sem forcar poesia nem diluir matematica;
+8. experts e personas maternas nao sao decoracao; sao lentes de julgamento da obra em uso real.
 
 ## Onde mora o aprendizado com maes reais
 1. `Revisao/FEEDBACK_MAES_REAIS/000_README.md` = regra de uso da trilha
@@ -70,7 +73,8 @@ Leia nesta ordem:
 5. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/000_README.md`
 6. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/000_README.md`
 7. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/008_NORTH_STAR_OPERACIONAL.md`
-8. `Revisao/00_SISTEMA_REVISAO_CANONICO/015_ESTADO_REAL_DO_PROJETO_E_DIRECAO_HTML_FIRST.md`
+8. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`
+9. `AI_CONTEXT.md` + `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md` governam a leitura atual do estado vivo; `015` fica como apoio historico.
 
 ## Norte de escrita
 1. narracao pode ser mais ludica, descritiva e atmosferica;

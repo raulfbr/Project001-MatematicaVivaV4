@@ -1,0 +1,11 @@
+Na `Pergunta do coracao opcional`, esta escrito:
+`se fizer sentido, escolha uma`.
+Como so existe uma pergunta, nao faz sentido manter `escolha uma`.
+Pode ficar mais direto:
+`Pergunta do coracao opcional`, e no maximo `se fizer sentido`.
+
+A maior parte da `Adaptacao digna e inclusiva` esta boa.
+Mas a primeira frase, `Se a fala nao vier pronta`, nao conecta bem.
+Essa abertura precisa mudar para algo melhor.
+
+O resto do bloco esta otimo.

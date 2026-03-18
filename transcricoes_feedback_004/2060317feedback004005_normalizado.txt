@@ -1,0 +1,30 @@
+Nos cards de 1 a 5, nos fizemos o card numero zero tambem.
+Esse card numero zero e importante colocar para a crianca agora, para ela entender que o grafismo zero representa nenhuma bolinha, nenhuma pedrinha.
+
+Outra coisa: dentro de "Se houver irmaos", esta escrito "a mais velha". No caso, como pode ser um irmao, tem que ser "o mais velho".
+
+Na parte do reconto, esse trecho poderia ser separado da primeira fase.
+"Deixe a crianca olhar para a fila antes de responder e diga: agora eu quero ver como essa fila foi ficando em ordem."
+Acho que esse pode ser um comando mais claro.
+
+Agora eu quero o pai falando. Quando a gente fala com os pais, isso deveria aparecer embaixo da narracao, com outra cor.
+Pode colocar entre parenteses:
+"[Deixe a crianca olhar para a fila antes de responder. Diga: agora eu quero ver como essa fila foi ficando em ordem.]"
+
+Depois, em outro quadrante de outra cor, coloque:
+"Escolha uma ou duas perguntas de reconto."
+
+Se a fala ainda estiver pequena, melhor trocar por algo como "se a crianca falar pouco". Um quadro proprio para isso e melhor do que a palavra "pequena".
+
+As perguntas de reconto podem ficar juntas. Hoje esta repetitivo:
+"Escolha uma ou duas perguntas de reconto" aparece em cima e depois de novo.
+Queria juntar e sintetizar essas partes.
+
+Esse comando "agora eu quero ver como essa fila foi ficando em ordem" pode ficar mais claro nessa parte da narracao.
+A ordem deveria ser mais direta:
+"Diga isso, pai. Agora pergunte isso, pai."
+
+Assim como no gesto do Portador, voce narra e depois fala mais detalhes para o pai, aqui tambem deveria ser assim:
+primeiro uma ordem direta, depois a explicacao de como as perguntas de reconto acontecem.
+
+Isso tambem pode ficar visualmente mais claro, com quadradinhos e cores diferentes.

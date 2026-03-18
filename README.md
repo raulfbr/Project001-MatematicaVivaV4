@@ -290,6 +290,19 @@ Fluxo oficial para retomar sem perder contexto:
 3. Depois vá para [`Revisao/README.md`](Revisao/README.md) para entrar na fase de revisão.
 4. Execute a revisão usando a ordem e os checklists definidos na pasta `Revisao`.
 
+### Fechamento desta sessao - 2026-03-16
+
+1. o lote `L004-L015` recebeu rodada profunda de revisao por IA, com patches aplicados nas licoes, logs atualizados e governanca ajustada;
+2. o produto publicado desse lote esta limpo e em estado `PASS PREMIUM` por IA, mas a validacao humana continua pendente;
+3. a retomada mais segura da proxima sessao e:
+   a. `README.md`;
+   b. `AI_CONTEXT.md`;
+   c. `Revisao/README.md`;
+   d. `005_STATUS_REVISAO_SEMENTES.md`;
+   e. lote ou licao-alvo.
+4. quando a dificuldade principal da revisao for encarnar melhor o conceito, escolher imagem dominante, encontrar ancora concreta ou reduzir traducao mental da mae, a reauditoria deve usar explicitamente a lente:
+   `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`.
+
 ### Regra Crítica de Encoding (obrigatória)
 
 Para não quebrar texto de lições HTML (ex.: `Coração` virando `CoraÃ§Ã£o`):

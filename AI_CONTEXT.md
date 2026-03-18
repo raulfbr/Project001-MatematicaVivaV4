@@ -211,8 +211,25 @@ Leitura mais segura do estado atual:
 2. a experiência final real ainda vive principalmente em `site/sementes/*.html`;
 3. o protocolo de revisão está consolidado em `023`, com execução em `003`, veredito em `004` e quadro operacional em `005`;
 4. o `Manual do Portador`, `MV-S-001` e `MV-S-002` já passaram por rodada profunda e auditoria por IA;
-5. o quadro operacional mais recente já moveu a operação para o lote `MV-S-003` ate `MV-S-010`, com validacao humana posterior;
-6. existe trilha técnica paralela em `apps/web`, mas ela não governa a sessão atual por padrão.
+5. o lote `MV-S-004` ate `MV-S-015` tambem ja passou por reauditoria profunda por IA nesta frente, com logs e governanca atualizados;
+6. `005_STATUS_REVISAO_SEMENTES.md` continua sendo o quadro operacional base, mas a leitura correta do momento precisa incluir este fechamento de `2026-03-16`;
+7. existe trilha técnica paralela em `apps/web`, mas ela não governa a sessão atual por padrão.
+
+## Fechamento da sessao de hoje - 2026-03-16
+
+1. a sessao de hoje fechou o lote `L004-L015` no nivel de reauditoria por IA;
+2. as licoes publicadas desse lote ficaram limpas de residuos estruturais mais recorrentes da fase;
+3. os logs do dia foram alinhados ao que realmente foi feito;
+4. a governanca tambem foi ajustada para deixar claro que:
+   a. `AI_CONTEXT.md` + `005_STATUS_REVISAO_SEMENTES.md` sao a leitura viva atual;
+   b. `015_ESTADO_REAL...` e apoio historico, nao SSOT da fase.
+5. foi criada uma task de fechamento do lote:
+   `Revisao/00_SISTEMA_REVISAO_CANONICO/046_TASK_ROBUSTA_FECHAMENTO_PREMIUM_LOTE_L008_L015_E_GOVERNANCA.md`.
+6. o proximo gate principal nao e novo patch automatico, e sim:
+   a. validacao humana real com familias;
+   b. eventual sincronizacao curricular dos YAMLs;
+   c. manutencao disciplinada da governanca viva.
+7. em reauditorias profundas desta fase, o arquivo `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md` passa a ser a lente principal sempre que houver friccao de ancora concreta, imagem dominante, encarnacao do conceito ou pressao indevida sobre a mae.
 
 ## O que o projeto ja sabe sobre maes reais
 
@@ -278,11 +295,12 @@ Em termos de governança de documentação:
 Em termos de fase de revisão:
 
 1. consultar `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`;
-2. seguir a task ativa do lote vigente;
+2. seguir a task ativa do lote vigente, lendo esse quadro junto do fechamento desta sessao;
 3. executar sempre via `023 -> 003 -> 004`, com apoio de `011_TOPICOS/` e `012_TRANSVERSAIS/`;
 4. usar `008_NORTH_STAR_OPERACIONAL.md` como gate real antes de considerar uma lição pronta.
 5. quando houver caso relevante de mae real, consultar tambem `Revisao/FEEDBACK_MAES_REAIS/` antes de patchar.
 6. quando houver desempate fino ou fechamento premium, consultar tambem `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`.
+7. quando a reauditoria profunda envolver ancora concreta, imagem dominante, encarnacao do conceito ou friccao de usabilidade da mae real, consultar explicitamente `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`.
 
 ## Ordem de leitura para retomar o projeto
 
@@ -301,9 +319,10 @@ Em termos de fase de revisão:
 5. `Revisao/00_SISTEMA_REVISAO_CANONICO/023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`
 6. `Revisao/00_SISTEMA_REVISAO_CANONICO/003_PROTOCOLO_REVISAO_POR_LICAO.md`
 7. `Revisao/00_SISTEMA_REVISAO_CANONICO/004_RUBRICA_PREMIUM_REVISAO.md`
-8. lição alvo + lição anterior + lição seguinte
-9. caso relevante em `Revisao/FEEDBACK_MAES_REAIS/`, se houver friccao semelhante
-10. `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`, quando o fechamento premium exigir desempate fino
+8. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`, quando a reauditoria for profunda ou a mae real ainda exigir traducao mental
+9. lição alvo + lição anterior + lição seguinte
+10. caso relevante em `Revisao/FEEDBACK_MAES_REAIS/`, se houver friccao semelhante
+11. `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`, quando o fechamento premium exigir desempate fino
 
 ### Se a dúvida é "onde mora cada tipo de verdade?"
 

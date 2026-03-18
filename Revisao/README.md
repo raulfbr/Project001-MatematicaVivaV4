@@ -28,8 +28,13 @@ Leia nesta ordem:
 7. `Revisao/00_SISTEMA_REVISAO_CANONICO/003_PROTOCOLO_REVISAO_POR_LICAO.md`
 8. `Revisao/00_SISTEMA_REVISAO_CANONICO/004_RUBRICA_PREMIUM_REVISAO.md`
 9. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/008_NORTH_STAR_OPERACIONAL.md`
-10. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`, quando houver criacao, reescrita profunda ou decisao de imagem dominante
+10. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`, quando houver criacao, reescrita profunda, decisao de imagem dominante ou reauditoria profunda com foco na mae real
 11. caso relevante em `Revisao/FEEDBACK_MAES_REAIS/`, se houver friccao semelhante
+
+Encerramento atual:
+1. o lote `L004-L015` ja passou por rodada profunda de reauditoria por IA;
+2. a proxima sessao nao deve recomecar do zero, e sim retomar a partir de `AI_CONTEXT.md`, `005` e do lote/licao alvo;
+3. quando a pergunta da sessao for "como encarnar melhor esta licao sem perder rigor e sem aumentar a pressao da mae?", a lente `010` deixa de ser opcional e passa a ser a referencia principal da reauditoria.
 
 ## Onde estao todas as diretrizes
 1. `Revisao/00_SISTEMA_REVISAO_CANONICO/002_ESQUELETO_GERAL_LICAO_SEMENTES.md` = contrato macro da licao.
@@ -99,7 +104,7 @@ Leia nesta ordem:
 1. a frente ativa continua sendo `HTML-first`;
 2. o protocolo central agora esta consolidado em `023` e auditado em `028`;
 3. `Manual do Portador`, `MV-S-001` e `MV-S-002` seguem como `PASS PREMIUM` por IA e continuam relevantes como baseline qualitativo;
-4. o quadro operacional mais recente em `005_STATUS_REVISAO_SEMENTES.md` ja moveu a operacao para o lote `MV-S-003` ate `MV-S-010`, com validacao humana posterior;
+4. `005_STATUS_REVISAO_SEMENTES.md` continua sendo o quadro operacional base, mas a leitura correta do momento precisa incluir o fechamento por IA do lote `L004-L015` registrado em `AI_CONTEXT.md`;
 5. feedback real de maes, `TASTE`, North Star e conselho `experts` continuam sendo lentes centrais desta fase;
 6. o repositorio ja possui trilhas de orquestracao experimental, mas a decisao atual continua sendo usar papeis e lentes leves, nao multi-agent pesado.
 

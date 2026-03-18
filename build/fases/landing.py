@@ -17,6 +17,7 @@ class LandingDriver:
         """Varre as lições e LÊ O YAML ORIGINAL para metadados ricos."""
         sementes_yaml_dir = self.config.PROJECT_ROOT / "curriculo/01_SEMENTESV6"
         lessons = []
+        seen_ids = set()
         
         # Procura YAMLs, não HTMLs outputados, para garantir Source of Truth
         if not sementes_yaml_dir.exists():
@@ -38,6 +39,7 @@ class LandingDriver:
             "filename": "MV-S-000_O_PORTAL_DO_REINO.html",
             "metadados": {}
         })
+        seen_ids.add("MV-S-000")
         
         # Varre YAMLs
         for f in sorted(sementes_yaml_dir.glob("*.yaml")):
@@ -68,6 +70,12 @@ class LandingDriver:
                 # Vamos usar uma abordagem hibrida: Ler YAML, e procurar arquivo HTML que começa com o ID.
                 
                 lid = meta.get('id')
+                if not lid:
+                    continue
+                if lid in seen_ids:
+                    if lid != "MV-S-000":
+                        ForgeLogger.log(f"ID duplicado ignorado no index: {lid} ({f.name})", status="⚠️")
+                    continue
                 
                 # Mapeamento de Animais (Hardcoded por enquanto, mas robusto)
                 guardian_map = {
@@ -100,6 +108,7 @@ class LandingDriver:
                     "filename": filename,
                     "metadados": meta
                 })
+                seen_ids.add(lid)
                 
             except Exception as e:
                 ForgeLogger.log(f"Erro lendo metadados de {f.name}: {str(e)}", status="⚠️")

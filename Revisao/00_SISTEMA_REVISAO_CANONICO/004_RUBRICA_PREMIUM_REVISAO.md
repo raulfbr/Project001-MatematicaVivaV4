@@ -1,5 +1,5 @@
-# RUBRICA PREMIUM DE REVISAO
-Data: 2026-03-10
+﻿# RUBRICA PREMIUM DE REVISAO
+Data: 2026-03-17
 Status: canonico
 Escopo: licoes HTML do ciclo Sementes
 
@@ -40,16 +40,20 @@ Regra:
 1. `TASTE` nao substitui os 5 eixos; ele funciona como gate editorial transversal.
 2. `TASTE` e o que separa uma licao correta de uma licao viva, memoravel e recognoscivel como premium.
 3. ele aparece em escolha de palavra, ritmo, imagem dominante, ausencia de `metaforas soltas` e leveza real para a familia.
+4. ele tambem aparece em microdetalhes de uso: pergunta respondivel, nomeacao consistente, comando visivel e formulacao que cabe na boca da mae real.
 
 ## 2.2 Pre-condicoes antes de pontuar
 Antes de atribuir nota:
 1. ativar a sessao pelo `023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`;
 2. preencher o cerne macro da licao;
-3. abrir os 12 topicos oficiais `001-012`;
-4. preencher a matriz topica com `PASS / GAP / BLOCK`;
-5. auditar as fronteiras criticas entre secoes adjacentes;
-6. consultar `008_NORTH_STAR_OPERACIONAL.md`;
-7. so entao pontuar os 5 eixos.
+3. registrar frase de boca, pergunta respondivel principal e microfriccoes previsiveis;
+4. abrir os 12 topicos oficiais `001-012`;
+5. preencher a matriz topica com `PASS / GAP / BLOCK`;
+6. auditar as fronteiras criticas entre secoes adjacentes;
+7. concluir a passada premium antecipada;
+8. concluir a radiacao local e a passada premium final;
+9. consultar `008_NORTH_STAR_OPERACIONAL.md`;
+10. so entao pontuar os 5 eixos.
 
 Regra:
 1. rubrica sem matriz topica completa nao vale como fechamento premium.
@@ -136,8 +140,10 @@ Criticos:
 4. preparo realista;
 5. blocos visuais limpos;
 6. sensacao de guia premium;
-7. fronteiras entre `Sementes para o Dia` e `Formacao do Portador` claras para o adulto.
-8. a mae nao precisa traduzir mentalmente o que dizer ou fazer.
+7. fronteiras entre `Sementes para o Dia` e `Formacao do Portador` claras para o adulto;
+8. a mae nao precisa traduzir mentalmente o que dizer ou fazer;
+9. o comando mais importante esta visivel no ponto certo;
+10. a pergunta principal pode ser feita e respondida sem improviso corretivo.
 
 Guia de nota:
 1. `0`: friccao alta
@@ -226,8 +232,11 @@ Criticos:
 3. tom vivo, nao escolar, nao professoral, nao generico;
 4. guardiao e Portador soam como pessoas do Reino, nao placeholders;
 5. a mae consegue conduzir sem atrito de linguagem;
-6. feedback real de familias, quando existir, foi lido como dado e nao como ordem.
-7. quando houver evidencia real, a formulacao final reduz releitura, improviso e traducao adulta.
+6. feedback real de familias, quando existir, foi lido como dado e nao como ordem;
+7. quando houver evidencia real, a formulacao final reduz releitura, improviso e traducao adulta;
+8. a pergunta principal e respondível para `4-6 anos`;
+9. nao ha falsa simetria entre concretos visualmente diferentes;
+10. nomes de objetos, numeros, pecas, lugares e gestos permanecem consistentes.
 
 Leitura do gate:
 1. `PASS`: a licao soa viva e inevitavel.
@@ -251,8 +260,9 @@ Leitura do gate:
 3. todos os 5 eixos >= 4;
 4. North Star >= 4;
 5. `Gate transversal - Taste editorial` em `PASS`;
-6. nenhuma falha critica;
-7. sensacao geral de produto premium.
+6. passada premium antecipada, radiacao local e passada premium final concluidas;
+7. nenhuma falha critica;
+8. sensacao geral de produto premium.
 
 ### BLOCK
 1. qualquer bloqueio automatico;

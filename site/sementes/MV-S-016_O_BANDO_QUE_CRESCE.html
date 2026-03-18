@@ -1,16 +1,77 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Bando que Cresce | Matem&aacute;tica Viva</title>
+    <title>O Bando que Cresce | Em Constru&ccedil;&atilde;o</title>
     <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Lora:ital,wght@0,400;0,600;1,400&family=Gloria+Hallelujah&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <style>
+        .construction-card {
+            border-top: 6px solid var(--g-bernardo);
+        }
+
+        .construction-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 0.9rem;
+            border-radius: 999px;
+            background: #FEF3C7;
+            color: #92400E;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .construction-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .construction-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.9rem 1.2rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 700;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .construction-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .construction-btn.primary {
+            background: var(--g-bernardo);
+            color: #FFF7ED;
+        }
+
+        .construction-btn.secondary {
+            background: #FFFFFF;
+            color: var(--primary);
+        }
+
+        .construction-list {
+            margin: 1rem 0 0 1.25rem;
+            color: var(--text-secondary);
+        }
+
+        .construction-list li + li {
+            margin-top: 0.65rem;
+        }
+    </style>
 </head>
 
 <body class="clima-1">
@@ -20,13 +81,13 @@
     <div class="lesson-container">
         <header class="lesson-hero">
             <div class="lesson-meta-tag">Li&ccedil;&atilde;o 016 &bull; O Bando que Cresce &bull; <i
-                    class="ph-duotone ph-timer duotone-carmim"></i> 15-20 min</div>
+                    class="ph-duotone ph-hammer duotone-terra"></i> Em constru&ccedil;&atilde;o</div>
             <h1 class="hero-title">O Bando que Cresce</h1>
-            <p class="hero-quote">&ldquo;Um p&aacute;ssaro chama outro, e Bernardo mostra que somar &eacute; ver a
-                alegria do bando crescer diante dos olhos.&rdquo;</p>
+            <p class="hero-quote">&ldquo;Esta pr&oacute;xima dobra da trilha est&aacute; sendo reconstru&iacute;da sob o novo
+                padr&atilde;o premium de Matem&aacute;tica Viva.&rdquo;</p>
             <img src="../assets/sementes/guardioes/bernardo-urso.png"
                 onError="this.src='../assets/sementes/guardioes/placeholder.png'"
-                alt="Ilustra&ccedil;&atilde;o do guardi&atilde;o Bernardo observando um bando de p&aacute;ssaros crescer"
+                alt="Ilustra&ccedil;&atilde;o do guardi&atilde;o Bernardo aguardando a reabertura da trilha"
                 class="hero-guardian">
         </header>
 
@@ -37,555 +98,85 @@
                         <span>&larr;</span> <span>A Escada de Luz</span>
                     </a>
                 </div>
-
                 <div style="width: 33%; text-align: center;">
                     <i class="ph-duotone ph-plant duotone-forest" style="font-size: 1.5rem;"></i>
                     <span
                         style="font-family: var(--font-heading); font-weight: 700; color: var(--primary); font-size: 0.9rem; margin-left: 0.5rem;">Sementes</span>
                 </div>
-
                 <div style="width: 33%; text-align: right;">
-                    <a href="MV-S-017_O_HORIZONTE_ALÉM.html" class="nav-mini-link" style="justify-content: flex-end;">
-                        <span>O Horizonte Al&eacute;m</span> <span>&rarr;</span>
-                    </a>
+                    <span
+                        style="display: inline-flex; align-items: center; gap: 0.45rem; color: var(--text-tertiary); font-size: 0.9rem; font-weight: 600;">Em
+                        constru&ccedil;&atilde;o</span>
                 </div>
             </nav>
 
-            <div class="scene-card">
+            <div class="scene-card construction-card">
                 <div class="scene-header">
-                    <i class="ph-duotone ph-clipboard-text duotone-terra"
+                    <i class="ph-duotone ph-traffic-cone duotone-terra"
                         style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                    Prepara&ccedil;&atilde;o do Portador
+                    Continuidade em Reconstru&ccedil;&atilde;o
                 </div>
 
-                <div class="prep-focus-tag">
-                    Foco da li&ccedil;&atilde;o: viver a adi&ccedil;&atilde;o como crescimento concreto de um grupo
-                    quando novos amigos chegam e o total se torna maior
+                <div class="construction-status">
+                    <i class="ph-duotone ph-sparkle"></i>
+                    Pr&oacute;xima fase em preparo
                 </div>
 
-                <div class="prep-bridge-box">
-                    <p><strong>Fio da Jornada:</strong> Ontem, Melquior guiou a crian&ccedil;a pela Escada de Luz,
-                        subindo com paz at&eacute; trinta. Hoje, Bernardo mostra um novo tipo de crescimento: n&atilde;o
-                        apenas seguir contando, mas juntar grupos e ver o bando aumentar. Amanh&atilde;, Celeste abrir&aacute;
-                        o horizonte ainda mais longe, contando at&eacute; quarenta.</p>
-                </div>
+                <p>A trilha publicada de <strong>Sementes</strong> vai at&eacute; a <strong>Li&ccedil;&atilde;o
+                        015</strong> nesta fase.</p>
+                <p style="margin-top:0.85rem;">A partir daqui, as novas li&ccedil;&otilde;es voltar&atilde;o apenas depois
+                    de nascerem sob o protocolo refor&ccedil;ado: mais concretude, mais taste, mais clareza para a
+                    m&atilde;e real e menos retrabalho depois.</p>
 
-                <div class="instruction-box prep-heart-box">
-                    <i class="ph-duotone ph-lightbulb duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                    <div>
-                        <p style="margin-bottom:0.5rem;"><strong>Dica do Cora&ccedil;&atilde;o:</strong> hoje a crian&ccedil;a
-                            n&atilde;o precisa decorar o sinal de mais. Ela precisa ver que um grupo pode receber outro,
-                            e o total realmente cresce.</p>
-                        <p>Se ela consegue juntar <strong>2</strong> e <strong>3</strong>, contar tudo de novo e dizer
-                            que o bando ficou maior, o fruto do dia j&aacute; apareceu.</p>
-                    </div>
-                </div>
+                <ul class="construction-list">
+                    <li>O tema da <strong>Li&ccedil;&atilde;o 016</strong> permanece reservado como <strong>O Bando que
+                            Cresce</strong>.</li>
+                    <li>As li&ccedil;&otilde;es seguintes sair&atilde;o de volta para o site s&oacute; depois de uma rodada
+                        robusta de cria&ccedil;&atilde;o e revis&atilde;o premium.</li>
+                    <li>Enquanto isso, a trilha segura para as fam&iacute;lias pioneiras continua at&eacute; a
+                        <strong>L015</strong>.</li>
+                </ul>
 
-                <aside class="materials-box" aria-label="Lista de Materiais para a Preparacao do Portador">
-                    <p><strong><i class="ph-duotone ph-target duotone-terra"></i> Essencial:</strong></p>
-                    <ul>
-                        <li>5 objetos pequenos para um primeiro encontro de grupos: pedras, bot&otilde;es, sementes ou pecinhas</li>
-                        <li>Um pequeno pano, prato ou bandeja para reunir o bando no final</li>
-                    </ul>
-                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-arrows-left-right duotone-indigo"></i>
-                            Substitui&ccedil;&otilde;es caseiras:</strong></p>
-                    <ul>
-                        <li>Se n&atilde;o houver objetos iguais, use itens parecidos e conte todos como parte do mesmo bando.</li>
-                        <li>Se a crian&ccedil;a estiver cansada, fa&ccedil;a apenas 1 + 2 ou 2 + 1.</li>
-                    </ul>
-                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-package duotone-gold"></i> Se
-                            tiver:</strong></p>
-                    <ul style="color:#6B7280;">
-                        <li>Dois copinhos ou dois ninhos improvisados para mostrar os grupos antes de junt&aacute;-los</li>
-                    </ul>
-                    <p style="margin-top:1rem;"><strong><i class="ph-duotone ph-warning-circle duotone-gold"></i> Plano
-                            B:</strong></p>
-                    <ul style="color:#6B7280;">
-                        <li>Se o dia estiver apertado, viva bem apenas um encontro: dois p&aacute;ssaros chegam, depois
-                            mais um, e voc&ecirc;s contam o total com alegria.</li>
-                    </ul>
-                </aside>
-
-                <div class="prep-copy">
-                    <div class="prep-section">
-                        <p class="prep-section-title">
-                            <i class="ph-duotone ph-sparkle duotone-magic"></i>
-                            <span>Descoberta da Crian&ccedil;a</span>
-                        </p>
-                        <ul>
-                            <li>Que somar &eacute; juntar grupos reais e ver o total crescer.</li>
-                            <li>Que o segundo grupo n&atilde;o apaga o primeiro; eles agora vivem juntos num mesmo bando.</li>
-                            <li>Que 2 + 3 pode ser visto, tocado e contado de novo com paz.</li>
-                        </ul>
-                    </div>
-
-                    <div class="prep-section">
-                        <p class="prep-section-title">
-                            <i class="ph-duotone ph-check-circle duotone-forest"></i>
-                            <span>Sinal de Fruto de Hoje</span>
-                        </p>
-                        <p>Se a crian&ccedil;a junta dois grupos, reconta tudo e percebe que o total cresceu, a li&ccedil;&atilde;o
-                            cumpriu seu gesto central.</p>
-                    </div>
-
-                    <div class="prep-section">
-                        <p class="prep-section-title">
-                            <i class="ph-duotone ph-star-four duotone-gold"></i>
-                            <span>Segredo do Maravilhamento</span>
-                        </p>
-                        <p>N&atilde;o anuncie &ldquo;agora vamos fazer conta&rdquo;. Deixe a crian&ccedil;a primeiro ver o
-                            bando crescer: chegam dois, chegam mais tr&ecirc;s, e algo novo aconteceu diante dela.</p>
-                    </div>
-
-                    <div class="strategy-box">
-                        <p class="prep-section-title">
-                            <i class="ph-duotone ph-strategy duotone-forest"></i>
-                            <span>Estrat&eacute;gia do Mestre: Juntar Antes de Nomear</span>
-                        </p>
-                        <p><strong>Por que funciona:</strong> a adi&ccedil;&atilde;o nasce como rela&ccedil;&atilde;o entre
-                            partes e todo, n&atilde;o como palavra abstrata.</p>
-                        <p><strong>A&ccedil;&atilde;o de hoje:</strong> mostre um grupo, mostre outro, junte tudo e conte
-                            de novo com o dedo e com os olhos.</p>
-                        <p><strong>Eco no Reino:</strong> Bernardo ensina que crescer junto pode ser fonte de alegria e
-                            n&atilde;o de pressa.</p>
-                        <p style="margin-top:0.75rem;"><strong>Se houver irm&atilde;os:</strong> um irm&atilde;o pode
-                            trazer o segundo grupo; a crian&ccedil;a principal observa o que mudou quando todos se juntaram.</p>
-                    </div>
-
-                    <div class="graca-box">
-                        <p class="prep-section-title">
-                            <i class="ph-duotone ph-heart duotone-heart"></i>
-                            <span>Nota de Gra&ccedil;a</span>
-                        </p>
-                        <p>Se a crian&ccedil;a disser apenas os n&uacute;meros sem perceber o encontro dos grupos, n&atilde;o
-                            aperte. Separe de novo, junte outra vez, e deixe a descoberta amadurecer no gesto.</p>
-                    </div>
+                <div class="construction-actions">
+                    <a href="MV-S-015_A_ESCADA_DE_LUZ.html" class="construction-btn primary">
+                        <i class="ph-duotone ph-arrow-left"></i>
+                        Voltar para a Li&ccedil;&atilde;o 015
+                    </a>
+                    <a href="../index.html" class="construction-btn secondary">
+                        <i class="ph-duotone ph-house"></i>
+                        Voltar ao mapa
+                    </a>
                 </div>
             </div>
 
             <div class="scene-card">
                 <div class="scene-header">
-                    <i class="ph-duotone ph-film-strip duotone-magic"
+                    <i class="ph-duotone ph-scroll duotone-indigo"
                         style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                    Ritual de Entrada
+                    O que j&aacute; est&aacute; decidido
                 </div>
 
-                <div class="instruction-box ritual-bastidores-box">
-                    <i class="ph-duotone ph-lamp duotone-gold" style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                    <div><strong>Prepara&ccedil;&atilde;o:</strong> deixe dois objetos separados de um lado e tr&ecirc;s
-                        do outro. A crian&ccedil;a precisa enxergar que s&atilde;o dois grupos distintos antes do encontro.</div>
-                </div>
-
-                <div class="script-persona-block portador-block ritual-portador-block">
-                    <div class="script-avatar-icon">
-                        <i class="ph-duotone ph-fire duotone-carmim"></i>
-                    </div>
-                    <div class="script-content">
-                        <div class="script-header">
-                            <span class="script-name">Portador da Tocha</span>
-                            <span class="script-tone">[Tom vivo, mas sereno, como quem chama a crian&ccedil;a para ver algo bonito.]</span>
-                        </div>
-                        <div class="script-text">
-                            <p>Respire fundo. O ar est&aacute; fresco e a entrada da <strong>Caverna do Recome&ccedil;o</strong>
-                                est&aacute; quieta.</p>
-                            <p>Bernardo olha para uma &aacute;rvore ali perto. Dois passarinhos j&aacute; pousaram. Um
-                                pouco adiante, outros amigos ainda est&atilde;o vindo.</p>
-                            <p class="acting-cue">[Mostre primeiro um grupo. Depois aponte para o outro.]</p>
-                            <p>Hoje vamos descobrir o que acontece quando um bando chama outro e todos repousam juntos no
-                                mesmo galho.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-container ritual-local-card">
-                    <p class="local-label">Lugar revelado</p>
-                    <img src="../assets/cards/locais/local-caverna-recomeco.png"
-                        class="card-visual-asset rotate-left hover-float"
-                        onError="this.src='../assets/cards/locais/placeholder.png'"
-                        alt="Card da Caverna do Recome&ccedil;o, lugar da licao">
-                    <p class="asset-caption">Na entrada da Caverna do Recome&ccedil;o, Bernardo ensina a adi&ccedil;&atilde;o
-                        como encontro real: um grupo chega, outro responde, e o bando cresce.</p>
-                </div>
-
-                <div class="instruction-box ritual-whisper-box">
-                    <i class="ph-duotone ph-feather duotone-indigo"
-                        style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                    <div><strong>Sussurro do Portal:</strong> n&atilde;o diga o total antes da hora. Primeiro deixe a
-                        crian&ccedil;a ver que existiam dois grupos e que agora existe um s&oacute; bando maior.</div>
-                </div>
+                <p>Este corte n&atilde;o &eacute; abandono. &Eacute; governan&ccedil;a.</p>
+                <p style="margin-top:0.85rem;">Em vez de deixar a trilha longa aparecer como pronta e depois ir corrigindo
+                    por remendo, o produto publicado para por aqui e reabre o restante j&aacute; com o novo padr&atilde;o de
+                    qualidade.</p>
             </div>
-
-            <section class="journey-section">
-                <h2><i class="ph-duotone ph-map-trifold duotone-gold" style="margin-right:0.5rem;"></i> A Jornada</h2>
-
-                <div class="scene-card">
-                    <div class="scene-header">
-                        <i class="ph-duotone ph-bird duotone-terra"
-                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                        Cena 1 - Os Primeiros P&aacute;ssaros
-                    </div>
-
-                    <div class="script-persona-block">
-                        <img src="../assets/cards/guardioes/bernardo-urso.png" class="script-avatar"
-                            alt="Card do guardi&atilde;o Bernardo">
-                        <div class="script-content">
-                            <div class="script-header">
-                                <span class="script-name">Bernardo</span>
-                                <span class="script-tone">[Tom observador, como quem n&atilde;o quer perder o primeiro pouso.]</span>
-                            </div>
-                            <div class="script-text">
-                                <p>Olhe com calma. Dois passarinhos chegaram primeiro.</p>
-                                <p>Vamos contar sem pressa: um... dois. O galho j&aacute; tem vida.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p>A crian&ccedil;a enxerga um primeiro grupo real. Ainda n&atilde;o &eacute; adi&ccedil;&atilde;o
-                        completa. &Eacute; o come&ccedil;o do bando, o primeiro n&uacute;cleo de vida pousando diante
-                        dela.</p>
-                </div>
-
-                <div class="scene-card">
-                    <div class="scene-header">
-                        <i class="ph-duotone ph-birds duotone-gold"
-                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                        Cena 2 - Mais Amigos Chegam
-                    </div>
-
-                    <p>Agora Bernardo mostra outro pequeno grupo chegando: mais tr&ecirc;s p&aacute;ssaros. O galho
-                        que tinha apenas dois come&ccedil;a a se tornar um encontro maior.</p>
-
-                    <div class="instruction-box">
-                        <i class="ph-duotone ph-hand-pointing duotone-magic"
-                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                        <div>
-                            <p style="margin-bottom:0.5rem;"><strong>Convite do Portador:</strong> aproxime o segundo
-                                grupo devagar, sem misturar r&aacute;pido demais.</p>
-                            <p>Pergunte com leveza: &ldquo;O que mudou quando os novos p&aacute;ssaros chegaram?&rdquo;
-                                Deixe a crian&ccedil;a ver o encontro antes do total.</p>
-                        </div>
-                    </div>
-
-                    <p>O olhar aprende que somar &eacute; acompanhar uma mudan&ccedil;a real. Ainda &eacute; poss&iacute;vel
-                        ver dois. Ainda &eacute; poss&iacute;vel ver tr&ecirc;s. E, ainda assim, algo maior j&aacute;
-                        come&ccedil;ou a nascer.</p>
-                </div>
-
-                <div class="scene-card">
-                    <div class="scene-header">
-                        <i class="ph-duotone ph-sparkle duotone-forest"
-                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                        Cena 3 - O Bando Cresceu
-                    </div>
-
-                    <div class="script-persona-block">
-                        <img src="../assets/cards/guardioes/bernardo-urso.png" class="script-avatar"
-                            alt="Card do guardi&atilde;o Bernardo">
-                        <div class="script-content">
-                            <div class="script-header">
-                                <span class="script-name">Bernardo</span>
-                                <span class="script-tone">[Tom contente, de descoberta partilhada.]</span>
-                            </div>
-                            <div class="script-text">
-                                <p>Vamos contar tudo de novo agora que est&atilde;o juntos?</p>
-                                <p>Um, dois, tr&ecirc;s, quatro, cinco. O bando cresceu. &Eacute; isso que acontece
-                                    quando dois grupos se encontram.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p>A crian&ccedil;a toca a verdade da adi&ccedil;&atilde;o: 2 + 3 n&atilde;o &eacute; um truque.
-                        &Eacute; a hist&oacute;ria de um bando que realmente ficou maior.</p>
-
-                    <p style="margin-top:0.75rem;"><strong>Ponte para O Concreto:</strong> depois de ver um grupo,
-                        depois outro e depois o encontro dos dois, &eacute; hora de a crian&ccedil;a fazer o bando
-                        crescer com as pr&oacute;prias m&atilde;os.</p>
-                </div>
-            </section>
-
-            <section class="concrete-section">
-                <h2><i class="ph-duotone ph-cubes duotone-indigo" style="margin-right:0.5rem;"></i> O Concreto</h2>
-
-                <div class="scene-card">
-                    <div class="scene-header">
-                        <i class="ph-duotone ph-hand-heart duotone-indigo"
-                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                        Fazendo o Bando Crescer
-                    </div>
-
-                    <div class="instruction-box">
-                        <i class="ph-duotone ph-list-checks duotone-gold"
-                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                        <div>
-                            <p><strong>Passo a passo:</strong></p>
-                            <ol style="margin:0.75rem 0 0 1.25rem;">
-                                <li>Coloque <strong>2</strong> objetos de um lado e conte com a crian&ccedil;a.</li>
-                                <li>Coloque <strong>3</strong> objetos de outro lado e conte esse segundo grupo.</li>
-                                <li>Junte os dois grupos bem diante dos olhos da crian&ccedil;a.</li>
-                                <li>Reconte tudo do come&ccedil;o e celebre que o total ficou maior.</li>
-                            </ol>
-                        </div>
-                    </div>
-
-                    <p><strong>Varia&ccedil;&atilde;o simples:</strong> se houver paz, repita com 1 + 2 ou 3 + 1,
-                        para a crian&ccedil;a ver que juntar grupos diferentes tamb&eacute;m faz nascer um novo total.</p>
-
-                    <p><strong>Adapta&ccedil;&atilde;o com honra:</strong> se contar em voz alta estiver dif&iacute;cil,
-                        a crian&ccedil;a pode apenas mover os objetos ou apontar com o dedo enquanto voc&ecirc; conta.</p>
-
-                    <p><strong>Fruto vis&iacute;vel:</strong> a crian&ccedil;a percebe que o total precisa ser contado de
-                        novo depois do encontro, porque o grupo agora &eacute; outro.</p>
-
-                    <p><strong>Ponte para narrar:</strong> antes de guardar, pergunte: &ldquo;O que aconteceu quando os
-                        novos p&aacute;ssaros chegaram ao galho?&rdquo;</p>
-                </div>
-            </section>
-            <section class="narration-section">
-                <h2><i class="ph-duotone ph-chat-circle-text duotone-carmim" style="margin-right:0.5rem;"></i> Narramos Juntos</h2>
-
-                <div class="scene-card">
-                    <div class="scene-header">
-                        <i class="ph-duotone ph-ear duotone-carmim"
-                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                        O que o bando nos contou
-                    </div>
-
-                    <p>Agora a crian&ccedil;a pode contar o que viu sem clima de prova. Narrar aqui &eacute; dar forma
-                        ao acontecimento: havia um grupo, chegou outro, e o total cresceu.</p>
-
-                    <div class="instruction-box">
-                        <i class="ph-duotone ph-heart-straight duotone-heart"
-                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                        <div>
-                            <p><strong>Escuta premium:</strong> acolha respostas pequenas, gestos, recontos com objetos
-                                ou frases simples. A narra&ccedil;&atilde;o n&atilde;o precisa soar adulta para ser verdadeira.</p>
-                        </div>
-                    </div>
-
-                    <p><strong>Perguntas abertas:</strong></p>
-                    <ul>
-                        <li>O que aconteceu quando os outros p&aacute;ssaros chegaram?</li>
-                        <li>Como ficou o galho depois que todos se juntaram?</li>
-                        <li>O que mudou entre o come&ccedil;o da hist&oacute;ria e o final?</li>
-                    </ul>
-
-                    <p><strong>Formas dignas de narrar:</strong> a crian&ccedil;a pode responder falando, apontando, movendo
-                        os objetos outra vez ou desenhando um bando pequeno que ficou maior.</p>
-                </div>
-            </section>
-
-            <section class="closing-section">
-                <h2><i class="ph-duotone ph-flag-checkered duotone-gold" style="margin-right:0.5rem;"></i> Ritual de Fechamento</h2>
-
-                <div class="scene-card">
-                    <div class="script-persona-block">
-                        <img src="../assets/cards/guardioes/bernardo-urso.png" class="script-avatar"
-                            alt="Card do guardi&atilde;o Bernardo">
-                        <div class="script-content">
-                            <div class="script-header">
-                                <span class="script-name">Bernardo</span>
-                                <span class="script-tone">[Tom feliz, manso, como quem viu algo bom florescer.]</span>
-                            </div>
-                            <div class="script-text">
-                                <p>Hoje voc&ecirc; viu o bando crescer de verdade.</p>
-                                <p>Somar &eacute; isso: um grupo encontra outro, e o total fica maior sem que ningu&eacute;m
-                                    precise correr.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="script-persona-block portador-block">
-                        <div class="script-avatar-icon">
-                            <i class="ph-duotone ph-fire duotone-carmim"></i>
-                        </div>
-                        <div class="script-content">
-                            <div class="script-header">
-                                <span class="script-name">Portador da Tocha</span>
-                            </div>
-                            <div class="script-text">
-                                <p>Guardamos os p&aacute;ssaros e voltamos para casa lembrando que juntar tamb&eacute;m
-                                    pode ser uma forma de alegria.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="connection-section">
-                <h2><i class="ph-duotone ph-signpost duotone-indigo" style="margin-right:0.5rem;"></i> Conex&atilde;o
-                    da Jornada</h2>
-
-                <div class="scene-card">
-                    <div class="scene-header">
-                        <i class="ph-duotone ph-path duotone-indigo"
-                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                        Do bando que cresce para o horizonte al&eacute;m
-                    </div>
-
-                    <p><strong>Mem&oacute;ria viva:</strong> hoje Bernardo mostrou que somar &eacute; ver o grupo crescer
-                        quando novos amigos chegam e todos passam a viver num mesmo total.</p>
-
-                    <a href="MV-S-017_O_HORIZONTE_AL?M.html" class="journey-connection-card"
-                        style="text-decoration:none; display:block;">
-                        <div class="instruction-box" style="margin-bottom:0;">
-                            <i class="ph-duotone ph-mountains duotone-gold"
-                                style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                            <div>
-                                <p style="margin-bottom:0.35rem;"><strong>Pr&oacute;xima trilha:</strong> amanh&atilde;,
-                                    Celeste vai abrir um horizonte mais largo e convidar a crian&ccedil;a a contar at&eacute;
-                                    quarenta com o mesmo esp&iacute;rito de paz e maravilhamento.</p>
-                                <p style="margin:0; color:#6B7280;">Ir para <strong>O Horizonte Al&eacute;m</strong>
-                                    &rarr;</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </section>
-
-            <section class="seeds-section">
-                <h2><i class="ph-duotone ph-flower-lotus duotone-forest" style="margin-right:0.5rem;"></i> Sementes
-                    para o Dia</h2>
-
-                <div class="scene-card">
-                    <div class="scene-header">
-                        <i class="ph-duotone ph-sprout duotone-forest"
-                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                        Escolha 1 ou 2 movimentos
-                    </div>
-
-                    <p>Uma pequena continua&ccedil;&atilde;o j&aacute; basta. Sementes para o Dia existe para deixar a
-                        adi&ccedil;&atilde;o reaparecer na vida da casa sem virar treino pesado.</p>
-
-                    <ul>
-                        <li><strong>Explora&ccedil;&atilde;o:</strong> junte dois talheres e depois mais um, ou dois blocos
-                            e depois mais dois, sempre contando o novo total.</li>
-                        <li><strong>Dramatiza&ccedil;&atilde;o:</strong> diga que um p&aacute;ssaro chamou outro e depois
-                            mais um, e perguntem juntos como o bando ficou maior.</li>
-                        <li><strong>Cria&ccedil;&atilde;o:</strong> desenhe um galho com um grupo pequeno e acrescente
-                            novos p&aacute;ssaros em outro momento do dia.</li>
-                        <li><strong>Narra&ccedil;&atilde;o:</strong> na refei&ccedil;&atilde;o, pergunte: &ldquo;O que
-                            cresceu quando algo novo se juntou hoje?&rdquo;</li>
-                        <li><strong>Reflex&atilde;o:</strong> observe com a crian&ccedil;a que alguns crescimentos acontecem
-                            quando as coisas se encontram, n&atilde;o apenas quando contamos mais longe.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="formation-section">
-                <h2><i class="ph-duotone ph-scroll duotone-terra" style="margin-right:0.5rem;"></i> Forma&ccedil;&atilde;o
-                    do Portador</h2>
-
-                <div class="scene-card">
-                    <div class="scene-header">
-                        <i class="ph-duotone ph-graduation-cap duotone-terra"
-                            style="font-size:1.5rem; margin-right:0.5rem;"></i>
-                        O que o adulto aprende ao lado de Bernardo
-                    </div>
-
-                    <div class="prep-copy">
-                        <div class="prep-section">
-                            <p class="prep-section-title">
-                                <i class="ph-duotone ph-book-bookmark duotone-gold"></i>
-                                <span>Por que isso importa</span>
-                            </p>
-                            <p>A adi&ccedil;&atilde;o precisa nascer como encontro real entre partes e todo. Antes de
-                                senten&ccedil;as num&eacute;ricas, a crian&ccedil;a precisa ver grupos se unindo e o total
-                                realmente aumentando.</p>
-                        </div>
-
-                        <div class="prep-section">
-                            <p class="prep-section-title">
-                                <i class="ph-duotone ph-seal-check duotone-forest"></i>
-                                <span>O que o Portador aprende hoje</span>
-                            </p>
-                            <p>Que somar n&atilde;o &eacute; decorar um resultado. &Eacute; acompanhar a hist&oacute;ria
-                                de dois grupos que agora vivem como um total maior.</p>
-                        </div>
-
-                        <div class="prep-section">
-                            <p class="prep-section-title">
-                                <i class="ph-duotone ph-cubes duotone-indigo"></i>
-                                <span>CPA / Bruner</span>
-                            </p>
-                            <p><strong>Concreto:</strong> dois grupos reais de objetos sendo vistos, aproximados e recontados.</p>
-                            <p><strong>Pict&oacute;rico:</strong> pode vir depois, quando desenhos de grupos reunidos fizerem
-                                sentido por causa da experi&ecirc;ncia.</p>
-                            <p><strong>Abstrato:</strong> ainda n&atilde;o governa; hoje o cora&ccedil;&atilde;o &eacute;
-                                ver que 2 + 3 nasceu de um encontro concreto.</p>
-                        </div>
-
-                        <div class="prep-section">
-                            <p class="prep-section-title">
-                                <i class="ph-duotone ph-feather duotone-magic"></i>
-                                <span>Charlotte Mason</span>
-                            </p>
-                            <p>Coisas antes de sinais. Antes de falar de opera&ccedil;&atilde;o, a crian&ccedil;a precisa
-                                narrar o que aconteceu quando os grupos se uniram diante dela.</p>
-                        </div>
-
-                        <div class="prep-section">
-                            <p class="prep-section-title">
-                                <i class="ph-duotone ph-books duotone-gold"></i>
-                                <span>Conex&atilde;o TGTB</span>
-                            </p>
-                            <p>Este passo corresponde a <code>000-L16 - Addition / Adi&ccedil;&atilde;o</code>. O alvo
-                                &eacute; inaugurar a adi&ccedil;&atilde;o como crescimento concreto de um grupo.</p>
-                        </div>
-
-                        <div class="prep-section">
-                            <p class="prep-section-title">
-                                <i class="ph-duotone ph-arrows-clockwise duotone-forest"></i>
-                                <span>Curr&iacute;culo em espiral</span>
-                            </p>
-                            <p>Hoje a crian&ccedil;a v&ecirc; grupos se unindo. Depois, essa experi&ecirc;ncia sustentar&aacute;
-                                fatos b&aacute;sicos, senten&ccedil;as de adi&ccedil;&atilde;o e rela&ccedil;&otilde;es
-                                num&eacute;ricas maiores.</p>
-                        </div>
-
-                        <div class="strategy-box">
-                            <p class="prep-section-title">
-                                <i class="ph-duotone ph-compass-tool duotone-carmim"></i>
-                                <span>Estrat&eacute;gia do Mestre: Crescimento que se Pode Ver</span>
-                            </p>
-                            <p>O adulto protege a li&ccedil;&atilde;o quando n&atilde;o corre para resposta pronta nem
-                                transforma o + em senha escolar. O cora&ccedil;&atilde;o matem&aacute;tico aqui &eacute;
-                                ver um grupo crescer porque outro se aproximou.</p>
-                        </div>
-
-                        <div class="graca-box">
-                            <p class="prep-section-title">
-                                <i class="ph-duotone ph-heart-straight duotone-heart"></i>
-                                <span>Nota de Gra&ccedil;a</span>
-                            </p>
-                            <p>Se a crian&ccedil;a quiser contar tudo desde o come&ccedil;o sem falar em dois mais tr&ecirc;s,
-                                isso j&aacute; &eacute; bom fruto. A pressa pelo vocabul&aacute;rio nunca deve roubar a
-                                paz da descoberta.</p>
-                        </div>
-
-                        <div class="prep-section">
-                            <p class="prep-section-title">
-                                <i class="ph-duotone ph-plant duotone-forest"></i>
-                                <span>As Sementes Continuam</span>
-                            </p>
-                            <p>Depois de ver o bando crescer com Bernardo, a crian&ccedil;a estar&aacute; mais pronta para
-                                reconhecer outros encontros, outros totais e outros horizontes dentro do Reino.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <nav class="lesson-footer-nav" aria-label="Navegacao entre licoes">
-                <a href="MV-S-015_A_ESCADA_DE_LUZ.html" class="lesson-footer-link">
-                    <span class="lesson-footer-direction">&larr; Anterior</span>
-                    <span class="lesson-footer-title">A Escada de Luz</span>
-                </a>
-
-                <a href="MV-S-017_O_HORIZONTE_AL?M.html" class="lesson-footer-link" style="text-align:right;">
-                    <span class="lesson-footer-direction">Pr&oacute;xima &rarr;</span>
-                    <span class="lesson-footer-title">O Horizonte Al&eacute;m</span>
-                </a>
-            </nav>
         </article>
+
+        <nav class="lesson-nav">
+            <a href="MV-S-015_A_ESCADA_DE_LUZ.html" class="nav-btn prev">
+                <span class="nav-label"><i class="ph-duotone ph-arrow-left duotone-gold"></i> Anterior</span>
+                <span class="nav-title">A Escada de Luz</span>
+            </a>
+            <a href="../index.html" class="nav-btn next">
+                <span class="nav-label">Mapa <i class="ph-duotone ph-house duotone-gold"></i></span>
+                <span class="nav-title">Voltar ao Dashboard</span>
+            </a>
+        </nav>
+
+        <footer style="text-align: center; margin-top: 4rem; color: #A8A29E; font-size: 0.8rem;">
+            Matem&aacute;tica Viva &bull; Trilha publicada protegida at&eacute; a Li&ccedil;&atilde;o 015
+        </footer>
     </div>
 </body>
 

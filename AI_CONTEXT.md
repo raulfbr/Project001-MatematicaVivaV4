@@ -1,6 +1,6 @@
 # AI CONTEXT - Matemática Viva
 
-Data de atualização: 2026-03-16
+Data de atualização: 2026-03-17
 Status: arquivo vivo de retomada macro + estado atual
 
 ## Missão deste arquivo
@@ -207,135 +207,79 @@ Leitura correta:
 
 Leitura mais segura do estado atual:
 
-1. a frente ativa continua sendo a revisão `HTML-first`;
-2. a experiência final real ainda vive principalmente em `site/sementes/*.html`;
-3. o protocolo de revisão está consolidado em `023`, com execução em `003`, veredito em `004` e quadro operacional em `005`;
-4. o `Manual do Portador`, `MV-S-001` e `MV-S-002` já passaram por rodada profunda e auditoria por IA;
-5. o lote `MV-S-004` ate `MV-S-015` tambem ja passou por reauditoria profunda por IA nesta frente, com logs e governanca atualizados;
-6. `005_STATUS_REVISAO_SEMENTES.md` continua sendo o quadro operacional base, mas a leitura correta do momento precisa incluir este fechamento de `2026-03-16`;
-7. existe trilha técnica paralela em `apps/web`, mas ela não governa a sessão atual por padrão.
-
-## Fechamento da sessao de hoje - 2026-03-16
-
-1. a sessao de hoje fechou o lote `L004-L015` no nivel de reauditoria por IA;
-2. as licoes publicadas desse lote ficaram limpas de residuos estruturais mais recorrentes da fase;
-3. os logs do dia foram alinhados ao que realmente foi feito;
-4. a governanca tambem foi ajustada para deixar claro que:
-   a. `AI_CONTEXT.md` + `005_STATUS_REVISAO_SEMENTES.md` sao a leitura viva atual;
-   b. `015_ESTADO_REAL...` e apoio historico, nao SSOT da fase.
-5. foi criada uma task de fechamento do lote:
-   `Revisao/00_SISTEMA_REVISAO_CANONICO/046_TASK_ROBUSTA_FECHAMENTO_PREMIUM_LOTE_L008_L015_E_GOVERNANCA.md`.
-6. o proximo gate principal nao e novo patch automatico, e sim:
-   a. validacao humana real com familias;
-   b. eventual sincronizacao curricular dos YAMLs;
-   c. manutencao disciplinada da governanca viva.
-7. em reauditorias profundas desta fase, o arquivo `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md` passa a ser a lente principal sempre que houver friccao de ancora concreta, imagem dominante, encarnacao do conceito ou pressao indevida sobre a mae.
+1. a frente ativa continua sendo a revisao `HTML-first`;
+2. a experiencia final real vive principalmente em `site/sementes/*.html`;
+3. a trilha publicada do site agora vai ate `MV-S-015`;
+4. `MV-S-016` funciona como pagina de continuidade em construcao;
+5. `MV-S-017+` sairam da trilha publicada e aguardam reconstrucao;
+6. o protocolo de revisao esta consolidado em `023`, com execucao em `003`, veredito em `004`, quadro operacional em `005` e registro de sessao em `010_TEMPLATE`;
+7. `MV-S-003` e `MV-S-004` estao fechadas para a rodada atual, salvo novo feedback relevante;
+8. o proximo foco seguro do lote e revisar `MV-S-005` ate `MV-S-010` sob o protocolo endurecido;
+9. existe trilha tecnica paralela em `apps/web`, mas ela nao governa a sessao atual por padrao.
 
 ## O que o projeto ja sabe sobre maes reais
 
 Leitura correta:
 
-1. o projeto ja reconhece explicitamente que o produto e para maes reais em contexto real;
-2. a pasta `Revisao/FEEDBACK_MAES_REAIS/` existe justamente para impedir que esse ouro se perca;
-3. o sistema ja diferencia critica local, sintese transversal e canonizacao;
-4. o feedback da mae deve registrar nao so o que falhou, mas tambem o que ela validou;
-5. o melhor uso desse feedback nao e obediencia cega, e sim aprendizado editorial e operacional.
+1. feedback real de maes e ativo de produto, nao anexo;
+2. ele serve para corrigir licao local e tambem para ensinar o sistema;
+3. o melhor uso do feedback nao e obediencia cega, e sim calibragem editorial e operacional;
+4. quando houver caso semelhante, consultar `Revisao/FEEDBACK_MAES_REAIS/` antes de patchar;
+5. quando houver evidencia forte, a formulacao final deve reduzir releitura, improviso e traducao adulta.
 
-Pergunta de controle:
+## Tensao documental que precisa ser lida corretamente
 
-1. estamos ouvindo a mae real como evidencia qualificada ou apenas reagindo ao ultimo comentario?
+1. `README.md` pode preservar snapshots historicos no final;
+2. `001_CONTEXTO_DETALHADO_PROXIMA_SESSAO.md` e `015_ESTADO_REAL...` continuam uteis, mas nao sao SSOT do momento;
+3. a leitura viva atual e: `README.md` -> `AI_CONTEXT.md` -> `Revisao/README.md` -> `000_COMECAR_AQUI` -> `000_INDEX` -> `005` -> `023` -> `003` -> `004`.
 
-## Tensão documental que precisa ser lida corretamente
+## Proximo passo seguro
 
-Hoje há um ponto de atenção importante:
+Em termos de governanca:
 
-1. `README.md` antigo, `015_ESTADO_REAL...` e `001_CONTEXTO...` preservavam um momento em que o próximo passo seguro ainda era validar humano antes de abrir `MV-S-003`;
-2. o quadro mais recente em `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md` já registra avanço do lote `MV-S-003` até `MV-S-010`;
-3. portanto, não basta abrir um documento isolado e assumir que ele resume tudo.
+1. usar este `AI_CONTEXT.md` como ponto central de retomada macro;
+2. usar `README.md` como portal estavel;
+3. usar `Revisao/README.md` e `000_COMECAR_AQUI` como entrada operacional curta;
+4. usar `005_STATUS_REVISAO_SEMENTES.md` como quadro vivo do lote;
+5. evitar criar novo handoff quando uma atualizacao em `AI_CONTEXT.md` resolver.
 
-Regra de leitura:
+Em termos de fase de revisao:
 
-1. `README.md` = macro;
-2. `AI_CONTEXT.md` = interpretação correta do momento;
-3. `005_STATUS_REVISAO_SEMENTES.md` = estado operacional mais atual da fase;
-4. `023/003/004` = método canônico de execução.
-
-## Decisões já tomadas
-
-1. a pasta `Revisao/` é a governança viva da fase ativa;
-2. a revisão atual deve ser lida como `HTML-first`;
-3. o HTML real publicado é artefato principal de revisão, não mero output descartável;
-4. `TASTE` editorial é diferencial de produto, não enfeite;
-5. feedback real de famílias entra como calibragem qualificada, não como volante automático;
-6. orquestração multiagente pesada não é o gargalo principal agora;
-7. o North Star precisa governar a leitura do projeto, não ficar como documento decorativo;
-8. o repositório precisa de uma retomada mais confiável, centralizada e menos contraditória.
-9. feedback real de maes deve ser tratado como ativo de produto e de sistema, nao como anexo secundario.
-10. `TASTE`, `premium`, `experts` e `feedback real` fazem parte do nucleo de qualidade desta fase.
-
-## O que não fazer agora
-
-1. não tratar `apps/web` como centro da fase por default;
-2. não usar apenas tasks históricas como onboarding;
-3. não tomar um único handoff antigo como verdade final do estado atual;
-4. não confundir protocolo bonito com fidelidade real ao espírito da obra;
-5. não abrir novas camadas documentais para cada sessão sem necessidade clara.
-6. nao revisar licoes ignorando o que a trilha `FEEDBACK_MAES_REAIS/` ja ensinou.
-7. nao confundir gosto pessoal isolado com evidência recorrente de mae real.
-
-## Próximo passo seguro
-
-Em termos de governança de documentação:
-
-1. usar este `AI_CONTEXT.md` como ponto central de retomada;
-2. usar `README.md` como portal estável;
-3. deixar `Revisao/` com papel cada vez mais operacional e menos de onboarding geral;
-4. reduzir duplicação futura, atualizando contexto vivo aqui em vez de criar handoffs paralelos.
-
-Em termos de fase de revisão:
-
-1. consultar `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`;
-2. seguir a task ativa do lote vigente, lendo esse quadro junto do fechamento desta sessao;
-3. executar sempre via `023 -> 003 -> 004`, com apoio de `011_TOPICOS/` e `012_TRANSVERSAIS/`;
-4. usar `008_NORTH_STAR_OPERACIONAL.md` como gate real antes de considerar uma lição pronta.
-5. quando houver caso relevante de mae real, consultar tambem `Revisao/FEEDBACK_MAES_REAIS/` antes de patchar.
-6. quando houver desempate fino ou fechamento premium, consultar tambem `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`.
-7. quando a reauditoria profunda envolver ancora concreta, imagem dominante, encarnacao do conceito ou friccao de usabilidade da mae real, consultar explicitamente `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`.
+1. seguir `029` e `030` para o lote `MV-S-003` ate `MV-S-010`;
+2. tratar `MV-S-003` e `MV-S-004` como referencias fechadas da rodada atual;
+3. aplicar o protocolo endurecido em `MV-S-005` ate `MV-S-010`;
+4. executar sempre via `023 -> 003 -> 004`, com apoio de `011_TOPICOS/` e `012_TRANSVERSAIS/`;
+5. consultar `008_NORTH_STAR_OPERACIONAL.md` antes de considerar uma licao pronta;
+6. consultar `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md` em desempate fino;
+7. consultar `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md` quando houver criacao, reescrita profunda, imagem dominante nebulosa, ancora concreta fraca ou traducao mental da mae;
+8. nao reabrir `MV-S-016+` para publicacao antes da reconstrucao sob o novo contrato premium.
 
 ## Ordem de leitura para retomar o projeto
 
-### Se a meta é entender o projeto no macro
-
+### Se a meta e entender o projeto no macro
 1. `README.md`
 2. `AI_CONTEXT.md`
 3. `LORE/north_star.yaml`
 
-### Se a meta é retomar a fase ativa
-
+### Se a meta e retomar a fase ativa
 1. `README.md`
 2. `AI_CONTEXT.md`
 3. `Revisao/README.md`
-4. `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`
-5. `Revisao/00_SISTEMA_REVISAO_CANONICO/023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`
-6. `Revisao/00_SISTEMA_REVISAO_CANONICO/003_PROTOCOLO_REVISAO_POR_LICAO.md`
-7. `Revisao/00_SISTEMA_REVISAO_CANONICO/004_RUBRICA_PREMIUM_REVISAO.md`
-8. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`, quando a reauditoria for profunda ou a mae real ainda exigir traducao mental
-9. lição alvo + lição anterior + lição seguinte
-10. caso relevante em `Revisao/FEEDBACK_MAES_REAIS/`, se houver friccao semelhante
-11. `009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`, quando o fechamento premium exigir desempate fino
+4. `Revisao/000_COMECAR_AQUI.md`
+5. `Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md`
+6. `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`
+7. `Revisao/00_SISTEMA_REVISAO_CANONICO/023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`
+8. `Revisao/00_SISTEMA_REVISAO_CANONICO/003_PROTOCOLO_REVISAO_POR_LICAO.md`
+9. `Revisao/00_SISTEMA_REVISAO_CANONICO/004_RUBRICA_PREMIUM_REVISAO.md`
+10. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/008_NORTH_STAR_OPERACIONAL.md`
+11. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`, quando necessario
+12. licao alvo + anterior + seguinte
+13. caso relevante em `Revisao/FEEDBACK_MAES_REAIS/`, se houver
 
-### Se a dúvida é "onde mora cada tipo de verdade?"
+## Regra de manutencao
 
-1. identidade: `LORE/`
-2. currículo: `curriculo/`
-3. produto real: `site/`
-4. execução da revisão: `Revisao/`
-5. contexto vivo: `AI_CONTEXT.md`
-
-## Regra de manutenção
-
-1. se mudar a visão geral do projeto, atualizar `README.md`;
+1. se mudar a visao geral do projeto, atualizar `README.md`;
 2. se mudar o estado real da fase, atualizar `AI_CONTEXT.md`;
-3. se mudar o andamento do lote de revisão, atualizar `005_STATUS_REVISAO_SEMENTES.md`;
-4. se mudar o método, atualizar `023`, `003`, `004` ou documentos canônicos correlatos;
-5. evitar criar novo arquivo de handoff se uma atualização em `AI_CONTEXT.md` resolver.
+3. se mudar o andamento do lote, atualizar `005_STATUS_REVISAO_SEMENTES.md`;
+4. se mudar o metodo, atualizar `023`, `003`, `004`, `002` ou `010_TEMPLATE`;
+5. se um arquivo historico voltar a competir com o contexto vivo, corrigir o apontador no mesmo dia.

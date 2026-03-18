@@ -1,5 +1,5 @@
 # ESTADO REAL DO PROJETO E DIRECAO DA REVISAO HTML-FIRST
-Data: 2026-03-07
+Data: 2026-03-17
 Escopo: projeto inteiro, com foco na fase ativa
 Status: canonico para orientacao e retomada
 
@@ -16,8 +16,9 @@ Status: canonico para orientacao e retomada
 ## 2) Sintese executiva
 1. `Matematica Viva` e, antes de tudo, um sistema editorial, pedagogico e narrativo para familias.
 2. O software existe para servir o conteudo, a experiencia da familia e a governanca da revisao.
-3. Hoje, a experiencia final real ainda vive principalmente em `site/sementes/*.html`, nao no piloto Next.
+3. Hoje, a experiencia final real vive principalmente em `site/sementes/*.html`, nao no piloto Next.
 4. A trilha `apps/web` e importante, mas ainda e piloto tecnico contrato-first, nao a frente operacional principal da revisao premium.
+5. A trilha publicada do site foi conscientemente cortada em `MV-S-015`; `MV-S-016` virou pagina de continuidade em construcao e `MV-S-017+` aguardam reconstrucao antes de voltar ao publicado.
 
 Frase-sintese:
 1. o coracao do projeto esta em `LORE` + `curriculo` + `site/sementes` + `Revisao`; o `apps/web` ainda esta provando infraestrutura.
@@ -92,13 +93,14 @@ Regra:
 
 ## 4) Fatos verificados nesta rodada
 
-### 4.1 Documentacao e operacao nao contam exatamente a mesma historia
-1. `README.md` da raiz ainda preserva contexto forte de V5/Next como frente relevante.
-2. `INICIAR_AQUI` e `Revisao/` deixam claro que a frente ativa agora e `HTML-first`.
-3. Conclusao operacional:
-   a. existem duas trilhas reais no repositorio;
-   b. apenas uma esta governando a sessao atual;
-   c. para revisao premium, a trilha ativa e a do HTML final.
+### 4.1 Documentacao e operacao ainda exigem disciplina de leitura
+1. o repositorio continua guardando duas trilhas reais: a operacional `HTML-first` e a tecnica futura em `apps/web`;
+2. a documentacao viva agora aponta de forma mais clara para `README.md` -> `AI_CONTEXT.md` -> `Revisao/README.md` -> `000_COMECAR_AQUI` -> `000_INDEX` -> `005`;
+3. `001_CONTEXTO_DETALHADO_PROXIMA_SESSAO.md` e `015_ESTADO_REAL...` seguem uteis, mas como apoio historico e nao como SSOT.
+
+Conclusao operacional:
+1. a trilha ativa da sessao continua sendo a do HTML final;
+2. contexto vivo e quadro vivo precisam ser lidos antes de qualquer retomada ou patch.
 
 ### 4.2 Pipeline Python/Jinja continua sendo o fluxo mais proximo da operacao atual
 Verificado:
@@ -173,6 +175,17 @@ Conclusao:
 3. se o ciclo consolidar feedback de `4 familias`, isso tende a tornar o produto mais estruturado e mais real;
 4. se algum apoio automatizado for usado, ele deve vir em forma de papeis e lentes leves, nao de orquestracao pesada.
 
+### 4.9 A trilha publicada foi conscientemente reduzida para proteger o premium
+Verificado:
+1. o dashboard publico foi cortado em `MV-S-015`;
+2. `MV-S-016` foi convertido em pagina de continuidade em construcao;
+3. `MV-S-017+` sairam da trilha publicada enquanto o protocolo de criacao e revisao e endurecido.
+
+Conclusao:
+1. o projeto nao esta tentando manter publicado algo que ainda nao passou pelo padrao premium atual;
+2. reconstruir melhor antes de republicar vale mais do que manter volume publicado com drift de qualidade;
+3. a trilha publicada agora precisa ser tratada como contrato vivo, nao como espelho automatico do acervo historico.
+
 ---
 
 ## 5) Leitura correta do momento do projeto
@@ -186,8 +199,9 @@ Decisao operacional correta para agora:
 2. usar `Revisao/` para auditar e padronizar o HTML real;
 3. elevar `TASTE` a criterio operacional explicito;
 4. usar feedback real de familias como calibracao qualificada;
-5. somente depois entrar em patch de licao;
-6. deixar a trilha Next como apoio tecnico e referencia de contrato, nao como condutora da fase atual.
+5. manter a trilha publicada conscientemente limitada a `MV-S-015` enquanto `MV-S-016+` sao reconstruidas;
+6. somente depois entrar em nova escala de licoes futuras;
+7. deixar a trilha Next como apoio tecnico e referencia de contrato, nao como condutora da fase atual.
 
 ---
 
@@ -215,8 +229,9 @@ Decisao operacional correta para agora:
 Antes de editar qualquer licao:
 1. confirmar se o artefato-alvo e o HTML final ou o YAML base;
 2. confirmar o que esta sob preservacao manual;
-3. confirmar as transversais que governam a secao;
-4. confirmar que o sistema de revisao esta suficiente para sustentar a decisao.
+3. confirmar se a licao esta na trilha publicada ou em reconstrucao;
+4. confirmar as transversais que governam a secao;
+5. confirmar que o sistema de revisao esta suficiente para sustentar a decisao.
 
 Ao usar o Forge no Windows:
 1. lembrar de `PYTHONIOENCODING=utf-8`.
@@ -234,8 +249,9 @@ Fatos de decisao:
 2. a pasta `Revisao` foi reorganizada e esta virando a governanca central da fase;
 3. o protocolo central agora esta consolidado em `023` e auditado em `028`;
 4. `Manual do Portador`, `MV-S-001` e `MV-S-002` ja passaram por rodada profunda e estao prontos para validacao humana;
-5. o piloto documental alem de `001-002` ainda nao foi executado;
-6. o proximo foco correto e colher uso humano real antes de decidir a entrada de `MV-S-003`.
+5. `MV-S-003` e `MV-S-004` ja receberam rodadas profundas com feedback real forte;
+6. a trilha publicada foi conscientemente reduzida a `MV-S-015`;
+7. o proximo foco correto e fechar `MV-S-005` ate `MV-S-010` e so depois decidir a volta de `MV-S-016+`.
 
 ---
 
@@ -256,7 +272,8 @@ Fatos de decisao:
 2. o HTML final continua sendo o centro da fase atual;
 3. `Revisao` precisa ser tratada como sistema de governanca, nao apenas pasta de apoio;
 4. o diferencial de curto prazo esta em `TASTE` editorial e realidade de uso familiar;
-5. a decisao correta agora e fechar `Revisao` com rigor antes de tocar o lote real de licoes.
+5. a trilha publicada atual vai somente ate `MV-S-015` por decisao de qualidade, nao por acaso;
+6. a decisao correta agora e fechar `Revisao` com rigor antes de republicar `MV-S-016+`.
 
 Frase final:
-1. primeiro validacao humana do que o sistema consolidou, depois registro dos achados reais, depois decisao sobre `MV-S-003`, depois escala.
+1. primeiro protocolo forte, depois feedback real incorporado, depois validacao humana, depois escala com seguranca.

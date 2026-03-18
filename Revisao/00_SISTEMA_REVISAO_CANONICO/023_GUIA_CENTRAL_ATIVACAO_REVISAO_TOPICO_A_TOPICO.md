@@ -1,5 +1,5 @@
 # GUIA CENTRAL - ATIVACAO DA REVISAO TOPICO A TOPICO
-Data: 2026-03-10
+Data: 2026-03-17
 Status: canonico
 Escopo: fonte central unica para ativar a revisao premium de licoes `Sementes`
 
@@ -60,10 +60,10 @@ Consequencia pratica:
 ## 4) Ordem oficial de leitura antes de revisar uma licao
 Abrir sempre nesta ordem:
 1. `README.md`
-2. `Revisao/README.md`
-3. `Revisao/000_COMECAR_AQUI.md`
-4. `Revisao/001_CONTEXTO_DETALHADO_PROXIMA_SESSAO.md`
-5. `Revisao/00_SISTEMA_REVISAO_CANONICO/015_ESTADO_REAL_DO_PROJETO_E_DIRECAO_HTML_FIRST.md`
+2. `AI_CONTEXT.md`
+3. `Revisao/README.md`
+4. `Revisao/000_COMECAR_AQUI.md`
+5. `Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md`
 6. `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`
 7. `Revisao/00_SISTEMA_REVISAO_CANONICO/023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`
 8. `Revisao/00_SISTEMA_REVISAO_CANONICO/002_ESQUELETO_GERAL_LICAO_SEMENTES.md`
@@ -72,7 +72,7 @@ Abrir sempre nesta ordem:
 11. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/000_README.md`
 12. `Revisao/00_SISTEMA_REVISAO_CANONICO/011_TOPICOS/001_BASE_E_HERO.md` ate `012_NAVEGACAO_INFERIOR.md`, na ordem oficial
 13. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/000_README.md`
-14. pacote minimo transversal: `002`, `003`, `005`, `006`, `008`
+14. pacote minimo transversal: `002`, `003`, `005`, `006`, `008`, `009`
 15. quando houver criacao de licao, reescrita profunda, imagem dominante nebulosa ou duvida sobre ancora concreta do conceito, abrir tambem `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`
 16. licao atual
 17. licao anterior
@@ -85,7 +85,8 @@ Regra:
 1. transversais adicionais entram por necessidade;
 2. `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md` e a transversal indicada quando a dificuldade principal for encarnar melhor o conceito sem perder rigor;
 3. os 12 topicos sempre entram;
-4. nenhuma licao deve ser auditada isoladamente do seu antes e depois.
+4. nenhuma licao deve ser auditada isoladamente do seu antes e depois;
+5. `001_CONTEXTO_DETALHADO_PROXIMA_SESSAO.md` e `015_ESTADO_REAL...` ficam como apoio historico e entram so quando ajudarem a explicar uma tensao antiga.
 
 ---
 
@@ -117,12 +118,16 @@ Registrar no minimo:
 9. `Risco familia real`: onde uma casa cansada, com mais de uma crianca, pode travar.
 10. `Hospitalidade multi-crianca`: como um irmao menor pode entrar sem dissolver o foco do herdeiro de `5-6 anos`.
 11. `Ancora concreta`: onde o conceito pousa melhor na criacao, na casa, no corpo, no ritmo, no caminho ou em objetos cotidianos.
+12. `Frase de boca do Portador`: a formulacao que realmente cabe na voz do adulto em casa.
+13. `Pergunta respondivel principal`: a pergunta mais viva que a crianca consegue responder sem traducao adulta.
+14. `Microfriccoes previsiveis`: ambiguidades, nomes frouxos, comandos escondidos ou trocas de concreto que podem gerar atrito fino depois.
 
 Regra:
 1. nao patchar HTML antes de esse cerne estar claro;
 2. se a imagem dominante ou o fruto do dia estiverem nebulosos, diagnosticar antes de editar;
 3. se a ancora concreta tambem estiver nebulosa, abrir `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md` antes de patchar;
-4. a matriz `001-012` deve ser lida a partir deste cerne, nao contra ele.
+4. a frase de boca, a pergunta respondivel principal e as microfriccoes previsiveis devem ser travadas antes do primeiro patch forte;
+5. a matriz `001-012` deve ser lida a partir deste cerne, nao contra ele.
 
 ---
 
@@ -147,15 +152,18 @@ Executar nesta ordem:
 1. ativar a leitura minima oficial;
 2. congelar o escopo da sessao;
 3. preencher o cerne macro da licao;
-4. preencher a matriz `001-012` com `PASS / GAP / BLOCK`;
-5. auditar as fronteiras criticas;
-6. classificar findings por severidade;
-7. patchar primeiro estrutura e fronteiras;
-8. patchar depois narrativa, pedagogia e `Taste`;
-9. reauditar os topicos tocados e seus vizinhos imediatos;
-10. fechar a rubrica;
-11. registrar veredito honesto;
-12. entregar a licao para validacao humana final da Familia Rodrigues.
+4. rodar a passada premium antecipada ainda no plano da licao;
+5. preencher a matriz `001-012` com `PASS / GAP / BLOCK`;
+6. auditar as fronteiras criticas;
+7. classificar findings por severidade;
+8. patchar primeiro estrutura e fronteiras;
+9. patchar depois narrativa e pedagogia;
+10. irradiar os ajustes para ecos proximos da licao inteira;
+11. rodar a passada premium final de microdetalhes;
+12. reauditar os topicos tocados e seus vizinhos imediatos;
+13. fechar a rubrica;
+14. registrar veredito honesto;
+15. entregar a licao para validacao humana final da Familia Rodrigues.
 
 Fronteiras criticas obrigatorias:
 1. `003 -> 004`
@@ -183,7 +191,10 @@ Fronteiras criticas obrigatorias:
 ### Patch
 1. estrutura antes de prosa;
 2. pedagogia antes de perfume;
-3. `Taste` so fecha depois de funcao, clareza e respiracao.
+3. pergunta respondivel antes de pergunta bonita;
+4. um concreto por vez;
+5. comando visivel no ponto certo;
+6. `Taste` so fecha depois de funcao, clareza, respiracao e radiacao local.
 
 ### Reauditoria
 1. topico tocado;
@@ -213,18 +224,22 @@ Regra:
 2. licao anterior e proxima abertas;
 3. guia central `023` consultado;
 4. cerne macro preenchido;
-5. topicos `001-012` abertos;
-6. pacote minimo transversal aberto;
-7. escopo congelado.
+5. frase de boca, pergunta respondivel principal e microfriccoes previsiveis registradas;
+6. topicos `001-012` abertos;
+7. pacote minimo transversal aberto;
+8. escopo congelado.
 
 ## 12) Definition of Done de uma licao revisada
 1. matriz `001-012` completa;
 2. fronteiras criticas auditadas;
 3. `BLOCK` duro inexistente;
-4. rubrica fechada com veredito honesto;
-5. HTML relido apos patch;
-6. risco residual nomeado;
-7. pronta para validacao humana da Familia Rodrigues.
+4. passada premium antecipada concluida;
+5. radiacao local concluida;
+6. passada premium final de microdetalhes concluida;
+7. rubrica fechada com veredito honesto;
+8. HTML relido apos patch;
+9. risco residual nomeado;
+10. pronta para validacao humana da Familia Rodrigues.
 
 ---
 

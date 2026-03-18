@@ -5,8 +5,9 @@ Se voce reabrir a pasta `Revisao` e quiser retomar sem ambiguidade:
 1. volte para `README.md`;
 2. depois leia `AI_CONTEXT.md`;
 3. em seguida leia `Revisao/README.md`;
-4. depois abra `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`;
-5. so entao entre no protocolo canonico (`023`, `003`, `004`).
+4. depois abra `Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md`;
+5. depois abra `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`;
+6. so entao entre no protocolo canonico (`023`, `003`, `004`).
 
 ## Regra
 

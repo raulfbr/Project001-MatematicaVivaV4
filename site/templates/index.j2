@@ -14,19 +14,22 @@
         <div class="brand">
             <img src="assets/cards/guardioes/melquior-leao.png" alt="Logo" style="width: 32px; height: 32px;"> Matemática Viva
         </div>
-        
+
         <div class="nav-section">Família Pioneira</div>
-        
+
+        <!-- MANUAL -->
+        <a href="manual-portador.html" class="nav-link"><span>🔥</span> Manual do Portador</a>
+
         <!-- CICLO BROTOS -->
         <a href="{{ navegacao.brotos.link }}" class="nav-link {{ 'active' if navegacao.brotos.ativo else '' }}">
             <span>🌰</span> Ciclo Brotos {{ '<small>(Em breve)</small>' if not navegacao.brotos.ativo }}
         </a>
-        
+
         <!-- CICLO SEMENTES -->
         <a href="#sementes" class="nav-link {{ 'active' if navegacao.sementes.ativo else '' }}">
             <span>🌱</span> Ciclo Sementes
         </a>
-        
+
         <!-- CICLO RAÍZES -->
         <a href="{{ navegacao.raizes.link }}" class="nav-link {{ 'active' if navegacao.raizes.ativo else '' }}">
             <span>🌳</span> Ciclo Raízes {{ '<small>(Em breve)</small>' if not navegacao.raizes.ativo }}
@@ -39,13 +42,14 @@
 
         <!-- LIVROS DOURADOS (Agora exclusivo) -->
         <a href="#livros" class="nav-link"><span>🏆</span> Livros Dourados</a>
-        
+
         <!-- LEGADO (Agora exclusivo) -->
         <a href="{{ navegacao.legado.link }}" class="nav-link"><span>🏺</span> O Legado</a>
-        
+
         <div class="nav-section">Acervo Aberto</div>
+        <a href="placeholders/biblioteca.html" class="nav-link"><span>📚</span> Biblioteca Pedagogia</a>
         <a href="#blog" class="nav-link"><span>📝</span> Blog & Ensaios</a>
-        
+
         <div class="nav-section">Sistema</div>
         <a href="#" class="nav-link"><span>⚙️</span> Configurações</a>
     </nav>
@@ -58,29 +62,53 @@
         </header>
 
         <!-- ESTATÍSTICAS REMOVIDAS POR DESIGN REVIEW (Foco na Narrativa) -->
-        
+
         <!-- SEÇÃO SEMENTES -->
         <section id="sementes" class="mb-16">
             <div class="section-header">
                 <div class="section-title"><span>🌱</span> Ciclo Sementes</div>
                 <div class="section-meta">Estação 1: A Fundação</div>
             </div>
-            
+
             <div class="grid-cards">
-                {% if sementes_licoes %}
-                    {% for licao in sementes_licoes %}
+                <!-- CARD MANUAL EM DESTAQUE -->
+                <article class="card melquior"
+                    style="border: 1px solid #D97706; background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span class="card-id" style="color: #B45309; font-weight: 800;">MANUAL</span>
+                            <img src="assets/sementes/guardioes/melquior-leao.png" class="guardian-icon-img"
+                                alt="manual">
+                        </div>
+                        <h3 class="card-title" style="color: #92400E;">Manual do Portador da Tocha</h3>
+                        <p class="card-desc">“O guia essencial para os pais e mestres que conduzem a jornada da Matemática Viva.”</p>
+
+                        <div class="card-objective"
+                            style="margin-top: 0.5rem; font-size: 0.8rem; color: #92400E; border-top: 1px solid #FDE68A; padding-top: 0.5rem; display: flex; align-items: center; gap: 0.25rem;">
+                            <span>🔥</span> <em>Leitura Obrigatória para Pais</em>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="manual-portador.html" class="btn-arr" style="color: #92400E;">Ler Manual <span>→</span></a>
+                    </div>
+                </article>
+
+                {%- if sementes_licoes %}
+                    {%- for licao in sementes_licoes %}
+                    {%- set numero_publicado = licao.filename[5:8] | int %}
+                    {%- if numero_publicado <= 15 %}
                     <article class="card {{ licao.guardiao | lower }}">
                         <div class="card-body">
                             <div class="card-meta">
                                 <span class="card-id">{{ licao.display_id }}</span>
-                                <img src="assets/sementes/guardioes/{{ licao.guardiao | lower }}-{{ licao.guardiao_animal }}.png" 
-                                     class="guardian-icon-img" 
+                                <img src="assets/sementes/guardioes/{{ licao.guardiao | lower }}-{{ licao.guardiao_animal }}.png"
+                                     class="guardian-icon-img"
                                      alt="{{ licao.guardiao }}"
                                      onerror="this.src='assets/cards/guardioes/melquior-leao.png'">
                             </div>
                             <h3 class="card-title">{{ licao.titulo }}</h3>
                             <p class="card-desc">“{{ licao.desc }}”</p>
-                            
+
                             <div class="card-objective" style="margin-top: 0.5rem; font-size: 0.8rem; color: #6B7280; border-top: 1px solid #F3F4F6; padding-top: 0.5rem; display: flex; align-items: center; gap: 0.25rem;">
                                 <span>🏷️</span> <em>{{ licao.objetivo_pedagogico | default(licao.metadados.objetivo_pedagogico, true) }}</em>
                             </div>
@@ -89,10 +117,11 @@
                             <a href="sementes/{{ licao.filename }}" class="btn-arr">Abrir Lição <span>→</span></a>
                         </div>
                     </article>
-                    {% endfor %}
-                {% else %}
+                    {%- endif %}
+                    {%- endfor %}
+                {%- else %}
                     <p class="text-gray-500">Nenhuma lição encontrada neste ciclo.</p>
-                {% endif %}
+                {%- endif %}
             </div>
         </section>
 
@@ -102,15 +131,15 @@
                 <div class="section-title"><span>🏆</span> Livros Dourados</div>
                 <div class="section-meta">Living Books • Narrativa Visual</div>
             </div>
-            
+
             <div class="grid-cards">
-                {% if livros %}
-                    {% for livro in livros %}
+                {%- if livros %}
+                    {%- for livro in livros %}
                     <article class="card melquior"> <!-- Usando Melquior (Dourado/Leão) por padrão -->
                         <div class="card-body">
                             <div class="card-meta">
                                 <span class="card-id">LIVRO VIVO</span>
-                                <img src="assets/cards/guardioes/melquior-leao.png" class="guardian-icon-img">
+                                <img src="assets/cards/guardioes/melquior-leao.png" class="guardian-icon-img" alt="livro vivo">
                             </div>
                             <h3 class="card-title">{{ livro.titulo }}</h3>
                             <p class="card-desc">{{ livro.desc }}</p>
@@ -119,12 +148,12 @@
                             <a href="livros/{{ livro.filename }}" class="btn-arr">Ler Livro <span>→</span></a>
                         </div>
                     </article>
-                    {% endfor %}
-                {% else %}
+                    {%- endfor %}
+                {%- else %}
                     <div style="grid-column: 1/-1; background: #FEF3C7; padding: 2rem; border-radius: 8px; text-align: center;">
                         <p>A Biblioteca Dourada está sendo preparada.</p>
                     </div>
-                {% endif %}
+                {%- endif %}
             </div>
         </section>
 
@@ -134,16 +163,67 @@
                 <div class="section-title"><span>📝</span> Blog & Ensaios</div>
                 <div class="section-meta">Base de Conhecimento</div>
             </div>
-            
+
             <div class="blog-list">
-                <!-- Por enquanto estático ou lista simples -->
-                 <div class="blog-empty">
-                    <h3>Em Construção</h3>
-                    <p>O sistema de blog está sendo conectado.</p>
+                <div class="grid-cards">
+                    <article class="card" style="border-left: 4px solid #059669;">
+                        <div class="card-body">
+                            <div class="card-meta" style="color: #059669; font-weight: 600;">19 JAN 2026</div>
+                            <h3 class="card-title">O Primeiro Mês do Raulzito: Diário de Uma Cobaia de Luxo</h3>
+                            <p class="card-desc">Nosso filho de 5 anos é a cobaia oficial. Aqui está o diário honesto das primeiras semanas — sem filtro.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="blog/2026-01-19_primeiro-mes-raulzito.html" class="btn-arr" style="color: #059669;">Ler Artigo <span>→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="card" style="border-left: 4px solid #059669;">
+                        <div class="card-body">
+                            <div class="card-meta" style="color: #059669; font-weight: 600;">19 JAN 2026</div>
+                            <h3 class="card-title">Para Quem é Matemática Viva? (E Para Quem Não É)</h3>
+                            <p class="card-desc">Não somos para todo mundo. Descubra se você faz parte dessa tribo de famílias.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="blog/2026-01-19_para-quem-e-matematica-viva.html" class="btn-arr" style="color: #059669;">Ler Artigo <span>→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="card" style="border-left: 4px solid #059669;">
+                        <div class="card-body">
+                            <div class="card-meta" style="color: #059669; font-weight: 600;">19 JAN 2026</div>
+                            <h3 class="card-title">Matemática em 20 Minutos: Rotina Sem Estresse</h3>
+                            <p class="card-desc">Você não precisa de horas. 20 minutos são suficientes para plantar sementes que durarão toda a vida.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="blog/2026-01-19_matematica-em-20-minutos.html" class="btn-arr" style="color: #059669;">Ler Artigo <span>→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="card" style="border-left: 4px solid #059669;">
+                        <div class="card-body">
+                            <div class="card-meta" style="color: #059669; font-weight: 600;">15 JAN 2026</div>
+                            <h3 class="card-title">A Mentira que Contaram sobre 'Ser de Exatas'</h3>
+                            <p class="card-desc">A neurociência mostra que o cérebro é uma orquestra, não um dueto. Derrube esse mito.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="blog/2026-01-15_a-mentira-ser-de-exatas.html" class="btn-arr" style="color: #059669;">Ler Artigo <span>→</span></a>
+                        </div>
+                    </article>
+
+                    <article class="card" style="border-left: 4px solid #059669;">
+                        <div class="card-body">
+                            <div class="card-meta" style="color: #059669; font-weight: 600;">14 JAN 2026</div>
+                            <h3 class="card-title">Por que seu filho (ainda) não ama matemática?</h3>
+                            <p class="card-desc">Eles disseram que era seco. E se a matemática fosse uma aventura para viver juntos?</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="blog/2026-01-14_por-que-seu-filho-nao-ama-matematica.html" class="btn-arr" style="color: #059669;">Ler Artigo <span>→</span></a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
-        
+
         <footer style="margin-top: 6rem; border-top: 1px solid #E5E7EB; padding-top: 2rem; color: #9CA3AF; font-size: 0.875rem; display: flex; justify-content: space-between;">
             <div>&copy; 2026 Matemática Viva. Built by Forge V3.</div>
             <div>Versão 2.1 (Vercel)</div>

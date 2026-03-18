@@ -9,8 +9,10 @@ Para retomar o projeto sem ambiguidade:
 1. leia `README.md`;
 2. leia `AI_CONTEXT.md`;
 3. leia `Revisao/README.md`;
-4. leia `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`;
-5. siga para o protocolo canonico conforme a necessidade da sessao.
+4. leia `Revisao/000_COMECAR_AQUI.md`;
+5. leia `Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md`;
+6. leia `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`;
+7. siga para o protocolo canonico conforme a necessidade da sessao.
 
 ## Papel atual deste arquivo
 

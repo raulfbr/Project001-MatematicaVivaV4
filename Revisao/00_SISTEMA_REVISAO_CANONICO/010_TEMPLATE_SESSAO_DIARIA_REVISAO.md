@@ -3,20 +3,28 @@
 ## Sessao [data]
 
 ### Ativacao do protocolo
+- README consultado:
+- AI_CONTEXT consultado:
+- Revisao/README consultado:
+- `000_COMECAR_AQUI` consultado:
+- `000_INDEX_SISTEMA_REVISAO` consultado:
 - Guia central `023` consultado:
 - Status `005` consultado:
 - Escopo congelado:
+- Modo da sessao: criacao / revisao / criacao + revisao
 - Licao A:
 - Licao B:
 - Topicos `001-012` abertos:
-- Pacote minimo transversal aberto (`002`, `003`, `005`, `006`, `008`):
+- Pacote minimo transversal aberto (`002`, `003`, `005`, `006`, `008`, `009`):
+- `TX10` aberta quando necessario:
 - Licao anterior e proxima abertas:
 - Task especifica da licao consultada:
+- Feedback real relevante consultado:
 - Validacao humana da Familia Rodrigues: concluida / pendente
 
 ### Contexto consultado
-- README e contexto geral:
-- Estado real do projeto:
+- `001_CONTEXTO_DETALHADO_PROXIMA_SESSAO.md` consultado, se relevante:
+- `015_ESTADO_REAL_DO_PROJETO_E_DIRECAO_HTML_FIRST.md` consultado, se relevante:
 - Skeleton da licao:
 - Protocolo `003`:
 - Rubrica `004`:
@@ -37,8 +45,12 @@
 - Papel no curriculo mestre / TGTB:
 - Imagem dominante:
 - Fruto do dia:
+- Ancora concreta:
+- Frase de boca do Portador:
+- Pergunta respondivel principal:
 - Risco familia real:
 - Hospitalidade multi-crianca:
+- Microfriccoes previsiveis:
 
 ### Fronteiras de maior risco
 - `003 -> 004`:
@@ -49,6 +61,14 @@
 - `009 -> 010`:
 - `010 -> 011`:
 - `011 -> 012`:
+
+### Passada premium antecipada
+- Pergunta bonita vs pergunta respondivel:
+- Um concreto por vez:
+- Comando visivel no ponto certo:
+- Nomeacao consistente de objetos e lugares:
+- Frase que cabe na boca da mae cansada:
+- Ajustes travados antes do primeiro patch:
 
 ## LICAO A - MATRIZ TOPICA
 
@@ -76,7 +96,8 @@
 - Estrutural:
 - Narrativo:
 - Pedagogico:
-- Taste:
+- Radiacao local:
+- Passada premium final:
 
 ### Gates finais
 - Cobertura topica:
@@ -109,8 +130,12 @@
 - Papel no curriculo mestre / TGTB:
 - Imagem dominante:
 - Fruto do dia:
+- Ancora concreta:
+- Frase de boca do Portador:
+- Pergunta respondivel principal:
 - Risco familia real:
 - Hospitalidade multi-crianca:
+- Microfriccoes previsiveis:
 
 ### Fronteiras de maior risco
 - `003 -> 004`:
@@ -121,6 +146,14 @@
 - `009 -> 010`:
 - `010 -> 011`:
 - `011 -> 012`:
+
+### Passada premium antecipada
+- Pergunta bonita vs pergunta respondivel:
+- Um concreto por vez:
+- Comando visivel no ponto certo:
+- Nomeacao consistente de objetos e lugares:
+- Frase que cabe na boca da mae cansada:
+- Ajustes travados antes do primeiro patch:
 
 ## LICAO B - MATRIZ TOPICA
 
@@ -148,7 +181,8 @@
 - Estrutural:
 - Narrativo:
 - Pedagogico:
-- Taste:
+- Radiacao local:
+- Passada premium final:
 
 ### Gates finais
 - Cobertura topica:
@@ -170,6 +204,7 @@
 ### Validacao transversal
 - Encoding:
 - Drift entre `023`, `003`, `004`, `011_TOPICOS`, `012_TRANSVERSAIS` e template:
+- Trilha publicada do site confirmada ate `MV-S-015`:
 - Ajuste de sistema necessario:
 
 ### Handoff

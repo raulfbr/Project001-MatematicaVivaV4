@@ -1,5 +1,5 @@
-# ESQUELETO GERAL - LICAO CANONICA SEMENTES
-Data: 2026-03-06
+﻿# ESQUELETO GERAL - LICAO CANONICA SEMENTES
+Data: 2026-03-17
 Status: canonico
 Escopo: `MV-S-001+`
 Excecao formal: `MV-S-000` (ver `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/007_EXCECAO_L000_PORTAL.md`)
@@ -10,7 +10,7 @@ Excecao formal: `MV-S-000` (ver `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVE
 Este documento define a estrutura oficial da licao padrao do ciclo Sementes.
 
 Ele existe para:
-1. dar um esqueleto unico para revisao de HTML;
+1. dar um esqueleto unico para criacao e revisao de HTML;
 2. impedir drift entre licoes;
 3. permitir revisao modular por IA e por humano;
 4. servir como indice-mestre para os arquivos da pasta `Revisao/`.
@@ -59,6 +59,8 @@ Toda licao `MV-S-001+` deve seguir esta ordem:
 Regra de ouro:
 1. a licao deve parecer uma experiencia unica e fluida, nao uma pilha de blocos independentes.
 2. a licao so esta correta de verdade se permanecer fiel ao `LORE/north_star.yaml`.
+3. tanto na criacao quanto na revisao, a licao precisa nascer com frase de boca, pergunta respondivel principal e microfriccoes previsiveis explicitadas antes do primeiro fechamento.
+4. tanto na criacao quanto na revisao, a licao precisa passar por uma passada premium antecipada e por uma passada premium final de microdetalhes.
 
 ---
 
@@ -135,7 +137,7 @@ Inclui:
 4. imagem principal coerente.
 
 Nao pode:
-1. parecer capa genérica;
+1. parecer capa genÃ©rica;
 2. prometer algo desconectado do corpo da licao.
 
 Referencia:
@@ -151,7 +153,7 @@ Inclui:
 3. proxima licao.
 
 Nao pode:
-1. usar "Voltar" genérico nas licoes padrao;
+1. usar "Voltar" genÃ©rico nas licoes padrao;
 2. perder a simetria basica do topo.
 
 Referencia:
@@ -332,6 +334,15 @@ Referencia:
 ---
 
 ## 7) Fluxo vivo da experiencia
+
+### Regra de nascimento premium
+Antes de considerar uma licao pronta para ser escrita ou fechada, deve estar claro:
+1. qual e a imagem dominante que vai atravessar a pagina;
+2. qual e a ancora concreta mais fiel para o conceito;
+3. qual e a frase de boca que a mae realmente pode dizer;
+4. qual e a pergunta principal mais respondivel para `4-6 anos`;
+5. quais microfriccoes previsiveis precisam ser evitadas desde o rascunho.
+
 A licao deve produzir esta curva:
 
 1. Orientacao
@@ -429,6 +440,8 @@ Transversais:
 6. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/006_ENCODING_E_SANITY_CHECK.md`
 7. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/007_EXCECAO_L000_PORTAL.md`
 8. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/008_NORTH_STAR_OPERACIONAL.md`
+9. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/009_TASTE_EDITORIAL_E_AUTORIA_HUMANA.md`
+10. `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`
 
 ---
 
@@ -436,15 +449,18 @@ Transversais:
 Podemos iniciar a criacao dos arquivos por topico quando:
 1. este esqueleto estiver estavel;
 2. os aliases legados estiverem decididos;
-3. `Conexao da Jornada` estiver definitivamente recolocada no contrato.
+3. `Conexao da Jornada` estiver definitivamente recolocada no contrato;
+4. a frase de boca, a pergunta respondivel principal e as microfriccoes previsiveis fizerem parte do planejamento da licao;
+5. a passada premium antecipada ja estiver prevista como parte do fluxo.
 
 ---
 
 ## 11) Definition of Done do sistema
-O sistema de revisao so fica realmente usavel quando:
+O sistema de criacao e revisao so fica realmente usavel quando:
 1. este esqueleto estiver criado;
 2. existir protocolo operacional;
 3. existir rubrica premium;
 4. existirem guias por topico;
 5. existirem regras transversais;
-6. o piloto `001-003` confirmar que o esqueleto cobre o HTML real.
+6. a passada premium antecipada e a passada premium final estiverem encaixadas no fluxo;
+7. o piloto `001-003` confirmar que o esqueleto cobre o HTML real.

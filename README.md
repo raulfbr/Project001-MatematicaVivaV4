@@ -1,9 +1,12 @@
 > Leitura recomendada para retomada:
 > 1. `README.md` = visao geral do projeto.
 > 2. `AI_CONTEXT.md` = contexto vivo, estado atual e proximo passo seguro.
-> 3. `Revisao/` = execucao operacional da fase ativa.
+> 3. `Revisao/README.md` = mapa da fase ativa.
+> 4. `Revisao/000_COMECAR_AQUI.md` = retomada curta.
+> 5. `Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md` = mapa do sistema canonico.
+> 6. `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md` = quadro operacional vivo.
 >
-> Se voce abriu o repositorio agora, leia primeiro `AI_CONTEXT.md` logo apos este README.
+> Se voce abriu o repositorio agora, nao recomece por handoff antigo: leia `AI_CONTEXT.md` logo apos este README.
 
 <div align="center">
 
@@ -275,43 +278,29 @@ Se você chegou até aqui, **você já é um de nós**.
 
 As secoes abaixo preservam snapshots historicos e nao devem ser lidas como estado operacional mais atual.
 
-Para retomar corretamente hoje:
+Fluxo correto para retomar hoje:
+1. `README.md` = visao geral do projeto.
+2. `AI_CONTEXT.md` = contexto vivo e leitura correta do momento.
+3. `Revisao/README.md` = mapa da fase ativa.
+4. `Revisao/000_COMECAR_AQUI.md` = entrada curta da pasta `Revisao`.
+5. `Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md` = mapa do sistema canonico.
+6. `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md` = quadro operacional atual.
+7. `Revisao/00_SISTEMA_REVISAO_CANONICO/023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md` = ativacao oficial.
+8. `Revisao/00_SISTEMA_REVISAO_CANONICO/003_PROTOCOLO_REVISAO_POR_LICAO.md` = execucao.
+9. `Revisao/00_SISTEMA_REVISAO_CANONICO/004_RUBRICA_PREMIUM_REVISAO.md` = veredito.
 
-1. use `AI_CONTEXT.md` como contexto vivo;
-2. use `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md` como quadro operacional atual;
-3. use `Revisao/00_SISTEMA_REVISAO_CANONICO/023_GUIA_CENTRAL_ATIVACAO_REVISAO_TOPICO_A_TOPICO.md`, `003` e `004` como execucao canonica.
+Estado vivo desta fase:
+1. a frente ativa continua sendo `HTML-first`;
+2. a trilha publicada do site vai ate `MV-S-015`;
+3. `MV-S-016` funciona como pagina de continuidade em construcao;
+4. `MV-S-017+` sairam da trilha publicada enquanto aguardam reconstrucao;
+5. `MV-S-003` e `MV-S-004` estao fechadas para a rodada atual;
+6. o proximo foco seguro do lote e `MV-S-005` ate `MV-S-010`.
 
-## Fase Atual (Revisão Sementes)
-
-Fluxo oficial para retomar sem perder contexto:
-
-1. Leia este `README.md` (visão geral do projeto).
-2. Em seguida, leia [`AI_CONTEXT.md`](AI_CONTEXT.md) para entender o estado atual real do projeto.
-3. Depois vá para [`Revisao/README.md`](Revisao/README.md) para entrar na fase de revisão.
-4. Execute a revisão usando a ordem e os checklists definidos na pasta `Revisao`.
-
-### Fechamento desta sessao - 2026-03-16
-
-1. o lote `L004-L015` recebeu rodada profunda de revisao por IA, com patches aplicados nas licoes, logs atualizados e governanca ajustada;
-2. o produto publicado desse lote esta limpo e em estado `PASS PREMIUM` por IA, mas a validacao humana continua pendente;
-3. a retomada mais segura da proxima sessao e:
-   a. `README.md`;
-   b. `AI_CONTEXT.md`;
-   c. `Revisao/README.md`;
-   d. `005_STATUS_REVISAO_SEMENTES.md`;
-   e. lote ou licao-alvo.
-4. quando a dificuldade principal da revisao for encarnar melhor o conceito, escolher imagem dominante, encontrar ancora concreta ou reduzir traducao mental da mae, a reauditoria deve usar explicitamente a lente:
-   `Revisao/00_SISTEMA_REVISAO_CANONICO/012_TRANSVERSAIS/010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md`.
-
-### Regra Crítica de Encoding (obrigatória)
-
-Para não quebrar texto de lições HTML (ex.: `Coração` virando `CoraÃ§Ã£o`):
-
-1. Editar arquivos `.html/.md/.yaml` sempre em **UTF-8**.
-2. Evitar conversões de encoding automáticas ao salvar.
-3. Após qualquer edição em lições, rodar sanity check textual:
-`rg -n "Ã|Â|â|\\b\\w+\\?\\w+\\b" site/sementes/MV-S-00[1-3]*.html`
-4. Se aparecer padrão quebrado, corrigir antes de seguir.
+Regra pratica:
+1. `AI_CONTEXT.md` + `005_STATUS_REVISAO_SEMENTES.md` sao a leitura viva do momento;
+2. `015_ESTADO_REAL...` e `001_CONTEXTO...` ficam como apoio historico;
+3. quando a sessao for de criacao ou reauditoria profunda com pressao da mae real, consultar tambem a lente `010`.
 
 ## Onde Paramos (2026-02-28) - Snapshot Historico
 

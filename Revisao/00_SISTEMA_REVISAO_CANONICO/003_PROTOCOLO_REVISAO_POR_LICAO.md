@@ -1,5 +1,5 @@
-# PROTOCOLO DE REVISAO POR LICAO
-Data: 2026-03-10
+﻿# PROTOCOLO DE REVISAO POR LICAO
+Data: 2026-03-17
 Status: canonico
 Escopo: revisao HTML-first de licoes Sementes
 
@@ -33,10 +33,11 @@ Antes de usar este protocolo, a sessao deve ter sido ativada pelo `023`.
 
 Minimos esperados ao entrar aqui:
 1. cerne macro da licao ja preenchido;
-2. topicos `001-012` ja abertos;
-3. pacote minimo transversal ja aberto;
-4. licao atual, anterior e seguinte ja lidas no suficiente;
-5. escopo da sessao ja congelado.
+2. frase de boca do Portador, pergunta respondivel principal e microfriccoes previsiveis ja registradas;
+3. topicos `001-012` ja abertos;
+4. pacote minimo transversal ja aberto;
+5. licao atual, anterior e seguinte ja lidas no suficiente;
+6. escopo da sessao ja congelado.
 
 ---
 
@@ -64,9 +65,12 @@ Checklist:
 5. qual e o gancho para a proxima?
 6. qual e a imagem dominante da licao?
 7. qual e o fruto do dia?
-8. onde a licao pode confundir fronteiras entre topicos adjacentes?
-9. como um irmao menor pode participar sem dissolver o foco de `5-6 anos`?
-10. qual e a ancora concreta mais fiel para esta verdade matematica?
+8. qual e a frase de boca que a mae realmente consegue dizer?
+9. qual e a pergunta mais respondivel para `4-6 anos`?
+10. onde a licao pode confundir fronteiras entre topicos adjacentes?
+11. como um irmao menor pode participar sem dissolver o foco de `5-6 anos`?
+12. qual e a ancora concreta mais fiel para esta verdade matematica?
+13. que microfriccoes previsiveis podem surgir em nomes, comandos, perguntas ou simetrias falsas?
 
 Se alguma dessas respostas estiver nebulosa:
 1. parar o patch e diagnosticar antes.
@@ -78,15 +82,17 @@ Se alguma dessas respostas estiver nebulosa:
 Toda licao deve ser revisada nesta ordem:
 
 1. Diagnostico macro
-2. Matriz topico por topico
-3. Auditoria de fronteiras criticas
-4. Patch estrutural
-5. Patch narrativo
-6. Patch pedagogico
-7. Acabamento premium e `TASTE`
-8. Reauditoria
-9. Validacao final
-10. Registro
+2. Passada premium antecipada
+3. Matriz topico por topico
+4. Auditoria de fronteiras criticas
+5. Patch estrutural
+6. Patch narrativo
+7. Patch pedagogico
+8. Radiacao local dos ajustes
+9. Passada premium final de microdetalhes
+10. Reauditoria
+11. Validacao final
+12. Registro
 
 Racional:
 1. sem diagnostico macro, a revisao perde o todo;
@@ -127,7 +133,23 @@ Saida esperada:
 
 ---
 
-## 7) Passo 2 - Matriz topico por topico
+## 7) Passo 2 - Passada premium antecipada
+Antes da matriz, travar os microdetalhes que mais costumam gerar retrabalho depois.
+
+Checar:
+1. qual frase realmente cabe na boca da mae;
+2. qual pergunta principal a crianca consegue responder sem traducao adulta;
+3. se ha um concreto dominante claro, sem simetria falsa com outro concreto;
+4. se o comando mais importante esta visivel no ponto certo;
+5. se nomes de objetos, numeros, pecas, lugares e gestos ja estao consistentes.
+
+Regra:
+1. esta passada acontece antes do primeiro patch forte;
+2. se aqui ja houver atrito fino claro, corrigir no plano antes de espalhar o problema pela pagina.
+
+---
+
+## 8) Passo 3 - Matriz topico por topico
 Auditar sempre os 12 topicos oficiais.
 
 Para cada topico registrar:
@@ -158,7 +180,7 @@ Regra:
 
 ---
 
-## 8) Passo 3 - Auditoria de fronteiras criticas
+## 9) Passo 4 - Auditoria de fronteiras criticas
 Depois da matriz topica, auditar as costuras entre secoes.
 
 Fronteiras obrigatorias:
@@ -177,7 +199,7 @@ Regra:
 
 ---
 
-## 9) Passo 4 - Patch estrutural
+## 10) Passo 5 - Patch estrutural
 Corrigir primeiro o que pode reprovar a licao mesmo com texto bom.
 
 Ordem:
@@ -200,7 +222,7 @@ Regra:
 
 ---
 
-## 10) Passo 5 - Patch narrativo
+## 11) Passo 6 - Patch narrativo
 Depois da estrutura, revisar a experiencia.
 
 Verificar:
@@ -221,7 +243,7 @@ Perguntas de controle:
 
 ---
 
-## 11) Passo 6 - Patch pedagogico
+## 12) Passo 7 - Patch pedagogico
 Verificar se a licao ensina de verdade.
 
 Checar:
@@ -244,8 +266,22 @@ Vetos:
 
 ---
 
-## 12) Passo 7 - Acabamento premium e Taste
-Depois de corrigir o essencial, lapidar.
+## 13) Passo 8 - Radiacao local dos ajustes
+Depois do patch estrutural, narrativo e pedagogico, irradiar os ajustes para a licao inteira.
+
+Checar:
+1. ecos proximos da mesma ambiguidade;
+2. mudancas de naming que precisam se repetir em blocos vizinhos;
+3. perguntas ou comandos equivalentes que ainda ficaram no modelo antigo;
+4. fechamento, conexao e formacao do Portador reabrindo o problema que foi corrigido no centro da pagina.
+
+Regra:
+1. nao considerar o problema resolvido se ele foi corrigido no ponto quente e continua vazando em zonas de apoio.
+
+---
+
+## 14) Passo 9 - Passada premium final de microdetalhes
+Depois de corrigir o essencial e irradiar, lapidar.
 
 Checar:
 1. repeticao de frase;
@@ -257,10 +293,13 @@ Checar:
 7. `metaforas soltas` ou iconografias misturadas;
 8. imagem dominante da licao protegida do Hero ao fechamento;
 9. trechos tecnicamente corretos, mas sem vida, sem calor ou com cara de material escolar;
-10. pontos em que uma troca pequena de formulacao elevaria muito o `TASTE`.
+10. pontos em que uma troca pequena de formulacao elevaria muito o `TASTE`;
 11. pontos em que a mae precisaria traduzir o texto;
 12. pontos em que a pergunta parece bonita, mas pouco respondível para `4-6 anos`;
-13. pontos em que o bloco nao deixa claro se e para falar, mostrar ou fazer.
+13. pontos em que o bloco nao deixa claro se e para falar, mostrar ou fazer;
+14. pontos em que dois concretos diferentes estao sendo tratados como se fossem o mesmo;
+15. pontos em que `quem` deveria ser `qual numero`, `qual peca`, `qual lugar` ou formula equivalente mais respondível;
+16. pontos em que o nome do objeto, do gesto ou do lugar muda sem necessidade.
 
 Objetivo:
 1. deixar a licao com aparencia e leitura de produto premium;
@@ -268,20 +307,21 @@ Objetivo:
 
 ---
 
-## 13) Passo 8 - Reauditoria
+## 15) Passo 10 - Reauditoria
 Depois do patch:
 1. reabrir os topicos tocados;
 2. reabrir os topicos vizinhos impactados;
-3. reavaliar as fronteiras criticas afetadas;
-4. rerodar sanity check de encoding;
-5. so entao fechar os gates finais.
+3. irradiar os ajustes para ecos proximos da licao inteira;
+4. reavaliar as fronteiras criticas afetadas;
+5. rerodar sanity check de encoding;
+6. so entao fechar os gates finais.
 
 Regra:
 1. patch sem reauditoria ainda nao e revisao fechada.
 
 ---
 
-## 14) Passo 9 - Validacao final
+## 16) Passo 11 - Validacao final
 Toda licao deve fechar com estes gates:
 
 ### Gate CT - Cobertura topica
@@ -356,7 +396,10 @@ PASS quando:
 2. nao ha `metaforas soltas`;
 3. o texto soa vivo, domestico e recognoscivel como `Matematica Viva`;
 4. as transicoes parecem organicas, nao coladas;
-5. entre duas versoes corretas, a escolhida e a mais clara e mais viva.
+5. a mae nao precisa traduzir mentalmente o que dizer, mostrar ou fazer;
+6. a pergunta mais importante da licao e realmente respondivel para `4-6 anos`;
+7. nao ha falsa simetria entre concretos diferentes;
+8. entre duas versoes corretas, a escolhida e a mais clara, mais viva e mais usavel.
 
 EM REFINAMENTO quando:
 1. a licao funciona;
@@ -364,7 +407,8 @@ EM REFINAMENTO quando:
 
 BLOCK PREMIUM quando:
 1. a licao ate passa tecnicamente;
-2. mas o texto continua generico, escolar, sem calor ou com drift imagetico.
+2. mas o texto continua generico, escolar, sem calor ou com drift imagetico;
+3. ou continua exigindo traducao adulta recorrente em microdetalhes de uso real.
 
 Regra:
 1. `PASS PREMIUM` exige `CT`, `FT`, `NS`, `A`, `B`, `C`, `D`, `E` e `T` aprovados;
@@ -373,7 +417,7 @@ Regra:
 
 ---
 
-## 15) Sanity check obrigatorio de encoding
+## 17) Sanity check obrigatorio de encoding
 Depois de editar uma licao HTML, rodar:
 
 ```powershell
@@ -385,7 +429,7 @@ Regra:
 
 ---
 
-## 16) Formato de log por licao
+## 18) Formato de log por licao
 Registrar sempre:
 
 ```md
@@ -451,32 +495,36 @@ Registrar sempre:
 
 ---
 
-## 17) Definition of Ready de uma licao
+## 19) Definition of Ready de uma licao
 Uma licao esta pronta para entrar em revisao quando:
 1. a licao atual, anterior e proxima estao acessiveis;
 2. os 12 topicos oficiais existem e foram abertos;
 3. o pacote minimo transversal foi aberto;
 4. a excecao do Portal foi considerada, se aplicavel;
 5. o objetivo curricular esta minimamente claro;
-6. ha espaco para registrar matriz topica e fronteiras.
+6. a frase de boca, a pergunta respondivel principal e as microfriccoes previsiveis ja foram registradas;
+7. ha espaco para registrar matriz topica e fronteiras.
 
 ---
 
-## 18) Definition of Done de uma licao
+## 20) Definition of Done de uma licao
 Uma licao so fecha quando:
 1. os 12 topicos tiverem veredito;
 2. as fronteiras criticas tiverem sido auditadas;
 3. todos os gates duros estiverem em `PASS`;
-4. o texto estiver limpo e premium;
-5. a pagina estiver coerente com o fluxo do ciclo;
-6. o log tiver sido atualizado;
-7. o encoding estiver preservado;
-8. a resposta para `isso nos aproxima ou afasta do North Star?` for claramente `aproxima`;
-9. para `PASS PREMIUM`, o `Gate T - Taste editorial` tambem estiver em `PASS`.
+4. a passada premium antecipada tiver sido concluida;
+5. a radiacao local tiver sido concluida;
+6. a passada premium final de microdetalhes tiver sido concluida;
+7. o texto estiver limpo e premium;
+8. a pagina estiver coerente com o fluxo do ciclo;
+9. o log tiver sido atualizado;
+10. o encoding estiver preservado;
+11. a resposta para `isso nos aproxima ou afasta do North Star?` for claramente `aproxima`;
+12. para `PASS PREMIUM`, o `Gate T - Taste editorial` tambem estiver em `PASS`.
 
 ---
 
-## 19) Regra de realimentacao do sistema
+## 21) Regra de realimentacao do sistema
 Se a revisao de uma licao revelar:
 1. ambiguidade recorrente em topico canonico;
 2. fronteira adjacente mal definida pelo sistema;
@@ -494,7 +542,7 @@ Regra:
 
 ---
 
-## 20) Regra de cadencia
+## 22) Regra de cadencia
 Cadencia alvo:
 1. `2 licoes por dia`
 

@@ -254,6 +254,33 @@ Em termos de fase de revisao:
 7. consultar `010_LENTE_ENCANTAMENTO_ENCARNADO_E_REVELACAO_MATEMATICA.md` quando houver criacao, reescrita profunda, imagem dominante nebulosa, ancora concreta fraca ou traducao mental da mae;
 8. nao reabrir `MV-S-016+` para publicacao antes da reconstrucao sob o novo contrato premium.
 
+## Experimento ativo - MelhorarEstrutura
+
+Existe agora um experimento ativo em `MelhorarEstrutura/`.
+
+Leitura correta:
+
+1. este experimento nao substitui a frente operacional principal;
+2. ele existe para testar se uma abordagem guiada por experts, tasks robustas e discussoes com evidencia melhora a qualidade da decisao estrutural;
+3. o foco imediato do experimento e `Sementes`;
+4. a verdade operacional continua sendo: hoje a revisao real ainda acontece no HTML;
+5. portanto, `MelhorarEstrutura` e um laboratorio de convergencia, nao ainda a nova arquitetura oficial do projeto.
+
+Estado atual do experimento:
+
+1. experts locais em `BMAD YAML` foram criados;
+2. tasks robustas de exploracao, aplicacao e convergencia foram escritas;
+3. rodadas e discussoes com evidencia real do repo ja foram abertas;
+4. as tres discussoes mais recentes fecharam leituras provisiorias sobre:
+   a. contrato canonico de `Sementes`;
+   b. anatomia do `review pack` por bloco;
+   c. fluxo editorial recomendado para esta fase;
+5. a formula provisoria mais forte ate aqui e:
+   `macro -> contrato -> review pack -> patch HTML localizado -> costura HTML -> rubrica -> validacao humana`;
+6. isto ainda e teste;
+7. a proxima retomada segura do experimento deve partir de `MelhorarEstrutura/ENTENDA_MELHORAR_ESTRUTURA.md`;
+8. o proximo tema sugerido para continuar a trilha e `PRODUTO_PUBLICADO_E_SUPERFICIES`.
+
 ## Ordem de leitura para retomar o projeto
 
 ### Se a meta e entender o projeto no macro

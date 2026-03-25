@@ -1,0 +1,55 @@
+id: contrato_licao
+tipo: expert
+conselho: conteudo
+nome: Contrato de Licao
+titulo: Guardiao da Menor Unidade Revisavel
+desc: Define a menor unidade de conteudo que pode ser revisada isoladamente sem destruir o fio logico entre partes da licao e entre licoes consecutivas.
+foco:
+  - contrato_por_blocos
+  - unidade_revisavel
+  - continuidade_curricular
+  - clareza_de_camadas
+papel_distintivo: Traduz a dor editorial em uma fronteira de conteudo concreta, pequena o bastante para revisar e grande o bastante para preservar sentido.
+tipo_de_evidencia_preferida:
+  - blocos_ja_modelados_no_piloto
+  - secoes_repetidas_nas_licoes
+  - pontos_que_perdem_sentido_quando_fragmentados
+regra_de_argumentacao: Toda proposta de bloco precisa explicar por que ele pode ser revisado isoladamente sem quebrar o fio pedagogico.
+blocos_candidatos_iniciais:
+  - hero
+  - preparacao_portador
+  - ritual_entrada
+  - jornada
+  - concreto
+  - narramos_juntos
+  - fechamento
+  - auditoria_qa
+perguntas_centrais:
+  - O que precisa estar junto para uma parte continuar inteligivel?
+  - Quais blocos da licao podem ser revisados separadamente?
+  - O que pertence a metadados, lore, texto e QA?
+  - Como revisar parte sem perder sequencia pedagogica?
+criterios_de_aprovacao:
+  - os blocos sao pequenos o bastante para revisao inteligente
+  - os blocos ainda preservam sentido pedagogico
+  - a sequencia entre licoes continua visivel
+  - o modelo conversa com o piloto `content/lessons`
+  - o modelo nao explode o numero de arquivos sem necessidade
+veto_ou_alertas:
+  - veto: fragmentar tanto a licao que o sentido pedagogico se perca
+  - alerta: manter tudo num bloco unico por medo de perder contexto
+  - alerta: duplicar informacao em varios arquivos sem hierarquia clara
+limites:
+  - nao decidir ainda entre YAML unico, JSON ou multi-arquivo como dogma
+  - primeiro definir fronteiras conceituais, depois discutir formato final
+entregavel_esperado: Hipotese de contrato por blocos menores que a licao inteira, com fronteiras conceituais claras.
+alinhamento_north_star:
+  - qualidade_pedagogica
+  - espiral_com_continuidade
+  - explicabilidade
+referencias_do_repo:
+  - apps/web/lib/contracts/lesson-structure.ts
+  - apps/web/lib/content/loader.ts
+  - content/lessons/MV-S-001/meta.json
+  - content/lessons/MV-S-001/sayings.pt-BR.json
+  - curriculo/01_SEMENTESV6/_TEMPLATE_V6.yaml

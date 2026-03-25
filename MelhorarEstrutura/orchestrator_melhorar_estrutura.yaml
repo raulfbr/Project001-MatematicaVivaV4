@@ -1,0 +1,89 @@
+id: orchestrator_melhorar_estrutura
+tipo: orchestrator
+versao: "0.1"
+nome: Orchestrator Melhorar Estrutura
+desc: Orquestrador local e enxuto para discutir melhoria da estrutura de revisao das licoes sem alterar o sistema principal.
+
+escopo:
+  foco: revisao_escalavel
+  limite: somente MelhorarEstrutura
+  fase: pre_implementacao
+  pergunta_central: Como tornar a revisao de licoes escalavel sem depender de HTML longo, mantendo Vercel como base inicial e preservando a continuidade curricular?
+  decisao_maxima_desta_fase: recorte_estrutural_preliminar
+  verdade_operacional_atual: revisao_acontece_no_html
+
+regras:
+  simplicidade_primeiro: true
+  vercel_default_inicial: true
+  evitar_runtime_stateful: true
+  evitar_banco_local_no_runtime: true
+  preservar_sequencia_curricular: true
+  evitar_plataforma_paralela: true
+  usar_bmad_como_linguagem_base: true
+  exigir_embasamento_rastreavel: true
+
+nao_faz:
+  - nao altera pipeline_principal
+  - nao escolhe stack_completa_0_18
+  - nao introduz banco_local_no_runtime
+  - nao define editor_ou_backoffice
+
+experts_ativos:
+  - estrategista_estrutura
+  - vercel_first
+  - contrato_licao
+  - revisao_escalavel
+  - mae_regente_real
+
+fluxo_deliberacao:
+  - {n: 1, nome: abertura, acao: Explicitar a dor real observavel no repo.}
+  - {n: 2, nome: posicoes, acao: Cada expert apresenta sua leitura inicial.}
+  - {n: 3, nome: tensao, acao: Explicitar divergencias e riscos de overengineering.}
+  - {n: 4, nome: sintese, acao: Consolidar o menor recorte util.}
+  - {n: 5, nome: decisao_provisoria, acao: Registrar uma recomendacao preliminar e perguntas abertas.}
+
+protocolo_de_citacao:
+  formato_evidencia: E1_E2_E3
+  formato_rodada_anterior: R0_R1
+  regra_1: Toda posicao importante cita pelo menos uma evidencia do repo ou uma rodada anterior.
+  regra_2: Toda conclusao deve separar fato observado de inferencia.
+  regra_3: Toda divergencia precisa apontar qual evidencia pesa a favor dela.
+  regra_4: Sintese final precisa dizer o que esta decidido e o que continua em aberto.
+
+estrutura_minima_da_rodada:
+  - pergunta_da_rodada
+  - evidencias_usadas
+  - posicao_inicial_dos_experts
+  - tensoes_reais
+  - consensos_provisorios
+  - decisao_provisoria
+  - perguntas_em_aberto
+
+criterio_de_sucesso:
+  - a discussao produzir clareza
+  - a discussao nao virar arquitetura completa cedo demais
+  - o proximo passo ficar mais obvio
+  - toda afirmacao estrutural relevante ser rastreavel
+
+evidencias_minimas:
+  - html_final_de_sementes_esta_na_faixa_615_662_linhas_na_amostra_usada
+  - yamls_equivalentes_ainda_representam_licoes_inteiras_na_faixa_208_270_linhas
+  - piloto_apps_web_ja_tem_contrato_por_blocos_e_loader_atomico
+  - piloto_apps_web_ainda_esta_parcial
+  - vercel_atual_reescreve_para_site_estatico
+  - revisao_real_hoje_ainda_pousa_no_html
+
+fontes_do_repo:
+  - docs/MAPA_EXECUCAO_PROJETO.md
+  - build/fases/sementes.py
+  - apps/web/lib/content/loader.ts
+  - apps/web/lib/contracts/lesson-structure.ts
+  - vercel.json
+
+saida_esperada:
+  artefatos:
+    - rodadas/ROUND_00_DIAGNOSTICO.md
+    - rodadas/ROUND_01_DISCUSSAO_INICIAL.md
+    - sinteses/HIPOTESES_INICIAIS.md
+  status_final: decisao_preliminar
+  proxima_rodada_alvo: definir_menor_bloco_revisavel

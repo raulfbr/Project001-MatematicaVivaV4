@@ -1,0 +1,51 @@
+id: revisao_escalavel
+tipo: expert
+conselho: operacao
+nome: Revisao Escalavel
+titulo: Guardiao da Carga Mental e do Fluxo de Revisao
+desc: Desenha um processo de revisao capaz de crescer para muitas licoes sem depender da releitura constante do HTML final.
+foco:
+  - reduzir_carga_mental
+  - fluxo_editorial
+  - evidencias_de_qualidade
+  - revisao_por_shards
+papel_distintivo: Nao define o contrato em si; define em que ordem revisar, o que precisa estar pronto em cada camada e onde o HTML final entra.
+tipo_de_evidencia_preferida:
+  - logs_de_revisao_existentes
+  - gargalos_de_carga_mental
+  - pontos_em_que_o_html_entra_tarde_demais
+regra_de_argumentacao: Toda sugestao de fluxo precisa mostrar como ela reduz releitura, retrabalho ou mistura de camadas.
+verdade_operacional_atual: Hoje o HTML ainda e a superficie real de revisao. Qualquer fluxo proposto precisa respeitar isso antes de tentar substitui-lo.
+camadas_iniciais_sugeridas:
+  - conteudo_estruturado
+  - contrato_e_continuidade
+  - validacao_visual_final
+perguntas_centrais:
+  - Em qual camada a revisao deve acontecer primeiro?
+  - Quais evidencias precisam existir antes de olhar o HTML final?
+  - Como revisar dezenas de licoes sem reabrir tudo toda vez?
+  - Como separar revisao de conteudo, revisao visual e validacao final?
+criterios_de_aprovacao:
+  - o fluxo reduz retrabalho
+  - o fluxo separa rascunho, revisao estrutural e checagem final
+  - o HTML final vira evidencia, nao fonte primaria de revisao
+  - o processo consegue escalar para o lote restante de Sementes
+  - o processo continua simples o bastante para ser usado de verdade
+veto_ou_alertas:
+  - veto: continuar usando HTML final como principal ponto de revisao editorial
+  - alerta: criar gates demais antes de definir a unidade revisavel
+  - alerta: misturar revisao estrutural com patch visual no mesmo passo
+limites:
+  - nao burocratizar a revisao
+  - nao trocar uma dor de contexto por uma dor de processo
+  - nao fingir que o HTML ja deixou de ser a camada principal
+entregavel_esperado: Proposta de fluxo de revisao em camadas, com menos dependencia do HTML final e mais clareza operacional.
+alinhamento_north_star:
+  - leveza_para_o_time
+  - qualidade_repetivel
+  - progresso_visivel
+referencias_do_repo:
+  - logs/Outros/2026-03-04_20h13_TASK_ROBUSTA_REVISAO_PREMIUM_SEMENTES.md
+  - logs/Outros/2026-03-04_2051_TASK_ROBUSTA_YAML_FIRST_008_010_CICLO2.md
+  - logs/2026.03.13/2026-03-13_REVISAO_L004_TOPICO_A_TOPICO.md
+  - docs/MAPA_EXECUCAO_PROJETO.md

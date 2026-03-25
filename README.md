@@ -1,12 +1,31 @@
 > Leitura recomendada para retomada:
 > 1. `README.md` = visao geral do projeto.
 > 2. `AI_CONTEXT.md` = contexto vivo, estado atual e proximo passo seguro.
-> 3. `Revisao/README.md` = mapa da fase ativa.
-> 4. `Revisao/000_COMECAR_AQUI.md` = retomada curta.
-> 5. `Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md` = mapa do sistema canonico.
-> 6. `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md` = quadro operacional vivo.
+> 3. `MelhorarEstrutura/ENTENDA_MELHORAR_ESTRUTURA.md` = contexto do experimento atual para testar uma abordagem melhor de estrutura e revisao.
+> 4. `Revisao/README.md` = mapa da fase ativa.
+> 5. `Revisao/000_COMECAR_AQUI.md` = retomada curta.
+> 6. `Revisao/00_SISTEMA_REVISAO_CANONICO/000_INDEX_SISTEMA_REVISAO.md` = mapa do sistema canonico.
+> 7. `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md` = quadro operacional vivo.
 >
 > Se voce abriu o repositorio agora, nao recomece por handoff antigo: leia `AI_CONTEXT.md` logo apos este README.
+> Se a sessao for sobre a abordagem de teste em `MelhorarEstrutura`, abra em seguida `MelhorarEstrutura/ENTENDA_MELHORAR_ESTRUTURA.md`.
+
+## Estado de trabalho em 2026-03-19
+
+Se amanha voce ler so este `README.md`, o contexto mais importante e este:
+
+1. a frente operacional principal do projeto continua sendo a revisao premium `HTML-first` em `Revisao/`
+2. existe agora um experimento paralelo em `MelhorarEstrutura/` para testar uma abordagem mais inteligente de convergencia estrutural para `Sementes`
+3. esse experimento ainda e teste, nao decisao oficial de arquitetura
+4. a pergunta do experimento e: como reduzir a dependencia de releitura integral do HTML sem perder o fio pedagogico nem mexer cedo demais na stack
+5. a leitura provisoria mais forte ate aqui e:
+   `macro -> contrato -> review pack -> patch HTML localizado -> costura HTML -> rubrica -> validacao humana`
+6. o proximo tema sugerido para continuar essa trilha e:
+   `PRODUTO_PUBLICADO_E_SUPERFICIES`
+
+Se voce quiser um unico arquivo interno para retomar essa frente experimental depois deste README, abra:
+
+- `MelhorarEstrutura/ENTENDA_MELHORAR_ESTRUTURA.md`
 
 <div align="center">
 

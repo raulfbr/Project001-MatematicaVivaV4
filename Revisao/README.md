@@ -36,6 +36,7 @@ Encerramento atual:
 2. `MV-S-016` virou pagina de continuidade em construcao e `MV-S-017+` sairam da trilha publicada;
 3. a proxima sessao nao deve recomecar do zero, e sim retomar pela cadeia `AI_CONTEXT.md` -> `Revisao/000_COMECAR_AQUI.md` -> `000_INDEX` -> `005` -> lote/licao alvo;
 4. quando a pergunta da sessao for "como encarnar melhor esta licao sem perder rigor e sem aumentar a pressao da mae?", a lente `010` deixa de ser opcional e passa a ser a referencia principal da reauditoria.
+5. a frente editorial robusta de `MV-S-005` a `MV-S-015` mora na task `050_TASK_ROBUSTA_REVISAO_EDITORIAL_INTELIGENTE_L005_L015.md`.
 
 ## Onde estao todas as diretrizes
 1. `Revisao/00_SISTEMA_REVISAO_CANONICO/002_ESQUELETO_GERAL_LICAO_SEMENTES.md` = contrato macro da licao.

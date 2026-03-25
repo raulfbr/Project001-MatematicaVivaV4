@@ -1,4 +1,4 @@
-# STATUS DA REVISAO SEMENTES
+﻿# STATUS DA REVISAO SEMENTES
 Data base: 2026-03-17
 Status geral: protocolo central consolidado em `023`; `Manual do Portador`, `MV-S-001` e `MV-S-002` seguem prontos para validacao humana; `MV-S-003` e `MV-S-004` passaram por rodadas profundas com feedback real; por decisao operacional de `2026-03-17`, a trilha publicada foi cortada em `MV-S-015`, `MV-S-016` virou pagina de continuidade em construcao e `MV-S-017+` sairam da trilha publicada ate reconstrucao com protocolo premium endurecido
 
@@ -77,6 +77,14 @@ Antes de fechar o lote atual:
 | `030_TASK_ROBUSTA_REAUDITORIA_TOTAL_L003_L010_POR_LICAO_COM_EXPERTS.md` | Ativa | Reauditoria rigorosa do lote por licao e com conselho `experts` |
 | `048_TASK_ROBUSTA_ENDURECIMENTO_PROTOCOLO_PREMIUM_E_CORTE_PUBLICADO_L015.md` | Feito | Registrou o corte publicado em `L015` e o endurecimento do protocolo de criacao/revisao |
 | `049_TASK_ROBUSTA_AUDITORIA_SISTEMICA_REENTRADA_E_COERENCIA_DOCUMENTAL.md` | Feito | Consolidou a ordem canonica de retomada, limpou drift entre `README`, `AI_CONTEXT` e docs vivos, e reforcou escrita interna pratica |
+| `050_TASK_ROBUSTA_REVISAO_EDITORIAL_INTELIGENTE_L005_L015.md` | Feito | Task-mae da revisao editorial premium da trilha publicada `L005-L015`, com foco em acabamento, `TASTE`, `North Star`, UX do Portador e encoding |
+| `051_FASE_0_INVENTARIO_EDITORIAL_L005_L015.md` | Feito | Inventario editorial inicial do lote publicado `L005-L015` antes da Onda 1 |
+| `052_ONDA_1_REVISAO_EDITORIAL_L005_L006.md` | Feito | Primeira onda editorial com ajustes de acento e grafia em `MV-S-005` e `MV-S-006` |
+| `053_ONDA_2_REVISAO_EDITORIAL_L005_L008.md` | Feito | Segunda onda editorial com ajustes de acento nos rótulos auxiliares de `MV-S-007` e `MV-S-008` |
+| `054_ONDA_3_REVISAO_EDITORIAL_L005_L010.md` | Feito | Terceira onda editorial com ajustes de acento nos rótulos auxiliares de `MV-S-009` e `MV-S-010` |
+| `055_ONDA_4_REVISAO_EDITORIAL_L005_L012.md` | Feito | Quarta onda editorial com ajustes de acento nos rótulos auxiliares de `MV-S-011` e `MV-S-012` |
+| `056_ONDA_5_REVISAO_EDITORIAL_L013_L015.md` | Feito | Quinta onda editorial com ajustes de acento nos rótulos auxiliares de `MV-S-013`, `MV-S-014` e `MV-S-015` |
+| `057_ONDA_6_AUDITORIA_TRANSVERSAL_L005_L015.md` | Feito | Auditoria transversal final da trilha publicada `L005-L015` com veredito `PASS` |
 | `MV-S-001` | PASS PREMIUM por IA | Pronta para validacao humana |
 | `MV-S-002` | PASS PREMIUM por IA | Pronta para validacao humana |
 | `Manual do Portador` | PASS PREMIUM por IA | Abertura mobile-first e anatomia real do metodo consolidadas |
@@ -110,9 +118,9 @@ Antes de fechar o lote atual:
 ## 7) Proximo passo seguro
 1. executar a `029_TASK_ROBUSTA_REVISAO_IMPECAVEL_L003_L010.md`;
 2. executar a `030_TASK_ROBUSTA_REAUDITORIA_TOTAL_L003_L010_POR_LICAO_COM_EXPERTS.md`;
-3. revisar `L005-L010` sob o mesmo metodo e fechar a auditoria transversal;
-4. sustentar o protocolo endurecido com passada premium antecipada, radiacao local e passada premium final;
-5. so depois encaminhar o bloco para validacao humana posterior da Familia Rodrigues e decidir a volta de `MV-S-016+`.
+3. usar `050_TASK_ROBUSTA_REVISAO_EDITORIAL_INTELIGENTE_L005_L015.md` e `057_ONDA_6_AUDITORIA_TRANSVERSAL_L005_L015.md` como registro fechado da revisao editorial da trilha publicada `L005-L015`;
+4. encaminhar a trilha publicada para validacao humana posterior da Familia Rodrigues;
+5. so depois decidir a volta de `MV-S-016+`.
 
 ---
 

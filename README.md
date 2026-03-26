@@ -10,6 +10,25 @@
 > Se voce abriu o repositorio agora, nao recomece por handoff antigo: leia `AI_CONTEXT.md` logo apos este README.
 > Se a sessao for sobre a abordagem de teste em `MelhorarEstrutura`, abra em seguida `MelhorarEstrutura/ENTENDA_MELHORAR_ESTRUTURA.md`.
 
+## Retomada rapida
+
+Se voce voltar depois e quiser entender o que ficou fechado sem reler tudo:
+
+1. a revisao editorial premium de `MV-S-005` a `MV-S-015` foi fechada em `Revisao/00_SISTEMA_REVISAO_CANONICO/050_TASK_ROBUSTA_REVISAO_EDITORIAL_INTELIGENTE_L005_L015.md`;
+2. a auditoria transversal final dessa faixa ficou em `Revisao/00_SISTEMA_REVISAO_CANONICO/057_ONDA_6_AUDITORIA_TRANSVERSAL_L005_L015.md`;
+3. a home e as lições que estavam quebrando por acento foram padronizadas para nomes ASCII, para evitar URL instavel;
+4. os nomes acentuados antigos foram removidos do fluxo publico;
+5. esta rodada fechou mais a camada tecnica/documental do que a camada editorial fina;
+6. a proxima melhora importante deve voltar a parte editorial, usando os feedbacks da Marina como insumo central;
+7. a ordem de reentrada mais segura continua sendo: `AI_CONTEXT.md` -> `Revisao/000_COMECAR_AQUI.md` -> `Revisao/00_SISTEMA_REVISAO_CANONICO/005_STATUS_REVISAO_SEMENTES.md`;
+8. a proxima frente so deve avancar quando houver um novo alvo real; `MV-S-016+` continuam fora desta revisao publicada.
+
+Nota pratica:
+
+1. a rodada recente foi util para estabilizar a base tecnica do site, a navegacao e os nomes ASCII;
+2. isso nao encerra a necessidade de refinamento editorial fino;
+3. a proxima rodada importante deve voltar a textos, tom, clareza e TASTE, com os feedbacks da Marina como insumo principal.
+
 ## Estado de trabalho em 2026-03-19
 
 Se amanha voce ler so este `README.md`, o contexto mais importante e este:

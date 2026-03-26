@@ -39,6 +39,14 @@ O software existe para servir:
 O centro da obra não é a tecnologia em si.
 O centro é a família vivendo uma matemática concreta, narrativa, digna e memorável.
 
+## Ultima rodada fechada
+
+1. a rodada mais recente fechou principalmente a base tecnica e documental do projeto;
+2. a home e a trilha publicada foram padronizadas para nomes ASCII, para evitar URLs instaveis e links quebrados por acento;
+3. isso nao significa que a camada editorial fina esteja encerrada;
+4. a proxima melhora importante deve voltar a textos, tom, fluidez e TASTE, usando os feedbacks da Marina como insumo central;
+5. a leitura desta fase nao deve confundir estabilizacao tecnica com fechamento editorial total.
+
 ## Fontes de verdade do projeto
 
 ### 1. Espírito, identidade e critérios de fidelidade

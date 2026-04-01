@@ -300,7 +300,7 @@ Toda brincadeira segue este formato:
 
 ---
 
-## Brincadeiras detalhadas — Lições 000 a 008
+## Brincadeiras detalhadas — Lições 000 a 010
 
 ### Lição 000 — O Portal do Reino
 **Subtítulo:** *O corpo conhece os guardiões*
@@ -497,6 +497,49 @@ Toda brincadeira segue este formato:
 
 **Ponte de Pouso:**
 *"Os pares descansam juntos. Sente e me conta: quem ficou sem par? Como ele pode encontrar o dele?"*
+
+---
+
+### Lição 009 — O Celeiro de Noé
+**Subtítulo:** *O corpo guarda com calma*
+**Nome:** O Celeiro Humano
+
+**Versão ampla:**
+1. Espalham 9 itens pela sala (como almofadas ou pares de meias enroladas). O Portador é o celeiro (ou define um círculo no chão).
+2. A criança busca UM fardo por vez. Traz o primeiro: "Um!". Volta correndo, traz o segundo: "Dois!".
+3. E assim vai até o 8. Quando chega no 8, o Portador diz: "Será que cabe mais um?"
+4. A criança busca o nono e o celeiro fecha com paz.
+
+**Versão compacta:**
+- Criança sentadinha no chão. O Portador de longe lança 9 fardos (bolinhas de meia ou algodão) um a um. A criança deve pegar no ar e empilhar no colo, contando devagar até 9 sem deixar a pilha cair. (Foco e coordenação paciente).
+
+**Se houver irmãos:**
+- Um corre para buscar o fardo, entrega para o outro que recebe na base e organiza a pilha.
+
+**Ponte de Pouso:**
+*"O celeiro de Noé está protegido e o seu corpo também. Sente ao lado dos 9 fardos e me diga: o oitavo fardo pesou mais que o primeiro?"*
+
+---
+
+### Lição 010 — A Fila da Providência
+**Subtítulo:** *O corpo muda de lugar*
+**Nome:** Dança das Posições
+
+**Versão ampla:**
+1. Colocam 5 cadeiras (ou almofadas/demarcações) em fila indiana.
+2. A criança, o Portador e 3 bichinhos de pelúcia ocupam os 5 lugares.
+3. O Portador faz o locutor: "Atenção corporação! Quem está em PRIMEIRO, dê um pulo! Quem está por ÚLTIMO, sente no chão!"
+4. Depois, dá o comando de troca: "O segundo troca de lugar com o quarto!". Todos correm e trocam.
+5. Repetem com novas posições.
+
+**Versão compacta:**
+- No sofá, colocam 5 bonecos/bichinhos. O Portador dá comandos rápidos para a mão da criança: "Coloque o primeiro pra dormir! Levante o braço do último! Faça o terceiro pular!"
+
+**Se houver irmãos:**
+- Fila indiana real com as crianças. O Portador comanda: "O último da fila corre e vira o primeiro!". E assim a fila se desloca como uma lagarta.
+
+**Ponte de Pouso:**
+*"A fila chegou na estação. Sente no primeiro lugar e me conte: qual posição você mais gostou de visitar hoje?"*
 
 ---
 

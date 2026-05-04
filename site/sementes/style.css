@@ -859,7 +859,7 @@ h2::after {
 /* Mobile Optimizations (Toca Boca: Usability first) */
 @media (max-width: 768px) {
     .lesson-container {
-        padding: 1rem 0;
+        padding: 4rem 0 1rem 0;
         /* ZERO side padding on container */
     }
 
@@ -869,6 +869,21 @@ h2::after {
         padding-left: 0.75rem;
         border-left: 3px solid rgba(0, 0, 0, 0.1);
         /* Thicker line for visibility */
+    }
+
+    .lesson-header-nav {
+        gap: 0.75rem;
+        padding: 0 1rem 1rem;
+    }
+
+    .lesson-header-nav>div {
+        flex: 1 1 0;
+        width: auto !important;
+    }
+
+    .lesson-header-nav .nav-mini-link {
+        font-size: 0.82rem;
+        line-height: 1.2;
     }
 
     .hero-title {
@@ -1003,6 +1018,10 @@ li {
     border-bottom: 1px solid #E5E7EB;
 }
 
+.lesson-header-nav>div {
+    min-width: 0;
+}
+
 .lesson-header-nav .nav-mini-link {
     text-decoration: none;
     color: #6B7280;
@@ -1011,6 +1030,11 @@ li {
     align-items: center;
     gap: 0.5rem;
     transition: color 0.2s;
+    min-width: 0;
+}
+
+.lesson-header-nav .nav-mini-link span {
+    overflow-wrap: anywhere;
 }
 
 .lesson-header-nav .nav-mini-link:hover {
@@ -1300,6 +1324,35 @@ li {
 
 .bridge-highlight-box strong {
     color: #3730A3;
+}
+
+.corpo-conta-card,
+.corpo-conta-box {
+    border-top: 6px solid #4F46E5;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+}
+
+.corpo-conta-card .scene-header,
+.corpo-conta-box .scene-header {
+    color: #3730A3;
+}
+
+.corpo-conta-intro {
+    background: #EEF2FF;
+    border-color: #C7D2FE;
+    border-left: 4px solid #4F46E5;
+    color: #3730A3;
+}
+
+.ponte-pouso-box {
+    background: #ECFDF5;
+    border-color: #A7F3D0;
+    border-left: 4px solid #059669;
+    color: #065F46;
+}
+
+.ponte-pouso-box strong {
+    color: #047857;
 }
 
 .heart-questions-box {
@@ -1650,9 +1703,10 @@ i.ph-duotone {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%;
-    margin: 1.5rem 0.5rem;
-    /* Little margin for safety */
+    width: auto;
+    max-width: 100%;
+    margin: 1.5rem 0;
+    /* Avoid horizontal overflow inside scene cards */
 }
 
 /* === DUOTONE CARMIM (Portador/Zeal) === */

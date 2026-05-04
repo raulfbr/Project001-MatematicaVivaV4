@@ -421,6 +421,14 @@ h1 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.home-btn:focus-visible,
+.lesson-header-nav .nav-mini-link:focus-visible,
+.nav-btn:focus-visible,
+.connection-link-card:focus-visible {
+    outline: 3px solid #F59E0B;
+    outline-offset: 3px;
+}
+
 /* === CARD COMPONENTS (Global "Block" Look) === */
 .scene-card,
 .instruction-box {
@@ -884,6 +892,11 @@ h2::after {
     .lesson-header-nav .nav-mini-link {
         font-size: 0.82rem;
         line-height: 1.2;
+    }
+
+    p,
+    li {
+        text-align: left;
     }
 
     .hero-title {

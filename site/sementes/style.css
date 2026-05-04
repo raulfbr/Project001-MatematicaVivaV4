@@ -14,7 +14,7 @@
     /* Stone 900 */
     --text-secondary: #44403C;
     /* Stone 700 */
-    --text-tertiary: #A8A29E;
+    --text-tertiary: #57534E;
     /* Stone 400 */
 
     /* Guardians (Vibrant yet Natural) */
@@ -643,7 +643,10 @@ h1 {
 
     /* Revert padding kill for internal elements of cards/boxes */
     .scene-card p,
-    .instruction-box p {
+    .instruction-box p,
+    .scene-card li,
+    .materials-box li,
+    .instruction-box li {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
@@ -1213,7 +1216,7 @@ li {
 
 .local-label {
     font-size: 0.9rem;
-    color: #9CA3AF;
+    color: #6B7280;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1758,8 +1761,8 @@ i.ph-duotone {
 .acting-cue {
     font-family: var(--font-body);
     font-size: 0.95rem;
-    color: var(--accent-gold);
-    /* Dourado como prometido no Standard */
+    color: #92400E;
+    /* Ambar escuro para manter o tom e garantir contraste */
     font-style: italic;
     margin-bottom: 0.75rem;
     display: block;
